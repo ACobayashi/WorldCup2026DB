@@ -5,6 +5,8 @@
 /vendor/
 /node_modules/
 /dist/
+/sites/
+/IGNORE/
 *.log
 /storage/uploads/*
 !/storage/uploads/.gitkeep
