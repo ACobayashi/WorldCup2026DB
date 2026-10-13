@@ -2,7 +2,7 @@
 
 互联网数据库开发小组作业，包含团队主页和世界杯两个模块。
 
-在线展示：[NKDEV · FOURWARD](https://nkdev-fourward.snappysky32.chatgpt.site)。代码协作：[GitHub 仓库](https://github.com/ACobayashi/WorldCup2026DB)。在线站点是发布快照，不会自动同步 GitHub 提交。
+在线展示：[NKDEV · FOURWARD](https://acobayashi.github.io/WorldCup2026DB/)。代码协作：[GitHub 仓库](https://github.com/ACobayashi/WorldCup2026DB)。推送到 `main` 后，GitHub Actions 检查原型并自动发布 `public/` 到 GitHub Pages；也可在 Actions 中手动运行。Pages 仅展示静态前端，不运行 PHP 或数据库。
 
 ## 本地预览
 
@@ -20,6 +20,7 @@ python3 -m http.server 5173 --bind 127.0.0.1 --directory public
 DBDev/
 |-- README.md
 |-- AGENTS.md                  # 简短贡献指南
+|-- .github/workflows/pages.yml # 静态前端自动发布
 |-- app/
 |   |-- common/                # 公共功能
 |   |-- team/                  # 团队主页
