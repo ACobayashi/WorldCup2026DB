@@ -7,6 +7,9 @@
 /dist/
 /sites/
 /IGNORE/
+/storage/runtime/
+/storage/local-accounts.txt
+/tmp/
 *.log
 /storage/uploads/*
 !/storage/uploads/.gitkeep

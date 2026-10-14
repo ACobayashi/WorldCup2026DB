@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <defs>
+    <radialGradient id="surface" cx="32%" cy="22%" r="80%"><stop stop-color="#fff"/><stop offset=".5" stop-color="#e5eaff"/><stop offset="1" stop-color="#8c9bc5"/></radialGradient>
+    <radialGradient id="shade" cx="25%" cy="20%" r="85%"><stop offset=".6" stop-color="#172541" stop-opacity="0"/><stop offset="1" stop-color="#172541" stop-opacity=".65"/></radialGradient>
+    <clipPath id="circle"><circle cx="60" cy="60" r="55"/></clipPath>
+  </defs>
+  <circle cx="60" cy="60" r="55" fill="url(#surface)"/>
+  <g clip-path="url(#circle)" stroke="#5b698a" stroke-width="1.2" stroke-linejoin="round">
+    <path d="m45 40 27-4 15 22-17 22-27-6-9-23Z" fill="#28324d"/>
+    <path d="m22 13 22 3 3 18-19 13L8 32Zm74 3 13 15-8 21-18-4-6-23ZM14 70l19 8 5 21-21 12-14-23Zm77 16 23-9 8 26-23 14-20-13ZM47 108l22 1 9 17-34 3-9-11Z" fill="#2c3654"/>
+    <path d="m44 16 12-14m-9 32-2 6m32-15-5 11m15 22 14-6m-68 26 10-4m36 30-9-24m-32 19 9 9M28 47l6 4M5 57l29-6m67 1 20 11M17 111l18 7m64-1-21 9" fill="none"/>
+  </g>
+  <circle cx="60" cy="60" r="55" fill="url(#shade)"/>
+  <circle cx="60" cy="60" r="55" fill="none" stroke="#d4ddf9" stroke-width="1"/>
+</svg>

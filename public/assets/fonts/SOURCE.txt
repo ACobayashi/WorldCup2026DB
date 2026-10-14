@@ -1,0 +1,5 @@
+Fourward Workspace Sans is a web subset of Noto Sans SC.
+Source: https://github.com/google/fonts/tree/main/ofl/notosanssc
+License: SIL Open Font License 1.1; see OFL.txt.
+Includes basic Latin, CJK Unified Ideographs, Extension A and punctuation.
+Family name changed for the derived web font.

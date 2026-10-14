@@ -4,19 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#141719">
-    <meta name="description" content="林子媛、严苑毓、马禹翔、韩羽宸的团队主页交互初版。">
+    <meta name="guestbook-mode" content="demo">
+    <meta name="description" content="FOURWARD 四人同行，认识林子媛、严苑毓、马禹翔、韩羽宸，也给我们的团队留句话">
     <title>FOURWARD 四人同行 · 团队主页</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23141719'/%3E%3Cpath d='M15 12h13v40H15zm21 0h13v40H36zM8 26h48v12H8z' fill='%238b9cff'/%3E%3C/svg%3E">
     <link rel="preload" as="image" href="assets/images/members/lin-ziyuan.png">
-    <link rel="stylesheet" href="assets/css/team.css?v=6">
-    <script type="module" src="assets/js/app.mjs?v=4"></script>
+    <link rel="stylesheet" href="assets/css/team.css?v=8">
+    <script type="module" src="assets/js/app.mjs?v=7"></script>
   </head>
   <body data-scene="team">
     <a class="skip-link" href="#main">跳到主要内容</a>
     <header class="site-header">
       <a class="brand" href="#team" aria-label="FOURWARD 团队首页">
         <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 3h9v34H8zM23 3h9v34h-9zM2 15h36v10H2z" fill="currentColor"/></svg>
-        <span>FOURWARD<small>四人同行 / 队名暂定</small></span>
+        <span>FOURWARD<small>四人同行 / WORLD CUP 2026</small></span>
       </a>
       <nav class="main-nav" aria-label="主导航">
         <a class="is-active" href="#team" aria-current="location"><span>01</span>团队介绍</a>
@@ -29,13 +30,18 @@
     <main class="scene-shell" id="main" tabindex="-1">
       <section class="scene team-section" id="team" aria-labelledby="team-title">
         <div class="team-content">
+          <div class="team-stadium" aria-hidden="true"><img src="assets/images/worldcup/stadium-night.jpg" alt="" width="1738" height="600"><div class="team-stadium-shade"></div><div class="team-stadium-light"></div></div>
+          <div class="team-pitch" aria-hidden="true"><svg viewBox="0 0 600 370" fill="none"><rect x="15" y="15" width="570" height="340"/><path d="M300 15v340M15 88h90v194H15M585 88h-90v194h90M15 139h36v92H15M585 139h-36v92h36"/><circle cx="300" cy="185" r="57"/><path class="team-ball-path" d="M135 300Q245 130 350 212T520 73"/></svg><img src="assets/images/worldcup/football.svg" alt=""></div>
           <div class="team-grid" aria-hidden="true"></div>
-          <div class="team-topline"><span>INTERNET DATABASE DEVELOPMENT</span><span>TEAM EDITION / 2026</span></div>
+          <div class="team-topline"><span>FOURWARD / OUR HOME GROUND</span><span>WORLD CUP EDITION / 2026</span></div>
           <div class="team-copy">
             <p class="eyebrow"><span class="live-dot"></span> 四个名字，一次共同创作</p>
-            <h1 id="team-title" tabindex="-1">各有热爱，<br><span>一起上场。</span></h1>
-            <p class="team-description">来自计算机与密码安全领域的四位同学。<br>在这里认识我们，也见证一个世界杯项目的诞生。</p>
+            <h1 id="team-title" tabindex="-1">各有热爱<br><span>一起上场</span></h1>
+            <p class="team-description">来自计算机与密码安全领域的四位同学<br>在这里认识我们，也给我们的主场留句话</p>
             <a class="primary-button" href="#members">认识我们的队员 <span aria-hidden="true">↗</span></a>
+            <button class="team-message-button" id="open-team-message" type="button">给团队留句话 ↗</button>
+            <p class="team-motto" id="team-motto">“各有热爱，一起上场。”</p>
+            <button class="stands-jump" id="view-team-stands" type="button">听听场边的声音 <span aria-hidden="true">↓</span></button>
             <div class="team-facts" aria-label="团队组成">
               <div><strong>04</strong><span>团队成员</span></div>
               <div><strong>2026</strong><span>世界杯主题</span></div>
@@ -50,8 +56,15 @@
             <div class="art-caption"><span>LIN ZIYUAN</span><span>YAN YUANYU</span><span>MA YUXIANG</span><span>HAN YUCHEN</span></div>
             <span class="art-coordinate">[ 04 / TOGETHER ]</span>
           </div>
-          <div class="team-bottomline"><span>BUILD SOMETHING TOGETHER.</span><a href="#members">探索成员档案 <span aria-hidden="true">↓</span></a><span>形象为卡通占位 · 非本人肖像</span></div>
+          <div class="team-bottomline"><span>BUILD SOMETHING TOGETHER</span><a href="#members">探索成员档案 <span aria-hidden="true">↓</span></a><span>04 MEMBERS / ONE TEAM</span></div>
         </div>
+        <section class="team-stands" id="team-stands" aria-labelledby="team-stands-title">
+          <div class="stands-heading"><div><p>FROM THE STANDS</p><h2 id="team-stands-title">场边留言</h2></div><button class="team-message-button" id="open-team-stands" type="button">全部留言 / 留句话 <span aria-hidden="true">↗</span></button></div>
+          <p class="stands-caption" id="team-stands-caption">那些来到我们主场的声音</p>
+          <div class="stands-list" id="team-stands-list" aria-busy="true"><p class="stands-empty" role="status">正在读取留言…</p></div>
+          <button class="stands-retry" id="refresh-team-stands" type="button" hidden>重新读取留言 ↻</button>
+          <p class="homepage-credits">人物为插画形象 · 球场摄影 <a href="https://commons.wikimedia.org/wiki/File:Campnou_3.jpg" target="_blank" rel="noopener noreferrer">Pure-football</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></p>
+        </section>
       </section>
 
       <section class="scene members-section" id="members" aria-labelledby="members-title">
@@ -64,37 +77,37 @@
             <div class="profile-heading"><p>FOURWARD :// <span id="member-number">01</span></p><h2 id="members-title" tabindex="-1">PROFILE <span>成员档案</span></h2></div>
             <div class="member-identity"><p class="member-english" id="member-english">LIN ZIYUAN</p><h3 id="member-name">林子媛</h3></div>
             <div class="member-school-strip"><span>SCHOOL / 学院</span><p id="member-school">密码与网络空间安全学院</p></div>
+            <div class="member-tags" id="member-tags" aria-label="成员特点"><span>密码安全</span><span>页面交互</span></div>
             <div class="member-details">
-              <div class="member-assignment"><span class="field-label">分工 <small>暂定</small></span><strong id="member-role">团队主页 · 页面与交互</strong><p id="member-task">搭建团队展示页面，完善成员切换、视觉和交互效果。</p></div>
-              <div class="member-quote"><span class="field-label">个人留言 <small>示例文案</small></span><p id="member-quote">“把想法写成代码，让协作看得见。”</p></div>
+              <div class="member-assignment"><span class="field-label">分工</span><strong id="member-role">团队主页 · 页面与交互</strong><p id="member-task">搭建团队展示页面，完善成员切换、视觉和交互效果</p></div>
+              <div class="member-quote"><span class="field-label">个人座右铭</span><p id="member-quote">“一个有趣且靠谱的人。”</p></div>
             </div>
             <div class="member-actions"><button class="dark-button" id="open-message" type="button">给她留言 <span aria-hidden="true">↗</span></button><a class="github-link" id="member-github" aria-disabled="true" tabindex="-1">GitHub 待补充 <span aria-hidden="true">↗</span></a></div>
-            <p class="member-demo-note">分工与个人留言是展示草案，可后续替换。</p>
           </div>
           <div class="member-visual" id="member-visual">
             <div class="portrait-frame"><div class="portrait-art member-portrait" id="member-portrait" role="img" aria-label="林子媛的卡通示意形象"><img id="member-portrait-image" src="assets/images/members/lin-ziyuan.png" alt="" aria-hidden="true" width="887" height="1774"></div></div>
-            <div class="portrait-label"><span id="portrait-label">01 / LIN ZIYUAN</span><span>ILLUSTRATED PLACEHOLDER</span></div>
+            <div class="portrait-label"><span id="portrait-label">01 / LIN ZIYUAN</span><span>FOURWARD / OUR TEAM</span></div>
           </div>
           <div class="member-controls"><span class="current-member" id="current-member">01<span>/ 04</span></span><button id="previous-member" type="button" aria-label="上一位成员">↑</button><button id="next-member" type="button" aria-label="下一位成员">↓</button></div>
           <div class="member-selector-row"><span class="selector-caption">SELECT A MEMBER <small>← → 切换</small></span><div class="member-selector" id="member-selector" role="group" aria-label="选择团队成员"></div></div>
-          <div class="message-preview"><span>LOCAL MESSAGE</span><p id="message-preview-text">还没有给林子媛的留言，来打个招呼吧。</p><button id="view-messages" type="button">留言板 <span aria-hidden="true">↗</span></button></div>
+          <div class="message-preview"><span id="message-source-label">LOCAL DEMO</span><p id="message-preview-text">还没有给林子媛的留言，来打个招呼吧。</p><button id="view-messages" type="button">留言板 <span aria-hidden="true">↗</span></button></div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer"><span id="scene-counter">01 / 02 · TEAM</span><span>滚轮 / 滑动切换场景 · 人物为虚构占位形象</span><a id="scene-next" href="#members">成员档案 ↓</a></footer>
+    <footer class="site-footer"><span id="scene-counter">01 / 02 · TEAM</span><span>滚轮 / 滑动切换场景</span><a id="team-workspace" href="admin.php" hidden>团队工作台 ↗</a><a id="scene-next" href="#members">成员档案 ↓</a></footer>
     <p class="visually-hidden" id="member-status" role="status" aria-live="polite"></p>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
     <dialog class="message-dialog" id="message-dialog" aria-labelledby="message-dialog-title">
       <div class="dialog-topline"><span>LEAVE A MESSAGE</span><button type="button" class="dialog-close" data-close-dialog aria-label="关闭留言窗口">×</button></div>
       <h2 id="message-dialog-title">给林子媛留言</h2>
-      <p class="dialog-notice">本地演示：留言只保存在当前浏览器，不会发送给本人。</p>
-      <form id="message-form"><label for="message-member">留言给谁</label><select id="message-member" name="member" required></select><label for="message-author">你的称呼 <span>可不填</span></label><input id="message-author" name="author" autocomplete="off" maxlength="24" placeholder="例如：一位同学"><label for="message-content">想对 TA 说的话</label><textarea id="message-content" name="message" rows="3" maxlength="280" required placeholder="留下一句问候，或者聊聊你的想法。"></textarea><div class="form-bottom"><span id="message-length">0 / 280</span><button class="dark-button" type="submit">保存留言 <span aria-hidden="true">↗</span></button></div><p id="message-error" class="message-error" role="alert"></p></form>
-      <div class="saved-messages"><div class="saved-messages-heading"><h3>给 TA 的留言</h3><span id="message-count">0 条</span></div><div id="message-list"></div></div>
+      <p class="dialog-notice" id="message-notice">本地演示：留言只保存在当前浏览器，不会发送给本人。</p>
+      <form id="message-form"><label for="message-member">留言给谁</label><select id="message-member" name="member" required></select><label for="message-author">你的称呼 <span>可不填</span></label><input id="message-author" name="author" autocomplete="off" maxlength="48" placeholder="例如：一位同学"><label for="message-content">想说的话</label><textarea id="message-content" name="message" rows="3" maxlength="560" required placeholder="留下一句问候，或者聊聊你的想法。"></textarea><div class="form-bottom"><span id="message-length">0 / 280</span><button class="dark-button" id="message-submit" type="submit">保存演示留言 <span aria-hidden="true">↗</span></button></div><p id="message-error" class="message-error" role="status" aria-live="polite"></p></form>
+      <div class="saved-messages"><div class="saved-messages-heading"><h3 id="message-list-heading">给 TA 的留言</h3><span id="message-count">0 条</span></div><div id="message-list"></div><nav id="message-pagination" class="message-pagination" aria-label="留言分页" hidden><button id="message-prev" type="button">← 上一页</button><span id="message-page">第 1 页</span><button id="message-next" type="button">下一页 →</button></nav></div>
     </dialog>
 
-    <dialog class="worldcup-dialog" id="worldcup-dialog" aria-labelledby="worldcup-dialog-title"><div class="dialog-topline"><span>NEXT PROJECT</span><button type="button" class="dialog-close" data-close-dialog aria-label="关闭世界杯提示">×</button></div><span class="worldcup-dialog-year" aria-hidden="true">2026</span><h2 id="worldcup-dialog-title">世界杯项目，准备中。</h2><p>本轮先完成团队介绍与成员展示。<br>赛事功能会在后续阶段加入。</p><button class="dark-button" type="button" data-close-dialog>先认识我们的团队 <span aria-hidden="true">↗</span></button></dialog>
-    <noscript><p class="noscript-note">请启用 JavaScript 体验成员切换和本地留言。团队信息仍可阅读。</p></noscript>
+    <dialog class="worldcup-dialog" id="worldcup-dialog" aria-labelledby="worldcup-dialog-title"><div class="dialog-topline"><span>NEXT PROJECT</span><button type="button" class="dialog-close" data-close-dialog aria-label="关闭世界杯提示">×</button></div><span class="worldcup-dialog-year" aria-hidden="true">2026</span><h2 id="worldcup-dialog-title">世界杯项目，准备中</h2><p>本轮先完成团队介绍与成员展示。<br>赛事功能会在后续阶段加入。</p><button class="dark-button" type="button" data-close-dialog>先认识我们的团队 <span aria-hidden="true">↗</span></button></dialog>
+    <noscript><p class="noscript-note">请启用 JavaScript 体验成员切换和留言功能。团队信息仍可阅读。</p></noscript>
   </body>
 </html>

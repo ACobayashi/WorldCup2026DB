@@ -2,17 +2,17 @@
 
 ## Project Structure and Module Organization
 
-This repository contains a four-person university coursework project. The current implementation is a buildless team-homepage prototype, not a completed PHP application. `public/index.html` is the entry point. Styles, browser modules, and generated character artwork live in `public/assets/css/`, `public/assets/js/`, and `public/assets/images/`.
+This repository contains a four-person university coursework project. The buildless team homepage supports a static demo and a working PHP/PDO guestbook slice. `public/index.html` serves the static demo; `public/index.php`, `api.php` and `admin.php` serve the database-backed homepage and workspace. Styles, browser modules, and generated character artwork live in `public/assets/css/`, `public/assets/js/`, and `public/assets/images/`.
 
-`app/team/` reserves controllers, models, and views for the later MVC implementation. `app/common/` is for shared functionality. Leave `app/worldcup/` unimplemented until requested; the current UI only provides a forthcoming-project entrance. Final coursework belongs in `data/team/` and `data/personal/`. Generate `data/install.sql` only when a real schema exists. Do not edit or commit unrelated local reference material in `IGNORE/`.
+`app/team/` contains the guestbook/motto controllers, models and management view. `app/common/` provides shared PDO, sessions, account roles, CSRF and quotas. Leave `app/worldcup/` unimplemented until requested; the current UI only provides a forthcoming-project entrance. Final coursework belongs in `data/team/` and `data/personal/`. `data/install.sql` currently defines this slice's four real tables, not the final >= 11-table schema. Do not edit or commit unrelated local reference material in `IGNORE/`.
 
 ## Development and Validation Commands
 
-- `python3 -m http.server 5173 --bind 127.0.0.1 --directory public`: serve the prototype at `http://127.0.0.1:5173`.
+- `python3 scripts/serve-prototype.py`: serve the static demo at `http://127.0.0.1:5173` with a deterministic .mjs MIME type.
 - `node scripts/check-prototype.mjs`: validate member records, message normalization, and required assets.
 - `node --check public/assets/js/app.mjs`: check browser-module syntax.
 
-No package installation, production build, PHP framework, database, or formatter is configured yet. Do not document nonexistent commands as working features.
+The slice requires PHP 8.2+, PDO MySQL, mbstring and a MySQL-compatible database. It uses small PHP MVC classes without a third-party framework. See README for isolated XAMPP startup and `php scripts/check-guestbook.php` for database integration checks. No production deployment or Docker configuration has been verified. Do not document nonexistent commands as working features.
 
 ## Coding Style and Naming Conventions
 
@@ -20,7 +20,7 @@ Use two-space indentation for HTML, CSS, and JavaScript. Use kebab-case for asse
 
 ## Testing Guidelines
 
-Run the validation script after changes. Manually verify all four member selections, mobile layout, missing GitHub links, the World Cup placeholder, and message submission/reload. No coverage threshold or test framework has been adopted. Browser-local messages must remain explicitly labeled as a demo, not server-delivered messages.
+Run the prototype validation script after changes. For backend changes, lint PHP and run database checks against a development DB. Manually verify all four member selections, mobile layout, missing GitHub links, the World Cup placeholder, and message submission/reload. Check moderation visibility, CSRF, member/admin permissions and restart persistence. Browser-local messages must remain explicitly labeled as a demo, not server-delivered messages.
 
 ## Commit and Pull Request Guidelines
 

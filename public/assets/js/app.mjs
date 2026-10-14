@@ -1,15 +1,13 @@
-import { members, safeGithubUrl } from './members.mjs?v=3';
-import { MESSAGE_STORAGE_KEY, normalizeMessages, createMessage } from './messages.mjs';
+import { members, safeGithubUrl } from './members.mjs?v=4';
+import { createGuestbook } from './guestbook.mjs?v=2';
 import { animateMemberEntrance, transitionScenes } from './motion.mjs';
 
 const $ = (id) => document.getElementById(id);
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
-const memberIds = members.map((member) => member.id);
 const selector = $('member-selector');
 const messageDialog = $('message-dialog');
 const worldcupDialog = $('worldcup-dialog');
 let selectedIndex = 0;
-let messages = readMessages();
 let toastTimer;
 let activeAnimations = [];
 const scenes = [$('team'), $('members')];
@@ -17,20 +15,14 @@ const navLinks = Array.from(document.querySelectorAll('.main-nav a'));
 let activeScene = 'team';
 let transitionToken = 0;
 
-function readMessages() {
-  try {
-    return normalizeMessages(JSON.parse(localStorage.getItem(MESSAGE_STORAGE_KEY) || '[]'), memberIds);
-  } catch {
-    return [];
-  }
-}
-
 function notify(text) {
   clearTimeout(toastTimer);
   $('toast').textContent = text;
   $('toast').classList.add('is-visible');
   toastTimer = setTimeout(() => $('toast').classList.remove('is-visible'), 3500);
 }
+
+const guestbook = createGuestbook({ members, notify, onMottosChange: updateMotto });
 
 function makeSelectors() {
   members.forEach((member, index) => {
@@ -73,10 +65,6 @@ function makeSelectors() {
     });
     selector.append(button);
 
-    const option = document.createElement('option');
-    option.value = member.id;
-    option.textContent = member.name;
-    $('message-member').append(option);
   });
 }
 
@@ -94,7 +82,12 @@ function selectMember(index, animate = true) {
   $('member-school').textContent = member.school;
   $('member-role').textContent = member.role;
   $('member-task').textContent = member.task;
-  $('member-quote').textContent = `“${member.quote}”`;
+  $('member-tags').replaceChildren(...member.tags.map((text) => {
+    const tag = document.createElement('span');
+    tag.textContent = text;
+    return tag;
+  }));
+  updateMotto();
   $('member-number').textContent = number;
   $('current-member').firstChild.textContent = number;
   $('portrait-label').textContent = `${number} / ${member.english}`;
@@ -121,7 +114,7 @@ function selectMember(index, animate = true) {
   Array.from(selector.children).forEach((button, buttonIndex) => {
     button.setAttribute('aria-pressed', String(buttonIndex === selectedIndex));
   });
-  updateMessagePreview();
+  guestbook.selectMember(member);
   $('member-status').textContent = `${member.name}，${member.school}，${number} / 04。`;
   if (animate) playMemberEntrance();
 }
@@ -136,86 +129,22 @@ function playMemberEntrance() {
   });
 }
 
-function updateMessagePreview() {
+function updateMotto() {
   const member = members[selectedIndex];
-  const entries = messages.filter((entry) => entry.memberId === member.id);
-  $('message-preview-text').textContent = entries.length
-    ? `${entries.length} 条本地留言 · ${entries.at(-1).message}`
-    : `还没有给${member.name}的留言，来打个招呼吧。`;
-}
-
-function renderMessages() {
-  const member = members.find((item) => item.id === $('message-member').value) || members[selectedIndex];
-  const entries = messages.filter((entry) => entry.memberId === member.id).slice().reverse();
-  $('message-dialog-title').textContent = `给${member.name}留言`;
-  $('message-count').textContent = `${entries.length} 条`;
-  const list = $('message-list');
-  list.replaceChildren();
-
-  if (!entries.length) {
-    const empty = document.createElement('p');
-    empty.className = 'empty-messages';
-    empty.textContent = '这里还很安静。你的第一句问候，会留在这个浏览器里。';
-    list.append(empty);
-    return;
-  }
-
-  entries.forEach((entry) => {
-    const article = document.createElement('article');
-    article.className = 'saved-message';
-    const heading = document.createElement('div');
-    const author = document.createElement('strong');
-    author.textContent = entry.author;
-    const time = document.createElement('time');
-    time.dateTime = entry.createdAt;
-    time.textContent = new Intl.DateTimeFormat('zh-CN', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' }).format(new Date(entry.createdAt));
-    heading.append(author, time);
-    const body = document.createElement('p');
-    body.textContent = entry.message;
-    article.append(heading, body);
-    list.append(article);
-  });
-}
-
-function openMessageDialog() {
-  $('message-member').value = members[selectedIndex].id;
-  $('message-error').textContent = '';
-  renderMessages();
-  messageDialog.showModal();
+  const motto = guestbook.motto(member.id);
+  $('member-quote').textContent = `“${motto?.text || member.quote}”`;
+  const teamMotto = guestbook.motto('team');
+  if (teamMotto) $('team-motto').textContent = `“${teamMotto.text}”`;
 }
 
 makeSelectors();
 selectMember(0, false);
+guestbook.init();
+$('view-team-stands').addEventListener('click', () => {
+  $('team-stands').scrollIntoView({ behavior: motionPreference.matches ? 'auto' : 'smooth', block: 'start' });
+});
 $('previous-member').addEventListener('click', () => selectMember(selectedIndex - 1));
 $('next-member').addEventListener('click', () => selectMember(selectedIndex + 1));
-$('open-message').addEventListener('click', openMessageDialog);
-$('view-messages').addEventListener('click', openMessageDialog);
-$('message-member').addEventListener('change', renderMessages);
-$('message-content').addEventListener('input', (event) => {
-  $('message-length').textContent = `${event.target.value.length} / 280`;
-  $('message-error').textContent = '';
-});
-$('message-form').addEventListener('submit', (event) => {
-  event.preventDefault();
-  try {
-    const memberId = $('message-member').value;
-    if (!memberIds.includes(memberId)) throw new Error('请选择一位团队成员。');
-    const entry = createMessage(memberId, $('message-author').value, $('message-content').value);
-    const nextMessages = normalizeMessages([...messages, entry], memberIds);
-    localStorage.setItem(MESSAGE_STORAGE_KEY, JSON.stringify(nextMessages));
-    messages = nextMessages;
-    $('message-content').value = '';
-    $('message-length').textContent = '0 / 280';
-    $('message-error').textContent = '';
-    renderMessages();
-    updateMessagePreview();
-    notify('留言已保存在本浏览器，未发送给本人。');
-  } catch (error) {
-    $('message-error').textContent = error.message === '请填写 1 至 280 字的留言。'
-      ? error.message
-      : '保存失败。请检查留言内容或浏览器存储权限。';
-  }
-});
 
 document.querySelectorAll('[data-worldcup]').forEach((button) => button.addEventListener('click', () => worldcupDialog.showModal()));
 document.querySelectorAll('[data-close-dialog]').forEach((button) => button.addEventListener('click', () => button.closest('dialog').close()));
