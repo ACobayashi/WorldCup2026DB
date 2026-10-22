@@ -70,7 +70,27 @@ python3 scripts/serve-prototype.py
 
 打开 http://127.0.0.1:5173 。预览脚本固定 .mjs 的 JavaScript 响应类型，避免 Windows 文件关联将其错误地识别成纯文本；不执行 PHP。运行 `node scripts/check-prototype.mjs` 检查初版。
 
-静态预览及 GitHub Pages 保留浏览器本地演示留言，明确标注为本地演示，不能跨浏览器共享，也不运行审核后台。使用 PHP 入口时则调用真实数据库接口，服务故障会显示失败并保留输入，不自动改为本地保存。页面保留独立场景转场、四人档案、人物入场和面部背景动效，成员卡片支持方向键。成员标签根据学院及分工整理，人物形象为插画。主页的“场边留言”展示最新三条团队留言，数据库模式只展示审核通过的内容；全部留言和分页保留在留言弹窗中。世界杯业务仍由其他成员负责，这部分只保留入口。
+静态预览及 GitHub Pages 保留浏览器本地演示留言，明确标注为本地演示，不能跨浏览器共享，也不运行审核后台。使用 PHP 入口时则调用真实数据库接口，服务故障会显示失败并保留输入，不自动改为本地保存。页面保留独立场景转场、四人档案、人物入场和面部背景动效，成员卡片支持方向键。成员标签根据学院及分工整理，人物形象为插画。主页的“场边留言”展示最新三条团队留言，数据库模式只展示审核通过的内容；全部留言和分页保留在留言弹窗中。
+
+`worldcup/` 提供赛程面板初版：比分大屏、支持度、状态/日期筛选和比赛详情。两个模块共用蓝紫色主题、导航和玻璃按钮。世界杯对阵、时间、比分和票数均为合成示例；支持选择仅保存在浏览器，不是共享投票，尚未接入赛事 API 或世界杯业务表。团队留言后台保持原有 PHP 功能，不受此演示模式影响。
+
+## 统一接入约定（目标方案，分阶段接入）
+
+当前团队模块已经使用轻量 PHP MVC/PDO 运行，保留现有账号、接口、SQL 和功能链。下表是后续统一集成目标，不代表已安装 Yii2、完成数据库迁移或验证 Docker 部署；不为追求目录一致而重建账号或清空数据。
+
+| 边界 | 两组统一采用 |
+| --- | --- |
+| 环境 | 目标为 Yii2 2.0 单应用双模块；PHP 8.3、MySQL 8.4、Composer 2。迁移时提交一份 `composer.lock`，统一补丁版本；现有 PHP 8.2+/PDO 和已验证的 XAMPP/MariaDB 切片先保留，不混用两套登录。 |
+| MVC | 唯一 Web 根目录 `public/`；`app/team/`、`app/worldcup/` 各自管理 MVC，Yii2 Module 路径配置到对应目录；共享后端放 `app/common/`。控制器不直接写 SQL。 |
+| 路由 | 目标路径 `/team`、`/worldcup`、`/admin/team`、`/admin/worldcup` 和公共 `/login`。现有 `api.php?action=...`、`admin.php` 暂时兼容；Pages 预览是 `/#team` 与 `/worldcup/`。相对路径跳转，不硬编码云服务器地址。 |
+| 登录 | 继续复用现有 `users` 与公共 Session/权限检查；迁移 Yii2 时统一接入 Session + RBAC，不另建平行账号。现有 member/admin 保留，editor 按后续需求添加；权限按 `team.*`、`worldcup.*` 分区。写操作验证 CSRF，密码保持哈希。 |
+| 数据库 | 最终一个逻辑库 `worldcup2026`，业务表 `team_`/`wc_`、新公共表 `sys_`；现有 `users`、`app_rate_limits` 保留，重命名需显式迁移。统一 InnoDB、utf8mb4，目标主外键 unsigned BIGINT，现有字段按迁移升级。各自本地库使用同一套迁移和种子，不随意共用线上开发库。 |
+| UI | 公共 `common.css`/`common.mjs` 维护字体、蓝紫色变量、导航、按钮和通知；模块只加载自己的 CSS/JS。前端使用原生 ES Modules + Fetch，动效用 CSS/WAAPI；现有支持度用原生条形图，不另引图表库。 |
+| 接口 | 新接口目标 `/api/v1/...`、JSON `{code,message,data,errors}`、字段 snake_case；分页 `page`、`page_size`（默认 20、最多 100），列表 `data.items`、`data.meta`。现有留言 `{ok,data,error}` 和 camelCase 字段先保持兼容，统一迁移时再加适配。HTTP 状态码遵循语义；UTC 存储、ISO 8601 传输、北京时间展示。比赛状态 scheduled/live/finished/postponed/cancelled。 |
+| 配置 | 一个环境变量配置入口，提供 `.env.example`，真实凭据不进 Git；账号/权限/公共布局由一处维护。业务模型不能跨模块直接写表，需要通过共享服务/接口协作。 |
+| 部署 | 正式版目标一份 Docker Compose（Nginx + PHP-FPM + MySQL），统一迁移与种子；现有 `data/install.sql` 保留四张表，最终扩展成同一份交付 SQL，不覆盖已有数据。数据库与上传目录挂持久卷。Pages 只做前端预览；Docker 配置尚未实现。 |
+
+支持率按有效支持票计算，**不是胜率**。正式版每个账号对每场比赛一条支持记录，通过唯一约束和事务更新；比分只能来自管理员/赛事数据源。模拟数据适配器为 `public/assets/js/worldcup-data.mjs`，接入时替换数据来源，不改变视图职责。当前支持演示的取消/改选不代表后端权限已实现。
 
 ## Structure
 
@@ -95,6 +115,7 @@ DBDev/
 |   |-- index.php              # 数据库模式主页
 |   |-- api.php                # 访客留言和座右铭读取
 |   |-- admin.php              # 登录、审核和座右铭工作台
+|   |-- worldcup/index.html    # 世界杯赛程面板
 |   `-- assets/
 |       |-- css/
 |       |-- js/

@@ -5,6 +5,10 @@ import { inflateSync } from 'node:zlib';
 import { members, safeGithubUrl } from '../public/assets/js/members.mjs';
 import { normalizeMessages, createMessage } from '../public/assets/js/messages.mjs';
 import {
+  demoMatches, DEMO_SNAPSHOT_AT, beijingDate, selectFeaturedMatch,
+  filterMatches, normalizeSupportChoices, supportStats, scoreLabel, loadMatchFeed,
+} from '../public/assets/js/worldcup-data.mjs';
+import {
   MOTION_TIMINGS,
   animateMemberEntrance,
   memberEntranceKeyframes,
@@ -46,6 +50,9 @@ assert.equal(message.author, '一位访客');
 assert.equal(message.message, '你好！');
 assert.throws(() => createMessage(ids[0], '访客', '   '));
 assert.throws(() => createMessage(ids[0], '访客', 'a'.repeat(281)));
+assert.equal(Array.from(createMessage('team', '😀'.repeat(24), '😀'.repeat(280)).message).length, 280);
+assert.throws(() => createMessage('team', '名'.repeat(25), '你好'));
+assert.equal(normalizeMessages([{ ...message, memberId: 'team' }], ['team', ...ids]).length, 1);
 assert.deepEqual(normalizeMessages(null, ids), []);
 assert.equal(normalizeMessages([message, { ...message, memberId: 'unknown' }, { ...message, createdAt: 'invalid' }, { ...message, message: '' }], ids).length, 1);
 assert.equal(normalizeMessages(Array.from({ length: 90 }, () => message), ids).length, 80);
@@ -137,12 +144,18 @@ assert.equal(finishingTarget.calls[0].animation.cancelCount, 1, 'Cancellation mu
 const html = await readFile(new URL('public/index.html', root), 'utf8');
 const htmlIds = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
 assert.equal(htmlIds.length, new Set(htmlIds).size, 'HTML IDs must be unique');
-for (const id of ['member-selector', 'member-portrait-image', 'member-face-image', 'message-form', 'message-dialog', 'worldcup-dialog']) assert.ok(htmlIds.includes(id));
+for (const id of ['member-selector', 'member-portrait-image', 'member-face-image', 'message-form', 'message-dialog', 'member-tags', 'team-motto', 'team-stands-list', 'open-team-message', 'team-workspace', 'message-pagination', 'message-submit']) assert.ok(htmlIds.includes(id));
+assert.ok(html.includes('name="guestbook-mode" content="demo"'));
+const phpEntry = await readFile(new URL('public/index.php', root), 'utf8');
+assert.ok(phpEntry.includes('name="guestbook-mode" content="server"'), 'The PHP entry must retain server-mode guestbook integration');
+assert.ok(html.includes('href="worldcup/"'), 'The homepage must link to the actual match center');
 assert.ok(!html.includes('所属学院'), 'The homepage must not display the removed college-count statistic');
 const app = await readFile(new URL('public/assets/js/app.mjs', root), 'utf8');
+assert.ok(app.includes('createGuestbook({ members, notify, onMottosChange: updateMotto })'));
+assert.ok(app.includes('guestbook.init()'));
 assert.ok(!app.includes('.innerHTML'), 'Visitor input must never be inserted as HTML');
 assert.ok(app.includes('prefers-reduced-motion'));
-for (const filename of ['public/assets/css/team.css', 'public/assets/js/app.mjs', 'public/assets/js/motion.mjs', 'public/assets/images/team-group.png', 'public/assets/images/member-closeups.png']) await access(new URL(filename, root));
+for (const filename of ['public/assets/css/common.css', 'public/assets/js/common.mjs', 'public/assets/css/team.css', 'public/assets/js/app.mjs', 'public/assets/js/motion.mjs', 'public/assets/images/team-group.png', 'public/assets/images/member-closeups.png', 'public/assets/css/worldcup.css', 'public/assets/js/worldcup.mjs', 'public/assets/images/flags.svg']) await access(new URL(filename, root));
 assert.ok(html.includes('id="member-watermark">NKDEV</span>'));
 assert.ok(app.includes('--face-offset'), 'Member selection must update the close-up panel');
 const css = await readFile(new URL('public/assets/css/team.css', root), 'utf8');
@@ -167,4 +180,52 @@ for (const member of members) {
   assert.equal(pixels[4], 0, 'The top-left corner must be transparent, not a baked-in backdrop');
 }
 
-console.log(`Prototype checks passed: four members, safe URLs, messages, scene/member motion, reduced motion, animation cleanup, unique DOM IDs, and assets (${fileURLToPath(root)}).`);
+const matchIds = demoMatches.map((match) => match.id);
+assert.equal(new Set(matchIds).size, demoMatches.length);
+assert.equal(selectFeaturedMatch(demoMatches).status, 'live');
+assert.equal(selectFeaturedMatch(demoMatches.filter((match) => match.status !== 'live')).id, 'demo-02');
+assert.equal(selectFeaturedMatch(demoMatches.filter((match) => match.status === 'finished')).id, 'demo-08');
+assert.equal(selectFeaturedMatch([]), null);
+assert.equal(beijingDate('2026-06-28T22:00:00Z'), '2026-06-29', 'Dates must use Beijing time, not browser time');
+assert.equal(filterMatches(demoMatches).length, 6);
+assert.equal(filterMatches(demoMatches, { status: 'live' }).length, 1);
+assert.equal(filterMatches(demoMatches, { status: 'all' }).length, 8);
+assert.equal(filterMatches(demoMatches, { date: '2026-06-29' }).length, 2);
+assert.equal(filterMatches(demoMatches, { date: '2099-01-01' }).length, 0);
+assert.deepEqual(normalizeSupportChoices(null, matchIds), {});
+assert.deepEqual(normalizeSupportChoices(['home'], matchIds), {});
+assert.deepEqual(normalizeSupportChoices({ 'demo-01': 'home', 'demo-02': 'away', 'demo-03': 'invalid', unknown: 'home' }, matchIds), { 'demo-01': 'home', 'demo-02': 'away' });
+const flags = await readFile(new URL('public/assets/images/flags.svg', root), 'utf8');
+for (const match of demoMatches) {
+  assert.ok(Number.isFinite(Date.parse(match.kickoff_at)));
+  assert.ok(['live', 'scheduled', 'finished'].includes(match.status));
+  assert.notEqual(match.home_team.code, match.away_team.code);
+  for (const side of ['home', 'away']) {
+    assert.ok(flags.includes(`id="${match[`${side}_team`].code}"`));
+    assert.ok(Number.isInteger(match[`${side}_support`]) && match[`${side}_support`] >= 0);
+    if (match.status === 'scheduled') assert.equal(match[`${side}_score`], null);
+    else assert.ok(Number.isInteger(match[`${side}_score`]) && match[`${side}_score`] >= 0);
+  }
+  for (const choice of [undefined, 'home', 'away']) {
+    const stats = supportStats(match, choice);
+    assert.equal(stats.homePercent + stats.awayPercent, stats.total ? 100 : 0);
+    assert.equal(stats.total, match.home_support + match.away_support + (choice ? 1 : 0));
+  }
+}
+assert.equal(scoreLabel(demoMatches[1]), '— : —');
+assert.equal(scoreLabel(demoMatches[0]), '2 : 1');
+assert.deepEqual(supportStats(demoMatches[4]), { home: 0, away: 0, total: 0, homePercent: 0, awayPercent: 0 });
+const feed = await loadMatchFeed();
+assert.equal(feed.code, 'OK');
+assert.equal(feed.data.source, 'demo');
+assert.equal(feed.data.snapshot_at, DEMO_SNAPSHOT_AT);
+const wcHtml = await readFile(new URL('public/worldcup/index.html', root), 'utf8');
+const wcIds = [...wcHtml.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
+assert.equal(wcIds.length, new Set(wcIds).size);
+assert.ok(wcHtml.includes('并非官方或实时赛况'));
+assert.ok(wcHtml.includes('href="../#team"'));
+for (const filename of ['public/assets/js/worldcup.mjs', 'public/assets/js/common.mjs', 'public/assets/js/guestbook.mjs', 'public/assets/js/workspace.mjs']) {
+  assert.ok(!(await readFile(new URL(filename, root), 'utf8')).includes('.innerHTML'));
+}
+
+console.log(`Prototype checks passed: team profiles, safe messages, accessible motion, assets, match feed, Beijing dates, fixture filters, support choices, empty states, and demo labels (${fileURLToPath(root)}).`);

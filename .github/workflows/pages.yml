@@ -30,7 +30,12 @@ jobs:
       - name: Validate prototype
         run: node scripts/check-prototype.mjs
       - name: Check browser module syntax
-        run: node --check public/assets/js/app.mjs
+        run: |
+          node --check public/assets/js/app.mjs
+          node --check public/assets/js/worldcup.mjs
+          node --check public/assets/js/common.mjs
+          node --check public/assets/js/guestbook.mjs
+          node --check public/assets/js/workspace.mjs
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static website

@@ -2,15 +2,16 @@
 
 ## Project Structure and Module Organization
 
-This repository contains a four-person university coursework project. The buildless team homepage supports a static demo and a working PHP/PDO guestbook slice. `public/index.html` serves the static demo; `public/index.php`, `api.php` and `admin.php` serve the database-backed homepage and workspace. Styles, browser modules, and generated character artwork live in `public/assets/css/`, `public/assets/js/`, and `public/assets/images/`.
+This four-person coursework project has a buildless frontend and a PHP/PDO guestbook slice. `public/index.html` serves the static team demo; `public/index.php`, `api.php` and `admin.php` serve the database-backed homepage and workspace. `public/worldcup/index.html` serves the match-center demo. Shared UI lives in `public/assets/css/common.css` and `public/assets/js/common.mjs`; module assets live under `public/assets/`.
 
-`app/team/` contains the guestbook/motto controllers, models and management view. `app/common/` provides shared PDO, sessions, account roles, CSRF and quotas. Leave `app/worldcup/` unimplemented until requested; the current UI only provides a forthcoming-project entrance. Final coursework belongs in `data/team/` and `data/personal/`. `data/install.sql` currently defines this slice's four real tables, not the final >= 11-table schema. Do not edit or commit unrelated local reference material in `IGNORE/`.
+`app/team/` contains the guestbook/motto MVC implementation. `app/common/` provides PDO, sessions, account roles, CSRF and quotas. `app/worldcup/` reserves backend MVC directories; its fixture and support data remain browser-local demos. Preserve existing backend behavior when migrating toward the README's Yii2 target. Final coursework belongs in `data/team/` and `data/personal/`. `data/install.sql` defines four real tables, not the final >= 11-table schema. Never edit or commit unrelated material in `IGNORE/`.
 
 ## Development and Validation Commands
 
 - `python3 scripts/serve-prototype.py`: serve the static demo at `http://127.0.0.1:5173` with a deterministic .mjs MIME type.
 - `node scripts/check-prototype.mjs`: validate member records, message normalization, and required assets.
 - `node --check public/assets/js/app.mjs`: check browser-module syntax.
+- `node --check public/assets/js/worldcup.mjs`: check match-center browser syntax.
 
 The slice requires PHP 8.2+, PDO MySQL, mbstring and a MySQL-compatible database. It uses small PHP MVC classes without a third-party framework. See README for isolated XAMPP startup and `php scripts/check-guestbook.php` for database integration checks. No production deployment or Docker configuration has been verified. Do not document nonexistent commands as working features.
 
@@ -20,7 +21,7 @@ Use two-space indentation for HTML, CSS, and JavaScript. Use kebab-case for asse
 
 ## Testing Guidelines
 
-Run the prototype validation script after changes. For backend changes, lint PHP and run database checks against a development DB. Manually verify all four member selections, mobile layout, missing GitHub links, the World Cup placeholder, and message submission/reload. Check moderation visibility, CSRF, member/admin permissions and restart persistence. Browser-local messages must remain explicitly labeled as a demo, not server-delivered messages.
+Run prototype checks after changes. Verify member selections, mobile layout, GitHub links, cross-module navigation, message submission/reload, match filters, details and support choice/reload. For backend changes, lint PHP and run database checks against a development DB: moderation, CSRF, permissions and persistence. Preserve the server/demo guestbook distinction; server failures must not fall back to local storage. Fixture data is synthetic, not official or live. Preserve demo labels. No coverage threshold has been adopted.
 
 ## Commit and Pull Request Guidelines
 

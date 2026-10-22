@@ -1,29 +1,20 @@
 import { members, safeGithubUrl } from './members.mjs?v=4';
 import { createGuestbook } from './guestbook.mjs?v=2';
 import { animateMemberEntrance, transitionScenes } from './motion.mjs';
+import { notify } from './common.mjs';
 
 const $ = (id) => document.getElementById(id);
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 const selector = $('member-selector');
 const messageDialog = $('message-dialog');
-const worldcupDialog = $('worldcup-dialog');
 let selectedIndex = 0;
-let toastTimer;
 let activeAnimations = [];
 const scenes = [$('team'), $('members')];
 const navLinks = Array.from(document.querySelectorAll('.main-nav a'));
 let activeScene = 'team';
 let transitionToken = 0;
 
-function notify(text) {
-  clearTimeout(toastTimer);
-  $('toast').textContent = text;
-  $('toast').classList.add('is-visible');
-  toastTimer = setTimeout(() => $('toast').classList.remove('is-visible'), 3500);
-}
-
 const guestbook = createGuestbook({ members, notify, onMottosChange: updateMotto });
-
 function makeSelectors() {
   members.forEach((member, index) => {
     const button = document.createElement('button');
@@ -146,7 +137,6 @@ $('view-team-stands').addEventListener('click', () => {
 $('previous-member').addEventListener('click', () => selectMember(selectedIndex - 1));
 $('next-member').addEventListener('click', () => selectMember(selectedIndex + 1));
 
-document.querySelectorAll('[data-worldcup]').forEach((button) => button.addEventListener('click', () => worldcupDialog.showModal()));
 document.querySelectorAll('[data-close-dialog]').forEach((button) => button.addEventListener('click', () => button.closest('dialog').close()));
 document.querySelectorAll('dialog').forEach((dialog) => dialog.addEventListener('click', (event) => {
   if (event.target !== dialog) return;
@@ -230,7 +220,7 @@ document.querySelector('.skip-link').addEventListener('click', (event) => {
 showScene(location.hash === '#members' ? 'members' : 'team', { animate: false, record: false });
 
 function dialogOpen() {
-  return messageDialog.open || worldcupDialog.open;
+  return messageDialog.open;
 }
 
 function scrollAvailable(scene, delta) {
