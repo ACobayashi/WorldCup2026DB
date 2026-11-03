@@ -24,4 +24,13 @@ $own=(int)$db->query("SELECT match_id FROM wc_match_events WHERE event_type='own
 pageCheck(str_contains(renderWorldcup($db,['view'=>'matches','id'=>$own]),'乌龙球'),'Own-goal label');
 foreach($db->query('SELECT code FROM wc_teams') as $t)pageCheck(is_file(PROJECT_ROOT.'/public/assets/images/flags/'.$t['code'].'.svg'),'Flag exists '.$t['code']);
 pageCheck(is_file(PROJECT_ROOT.'/public/assets/images/flags/LICENSE'),'Flag license retained');
+foreach($db->query('SELECT id,code FROM wc_teams') as $row){
+  $t=$api->dispatch('team','GET',['id'=>$row['id']]);
+  pageCheck(count($t['squad'])===26,'Full unpaginated roster '.$row['code']);
+  pageCheck(count($t['matches'])>=3,'Tournament journey '.$row['code']);
+  pageCheck($t['summary']['players']===26 && $t['summary']['played']===count($t['matches']),'Team summary '.$row['code']);
+  $html=renderWorldcup($db,['view'=>'teams','id'=>$row['id']]);
+  pageCheck(substr_count($html,'class="wc-roster-card"')===26,'All 26 players rendered '.$row['code']);
+  pageCheck(!str_contains($html,'出生日期')&&!str_contains($html,'身高'),'Only requested player fields');
+}
 echo "World Cup pages verified: $checks checks passed. No database writes.\n";

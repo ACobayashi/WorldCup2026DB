@@ -60,5 +60,43 @@
 .wc-event small { color:#8e9fbc; font-size:10px; }
 .wc-provenance summary { cursor:pointer; color:#abbcdd; font-size:12px; }
 [id] { scroll-margin-top:100px; }
+.wc-team-hero { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:32px; border:1px solid #a6b7ea30; border-radius:22px; background:linear-gradient(125deg,#273851,#192438); }
+.wc-team-identity { display:flex; align-items:center; gap:24px; }
+.wc-team-identity>.wc-flag { width:96px; height:72px; border-radius:6px; }
+.wc-team-identity h2 { margin:8px 0; font-size:36px; font-weight:600; }
+.wc-team-identity p:last-child { margin:0; color:#a8bad6; font-size:13px; }
+.wc-team-summary { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin:20px 0; }
+.wc-team-summary>div { display:flex; flex-direction:column; gap:8px; border:1px solid #a6b7ea20; background:#8ba5db05; border-radius:15px; padding:20px 24px; }
+.wc-team-summary strong { font-size:30px; font-weight:550; color:#d6e3fa; }
+.wc-team-summary span { font-size:12px; color:#92a8c8; }
+.wc-team-layout { display:grid; grid-template-columns:minmax(0,1.6fr) minmax(300px,1fr); gap:22px; align-items:start; }
+.wc-position-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; margin:30px 0 14px; }
+.wc-panel .wc-position-heading h3 { margin:0; font-size:15px; }
+.wc-position-heading>span { font-size:11px; color:#92a5c3; }
+.wc-roster-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.wc-roster-card { padding:17px; background:#93acd508; border:1px solid #93acd51c; border-radius:12px; }
+.wc-roster-name { display:flex; align-items:center; gap:10px; min-height:44px; }
+.wc-roster-name h4 { margin:0; font-size:12px; line-height:1.6; font-weight:500; overflow-wrap:anywhere; }
+.wc-roster-numbers { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:18px 0 0; }
+.wc-roster-numbers span { display:grid; gap:6px; color:#8ea1c1; font-size:10px; }
+.wc-roster-numbers b { color:#c9d9f3; font-size:16px; font-weight:500; }
+.wc-team-fixture { display:grid; gap:16px; padding:20px 0; border-bottom:1px solid #93acd51c; }
+.wc-team-fixture:first-child { padding-top:4px; }
+.wc-team-fixture>div { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.wc-team-fixture>div:first-child,.wc-team-fixture small { color:#91a5c6; font-size:10px; }
+.wc-opponent { display:flex; gap:10px; align-items:center; font-size:14px; }
+.wc-opponent .wc-flag { width:28px; height:21px; }
+.wc-team-fixture strong { font-size:22px; color:#d1e0fb; white-space:nowrap; }
+.wc-national-card { transition:border-color .15s,background .15s; }
+.wc-national-card:hover { border-color:#94aed576; background:#293951; }
+.wc-national-card-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+.wc-national-card-top .wc-flag { width:56px; height:42px; }
+.wc-national-card-top>span { color:#a8bad8; font-size:11px; }
+.wc-national-card h2 { margin:22px 0 4px; }
+.wc-national-card p { color:#91a7ca; margin:0; }
+.wc-national-card-bottom { display:flex; justify-content:space-between; gap:12px; margin-top:28px; padding-top:16px; border-top:1px solid #93acd51c; color:#b1c4e4; font-size:11px; }
+.wc-national-card-bottom>span:first-child { letter-spacing:2px; font-family:monospace; }
+@media(max-width:1000px) { .wc-team-layout { grid-template-columns:1fr; } .wc-team-fixtures { display:grid; grid-template-columns:1fr 1fr; gap:0 28px; } }
+@media(max-width:600px) { .wc-team-hero { flex-direction:column; align-items:flex-start; padding:24px; } .wc-team-identity { gap:18px; } .wc-team-identity>.wc-flag { width:64px; height:48px; } .wc-team-identity h2 { font-size:28px; } .wc-team-summary { grid-template-columns:repeat(2,1fr); } .wc-roster-grid,.wc-team-fixtures { grid-template-columns:1fr; } }
 @media(max-width:1000px) { .wc-detail-layout { grid-template-columns:1fr; } .wc-detail-aside { display:grid; grid-template-columns:1fr 1fr; gap:20px; align-items:start; } }
 @media(max-width:600px) { .wc-match-hero { padding:20px 16px; } .wc-big-score { grid-template-columns:1fr 1fr 1fr; gap:8px; padding:26px 0; } .wc-hero-team .wc-flag { width:54px; height:41px; } .wc-hero-team h2 { font-size:19px; } .wc-score-center strong { font-size:36px; } .wc-score-center small { font-size:10px; } .wc-lineups { gap:16px; } .wc-detail-aside { display:block; } .wc-player-list li { gap:6px; font-size:11px; } .wc-goals { font-size:10px; } }

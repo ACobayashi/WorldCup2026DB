@@ -20,7 +20,7 @@ final class PageController extends ReadController {
       $detail = $this->integer($input, 'id') !== null;
       $data = match ($section) {
         'teams' => $detail
-          ? ['team' => (new TeamController($this->db))->show($input), 'squad' => (new TeamController($this->db))->players(['team_id' => $input['id']] + $input)]
+          ? ['team' => (new TeamController($this->db))->show($input)]
           : (new TeamController($this->db))->index($input),
         'matches' => $detail ? ['match' => (new MatchController($this->db))->show($input)] : (new MatchController($this->db))->index($input),
         'groups', 'venues' => (new CatalogController($this->db))->index($section, $input),
