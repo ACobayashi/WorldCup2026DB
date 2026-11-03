@@ -24,7 +24,7 @@ require __DIR__.'/helpers.php';
     <main id="main" class="wc-main" tabindex="-1">
       <div class="wc-heading"><div><p class="wc-eyebrow">FOURWARD / WORLD CUP 2026</p><h1><?= e($title) ?></h1></div><a class="glass-button" href="./index.html">查看界面演示 ↗</a></div>
       <nav class="wc-tabs" aria-label="世界杯模块">
-        <?php foreach ($titles as $key => $label): ?>
+        <?php foreach (array_diff_key($titles, ['venues' => true]) as $key => $label): ?>
           <a href="<?= e($url($key)) ?>" <?= $section === $key ? 'aria-current="page"' : '' ?>><?= e($label) ?></a>
         <?php endforeach; ?>
       </nav>
