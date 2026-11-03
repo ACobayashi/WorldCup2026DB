@@ -24,6 +24,8 @@ This four-person coursework project has a buildless frontend and a PHP/PDO guest
 - `php scripts/check-worldcup-full.php`: verify the actual full snapshot in the local DB (28 checks, including idempotency).
 - `php scripts/check-worldcup-pages.php`: verify real-snapshot MVC page rendering and all 48 full squads (327 checks).
 - `php scripts/check-worldcup-standings.php`: verify WC26 ranking rules, independent standings reference and knockout links (491 checks).
+- `python scripts/worldcup_player_metrics.py` then `php scripts/import-player-metrics.php`: rebuild and import the optional 17 player-match extension metrics after the complete core dataset; additive migration, no new tables.
+- `php scripts/check-worldcup-players.php`: verify tournament/single-match player profiles, positional radar and player rankings. Details: `docs/worldcup-player-board.md`.
 
 The slice requires PHP 8.2+, PDO MySQL, mbstring and a MySQL-compatible database. It uses small PHP MVC classes without a third-party framework. See README for isolated XAMPP startup and `php scripts/check-guestbook.php` for database integration checks. No production deployment or Docker configuration has been verified. Do not document nonexistent commands as working features.
 

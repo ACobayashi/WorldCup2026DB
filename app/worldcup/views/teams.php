@@ -11,7 +11,7 @@ declare(strict_types=1);
 <?php if(!$team['squad']): ?><p class="wc-muted">暂无名单数据。</p><?php else: ?>
 <?php foreach($positions as $position=>$label): $players=array_values(array_filter($team['squad'],fn($p)=>$p['position']===$position));if(!$players)continue; ?>
 <div class="wc-position-heading"><h3><?= e($label) ?></h3><span><?= count($players) ?> 人 · <?= e($position) ?></span></div>
-<div class="wc-roster-grid"><?php foreach($players as $p): ?><article class="wc-roster-card"><div class="wc-roster-name"><span class="wc-shirt"><?= e($p['shirt_number']??'—') ?></span><h4><?= e($p['name']) ?></h4></div><div class="wc-roster-numbers"><span><b><?= e($p['appearances']) ?></b>出场</span><span><b><?= e($number($p['goals'])) ?></b>进球</span><span><b><?= e($number($p['shots'])) ?></b>射门</span></div></article><?php endforeach; ?></div>
+<div class="wc-roster-grid"><?php foreach($players as $p): ?><a class="wc-roster-card" href="<?= e($url('player',['id'=>$p['id']])) ?>" aria-label="<?= e('查看 '.$p['name'].' 的球员数据') ?>"><div class="wc-roster-name"><span class="wc-shirt"><?= e($p['shirt_number']??'—') ?></span><h4><?= e($p['name']) ?></h4></div><div class="wc-roster-numbers"><span><b><?= e($p['appearances']) ?></b>出场</span><span><b><?= e($number($p['goals'])) ?></b>进球</span><span><b><?= e($number($p['shots'])) ?></b>射门</span></div><span class="wc-player-card-link">个人数据与雷达 ↗</span></a><?php endforeach; ?></div>
 <?php endforeach; ?><p class="wc-muted wc-fineprint">出场按逐场名单统计；— 表示没有对应技术统计。数据范围为本届赛事，进球不含乌龙球或点球大战。</p>
 <?php endif; ?></section>
 <aside class="wc-panel" id="team-fixtures"><div class="wc-section-heading"><div><p class="wc-eyebrow">TOURNAMENT JOURNEY</p><h2>比赛记录</h2></div><span class="wc-muted"><?= count($team['matches']) ?> 场</span></div>

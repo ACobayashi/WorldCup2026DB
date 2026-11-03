@@ -239,6 +239,7 @@ CREATE TABLE IF NOT EXISTS wc_player_match_stats (
   goals SMALLINT UNSIGNED NULL,
   assists SMALLINT UNSIGNED NULL,
   minutes_played SMALLINT UNSIGNED NULL,
+  advanced_stats LONGTEXT NULL COMMENT '逐场扩展指标及来源清单哈希',
   shots SMALLINT UNSIGNED NULL,
   passes_attempted SMALLINT UNSIGNED NULL,
   passes_completed SMALLINT UNSIGNED NULL,
@@ -248,6 +249,7 @@ CREATE TABLE IF NOT EXISTS wc_player_match_stats (
   FOREIGN KEY (match_id, player_id) REFERENCES wc_match_appearances(match_id, player_id),
   FOREIGN KEY (batch_id) REFERENCES wc_import_batches(id),
   CHECK (pass_completion_pct IS NULL OR pass_completion_pct BETWEEN 0 AND 100),
+  CHECK (advanced_stats IS NULL OR JSON_VALID(advanced_stats)),
   CHECK (passes_completed IS NULL OR passes_attempted IS NULL OR passes_completed <= passes_attempted)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='球员单场核心统计，未知保留NULL';
 

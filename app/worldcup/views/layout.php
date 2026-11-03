@@ -12,7 +12,7 @@ require __DIR__.'/helpers.php';
     <title><?= e($title) ?> · FOURWARD 2026</title>
     <link rel="stylesheet" href="../assets/css/common.css?v=1">
     <link rel="stylesheet" href="../assets/css/worldcup-shell.css?v=2">
-    <link rel="stylesheet" href="../assets/css/worldcup-data.css?v=3">
+    <link rel="stylesheet" href="../assets/css/worldcup-data.css?v=5">
   </head>
   <body class="wc-app">
     <a class="skip-link" href="#main">跳到主要内容</a>
@@ -24,8 +24,8 @@ require __DIR__.'/helpers.php';
     <main id="main" class="wc-main" tabindex="-1">
       <div class="wc-heading"><div><p class="wc-eyebrow">FOURWARD / WORLD CUP 2026</p><h1><?= e($title) ?></h1></div><a class="glass-button" href="./index.html">查看界面演示 ↗</a></div>
       <nav class="wc-tabs" aria-label="世界杯模块">
-        <?php foreach (array_diff_key($titles, ['venues' => true]) as $key => $label): ?>
-          <a href="<?= e($url($key)) ?>" <?= $section === $key ? 'aria-current="page"' : '' ?>><?= e($label) ?></a>
+        <?php foreach (array_diff_key($titles, ['venues' => true, 'player' => true]) as $key => $label): ?>
+          <a href="<?= e($url($key)) ?>" <?= $section === $key || ($section==='player'&&$key==='teams') ? 'aria-current="page"' : '' ?>><?= e($label) ?></a>
         <?php endforeach; ?>
       </nav>
       <?php if (isset($overview)): ?>

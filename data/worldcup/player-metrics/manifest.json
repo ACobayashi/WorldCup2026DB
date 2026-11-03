@@ -1,0 +1,23 @@
+{
+  "edition": 2026,
+  "files": {
+    "attack": {
+      "author": "Hesham El Alamy",
+      "cache_saved_at": "2026-11-03T08:20:25.319803+00:00",
+      "license": "CC-BY-4.0",
+      "original_payload_sha256": "b792a557e6ab718231aff96db51bdac58e907cdeb2b995a9ce27fdd97cc81f16",
+      "retrieved_at": null,
+      "sha256": "aa13aff98c5cb4a329f6427193b157e22d58bf6de07e285b3cda279b4ac1637b",
+      "url": "https://github.com/Alamyy/Worldcup26/blob/main/data/csv/player_in_possession_distributions.csv"
+    },
+    "defence": {
+      "author": "Hesham El Alamy",
+      "cache_saved_at": "2026-11-03T13:04:50.825542+00:00",
+      "license": "CC-BY-4.0",
+      "original_payload_sha256": "c854952e24424f2c642cd7fcc2fe7779413613e8c49c6e4faa68db379d1f50a1",
+      "retrieved_at": null,
+      "sha256": "a5d18c0667f3cb52f5aadcc729a22360b9ea42de1f8991d38b69968cf6c99983",
+      "url": "https://github.com/Alamyy/Worldcup26/blob/main/data/csv/player_out_of_possession.csv"
+    }
+  }
+}
