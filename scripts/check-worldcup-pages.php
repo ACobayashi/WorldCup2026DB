@@ -33,4 +33,17 @@ foreach($db->query('SELECT id,code FROM wc_teams') as $row){
   pageCheck(substr_count($html,'class="wc-roster-card"')===26,'All 26 players rendered '.$row['code']);
   pageCheck(!str_contains($html,'出生日期')&&!str_contains($html,'身高'),'Only requested player fields');
 }
+$html=renderWorldcup($db,['view'=>'groups']);
+pageCheck(substr_count($html,'wc-standing-panel')===12,'All group tables rendered');
+pageCheck(substr_count($html,'<tr class="is-qualified">')===32,'Exactly 32 qualification rows');
+pageCheck(str_contains($html,'FIFA 2026 竞赛规程'),'Official rules linked');
+$html=renderWorldcup($db,['view'=>'groups','panel'=>'bracket']);
+pageCheck(substr_count($html,'class="wc-bracket-match"')===32,'31 knockout matches plus bronze card');
+pageCheck(substr_count($html,'<path d=')===30,'Visible bracket connectors');
+pageCheck(str_contains($html,'★ 冠军 · 西班牙'),'Champion comes from actual winner');
+$html=renderWorldcup($db,['view'=>'groups','panel'=>'thirds']);
+pageCheck(substr_count($html,'<tr class="is-qualified">')===8,'Eight third-place qualifiers rendered');
+pageCheck(str_contains($html,'厄瓜多尔')&&str_contains($html,'加纳'),'Unresolved non-boundary comparison preserved');
+pageCheck($api->dispatch('overview','GET',[])['capabilities']['standings'],'Standings capability enabled');
+pageCheck(count($api->dispatch('bracket','GET',[])['nodes'])===31,'Bracket API available');
 echo "World Cup pages verified: $checks checks passed. No database writes.\n";

@@ -10,6 +10,6 @@ final class CatalogController extends ReadController {
   }
 
   public function overview(): array {
-    return ['counts' => (new Catalog($this->db))->counts(), 'edition' => 2026, 'source' => 'database', 'capabilities' => ['read' => true, 'admin_write' => false, 'support_write' => false, 'import' => false, 'standings' => false]];
+    return ['counts' => (new Catalog($this->db))->counts(), 'edition' => 2026, 'source' => 'database', 'capabilities' => ['read' => true, 'admin_write' => false, 'support_write' => false, 'import' => false, 'standings' => true]];
   }
 }

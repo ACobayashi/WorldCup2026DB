@@ -1,0 +1,599 @@
+{
+  "edition": 2026,
+  "provider": "dongqiudi",
+  "season_id": 26123,
+  "note": "Independent audit-time public ranking snapshot used only by acceptance checks; runtime computes from local matches.",
+  "groups": [
+    {
+      "name": "A组",
+      "teams": [
+        {
+          "rank": "1",
+          "team_name": "墨西哥",
+          "matches_total": "3",
+          "matches_won": "3",
+          "matches_draw": "0",
+          "matches_lost": "0",
+          "goals_pro": "6",
+          "goals_against": "0",
+          "points": "9"
+        },
+        {
+          "rank": "2",
+          "team_name": "南非",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "1",
+          "matches_lost": "1",
+          "goals_pro": "2",
+          "goals_against": "3",
+          "points": "4"
+        },
+        {
+          "rank": "3",
+          "team_name": "韩国",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "0",
+          "matches_lost": "2",
+          "goals_pro": "2",
+          "goals_against": "3",
+          "points": "3"
+        },
+        {
+          "rank": "4",
+          "team_name": "捷克",
+          "matches_total": "3",
+          "matches_won": "0",
+          "matches_draw": "1",
+          "matches_lost": "2",
+          "goals_pro": "2",
+          "goals_against": "6",
+          "points": "1"
+        }
+      ]
+    },
+    {
+      "name": "B组",
+      "teams": [
+        {
+          "rank": "1",
+          "team_name": "瑞士",
+          "matches_total": "3",
+          "matches_won": "2",
+          "matches_draw": "1",
+          "matches_lost": "0",
+          "goals_pro": "7",
+          "goals_against": "3",
+          "points": "7"
+        },
+        {
+          "rank": "2",
+          "team_name": "加拿大",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "1",
+          "matches_lost": "1",
+          "goals_pro": "8",
+          "goals_against": "3",
+          "points": "4"
+        },
+        {
+          "rank": "3",
+          "team_name": "波黑",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "1",
+          "matches_lost": "1",
+          "goals_pro": "5",
+          "goals_against": "6",
+          "points": "4"
+        },
+        {
+          "rank": "4",
+          "team_name": "卡塔尔",
+          "matches_total": "3",
+          "matches_won": "0",
+          "matches_draw": "1",
+          "matches_lost": "2",
+          "goals_pro": "2",
+          "goals_against": "10",
+          "points": "1"
+        }
+      ]
+    },
+    {
+      "name": "C组",
+      "teams": [
+        {
+          "rank": "1",
+          "team_name": "巴西",
+          "matches_total": "3",
+          "matches_won": "2",
+          "matches_draw": "1",
+          "matches_lost": "0",
+          "goals_pro": "7",
+          "goals_against": "1",
+          "points": "7"
+        },
+        {
+          "rank": "2",
+          "team_name": "摩洛哥",
+          "matches_total": "3",
+          "matches_won": "2",
+          "matches_draw": "1",
+          "matches_lost": "0",
+          "goals_pro": "6",
+          "goals_against": "3",
+          "points": "7"
+        },
+        {
+          "rank": "3",
+          "team_name": "苏格兰",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "0",
+          "matches_lost": "2",
+          "goals_pro": "1",
+          "goals_against": "4",
+          "points": "3"
+        },
+        {
+          "rank": "4",
+          "team_name": "海地",
+          "matches_total": "3",
+          "matches_won": "0",
+          "matches_draw": "0",
+          "matches_lost": "3",
+          "goals_pro": "2",
+          "goals_against": "8",
+          "points": "0"
+        }
+      ]
+    },
+    {
+      "name": "D组",
+      "teams": [
+        {
+          "rank": "1",
+          "team_name": "美国",
+          "matches_total": "3",
+          "matches_won": "2",
+          "matches_draw": "0",
+          "matches_lost": "1",
+          "goals_pro": "8",
+          "goals_against": "4",
+          "points": "6"
+        },
+        {
+          "rank": "2",
+          "team_name": "澳大利亚",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "1",
+          "matches_lost": "1",
+          "goals_pro": "2",
+          "goals_against": "2",
+          "points": "4"
+        },
+        {
+          "rank": "3",
+          "team_name": "巴拉圭",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "1",
+          "matches_lost": "1",
+          "goals_pro": "2",
+          "goals_against": "4",
+          "points": "4"
+        },
+        {
+          "rank": "4",
+          "team_name": "土耳其",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "0",
+          "matches_lost": "2",
+          "goals_pro": "3",
+          "goals_against": "5",
+          "points": "3"
+        }
+      ]
+    },
+    {
+      "name": "E组",
+      "teams": [
+        {
+          "rank": "1",
+          "team_name": "德国",
+          "matches_total": "3",
+          "matches_won": "2",
+          "matches_draw": "0",
+          "matches_lost": "1",
+          "goals_pro": "10",
+          "goals_against": "4",
+          "points": "6"
+        },
+        {
+          "rank": "2",
+          "team_name": "科特迪瓦",
+          "matches_total": "3",
+          "matches_won": "2",
+          "matches_draw": "0",
+          "matches_lost": "1",
+          "goals_pro": "4",
+          "goals_against": "2",
+          "points": "6"
+        },
+        {
+          "rank": "3",
+          "team_name": "厄瓜多尔",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "1",
+          "matches_lost": "1",
+          "goals_pro": "2",
+          "goals_against": "2",
+          "points": "4"
+        },
+        {
+          "rank": "4",
+          "team_name": "库拉索",
+          "matches_total": "3",
+          "matches_won": "0",
+          "matches_draw": "1",
+          "matches_lost": "2",
+          "goals_pro": "1",
+          "goals_against": "9",
+          "points": "1"
+        }
+      ]
+    },
+    {
+      "name": "F组",
+      "teams": [
+        {
+          "rank": "1",
+          "team_name": "荷兰",
+          "matches_total": "3",
+          "matches_won": "2",
+          "matches_draw": "1",
+          "matches_lost": "0",
+          "goals_pro": "10",
+          "goals_against": "4",
+          "points": "7"
+        },
+        {
+          "rank": "2",
+          "team_name": "日本",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "2",
+          "matches_lost": "0",
+          "goals_pro": "7",
+          "goals_against": "3",
+          "points": "5"
+        },
+        {
+          "rank": "3",
+          "team_name": "瑞典",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "1",
+          "matches_lost": "1",
+          "goals_pro": "7",
+          "goals_against": "7",
+          "points": "4"
+        },
+        {
+          "rank": "4",
+          "team_name": "突尼斯",
+          "matches_total": "3",
+          "matches_won": "0",
+          "matches_draw": "0",
+          "matches_lost": "3",
+          "goals_pro": "2",
+          "goals_against": "12",
+          "points": "0"
+        }
+      ]
+    },
+    {
+      "name": "G组",
+      "teams": [
+        {
+          "rank": "1",
+          "team_name": "比利时",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "2",
+          "matches_lost": "0",
+          "goals_pro": "6",
+          "goals_against": "2",
+          "points": "5"
+        },
+        {
+          "rank": "2",
+          "team_name": "埃及",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "2",
+          "matches_lost": "0",
+          "goals_pro": "5",
+          "goals_against": "3",
+          "points": "5"
+        },
+        {
+          "rank": "3",
+          "team_name": "伊朗",
+          "matches_total": "3",
+          "matches_won": "0",
+          "matches_draw": "3",
+          "matches_lost": "0",
+          "goals_pro": "3",
+          "goals_against": "3",
+          "points": "3"
+        },
+        {
+          "rank": "4",
+          "team_name": "新西兰",
+          "matches_total": "3",
+          "matches_won": "0",
+          "matches_draw": "1",
+          "matches_lost": "2",
+          "goals_pro": "4",
+          "goals_against": "10",
+          "points": "1"
+        }
+      ]
+    },
+    {
+      "name": "H组",
+      "teams": [
+        {
+          "rank": "1",
+          "team_name": "西班牙",
+          "matches_total": "3",
+          "matches_won": "2",
+          "matches_draw": "1",
+          "matches_lost": "0",
+          "goals_pro": "5",
+          "goals_against": "0",
+          "points": "7"
+        },
+        {
+          "rank": "2",
+          "team_name": "佛得角 ",
+          "matches_total": "3",
+          "matches_won": "0",
+          "matches_draw": "3",
+          "matches_lost": "0",
+          "goals_pro": "2",
+          "goals_against": "2",
+          "points": "3"
+        },
+        {
+          "rank": "3",
+          "team_name": "乌拉圭",
+          "matches_total": "3",
+          "matches_won": "0",
+          "matches_draw": "2",
+          "matches_lost": "1",
+          "goals_pro": "3",
+          "goals_against": "4",
+          "points": "2"
+        },
+        {
+          "rank": "4",
+          "team_name": "沙特阿拉伯",
+          "matches_total": "3",
+          "matches_won": "0",
+          "matches_draw": "2",
+          "matches_lost": "1",
+          "goals_pro": "1",
+          "goals_against": "5",
+          "points": "2"
+        }
+      ]
+    },
+    {
+      "name": "I组",
+      "teams": [
+        {
+          "rank": "1",
+          "team_name": "法国",
+          "matches_total": "3",
+          "matches_won": "3",
+          "matches_draw": "0",
+          "matches_lost": "0",
+          "goals_pro": "10",
+          "goals_against": "2",
+          "points": "9"
+        },
+        {
+          "rank": "2",
+          "team_name": "挪威",
+          "matches_total": "3",
+          "matches_won": "2",
+          "matches_draw": "0",
+          "matches_lost": "1",
+          "goals_pro": "8",
+          "goals_against": "7",
+          "points": "6"
+        },
+        {
+          "rank": "3",
+          "team_name": "塞内加尔",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "0",
+          "matches_lost": "2",
+          "goals_pro": "8",
+          "goals_against": "6",
+          "points": "3"
+        },
+        {
+          "rank": "4",
+          "team_name": "伊拉克",
+          "matches_total": "3",
+          "matches_won": "0",
+          "matches_draw": "0",
+          "matches_lost": "3",
+          "goals_pro": "1",
+          "goals_against": "12",
+          "points": "0"
+        }
+      ]
+    },
+    {
+      "name": "J组",
+      "teams": [
+        {
+          "rank": "1",
+          "team_name": "阿根廷",
+          "matches_total": "3",
+          "matches_won": "3",
+          "matches_draw": "0",
+          "matches_lost": "0",
+          "goals_pro": "8",
+          "goals_against": "1",
+          "points": "9"
+        },
+        {
+          "rank": "2",
+          "team_name": "奥地利",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "1",
+          "matches_lost": "1",
+          "goals_pro": "6",
+          "goals_against": "6",
+          "points": "4"
+        },
+        {
+          "rank": "3",
+          "team_name": "阿尔及利亚",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "1",
+          "matches_lost": "1",
+          "goals_pro": "5",
+          "goals_against": "7",
+          "points": "4"
+        },
+        {
+          "rank": "4",
+          "team_name": "约旦",
+          "matches_total": "3",
+          "matches_won": "0",
+          "matches_draw": "0",
+          "matches_lost": "3",
+          "goals_pro": "3",
+          "goals_against": "8",
+          "points": "0"
+        }
+      ]
+    },
+    {
+      "name": "K组",
+      "teams": [
+        {
+          "rank": "1",
+          "team_name": "哥伦比亚",
+          "matches_total": "3",
+          "matches_won": "2",
+          "matches_draw": "1",
+          "matches_lost": "0",
+          "goals_pro": "4",
+          "goals_against": "1",
+          "points": "7"
+        },
+        {
+          "rank": "2",
+          "team_name": "葡萄牙",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "2",
+          "matches_lost": "0",
+          "goals_pro": "6",
+          "goals_against": "1",
+          "points": "5"
+        },
+        {
+          "rank": "3",
+          "team_name": "刚果民主共和国",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "1",
+          "matches_lost": "1",
+          "goals_pro": "4",
+          "goals_against": "3",
+          "points": "4"
+        },
+        {
+          "rank": "4",
+          "team_name": "乌兹别克斯坦",
+          "matches_total": "3",
+          "matches_won": "0",
+          "matches_draw": "0",
+          "matches_lost": "3",
+          "goals_pro": "2",
+          "goals_against": "11",
+          "points": "0"
+        }
+      ]
+    },
+    {
+      "name": "L组",
+      "teams": [
+        {
+          "rank": "1",
+          "team_name": "英格兰",
+          "matches_total": "3",
+          "matches_won": "2",
+          "matches_draw": "1",
+          "matches_lost": "0",
+          "goals_pro": "6",
+          "goals_against": "2",
+          "points": "7"
+        },
+        {
+          "rank": "2",
+          "team_name": "克罗地亚",
+          "matches_total": "3",
+          "matches_won": "2",
+          "matches_draw": "0",
+          "matches_lost": "1",
+          "goals_pro": "5",
+          "goals_against": "5",
+          "points": "6"
+        },
+        {
+          "rank": "3",
+          "team_name": "加纳",
+          "matches_total": "3",
+          "matches_won": "1",
+          "matches_draw": "1",
+          "matches_lost": "1",
+          "goals_pro": "2",
+          "goals_against": "2",
+          "points": "4"
+        },
+        {
+          "rank": "4",
+          "team_name": "巴拿马",
+          "matches_total": "3",
+          "matches_won": "0",
+          "matches_draw": "0",
+          "matches_lost": "3",
+          "goals_pro": "0",
+          "goals_against": "4",
+          "points": "0"
+        }
+      ]
+    }
+  ],
+  "source_url": "https://sport-data.dongqiudi.com/soccer/biz/data/standing?season_id=26123&app=dqd&platform=&version=0&lang=zh-cn",
+  "audit_payload_sha256": "eeec0049f34cc76b3e54f32a3d2d40daedc2dfc4f9f588675c265b24fb404f0f",
+  "retrieved_at": null
+}

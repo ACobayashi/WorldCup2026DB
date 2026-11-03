@@ -12,7 +12,7 @@ require __DIR__.'/helpers.php';
     <title><?= e($title) ?> · FOURWARD 2026</title>
     <link rel="stylesheet" href="../assets/css/common.css?v=1">
     <link rel="stylesheet" href="../assets/css/worldcup-shell.css?v=2">
-    <link rel="stylesheet" href="../assets/css/worldcup-data.css?v=1">
+    <link rel="stylesheet" href="../assets/css/worldcup-data.css?v=3">
   </head>
   <body class="wc-app">
     <a class="skip-link" href="#main">跳到主要内容</a>

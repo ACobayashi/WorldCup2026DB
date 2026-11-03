@@ -7,7 +7,7 @@ use Fourward\common\HttpError;
 
 final class ApiController extends ReadController {
   public function dispatch(string $action, string $method, array $input, ?string $csrf = null): array {
-    $known = ['bootstrap', 'overview', 'teams', 'team', 'players', 'matches', 'match', 'groups', 'venues', 'stages', 'my_supports', 'admin_overview', 'support'];
+    $known = ['bootstrap', 'overview', 'teams', 'team', 'players', 'matches', 'match', 'groups', 'standings', 'bracket', 'venues', 'stages', 'my_supports', 'admin_overview', 'support'];
     if (!in_array($action, $known, true)) throw new HttpError(404, '接口不存在。');
     if ($action === 'support') {
       if ($method !== 'POST') { header('Allow: POST'); throw new HttpError(405, '该接口仅接受 POST。'); }
@@ -22,6 +22,8 @@ final class ApiController extends ReadController {
       'players' => (new TeamController($this->db))->players($input),
       'matches' => (new MatchController($this->db))->index($input),
       'match' => (new MatchController($this->db))->show($input),
+      'standings' => (new StandingsController($this->db))->index(),
+      'bracket' => (new StandingsController($this->db))->bracket(),
       'groups', 'venues', 'stages' => (new CatalogController($this->db))->index($action, $input),
       'my_supports' => (new SupportController($this->db))->index($input),
       'admin_overview' => (new AdminController($this->db))->index(),
