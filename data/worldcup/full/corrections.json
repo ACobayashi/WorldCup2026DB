@@ -1,0 +1,40 @@
+{
+  "edition": 2026,
+  "match_team_corrections": [
+    {
+      "match_no": 47,
+      "source_match_id": "2026-M047-POR-GHA",
+      "expected_home": "POR",
+      "expected_away": "UZB",
+      "source_team": "GHA",
+      "canonical_team": "UZB",
+      "evidence": "FIFA official match 47 and openfootball detailed fixture both identify POR/UZB; all 26 mislabeled report names and shirt numbers must match the FIFA UZB squad before correction is accepted. Keep original IDs and source URL. Never rewrite GHA outside this fixture."
+    }
+  ],
+  "player_name_corrections": [
+    {
+      "match_no": 11,
+      "team_code": "NED",
+      "shirt_number": 24,
+      "source_name": "Crysencio",
+      "player_id": "fifa:player:489518",
+      "evidence": "FIFA NED number 24 and the aligned openfootball full starting XI both name Crysencio SUMMERVILLE."
+    },
+    {
+      "match_no": 61,
+      "team_code": "FRA",
+      "shirt_number": 7,
+      "source_name": "DEMBELE",
+      "player_id": "fifa:player:398680",
+      "evidence": "FIFA FRA number 7 and the aligned openfootball full starting XI both name Ousmane DEMBELE."
+    },
+    {
+      "match_no": 90,
+      "team_code": "MAR",
+      "shirt_number": 8,
+      "source_name": "OUNAHI",
+      "player_id": "fifa:player:441307",
+      "evidence": "FIFA MAR number 8 and the aligned openfootball full starting XI both name Azzedine OUNAHI."
+    }
+  ]
+}

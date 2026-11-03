@@ -1,0 +1,149 @@
+{
+  "applied_corrections": {
+    "edition": 2026,
+    "match_team_corrections": [
+      {
+        "canonical_team": "UZB",
+        "evidence": "FIFA official match 47 and openfootball detailed fixture both identify POR/UZB; all 26 mislabeled report names and shirt numbers must match the FIFA UZB squad before correction is accepted. Keep original IDs and source URL. Never rewrite GHA outside this fixture.",
+        "expected_away": "UZB",
+        "expected_home": "POR",
+        "match_no": 47,
+        "source_match_id": "2026-M047-POR-GHA",
+        "source_team": "GHA"
+      }
+    ],
+    "player_name_corrections": [
+      {
+        "evidence": "FIFA NED number 24 and the aligned openfootball full starting XI both name Crysencio SUMMERVILLE.",
+        "match_no": 11,
+        "player_id": "fifa:player:489518",
+        "shirt_number": 24,
+        "source_name": "Crysencio",
+        "team_code": "NED"
+      },
+      {
+        "evidence": "FIFA FRA number 7 and the aligned openfootball full starting XI both name Ousmane DEMBELE.",
+        "match_no": 61,
+        "player_id": "fifa:player:398680",
+        "shirt_number": 7,
+        "source_name": "DEMBELE",
+        "team_code": "FRA"
+      },
+      {
+        "evidence": "FIFA MAR number 8 and the aligned openfootball full starting XI both name Azzedine OUNAHI.",
+        "match_no": 90,
+        "player_id": "fifa:player:441307",
+        "shirt_number": 8,
+        "source_name": "OUNAHI",
+        "team_code": "MAR"
+      }
+    ]
+  },
+  "bench_cards": [
+    {
+      "event_type": "yellow_card",
+      "match_no": 92,
+      "minute_raw": "98'",
+      "player_id": "fifa:player:356189"
+    }
+  ],
+  "corrected_rows": {
+    "appearances": 26,
+    "events": 12,
+    "player_stats": 16,
+    "short_name_appearances": 3,
+    "short_name_events": 11,
+    "short_name_player_stats": 3,
+    "team_stats": 5
+  },
+  "coverage": {
+    "appearances": 104,
+    "events": 104,
+    "player_stats": 104,
+    "team_stats": 104
+  },
+  "event_counts": {
+    "goal": 294,
+    "own_goal": 14,
+    "red_card": 13,
+    "subbed_off": 998,
+    "subbed_on": 1000,
+    "yellow_card": 268
+  },
+  "excluded_noncore_metric_rows": {
+    "Ball Progressions": 208,
+    "Completed Line Breaks": 208,
+    "Crosses": 208,
+    "Defensive Line Breaks": 208,
+    "Defensive Pressures Applied (Direct Pressures)": 208,
+    "Forced Turnovers": 208,
+    "Possession": 104,
+    "Receptions in the Final Third": 208,
+    "Second Balls": 208,
+    "Total Distance Covered": 208,
+    "Zone 4 - Low Speed Sprinting: 20-25 km/h": 208,
+    "xG (Expected Goals)": 208
+  },
+  "external_roster_policy": "FIFA season roster is canonical; openfootball roster name/selection differences are not silently merged.",
+  "halftime_discrepancies": [
+    {
+      "basic": [
+        1,
+        0
+      ],
+      "detailed": [
+        2,
+        0
+      ],
+      "match_no": 79,
+      "resolution": "Half-time scores are outside the import contract; neither conflicting value is imported."
+    }
+  ],
+  "kickoff_discrepancies": [
+    {
+      "match_no": 79,
+      "official_utc": "2026-07-01T02:00:00Z",
+      "openfootball_basic_utc": "2026-07-01T01:00:00Z",
+      "resolution": "Use FIFA UTC, independently agreed by openfootball detailed snapshot; retain basic-time discrepancy."
+    },
+    {
+      "match_no": 92,
+      "official_utc": "2026-07-06T01:00:00Z",
+      "openfootball_basic_utc": "2026-07-06T00:00:00Z",
+      "resolution": "Use FIFA UTC, independently agreed by openfootball detailed snapshot; retain basic-time discrepancy."
+    }
+  ],
+  "missing_fields": [
+    "Player match assists and minutes_played are unavailable in the selected source and remain null."
+  ],
+  "position_differences": [
+    {
+      "match_no": 19,
+      "player_id": "fifa:player:402934",
+      "report_match_position": "MF",
+      "resolution": "Preserve the source match designation separately; do not overwrite the FIFA roster position.",
+      "roster_position": "DF"
+    }
+  ],
+  "shorter_match_squads": {
+    "102/ENG": 25,
+    "25/RSA": 24,
+    "28/MEX": 25,
+    "52/BIH": 25,
+    "52/QAT": 24,
+    "54/RSA": 24,
+    "60/PAR": 25,
+    "64/BEL": 25,
+    "65/CPV": 25,
+    "73/RSA": 25,
+    "74/PAR": 25,
+    "88/EGY": 25,
+    "99/ENG": 25
+  },
+  "source_match_squad_size_distribution": {
+    "24": 3,
+    "25": 10,
+    "26": 195
+  },
+  "status_basis": "FIFA status 0 with ResultType 1/2/3 plus independently completed score breakdown and winner agreement."
+}

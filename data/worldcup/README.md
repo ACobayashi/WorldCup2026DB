@@ -42,3 +42,39 @@ php scripts/import-worldcup.php data/worldcup/full/core.json
 比分按 openfootball 明确的 `ft`（90 分钟）、`et`（加时结束总比分）、`p`（点球）拆开，并与 FIFA 总比分、点球和胜者交叉检查。FIFA 原始状态 0 不能直接翻译成网站状态：本次还验证 ResultType 与完整赛果记录一致后才标为 finished。不会把最终比分全塞入 90 分钟字段。本站支持票始终由本站用户产生，不从外部数据构造。
 
 许可：openfootball 快照为 CC0-1.0；Hesham El Alamy 的 Worldcup26 CSV 及其清洗结果按 CC BY 4.0 署名（https://github.com/Alamyy/Worldcup26 ，https://creativecommons.org/licenses/by/4.0/）。FIFA 响应按来源链接保留溯源；不包含图片、视频或商标素材。各文件在 manifest 中记录选取说明、原始响应哈希与选取后文件哈希。
+
+## 全量核心明细数据（当前最终导入包）
+
+新机器已配置 `.env` 和空数据库后，可直接执行以下命令；不必先导入 pilot 或 core：
+
+```powershell
+php scripts/install.php
+python scripts/worldcup_full.py --details
+python -m unittest discover -s tests -p 'test_worldcup*.py'
+php scripts/import-worldcup.php data/worldcup/full/complete.json --dry-run
+php scripts/import-worldcup.php data/worldcup/full/complete.json
+php scripts/check-worldcup-full.php
+```
+
+本机已实际导入并通过验收，另在独立空数据库验证了“初始化 SQL + complete 数据包”直接导入与重复导入跳过，不依赖先前小样本状态。数据包涵盖全部 104 场的已选核心字段，不表示采集了外部网站的所有字段或功能：
+
+| 数据 | 入库数量 |
+| --- | ---: |
+| 球队 / 本届名单快照球员 | 48 / 1,248 |
+| 分组 / 场馆 / 阶段 / 比赛 | 12 / 16 / 7 / 104 |
+| 逐场比赛名单 | 5,392 |
+| 球员单场统计 | 3,288 |
+| 球队单场汇总 | 208 |
+| 比赛事件 | 2,587 |
+| CSV 球员外部编号映射 | 1,277 |
+| CSV 比赛与逐场球队引用映射 | 312 |
+
+来源 ID 数量不是球员人数：别名及第 47 场错误队伍前缀会产生多个来源编号，最终关联到核对后的 FIFA 球员。逐场球队来源 ID 以“来源比赛/队伍代码”限定作用域，第 47 场的 GHA → UZB 不影响其他真正的加纳记录。
+
+`corrections.json` 保存四条有证据的定向更正规则，`quality-report.json` 保存执行结果和差异。更正前必须匹配原比赛、原姓名、号码和目标身份；三条截断姓名还需独立首发名单确认。规则的规范化 JSON 哈希与规则正文一起写入导入批次。原始快照保持不变。
+
+校验覆盖全部 208 份首发名单（每份 11 人）、上场球员统计覆盖、来源引用与逐场进球总数。294 个球员进球 + 14 个乌龙球 = 308 个球队进球，点球大战不算比赛进球。源名单有 13 份不足 26 人，保留 24/25 人记录，不自动补造“未上场”记录。允许替补席未上场球员领牌；不据此认定他出场。一处逐场位置与总名单不同，分别保留，不改写总名单位置。
+
+缺失与范围边界：单场助攻、出场分钟保持 NULL；事件分钟保留源文本，不根据 90 以上的数字猜测常规补时或加时阶段；进攻/控球等五类核心球队指标入库，CONTEST 控球比例、xG、跑动距离等未纳入的指标仍在原始快照中，报告列出其数量；未验证的照片、评分、热力图不生成数据。不把 FIFA 赛季统计的 1,259 个键当作本届最终名单，也不将赛季汇总复制为每场记录。
+
+导入器显式使用 UTC 数据库会话，成功内容按哈希跳过，数据变更通过经核验的新快照更新已有记录。不会自动删除新快照中未出现的旧记录；后续名单替换、撤销事件等刷新需求需增加明确迁移/删除策略。`check-worldcup-full.php` 校验本次固定快照的实际入库状态（28 项）；`check-worldcup-import.php` 做 10 项无残留回滚检查。47 项 Python 校验覆盖离线重建及错误源数据拒绝。详细统计已入库，网页目前展示球队、名单和赛程，比赛技术面板、事件时间线及球员看板尚需接入视图。

@@ -3,9 +3,11 @@ import argparse
 import csv
 import json
 import re
+import copy
+from collections import Counter
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
-from worldcup_data import ROOT, require, digest, encode_json, localized, normalized_name, integer
+from worldcup_data import ROOT, require, digest, encode_json, localized, normalized_name, integer, percentage, pair, event_minute, TEAM_METRICS
 
 DIRECTORY = ROOT/'data/worldcup/full'
 CHINESE = dict(item.split(':',1) for item in '''ALG:阿尔及利亚 ARG:阿根廷 AUS:澳大利亚 AUT:奥地利 BEL:比利时 BIH:波黑 BRA:巴西 CPV:佛得角 CAN:加拿大 COL:哥伦比亚 COD:刚果民主共和国 CIV:科特迪瓦 CRO:克罗地亚 CUW:库拉索 CZE:捷克 ECU:厄瓜多尔 EGY:埃及 ENG:英格兰 FRA:法国 GER:德国 GHA:加纳 HAI:海地 IRN:伊朗 IRQ:伊拉克 JPN:日本 JOR:约旦 KOR:韩国 MEX:墨西哥 MAR:摩洛哥 NED:荷兰 NZL:新西兰 NOR:挪威 PAN:巴拿马 PAR:巴拉圭 POR:葡萄牙 QAT:卡塔尔 KSA:沙特阿拉伯 SCO:苏格兰 SEN:塞内加尔 RSA:南非 ESP:西班牙 SWE:瑞典 SUI:瑞士 TUN:突尼斯 TUR:土耳其 URU:乌拉圭 USA:美国 UZB:乌兹别克斯坦'''.split())
@@ -162,12 +164,155 @@ def build_core(bundle,manifest):
     return result,full_matches
 
 
+def build_details(bundle, manifest, corrections):
+    require(corrections['edition']==2026,'Wrong correction edition')
+    result, references=build_core(bundle,manifest)
+    result['dataset_name']='2026-full-core-and-details'
+    result['manifest']=copy.deepcopy(manifest)
+    result['manifest']['corrections']={'canonical_json_sha256':digest(encode_json(corrections)),'rules':corrections}
+    teams={t['code']:t for t in result['teams']}; codes={t['id']:t['code'] for t in result['teams']}
+    players={(codes[p['team_id']],p['shirt_number']):p for p in result['players']}
+    by_id={p['id']:p for p in result['players']}
+    by_name={(codes[p['team_id']],normalized_name(p['name'])):p for p in result['players']}
+    matches={m['match_no']:m for m in result['matches']}; source_matches={}; corrected_rows=Counter()
+    result['entity_mappings']=[]
+    require(len(bundle['report-matches.json'])==104,'Missing report fixtures')
+    for r in bundle['report-matches.json']:
+        number=integer(r['match_number']);require(number in matches and r['match_id'] not in source_matches,'Duplicate/foreign report fixture')
+        match=matches[number]; expected=[codes[match['home_team_id']],codes[match['away_team_id']]]
+        observed=[r['home_team_id'],r['away_team_id']]
+        rules=[c for c in corrections['match_team_corrections'] if c['match_no']==number and c['source_match_id']==r['match_id']]
+        if observed!=expected:
+            require(len(rules)==1,'Unreviewed report team-code mismatch')
+            rule=rules[0]
+            require(expected==[rule['expected_home'],rule['expected_away']] and observed==[rule['expected_home'],rule['source_team']] and rule['canonical_team']==expected[1], 'Invalid scoped team correction')
+        else: require(not rules,'Unexpected correction on an already consistent match')
+        final=[match['home_score_et'] if match['home_score_et'] is not None else match['home_score_90'],match['away_score_et'] if match['away_score_et'] is not None else match['away_score_90']]
+        require([integer(r['home_score']),integer(r['away_score'])]==final,'Report final score disagreement')
+        source_matches[r['match_id']]=(match,rules[0] if rules else None)
+        result['entity_mappings'].append({'provider':'worldcup26','entity_type':'match','source_key':r['match_id'],'target_id':match['id']})
+        for source_code in observed:
+            canonical_code=rules[0]['canonical_team'] if rules and source_code==rules[0]['source_team'] else source_code
+            result['entity_mappings'].append({'provider':'worldcup26-matchteam','entity_type':'team','source_key':r['match_id']+'/'+source_code,'target_id':teams[canonical_code]['id']})
+    require({m['match_no'] for m,_ in source_matches.values()}==set(matches),'Missing report match mapping')
+
+    def connect(row,section):
+        require(row['match_id'] in source_matches,'Unknown report match ID')
+        match,rule=source_matches[row['match_id']];code=row['team_id']
+        if rule and code==rule['source_team']:
+            code=rule['canonical_team'];corrected_rows[section]+=1
+        require(code in [codes[match['home_team_id']],codes[match['away_team_id']]],'Report team outside canonical fixture')
+        return match,code
+
+    def connect_player(row,section):
+        match,code=connect(row,section);p=players.get((code,integer(row['shirt_number'])))
+        require(p is not None,'Unknown player number')
+        if normalized_name(row['player_name'])!=normalized_name(p['name']):
+            aliases=[c for c in corrections['player_name_corrections'] if c['match_no']==match['match_no'] and c['team_code']==code and c['shirt_number']==p['shirt_number'] and c['source_name']==row['player_name'] and c['player_id']==p['id']]
+            require(len(aliases)==1,'Unreviewed player name mismatch')
+            side=0 if code==codes[match['home_team_id']] else 1
+            require(any(normalized_name(p['name'])==normalized_name(x['name']) for x in references[match['match_no']]['lineup'][side]['starter']),'Name correction lacks independent starting-XI evidence')
+            corrected_rows['short_name_'+section]+=1
+        return match,code,p
+
+    appearances={}; source_players={}; source_appearances={}; lineup_sizes={};position_differences=[]
+    for r in bundle['report-appearances.json']:
+        match,code,p=connect_player(r,'appearances');key=(match['id'],p['id'])
+        require(key not in appearances,'Duplicate match/player appearance')
+        require(r['is_starter'] in ['True','False'] and r['appeared'] in ['True','False'],'Invalid appearance flags')
+        require(r['position'] in ['GK','DF','MF','FW'],'Unknown match position')
+        if r['position']!=p['position']:
+            position_differences.append({'match_no':match['match_no'],'player_id':p['id'],'roster_position':p['position'],'report_match_position':r['position'],'resolution':'Preserve the source match designation separately; do not overwrite the FIFA roster position.'})
+        require(r['team_role']==('home' if code==codes[match['home_team_id']] else 'away'),'Wrong report team role')
+        require(r['player_id'] not in source_players or source_players[r['player_id']]==p['id'],'Report player ID collision')
+        require(r['appearance_id'] not in source_appearances,'Duplicate appearance source ID')
+        source_players[r['player_id']]=p['id'];source_appearances[r['appearance_id']]=key
+        appearances[key]={'match_id':match['id'],'player_id':p['id'],'position':r['position'],'starting':r['is_starter']=='True','appeared':r['appeared']=='True'}
+        require(not appearances[key]['starting'] or appearances[key]['appeared'],'Starter cannot be marked unused')
+    for match in result['matches']:
+        for side,team in enumerate([match['home_team_id'],match['away_team_id']]):
+            code=codes[team];rows=[r for r in appearances.values() if r['match_id']==match['id'] and by_id[r['player_id']]['team_id']==team]
+            require(11<=len(rows)<=26,'Invalid match squad size')
+            lineup_sizes[str(match['match_no'])+'/'+code]=len(rows)
+            actual={r['player_id'] for r in rows if r['starting']}
+            reference=references[match['match_no']]['lineup'][side]
+            expected={by_name[(code,normalized_name(p['name']))]['id'] for p in reference['starter']}
+            require(len(actual)==11 and actual==expected,'Starting XI disagrees with detailed source')
+            participants={by_name[(code,normalized_name(p['name']))]['id'] for p in reference['starter']+reference['bench']}
+            require({r['player_id'] for r in rows if r['appeared']}==participants,'Participant set disagrees with detailed source')
+    result['appearances']=list(appearances.values())
+    result['player_mappings']=[{'provider':'worldcup26','source_key':key,'player_id':value} for key,value in sorted(source_players.items())]
+
+    def linked(row,section):
+        match,code,p=connect_player(row,section);key=(match['id'],p['id'])
+        require(source_players.get(row['player_id'])==p['id'] and source_appearances.get(row['appearance_id'])==key,'Unlinked report source player/appearance')
+        return match,code,p,key
+
+    stat_keys=set()
+    for r in bundle['report-player_stats.json']:
+        match,code,p,key=linked(r,'player_stats');require(key not in stat_keys,'Duplicate player statistics');stat_keys.add(key)
+        record={'match_id':match['id'],'player_id':p['id'],'goals':integer(r['goals']),'assists':None,'minutes_played':None,
+                'shots':integer(r['attempts_at_goal']),'passes_attempted':integer(r['passes_attempted']),
+                'passes_completed':integer(r['passes_completed']),'pass_completion_pct':percentage(r['pass_completion_pct'])}
+        require(record['passes_completed'] is None or record['passes_attempted'] is None or record['passes_completed']<=record['passes_attempted'],'Completed passes exceed attempts')
+        result['player_stats'].append(record)
+    require(stat_keys=={key for key,r in appearances.items() if r['appeared']},'Missing/unexpected played-player statistics')
+
+    team_stats={};metric_keys=set();ignored=Counter()
+    for r in bundle['report-team_stats.json']:
+        if r['team_id']=='CONTEST' or r['metric'] not in TEAM_METRICS:
+            ignored[r['metric']]+=1;continue
+        match,code=connect(r,'team_stats');metric=r['metric'];key=(match['id'],teams[code]['id'])
+        require((key,metric) not in metric_keys,'Duplicate team metric');metric_keys.add((key,metric))
+        record=team_stats.setdefault(key,{'match_id':match['id'],'team_id':teams[code]['id']})
+        if metric=='Possession':record['possession_pct']=percentage(r['value'])
+        elif metric=='Goals':record['goals']=integer(r['value'])
+        elif metric=='Pass Completion %':record['pass_completion_pct']=percentage(r['value'])
+        elif metric=='Attempts at Goal (On Target)':record['shots'],record['shots_on_target']=pair(r['value'])
+        elif metric=='Total Passes (Complete)':record['passes_attempted'],record['passes_completed']=pair(r['value'])
+    require(len(team_stats)==208 and len(metric_keys)==208*len(TEAM_METRICS),'Missing full-edition team metrics')
+    result['team_stats']=list(team_stats.values())
+    event_ids=set();event_counts=Counter();goals=Counter();own_goals=Counter();bench_cards=[]
+    for r in bundle['report-events.json']:
+        match,code,p,key=linked(r,'events')
+        require(r['event_id'] not in event_ids,'Duplicate event source ID');event_ids.add(r['event_id'])
+        require(r['event_type'] in ['goal','own_goal','yellow_card','red_card','subbed_on','subbed_off'],'Unknown event type')
+        require(appearances[key]['appeared'] or r['event_type'] in ['yellow_card','red_card'],'On-field event attributed to unused player')
+        if not appearances[key]['appeared']:
+            bench_cards.append({'match_no':match['match_no'],'player_id':p['id'],'event_type':r['event_type'],'minute_raw':r['minute_raw']})
+        result['events'].append({'source_id':r['event_id'],'match_id':match['id'],'player_id':p['id'],'type':r['event_type'],**event_minute(r['minute_raw'])})
+        event_counts[r['event_type']]+=1
+        if r['event_type']=='goal':goals[key]+=1
+        if r['event_type']=='own_goal':own_goals[(match['id'],p['team_id'])]+=1
+    for r in result['player_stats']:
+        require(r['goals']==goals[(r['match_id'],r['player_id'])],'Player goal statistic/event disagreement')
+    for match in result['matches']:
+        for side,team in [('home',match['home_team_id']),('away',match['away_team_id'])]:
+            opponent=match['away_team_id'] if side=='home' else match['home_team_id']
+            expected=match[side+'_score_et'] if match[side+'_score_et'] is not None else match[side+'_score_90']
+            actual=sum(r['goals'] for r in result['player_stats'] if r['match_id']==match['id'] and by_id[r['player_id']]['team_id']==team)+own_goals[(match['id'],opponent)]
+            require(actual==expected and team_stats[(match['id'],team)]['goals']==expected,'Goal totals (including own goals) disagree with fixture')
+    result['report'].update(corrected_rows=dict(corrected_rows),applied_corrections=corrections,position_differences=position_differences,
+                            source_match_squad_size_distribution=dict(Counter(lineup_sizes.values())),
+                            shorter_match_squads={k:v for k,v in lineup_sizes.items() if v<26},
+                            event_counts=dict(event_counts),bench_cards=bench_cards,excluded_noncore_metric_rows=dict(ignored),
+                            missing_fields=['Player match assists and minutes_played are unavailable in the selected source and remain null.'],
+                            external_roster_policy='FIFA season roster is canonical; openfootball roster name/selection differences are not silently merged.',
+                            coverage={key:len({r['match_id'] for r in result[key]}) for key in ['appearances','player_stats','team_stats','events']})
+    return result
+
+
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--capture-from',type=Path)
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--capture-from',type=Path);parser.add_argument('--details',action='store_true')
     args=parser.parse_args()
     if args.capture_from:capture(args.capture_from)
     bundle,manifest=load(); result,_=build_core(bundle,manifest)
     (DIRECTORY/'core.json').write_bytes(encode_json(result))
+    if args.details:
+        corrections=json.loads((DIRECTORY/'corrections.json').read_text(encoding='utf-8'))
+        result=build_details(bundle,manifest,corrections)
+        (DIRECTORY/'complete.json').write_bytes(encode_json(result))
+        (DIRECTORY/'quality-report.json').write_bytes(encode_json(result['report']))
     print(json.dumps({k:len(v) for k,v in result.items() if isinstance(v,list)}))
 
 

@@ -1,6 +1,5 @@
 """FOURWARD coursework | Author: 韩羽宸 | Adapt the verified pilot to import v1."""
-import sys
-from pathlib import Path
+import json
 from worldcup_data import DEFAULT_SAMPLE, ROOT, clean, load_bundle, encode_json
 
 sample, report = clean(load_bundle(DEFAULT_SAMPLE))
@@ -15,7 +14,7 @@ for match in sample['matches']:
     match['winner_team_id'] = (match['home_team_id'] if match['home_score'] > match['away_score'] else
                               match['away_team_id'] if match['away_score'] > match['home_score'] else None)
 sample.update(import_schema=1, dataset_name='2026-core-pilot',
-              manifest=__import__('json').loads((DEFAULT_SAMPLE/'manifest.json').read_text(encoding='utf-8')),
+              manifest=json.loads((DEFAULT_SAMPLE/'manifest.json').read_text(encoding='utf-8')),
               stages=[{'code': 'group', 'name': '小组赛', 'sort_order': 1, 'is_group_stage': 1}],
               groups=[{'code': g, 'name': g+'组', 'sort_order': ord(g)-64} for g in groups],
               group_teams=[{'group_code': groups[0], 'team_id': t['id']} for t in sample['teams']], venues=[],

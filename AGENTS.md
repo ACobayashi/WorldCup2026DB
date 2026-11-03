@@ -18,6 +18,10 @@ This four-person coursework project has a buildless frontend and a PHP/PDO guest
 - `python -m unittest discover -s tests -p test_worldcup_data.py`: validate the bundled snapshots, identity mappings and corrupted-source rejection.
 - `php scripts/import-worldcup.php data/worldcup/pilot.json [--dry-run]`: import or transactionally validate the pilot; identical successful content is skipped.
 - `php scripts/check-worldcup-import.php`: verify import guards and rollback without retaining test writes.
+- `python scripts/worldcup_full.py --details`: rebuild full-edition core and detail import packages from the committed source snapshots offline.
+- `python -m unittest discover -s tests -p 'test_worldcup*.py'`: validate pilot and full-edition datasets (47 checks).
+- `php scripts/import-worldcup.php data/worldcup/full/complete.json [--dry-run]`: import all 104 fixtures and selected core detail fields.
+- `php scripts/check-worldcup-full.php`: verify the actual full snapshot in the local DB (28 checks, including idempotency).
 
 The slice requires PHP 8.2+, PDO MySQL, mbstring and a MySQL-compatible database. It uses small PHP MVC classes without a third-party framework. See README for isolated XAMPP startup and `php scripts/check-guestbook.php` for database integration checks. No production deployment or Docker configuration has been verified. Do not document nonexistent commands as working features.
 
@@ -27,7 +31,7 @@ Use two-space indentation for HTML, CSS, and JavaScript. Use kebab-case for asse
 
 ## Testing Guidelines
 
-Run prototype checks after changes. Verify member selections, mobile layout, GitHub links, cross-module navigation, message submission/reload, match filters, details and support choice/reload. For backend changes, lint PHP and run database checks against a development DB: moderation, CSRF, permissions and persistence. Preserve the server/demo guestbook distinction; server failures must not fall back to local storage. Fixture data is synthetic, not official or live. Preserve demo labels. No coverage threshold has been adopted.
+Run prototype checks after changes. Verify member selections, mobile layout, GitHub links, cross-module navigation, message submission/reload, match filters, details and support choice/reload. For backend changes, lint PHP and run database checks against a development DB: moderation, CSRF, permissions and persistence. Preserve the server/demo guestbook distinction; server failures must not fall back to local storage. Static demo and integration-test fixtures are synthetic; the DB import uses audited 2026 snapshots documented in `data/worldcup/README.md`, with missing values and scoped corrections preserved. Preserve demo labels. No coverage threshold has been adopted.
 
 ## Commit and Pull Request Guidelines
 

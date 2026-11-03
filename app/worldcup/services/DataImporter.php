@@ -9,7 +9,9 @@ final class DataImporter {
   private array $matches = [];
   private array $appearances = [];
   private int $batch;
-  public function __construct(private readonly \PDO $db) {}
+  public function __construct(private readonly \PDO $db) {
+    $this->db->exec("SET time_zone = '+00:00'");
+  }
 
   private function check(bool $ok, string $message): void {
     if (!$ok) throw new \InvalidArgumentException($message);
@@ -81,6 +83,7 @@ final class DataImporter {
       $this->ids=$this->players=$this->matches=$this->appearances=[];
       $counts=[];
       foreach (['teams','players','venues','stages','groups','group_teams','matches','appearances','player_stats','team_stats','events','player_mappings'] as $key) $counts[$key]=count($data[$key]);
+      $counts['entity_mappings']=count($data['entity_mappings']??[]);
       $this->batch=$this->upsert('wc_import_batches',[
         'dataset_name'=>$data['dataset_name'],'content_sha256'=>$hash,
         'source_manifest'=>json_encode($data['manifest'],JSON_THROW_ON_ERROR|JSON_UNESCAPED_UNICODE),
@@ -128,13 +131,17 @@ final class DataImporter {
         $this->canonical($r['id'],'match',$id); $this->matches[$r['id']]=$r;
       }
       foreach ($data['player_mappings'] as $r) $this->mapping($r['provider'],'player',$r['source_key'],$this->id($r['player_id'],'player'));
+      foreach ($data['entity_mappings']??[] as $r) {
+        $this->check(in_array($r['entity_type'],['team','player','match','venue'],true),'Invalid mapping entity');
+        $this->mapping($r['provider'],$r['entity_type'],$r['source_key'],$this->id($r['target_id'],$r['entity_type']));
+      }
       foreach ($data['appearances'] as $r) {
         [$match,$player,$team]=$this->matchPlayer($r); $p=$this->players[$r['player_id']];
         $key=$match.'/'.$player;
         $this->check(!isset($this->appearances[$key]),'Duplicate appearance');
         $this->check(is_bool($r['starting']) && is_bool($r['appeared']),'Appearance flags must be boolean');
         $this->upsert('wc_match_appearances',['match_id'=>$match,'player_id'=>$player,'team_id'=>$team,'shirt_number'=>$p['shirt_number'],
-          'position'=>$p['position'],'is_starter'=>(int)$r['starting'],'appeared'=>(int)$r['appeared'],'batch_id'=>$this->batch],['match_id','player_id']);
+          'position'=>$r['position']??$p['position'],'is_starter'=>(int)$r['starting'],'appeared'=>(int)$r['appeared'],'batch_id'=>$this->batch],['match_id','player_id']);
         $this->appearances[$key]=$r;
       }
       $seen=[];
