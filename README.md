@@ -81,6 +81,8 @@ PHP 本地环境的 `/worldcup/` 已接入世界杯 MVC 只读框架：赛程列
 
 已完成一个国家队、两场比赛的[核心数据清洗样本](data/samples/worldcup2026/README.md)，包含原始字段快照、来源清单、清洗结果和异常报告；不包含生日、身高、体重或照片。在仓库根目录执行 `python scripts/worldcup_data.py` 可离线重建，执行 `python -m unittest discover -s tests -p test_worldcup_data.py` 可运行 22 项校验，需要 Python 3.10+，无需第三方包。该样本尚未导入数据库或接入页面，保留一项姓名差异待核实。
 
+后续已增加事务式 CLI 导入器和六张导入/统计表，完整初始化 SQL 共 18 张表。小样本已在本机入库并通过回滚和重复导入校验；原始清洗样本保持不变。可复现命令、来源映射和表说明见[数据库导入说明](data/worldcup/README.md)。
+
 ## 统一接入约定（目标方案，分阶段接入）
 
 当前团队模块已经使用轻量 PHP MVC/PDO 运行，保留现有账号、接口、SQL 和功能链。下表是后续统一集成目标，不代表已安装 Yii2、完成数据库迁移或验证 Docker 部署；不为追求目录一致而重建账号或清空数据。
