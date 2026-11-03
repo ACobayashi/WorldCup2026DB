@@ -13,6 +13,7 @@ require __DIR__.'/helpers.php';
     <link rel="stylesheet" href="../assets/css/common.css?v=1">
     <link rel="stylesheet" href="../assets/css/worldcup-shell.css?v=2">
     <link rel="stylesheet" href="../assets/css/worldcup-data.css?v=6">
+    <?php if($section==='matches'): ?><link rel="stylesheet" href="../assets/css/worldcup-formation.css?v=1"><?php endif; ?>
     <script type="module" src="../assets/js/player-portraits.mjs?v=1"></script>
   </head>
   <body class="wc-app">

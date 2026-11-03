@@ -87,9 +87,11 @@ PHP 本地环境的 `/worldcup/` 已接入世界杯 MVC 只读框架：赛程列
 
 国家队球员卡片和比赛阵容姓名已可进入[个人数据面板](docs/worldcup-player-board.md)：赛事汇总、分位置雷达、可切换的单场方格统计、逐场记录与事件；新增球员榜及位置筛选。扩展 17 项已核验的逐场指标，仍使用 18 张表。首次接入在完整核心数据之后执行 `python scripts/worldcup_player_metrics.py` 和 `php scripts/import-player-metrics.php`，详细步骤与缺失数据边界见说明。
 
-## 统一接入约定（目标方案，分阶段接入）
-
 球员照片已接入：本机覆盖 1,248 人，其中 1,238 人使用现成大头照。图片缓存不进 Git，换机器运行 `python scripts/worldcup_photos.py` 下载；来源、身份核对和缺图回退见[球员照片说明](docs/worldcup-player-photos.md)。
+
+比赛详情增加[绿茵首发阵容图](docs/worldcup-formations.md)：104 场真实阵型与首发站位、球衣号、国家队配色、队长及已记录事件；点击进入球员该场表现。无需新增数据库表或列。
+
+## 统一接入约定（目标方案，分阶段接入）
 
 当前团队模块已经使用轻量 PHP MVC/PDO 运行，保留现有账号、接口、SQL 和功能链。下表是后续统一集成目标，不代表已安装 Yii2、完成数据库迁移或验证 Docker 部署；不为追求目录一致而重建账号或清空数据。
 
