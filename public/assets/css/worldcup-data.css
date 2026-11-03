@@ -1,0 +1,64 @@
+/* FOURWARD coursework | Author: 韩羽宸 | Database-backed football pages. */
+.wc-flag { display:inline-block; width:36px; height:27px; object-fit:contain; vertical-align:middle; border-radius:3px; flex-shrink:0; box-shadow:0 2px 8px #0002; }
+.wc-flag-placeholder { text-align:center; background:#344154; color:#b9c7dd; }
+.wc-fixture-teams { display:grid; gap:16px; margin:24px 0; font-size:18px; font-weight:550; }
+.wc-fixture-teams>span { display:flex; align-items:center; gap:12px; }
+.wc-breadcrumb { display:flex; gap:12px; font-size:12px; color:#a4b1cb; margin:26px 0 18px; }
+.wc-breadcrumb a { color:#bfcdff; }
+.wc-match-hero { position:relative; border:1px solid #a6b7ea35; border-radius:24px; padding:26px 32px 22px; background:radial-gradient(ellipse at 50% 10%,#6c83cc30,transparent 65%),linear-gradient(120deg,#243147,#1a2638); overflow:hidden; }
+.wc-match-top,.wc-match-meta { display:flex; align-items:center; justify-content:space-between; gap:16px; color:#abbad4; font-size:12px; }
+.wc-badge { border:1px solid #9fbaee40; border-radius:99px; color:#d0ddfa; padding:6px 12px; font-size:11px; }
+.wc-big-score { display:grid; grid-template-columns:1fr minmax(160px,1fr) 1fr; align-items:center; padding:32px 0; gap:20px; text-align:center; }
+.wc-hero-team { display:flex; flex-direction:column; align-items:center; gap:14px; }
+.wc-hero-team .wc-flag { width:88px; height:66px; border-radius:7px; }
+.wc-hero-team h2 { margin:0; font-size:clamp(22px,3vw,36px); font-weight:600; }
+.wc-hero-team>span { color:#92a8d0; font:11px monospace; letter-spacing:3px; }
+.wc-score-center { display:flex; flex-direction:column; gap:10px; align-items:center; }
+.wc-score-center strong { font:650 clamp(38px,6vw,72px)/1.1 Arial,sans-serif; color:#f0f4ff; white-space:nowrap; font-variant-numeric:tabular-nums; }
+.wc-score-center>span { font-size:12px; color:#bdcdee; }
+.wc-score-center small { font-size:12px; color:#9fb0ce; }
+.wc-match-meta { padding-top:20px; border-top:1px solid #a6b7ea20; justify-content:center; flex-wrap:wrap; }
+.wc-section-nav { display:flex; gap:28px; margin-top:24px; border-bottom:1px solid #a6b7ea25; font-size:13px; }
+.wc-section-nav a { padding:12px 2px; color:#bbcbed; }
+.wc-section-nav a:hover { color:#fff; box-shadow:0 2px #91a9ff; }
+.wc-detail-layout { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(320px,.85fr); gap:22px; align-items:start; }
+.wc-detail-layout .wc-panel { min-width:0; }
+.wc-section-heading { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:22px; }
+.wc-section-heading h2 { font-size:21px; margin:6px 0 0; font-weight:600; }
+.wc-section-heading .wc-eyebrow { margin:0; font-size:9px; }
+.wc-lineups { display:grid; grid-template-columns:1fr 1fr; gap:26px; }
+.wc-panel .wc-team-heading { display:flex; align-items:center; gap:10px; margin:0 0 24px; font-size:17px; }
+.wc-team-heading .wc-flag { width:30px; height:23px; }
+.wc-squad-label { display:flex; justify-content:space-between; font-size:12px; color:#c5d1e9; background:#8ba6dc0b; margin:20px 0 4px; padding:10px 8px; border-bottom:1px solid #95aed425; }
+.wc-squad-label span { font-weight:400; color:#8e9fbc; }
+.wc-player-list { margin:0; padding:0; list-style:none; }
+.wc-player-list li { display:flex; align-items:center; gap:10px; padding:13px 0; border-bottom:1px solid #95aed414; min-height:63px; font-size:12px; }
+.wc-shirt { display:grid; place-items:center; width:28px; height:30px; flex-shrink:0; color:#beceef; font:12px monospace; background:#9ab7ef0d; border-radius:7px; }
+.wc-player-list li>div { display:grid; gap:5px; min-width:0; overflow-wrap:anywhere; }
+.wc-player-list small { color:#8e9fbc; font-size:10px; }
+.wc-goals { color:#acdfc7; font-size:11px; margin-left:auto; white-space:nowrap; }
+.wc-stat-teams { display:flex; justify-content:space-between; gap:12px; margin-bottom:26px; font-size:12px; }
+.wc-stat-teams>span { display:flex; align-items:center; gap:8px; }
+.wc-stat-teams .wc-flag { width:24px; height:18px; }
+.wc-stat-row { margin:22px 0; }
+.wc-stat-row>div:first-child { display:grid; grid-template-columns:1fr auto 1fr; margin-bottom:9px; font-size:12px; color:#aebdd7; }
+.wc-stat-row b { color:#e6edfa; font-size:14px; font-variant-numeric:tabular-nums; }
+.wc-stat-row b:last-child { text-align:right; }
+.wc-stat-bar { height:5px; background:#8293c2; display:flex; border-radius:8px; overflow:hidden; }
+.wc-stat-bar>span { background:#50c69d; height:100%; border-right:3px solid #1d293d; }
+.wc-stat-bar.is-unknown { background:#95aed41a; }
+.wc-panel .wc-fineprint { font-size:11px; line-height:1.8; margin-top:24px; }
+.wc-timeline { list-style:none; margin:0; padding:0; }
+.wc-event { display:grid; grid-template-columns:48px 22px 1fr; gap:12px; padding:15px 0; border-bottom:1px solid #95aed419; align-items:start; }
+.wc-event time { font:11px/1.8 monospace; color:#9bb1d5; text-align:right; }
+.wc-event-icon { text-align:center; color:#7ad6b1; }
+.wc-event-yellow_card .wc-event-icon { color:#f1d16d; }
+.wc-event-red_card .wc-event-icon { color:#ed7782; }
+.wc-event-subbed_off .wc-event-icon { color:#c69cab; }
+.wc-event>div { display:grid; gap:5px; font-size:12px; }
+.wc-event b { color:#cbd7ed; font-size:11px; font-weight:500; }
+.wc-event small { color:#8e9fbc; font-size:10px; }
+.wc-provenance summary { cursor:pointer; color:#abbcdd; font-size:12px; }
+[id] { scroll-margin-top:100px; }
+@media(max-width:1000px) { .wc-detail-layout { grid-template-columns:1fr; } .wc-detail-aside { display:grid; grid-template-columns:1fr 1fr; gap:20px; align-items:start; } }
+@media(max-width:600px) { .wc-match-hero { padding:20px 16px; } .wc-big-score { grid-template-columns:1fr 1fr 1fr; gap:8px; padding:26px 0; } .wc-hero-team .wc-flag { width:54px; height:41px; } .wc-hero-team h2 { font-size:19px; } .wc-score-center strong { font-size:36px; } .wc-score-center small { font-size:10px; } .wc-lineups { gap:16px; } .wc-detail-aside { display:block; } .wc-player-list li { gap:6px; font-size:11px; } .wc-goals { font-size:10px; } }

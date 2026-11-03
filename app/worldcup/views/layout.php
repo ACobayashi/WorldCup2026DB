@@ -1,6 +1,7 @@
 <?php
 /** FOURWARD coursework | Author: 韩羽宸 | World Cup shared server-page layout. */
 declare(strict_types=1);
+require __DIR__.'/helpers.php';
 ?>
 <!doctype html>
 <html lang="zh-CN">
@@ -10,7 +11,8 @@ declare(strict_types=1);
     <meta name="theme-color" content="#111722">
     <title><?= e($title) ?> · FOURWARD 2026</title>
     <link rel="stylesheet" href="../assets/css/common.css?v=1">
-    <link rel="stylesheet" href="../assets/css/worldcup-shell.css?v=1">
+    <link rel="stylesheet" href="../assets/css/worldcup-shell.css?v=2">
+    <link rel="stylesheet" href="../assets/css/worldcup-data.css?v=1">
   </head>
   <body class="wc-app">
     <a class="skip-link" href="#main">跳到主要内容</a>

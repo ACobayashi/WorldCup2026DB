@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace Fourward\worldcup\controllers;
 use Fourward\common\HttpError;
 use Fourward\worldcup\models\MatchModel;
+use Fourward\worldcup\models\MatchDetail;
 
 final class MatchController extends ReadController {
   public function index(array $input): array {
@@ -22,6 +23,7 @@ final class MatchController extends ReadController {
   public function show(array $input): array {
     $id = $this->integer($input, 'id');
     if ($id === null) throw new HttpError(422, '缺少比赛编号。');
-    return (new MatchModel($this->db))->find($id) ?? throw new HttpError(404, '比赛不存在。');
+    $match = (new MatchModel($this->db))->find($id) ?? throw new HttpError(404, '比赛不存在。');
+    return $match + (new MatchDetail($this->db))->forMatch($id);
   }
 }
