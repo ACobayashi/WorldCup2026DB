@@ -1,0 +1,131 @@
+[
+  {
+    "Away": {
+      "IdCountry": "ALG",
+      "IdTeam": "43843",
+      "TeamName": [
+        {
+          "Description": "Algeria",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    "AwayTeamScore": 0,
+    "Date": "2026-06-17T01:00:00Z",
+    "GroupName": [
+      {
+        "Description": "Group J",
+        "Locale": "en-GB"
+      }
+    ],
+    "Home": {
+      "IdCountry": "ARG",
+      "IdTeam": "43922",
+      "TeamName": [
+        {
+          "Description": "Argentina",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    "HomeTeamScore": 3,
+    "IdGroup": "289284",
+    "IdMatch": "400021496",
+    "IdSeason": "285023",
+    "MatchNumber": 19,
+    "MatchStatus": 0,
+    "ResultType": 1,
+    "StageName": [
+      {
+        "Description": "First Stage",
+        "Locale": "en-GB"
+      }
+    ]
+  },
+  {
+    "Away": {
+      "IdCountry": "ALG",
+      "IdTeam": "43843",
+      "TeamName": [
+        {
+          "Description": "Algeria",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    "AwayTeamScore": 2,
+    "Date": "2026-06-23T03:00:00Z",
+    "GroupName": [
+      {
+        "Description": "Group J",
+        "Locale": "en-GB"
+      }
+    ],
+    "Home": {
+      "IdCountry": "JOR",
+      "IdTeam": "43820",
+      "TeamName": [
+        {
+          "Description": "Jordan",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    "HomeTeamScore": 1,
+    "IdGroup": "289284",
+    "IdMatch": "400021499",
+    "IdSeason": "285023",
+    "MatchNumber": 44,
+    "MatchStatus": 0,
+    "ResultType": 1,
+    "StageName": [
+      {
+        "Description": "First Stage",
+        "Locale": "en-GB"
+      }
+    ]
+  },
+  {
+    "Away": {
+      "IdCountry": "UZB",
+      "IdTeam": "44005",
+      "TeamName": [
+        {
+          "Description": "Uzbekistan",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    "AwayTeamScore": 0,
+    "Date": "2026-06-23T17:00:00Z",
+    "GroupName": [
+      {
+        "Description": "Group K",
+        "Locale": "en-GB"
+      }
+    ],
+    "Home": {
+      "IdCountry": "POR",
+      "IdTeam": "43963",
+      "TeamName": [
+        {
+          "Description": "Portugal",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    "HomeTeamScore": 5,
+    "IdGroup": "289285",
+    "IdMatch": "400021503",
+    "IdSeason": "285023",
+    "MatchNumber": 47,
+    "MatchStatus": 0,
+    "ResultType": 1,
+    "StageName": [
+      {
+        "Description": "First Stage",
+        "Locale": "en-GB"
+      }
+    ]
+  }
+]

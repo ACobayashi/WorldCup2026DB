@@ -1,0 +1,45 @@
+{
+  "counts": {
+    "appearances": 52,
+    "events": 23,
+    "matches": 2,
+    "player_mappings": 51,
+    "player_stats": 32,
+    "players": 26,
+    "team_stats": 2,
+    "teams": 3
+  },
+  "excluded_control_matches": [
+    {
+      "accepted": false,
+      "expected": [
+        "POR",
+        "UZB"
+      ],
+      "match_no": 47,
+      "observed": [
+        "POR",
+        "GHA"
+      ],
+      "source_match_id": "2026-M047-POR-GHA",
+      "team_codes_match": false
+    }
+  ],
+  "notes": [
+    "Only ALG player/appearance/stat/event records are in scope; opponents have team references only.",
+    "Missing minutes/assists stay null. Status enum mapping is not yet an import contract.",
+    "Goal-total check is limited to these group-stage samples without own goals.",
+    "No database connection, schema change or import was performed."
+  ],
+  "ready_for_database_import": false,
+  "review_queue": [
+    {
+      "action": "Do not map this source row automatically.",
+      "candidate_name": "Yassine TITRAOUI",
+      "source_key": "ALG/24",
+      "source_name": "Yacine Titraoui",
+      "type": "roster_identity_conflict"
+    }
+  ],
+  "status": "passed_with_review"
+}

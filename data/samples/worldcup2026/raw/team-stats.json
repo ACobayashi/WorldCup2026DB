@@ -1,0 +1,82 @@
+[
+  {
+    "match_id": "2026-M019-ARG-ALG",
+    "metric": "Possession",
+    "raw": "50.8%",
+    "team_id": "ALG",
+    "unit": "%",
+    "value": "50.8"
+  },
+  {
+    "match_id": "2026-M019-ARG-ALG",
+    "metric": "Goals",
+    "raw": "0",
+    "team_id": "ALG",
+    "unit": "",
+    "value": "0"
+  },
+  {
+    "match_id": "2026-M019-ARG-ALG",
+    "metric": "Attempts at Goal (On Target)",
+    "raw": "7 (1)",
+    "team_id": "ALG",
+    "unit": "",
+    "value": "7 (1)"
+  },
+  {
+    "match_id": "2026-M019-ARG-ALG",
+    "metric": "Total Passes (Complete)",
+    "raw": "634 (578)",
+    "team_id": "ALG",
+    "unit": "",
+    "value": "634 (578)"
+  },
+  {
+    "match_id": "2026-M019-ARG-ALG",
+    "metric": "Pass Completion %",
+    "raw": "91%",
+    "team_id": "ALG",
+    "unit": "%",
+    "value": "91.0"
+  },
+  {
+    "match_id": "2026-M044-JOR-ALG",
+    "metric": "Possession",
+    "raw": "62.2%",
+    "team_id": "ALG",
+    "unit": "%",
+    "value": "62.2"
+  },
+  {
+    "match_id": "2026-M044-JOR-ALG",
+    "metric": "Goals",
+    "raw": "2",
+    "team_id": "ALG",
+    "unit": "",
+    "value": "2"
+  },
+  {
+    "match_id": "2026-M044-JOR-ALG",
+    "metric": "Attempts at Goal (On Target)",
+    "raw": "17 (8)",
+    "team_id": "ALG",
+    "unit": "",
+    "value": "17 (8)"
+  },
+  {
+    "match_id": "2026-M044-JOR-ALG",
+    "metric": "Total Passes (Complete)",
+    "raw": "661 (590)",
+    "team_id": "ALG",
+    "unit": "",
+    "value": "661 (590)"
+  },
+  {
+    "match_id": "2026-M044-JOR-ALG",
+    "metric": "Pass Completion %",
+    "raw": "89%",
+    "team_id": "ALG",
+    "unit": "%",
+    "value": "89.0"
+  }
+]

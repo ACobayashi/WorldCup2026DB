@@ -1,0 +1,1410 @@
+{
+  "appearances": [
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:389879",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:376285",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:405877",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:477795",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:482874",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:441350",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:431858",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:511009",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:379939",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:395113",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:494291",
+      "starting": true
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:520070",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:477817",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:512127",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:433600",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:480983",
+      "starting": false
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:433679",
+      "starting": false
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:379942",
+      "starting": false
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:430698",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:520071",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:482869",
+      "starting": false
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:477790",
+      "starting": false
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:512132",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:433631",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:520072",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:511010",
+      "starting": false
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:389879",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:376285",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:433679",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:379942",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:405877",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:477795",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:441350",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:431858",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:511009",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:395113",
+      "starting": true
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:494291",
+      "starting": true
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:520070",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:477817",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:512127",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:433600",
+      "starting": false
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:480983",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:430698",
+      "starting": false
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:482874",
+      "starting": false
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:520071",
+      "starting": false
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:482869",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:477790",
+      "starting": false
+    },
+    {
+      "appeared": true,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:379939",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:512132",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:433631",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:520072",
+      "starting": false
+    },
+    {
+      "appeared": false,
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:511010",
+      "starting": false
+    }
+  ],
+  "events": [
+    {
+      "added_minute": 0,
+      "label": "64'",
+      "match_id": "fifa:match:400021496",
+      "minute": 64,
+      "player_id": "fifa:player:379942",
+      "source_id": "2026-M019-ARG-ALG_2247678252dd",
+      "type": "subbed_on"
+    },
+    {
+      "added_minute": 0,
+      "label": "64'",
+      "match_id": "fifa:match:400021496",
+      "minute": 64,
+      "player_id": "fifa:player:430698",
+      "source_id": "2026-M019-ARG-ALG_ba5176976bf6",
+      "type": "subbed_on"
+    },
+    {
+      "added_minute": 0,
+      "label": "64'",
+      "match_id": "fifa:match:400021496",
+      "minute": 64,
+      "player_id": "fifa:player:405877",
+      "source_id": "2026-M019-ARG-ALG_e9f8ee201446",
+      "type": "subbed_off"
+    },
+    {
+      "added_minute": 0,
+      "label": "64'",
+      "match_id": "fifa:match:400021496",
+      "minute": 64,
+      "player_id": "fifa:player:482874",
+      "source_id": "2026-M019-ARG-ALG_801a908e6532",
+      "type": "subbed_off"
+    },
+    {
+      "added_minute": 0,
+      "label": "64'",
+      "match_id": "fifa:match:400021496",
+      "minute": 64,
+      "player_id": "fifa:player:441350",
+      "source_id": "2026-M019-ARG-ALG_fc0925792a38",
+      "type": "subbed_off"
+    },
+    {
+      "added_minute": 0,
+      "label": "64'",
+      "match_id": "fifa:match:400021496",
+      "minute": 64,
+      "player_id": "fifa:player:477790",
+      "source_id": "2026-M019-ARG-ALG_1b0a4bb8e682",
+      "type": "subbed_on"
+    },
+    {
+      "added_minute": 0,
+      "label": "82'",
+      "match_id": "fifa:match:400021496",
+      "minute": 82,
+      "player_id": "fifa:player:433679",
+      "source_id": "2026-M019-ARG-ALG_04f9a15e65aa",
+      "type": "subbed_on"
+    },
+    {
+      "added_minute": 0,
+      "label": "82'",
+      "match_id": "fifa:match:400021496",
+      "minute": 82,
+      "player_id": "fifa:player:379939",
+      "source_id": "2026-M019-ARG-ALG_5583272180ff",
+      "type": "subbed_off"
+    },
+    {
+      "added_minute": 0,
+      "label": "82'",
+      "match_id": "fifa:match:400021496",
+      "minute": 82,
+      "player_id": "fifa:player:512132",
+      "source_id": "2026-M019-ARG-ALG_62aa4dd5fee0",
+      "type": "subbed_on"
+    },
+    {
+      "added_minute": 0,
+      "label": "82'",
+      "match_id": "fifa:match:400021496",
+      "minute": 82,
+      "player_id": "fifa:player:494291",
+      "source_id": "2026-M019-ARG-ALG_e11ad7c80379",
+      "type": "subbed_off"
+    },
+    {
+      "added_minute": 0,
+      "label": "44'",
+      "match_id": "fifa:match:400021499",
+      "minute": 44,
+      "player_id": "fifa:player:433679",
+      "source_id": "2026-M044-JOR-ALG_d7a7ffe2e105",
+      "type": "yellow_card"
+    },
+    {
+      "added_minute": 0,
+      "label": "45'",
+      "match_id": "fifa:match:400021499",
+      "minute": 45,
+      "player_id": "fifa:player:433679",
+      "source_id": "2026-M044-JOR-ALG_5cf373be4011",
+      "type": "subbed_off"
+    },
+    {
+      "added_minute": 0,
+      "label": "45'",
+      "match_id": "fifa:match:400021499",
+      "minute": 45,
+      "player_id": "fifa:player:520071",
+      "source_id": "2026-M044-JOR-ALG_5a738c20a2fc",
+      "type": "subbed_on"
+    },
+    {
+      "added_minute": 0,
+      "label": "45'",
+      "match_id": "fifa:match:400021499",
+      "minute": 45,
+      "player_id": "fifa:player:441350",
+      "source_id": "2026-M044-JOR-ALG_06a3605099f0",
+      "type": "subbed_off"
+    },
+    {
+      "added_minute": 0,
+      "label": "45'",
+      "match_id": "fifa:match:400021499",
+      "minute": 45,
+      "player_id": "fifa:player:379939",
+      "source_id": "2026-M044-JOR-ALG_c4eaab253954",
+      "type": "subbed_on"
+    },
+    {
+      "added_minute": 0,
+      "label": "69'",
+      "match_id": "fifa:match:400021499",
+      "minute": 69,
+      "player_id": "fifa:player:520071",
+      "source_id": "2026-M044-JOR-ALG_5edf3883a5df",
+      "type": "goal"
+    },
+    {
+      "added_minute": 0,
+      "label": "76'",
+      "match_id": "fifa:match:400021499",
+      "minute": 76,
+      "player_id": "fifa:player:379942",
+      "source_id": "2026-M044-JOR-ALG_4b5481d2bdcb",
+      "type": "subbed_off"
+    },
+    {
+      "added_minute": 0,
+      "label": "76'",
+      "match_id": "fifa:match:400021499",
+      "minute": 76,
+      "player_id": "fifa:player:482874",
+      "source_id": "2026-M044-JOR-ALG_c081b7355c6b",
+      "type": "subbed_on"
+    },
+    {
+      "added_minute": 0,
+      "label": "82'",
+      "match_id": "fifa:match:400021499",
+      "minute": 82,
+      "player_id": "fifa:player:405877",
+      "source_id": "2026-M044-JOR-ALG_8b9500c86c0b",
+      "type": "goal"
+    },
+    {
+      "added_minute": 0,
+      "label": "85'",
+      "match_id": "fifa:match:400021499",
+      "minute": 85,
+      "player_id": "fifa:player:482869",
+      "source_id": "2026-M044-JOR-ALG_2b8dd8cd7879",
+      "type": "subbed_on"
+    },
+    {
+      "added_minute": 0,
+      "label": "85'",
+      "match_id": "fifa:match:400021499",
+      "minute": 85,
+      "player_id": "fifa:player:431858",
+      "source_id": "2026-M044-JOR-ALG_51f25742108e",
+      "type": "subbed_off"
+    },
+    {
+      "added_minute": 0,
+      "label": "86'",
+      "match_id": "fifa:match:400021499",
+      "minute": 86,
+      "player_id": "fifa:player:480983",
+      "source_id": "2026-M044-JOR-ALG_c09f1ee9e639",
+      "type": "subbed_on"
+    },
+    {
+      "added_minute": 0,
+      "label": "86'",
+      "match_id": "fifa:match:400021499",
+      "minute": 86,
+      "player_id": "fifa:player:405877",
+      "source_id": "2026-M044-JOR-ALG_478511597d19",
+      "type": "subbed_off"
+    }
+  ],
+  "matches": [
+    {
+      "away_score": 0,
+      "away_team_id": "fifa:team:43843",
+      "group": "Group J",
+      "home_score": 3,
+      "home_team_id": "fifa:team:43922",
+      "id": "fifa:match:400021496",
+      "kickoff_at": "2026-06-17T01:00:00Z",
+      "kickoff_beijing": "2026-06-17T09:00:00+08:00",
+      "match_no": 19,
+      "report_source_id": "2026-M019-ARG-ALG",
+      "score_scope": "group_stage_full_time",
+      "source_status": {
+        "match_status": 0,
+        "result_type": 1
+      }
+    },
+    {
+      "away_score": 2,
+      "away_team_id": "fifa:team:43843",
+      "group": "Group J",
+      "home_score": 1,
+      "home_team_id": "fifa:team:43820",
+      "id": "fifa:match:400021499",
+      "kickoff_at": "2026-06-23T03:00:00Z",
+      "kickoff_beijing": "2026-06-23T11:00:00+08:00",
+      "match_no": 44,
+      "report_source_id": "2026-M044-JOR-ALG",
+      "score_scope": "group_stage_full_time",
+      "source_status": {
+        "match_status": 0,
+        "result_type": 1
+      }
+    }
+  ],
+  "player_mappings": [
+    {
+      "player_id": "fifa:player:520070",
+      "provider": "openfootball",
+      "source_key": "ALG/1"
+    },
+    {
+      "player_id": "fifa:player:376285",
+      "provider": "openfootball",
+      "source_key": "ALG/2"
+    },
+    {
+      "player_id": "fifa:player:512127",
+      "provider": "openfootball",
+      "source_key": "ALG/3"
+    },
+    {
+      "player_id": "fifa:player:433600",
+      "provider": "openfootball",
+      "source_key": "ALG/4"
+    },
+    {
+      "player_id": "fifa:player:480983",
+      "provider": "openfootball",
+      "source_key": "ALG/5"
+    },
+    {
+      "player_id": "fifa:player:433679",
+      "provider": "openfootball",
+      "source_key": "ALG/6"
+    },
+    {
+      "player_id": "fifa:player:379942",
+      "provider": "openfootball",
+      "source_key": "ALG/7"
+    },
+    {
+      "player_id": "fifa:player:430698",
+      "provider": "openfootball",
+      "source_key": "ALG/8"
+    },
+    {
+      "player_id": "fifa:player:405877",
+      "provider": "openfootball",
+      "source_key": "ALG/9"
+    },
+    {
+      "player_id": "fifa:player:477795",
+      "provider": "openfootball",
+      "source_key": "ALG/10"
+    },
+    {
+      "player_id": "fifa:player:482874",
+      "provider": "openfootball",
+      "source_key": "ALG/11"
+    },
+    {
+      "player_id": "fifa:player:520071",
+      "provider": "openfootball",
+      "source_key": "ALG/12"
+    },
+    {
+      "player_id": "fifa:player:482869",
+      "provider": "openfootball",
+      "source_key": "ALG/13"
+    },
+    {
+      "player_id": "fifa:player:441350",
+      "provider": "openfootball",
+      "source_key": "ALG/14"
+    },
+    {
+      "player_id": "fifa:player:431858",
+      "provider": "openfootball",
+      "source_key": "ALG/15"
+    },
+    {
+      "player_id": "fifa:player:477817",
+      "provider": "openfootball",
+      "source_key": "ALG/16"
+    },
+    {
+      "player_id": "fifa:player:511009",
+      "provider": "openfootball",
+      "source_key": "ALG/17"
+    },
+    {
+      "player_id": "fifa:player:477790",
+      "provider": "openfootball",
+      "source_key": "ALG/18"
+    },
+    {
+      "player_id": "fifa:player:379939",
+      "provider": "openfootball",
+      "source_key": "ALG/19"
+    },
+    {
+      "player_id": "fifa:player:512132",
+      "provider": "openfootball",
+      "source_key": "ALG/20"
+    },
+    {
+      "player_id": "fifa:player:395113",
+      "provider": "openfootball",
+      "source_key": "ALG/21"
+    },
+    {
+      "player_id": "fifa:player:494291",
+      "provider": "openfootball",
+      "source_key": "ALG/22"
+    },
+    {
+      "player_id": "fifa:player:389879",
+      "provider": "openfootball",
+      "source_key": "ALG/23"
+    },
+    {
+      "player_id": "fifa:player:520072",
+      "provider": "openfootball",
+      "source_key": "ALG/25"
+    },
+    {
+      "player_id": "fifa:player:511010",
+      "provider": "openfootball",
+      "source_key": "ALG/26"
+    },
+    {
+      "player_id": "fifa:player:512127",
+      "provider": "worldcup26",
+      "source_key": "ALG_achref_abada"
+    },
+    {
+      "player_id": "fifa:player:512132",
+      "provider": "worldcup26",
+      "source_key": "ALG_adil_boulbina"
+    },
+    {
+      "player_id": "fifa:player:376285",
+      "provider": "worldcup26",
+      "source_key": "ALG_aissa_mandi"
+    },
+    {
+      "player_id": "fifa:player:405877",
+      "provider": "worldcup26",
+      "source_key": "ALG_amine_gouiri"
+    },
+    {
+      "player_id": "fifa:player:482874",
+      "provider": "worldcup26",
+      "source_key": "ALG_anis_hadj_moussa"
+    },
+    {
+      "player_id": "fifa:player:477795",
+      "provider": "worldcup26",
+      "source_key": "ALG_fares_chaibi"
+    },
+    {
+      "player_id": "fifa:player:520072",
+      "provider": "worldcup26",
+      "source_key": "ALG_fares_ghedjemis"
+    },
+    {
+      "player_id": "fifa:player:441350",
+      "provider": "worldcup26",
+      "source_key": "ALG_hicham_boudaoui"
+    },
+    {
+      "player_id": "fifa:player:430698",
+      "provider": "worldcup26",
+      "source_key": "ALG_houssem_aouar"
+    },
+    {
+      "player_id": "fifa:player:494291",
+      "provider": "worldcup26",
+      "source_key": "ALG_ibrahim_maza"
+    },
+    {
+      "player_id": "fifa:player:482869",
+      "provider": "worldcup26",
+      "source_key": "ALG_jaouen_hadjam"
+    },
+    {
+      "player_id": "fifa:player:389879",
+      "provider": "worldcup26",
+      "source_key": "ALG_luca_zidane"
+    },
+    {
+      "player_id": "fifa:player:520070",
+      "provider": "worldcup26",
+      "source_key": "ALG_melvin_mastil"
+    },
+    {
+      "player_id": "fifa:player:433600",
+      "provider": "worldcup26",
+      "source_key": "ALG_mohamed_amine_tougai"
+    },
+    {
+      "player_id": "fifa:player:477790",
+      "provider": "worldcup26",
+      "source_key": "ALG_mohamed_amoura"
+    },
+    {
+      "player_id": "fifa:player:379939",
+      "provider": "worldcup26",
+      "source_key": "ALG_nabil_bentaleb"
+    },
+    {
+      "player_id": "fifa:player:520071",
+      "provider": "worldcup26",
+      "source_key": "ALG_nadhir_benbouali"
+    },
+    {
+      "player_id": "fifa:player:477817",
+      "provider": "worldcup26",
+      "source_key": "ALG_oussama_benbot"
+    },
+    {
+      "player_id": "fifa:player:511009",
+      "provider": "worldcup26",
+      "source_key": "ALG_rafik_belghali"
+    },
+    {
+      "player_id": "fifa:player:433679",
+      "provider": "worldcup26",
+      "source_key": "ALG_ramiz_zerrouki"
+    },
+    {
+      "player_id": "fifa:player:395113",
+      "provider": "worldcup26",
+      "source_key": "ALG_ramy_bensebaini"
+    },
+    {
+      "player_id": "fifa:player:431858",
+      "provider": "worldcup26",
+      "source_key": "ALG_rayan_ait_nouri"
+    },
+    {
+      "player_id": "fifa:player:379942",
+      "provider": "worldcup26",
+      "source_key": "ALG_riyad_mahrez"
+    },
+    {
+      "player_id": "fifa:player:511010",
+      "provider": "worldcup26",
+      "source_key": "ALG_samir_chergui"
+    },
+    {
+      "player_id": "fifa:player:433631",
+      "provider": "worldcup26",
+      "source_key": "ALG_yassine_titraoui"
+    },
+    {
+      "player_id": "fifa:player:480983",
+      "provider": "worldcup26",
+      "source_key": "ALG_zineddine_belaid"
+    }
+  ],
+  "player_stats": [
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 100.0,
+      "passes_attempted": 39,
+      "passes_completed": 39,
+      "player_id": "fifa:player:389879",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 95.0,
+      "passes_attempted": 104,
+      "passes_completed": 99,
+      "player_id": "fifa:player:376285",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 84.0,
+      "passes_attempted": 19,
+      "passes_completed": 16,
+      "player_id": "fifa:player:405877",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 92.0,
+      "passes_attempted": 48,
+      "passes_completed": 44,
+      "player_id": "fifa:player:477795",
+      "shots": 3
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 82.0,
+      "passes_attempted": 22,
+      "passes_completed": 18,
+      "player_id": "fifa:player:482874",
+      "shots": 1
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 96.0,
+      "passes_attempted": 23,
+      "passes_completed": 22,
+      "player_id": "fifa:player:441350",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 87.0,
+      "passes_attempted": 62,
+      "passes_completed": 54,
+      "player_id": "fifa:player:431858",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 89.0,
+      "passes_attempted": 38,
+      "passes_completed": 34,
+      "player_id": "fifa:player:511009",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 91.0,
+      "passes_attempted": 56,
+      "passes_completed": 51,
+      "player_id": "fifa:player:379939",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 93.0,
+      "passes_attempted": 95,
+      "passes_completed": 88,
+      "player_id": "fifa:player:395113",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 83.0,
+      "passes_attempted": 47,
+      "passes_completed": 39,
+      "player_id": "fifa:player:494291",
+      "shots": 1
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 85.0,
+      "passes_attempted": 20,
+      "passes_completed": 17,
+      "player_id": "fifa:player:433679",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 85.0,
+      "passes_attempted": 20,
+      "passes_completed": 17,
+      "player_id": "fifa:player:379942",
+      "shots": 1
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 100.0,
+      "passes_attempted": 21,
+      "passes_completed": 21,
+      "player_id": "fifa:player:430698",
+      "shots": 1
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 88.0,
+      "passes_attempted": 8,
+      "passes_completed": 7,
+      "player_id": "fifa:player:477790",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "minutes_played": null,
+      "pass_completion_pct": 100.0,
+      "passes_attempted": 12,
+      "passes_completed": 12,
+      "player_id": "fifa:player:512132",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 86.0,
+      "passes_attempted": 29,
+      "passes_completed": 25,
+      "player_id": "fifa:player:389879",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 89.0,
+      "passes_attempted": 89,
+      "passes_completed": 79,
+      "player_id": "fifa:player:376285",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 95.0,
+      "passes_attempted": 55,
+      "passes_completed": 52,
+      "player_id": "fifa:player:433679",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 92.0,
+      "passes_attempted": 37,
+      "passes_completed": 34,
+      "player_id": "fifa:player:379942",
+      "shots": 1
+    },
+    {
+      "assists": null,
+      "goals": 1,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 89.0,
+      "passes_attempted": 18,
+      "passes_completed": 16,
+      "player_id": "fifa:player:405877",
+      "shots": 3
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 82.0,
+      "passes_attempted": 57,
+      "passes_completed": 47,
+      "player_id": "fifa:player:477795",
+      "shots": 2
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 98.0,
+      "passes_attempted": 51,
+      "passes_completed": 50,
+      "player_id": "fifa:player:441350",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 94.0,
+      "passes_attempted": 62,
+      "passes_completed": 58,
+      "player_id": "fifa:player:431858",
+      "shots": 1
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 94.0,
+      "passes_attempted": 78,
+      "passes_completed": 73,
+      "player_id": "fifa:player:511009",
+      "shots": 1
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 91.0,
+      "passes_attempted": 76,
+      "passes_completed": 69,
+      "player_id": "fifa:player:395113",
+      "shots": 1
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 76.0,
+      "passes_attempted": 34,
+      "passes_completed": 26,
+      "player_id": "fifa:player:494291",
+      "shots": 4
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 86.0,
+      "passes_attempted": 7,
+      "passes_completed": 6,
+      "player_id": "fifa:player:480983",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 43.0,
+      "passes_attempted": 7,
+      "passes_completed": 3,
+      "player_id": "fifa:player:482874",
+      "shots": 1
+    },
+    {
+      "assists": null,
+      "goals": 1,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 75.0,
+      "passes_attempted": 8,
+      "passes_completed": 6,
+      "player_id": "fifa:player:520071",
+      "shots": 2
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 88.0,
+      "passes_attempted": 8,
+      "passes_completed": 7,
+      "player_id": "fifa:player:482869",
+      "shots": 0
+    },
+    {
+      "assists": null,
+      "goals": 0,
+      "match_id": "fifa:match:400021499",
+      "minutes_played": null,
+      "pass_completion_pct": 87.0,
+      "passes_attempted": 45,
+      "passes_completed": 39,
+      "player_id": "fifa:player:379939",
+      "shots": 1
+    }
+  ],
+  "players": [
+    {
+      "id": "fifa:player:520070",
+      "name": "Melvin MASTIL",
+      "position": "GK",
+      "shirt_number": 1,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:376285",
+      "name": "Aissa MANDI",
+      "position": "DF",
+      "shirt_number": 2,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:512127",
+      "name": "Achref ABADA",
+      "position": "DF",
+      "shirt_number": 3,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:433600",
+      "name": "Mohamed Amine TOUGAI",
+      "position": "DF",
+      "shirt_number": 4,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:480983",
+      "name": "Zineddine BELAID",
+      "position": "DF",
+      "shirt_number": 5,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:433679",
+      "name": "Ramiz ZERROUKI",
+      "position": "MF",
+      "shirt_number": 6,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:379942",
+      "name": "Riyad Mahrez",
+      "position": "FW",
+      "shirt_number": 7,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:430698",
+      "name": "Houssem Aouar",
+      "position": "MF",
+      "shirt_number": 8,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:405877",
+      "name": "Amine GOUIRI",
+      "position": "FW",
+      "shirt_number": 9,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:477795",
+      "name": "Fares CHAIBI",
+      "position": "MF",
+      "shirt_number": 10,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:482874",
+      "name": "Anis HADJ MOUSSA",
+      "position": "FW",
+      "shirt_number": 11,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:520071",
+      "name": "Nadhir BENBOUALI",
+      "position": "FW",
+      "shirt_number": 12,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:482869",
+      "name": "Jaouen HADJAM",
+      "position": "DF",
+      "shirt_number": 13,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:441350",
+      "name": "Hicham BOUDAOUI",
+      "position": "MF",
+      "shirt_number": 14,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:431858",
+      "name": "Rayan AIT-NOURI",
+      "position": "DF",
+      "shirt_number": 15,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:477817",
+      "name": "Oussama BENBOT",
+      "position": "GK",
+      "shirt_number": 16,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:511009",
+      "name": "Rafik BELGHALI",
+      "position": "DF",
+      "shirt_number": 17,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:477790",
+      "name": "Mohamed AMOURA",
+      "position": "FW",
+      "shirt_number": 18,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:379939",
+      "name": "Nabil Bentaleb",
+      "position": "MF",
+      "shirt_number": 19,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:512132",
+      "name": "Adil BOULBINA",
+      "position": "FW",
+      "shirt_number": 20,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:395113",
+      "name": "Ramy BENSEBAINI",
+      "position": "DF",
+      "shirt_number": 21,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:494291",
+      "name": "Ibrahim MAZA",
+      "position": "MF",
+      "shirt_number": 22,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:389879",
+      "name": "Luca ZIDANE",
+      "position": "GK",
+      "shirt_number": 23,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:433631",
+      "name": "Yassine TITRAOUI",
+      "position": "MF",
+      "shirt_number": 24,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:520072",
+      "name": "Fares GHEDJEMIS",
+      "position": "FW",
+      "shirt_number": 25,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "id": "fifa:player:511010",
+      "name": "Samir CHERGUI",
+      "position": "DF",
+      "shirt_number": 26,
+      "team_id": "fifa:team:43843"
+    }
+  ],
+  "schema_version": 1,
+  "scope": {
+    "control_match_numbers": [
+      47
+    ],
+    "edition": 2026,
+    "fifa_season": "285023",
+    "match_numbers": [
+      19,
+      44
+    ],
+    "team_code": "ALG"
+  },
+  "team_stats": [
+    {
+      "goals": 0,
+      "match_id": "fifa:match:400021496",
+      "pass_completion_pct": 91.0,
+      "passes_attempted": 634,
+      "passes_completed": 578,
+      "possession_pct": 50.8,
+      "shots": 7,
+      "shots_on_target": 1,
+      "team_id": "fifa:team:43843"
+    },
+    {
+      "goals": 2,
+      "match_id": "fifa:match:400021499",
+      "pass_completion_pct": 89.0,
+      "passes_attempted": 661,
+      "passes_completed": 590,
+      "possession_pct": 62.2,
+      "shots": 17,
+      "shots_on_target": 8,
+      "team_id": "fifa:team:43843"
+    }
+  ],
+  "teams": [
+    {
+      "code": "ARG",
+      "id": "fifa:team:43922",
+      "name": "Argentina"
+    },
+    {
+      "code": "ALG",
+      "id": "fifa:team:43843",
+      "name": "Algeria"
+    },
+    {
+      "code": "JOR",
+      "id": "fifa:team:43820",
+      "name": "Jordan"
+    }
+  ]
+}

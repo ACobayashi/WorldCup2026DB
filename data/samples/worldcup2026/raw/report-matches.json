@@ -1,0 +1,53 @@
+[
+  {
+    "away_score": "0",
+    "away_team": "Algeria",
+    "away_team_id": "ALG",
+    "date": "16 June 2026",
+    "group": "Group J",
+    "home_score": "3",
+    "home_team": "Argentina",
+    "home_team_id": "ARG",
+    "kickoff": "20:00",
+    "match_id": "2026-M019-ARG-ALG",
+    "match_number": "19",
+    "page_count": "52",
+    "penalty_result": "",
+    "source_url": "https://www.fifatrainingcentre.com/media/native/tournaments/fifa-world-cup/2026/PMSR-M19-ARG-V-ALG.pdf",
+    "venue": "Kansas City Stadium"
+  },
+  {
+    "away_score": "2",
+    "away_team": "Algeria",
+    "away_team_id": "ALG",
+    "date": "22 June 2026",
+    "group": "Group J",
+    "home_score": "1",
+    "home_team": "Jordan",
+    "home_team_id": "JOR",
+    "kickoff": "20:00",
+    "match_id": "2026-M044-JOR-ALG",
+    "match_number": "44",
+    "page_count": "52",
+    "penalty_result": "",
+    "source_url": "https://www.fifatrainingcentre.com/media/native/tournaments/fifa-world-cup/2026/PMSR-M44-JOR-V-ALG.pdf",
+    "venue": "San Francisco Bay Area Stadium"
+  },
+  {
+    "away_score": "0",
+    "away_team": "Uzbekistan",
+    "away_team_id": "GHA",
+    "date": "23 June 2026",
+    "group": "Group K",
+    "home_score": "5",
+    "home_team": "Portugal",
+    "home_team_id": "POR",
+    "kickoff": "12:00",
+    "match_id": "2026-M047-POR-GHA",
+    "match_number": "47",
+    "page_count": "52",
+    "penalty_result": "",
+    "source_url": "https://www.fifatrainingcentre.com/media/native/tournaments/fifa-world-cup/2026/PMSR-M47-POR-V-GHA.pdf",
+    "venue": "Houston Stadium"
+  }
+]

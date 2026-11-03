@@ -11,5 +11,7 @@
 /storage/local-accounts.txt
 /tmp/
 *.log
+__pycache__/
+*.py[cod]
 /storage/uploads/*
 !/storage/uploads/.gitkeep

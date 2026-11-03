@@ -1,0 +1,135 @@
+{
+  "fifa_code": "ALG",
+  "players": [
+    {
+      "name": "Melvin Mastil",
+      "number": 1,
+      "pos": "GK"
+    },
+    {
+      "name": "Aïssa Mandi",
+      "number": 2,
+      "pos": "DF"
+    },
+    {
+      "name": "Achref Abada",
+      "number": 3,
+      "pos": "DF"
+    },
+    {
+      "name": "Mohamed Amine Tougai",
+      "number": 4,
+      "pos": "DF"
+    },
+    {
+      "name": "Zineddine Belaïd",
+      "number": 5,
+      "pos": "DF"
+    },
+    {
+      "name": "Ramiz Zerrouki",
+      "number": 6,
+      "pos": "MF"
+    },
+    {
+      "name": "Riyad Mahrez",
+      "number": 7,
+      "pos": "FW"
+    },
+    {
+      "name": "Houssem Aouar",
+      "number": 8,
+      "pos": "MF"
+    },
+    {
+      "name": "Amine Gouiri",
+      "number": 9,
+      "pos": "FW"
+    },
+    {
+      "name": "Farès Chaïbi",
+      "number": 10,
+      "pos": "MF"
+    },
+    {
+      "name": "Anis Hadj Moussa",
+      "number": 11,
+      "pos": "FW"
+    },
+    {
+      "name": "Nadhir Benbouali",
+      "number": 12,
+      "pos": "FW"
+    },
+    {
+      "name": "Jaouen Hadjam",
+      "number": 13,
+      "pos": "DF"
+    },
+    {
+      "name": "Hicham Boudaoui",
+      "number": 14,
+      "pos": "MF"
+    },
+    {
+      "name": "Rayan Aït-Nouri",
+      "number": 15,
+      "pos": "DF"
+    },
+    {
+      "name": "Oussama Benbot",
+      "number": 16,
+      "pos": "GK"
+    },
+    {
+      "name": "Rafik Belghali",
+      "number": 17,
+      "pos": "DF"
+    },
+    {
+      "name": "Mohamed Amoura",
+      "number": 18,
+      "pos": "FW"
+    },
+    {
+      "name": "Nabil Bentaleb",
+      "number": 19,
+      "pos": "MF"
+    },
+    {
+      "name": "Adil Boulbina",
+      "number": 20,
+      "pos": "FW"
+    },
+    {
+      "name": "Ramy Bensebaini",
+      "number": 21,
+      "pos": "DF"
+    },
+    {
+      "name": "Ibrahim Maza",
+      "number": 22,
+      "pos": "MF"
+    },
+    {
+      "name": "Luca Zidane",
+      "number": 23,
+      "pos": "GK"
+    },
+    {
+      "name": "Yacine Titraoui",
+      "number": 24,
+      "pos": "MF"
+    },
+    {
+      "name": "Farès Ghedjemis",
+      "number": 25,
+      "pos": "FW"
+    },
+    {
+      "name": "Samir Chergui",
+      "number": 26,
+      "pos": "DF"
+    }
+  ]
+}

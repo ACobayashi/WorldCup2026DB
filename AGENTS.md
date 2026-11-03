@@ -14,6 +14,8 @@ This four-person coursework project has a buildless frontend and a PHP/PDO guest
 - `node --check public/assets/js/worldcup.mjs`: check match-center browser syntax.
 - `php scripts/install.php`: idempotently create missing tables, without altering existing schemas or clearing data.
 - `php scripts/check-worldcup.php`: transactional database/API-controller checks; fixtures are always rolled back.
+- `python scripts/worldcup_data.py`: rebuild the small World Cup staging sample offline with Python 3.10+ standard library; does not import data.
+- `python -m unittest discover -s tests -p test_worldcup_data.py`: validate the bundled snapshots, identity mappings and corrupted-source rejection.
 
 The slice requires PHP 8.2+, PDO MySQL, mbstring and a MySQL-compatible database. It uses small PHP MVC classes without a third-party framework. See README for isolated XAMPP startup and `php scripts/check-guestbook.php` for database integration checks. No production deployment or Docker configuration has been verified. Do not document nonexistent commands as working features.
 
