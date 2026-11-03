@@ -4,7 +4,7 @@
 
 This four-person coursework project has a buildless frontend and a PHP/PDO guestbook slice. `public/index.html` serves the static team demo; `public/index.php`, `api.php` and `admin.php` serve the database-backed homepage and workspace. `public/worldcup/index.html` serves the match-center demo. Shared UI lives in `public/assets/css/common.css` and `public/assets/js/common.mjs`; module assets live under `public/assets/`.
 
-`app/team/` contains the guestbook/motto MVC implementation. `app/common/` provides PDO, sessions, account roles, CSRF and quotas. `app/worldcup/` reserves backend MVC directories; its fixture and support data remain browser-local demos. Preserve existing backend behavior when migrating toward the README's Yii2 target. Final coursework belongs in `data/team/` and `data/personal/`. `data/install.sql` defines four real tables, not the final >= 11-table schema. Never edit or commit unrelated material in `IGNORE/`.
+`app/team/` contains the guestbook/motto MVC implementation. `app/common/` provides PDO, sessions, account roles, CSRF and quotas. `app/worldcup/` contains a read-only MVC foundation, served by `public/worldcup/index.php` and `api.php`; `public/worldcup/index.html` remains the separate browser-local demo. Admin editing, imports, support writes and standings are not implemented. Preserve existing backend behavior when migrating toward the README's Yii2 target. Final coursework belongs in `data/team/` and `data/personal/`. `data/install.sql` defines 12 tables (four team/common and eight World Cup), with no World Cup seed data. Never edit or commit unrelated material in `IGNORE/`.
 
 ## Development and Validation Commands
 
@@ -12,6 +12,8 @@ This four-person coursework project has a buildless frontend and a PHP/PDO guest
 - `node scripts/check-prototype.mjs`: validate member records, message normalization, and required assets.
 - `node --check public/assets/js/app.mjs`: check browser-module syntax.
 - `node --check public/assets/js/worldcup.mjs`: check match-center browser syntax.
+- `php scripts/install.php`: idempotently create missing tables, without altering existing schemas or clearing data.
+- `php scripts/check-worldcup.php`: transactional database/API-controller checks; fixtures are always rolled back.
 
 The slice requires PHP 8.2+, PDO MySQL, mbstring and a MySQL-compatible database. It uses small PHP MVC classes without a third-party framework. See README for isolated XAMPP startup and `php scripts/check-guestbook.php` for database integration checks. No production deployment or Docker configuration has been verified. Do not document nonexistent commands as working features.
 

@@ -33,7 +33,7 @@ php scripts/install.php
 php -S 127.0.0.1:8088 -t public public/router.php
 ```
 
-安装 SQL 使用 CREATE TABLE IF NOT EXISTS 和 INSERT IGNORE，不清空已存在的数据，也不覆盖座右铭；这是初始化脚本，后续结构变更仍需单独迁移。它目前只有 `users`、`team_mottos`、`team_guestbook_messages`、`app_rate_limits` 四张真实业务/公共表，全组最终交付仍需至少 11 张。共享账号表只创建一套；之后选择团队统一框架时，保留模型和功能链，接入公共登录及路由。
+安装 SQL 使用 CREATE TABLE IF NOT EXISTS 和 INSERT IGNORE，不清空已存在的数据，也不覆盖座右铭；这是初始化脚本，后续结构变更仍需单独迁移。目前包含原有四张团队/公共表及八张 `wc_` 世界杯业务表，共 12 张。世界杯表尚未导入赛事、球队或支持记录。共享账号表只创建一套；之后选择团队统一框架时，保留模型和功能链，接入公共登录及路由。已有本地环境可执行 `php scripts/install.php` 补建新表。
 
 创建账号需通过环境变量提供 12–72 字节密码；密码只保存为哈希，不写进安装 SQL：
 
@@ -58,6 +58,7 @@ node scripts/check-prototype.mjs
 node --check public/assets/js/app.mjs
 node --check public/assets/js/guestbook.mjs
 php scripts/check-guestbook.php
+php scripts/check-worldcup.php
 ```
 
 数据库验收使用事务并最终回滚所有测试数据，覆盖审核可见性、分页、Unicode 长度、文本转义、参数化 SQL、CSRF、角色权限、座右铭编辑和数据库限频。在已初始化的开发数据库上执行。访客留言每个 IP 每分钟窗口最多尝试 5 次，登录每个 IP 每 15 分钟窗口最多尝试 10 次；限频表存储带密钥的摘要，不存原始 IP，也不信任访客自报的代理头。
@@ -72,7 +73,9 @@ python3 scripts/serve-prototype.py
 
 静态预览及 GitHub Pages 保留浏览器本地演示留言，明确标注为本地演示，不能跨浏览器共享，也不运行审核后台。使用 PHP 入口时则调用真实数据库接口，服务故障会显示失败并保留输入，不自动改为本地保存。页面保留独立场景转场、四人档案、人物入场和面部背景动效，成员卡片支持方向键。成员标签根据学院及分工整理，人物形象为插画。主页的“场边留言”展示最新三条团队留言，数据库模式只展示审核通过的内容；全部留言和分页保留在留言弹窗中。
 
-`worldcup/` 提供赛程面板初版：比分大屏、支持度、状态/日期筛选和比赛详情。两个模块共用蓝紫色主题、导航和玻璃按钮。世界杯对阵、时间、比分和票数均为合成示例；支持选择仅保存在浏览器，不是共享投票，尚未接入赛事 API 或世界杯业务表。团队留言后台保持原有 PHP 功能，不受此演示模式影响。
+静态预览和 GitHub Pages 的 `worldcup/index.html` 提供赛程面板演示：比分大屏、支持度、状态/日期筛选和比赛详情。对阵、时间、比分和票数均为合成示例，支持选择仅保存在浏览器。
+
+PHP 本地环境的 `/worldcup/` 已接入世界杯 MVC 只读框架：赛程列表与详情、球队搜索与阵容详情、分组名单、场馆、个人支持记录，以及管理员数据概览。它从数据库查询，无数据时显示待导入，不回退到示例。普通成员可查看自己的支持记录，管理员可查看赛事工作台；登录沿用 `/admin.php`。当前未开放后台编辑、数据导入、支持写入和积分榜计算；写入预留接口验证登录及 CSRF 后明确返回 501，不会保存假成功。数据库页面提供独立静态演示链接。入口、接口及后续模块边界见 [世界杯框架说明](docs/worldcup-foundation.md)。
 
 ## 统一接入约定（目标方案，分阶段接入）
 
@@ -88,7 +91,7 @@ python3 scripts/serve-prototype.py
 | UI | 公共 `common.css`/`common.mjs` 维护字体、蓝紫色变量、导航、按钮和通知；模块只加载自己的 CSS/JS。前端使用原生 ES Modules + Fetch，动效用 CSS/WAAPI；现有支持度用原生条形图，不另引图表库。 |
 | 接口 | 新接口目标 `/api/v1/...`、JSON `{code,message,data,errors}`、字段 snake_case；分页 `page`、`page_size`（默认 20、最多 100），列表 `data.items`、`data.meta`。现有留言 `{ok,data,error}` 和 camelCase 字段先保持兼容，统一迁移时再加适配。HTTP 状态码遵循语义；UTC 存储、ISO 8601 传输、北京时间展示。比赛状态 scheduled/live/finished/postponed/cancelled。 |
 | 配置 | 一个环境变量配置入口，提供 `.env.example`，真实凭据不进 Git；账号/权限/公共布局由一处维护。业务模型不能跨模块直接写表，需要通过共享服务/接口协作。 |
-| 部署 | 正式版目标一份 Docker Compose（Nginx + PHP-FPM + MySQL），统一迁移与种子；现有 `data/install.sql` 保留四张表，最终扩展成同一份交付 SQL，不覆盖已有数据。数据库与上传目录挂持久卷。Pages 只做前端预览；Docker 配置尚未实现。 |
+| 部署 | 正式版目标一份 Docker Compose（Nginx + PHP-FPM + MySQL），统一迁移与种子；现有 `data/install.sql` 已汇总 12 张表，后续结构变更通过显式迁移完成，不覆盖已有数据。数据库与上传目录挂持久卷。Pages 只做前端预览；Docker 配置尚未实现。 |
 
 支持率按有效支持票计算，**不是胜率**。正式版每个账号对每场比赛一条支持记录，通过唯一约束和事务更新；比分只能来自管理员/赛事数据源。模拟数据适配器为 `public/assets/js/worldcup-data.mjs`，接入时替换数据来源，不改变视图职责。当前支持演示的取消/改选不代表后端权限已实现。
 
@@ -105,7 +108,7 @@ DBDev/
 |   |   |-- controllers/
 |   |   |-- models/
 |   |   `-- views/
-|   `-- worldcup/              # 世界杯项目
+|   `-- worldcup/              # 世界杯 MVC 只读框架
 |       |-- controllers/
 |       |-- models/
 |       `-- views/
@@ -115,14 +118,16 @@ DBDev/
 |   |-- index.php              # 数据库模式主页
 |   |-- api.php                # 访客留言和座右铭读取
 |   |-- admin.php              # 登录、审核和座右铭工作台
-|   |-- worldcup/index.html    # 世界杯赛程面板
+|   |-- worldcup/index.php     # 世界杯数据库模式
+|   |-- worldcup/api.php       # 世界杯只读 JSON 接口与写入预留边界
+|   |-- worldcup/index.html    # 世界杯静态演示
 |   `-- assets/
 |       |-- css/
 |       |-- js/
 |       `-- images/
 |-- data/
-|   |-- install.sql            # 留言模块的四张表与初始座右铭
-|   |-- team/                  # 六项正式团队材料
+|   |-- install.sql            # 全组 12 张表与初始座右铭，无虚构赛事或投票
+|   |-- team/                  # 七项正式团队材料（包括录屏）
 |   `-- personal/              # 个人作业汇总
 |       |-- README.md
 |       |-- member-a/

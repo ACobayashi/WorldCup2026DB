@@ -10,4 +10,13 @@ if ($path === '/team' || $path === '/team/') {
   header('Location: /', true, 302);
   return true;
 }
+if ($path === '/worldcup') {
+  $query = $_SERVER['QUERY_STRING'] ?? '';
+  header('Location: /worldcup/' . ($query !== '' ? '?' . $query : ''), true, 302);
+  return true;
+}
+if ($path === '/worldcup/') {
+  require __DIR__ . '/worldcup/index.php';
+  return true;
+}
 return false;
