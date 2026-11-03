@@ -22,7 +22,7 @@ $stats=[];foreach ($match['statistics'] as $row) $stats[$row['team_id']]=$row;
       <div><h3 class="wc-team-heading"><?= $flag($match[$side.'_code'],$match[$side.'_name']??'') ?><a href="<?= e($url('teams',['id'=>$team])) ?>"><?= e($match[$side.'_name']??'待定球队') ?></a></h3>
         <?php if (!$squad): ?><p class="wc-muted">暂无阵容数据</p><?php else: ?>
           <?php foreach ([1=>'首发',0=>'替补'] as $starter=>$label): ?><h4 class="wc-squad-label"><?= e($label) ?><span><?= count(array_filter($squad,fn($p)=>$p['is_starter']===$starter)) ?> 人</span></h4><ul class="wc-player-list">
-            <?php foreach ($squad as $p): if ($p['is_starter']!==$starter) continue; ?><li><span class="wc-shirt"><?= e($p['shirt_number']) ?></span><div><a href="<?= e($url('player',['id'=>$p['player_id']])) ?>"><?= e($p['name']) ?> ↗</a><small><?= e($positions[$p['position']]??$p['position']) ?><?= !$starter ? ($p['appeared'] ? ' · 已上场' : ' · 未上场') : '' ?></small></div><?php if ($p['goals']): ?><b class="wc-goals"><?= e($p['goals']) ?> ⚽</b><?php endif; ?></li><?php endforeach; ?>
+            <?php foreach ($squad as $p): if ($p['is_starter']!==$starter) continue; ?><li><?= $portrait($p) ?><span class="wc-shirt"><?= e($p['shirt_number']) ?></span><div><a href="<?= e($url('player',['id'=>$p['player_id']])) ?>"><?= e($p['name']) ?> ↗</a><small><?= e($positions[$p['position']]??$p['position']) ?><?= !$starter ? ($p['appeared'] ? ' · 已上场' : ' · 未上场') : '' ?></small></div><?php if ($p['goals']): ?><b class="wc-goals"><?= e($p['goals']) ?> ⚽</b><?php endif; ?></li><?php endforeach; ?>
           </ul><?php endforeach; ?>
         <?php endif; ?>
       </div><?php endforeach; ?></div>

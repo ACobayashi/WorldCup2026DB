@@ -1,4 +1,24 @@
 /* FOURWARD coursework | Author: 韩羽宸 | Database-backed football pages. */
+.wc-player-portrait { display:inline-flex; width:42px; height:52px; border-radius:10px; overflow:hidden; flex-shrink:0; align-items:center; justify-content:center; vertical-align:middle; background:radial-gradient(ellipse at 50% 30%,#47628455,#233249); border:1px solid #a6c2eb20; }
+.wc-player-portrait>img { display:block; width:100%; height:100%; object-fit:cover; object-position:center 16%; }
+.wc-player-portrait>img[hidden],.wc-portrait-fallback[hidden] { display:none; }
+.wc-portrait-fallback { display:grid; width:100%; height:100%; place-items:center; color:#bdd0ef; font:500 16px/1 Arial,sans-serif; background:#9db7df07; }
+.wc-player-portrait--medium { width:58px; height:68px; border-radius:12px; }
+.wc-player-portrait--large { width:116px; height:144px; border-radius:17px; }
+.wc-player-portrait--large .wc-portrait-fallback { font-size:42px; }
+.wc-roster-name>.wc-player-portrait { margin-right:2px; }
+.wc-roster-name .wc-roster-shirt { display:inline-block; margin-left:7px; color:#8fa6c8; font:10px monospace; }
+.wc-player-list .wc-player-portrait { width:30px; height:36px; border-radius:6px; }
+.wc-player-list .wc-player-portrait .wc-portrait-fallback { font-size:11px; }
+.wc-ranking-player .wc-player-portrait { width:36px; height:44px; border-radius:8px; }
+@media(max-width:600px) { .wc-player-portrait--large { width:72px; height:96px; } .wc-player-portrait--large .wc-portrait-fallback { font-size:30px; } .wc-player-list .wc-player-portrait { width:26px; height:32px; } }
+.wc-player-portrait--headshot { height:42px; border-radius:50%; background:#fff; }
+.wc-player-portrait--headshot>img { object-fit:contain; object-position:center; }
+.wc-player-portrait--medium.wc-player-portrait--headshot { height:58px; }
+.wc-player-portrait--large.wc-player-portrait--headshot { height:116px; }
+.wc-player-list .wc-player-portrait--headshot { height:30px; border-radius:50%; }
+.wc-ranking-player .wc-player-portrait--headshot { width:44px; height:44px; border-radius:50%; }
+@media(max-width:600px) { .wc-player-portrait--large.wc-player-portrait--headshot { height:72px; } .wc-player-list .wc-player-portrait--headshot { height:26px; } }
 .wc-grouped-player-stats { border:1px solid #8da4c329; border-radius:13px; overflow:hidden; }
 .wc-metric-category>h3 { text-align:center; margin:0; padding:16px; background:#101c2b69; color:#d4deec; font-size:17px; font-weight:550; letter-spacing:2px; }
 .wc-metric-category>dl { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1px; background:#8da4c31d; margin:0; }

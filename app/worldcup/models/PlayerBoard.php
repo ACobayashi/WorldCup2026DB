@@ -61,6 +61,7 @@ final class PlayerBoard extends ReadModel {
   public function find(int $id):?array {
     $player=$this->rows('SELECT p.id,p.team_id,p.name,p.shirt_number,p.position,p.source_url,t.code,t.name_zh,t.name_en FROM wc_players p JOIN wc_teams t ON t.id=p.team_id WHERE p.id=:id',['id'=>$id])[0]??null;
     if(!$player)return null;
+    $player=(new PlayerPortrait($this->db))->attach([$player])[0];
     $peers=self::aggregate($this->records($player['position']));$summary=$peers[$id];
     $player['summary']=$summary;$player['radar']=self::radar($summary,array_values($peers));
     $player['matches']=$this->rows('SELECT m.id,m.match_no,m.kickoff_at,m.status,m.home_team_id,m.home_score_90,m.away_score_90,m.home_score_et,m.away_score_et,m.home_penalty_score,m.away_penalty_score,st.name AS stage_name,a.is_starter,a.appeared,s.goals,s.shots,s.passes_attempted,s.passes_completed,s.advanced_stats,opp.code AS opponent_code,opp.name_zh AS opponent_name FROM wc_matches m JOIN wc_stages st ON st.id=m.stage_id JOIN wc_teams opp ON opp.id=IF(m.home_team_id=:home,m.away_team_id,m.home_team_id) LEFT JOIN wc_match_appearances a ON a.match_id=m.id AND a.player_id=:player LEFT JOIN wc_player_match_stats s ON s.match_id=m.id AND s.player_id=:stats WHERE m.home_team_id=:t1 OR m.away_team_id=:t2 ORDER BY m.kickoff_at,m.id',['home'=>$player['team_id'],'player'=>$id,'stats'=>$id,'t1'=>$player['team_id'],'t2'=>$player['team_id']]);
@@ -80,7 +81,7 @@ final class PlayerBoard extends ReadModel {
     }
     usort($rows,fn($a,$b)=>($b['totals'][$metric]<=>$a['totals'][$metric]) ?: strcmp($a['name'],$b['name']));
     $rank=0;$previous=null;foreach($rows as $i=>&$r){if($previous!==$r['totals'][$metric])$rank=$i+1;$r['rank']=$rank;$previous=$r['totals'][$metric];}unset($r);
-    return ['items'=>array_slice($rows,($page-1)*$size,$size),'metric'=>$metric,'position'=>$position,
+    return ['items'=>(new PlayerPortrait($this->db))->attach(array_slice($rows,($page-1)*$size,$size)),'metric'=>$metric,'position'=>$position,
       'meta'=>['total'=>count($rows),'page'=>$page,'page_size'=>$size,'total_pages'=>(int)ceil(count($rows)/$size)]];
   }
 }

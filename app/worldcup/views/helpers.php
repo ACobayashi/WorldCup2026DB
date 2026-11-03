@@ -10,3 +10,12 @@ $number = static fn(mixed $value, string $suffix=''): string => $value===null ? 
 $positions = ['GK'=>'门将','DF'=>'后卫','MF'=>'中场','FW'=>'前锋'];
 $eventLabels = ['goal'=>'进球','own_goal'=>'乌龙球','yellow_card'=>'黄牌','red_card'=>'红牌','subbed_on'=>'换上','subbed_off'=>'换下'];
 $eventIcons = ['goal'=>'⚽','own_goal'=>'↩','yellow_card'=>'▰','red_card'=>'▰','subbed_on'=>'↗','subbed_off'=>'↙'];
+$portrait=static function(array $player,string $size='small'):string {
+  $size=in_array($size,['small','medium','large'],true)?$size:'small';$src=$player['portrait_url']??null;
+  $allowed=is_string($src)&&preg_match('~^\.\./assets/images/player-photos/\d+\.(?:webp|png|jpg)\?v=[a-f0-9]{12}$~D',$src);
+  $name=$player['name']??'球员';$number=$player['shirt_number']??'—';
+  $kind=($player['portrait_kind']??null)==='headshot'?' wc-player-portrait--headshot':'';
+  $html='<span class="wc-player-portrait wc-player-portrait--'.$size.$kind.'"><span class="wc-portrait-fallback"'.($allowed?' hidden':'').' aria-label="'.e($name.'，暂无照片').'">'.e($number).'</span>';
+  if($allowed)$html.='<img src="'.e($src).'" alt="'.e($name.'的照片').'" width="96" height="144" loading="lazy" decoding="async" data-player-portrait>';
+  return $html.'</span>';
+};

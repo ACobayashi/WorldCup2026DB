@@ -22,6 +22,7 @@ final class Team extends ReadModel {
   }
 
   public function squad(int $id): array {
-    return $this->rows('SELECT p.id,p.name,p.shirt_number,p.position,COALESCE(SUM(a.appeared),0) AS appearances,SUM(s.goals) AS goals,SUM(s.shots) AS shots FROM wc_players p LEFT JOIN wc_match_appearances a ON a.player_id=p.id LEFT JOIN wc_player_match_stats s ON s.match_id=a.match_id AND s.player_id=a.player_id WHERE p.team_id=:id GROUP BY p.id,p.name,p.shirt_number,p.position ORDER BY FIELD(p.position,\'GK\',\'DF\',\'MF\',\'FW\'),p.shirt_number,p.id', ['id'=>$id]);
+    $players=$this->rows('SELECT p.id,p.name,p.shirt_number,p.position,COALESCE(SUM(a.appeared),0) AS appearances,SUM(s.goals) AS goals,SUM(s.shots) AS shots FROM wc_players p LEFT JOIN wc_match_appearances a ON a.player_id=p.id LEFT JOIN wc_player_match_stats s ON s.match_id=a.match_id AND s.player_id=a.player_id WHERE p.team_id=:id GROUP BY p.id,p.name,p.shirt_number,p.position ORDER BY FIELD(p.position,\'GK\',\'DF\',\'MF\',\'FW\'),p.shirt_number,p.id', ['id'=>$id]);
+    return (new PlayerPortrait($this->db))->attach($players);
   }
 }

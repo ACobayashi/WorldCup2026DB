@@ -15,3 +15,6 @@ __pycache__/
 *.py[cod]
 /storage/uploads/*
 !/storage/uploads/.gitkeep
+/public/assets/images/player-photos/*
+!/public/assets/images/player-photos/.gitkeep
+!/public/assets/images/player-photos/CREDITS.md
