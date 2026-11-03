@@ -1,0 +1,475 @@
+{
+  "IdCountry": "CIV",
+  "IdSeason": "285023",
+  "IdTeam": "43854",
+  "Players": [
+    {
+      "IdPlayer": "405873",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "Yahia Fofana",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "477802",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "Ousmane DIOMANDE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "407343",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "Ghislain KONAN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "335807",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Jean Michael SERI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430854",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "Wilfried SINGO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "405175",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "Seko Fofana",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "477825",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "Odilon KOSSOUNOU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "371609",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "Franck KESSIE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464103",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "Ange-Yoan BONNY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "477778",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "Simon ADINGRA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "510922",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "Yan DIOMANDE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464133",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "Elye WAHI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486260",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "Christopher OPERI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "477777",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "Oumar DIAKITE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430822",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "Amad DIALLO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486259",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "Mohamed KONE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486317",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "Guela DOUE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430831",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "Ibrahim SANGARE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "402261",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "Nicolas PEPE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486268",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "Emmanuel AGBADOU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419172",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "Evan NDICKA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "485675",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "Evann GUESSAND",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403090",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "Alban Lafont",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "506202",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "Bazoumana TOURE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430834",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "Parfait GUIAGON",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "514208",
+      "IdSeason": "285023",
+      "IdTeam": "43854",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "Christ Inao OULAI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

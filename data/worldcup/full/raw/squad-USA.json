@@ -1,0 +1,475 @@
+{
+  "IdCountry": "USA",
+  "IdSeason": "285023",
+  "IdTeam": "43921",
+  "Players": [
+    {
+      "IdPlayer": "448217",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "Matt TURNER",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "406280",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "Sergino DEST",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419062",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "Chris RICHARDS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "390238",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Tyler ADAMS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441251",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "Antonee ROBINSON",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "390272",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "Auston TRUSTY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419068",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "Giovanni REYNA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "390259",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "Weston McKENNIE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419082",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "Ricardo PEPI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "390267",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "Christian PULISIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419055",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "Brenden AARONSON",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "436599",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "Miles ROBINSON",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "339510",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "Tim REAM",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "499912",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "Sebastian BERHALTER",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "385994",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "Cristian ROLDAN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464542",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "Alex FREEMAN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448214",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "Malik TILLMAN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486390",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "Max ARFSTEN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "390276",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "Haji WRIGHT",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "466624",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "Folarin BALOGUN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "406304",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "Timothy WEAH",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419077",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "Mark McKENZIE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "423700",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "Joe SCALLY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "499913",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "Matt FREESE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464546",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "Chris BRADY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "390278",
+      "IdSeason": "285023",
+      "IdTeam": "43921",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "Alex ZENDEJAS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

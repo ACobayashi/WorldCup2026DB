@@ -1,0 +1,475 @@
+{
+  "IdCountry": "SEN",
+  "IdSeason": "285023",
+  "IdTeam": "43879",
+  "Players": [
+    {
+      "IdPlayer": "494277",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "Yehvann DIOUF",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "499800",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "Mamadou SARR",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "339820",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "Kalidou KOULIBALY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "370171",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Abdoulaye Seck",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "332314",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "Idrissa Gana GUEYE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448825",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "Pathe CISS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484698",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "Assane DIAO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464842",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "Lamine CAMARA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "418781",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "Bamba DIENG",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "353790",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "Sadio MANE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "418795",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "Nicolas JACKSON",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486168",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "Cherif NDIAYE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448815",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "Iliman NDIAYE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430671",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "Ismail JAKOBS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403642",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "Krepin DIATTA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "433806",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "Edouard MENDY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "418798",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "Pape Matar SARR",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "401889",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "Ismaila SARR",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430690",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "Moussa Niakhate",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "496358",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "Ibrahim MBAYE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486130",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "Habib DIARRA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "523354",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "Bara Sapoko NDIAYE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448821",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "Mory DIAW",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "494279",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "Antoine MENDY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464865",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "El Hadji Malick DIOUF",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "431788",
+      "IdSeason": "285023",
+      "IdTeam": "43879",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "Pape GUEYE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

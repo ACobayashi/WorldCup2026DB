@@ -1,0 +1,475 @@
+{
+  "IdCountry": "KSA",
+  "IdSeason": "285023",
+  "IdTeam": "43835",
+  "Players": [
+    {
+      "IdPlayer": "419287",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "NAWAF ALAQIDI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419326",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "ALI MAJRASHI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "433439",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "ALI LAJAMI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403312",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Abdulelah ALAMRI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403335",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "HASSAN ALTAMBAKTI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403319",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "NASSER ALDAWSARI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "436537",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "MUSAB ALJUWAYR",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430512",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "AIMAN YAHYA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419291",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "FERAS ALBRIKAN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "339745",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "SALEM ALDAWSARI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "425804",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "SALEH ALSHEHRI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419281",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "SAUD ABDULHAMID",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430518",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "NAWAF BU WASHL",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "401924",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "HASSAN KADISH",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "411624",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "ABDULLAH ALKHAIBARI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "436538",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "ZIYAD ALJOHANI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419300",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "KHALID ALGHANNAM",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "523333",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "ALA ALHAJJI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419302",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "ABDULLAH ALHAMDDAN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "494800",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "SULTAN MANDASH",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "396885",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "MOHAMMED ALOWAIS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "339746",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "AHMED ALKASSAR",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "407993",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "MOHAMED KANNO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419303",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "MOTEB ALHARBI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "494506",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "JEHAD THIKRI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "512183",
+      "IdSeason": "285023",
+      "IdTeam": "43835",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "MOHAMMED ABU ALSHAMAT",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

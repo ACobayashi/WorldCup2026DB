@@ -1,0 +1,475 @@
+{
+  "IdCountry": "IRN",
+  "IdSeason": "285023",
+  "IdTeam": "43817",
+  "Players": [
+    {
+      "IdPlayer": "380007",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "Alireza BEIRANVAND",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448505",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "Saleh HARDANI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "288961",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "Ehsan HAJISAFI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "346743",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Shoja KHALILZADEH",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "390537",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "Milad MOHAMMADI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "371736",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "Saeid EZATOLAHI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "379886",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "Alireza JAHANBAKHSH",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448497",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "Mohammad MOHEBBI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "388475",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "Mehdi TAREMI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403236",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "Mehdi GHAYEDI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "416989",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "Ali Alipour",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448507",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "Payam NIAZMAND",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "390534",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "Hossein KANANI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "411644",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "Saman GHODDOS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "406595",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "Roozbeh CHESHMI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "390535",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "Mehdi TORABI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "481181",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "Arya YOUSEFI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "405639",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "Amirhossein Hosseinzadeh",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "489603",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "Ali NEMATI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "481180",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "Shahriyar MOGHANLOO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "482670",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "Mohammad GHORBANI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "314255",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "Hossein HOSSEINI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "384797",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "Ramin REZAEIAN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "519837",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "Dennis DARGAHI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "494429",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "Danial IRI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "475921",
+      "IdSeason": "285023",
+      "IdTeam": "43817",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "Amirmohammad RAZAGHINIA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

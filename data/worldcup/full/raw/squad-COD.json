@@ -1,0 +1,475 @@
+{
+  "IdCountry": "COD",
+  "IdSeason": "285023",
+  "IdTeam": "20014",
+  "Players": [
+    {
+      "IdPlayer": "441313",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "Lionel MPASI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "426357",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "Aaron WAN-BISSAKA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "504329",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "Steve KAPUADI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403063",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Axel Tuanzebe",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "477829",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "Dylan BATUBINSIKA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "494458",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "Ngalayel MUKAU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "424119",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "Nathanael MBUKU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "433076",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "Samuel Moutoussamy",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "510989",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "Brian CIPENGA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441317",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "Theo BONGONDA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "336439",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "Gael KAKUTA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "477833",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "Joris KAYEMBE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "426506",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "Meschack ELIA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486147",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "Noah SADIKI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "477864",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "Aaron TSHIBOLA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486196",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "Timothy FAYULU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "336425",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "Cedric BAKAMBU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448128",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "Charles PICKEL",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "477859",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "Fiston MAYELE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441316",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "Yoane WISSA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "514171",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "Matthieu EPOLO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "356532",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "Chancel MBEMBA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "477835",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "Simon BANZA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "477853",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "Gedeon KALULU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "433161",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "Edo Kayembe",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "436572",
+      "IdSeason": "285023",
+      "IdTeam": "20014",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "Arthur MASUAKU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

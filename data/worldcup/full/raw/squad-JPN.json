@@ -1,0 +1,475 @@
+{
+  "IdCountry": "JPN",
+  "IdSeason": "285023",
+  "IdTeam": "43819",
+  "Players": [
+    {
+      "IdPlayer": "405530",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "Zion Suzuki",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "405528",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "Yukinari Sugawara",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "390541",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "Shogo TANIGUCHI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "400511",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Kou ITAKURA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "291372",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "Yuto NAGATOMO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448569",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "Shuto MACHINO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "400514",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "Ao TANAKA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403304",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "Takefusa KUBO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464339",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "Keisuke GOTO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "391646",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "Ritsu DOAN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430407",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "Daizen MAEDA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403305",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "Keisuke OSAKO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "405522",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "Keito Nakamura",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "395321",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "Junya ITO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448557",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "Daichi KAMADA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430401",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "Tsuyoshi Watanabe",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "485503",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "Yuito SUZUKI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430413",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "Ayase UEDA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403293",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "Koki OGAWA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "405527",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "Ayumu SEKO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403274",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "Hiroki ITO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403289",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "Takehiro TOMIYASU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "511710",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "Tomoki HAYAKAWA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "479294",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "Kaishu SANO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "498455",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "Junnosuke SUZUKI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "520218",
+      "IdSeason": "285023",
+      "IdTeam": "43819",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "Kento SHIOGAI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,475 @@
+{
+  "IdCountry": "BIH",
+  "IdSeason": "285023",
+  "IdTeam": "44037",
+  "Players": [
+    {
+      "IdPlayer": "482978",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "Nikola VASILJ",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "482969",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "Nihad MUJAKIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430194",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "Dennis HADZIKADUNIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484022",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Tarik MUHAREMOVIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "376230",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "Sead KOLASINAC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "483966",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "Benjamin TAHIROVIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "482976",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "Amar DEDIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "489523",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "Armin GIGOVIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "485063",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "Samed BAZDAR",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "436743",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "Ermedin DEMIROVIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "300409",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "Edin DZEKO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "522842",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "Mladen JURKAS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "482974",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "Ivan BASIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "372436",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "Ivan SUNJIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "494640",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "Amar MEMIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430196",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "Amir HADZIAHMETOVIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "389886",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "Dzenis BURNIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "489520",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "Nikola KATIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "504990",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "Kerim ALAJBEGOVIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464566",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "Esmir BAJRAKTAREVIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "489521",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "Stjepan RADELJIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "491228",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "Martin ZLOMISLIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "482984",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "Haris TABAKOVIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "494639",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "Arjan MALIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "519954",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "Jovo LUKIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "522846",
+      "IdSeason": "285023",
+      "IdTeam": "44037",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "Ermin MAHMIC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

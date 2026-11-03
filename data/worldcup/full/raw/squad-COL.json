@@ -1,0 +1,475 @@
+{
+  "IdCountry": "COL",
+  "IdSeason": "285023",
+  "IdTeam": "43926",
+  "Players": [
+    {
+      "IdPlayer": "228686",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "David OSPINA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "431200",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "Daniel MUNOZ",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441622",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "Jhon LUCUMI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "315614",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Santiago ARIAS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "470759",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "Kevin CASTANO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "473050",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "Richard RIOS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "428886",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "Luis DIAZ",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "425580",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "Jorge CARRASCAL",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "369530",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "Jhon CORDOBA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "269058",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "James RODRIGUEZ",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "470760",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "Jhon ARIAS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "360642",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "Camilo VARGAS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "395552",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "Yerry MINA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "463902",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "Gustavo PUERTA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "489849",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "Juan PORTILLA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "395550",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "Jefferson LERMA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "394500",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "Johan MOJICA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "476345",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "Willer DITTA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "418881",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "Cucho HERNANDEZ",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "356704",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "Juan QUINTERO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "405755",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "Jaminton CAMPAZ",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "394376",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "Deiver MACHADO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "386013",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "Davinson SANCHEZ",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "385998",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "Alvaro MONTERO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "428905",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "Luis SUAREZ",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "492189",
+      "IdSeason": "285023",
+      "IdTeam": "43926",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "Andres GOMEZ",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

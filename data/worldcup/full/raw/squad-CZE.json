@@ -1,0 +1,475 @@
+{
+  "IdCountry": "CZE",
+  "IdSeason": "285023",
+  "IdTeam": "43995",
+  "Players": [
+    {
+      "IdPlayer": "484012",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "Matej KOVAR",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "433755",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "David Zima",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441167",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "Tomas HOLES",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486080",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Robin HRANAC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "472908",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "Vladimir COUFAL",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "514334",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "Stepan CHALOUPEK",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441170",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "Ladislav KREJCI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "358003",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "Vladimir DARIDA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "433754",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "Adam HLOZEK",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "401481",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "Patrik Schick",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441171",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "Jan KUCHTA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486081",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "Lukas CERV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484003",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "Mojmir CHYTIL",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "483990",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "David JURASEK",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486082",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "Pavel SULC",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441162",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "Jindrich STANEK",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484011",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "Lukas PROVOD",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "433668",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "Michal SADILEK",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "483961",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "Tomas CHORY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441166",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "Jaroslav ZELENY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "483936",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "David DOUDERA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "404885",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "Tomas SOUCEK",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "511118",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "Lukas HORNICEK",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "523097",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "Alexandr SOJKA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "506775",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "Hugo SOCHUREK",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "519985",
+      "IdSeason": "285023",
+      "IdTeam": "43995",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "Denis VISINSKY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

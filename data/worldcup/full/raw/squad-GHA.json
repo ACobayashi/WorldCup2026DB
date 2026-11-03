@@ -1,0 +1,475 @@
+{
+  "IdCountry": "GHA",
+  "IdSeason": "285023",
+  "IdTeam": "43860",
+  "Players": [
+    {
+      "IdPlayer": "386473",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "Lawrence Ati ZIGI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448522",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "Alidu SEIDU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "506279",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "Caleb YIRENKYI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "494351",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Jonas ADJETEY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "369089",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "Thomas PARTEY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441336",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "Abdul MUMIN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441342",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "Abdul FATAWU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "507253",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "Kwasi SIBO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "353235",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "Jordan AYEW",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486213",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "Brandon THOMAS-ASANTE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448531",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "Antoine SEMENYO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "506277",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "Joseph ANANG",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "494350",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "Christopher Bonsu BAAH",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441333",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "Gideon MENSAH",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441341",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "Elisha OWUSU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "494349",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "Benjamin ASARE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "367536",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "Baba RAHMAN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486150",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "Jerome OPOKU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "411376",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "Inaki WILLIAMS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "523173",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "Augustine BOAKYE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "511022",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "Kojo Peprah OPPONG",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448523",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "Kamaldeen SULEMANA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "520037",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "Derrick LUCKASSEN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448525",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "Ernest NUAMAH",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "514401",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "Prince ADU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "520039",
+      "IdSeason": "285023",
+      "IdTeam": "43860",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "Marvin SENAYA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

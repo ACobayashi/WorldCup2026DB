@@ -1,0 +1,475 @@
+{
+  "IdCountry": "FRA",
+  "IdSeason": "285023",
+  "IdTeam": "43946",
+  "Players": [
+    {
+      "IdPlayer": "483471",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "Brice SAMBA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464055",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "Malo GUSTO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "368860",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "Lucas Digne",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "389876",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Dayot UPAMECANO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430707",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "Jules KOUNDE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "485677",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "Manu KONE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "398680",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "Ousmane DEMBELE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "405893",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "Aurelien TCHOUAMENI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403109",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "Marcus THURAM",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "389867",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "Kylian MBAPPE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "485655",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "Michael OLISE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484860",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "Bradley BARCOLA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "398681",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "Ngolo KANTE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "402047",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "Adrien RABIOT",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419166",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "Ibrahima KONATE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448332",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "Mike MAIGNAN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419177",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "William SALIBA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "483549",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "Warren ZAIRE-EMERY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "408042",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "Theo HERNANDEZ",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464114",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "Desire DOUE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "411470",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "Lucas HERNANDEZ",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403094",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "Jean-Philippe MATETA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464127",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "Robin RISSER",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "431861",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "Rayan CHERKI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "485666",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "Maghnes AKLIOUCHE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "405881",
+      "IdSeason": "285023",
+      "IdTeam": "43946",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "Maxence Lacroix",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

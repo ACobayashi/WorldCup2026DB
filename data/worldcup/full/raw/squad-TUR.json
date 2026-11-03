@@ -1,0 +1,475 @@
+{
+  "IdCountry": "TUR",
+  "IdSeason": "285023",
+  "IdTeam": "43972",
+  "Players": [
+    {
+      "IdPlayer": "360498",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "Mert GUNOK",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "433072",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "Zeki CELIK",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441179",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "Merih DEMIRAL",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "401167",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Caglar SOYUNCU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "389907",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "Salih OZCAN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "433118",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "Orkun KOKCU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441188",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "Kerem AKTURKOGLU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484087",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "Arda GULER",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "495347",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "Deniz GUL",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "369304",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "Hakan CALHANOGLU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484112",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "Kenan YILDIZ",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441180",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "Altay BAYINDIR",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484065",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "Eren ELMALI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484082",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "Abdulkerim BARDAKCI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "406249",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "Ozan KABAK",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484092",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "Ismail YUKSEK",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "472877",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "Irfan Can KAHVECI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430120",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "Mert MULDUR",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "406231",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "Yunus AKGUN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484113",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "Ferdi KADIOGLU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484139",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "Baris Alper YILMAZ",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "336170",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "Kaan Ayhan",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441181",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "Ugurcan CAKIR",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486076",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "Oguz AYDIN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484072",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "Samet AKAYDIN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486074",
+      "IdSeason": "285023",
+      "IdTeam": "43972",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "Can UZUN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

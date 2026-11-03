@@ -1,0 +1,475 @@
+{
+  "IdCountry": "RSA",
+  "IdSeason": "285023",
+  "IdTeam": "43883",
+  "Players": [
+    {
+      "IdPlayer": "395986",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "Ronwen WILLIAMS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "510850",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "Thabang MATULUDI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "504192",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "Khulumani NDAMANE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403616",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Teboho MOKOENA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "494248",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "Thalente MBATHA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "395050",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "Aubrey MODIBA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419223",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "Oswin APPOLLIS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "504193",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "Tshepang MOREMI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419211",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "Lyle FOSTER",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "486161",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "Relebohile MOFOKENG",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "395984",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "Themba ZWANE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "463234",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "Thapelo MASEKO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "390475",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "Sphephelo SITHOLE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "504199",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "Mbekezeli MBOKAZI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "481242",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "Iqraam RAYNERS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "494246",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "Sipho CHAINE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430917",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "Evidence MAKGOPA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "504200",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "Samukele KABINI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "463221",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "Nkosinathi SIBISI",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "463218",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "Khuliso MUDAU",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "506039",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "Ime OKON",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "395059",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "Ricardo GOSS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "463236",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "Jayden ADAMS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "502245",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "Olwethu MAKHANYA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "506038",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "Kamogelo SEBELEBELE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "419225",
+      "IdSeason": "285023",
+      "IdTeam": "43883",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "Bradley Cross",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

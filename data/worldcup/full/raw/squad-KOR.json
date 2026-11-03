@@ -1,0 +1,475 @@
+{
+  "IdCountry": "KOR",
+  "IdSeason": "285023",
+  "IdTeam": "43822",
+  "Players": [
+    {
+      "IdPlayer": "274281",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "KIM Seunggyu",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "423874",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "LEE Hanbeom",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "492315",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "LEE Gihyuk",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "395088",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "KIM Minjae",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "418485",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "KIM Taehyeon",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "395084",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "HWANG Inbeom",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "307849",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "SON Heungmin",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "402817",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "PAIK Seungho",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430387",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "CHO Guesung",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "390525",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "LEE Jaesung",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "395083",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "HWANG Heechan",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "402820",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "SONG Bumkeun",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "423880",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "LEE Taeseok",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "522282",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "CHO Wije",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448580",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "KIM Moonhwan ",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "479316",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "PARK Jinseob",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464374",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "BAE Junho",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448586",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "OH Hyeongyu",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "418490",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "LEE Kangin",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448585",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "YANG Hyunjun ",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "397753",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "JO Hyeonwoo",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "429608",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "SEOL Youngwoo",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "511828",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "CASTROP Jens",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430385",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "KIM Jingyu",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "423855",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "EOM Jisung",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "429600",
+      "IdSeason": "285023",
+      "IdTeam": "43822",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "LEE Donggyeong",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

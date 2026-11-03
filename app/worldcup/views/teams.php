@@ -6,7 +6,7 @@ declare(strict_types=1);
   <a class="wc-back" href="<?= e($url('teams')) ?>">← 返回球队列表</a>
   <article class="wc-panel"><span class="wc-code"><?= e($team['code']) ?></span><h2><?= e($team['name_zh']) ?></h2><p class="wc-muted"><?= e($team['name_en']) ?> · <?= e($team['group_name'] ?? '分组待确认') ?></p><a class="glass-button" href="<?= e($url('matches', ['team_id' => $team['id']])) ?>">查看球队赛程 ↗</a><h3>本届参赛阵容</h3>
     <?php if (!$data['squad']['items']): ?><p class="wc-muted">阵容资料尚未导入。</p><?php else: ?>
-      <div class="wc-table-wrap"><table><thead><tr><th>号码</th><th>姓名</th><th>位置</th><th>出生日期</th></tr></thead><tbody><?php foreach ($data['squad']['items'] as $player): ?><tr><td><?= e($player['shirt_number'] ?? '—') ?></td><td><?= e($player['name']) ?></td><td><?= e($player['position'] ?? '待补充') ?></td><td><?= e($player['birth_date'] ?? '待补充') ?></td></tr><?php endforeach; ?></tbody></table></div>
+      <div class="wc-table-wrap"><table><thead><tr><th>号码</th><th>姓名</th><th>位置</th></tr></thead><tbody><?php foreach ($data['squad']['items'] as $player): ?><tr><td><?= e($player['shirt_number'] ?? '—') ?></td><td><?= e($player['name']) ?></td><td><?= e($player['position'] ?? '待补充') ?></td></tr><?php endforeach; ?></tbody></table></div>
     <?php endif; ?>
     <p class="wc-muted">资料来源：<?= e($team['source_url'] ?? '待补充') ?></p>
   </article>

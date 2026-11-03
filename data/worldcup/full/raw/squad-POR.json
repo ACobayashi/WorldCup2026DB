@@ -1,0 +1,475 @@
+{
+  "IdCountry": "POR",
+  "IdSeason": "285023",
+  "IdTeam": "43963",
+  "Players": [
+    {
+      "IdPlayer": "403001",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "DIOGO COSTA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "395212",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "NELSON SEMEDO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "384752",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "RUBEN DIAS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "492358",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "TOMAS ARAUJO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "403002",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "DIOGO DALOT",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441148",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "MATHEUS NUNES",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "201200",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "CRISTIANO RONALDO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "395206",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "BRUNO FERNANDES",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448081",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "GONCALO RAMOS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "395205",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "BERNARDO SILVA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "418535",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "JOAO FELIX",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "368689",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "JOSE SA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "489704",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "RENATO VEIGA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441146",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "GONCALO INACIO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484141",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "JOAO NEVES",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "418561",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "FRANCISCO TRINCAO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "418550",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "RAFAEL LEAO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "418548",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "PEDRO NETO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "384751",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "GONCALO GUEDES",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "368649",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "JOAO CANCELO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "395216",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "RUBEN NEVES",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448092",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "RUI SILVA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "441149",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "VITINHA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "491216",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "SAMU COSTA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "433195",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "NUNO MENDES",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "485081",
+      "IdSeason": "285023",
+      "IdTeam": "43963",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "FRANCISCO CONCEICAO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,475 @@
+{
+  "IdCountry": "NED",
+  "IdSeason": "285023",
+  "IdTeam": "43960",
+  "Players": [
+    {
+      "IdPlayer": "424081",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "Bart Verbruggen",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "483553",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "Lutsharel GEERTRUIDA",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "402044",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "Marten DE ROON",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "397786",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Virgil VAN DIJK",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "336088",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "Nathan AKE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "489517",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "Jan Paul VAN HECKE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "478364",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "Justin KLUIVERT",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "430176",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "Ryan GRAVENBERCH",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448159",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "Wout WEGHORST",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "336098",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "Memphis DEPAY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448152",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "Cody GAKPO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "483481",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "Mats WIEFFER",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "506028",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "Robin ROEFS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "483526",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "Tijjani REIJNDERS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448140",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "Micky VAN DE VEN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448157",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "Guus TIL",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448153",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "Noa LANG",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "433066",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "Donyell Malen",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "424051",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "Brian BROBBEY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448149",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "Teun KOOPMEINERS",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "422657",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "Frenkie DE JONG",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "436612",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "Denzel DUMFRIES",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "448151",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "Mark FLEKKEN",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "489518",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "Crysencio SUMMERVILLE",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "483512",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "Jorrel HATO",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484859",
+      "IdSeason": "285023",
+      "IdTeam": "43960",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "Quinten TIMBER",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,475 @@
+{
+  "IdCountry": "UZB",
+  "IdSeason": "285023",
+  "IdTeam": "44005",
+  "Players": [
+    {
+      "IdPlayer": "479077",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 1,
+      "PlayerName": [
+        {
+          "Description": "Utkir YUSUPOV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464924",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 2,
+      "PlayerName": [
+        {
+          "Description": "Abdukodir KHUSANOV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "479079",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 3,
+      "PlayerName": [
+        {
+          "Description": "Khojiakbar ALIJONOV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "385139",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 4,
+      "PlayerName": [
+        {
+          "Description": "Farrukh SAYFIEV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "371415",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 5,
+      "PlayerName": [
+        {
+          "Description": "Rustam ASHURMATOV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "479106",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 6,
+      "PlayerName": [
+        {
+          "Description": "Akmal MOZGOVOY",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "371348",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 7,
+      "PlayerName": [
+        {
+          "Description": "Otabek Shukurov",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "368545",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 8,
+      "PlayerName": [
+        {
+          "Description": "Jamshid ISKANDEROV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "371345",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 9,
+      "PlayerName": [
+        {
+          "Description": "Odiljon XAMROBEKOV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "484303",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 10,
+      "PlayerName": [
+        {
+          "Description": "Ruslanbek JIYANOV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "479080",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 11,
+      "PlayerName": [
+        {
+          "Description": "Oston URUNOV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "479110",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 12,
+      "PlayerName": [
+        {
+          "Description": "Abduvohid NEMATOV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "479075",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 13,
+      "PlayerName": [
+        {
+          "Description": "Sherzod NASRULLAEV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "385475",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 14,
+      "PlayerName": [
+        {
+          "Description": "Eldor SHOMURODOV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "479084",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 15,
+      "PlayerName": [
+        {
+          "Description": "Umar ESHMURODOV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "385472",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 16,
+      "PlayerName": [
+        {
+          "Description": "Botirali ERGASHEV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Goalkeeper",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "371393",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 17,
+      "PlayerName": [
+        {
+          "Description": "Dostonbek Khamdamov",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "479042",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 18,
+      "PlayerName": [
+        {
+          "Description": "Abdulla ABDULLAEV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "479086",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 19,
+      "PlayerName": [
+        {
+          "Description": "Azizjon GANIEV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "481220",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 20,
+      "PlayerName": [
+        {
+          "Description": "Azizbek AMONOV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "368546",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 21,
+      "PlayerName": [
+        {
+          "Description": "Igor Sergeev",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Forward",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464933",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 22,
+      "PlayerName": [
+        {
+          "Description": "Abbosbek FAYZULLAEV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464897",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 23,
+      "PlayerName": [
+        {
+          "Description": "Sherzod ESANOV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Midfielder",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "475260",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 24,
+      "PlayerName": [
+        {
+          "Description": "Behruzjon KARIMOV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "518264",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 25,
+      "PlayerName": [
+        {
+          "Description": "Avazbek ULMASALIYEV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    },
+    {
+      "IdPlayer": "464906",
+      "IdSeason": "285023",
+      "IdTeam": "44005",
+      "JerseyNum": 26,
+      "PlayerName": [
+        {
+          "Description": "Jakhongir UROZOV",
+          "Locale": "en-GB"
+        }
+      ],
+      "PositionLocalized": [
+        {
+          "Description": "Defender",
+          "Locale": "en-GB"
+        }
+      ]
+    }
+  ]
+}
