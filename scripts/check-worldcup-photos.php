@@ -12,7 +12,7 @@ $report=json_decode(file_get_contents(PROJECT_ROOT.'/data/worldcup/player-photos
 $count=0;$heads=0;
 foreach($linked as $p){if($p['portrait_url']!==null){$count++;if($p['portrait_kind']==='headshot')$heads++;}}
 photoCheck($count===$report['available'],'All locally available files linked to DB');
-photoCheck($heads===1238,'Native headshot coverage');
+photoCheck($heads===1248,'Complete DQD headshot coverage');
 photoCheck((new PlayerPortrait($db))->attach([['id'=>PHP_INT_MAX]])[0]['portrait_url']===null,'Unknown source ID has no portrait');
 require PROJECT_ROOT.'/app/worldcup/views/helpers.php';
 photoCheck(!str_contains($portrait(['name'=>'<script>x</script>','portrait_url'=>'https://evil/photo.jpg']),'src='),'Reject remote and untrusted photo paths');

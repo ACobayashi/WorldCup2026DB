@@ -1,0 +1,17 @@
+{
+  "edition": 2026,
+  "provider": "懂球帝",
+  "method": "Exact DQD player search result matched to the FIFA squad player by full English name and nationality; used only for players absent from the two-match lineup headshot evidence set.",
+  "players": {
+    "314197": {"name": "NEYMAR JR", "dqd_id": "50069499", "dqd_name": "内马尔", "source_url": "https://pc.dongqiudi.com/player/50069499", "download_url": "https://sd.qunliao.info/fastdfs8/M00/5D/40/rBXRDGpB5NqAJ95MAAAfs5lU6ZM589.jpg", "kind": "headshot"},
+    "368652": {"name": "Giorgian DE ARRASCAETA", "dqd_id": "50159119", "dqd_name": "德阿拉斯卡埃塔", "source_url": "https://pc.dongqiudi.com/player/50159119", "download_url": "https://sd.qunliao.info/fastdfs8/M00/8A/9B/rBXRDGpRt1GAMDGpAAAc0bQh4L8750.jpg", "kind": "headshot"},
+    "395984": {"name": "Themba ZWANE", "dqd_id": "50117076", "dqd_name": "兹瓦内", "source_url": "https://pc.dongqiudi.com/player/50117076", "download_url": "https://sd.qunliao.info/fastdfs8/M00/4C/42/rBXRn2o7dIGAShqcAAAd4gOcMa0946.jpg", "kind": "headshot"},
+    "403304": {"name": "Takefusa KUBO", "dqd_id": "50391460", "dqd_name": "久保建英", "source_url": "https://pc.dongqiudi.com/player/50391460", "download_url": "https://sd.qunliao.info/fastdfs8/M00/5D/3F/rBXRn2pB6mqAOOvDAAAdE6nOOHM132.jpg", "kind": "headshot"},
+    "419101": {"name": "Ronald ARAUJO", "dqd_id": "50270729", "dqd_name": "阿劳霍", "source_url": "https://pc.dongqiudi.com/player/50270729", "download_url": "https://sd.qunliao.info/fastdfs8/M00/55/B6/rBXRDGqeaDOADmgbAAAfDJqnwRg283.jpg", "kind": "headshot"},
+    "448369": {"name": "Zeno DEBAST", "dqd_id": "50534885", "dqd_name": "德巴斯特", "source_url": "https://pc.dongqiudi.com/player/50534885", "download_url": "https://sd.qunliao.info/fastdfs8/M00/65/67/rBXRn2pFCcCAD_hkAAAa-5y7028218.jpg", "kind": "headshot"},
+    "477790": {"name": "Mohamed AMOURA", "dqd_id": "50553309", "dqd_name": "阿穆拉", "source_url": "https://pc.dongqiudi.com/player/50553309", "download_url": "https://sd.qunliao.info/fastdfs8/M00/69/35/rBXRn2pGb--APdnNAAAbSAF4Row559.jpg", "kind": "headshot"},
+    "483990": {"name": "David JURASEK", "dqd_id": "50506230", "dqd_name": "尤拉塞克", "source_url": "https://pc.dongqiudi.com/player/50506230", "download_url": "https://sd.qunliao.info/fastdfs8/M00/F1/B3/rBXRDGp3Bn-AIm6XAAAd87eGGmI147.jpg", "kind": "headshot"},
+    "493221": {"name": "Miro MUHEIM", "dqd_id": "50226752", "dqd_name": "穆海姆", "source_url": "https://pc.dongqiudi.com/player/50226752", "download_url": "https://sd.qunliao.info/fastdfs8/M00/7B/ED/rBXRDGpM-r6AfbD9AAAboSNa7s8770.jpg", "kind": "headshot"},
+    "514070": {"name": "Alfie JONES", "dqd_id": "50267561", "dqd_name": "阿尔菲-琼斯", "source_url": "https://pc.dongqiudi.com/player/50267561", "download_url": "https://sd.qunliao.info/fastdfs8/M00/6F/12/rBXRn2pIb5-AHRqeAAAfbSlaoQU279.jpg", "kind": "headshot"}
+  }
+}

@@ -1,0 +1,1015 @@
+{
+  "edition": 2026,
+  "season_id": "26123",
+  "provider": "懂球帝",
+  "source_url": "https://sport-data.dongqiudi.com/soccer/biz/data/person_ranking?app=dqd&version=0&platform=&type=assists&season_id=26123",
+  "captured_at": "2026-11-05T01:08:03Z",
+  "source_sha256": "c56a0105915e93458fff8b7d4bfbb57681197a866aa7deb60721f6a1ac302146",
+  "roster_total": 1248,
+  "nonzero_players": 167,
+  "zero_semantics": "Players absent from the complete non-zero ranking have 0 assists.",
+  "players": {
+    "229397": {
+      "assists": 4,
+      "dqd_id": "50000116",
+      "dqd_name": "梅西",
+      "team_name": "阿根廷"
+    },
+    "241559": {
+      "assists": 1,
+      "dqd_id": "50000339",
+      "dqd_name": "莫德里奇",
+      "team_name": "克罗地亚"
+    },
+    "274078": {
+      "assists": 2,
+      "dqd_id": "50054168",
+      "dqd_name": "克里斯-伍德",
+      "team_name": "新西兰"
+    },
+    "313559": {
+      "assists": 1,
+      "dqd_id": "50066776",
+      "dqd_name": "里卡多-罗德里格斯",
+      "team_name": "瑞士"
+    },
+    "316002": {
+      "assists": 1,
+      "dqd_id": "50025741",
+      "dqd_name": "阿拉巴",
+      "team_name": "奥地利"
+    },
+    "331463": {
+      "assists": 1,
+      "dqd_id": "50082495",
+      "dqd_name": "蒂姆-佩恩",
+      "team_name": "新西兰"
+    },
+    "335999": {
+      "assists": 1,
+      "dqd_id": "50117741",
+      "dqd_name": "拉波尔特",
+      "team_name": "西班牙"
+    },
+    "336098": {
+      "assists": 1,
+      "dqd_id": "50105142",
+      "dqd_name": "德佩",
+      "team_name": "荷兰"
+    },
+    "339987": {
+      "assists": 1,
+      "dqd_id": "50102192",
+      "dqd_name": "科瓦契奇",
+      "team_name": "克罗地亚"
+    },
+    "344654": {
+      "assists": 2,
+      "dqd_id": "50091010",
+      "dqd_name": "萨拉赫",
+      "team_name": "埃及"
+    },
+    "353790": {
+      "assists": 1,
+      "dqd_id": "50129377",
+      "dqd_name": "马内",
+      "team_name": "塞内加尔"
+    },
+    "355642": {
+      "assists": 1,
+      "dqd_id": "50055352",
+      "dqd_name": "瑞安-门德斯",
+      "team_name": "佛得角 "
+    },
+    "356532": {
+      "assists": 1,
+      "dqd_id": "50123012",
+      "dqd_name": "姆本巴",
+      "team_name": "刚果民主共和国"
+    },
+    "356704": {
+      "assists": 1,
+      "dqd_id": "50052486",
+      "dqd_name": "胡安-金特罗",
+      "team_name": "哥伦比亚"
+    },
+    "358112": {
+      "assists": 1,
+      "dqd_id": "50055783",
+      "dqd_name": "卢卡库",
+      "team_name": "比利时"
+    },
+    "358122": {
+      "assists": 1,
+      "dqd_id": "50065581",
+      "dqd_name": "默尼耶",
+      "team_name": "比利时"
+    },
+    "359381": {
+      "assists": 1,
+      "dqd_id": "50010499",
+      "dqd_name": "佩里西奇",
+      "team_name": "克罗地亚"
+    },
+    "363863": {
+      "assists": 1,
+      "dqd_id": "50162879",
+      "dqd_name": "马哈茂德-特雷泽盖",
+      "team_name": "埃及"
+    },
+    "368649": {
+      "assists": 1,
+      "dqd_id": "50105456",
+      "dqd_name": "坎塞洛",
+      "team_name": "葡萄牙"
+    },
+    "369419": {
+      "assists": 1,
+      "dqd_id": "50103468",
+      "dqd_name": "哈里-凯恩",
+      "team_name": "英格兰"
+    },
+    "370171": {
+      "assists": 1,
+      "dqd_id": "50219490",
+      "dqd_name": "塞克",
+      "team_name": "塞内加尔"
+    },
+    "376230": {
+      "assists": 1,
+      "dqd_id": "50135554",
+      "dqd_name": "科拉希纳茨",
+      "team_name": "波黑"
+    },
+    "379942": {
+      "assists": 1,
+      "dqd_id": "50102252",
+      "dqd_name": "马赫雷斯",
+      "team_name": "阿尔及利亚"
+    },
+    "382739": {
+      "assists": 1,
+      "dqd_id": "50201175",
+      "dqd_name": "马科斯-略伦特",
+      "team_name": "西班牙"
+    },
+    "384797": {
+      "assists": 1,
+      "dqd_id": "50075987",
+      "dqd_name": "雷扎扬",
+      "team_name": "伊朗"
+    },
+    "385259": {
+      "assists": 1,
+      "dqd_id": "50202602",
+      "dqd_name": "莱默尔",
+      "team_name": "奥地利"
+    },
+    "385531": {
+      "assists": 1,
+      "dqd_id": "50202607",
+      "dqd_name": "施拉格尔",
+      "team_name": "奥地利"
+    },
+    "386413": {
+      "assists": 2,
+      "dqd_id": "50167419",
+      "dqd_name": "基米希",
+      "team_name": "德国"
+    },
+    "389437": {
+      "assists": 1,
+      "dqd_id": "50208961",
+      "dqd_name": "伊赫桑-哈达德",
+      "team_name": "约旦"
+    },
+    "389867": {
+      "assists": 4,
+      "dqd_id": "50226848",
+      "dqd_name": "姆巴佩",
+      "team_name": "法国"
+    },
+    "389876": {
+      "assists": 1,
+      "dqd_id": "50229355",
+      "dqd_name": "于帕梅卡诺",
+      "team_name": "法国"
+    },
+    "390267": {
+      "assists": 1,
+      "dqd_id": "50245004",
+      "dqd_name": "普利希奇",
+      "team_name": "美国"
+    },
+    "391646": {
+      "assists": 1,
+      "dqd_id": "50233943",
+      "dqd_name": "堂安律",
+      "team_name": "日本"
+    },
+    "393480": {
+      "assists": 2,
+      "dqd_id": "50201416",
+      "dqd_name": "恩博洛",
+      "team_name": "瑞士"
+    },
+    "395084": {
+      "assists": 1,
+      "dqd_id": "50236057",
+      "dqd_name": "黄仁范",
+      "team_name": "韩国"
+    },
+    "395206": {
+      "assists": 1,
+      "dqd_id": "50177118",
+      "dqd_name": "布鲁诺-费尔南德斯",
+      "team_name": "葡萄牙"
+    },
+    "395471": {
+      "assists": 1,
+      "dqd_id": "50189811",
+      "dqd_name": "阿米里",
+      "team_name": "德国"
+    },
+    "397786": {
+      "assists": 1,
+      "dqd_id": "50120777",
+      "dqd_name": "范戴克",
+      "team_name": "荷兰"
+    },
+    "398680": {
+      "assists": 2,
+      "dqd_id": "50204709",
+      "dqd_name": "登贝莱",
+      "team_name": "法国"
+    },
+    "400511": {
+      "assists": 1,
+      "dqd_id": "50234585",
+      "dqd_name": "板仓滉",
+      "team_name": "日本"
+    },
+    "400716": {
+      "assists": 4,
+      "dqd_id": "50213468",
+      "dqd_name": "厄德高",
+      "team_name": "挪威"
+    },
+    "400721": {
+      "assists": 2,
+      "dqd_id": "50248003",
+      "dqd_name": "阿什拉夫",
+      "team_name": "摩洛哥"
+    },
+    "401131": {
+      "assists": 1,
+      "dqd_id": "50083328",
+      "dqd_name": "格雷戈里奇",
+      "team_name": "奥地利"
+    },
+    "401470": {
+      "assists": 1,
+      "dqd_id": "50248475",
+      "dqd_name": "拉什福德",
+      "team_name": "英格兰"
+    },
+    "401889": {
+      "assists": 1,
+      "dqd_id": "50267479",
+      "dqd_name": "伊斯梅拉-萨尔",
+      "team_name": "塞内加尔"
+    },
+    "402047": {
+      "assists": 1,
+      "dqd_id": "50156145",
+      "dqd_name": "拉比奥",
+      "team_name": "法国"
+    },
+    "402261": {
+      "assists": 1,
+      "dqd_id": "50179915",
+      "dqd_name": "尼古拉-佩佩",
+      "team_name": "科特迪瓦"
+    },
+    "402920": {
+      "assists": 1,
+      "dqd_id": "50238753",
+      "dqd_name": "劳塔罗-马丁内斯",
+      "team_name": "阿根廷"
+    },
+    "402921": {
+      "assists": 1,
+      "dqd_id": "50389829",
+      "dqd_name": "利桑德罗-马丁内斯",
+      "team_name": "阿根廷"
+    },
+    "402926": {
+      "assists": 1,
+      "dqd_id": "50251053",
+      "dqd_name": "蒙铁尔",
+      "team_name": "阿根廷"
+    },
+    "403293": {
+      "assists": 1,
+      "dqd_id": "50256918",
+      "dqd_name": "小川航基",
+      "team_name": "日本"
+    },
+    "403304": {
+      "assists": 1,
+      "dqd_id": "50391460",
+      "dqd_name": "久保建英",
+      "team_name": "日本"
+    },
+    "403585": {
+      "assists": 3,
+      "dqd_id": "50202130",
+      "dqd_name": "罗伯托-阿尔瓦拉多",
+      "team_name": "墨西哥"
+    },
+    "403596": {
+      "assists": 1,
+      "dqd_id": "50259067",
+      "dqd_name": "豪尔赫-桑切斯",
+      "team_name": "墨西哥"
+    },
+    "405522": {
+      "assists": 1,
+      "dqd_id": "50404507",
+      "dqd_name": "中村敬斗",
+      "team_name": "日本"
+    },
+    "405545": {
+      "assists": 1,
+      "dqd_id": "50248640",
+      "dqd_name": "费兰-托雷斯",
+      "team_name": "西班牙"
+    },
+    "405742": {
+      "assists": 1,
+      "dqd_id": "50387139",
+      "dqd_name": "维尼修斯",
+      "team_name": "巴西"
+    },
+    "405893": {
+      "assists": 1,
+      "dqd_id": "50273433",
+      "dqd_name": "楚阿梅尼",
+      "team_name": "法国"
+    },
+    "407022": {
+      "assists": 1,
+      "dqd_id": "50219196",
+      "dqd_name": "哈菲兹",
+      "team_name": "埃及"
+    },
+    "408950": {
+      "assists": 1,
+      "dqd_id": "50233953",
+      "dqd_name": "穆罕默德-哈尼",
+      "team_name": "埃及"
+    },
+    "411443": {
+      "assists": 1,
+      "dqd_id": "50190475",
+      "dqd_name": "卡斯塔涅",
+      "team_name": "比利时"
+    },
+    "411726": {
+      "assists": 1,
+      "dqd_id": "50258221",
+      "dqd_name": "帕奎塔",
+      "team_name": "巴西"
+    },
+    "418490": {
+      "assists": 1,
+      "dqd_id": "50433561",
+      "dqd_name": "李刚仁",
+      "team_name": "韩国"
+    },
+    "418548": {
+      "assists": 1,
+      "dqd_id": "50393509",
+      "dqd_name": "佩德罗-内托",
+      "team_name": "葡萄牙"
+    },
+    "418550": {
+      "assists": 1,
+      "dqd_id": "50415970",
+      "dqd_name": "莱奥",
+      "team_name": "葡萄牙"
+    },
+    "418795": {
+      "assists": 1,
+      "dqd_id": "50574562",
+      "dqd_name": "尼古拉-雅克松",
+      "team_name": "塞内加尔"
+    },
+    "418881": {
+      "assists": 1,
+      "dqd_id": "50237456",
+      "dqd_name": "库乔-埃尔南德斯",
+      "team_name": "哥伦比亚"
+    },
+    "418963": {
+      "assists": 1,
+      "dqd_id": "50274924",
+      "dqd_name": "法昆多-梅迪纳",
+      "team_name": "阿根廷"
+    },
+    "419100": {
+      "assists": 1,
+      "dqd_id": "50442057",
+      "dqd_name": "马克西-阿劳霍",
+      "team_name": "乌拉圭"
+    },
+    "419441": {
+      "assists": 1,
+      "dqd_id": "50445637",
+      "dqd_name": "霍马姆-艾哈迈德",
+      "team_name": "卡塔尔"
+    },
+    "419518": {
+      "assists": 1,
+      "dqd_id": "50455809",
+      "dqd_name": "利拉",
+      "team_name": "墨西哥"
+    },
+    "423941": {
+      "assists": 2,
+      "dqd_id": "50594098",
+      "dqd_name": "内森-萨利巴",
+      "team_name": "加拿大"
+    },
+    "424036": {
+      "assists": 1,
+      "dqd_id": "50494008",
+      "dqd_name": "比特",
+      "team_name": "厄瓜多尔"
+    },
+    "424106": {
+      "assists": 1,
+      "dqd_id": "50450413",
+      "dqd_name": "哈桑",
+      "team_name": "埃及"
+    },
+    "424422": {
+      "assists": 1,
+      "dqd_id": "50490182",
+      "dqd_name": "加拉尔萨",
+      "team_name": "巴拉圭"
+    },
+    "426506": {
+      "assists": 1,
+      "dqd_id": "50254817",
+      "dqd_name": "梅沙克-埃利亚",
+      "team_name": "刚果民主共和国"
+    },
+    "428882": {
+      "assists": 1,
+      "dqd_id": "50159964",
+      "dqd_name": "德保罗",
+      "team_name": "阿根廷"
+    },
+    "428886": {
+      "assists": 1,
+      "dqd_id": "50397003",
+      "dqd_name": "路易斯-迪亚斯",
+      "team_name": "哥伦比亚"
+    },
+    "428905": {
+      "assists": 1,
+      "dqd_id": "50250453",
+      "dqd_name": "路易斯-苏亚雷斯",
+      "team_name": "哥伦比亚"
+    },
+    "429063": {
+      "assists": 1,
+      "dqd_id": "50165869",
+      "dqd_name": "埃德米尔森-儒尼奥尔",
+      "team_name": "卡塔尔"
+    },
+    "429157": {
+      "assists": 1,
+      "dqd_id": "50254354",
+      "dqd_name": "基尼奥内斯",
+      "team_name": "墨西哥"
+    },
+    "430150": {
+      "assists": 3,
+      "dqd_id": "50249473",
+      "dqd_name": "伊萨克",
+      "team_name": "瑞典"
+    },
+    "430176": {
+      "assists": 2,
+      "dqd_id": "50451030",
+      "dqd_name": "赫拉芬贝赫",
+      "team_name": "荷兰"
+    },
+    "430194": {
+      "assists": 1,
+      "dqd_id": "50225724",
+      "dqd_name": "哈兹卡杜尼奇",
+      "team_name": "波黑"
+    },
+    "430413": {
+      "assists": 1,
+      "dqd_id": "50448022",
+      "dqd_name": "上田绮世",
+      "team_name": "日本"
+    },
+    "430601": {
+      "assists": 1,
+      "dqd_id": "50255546",
+      "dqd_name": "加布里埃尔",
+      "team_name": "巴西"
+    },
+    "430605": {
+      "assists": 4,
+      "dqd_id": "50237549",
+      "dqd_name": "吉马良斯",
+      "team_name": "巴西"
+    },
+    "430628": {
+      "assists": 1,
+      "dqd_id": "50274082",
+      "dqd_name": "麦卡利斯特",
+      "team_name": "阿根廷"
+    },
+    "430631": {
+      "assists": 1,
+      "dqd_id": "50265740",
+      "dqd_name": "尼古拉斯-冈萨雷斯",
+      "team_name": "阿根廷"
+    },
+    "430669": {
+      "assists": 3,
+      "dqd_id": "50553277",
+      "dqd_name": "维尔茨",
+      "team_name": "德国"
+    },
+    "430690": {
+      "assists": 1,
+      "dqd_id": "50206561",
+      "dqd_name": "尼亚凯特",
+      "team_name": "塞内加尔"
+    },
+    "430698": {
+      "assists": 2,
+      "dqd_id": "50248218",
+      "dqd_name": "奥亚尔",
+      "team_name": "阿尔及利亚"
+    },
+    "430735": {
+      "assists": 2,
+      "dqd_id": "50225864",
+      "dqd_name": "库库雷利亚",
+      "team_name": "西班牙"
+    },
+    "430740": {
+      "assists": 4,
+      "dqd_id": "50251479",
+      "dqd_name": "卜拉欣-迪亚斯",
+      "team_name": "摩洛哥"
+    },
+    "430750": {
+      "assists": 2,
+      "dqd_id": "50233092",
+      "dqd_name": "奥尔莫",
+      "team_name": "西班牙"
+    },
+    "430751": {
+      "assists": 1,
+      "dqd_id": "50230214",
+      "dqd_name": "奥亚萨瓦尔",
+      "team_name": "西班牙"
+    },
+    "430763": {
+      "assists": 1,
+      "dqd_id": "50269033",
+      "dqd_name": "路易斯-罗莫",
+      "team_name": "墨西哥"
+    },
+    "430831": {
+      "assists": 1,
+      "dqd_id": "50239118",
+      "dqd_name": "桑加雷",
+      "team_name": "科特迪瓦"
+    },
+    "430854": {
+      "assists": 1,
+      "dqd_id": "50491157",
+      "dqd_name": "辛戈",
+      "team_name": "科特迪瓦"
+    },
+    "431211": {
+      "assists": 1,
+      "dqd_id": "50267761",
+      "dqd_name": "穆萨-塔马里",
+      "team_name": "约旦"
+    },
+    "431230": {
+      "assists": 1,
+      "dqd_id": "50421482",
+      "dqd_name": "努尔-拉瓦比德",
+      "team_name": "约旦"
+    },
+    "431781": {
+      "assists": 1,
+      "dqd_id": "50225205",
+      "dqd_name": "杜维尔",
+      "team_name": "海地"
+    },
+    "431788": {
+      "assists": 1,
+      "dqd_id": "50270098",
+      "dqd_name": "帕普-盖伊",
+      "team_name": "塞内加尔"
+    },
+    "433074": {
+      "assists": 1,
+      "dqd_id": "50193297",
+      "dqd_name": "阿米尔-阿马里",
+      "team_name": "伊拉克"
+    },
+    "433097": {
+      "assists": 2,
+      "dqd_id": "50241165",
+      "dqd_name": "赖斯",
+      "team_name": "英格兰"
+    },
+    "433118": {
+      "assists": 1,
+      "dqd_id": "50444978",
+      "dqd_name": "柯克曲",
+      "team_name": "土耳其"
+    },
+    "433378": {
+      "assists": 2,
+      "dqd_id": "50468630",
+      "dqd_name": "汉尼拔-梅布里",
+      "team_name": "突尼斯"
+    },
+    "433426": {
+      "assists": 1,
+      "dqd_id": "50452857",
+      "dqd_name": "苏菲安-拉希米",
+      "team_name": "摩洛哥"
+    },
+    "433667": {
+      "assists": 1,
+      "dqd_id": "50453336",
+      "dqd_name": "斯塔尼希奇",
+      "team_name": "克罗地亚"
+    },
+    "436572": {
+      "assists": 1,
+      "dqd_id": "50130011",
+      "dqd_name": "马苏亚库",
+      "team_name": "刚果民主共和国"
+    },
+    "436612": {
+      "assists": 2,
+      "dqd_id": "50213821",
+      "dqd_name": "邓弗里斯",
+      "team_name": "荷兰"
+    },
+    "441234": {
+      "assists": 2,
+      "dqd_id": "50482602",
+      "dqd_name": "恩西索",
+      "team_name": "巴拉圭"
+    },
+    "447855": {
+      "assists": 1,
+      "dqd_id": "50524102",
+      "dqd_name": "尼科-威廉斯",
+      "team_name": "西班牙"
+    },
+    "447860": {
+      "assists": 1,
+      "dqd_id": "50428007",
+      "dqd_name": "巴埃纳",
+      "team_name": "西班牙"
+    },
+    "448131": {
+      "assists": 1,
+      "dqd_id": "50404714",
+      "dqd_name": "鲁文-巴尔加斯",
+      "team_name": "瑞士"
+    },
+    "448152": {
+      "assists": 1,
+      "dqd_id": "50257264",
+      "dqd_name": "加克波",
+      "team_name": "荷兰"
+    },
+    "448189": {
+      "assists": 3,
+      "dqd_id": "50432978",
+      "dqd_name": "安东尼-戈登",
+      "team_name": "英格兰"
+    },
+    "448196": {
+      "assists": 3,
+      "dqd_id": "50466810",
+      "dqd_name": "萨卡",
+      "team_name": "英格兰"
+    },
+    "448202": {
+      "assists": 1,
+      "dqd_id": "50517899",
+      "dqd_name": "贝林厄姆",
+      "team_name": "英格兰"
+    },
+    "448214": {
+      "assists": 1,
+      "dqd_id": "50469731",
+      "dqd_name": "马里克-蒂尔曼",
+      "team_name": "美国"
+    },
+    "448310": {
+      "assists": 1,
+      "dqd_id": "50782782",
+      "dqd_name": "凯文-罗德里格斯",
+      "team_name": "厄瓜多尔"
+    },
+    "448343": {
+      "assists": 2,
+      "dqd_id": "50086761",
+      "dqd_name": "瓦纳肯",
+      "team_name": "比利时"
+    },
+    "448355": {
+      "assists": 2,
+      "dqd_id": "50101326",
+      "dqd_name": "特罗萨德",
+      "team_name": "比利时"
+    },
+    "448362": {
+      "assists": 1,
+      "dqd_id": "50468964",
+      "dqd_name": "德凯特拉雷",
+      "team_name": "比利时"
+    },
+    "448525": {
+      "assists": 1,
+      "dqd_id": "50772278",
+      "dqd_name": "努瓦马",
+      "team_name": "加纳"
+    },
+    "448607": {
+      "assists": 1,
+      "dqd_id": "50572421",
+      "dqd_name": "沙迪-里亚德",
+      "team_name": "摩洛哥"
+    },
+    "448815": {
+      "assists": 2,
+      "dqd_id": "50471785",
+      "dqd_name": "恩迪亚耶",
+      "team_name": "塞内加尔"
+    },
+    "461788": {
+      "assists": 1,
+      "dqd_id": "50545069",
+      "dqd_name": "马尔万-阿特亚",
+      "team_name": "埃及"
+    },
+    "463902": {
+      "assists": 1,
+      "dqd_id": "50663773",
+      "dqd_name": "古斯塔沃-普埃尔塔",
+      "team_name": "哥伦比亚"
+    },
+    "464114": {
+      "assists": 1,
+      "dqd_id": "50680231",
+      "dqd_name": "杜埃",
+      "team_name": "法国"
+    },
+    "464542": {
+      "assists": 1,
+      "dqd_id": "50768218",
+      "dqd_name": "亚历克斯-弗里曼",
+      "team_name": "美国"
+    },
+    "464842": {
+      "assists": 1,
+      "dqd_id": "50782283",
+      "dqd_name": "拉明-卡马拉",
+      "team_name": "塞内加尔"
+    },
+    "472908": {
+      "assists": 1,
+      "dqd_id": "50103646",
+      "dqd_name": "曹法尔",
+      "team_name": "捷克"
+    },
+    "473113": {
+      "assists": 1,
+      "dqd_id": "50279294",
+      "dqd_name": "埃泽",
+      "team_name": "英格兰"
+    },
+    "475036": {
+      "assists": 1,
+      "dqd_id": "50870058",
+      "dqd_name": "拉扬",
+      "team_name": "巴西"
+    },
+    "479106": {
+      "assists": 1,
+      "dqd_id": "50437027",
+      "dqd_name": "莫兹戈沃伊",
+      "team_name": "乌兹别克斯坦"
+    },
+    "479294": {
+      "assists": 1,
+      "dqd_id": "50488915",
+      "dqd_name": "佐野海舟",
+      "team_name": "日本"
+    },
+    "481610": {
+      "assists": 1,
+      "dqd_id": "50245370",
+      "dqd_name": "埃利奥特-安德森",
+      "team_name": "英格兰"
+    },
+    "482974": {
+      "assists": 1,
+      "dqd_id": "50533531",
+      "dqd_name": "伊万-巴希奇",
+      "team_name": "波黑"
+    },
+    "483161": {
+      "assists": 1,
+      "dqd_id": "50819192",
+      "dqd_name": "穆斯塔法-齐科",
+      "team_name": "埃及"
+    },
+    "483327": {
+      "assists": 2,
+      "dqd_id": "50244579",
+      "dqd_name": "哲凯赖什",
+      "team_name": "瑞典"
+    },
+    "483442": {
+      "assists": 2,
+      "dqd_id": "50202325",
+      "dqd_name": "帕特里克-贝格",
+      "team_name": "挪威"
+    },
+    "483505": {
+      "assists": 1,
+      "dqd_id": "50495763",
+      "dqd_name": "戴维-沃尔费",
+      "team_name": "挪威"
+    },
+    "483526": {
+      "assists": 1,
+      "dqd_id": "50410629",
+      "dqd_name": "赖因德斯",
+      "team_name": "荷兰"
+    },
+    "484139": {
+      "assists": 1,
+      "dqd_id": "50422594",
+      "dqd_name": "巴里什-伊尔马兹",
+      "team_name": "土耳其"
+    },
+    "484851": {
+      "assists": 2,
+      "dqd_id": "50238001",
+      "dqd_name": "昂达夫",
+      "team_name": "德国"
+    },
+    "484860": {
+      "assists": 1,
+      "dqd_id": "50527477",
+      "dqd_name": "巴尔科拉",
+      "team_name": "法国"
+    },
+    "485066": {
+      "assists": 1,
+      "dqd_id": "50533548",
+      "dqd_name": "佩塔尔-苏契奇",
+      "team_name": "克罗地亚"
+    },
+    "485655": {
+      "assists": 7,
+      "dqd_id": "50475000",
+      "dqd_name": "奥利塞",
+      "team_name": "法国"
+    },
+    "486213": {
+      "assists": 1,
+      "dqd_id": "50266719",
+      "dqd_name": "托马斯-阿桑特",
+      "team_name": "加纳"
+    },
+    "489518": {
+      "assists": 2,
+      "dqd_id": "50469558",
+      "dqd_name": "萨默维尔",
+      "team_name": "荷兰"
+    },
+    "489689": {
+      "assists": 1,
+      "dqd_id": "50780694",
+      "dqd_name": "卢卡斯-贝里瓦尔",
+      "team_name": "瑞典"
+    },
+    "492363": {
+      "assists": 1,
+      "dqd_id": "50469456",
+      "dqd_name": "费利克斯-恩梅加",
+      "team_name": "德国"
+    },
+    "492716": {
+      "assists": 1,
+      "dqd_id": "50424970",
+      "dqd_name": "摩根-罗杰斯",
+      "team_name": "英格兰"
+    },
+    "493970": {
+      "assists": 1,
+      "dqd_id": "50675289",
+      "dqd_name": "普罗米斯-戴维",
+      "team_name": "加拿大"
+    },
+    "494293": {
+      "assists": 1,
+      "dqd_id": "50803043",
+      "dqd_name": "塔勒比",
+      "team_name": "摩洛哥"
+    },
+    "494313": {
+      "assists": 1,
+      "dqd_id": "50253645",
+      "dqd_name": "扬尼克-塞梅多",
+      "team_name": "佛得角 "
+    },
+    "494626": {
+      "assists": 3,
+      "dqd_id": "50600609",
+      "dqd_name": "谢尔德鲁普",
+      "team_name": "挪威"
+    },
+    "495054": {
+      "assists": 1,
+      "dqd_id": "50594508",
+      "dqd_name": "何塞-洛佩斯",
+      "team_name": "阿根廷"
+    },
+    "495349": {
+      "assists": 2,
+      "dqd_id": "50406622",
+      "dqd_name": "拉斯金",
+      "team_name": "比利时"
+    },
+    "498421": {
+      "assists": 1,
+      "dqd_id": "50808064",
+      "dqd_name": "奥孔-恩斯特勒",
+      "team_name": "澳大利亚"
+    },
+    "499912": {
+      "assists": 1,
+      "dqd_id": "50546794",
+      "dqd_name": "贝尔哈特",
+      "team_name": "美国"
+    },
+    "502727": {
+      "assists": 2,
+      "dqd_id": "50856995",
+      "dqd_name": "曼赞比",
+      "team_name": "瑞士"
+    },
+    "504193": {
+      "assists": 1,
+      "dqd_id": "50595193",
+      "dqd_name": "莫雷米",
+      "team_name": "南非"
+    },
+    "510922": {
+      "assists": 1,
+      "dqd_id": "51100200",
+      "dqd_name": "扬-迪奥曼德",
+      "team_name": "科特迪瓦"
+    },
+    "511015": {
+      "assists": 1,
+      "dqd_id": "50744490",
+      "dqd_name": "纳撒尼尔-布朗",
+      "team_name": "德国"
+    },
+    "523097": {
+      "assists": 1,
+      "dqd_id": "50826527",
+      "dqd_name": "索伊卡",
+      "team_name": "捷克"
+    }
+  }
+}

@@ -38,10 +38,13 @@ class PortraitChecks(unittest.TestCase):
     def test_snapshot_identity_and_coverage(self):
         catalog=json.loads((DATA/'catalog.json').read_text(encoding='utf-8'))
         native=json.loads((DATA/'headshots.json').read_text(encoding='utf-8'))
+        supplemental=json.loads((DATA.parent/'player-supplemental-dqd.json').read_text(encoding='utf-8'))
         core=json.loads((DATA.parent/'full/core.json').read_text(encoding='utf-8'))
         canonical={p['id'].split(':')[-1]:p for p in core['players']}
         self.assertEqual(set(catalog['players']),set(canonical))
         self.assertEqual(len(native['players']),1238)
+        self.assertEqual(len(supplemental['players']),10)
+        self.assertEqual(set(native['players'])|set(supplemental['players']),set(canonical))
         external=set()
         for pid,entry in native['players'].items():
             self.assertEqual(entry['name'],canonical[pid]['name'])
@@ -53,6 +56,10 @@ class PortraitChecks(unittest.TestCase):
             self.assertEqual(headshot_url(entry['source_url']),catalog['players'][pid]['download_url'])
         self.assertEqual(catalog['players']['448196']['kind'],'headshot')
         self.assertEqual(catalog['players']['486259']['kind'],'headshot')
+        for pid,entry in supplemental['players'].items():
+            self.assertEqual(entry['name'],canonical[pid]['name'])
+            self.assertEqual(entry['kind'],'headshot')
+            self.assertEqual(headshot_url(entry['download_url']),catalog['players'][pid]['download_url'])
 
 
 if __name__=='__main__':unittest.main()

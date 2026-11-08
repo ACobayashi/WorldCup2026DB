@@ -1,0 +1,6247 @@
+{
+  "complete": true,
+  "edition": 2026,
+  "players": {
+    "201200": {
+      "dqd_id": "50000356",
+      "name_en": "CRISTIANO RONALDO",
+      "name_zh": "C罗"
+    },
+    "215285": {
+      "dqd_id": "50000384",
+      "name_en": "Guillermo OCHOA",
+      "name_zh": "奥乔亚"
+    },
+    "215553": {
+      "dqd_id": "50000786",
+      "name_en": "Craig GORDON",
+      "name_zh": "克雷格-戈登"
+    },
+    "228686": {
+      "dqd_id": "50016588",
+      "name_en": "David OSPINA",
+      "name_zh": "奥斯皮纳"
+    },
+    "228912": {
+      "dqd_id": "50001805",
+      "name_en": "Manuel NEUER",
+      "name_zh": "诺伊尔"
+    },
+    "229397": {
+      "dqd_id": "50000116",
+      "name_en": "Lionel MESSI",
+      "name_zh": "梅西"
+    },
+    "229498": {
+      "dqd_id": "50015168",
+      "name_en": "Fernando MUSLERA",
+      "name_zh": "穆斯莱拉"
+    },
+    "241559": {
+      "dqd_id": "50000339",
+      "name_en": "Luka MODRIC",
+      "name_zh": "莫德里奇"
+    },
+    "261367": {
+      "dqd_id": "50034725",
+      "name_en": "Michael BOXALL",
+      "name_zh": "博克索尔"
+    },
+    "267702": {
+      "dqd_id": "50063246",
+      "name_en": "Luis MEJIA",
+      "name_zh": "路易斯-梅希亚"
+    },
+    "269058": {
+      "dqd_id": "50050944",
+      "name_en": "James RODRIGUEZ",
+      "name_zh": "哈梅斯-罗德里格斯"
+    },
+    "269514": {
+      "dqd_id": "50078410",
+      "name_en": "Anibal GODOY",
+      "name_zh": "戈多伊"
+    },
+    "269592": {
+      "dqd_id": "50013582",
+      "name_en": "Kosta BARBAROUSES",
+      "name_zh": "巴巴罗塞斯"
+    },
+    "271116": {
+      "dqd_id": "50065615",
+      "name_en": "Alberto QUINTERO",
+      "name_zh": "阿尔韦托-金特罗"
+    },
+    "274078": {
+      "dqd_id": "50054168",
+      "name_en": "Chris WOOD",
+      "name_zh": "克里斯-伍德"
+    },
+    "274102": {
+      "dqd_id": "50037923",
+      "name_en": "Tommy SMITH",
+      "name_zh": "汤米-史密斯"
+    },
+    "274281": {
+      "dqd_id": "50019938",
+      "name_en": "KIM Seunggyu",
+      "name_zh": "金承奎"
+    },
+    "275917": {
+      "dqd_id": "50153541",
+      "name_en": "Ricardo Ade",
+      "name_zh": "阿德"
+    },
+    "284190": {
+      "dqd_id": "50046170",
+      "name_en": "HASSAN ALHAYDOS",
+      "name_zh": "哈桑-海多斯"
+    },
+    "288961": {
+      "dqd_id": "50015648",
+      "name_en": "Ehsan HAJISAFI",
+      "name_zh": "哈伊萨菲"
+    },
+    "290821": {
+      "dqd_id": "50010311",
+      "name_en": "Axel WITSEL",
+      "name_zh": "维特塞尔"
+    },
+    "291372": {
+      "dqd_id": "50034722",
+      "name_en": "Yuto NAGATOMO",
+      "name_zh": "长友佑都"
+    },
+    "295922": {
+      "dqd_id": "50028926",
+      "name_en": "Johny Placide",
+      "name_zh": "普拉西德"
+    },
+    "297266": {
+      "dqd_id": "50100317",
+      "name_en": "STOPIRA",
+      "name_zh": "斯托皮拉"
+    },
+    "299200": {
+      "dqd_id": "50015731",
+      "name_en": "Marko ARNAUTOVIC",
+      "name_zh": "阿瑙托维奇"
+    },
+    "300409": {
+      "dqd_id": "50015486",
+      "name_en": "Edin DZEKO",
+      "name_zh": "哲科"
+    },
+    "306538": {
+      "dqd_id": "50039132",
+      "name_en": "Oliver Baumann",
+      "name_zh": "奥利弗-鲍曼"
+    },
+    "307849": {
+      "dqd_id": "50069741",
+      "name_en": "SON Heungmin",
+      "name_zh": "孙兴慜"
+    },
+    "308300": {
+      "dqd_id": "50069413",
+      "name_en": "Emiliano MARTINEZ",
+      "name_zh": "达米安-马丁内斯"
+    },
+    "308322": {
+      "dqd_id": "50069421",
+      "name_en": "Nicolas TAGLIAFICO",
+      "name_zh": "塔利亚菲科"
+    },
+    "308370": {
+      "dqd_id": "50069455",
+      "name_en": "ALISSON",
+      "name_zh": "阿利松"
+    },
+    "308386": {
+      "dqd_id": "50069491",
+      "name_en": "CASEMIRO",
+      "name_zh": "卡塞米罗"
+    },
+    "310116": {
+      "dqd_id": "50047193",
+      "name_en": "Nicolas OTAMENDI",
+      "name_zh": "奥塔门迪"
+    },
+    "311558": {
+      "dqd_id": "50069459",
+      "name_en": "Granit XHAKA",
+      "name_zh": "扎卡"
+    },
+    "313559": {
+      "dqd_id": "50066776",
+      "name_en": "Ricardo RODRIGUEZ",
+      "name_zh": "里卡多-罗德里格斯"
+    },
+    "314197": {
+      "dqd_id": "50069499",
+      "name_en": "NEYMAR JR",
+      "name_zh": "内马尔"
+    },
+    "314255": {
+      "dqd_id": "50069551",
+      "name_en": "Hossein HOSSEINI",
+      "name_zh": "侯赛因-侯赛尼"
+    },
+    "315614": {
+      "dqd_id": "50054020",
+      "name_en": "Santiago ARIAS",
+      "name_zh": "圣地亚哥-阿里亚斯"
+    },
+    "316002": {
+      "dqd_id": "50025741",
+      "name_en": "David ALABA",
+      "name_zh": "阿拉巴"
+    },
+    "318647": {
+      "dqd_id": "50017388",
+      "name_en": "Gatito FERNANDEZ",
+      "name_zh": "加蒂托-费尔南德斯"
+    },
+    "321697": {
+      "dqd_id": "50067066",
+      "name_en": "Mathew LECKIE",
+      "name_zh": "马修-莱基"
+    },
+    "331135": {
+      "dqd_id": "50116996",
+      "name_en": "Paul Izzo",
+      "name_zh": "伊佐"
+    },
+    "331149": {
+      "dqd_id": "50123345",
+      "name_en": "Milos DEGENEK",
+      "name_zh": "德格内克"
+    },
+    "331463": {
+      "dqd_id": "50082495",
+      "name_en": "Tim PAYNE",
+      "name_zh": "蒂姆-佩恩"
+    },
+    "331732": {
+      "dqd_id": "50112360",
+      "name_en": "Maxime CREPEAU",
+      "name_zh": "克雷波"
+    },
+    "332314": {
+      "dqd_id": "50066865",
+      "name_en": "Idrissa Gana GUEYE",
+      "name_zh": "伊德里萨-盖伊"
+    },
+    "332847": {
+      "dqd_id": "50106791",
+      "name_en": "Leandro PAREDES",
+      "name_zh": "帕雷德斯"
+    },
+    "332897": {
+      "dqd_id": "50116715",
+      "name_en": "Rodrigo AGUIRRE",
+      "name_zh": "阿吉雷"
+    },
+    "332946": {
+      "dqd_id": "50116625",
+      "name_en": "MARQUINHOS",
+      "name_zh": "马尔基尼奥斯"
+    },
+    "335656": {
+      "dqd_id": "50053451",
+      "name_en": "DANILO",
+      "name_zh": "达尼洛"
+    },
+    "335658": {
+      "dqd_id": "50055340",
+      "name_en": "ALEX SANDRO",
+      "name_zh": "阿莱士-桑德罗"
+    },
+    "335807": {
+      "dqd_id": "50111723",
+      "name_en": "Jean Michael SERI",
+      "name_zh": "塞里"
+    },
+    "335999": {
+      "dqd_id": "50117741",
+      "name_en": "Aymeric LAPORTE",
+      "name_zh": "拉波尔特"
+    },
+    "336022": {
+      "dqd_id": "50104523",
+      "name_en": "Jordan PICKFORD",
+      "name_zh": "皮克福德"
+    },
+    "336088": {
+      "dqd_id": "50117754",
+      "name_en": "Nathan AKE",
+      "name_zh": "阿克"
+    },
+    "336098": {
+      "dqd_id": "50105142",
+      "name_en": "Memphis DEPAY",
+      "name_zh": "德佩"
+    },
+    "336170": {
+      "dqd_id": "50104188",
+      "name_en": "Kaan Ayhan",
+      "name_zh": "艾汉"
+    },
+    "336425": {
+      "dqd_id": "50089342",
+      "name_en": "Cedric BAKAMBU",
+      "name_zh": "巴坎布"
+    },
+    "336439": {
+      "dqd_id": "50066801",
+      "name_en": "Gael KAKUTA",
+      "name_zh": "卡库塔"
+    },
+    "336459": {
+      "dqd_id": "50123497",
+      "name_en": "Rani Khedira",
+      "name_zh": "拉尼-赫迪拉"
+    },
+    "336472": {
+      "dqd_id": "50058564",
+      "name_en": "Andrej KRAMARIC",
+      "name_zh": "克拉马里奇"
+    },
+    "336641": {
+      "dqd_id": "50137556",
+      "name_en": "Ryan THOMAS",
+      "name_zh": "瑞安-托马斯"
+    },
+    "337232": {
+      "dqd_id": "50059516",
+      "name_en": "Eric DAVIS",
+      "name_zh": "埃里克-戴维斯"
+    },
+    "337251": {
+      "dqd_id": "50101829",
+      "name_en": "Cecilio Waterman",
+      "name_zh": "沃特曼"
+    },
+    "337389": {
+      "dqd_id": "50245229",
+      "name_en": "Anthony RALSTON",
+      "name_zh": "罗尔斯顿"
+    },
+    "339112": {
+      "dqd_id": "50148976",
+      "name_en": "Jason GERIA",
+      "name_zh": "杰里亚"
+    },
+    "339117": {
+      "dqd_id": "50086372",
+      "name_en": "Mathew RYAN",
+      "name_zh": "马修-瑞安"
+    },
+    "339510": {
+      "dqd_id": "50082141",
+      "name_en": "Tim REAM",
+      "name_zh": "里姆"
+    },
+    "339745": {
+      "dqd_id": "50126740",
+      "name_en": "SALEM ALDAWSARI",
+      "name_zh": "萨勒姆-达瓦萨里"
+    },
+    "339746": {
+      "dqd_id": "50094231",
+      "name_en": "AHMED ALKASSAR",
+      "name_zh": "艾哈迈德-卡萨尔"
+    },
+    "339820": {
+      "dqd_id": "50091651",
+      "name_en": "Kalidou KOULIBALY",
+      "name_zh": "库利巴利"
+    },
+    "339987": {
+      "dqd_id": "50102192",
+      "name_en": "Mateo KOVACIC",
+      "name_zh": "科瓦契奇"
+    },
+    "344582": {
+      "dqd_id": "50078537",
+      "name_en": "Roderick MILLER",
+      "name_zh": "罗德里克-米勒"
+    },
+    "344654": {
+      "dqd_id": "50091010",
+      "name_en": "MOHAMED SALAH",
+      "name_zh": "萨拉赫"
+    },
+    "344661": {
+      "dqd_id": "50109657",
+      "name_en": "RAMY RABIA",
+      "name_zh": "拉比亚"
+    },
+    "345059": {
+      "dqd_id": "50075753",
+      "name_en": "ABDULAZIZ HATEM",
+      "name_zh": "阿卜杜勒阿齐兹-哈特姆"
+    },
+    "346743": {
+      "dqd_id": "50091396",
+      "name_en": "Shoja KHALILZADEH",
+      "name_zh": "哈利扎德"
+    },
+    "347085": {
+      "dqd_id": "50126306",
+      "name_en": "JALAL HASSAN",
+      "name_zh": "贾拉勒-哈桑"
+    },
+    "349342": {
+      "dqd_id": "50052909",
+      "name_en": "Aziz BEHICH",
+      "name_zh": "比伊奇"
+    },
+    "353235": {
+      "dqd_id": "50066788",
+      "name_en": "Jordan AYEW",
+      "name_zh": "乔丹-阿尤"
+    },
+    "353251": {
+      "dqd_id": "50115547",
+      "name_en": "AHMED ALAAELDIN",
+      "name_zh": "艾哈迈德-阿拉丁"
+    },
+    "353790": {
+      "dqd_id": "50129377",
+      "name_en": "Sadio MANE",
+      "name_zh": "马内"
+    },
+    "354861": {
+      "dqd_id": "50100390",
+      "name_en": "KARIM BOUDIAF",
+      "name_zh": "卡里姆-布迪亚夫"
+    },
+    "355642": {
+      "dqd_id": "50055352",
+      "name_en": "RYAN MENDES",
+      "name_zh": "瑞安-门德斯"
+    },
+    "355775": {
+      "dqd_id": "50135121",
+      "name_en": "Jackson IRVINE",
+      "name_zh": "杰克逊-欧文"
+    },
+    "356189": {
+      "dqd_id": "50034386",
+      "name_en": "Jordan HENDERSON",
+      "name_zh": "亨德森"
+    },
+    "356412": {
+      "dqd_id": "50125342",
+      "name_en": "Silvan WIDMER",
+      "name_zh": "西尔万-威德默"
+    },
+    "356532": {
+      "dqd_id": "50123012",
+      "name_en": "Chancel MBEMBA",
+      "name_zh": "姆本巴"
+    },
+    "356673": {
+      "dqd_id": "50040462",
+      "name_en": "LUCAS MENDES",
+      "name_zh": "卢卡斯-门德斯"
+    },
+    "356704": {
+      "dqd_id": "50052486",
+      "name_en": "Juan QUINTERO",
+      "name_zh": "胡安-金特罗"
+    },
+    "356731": {
+      "dqd_id": "50134172",
+      "name_en": "Raul JIMENEZ",
+      "name_zh": "劳尔-希门尼斯"
+    },
+    "356956": {
+      "dqd_id": "50110699",
+      "name_en": "Yassine BOUNOU",
+      "name_zh": "布努"
+    },
+    "358003": {
+      "dqd_id": "50084206",
+      "name_en": "Vladimir DARIDA",
+      "name_zh": "达里达"
+    },
+    "358106": {
+      "dqd_id": "50054379",
+      "name_en": "Thibaut COURTOIS",
+      "name_zh": "库尔图瓦"
+    },
+    "358112": {
+      "dqd_id": "50055783",
+      "name_en": "Romelu LUKAKU",
+      "name_zh": "卢卡库"
+    },
+    "358120": {
+      "dqd_id": "50055255",
+      "name_en": "Kevin DE BRUYNE",
+      "name_zh": "德布劳内"
+    },
+    "358122": {
+      "dqd_id": "50065581",
+      "name_en": "Thomas MEUNIER",
+      "name_zh": "默尼耶"
+    },
+    "358241": {
+      "dqd_id": "50094780",
+      "name_en": "Marcel SABITZER",
+      "name_zh": "萨比策"
+    },
+    "359381": {
+      "dqd_id": "50010499",
+      "name_en": "Ivan PERISIC",
+      "name_zh": "佩里西奇"
+    },
+    "359634": {
+      "dqd_id": "50085684",
+      "name_en": "Grant Hanley",
+      "name_zh": "格兰特-汉利"
+    },
+    "360496": {
+      "dqd_id": "50023705",
+      "name_en": "Kristoffer NORDFELDT",
+      "name_zh": "诺德菲尔特"
+    },
+    "360498": {
+      "dqd_id": "50043859",
+      "name_en": "Mert GUNOK",
+      "name_zh": "居诺克"
+    },
+    "360642": {
+      "dqd_id": "50016616",
+      "name_en": "Camilo VARGAS",
+      "name_zh": "卡米洛-巴尔加斯"
+    },
+    "363863": {
+      "dqd_id": "50162879",
+      "name_en": "TREZEGUET",
+      "name_zh": "马哈茂德-特雷泽盖"
+    },
+    "364752": {
+      "dqd_id": "50117609",
+      "name_en": "VOZINHA",
+      "name_zh": "沃齐尼亚"
+    },
+    "367536": {
+      "dqd_id": "50160684",
+      "name_en": "Baba RAHMAN",
+      "name_zh": "巴巴"
+    },
+    "367981": {
+      "dqd_id": "50147545",
+      "name_en": "DOUGLAS SANTOS",
+      "name_zh": "道格拉斯-桑托斯"
+    },
+    "368535": {
+      "dqd_id": "50139015",
+      "name_en": "Max CROCOMBE",
+      "name_zh": "克罗科姆"
+    },
+    "368545": {
+      "dqd_id": "50122620",
+      "name_en": "Jamshid ISKANDEROV",
+      "name_zh": "伊斯坎德罗夫"
+    },
+    "368546": {
+      "dqd_id": "50115541",
+      "name_en": "Igor Sergeev",
+      "name_zh": "谢尔盖耶夫"
+    },
+    "368649": {
+      "dqd_id": "50105456",
+      "name_en": "JOAO CANCELO",
+      "name_zh": "坎塞洛"
+    },
+    "368652": {
+      "dqd_id": "50159119",
+      "name_en": "Giorgian DE ARRASCAETA",
+      "name_zh": "德阿拉斯卡埃塔"
+    },
+    "368655": {
+      "dqd_id": "50169752",
+      "name_en": "Jose Maria GIMENEZ",
+      "name_zh": "希门尼斯"
+    },
+    "368660": {
+      "dqd_id": "50122872",
+      "name_en": "Guillermo VARELA",
+      "name_zh": "吉列尔莫-巴雷拉"
+    },
+    "368664": {
+      "dqd_id": "50183115",
+      "name_en": "Sergio ROCHET",
+      "name_zh": "罗切特"
+    },
+    "368689": {
+      "dqd_id": "50165911",
+      "name_en": "JOSE SA",
+      "name_zh": "若泽-萨"
+    },
+    "368744": {
+      "dqd_id": "50192077",
+      "name_en": "FAHAD TALIB",
+      "name_zh": "法赫德-塔利布"
+    },
+    "368860": {
+      "dqd_id": "50090715",
+      "name_en": "Lucas Digne",
+      "name_zh": "迪涅"
+    },
+    "369029": {
+      "dqd_id": "50137616",
+      "name_en": "Dominik LIVAKOVIC",
+      "name_zh": "利瓦科维奇"
+    },
+    "369089": {
+      "dqd_id": "50160977",
+      "name_en": "Thomas PARTEY",
+      "name_zh": "帕尔特伊"
+    },
+    "369267": {
+      "dqd_id": "50191967",
+      "name_en": "YASSER IBRAHIM",
+      "name_zh": "亚西尔-易卜拉欣"
+    },
+    "369304": {
+      "dqd_id": "50101519",
+      "name_en": "Hakan CALHANOGLU",
+      "name_zh": "恰尔汗奥卢"
+    },
+    "369419": {
+      "dqd_id": "50103468",
+      "name_en": "Harry KANE",
+      "name_zh": "哈里-凯恩"
+    },
+    "369434": {
+      "dqd_id": "50121183",
+      "name_en": "John STONES",
+      "name_zh": "斯通斯"
+    },
+    "369530": {
+      "dqd_id": "50103438",
+      "name_en": "Jhon CORDOBA",
+      "name_zh": "科尔多瓦"
+    },
+    "369744": {
+      "dqd_id": "50110790",
+      "name_en": "Gustavo GOMEZ",
+      "name_zh": "古斯塔沃-戈麦斯"
+    },
+    "369749": {
+      "dqd_id": "50159258",
+      "name_en": "Junior ALONSO",
+      "name_zh": "儒尼奥尔-阿隆索"
+    },
+    "369761": {
+      "dqd_id": "50159260",
+      "name_en": "Miguel ALMIRON",
+      "name_zh": "阿尔米隆"
+    },
+    "369768": {
+      "dqd_id": "50167885",
+      "name_en": "Antonio SANABRIA",
+      "name_zh": "萨纳夫里亚"
+    },
+    "370171": {
+      "dqd_id": "50219490",
+      "name_en": "Abdoulaye Seck",
+      "name_zh": "塞克"
+    },
+    "370986": {
+      "dqd_id": "50117965",
+      "name_en": "Jonathan OSORIO",
+      "name_zh": "霍纳坦-奥索里奥"
+    },
+    "371142": {
+      "dqd_id": "50180581",
+      "name_en": "Alex RUFER",
+      "name_zh": "鲁弗"
+    },
+    "371345": {
+      "dqd_id": "50185173",
+      "name_en": "Odiljon XAMROBEKOV",
+      "name_zh": "哈姆罗别科夫"
+    },
+    "371348": {
+      "dqd_id": "50190395",
+      "name_en": "Otabek Shukurov",
+      "name_zh": "舒库罗夫"
+    },
+    "371393": {
+      "dqd_id": "50204287",
+      "name_en": "Dostonbek Khamdamov",
+      "name_zh": "哈姆达莫夫"
+    },
+    "371415": {
+      "dqd_id": "50204275",
+      "name_en": "Rustam ASHURMATOV",
+      "name_zh": "阿舒尔马托夫"
+    },
+    "371553": {
+      "dqd_id": "50203980",
+      "name_en": "Ahmed Reda TAGNAOUTI",
+      "name_zh": "塔纳乌蒂"
+    },
+    "371609": {
+      "dqd_id": "50203958",
+      "name_en": "Franck KESSIE",
+      "name_zh": "凯西"
+    },
+    "371736": {
+      "dqd_id": "50176667",
+      "name_en": "Saeid EZATOLAHI",
+      "name_zh": "埃扎托拉希"
+    },
+    "371739": {
+      "dqd_id": "50157828",
+      "name_en": "Alexander SCHLAGER",
+      "name_zh": "施拉格尔"
+    },
+    "371956": {
+      "dqd_id": "50184537",
+      "name_en": "LEO PEREIRA",
+      "name_zh": "莱奥-佩雷拉"
+    },
+    "371958": {
+      "dqd_id": "50185121",
+      "name_en": "Derek CORNELIUS",
+      "name_zh": "科尼利厄斯"
+    },
+    "372090": {
+      "dqd_id": "50185410",
+      "name_en": "Orbelin PINEDA",
+      "name_zh": "皮内达"
+    },
+    "372243": {
+      "dqd_id": "50185012",
+      "name_en": "Philipp Lienhart",
+      "name_zh": "林哈特"
+    },
+    "372266": {
+      "dqd_id": "50203975",
+      "name_en": "Sofyan AMRABAT",
+      "name_zh": "索菲扬-阿姆拉巴特"
+    },
+    "372294": {
+      "dqd_id": "50780359",
+      "name_en": "Sabri BEN HESSEN",
+      "name_zh": "萨布里-本-黑森"
+    },
+    "372342": {
+      "dqd_id": "50169799",
+      "name_en": "Ismael DIAZ",
+      "name_zh": "伊斯梅尔-迪亚斯"
+    },
+    "372424": {
+      "dqd_id": "50171180",
+      "name_en": "Duje CALETA-CAR",
+      "name_zh": "卡莱塔-卡尔"
+    },
+    "372436": {
+      "dqd_id": "50175296",
+      "name_en": "Ivan SUNJIC",
+      "name_zh": "舒尼奇"
+    },
+    "373235": {
+      "dqd_id": "50021498",
+      "name_en": "Orjan NYLAND",
+      "name_zh": "尼兰德"
+    },
+    "373344": {
+      "dqd_id": "50158011",
+      "name_en": "GARRY RODRIGUES",
+      "name_zh": "加里-罗德里格斯"
+    },
+    "373400": {
+      "dqd_id": "50076980",
+      "name_en": "Enner VALENCIA",
+      "name_zh": "恩纳-瓦伦西亚"
+    },
+    "375600": {
+      "dqd_id": "50158029",
+      "name_en": "Alessandro SCHOEPF",
+      "name_zh": "舍普夫"
+    },
+    "376230": {
+      "dqd_id": "50135554",
+      "name_en": "Sead KOLASINAC",
+      "name_zh": "科拉希纳茨"
+    },
+    "376285": {
+      "dqd_id": "50068965",
+      "name_en": "Aissa MANDI",
+      "name_zh": "曼迪"
+    },
+    "379886": {
+      "dqd_id": "50133262",
+      "name_en": "Alireza JAHANBAKHSH",
+      "name_zh": "贾汉巴赫什"
+    },
+    "379939": {
+      "dqd_id": "50148757",
+      "name_en": "Nabil Bentaleb",
+      "name_zh": "本塔莱布"
+    },
+    "379942": {
+      "dqd_id": "50102252",
+      "name_en": "Riyad Mahrez",
+      "name_zh": "马赫雷斯"
+    },
+    "379953": {
+      "dqd_id": "50136391",
+      "name_en": "Leon GORETZKA",
+      "name_zh": "格雷茨卡"
+    },
+    "379955": {
+      "dqd_id": "50122569",
+      "name_en": "Antonio RUEDIGER",
+      "name_zh": "吕迪格"
+    },
+    "380005": {
+      "dqd_id": "50137622",
+      "name_en": "Mario PASALIC",
+      "name_zh": "帕萨利奇"
+    },
+    "380007": {
+      "dqd_id": "50167640",
+      "name_en": "Alireza BEIRANVAND",
+      "name_zh": "贝兰万德"
+    },
+    "382312": {
+      "dqd_id": "50203694",
+      "name_en": "Cameron BURGESS",
+      "name_zh": "伯吉斯"
+    },
+    "382739": {
+      "dqd_id": "50201175",
+      "name_en": "Marcos LLORENTE",
+      "name_zh": "马科斯-略伦特"
+    },
+    "384751": {
+      "dqd_id": "50173688",
+      "name_en": "GONCALO GUEDES",
+      "name_zh": "贡萨洛-格德斯"
+    },
+    "384752": {
+      "dqd_id": "50185896",
+      "name_en": "RUBEN DIAS",
+      "name_zh": "鲁本-迪亚斯"
+    },
+    "384797": {
+      "dqd_id": "50075987",
+      "name_en": "Ramin REZAEIAN",
+      "name_zh": "雷扎扬"
+    },
+    "384850": {
+      "dqd_id": "50208959",
+      "name_en": "RAJAEI AYED",
+      "name_zh": "拉贾埃-阿伊德-法德勒"
+    },
+    "385030": {
+      "dqd_id": "50188792",
+      "name_en": "Fidel ESCOBAR",
+      "name_zh": "埃斯科瓦尔"
+    },
+    "385031": {
+      "dqd_id": "50224883",
+      "name_en": "Amir MURILLO",
+      "name_zh": "迈克尔-穆里略"
+    },
+    "385067": {
+      "dqd_id": "50102265",
+      "name_en": "BOUALEM KHOUKHI",
+      "name_zh": "布瓦勒姆-胡希"
+    },
+    "385070": {
+      "dqd_id": "50183173",
+      "name_en": "MOHAMMED MUNTARI",
+      "name_zh": "穆罕默德-蒙塔里"
+    },
+    "385139": {
+      "dqd_id": "50178098",
+      "name_en": "Farrukh SAYFIEV",
+      "name_zh": "赛义菲耶夫"
+    },
+    "385248": {
+      "dqd_id": "50136106",
+      "name_en": "Florian GRILLITSCH",
+      "name_zh": "格里利奇"
+    },
+    "385259": {
+      "dqd_id": "50202602",
+      "name_en": "Konrad LAIMER",
+      "name_zh": "莱默尔"
+    },
+    "385306": {
+      "dqd_id": "50213264",
+      "name_en": "Andres CUBAS",
+      "name_zh": "库瓦斯"
+    },
+    "385472": {
+      "dqd_id": "50228281",
+      "name_en": "Botirali ERGASHEV",
+      "name_zh": "叶尔加舍夫"
+    },
+    "385475": {
+      "dqd_id": "50213371",
+      "name_en": "Eldor SHOMURODOV",
+      "name_zh": "肖穆罗多夫"
+    },
+    "385531": {
+      "dqd_id": "50202607",
+      "name_en": "Xaver Schlager",
+      "name_zh": "施拉格尔"
+    },
+    "385833": {
+      "dqd_id": "50232094",
+      "name_en": "Adalberto CARRASQUILLA",
+      "name_zh": "卡拉斯基利亚"
+    },
+    "385994": {
+      "dqd_id": "50235171",
+      "name_en": "Cristian ROLDAN",
+      "name_zh": "克里斯蒂安-罗尔丹"
+    },
+    "385998": {
+      "dqd_id": "50194138",
+      "name_en": "Alvaro MONTERO",
+      "name_zh": "阿尔瓦罗-蒙特罗"
+    },
+    "386013": {
+      "dqd_id": "50186073",
+      "name_en": "Davinson SANCHEZ",
+      "name_zh": "达文森-桑切斯"
+    },
+    "386339": {
+      "dqd_id": "50182808",
+      "name_en": "Guillermo MARTINEZ",
+      "name_zh": "吉列尔莫-马丁内斯"
+    },
+    "386347": {
+      "dqd_id": "50216617",
+      "name_en": "AKRAM AFIF",
+      "name_zh": "阿菲夫"
+    },
+    "386348": {
+      "dqd_id": "50216622",
+      "name_en": "ASSIM MADIBO",
+      "name_zh": "阿西姆-马迪博"
+    },
+    "386366": {
+      "dqd_id": "50208322",
+      "name_en": "ALMOEZ ALI",
+      "name_zh": "莫埃兹-阿里"
+    },
+    "386387": {
+      "dqd_id": "50216626",
+      "name_en": "SULTAN ALBRAKE",
+      "name_zh": "苏丹-布雷克"
+    },
+    "386413": {
+      "dqd_id": "50167419",
+      "name_en": "Joshua KIMMICH",
+      "name_zh": "基米希"
+    },
+    "386458": {
+      "dqd_id": "50196138",
+      "name_en": "Alejandro ROMERO GAMARRA",
+      "name_zh": "卡库"
+    },
+    "386473": {
+      "dqd_id": "50234733",
+      "name_en": "Lawrence Ati ZIGI",
+      "name_zh": "阿蒂-齐吉"
+    },
+    "386538": {
+      "dqd_id": "50233554",
+      "name_en": "Rodrigo BENTANCUR",
+      "name_zh": "本坦库尔"
+    },
+    "388475": {
+      "dqd_id": "50106708",
+      "name_en": "Mehdi TAREMI",
+      "name_zh": "塔雷米"
+    },
+    "389437": {
+      "dqd_id": "50208961",
+      "name_en": "EHSAN HADDAD",
+      "name_zh": "伊赫桑-哈达德"
+    },
+    "389485": {
+      "dqd_id": "50235274",
+      "name_en": "Exequiel PALACIOS",
+      "name_zh": "帕拉西奥斯"
+    },
+    "389740": {
+      "dqd_id": "50233619",
+      "name_en": "Martin ERLIC",
+      "name_zh": "埃尔利奇"
+    },
+    "389753": {
+      "dqd_id": "50229132",
+      "name_en": "Nikola Moro",
+      "name_zh": "莫罗"
+    },
+    "389754": {
+      "dqd_id": "50254135",
+      "name_en": "Petar Musa",
+      "name_zh": "穆萨"
+    },
+    "389782": {
+      "dqd_id": "50231752",
+      "name_en": "Pervis ESTUPINAN",
+      "name_zh": "埃斯图皮尼安"
+    },
+    "389784": {
+      "dqd_id": "50235355",
+      "name_en": "Alan FRANCO",
+      "name_zh": "阿兰-弗朗哥"
+    },
+    "389867": {
+      "dqd_id": "50226848",
+      "name_en": "Kylian MBAPPE",
+      "name_zh": "姆巴佩"
+    },
+    "389876": {
+      "dqd_id": "50229355",
+      "name_en": "Dayot UPAMECANO",
+      "name_zh": "于帕梅卡诺"
+    },
+    "389879": {
+      "dqd_id": "50229353",
+      "name_en": "Luca ZIDANE",
+      "name_zh": "卢卡-齐达内"
+    },
+    "389886": {
+      "dqd_id": "50226677",
+      "name_en": "Dzenis BURNIC",
+      "name_zh": "布尔尼奇"
+    },
+    "389907": {
+      "dqd_id": "50231600",
+      "name_en": "Salih OZCAN",
+      "name_zh": "厄兹詹"
+    },
+    "390181": {
+      "dqd_id": "50229805",
+      "name_en": "Joe BELL",
+      "name_zh": "乔-贝尔"
+    },
+    "390196": {
+      "dqd_id": "50250808",
+      "name_en": "Callum McCOWATT",
+      "name_zh": "麦克科瓦特"
+    },
+    "390205": {
+      "dqd_id": "50210504",
+      "name_en": "Logan ROGERSON",
+      "name_zh": "罗杰森"
+    },
+    "390209": {
+      "dqd_id": "50232334",
+      "name_en": "Sarpreet SINGH",
+      "name_zh": "萨尔佩特-辛格"
+    },
+    "390218": {
+      "dqd_id": "50232262",
+      "name_en": "Michael WOUD",
+      "name_zh": "迈克尔-沃德"
+    },
+    "390238": {
+      "dqd_id": "50236605",
+      "name_en": "Tyler ADAMS",
+      "name_zh": "泰勒-亚当斯"
+    },
+    "390259": {
+      "dqd_id": "50394289",
+      "name_en": "Weston McKENNIE",
+      "name_zh": "麦肯尼"
+    },
+    "390267": {
+      "dqd_id": "50245004",
+      "name_en": "Christian PULISIC",
+      "name_zh": "普利希奇"
+    },
+    "390272": {
+      "dqd_id": "50250653",
+      "name_en": "Auston TRUSTY",
+      "name_zh": "特拉斯蒂"
+    },
+    "390276": {
+      "dqd_id": "50237265",
+      "name_en": "Haji WRIGHT",
+      "name_zh": "哈吉-赖特"
+    },
+    "390278": {
+      "dqd_id": "50223071",
+      "name_en": "Alex ZENDEJAS",
+      "name_zh": "森德哈斯"
+    },
+    "390475": {
+      "dqd_id": "50250880",
+      "name_en": "Sphephelo SITHOLE",
+      "name_zh": "亚亚-西索尔"
+    },
+    "390525": {
+      "dqd_id": "50211268",
+      "name_en": "LEE Jaesung",
+      "name_zh": "李在城"
+    },
+    "390534": {
+      "dqd_id": "50143786",
+      "name_en": "Hossein KANANI",
+      "name_zh": "侯赛因-卡纳尼"
+    },
+    "390535": {
+      "dqd_id": "50189757",
+      "name_en": "Mehdi TORABI",
+      "name_zh": "托拉比"
+    },
+    "390537": {
+      "dqd_id": "50218669",
+      "name_en": "Milad MOHAMMADI",
+      "name_zh": "米拉德-穆罕默迪"
+    },
+    "390541": {
+      "dqd_id": "50211009",
+      "name_en": "Shogo TANIGUCHI",
+      "name_zh": "谷口彰悟"
+    },
+    "390650": {
+      "dqd_id": "50046081",
+      "name_en": "Eloy ROOM",
+      "name_zh": "鲁姆"
+    },
+    "390670": {
+      "dqd_id": "50216323",
+      "name_en": "Cyle LARIN",
+      "name_zh": "拉林"
+    },
+    "391297": {
+      "dqd_id": "50132474",
+      "name_en": "Alex GRIMALDO",
+      "name_zh": "格里马尔多"
+    },
+    "391646": {
+      "dqd_id": "50233943",
+      "name_en": "Ritsu DOAN",
+      "name_zh": "堂安律"
+    },
+    "393480": {
+      "dqd_id": "50201416",
+      "name_en": "Breel EMBOLO",
+      "name_zh": "恩博洛"
+    },
+    "394376": {
+      "dqd_id": "50204976",
+      "name_en": "Deiver MACHADO",
+      "name_zh": "戴韦尔-马查多"
+    },
+    "394456": {
+      "dqd_id": "50157772",
+      "name_en": "FABINHO",
+      "name_zh": "法比尼奥"
+    },
+    "394500": {
+      "dqd_id": "50112840",
+      "name_en": "Johan MOJICA",
+      "name_zh": "莫希卡"
+    },
+    "394824": {
+      "dqd_id": "50099754",
+      "name_en": "Geronimo RULLI",
+      "name_zh": "鲁利"
+    },
+    "394829": {
+      "dqd_id": "50144752",
+      "name_en": "Fabian BALBUENA",
+      "name_zh": "巴尔武埃纳"
+    },
+    "394993": {
+      "dqd_id": "50170522",
+      "name_en": "Duckens NAZON",
+      "name_zh": "纳松"
+    },
+    "395050": {
+      "dqd_id": "50233626",
+      "name_en": "Aubrey MODIBA",
+      "name_zh": "莫迪巴"
+    },
+    "395059": {
+      "dqd_id": "50188984",
+      "name_en": "Ricardo GOSS",
+      "name_zh": "高斯"
+    },
+    "395083": {
+      "dqd_id": "50228207",
+      "name_en": "HWANG Heechan",
+      "name_zh": "黄喜灿"
+    },
+    "395084": {
+      "dqd_id": "50236057",
+      "name_en": "HWANG Inbeom",
+      "name_zh": "黄仁范"
+    },
+    "395088": {
+      "dqd_id": "50280322",
+      "name_en": "KIM Minjae",
+      "name_zh": "金玟哉"
+    },
+    "395113": {
+      "dqd_id": "50219195",
+      "name_en": "Ramy BENSEBAINI",
+      "name_zh": "本塞拜尼"
+    },
+    "395186": {
+      "dqd_id": "50228317",
+      "name_en": "AYMEN HUSSEIN",
+      "name_zh": "艾曼-侯赛因"
+    },
+    "395205": {
+      "dqd_id": "50191288",
+      "name_en": "BERNARDO SILVA",
+      "name_zh": "伯纳多-席尔瓦"
+    },
+    "395206": {
+      "dqd_id": "50177118",
+      "name_en": "BRUNO FERNANDES",
+      "name_zh": "布鲁诺-费尔南德斯"
+    },
+    "395212": {
+      "dqd_id": "50165555",
+      "name_en": "NELSON SEMEDO",
+      "name_zh": "塞梅多"
+    },
+    "395216": {
+      "dqd_id": "50173755",
+      "name_en": "RUBEN NEVES",
+      "name_zh": "鲁本-内维斯"
+    },
+    "395283": {
+      "dqd_id": "50083863",
+      "name_en": "Victor LINDELOF",
+      "name_zh": "林德洛夫"
+    },
+    "395286": {
+      "dqd_id": "50183639",
+      "name_en": "Ken SEMA",
+      "name_zh": "塞马"
+    },
+    "395321": {
+      "dqd_id": "50231077",
+      "name_en": "Junya ITO",
+      "name_zh": "伊东纯也"
+    },
+    "395414": {
+      "dqd_id": "50231179",
+      "name_en": "Giovani Lo Celso",
+      "name_zh": "洛塞尔索"
+    },
+    "395427": {
+      "dqd_id": "50132582",
+      "name_en": "EDERSON",
+      "name_zh": "埃德森"
+    },
+    "395471": {
+      "dqd_id": "50189811",
+      "name_en": "Nadiem Amiri",
+      "name_zh": "阿米里"
+    },
+    "395516": {
+      "dqd_id": "50243444",
+      "name_en": "Cesar MONTES",
+      "name_zh": "塞萨尔-蒙特斯"
+    },
+    "395550": {
+      "dqd_id": "50184993",
+      "name_en": "Jefferson LERMA",
+      "name_zh": "莱尔马"
+    },
+    "395552": {
+      "dqd_id": "50185560",
+      "name_en": "Yerry MINA",
+      "name_zh": "米纳"
+    },
+    "395581": {
+      "dqd_id": "50200578",
+      "name_en": "Cristian MARTINEZ",
+      "name_zh": "克里斯蒂安-马丁内斯"
+    },
+    "395755": {
+      "dqd_id": "50098771",
+      "name_en": "Munir EL KAJOUI",
+      "name_zh": "穆尼尔-穆罕默迪"
+    },
+    "395760": {
+      "dqd_id": "50185040",
+      "name_en": "Marwane SAADANE",
+      "name_zh": "萨丹"
+    },
+    "395860": {
+      "dqd_id": "50053230",
+      "name_en": "MAHDY SOLIMAN",
+      "name_zh": "马赫迪-苏莱曼"
+    },
+    "395984": {
+      "dqd_id": "50117076",
+      "name_en": "Themba ZWANE",
+      "name_zh": "兹瓦内"
+    },
+    "395986": {
+      "dqd_id": "50111527",
+      "name_en": "Ronwen WILLIAMS",
+      "name_zh": "隆文-威廉斯"
+    },
+    "396158": {
+      "dqd_id": "50145735",
+      "name_en": "REBIN SULAKA",
+      "name_zh": "雷宾-苏拉卡"
+    },
+    "396315": {
+      "dqd_id": "50023362",
+      "name_en": "WEVERTON",
+      "name_zh": "韦弗顿"
+    },
+    "396885": {
+      "dqd_id": "50179263",
+      "name_en": "MOHAMMED ALOWAIS",
+      "name_zh": "穆罕默德-奥韦斯"
+    },
+    "396950": {
+      "dqd_id": "50226060",
+      "name_en": "MAHMOUD ALMARDI",
+      "name_zh": "穆罕默德-马尔迪"
+    },
+    "397753": {
+      "dqd_id": "50183413",
+      "name_en": "JO Hyeonwoo",
+      "name_zh": "赵贤祐"
+    },
+    "397775": {
+      "dqd_id": "50160885",
+      "name_en": "Carlens ARCUS",
+      "name_zh": "阿尔库斯"
+    },
+    "397786": {
+      "dqd_id": "50120777",
+      "name_en": "Virgil VAN DIJK",
+      "name_zh": "范戴克"
+    },
+    "397894": {
+      "dqd_id": "50210054",
+      "name_en": "YAZEED ABULAILA",
+      "name_zh": "亚齐德-阿布-莱拉"
+    },
+    "398509": {
+      "dqd_id": "50175035",
+      "name_en": "Nico ELVEDI",
+      "name_zh": "尼科-埃尔维迪"
+    },
+    "398569": {
+      "dqd_id": "50139310",
+      "name_en": "Riechedly Bazoer",
+      "name_zh": "巴佐尔"
+    },
+    "398588": {
+      "dqd_id": "50139227",
+      "name_en": "Alexander SORLOTH",
+      "name_zh": "瑟洛特"
+    },
+    "398680": {
+      "dqd_id": "50204709",
+      "name_en": "Ousmane DEMBELE",
+      "name_zh": "登贝莱"
+    },
+    "398681": {
+      "dqd_id": "50136901",
+      "name_en": "Ngolo KANTE",
+      "name_zh": "坎特"
+    },
+    "400416": {
+      "dqd_id": "50164005",
+      "name_en": "Edgar Yoel BARCENAS",
+      "name_zh": "巴尔塞纳斯"
+    },
+    "400511": {
+      "dqd_id": "50234585",
+      "name_en": "Kou ITAKURA",
+      "name_zh": "板仓滉"
+    },
+    "400514": {
+      "dqd_id": "50284309",
+      "name_en": "Ao TANAKA",
+      "name_zh": "田中碧"
+    },
+    "400634": {
+      "dqd_id": "50267510",
+      "name_en": "Edson ALVAREZ",
+      "name_zh": "埃德松-阿尔瓦雷斯"
+    },
+    "400716": {
+      "dqd_id": "50213468",
+      "name_en": "Martin ODEGAARD",
+      "name_zh": "厄德高"
+    },
+    "400721": {
+      "dqd_id": "50248003",
+      "name_en": "Achraf HAKIMI",
+      "name_zh": "阿什拉夫"
+    },
+    "401023": {
+      "dqd_id": "50139281",
+      "name_en": "Joshua BRENET",
+      "name_zh": "布雷内特"
+    },
+    "401131": {
+      "dqd_id": "50083328",
+      "name_en": "Michael Gregoritsch",
+      "name_zh": "格雷戈里奇"
+    },
+    "401167": {
+      "dqd_id": "50222849",
+      "name_en": "Caglar SOYUNCU",
+      "name_zh": "瑟云聚"
+    },
+    "401334": {
+      "dqd_id": "50164895",
+      "name_en": "John McGinn",
+      "name_zh": "麦金"
+    },
+    "401339": {
+      "dqd_id": "50163873",
+      "name_en": "Andy ROBERTSON",
+      "name_zh": "罗伯逊"
+    },
+    "401378": {
+      "dqd_id": "50168517",
+      "name_en": "Jonathan TAH",
+      "name_zh": "约纳坦-塔"
+    },
+    "401444": {
+      "dqd_id": "50190378",
+      "name_en": "Youri TIELEMANS",
+      "name_zh": "蒂勒曼斯"
+    },
+    "401448": {
+      "dqd_id": "50230045",
+      "name_en": "Denis ZAKARIA",
+      "name_zh": "扎卡里亚"
+    },
+    "401470": {
+      "dqd_id": "50248475",
+      "name_en": "Marcus RASHFORD",
+      "name_zh": "拉什福德"
+    },
+    "401481": {
+      "dqd_id": "50172787",
+      "name_en": "Patrik Schick",
+      "name_zh": "希克"
+    },
+    "401712": {
+      "dqd_id": "50206455",
+      "name_en": "Kieran Tierney",
+      "name_zh": "蒂尔尼"
+    },
+    "401889": {
+      "dqd_id": "50267479",
+      "name_en": "Ismaila SARR",
+      "name_zh": "伊斯梅拉-萨尔"
+    },
+    "401893": {
+      "dqd_id": "50158960",
+      "name_en": "NUNO DA COSTA",
+      "name_zh": "努诺-达科斯塔"
+    },
+    "401894": {
+      "dqd_id": "50248985",
+      "name_en": "JAMIRO MONTEIRO",
+      "name_zh": "雅米罗"
+    },
+    "401924": {
+      "dqd_id": "50625677",
+      "name_en": "HASSAN KADISH",
+      "name_zh": "哈桑-卡代什"
+    },
+    "402021": {
+      "dqd_id": "50085004",
+      "name_en": "Remo FREULER",
+      "name_zh": "弗罗伊勒"
+    },
+    "402022": {
+      "dqd_id": "50117680",
+      "name_en": "Yvon MVOGO",
+      "name_zh": "姆沃戈"
+    },
+    "402044": {
+      "dqd_id": "50082105",
+      "name_en": "Marten DE ROON",
+      "name_zh": "德容恩"
+    },
+    "402047": {
+      "dqd_id": "50156145",
+      "name_en": "Adrien RABIOT",
+      "name_zh": "拉比奥"
+    },
+    "402261": {
+      "dqd_id": "50179915",
+      "name_en": "Nicolas PEPE",
+      "name_zh": "尼古拉-佩佩"
+    },
+    "402772": {
+      "dqd_id": "50219686",
+      "name_en": "Jesus GALLARDO",
+      "name_zh": "赫苏斯-加利亚多"
+    },
+    "402817": {
+      "dqd_id": "50228205",
+      "name_en": "PAIK Seungho",
+      "name_zh": "白昇浩"
+    },
+    "402820": {
+      "dqd_id": "50393544",
+      "name_en": "SONG Bumkeun",
+      "name_zh": "宋范根"
+    },
+    "402876": {
+      "dqd_id": "50266874",
+      "name_en": "Agustin CANOBBIO",
+      "name_zh": "卡诺比奥"
+    },
+    "402884": {
+      "dqd_id": "50234599",
+      "name_en": "Federico VALVERDE",
+      "name_zh": "巴尔韦德"
+    },
+    "402893": {
+      "dqd_id": "50240283",
+      "name_en": "Mathias OLIVERA",
+      "name_zh": "马蒂亚斯-奥利韦拉"
+    },
+    "402895": {
+      "dqd_id": "50386072",
+      "name_en": "Matias VINA",
+      "name_zh": "比尼亚"
+    },
+    "402897": {
+      "dqd_id": "50214199",
+      "name_en": "Santiago MELE",
+      "name_zh": "梅莱"
+    },
+    "402898": {
+      "dqd_id": "50247927",
+      "name_en": "Nicolas DE LA CRUZ",
+      "name_zh": "德拉克鲁斯"
+    },
+    "402904": {
+      "dqd_id": "50234596",
+      "name_en": "Santiago BUENO",
+      "name_zh": "圣地亚哥-布埃诺"
+    },
+    "402920": {
+      "dqd_id": "50238753",
+      "name_en": "Lautaro MARTINEZ",
+      "name_zh": "劳塔罗-马丁内斯"
+    },
+    "402921": {
+      "dqd_id": "50389829",
+      "name_en": "Lisandro MARTINEZ",
+      "name_zh": "利桑德罗-马丁内斯"
+    },
+    "402925": {
+      "dqd_id": "50255036",
+      "name_en": "Nahuel MOLINA",
+      "name_zh": "莫利纳"
+    },
+    "402926": {
+      "dqd_id": "50251053",
+      "name_en": "Gonzalo MONTIEL",
+      "name_zh": "蒙铁尔"
+    },
+    "402934": {
+      "dqd_id": "50254786",
+      "name_en": "Marcos SENESI",
+      "name_zh": "塞内西"
+    },
+    "402974": {
+      "dqd_id": "50265201",
+      "name_en": "Angelo PRECIADO",
+      "name_zh": "安赫洛-普雷西亚多"
+    },
+    "402979": {
+      "dqd_id": "50279442",
+      "name_en": "Felix TORRES",
+      "name_zh": "费利克斯-托雷斯"
+    },
+    "402985": {
+      "dqd_id": "50230031",
+      "name_en": "Jordy CAICEDO",
+      "name_zh": "霍尔迪-凯塞多"
+    },
+    "403001": {
+      "dqd_id": "50226851",
+      "name_en": "DIOGO COSTA",
+      "name_zh": "迪奥戈-科斯塔"
+    },
+    "403002": {
+      "dqd_id": "50236159",
+      "name_en": "DIOGO DALOT",
+      "name_zh": "达洛特"
+    },
+    "403046": {
+      "dqd_id": "50202877",
+      "name_en": "Dean Henderson",
+      "name_zh": "迪恩-亨德森"
+    },
+    "403049": {
+      "dqd_id": "50254138",
+      "name_en": "Ezri KONSA",
+      "name_zh": "孔萨"
+    },
+    "403063": {
+      "dqd_id": "50248469",
+      "name_en": "Axel Tuanzebe",
+      "name_zh": "图安泽贝"
+    },
+    "403083": {
+      "dqd_id": "50204700",
+      "name_en": "Issa Diop",
+      "name_zh": "伊萨-迪奥普"
+    },
+    "403090": {
+      "dqd_id": "50251299",
+      "name_en": "Alban Lafont",
+      "name_zh": "拉冯"
+    },
+    "403094": {
+      "dqd_id": "50232982",
+      "name_en": "Jean-Philippe MATETA",
+      "name_zh": "马特塔"
+    },
+    "403109": {
+      "dqd_id": "50213043",
+      "name_en": "Marcus THURAM",
+      "name_zh": "马库斯-图拉姆"
+    },
+    "403236": {
+      "dqd_id": "50393614",
+      "name_en": "Mehdi GHAYEDI",
+      "name_zh": "加埃迪"
+    },
+    "403274": {
+      "dqd_id": "50384355",
+      "name_en": "Hiroki ITO",
+      "name_zh": "伊藤洋辉"
+    },
+    "403289": {
+      "dqd_id": "50244549",
+      "name_en": "Takehiro TOMIYASU",
+      "name_zh": "富安健洋"
+    },
+    "403293": {
+      "dqd_id": "50256918",
+      "name_en": "Koki OGAWA",
+      "name_zh": "小川航基"
+    },
+    "403304": {
+      "dqd_id": "50391460",
+      "name_en": "Takefusa KUBO",
+      "name_zh": "久保建英"
+    },
+    "403305": {
+      "dqd_id": "50384343",
+      "name_en": "Keisuke OSAKO",
+      "name_zh": "大迫敬介"
+    },
+    "403312": {
+      "dqd_id": "50394229",
+      "name_en": "Abdulelah ALAMRI",
+      "name_zh": "阿卜杜拉-阿姆里"
+    },
+    "403319": {
+      "dqd_id": "50384322",
+      "name_en": "NASSER ALDAWSARI",
+      "name_zh": "纳赛尔-达乌萨里"
+    },
+    "403335": {
+      "dqd_id": "50394231",
+      "name_en": "HASSAN ALTAMBAKTI",
+      "name_zh": "哈桑-坦巴蒂"
+    },
+    "403585": {
+      "dqd_id": "50202130",
+      "name_en": "Roberto ALVARADO",
+      "name_zh": "罗伯托-阿尔瓦拉多"
+    },
+    "403596": {
+      "dqd_id": "50259067",
+      "name_en": "Jorge SANCHEZ",
+      "name_zh": "豪尔赫-桑切斯"
+    },
+    "403616": {
+      "dqd_id": "50269283",
+      "name_en": "Teboho MOKOENA",
+      "name_zh": "泰博霍-莫科纳"
+    },
+    "403642": {
+      "dqd_id": "50386858",
+      "name_en": "Krepin DIATTA",
+      "name_zh": "迪亚塔"
+    },
+    "404319": {
+      "dqd_id": "50197105",
+      "name_en": "Ajdin HRUSTIC",
+      "name_zh": "赫鲁斯蒂奇"
+    },
+    "404353": {
+      "dqd_id": "50178525",
+      "name_en": "Leroy SANE",
+      "name_zh": "萨内"
+    },
+    "404645": {
+      "dqd_id": "50235013",
+      "name_en": "Sander BERGE",
+      "name_zh": "桑德-贝格"
+    },
+    "404885": {
+      "dqd_id": "50204185",
+      "name_en": "Tomas SOUCEK",
+      "name_zh": "绍切克"
+    },
+    "405175": {
+      "dqd_id": "50137736",
+      "name_en": "Seko Fofana",
+      "name_zh": "塞科-福法纳"
+    },
+    "405178": {
+      "dqd_id": "50210130",
+      "name_en": "Manuel AKANJI",
+      "name_zh": "阿坎吉"
+    },
+    "405263": {
+      "dqd_id": "50233985",
+      "name_en": "Kevin Danso",
+      "name_zh": "丹索"
+    },
+    "405454": {
+      "dqd_id": "50402922",
+      "name_en": "Elijah JUST",
+      "name_zh": "贾斯特"
+    },
+    "405469": {
+      "dqd_id": "50386548",
+      "name_en": "Liberato CACACE",
+      "name_zh": "卡卡切"
+    },
+    "405522": {
+      "dqd_id": "50404507",
+      "name_en": "Keito Nakamura",
+      "name_zh": "中村敬斗"
+    },
+    "405527": {
+      "dqd_id": "50384298",
+      "name_en": "Ayumu SEKO",
+      "name_zh": "濑古步梦"
+    },
+    "405528": {
+      "dqd_id": "50404493",
+      "name_en": "Yukinari Sugawara",
+      "name_zh": "菅原由势"
+    },
+    "405530": {
+      "dqd_id": "50413768",
+      "name_en": "Zion Suzuki",
+      "name_zh": "铃木彩艳"
+    },
+    "405545": {
+      "dqd_id": "50248640",
+      "name_en": "Ferran TORRES",
+      "name_zh": "费兰-托雷斯"
+    },
+    "405562": {
+      "dqd_id": "50402788",
+      "name_en": "Eric GARCIA",
+      "name_zh": "埃里克-加西亚"
+    },
+    "405639": {
+      "dqd_id": "50426640",
+      "name_en": "Amirhossein Hosseinzadeh",
+      "name_zh": "侯赛因扎德"
+    },
+    "405742": {
+      "dqd_id": "50387139",
+      "name_en": "VINICIUS JUNIOR",
+      "name_zh": "维尼修斯"
+    },
+    "405755": {
+      "dqd_id": "50389251",
+      "name_en": "Jaminton CAMPAZ",
+      "name_zh": "坎帕斯"
+    },
+    "405841": {
+      "dqd_id": "50402406",
+      "name_en": "Marc GUEHI",
+      "name_zh": "格伊"
+    },
+    "405873": {
+      "dqd_id": "50263312",
+      "name_en": "Yahia Fofana",
+      "name_zh": "叶海亚-福法纳"
+    },
+    "405877": {
+      "dqd_id": "50267849",
+      "name_en": "Amine GOUIRI",
+      "name_zh": "古伊里"
+    },
+    "405879": {
+      "dqd_id": "50403128",
+      "name_en": "Wilson Isidor",
+      "name_zh": "伊西多尔"
+    },
+    "405881": {
+      "dqd_id": "50403400",
+      "name_en": "Maxence Lacroix",
+      "name_zh": "拉克鲁瓦"
+    },
+    "405893": {
+      "dqd_id": "50273433",
+      "name_en": "Aurelien TCHOUAMENI",
+      "name_zh": "楚阿梅尼"
+    },
+    "405920": {
+      "dqd_id": "50403124",
+      "name_en": "John YEBOAH",
+      "name_zh": "约翰-耶博阿"
+    },
+    "406135": {
+      "dqd_id": "50403262",
+      "name_en": "Cesar HUERTA",
+      "name_zh": "塞萨尔-韦尔塔"
+    },
+    "406205": {
+      "dqd_id": "50403007",
+      "name_en": "Braian OJEDA",
+      "name_zh": "奥赫达"
+    },
+    "406231": {
+      "dqd_id": "50271859",
+      "name_en": "Yunus AKGUN",
+      "name_zh": "阿克金"
+    },
+    "406249": {
+      "dqd_id": "50271844",
+      "name_en": "Ozan KABAK",
+      "name_zh": "卡巴克"
+    },
+    "406280": {
+      "dqd_id": "50403217",
+      "name_en": "Sergino DEST",
+      "name_zh": "德斯特"
+    },
+    "406281": {
+      "dqd_id": "50403227",
+      "name_en": "CJ DOS SANTOS",
+      "name_zh": "卡洛斯-多斯桑托斯"
+    },
+    "406304": {
+      "dqd_id": "50402770",
+      "name_en": "Timothy WEAH",
+      "name_zh": "蒂莫西-维阿"
+    },
+    "406595": {
+      "dqd_id": "50194545",
+      "name_en": "Roozbeh CHESHMI",
+      "name_zh": "切什米"
+    },
+    "406606": {
+      "dqd_id": "50180510",
+      "name_en": "Awer MABIL",
+      "name_zh": "马比尔"
+    },
+    "407022": {
+      "dqd_id": "50219196",
+      "name_en": "KARIM HAFEZ",
+      "name_zh": "哈菲兹"
+    },
+    "407114": {
+      "dqd_id": "50243821",
+      "name_en": "MARCIO ROSA",
+      "name_zh": "马尔西奥-罗萨"
+    },
+    "407343": {
+      "dqd_id": "50256795",
+      "name_en": "Ghislain KONAN",
+      "name_zh": "科南"
+    },
+    "407680": {
+      "dqd_id": "50103480",
+      "name_en": "Juergen LOCADIA",
+      "name_zh": "洛卡迪亚"
+    },
+    "407993": {
+      "dqd_id": "50202275",
+      "name_en": "MOHAMED KANNO",
+      "name_zh": "穆罕默德-卡努"
+    },
+    "408042": {
+      "dqd_id": "50225818",
+      "name_en": "Theo HERNANDEZ",
+      "name_zh": "特奥-埃尔南德斯"
+    },
+    "408948": {
+      "dqd_id": "50061260",
+      "name_en": "MOHAMED ELSHENAWY",
+      "name_zh": "穆罕默德-希纳维"
+    },
+    "408950": {
+      "dqd_id": "50233953",
+      "name_en": "MOHAMED HANY",
+      "name_zh": "穆罕默德-哈尼"
+    },
+    "409191": {
+      "dqd_id": "50203542",
+      "name_en": "Nikola VLASIC",
+      "name_zh": "弗拉希奇"
+    },
+    "409241": {
+      "dqd_id": "50227697",
+      "name_en": "DINEY BORGES",
+      "name_zh": "迪尼伊"
+    },
+    "411174": {
+      "dqd_id": "50427937",
+      "name_en": "Jose FAJARDO",
+      "name_zh": "法哈多"
+    },
+    "411176": {
+      "dqd_id": "50240936",
+      "name_en": "Jose Luis RODRIGUEZ",
+      "name_zh": "何塞-罗德里格斯"
+    },
+    "411226": {
+      "dqd_id": "50202486",
+      "name_en": "Djibril SOW",
+      "name_zh": "索乌"
+    },
+    "411301": {
+      "dqd_id": "50138981",
+      "name_en": "Angus Gunn",
+      "name_zh": "冈恩"
+    },
+    "411367": {
+      "dqd_id": "50259320",
+      "name_en": "Kai HAVERTZ",
+      "name_zh": "哈弗茨"
+    },
+    "411375": {
+      "dqd_id": "50233443",
+      "name_en": "RODRI",
+      "name_zh": "罗德里"
+    },
+    "411376": {
+      "dqd_id": "50177832",
+      "name_en": "Inaki WILLIAMS",
+      "name_zh": "伊尼亚基-威廉斯"
+    },
+    "411443": {
+      "dqd_id": "50190475",
+      "name_en": "Timothy CASTAGNE",
+      "name_zh": "卡斯塔涅"
+    },
+    "411470": {
+      "dqd_id": "50201301",
+      "name_en": "Lucas HERNANDEZ",
+      "name_zh": "卢卡斯-埃尔南德斯"
+    },
+    "411624": {
+      "dqd_id": "50352834",
+      "name_en": "ABDULLAH ALKHAIBARI",
+      "name_zh": "阿卜杜拉-海巴里"
+    },
+    "411644": {
+      "dqd_id": "50119611",
+      "name_en": "Saman GHODDOS",
+      "name_zh": "古多斯"
+    },
+    "411653": {
+      "dqd_id": "50209491",
+      "name_en": "Dylan BRONN",
+      "name_zh": "布龙"
+    },
+    "411658": {
+      "dqd_id": "50179673",
+      "name_en": "Ellyes SKHIRI",
+      "name_zh": "斯希里"
+    },
+    "411678": {
+      "dqd_id": "50434761",
+      "name_en": "Ayoub El Kaabi",
+      "name_zh": "卡埃比"
+    },
+    "411680": {
+      "dqd_id": "50227760",
+      "name_en": "Noussair MAZRAOUI",
+      "name_zh": "马兹拉维"
+    },
+    "411726": {
+      "dqd_id": "50258221",
+      "name_en": "LUCAS PAQUETA",
+      "name_zh": "帕奎塔"
+    },
+    "412144": {
+      "dqd_id": "50259597",
+      "name_en": "Alphonso DAVIES",
+      "name_zh": "阿方索-戴维斯"
+    },
+    "416051": {
+      "dqd_id": "50133943",
+      "name_en": "PEDRO MIGUEL",
+      "name_zh": "佩德罗-米格尔"
+    },
+    "416056": {
+      "dqd_id": "50424130",
+      "name_en": "MESHAAL BARSHAM",
+      "name_zh": "玛莎勒-巴沙姆"
+    },
+    "416081": {
+      "dqd_id": "50456786",
+      "name_en": "Julian ALVAREZ",
+      "name_zh": "胡利安-阿尔瓦雷斯"
+    },
+    "416576": {
+      "dqd_id": "50225873",
+      "name_en": "Alvaro FIDALGO",
+      "name_zh": "阿尔瓦罗-菲达尔戈"
+    },
+    "416652": {
+      "dqd_id": "50535710",
+      "name_en": "Jesse RANDALL",
+      "name_zh": "兰达尔"
+    },
+    "416902": {
+      "dqd_id": "50549858",
+      "name_en": "MOHAMED ABDELMONEIM",
+      "name_zh": "穆罕默德-阿卜杜勒穆奈姆"
+    },
+    "416906": {
+      "dqd_id": "50499808",
+      "name_en": "MOSTAFA SHOUBIR",
+      "name_zh": "舒贝尔"
+    },
+    "416989": {
+      "dqd_id": "50171880",
+      "name_en": "Ali Alipour",
+      "name_zh": "阿里普尔"
+    },
+    "418485": {
+      "dqd_id": "50485657",
+      "name_en": "KIM Taehyeon",
+      "name_zh": "金太炫"
+    },
+    "418490": {
+      "dqd_id": "50433561",
+      "name_en": "LEE Kangin",
+      "name_zh": "李刚仁"
+    },
+    "418535": {
+      "dqd_id": "50271049",
+      "name_en": "JOAO FELIX",
+      "name_zh": "菲利克斯"
+    },
+    "418548": {
+      "dqd_id": "50393509",
+      "name_en": "PEDRO NETO",
+      "name_zh": "佩德罗-内托"
+    },
+    "418550": {
+      "dqd_id": "50415970",
+      "name_en": "RAFAEL LEAO",
+      "name_zh": "莱奥"
+    },
+    "418561": {
+      "dqd_id": "50258893",
+      "name_en": "FRANCISCO TRINCAO",
+      "name_zh": "特林康"
+    },
+    "418715": {
+      "dqd_id": "50480552",
+      "name_en": "Jose CORDOBA",
+      "name_zh": "何塞-科尔多瓦"
+    },
+    "418729": {
+      "dqd_id": "50473083",
+      "name_en": "Carlos HARVEY",
+      "name_zh": "卡洛斯-哈维"
+    },
+    "418747": {
+      "dqd_id": "50451715",
+      "name_en": "Tomas RODRIGUEZ",
+      "name_zh": "托马斯-罗德里格斯"
+    },
+    "418781": {
+      "dqd_id": "50602127",
+      "name_en": "Bamba DIENG",
+      "name_zh": "班巴-迪昂"
+    },
+    "418795": {
+      "dqd_id": "50574562",
+      "name_en": "Nicolas JACKSON",
+      "name_zh": "尼古拉-雅克松"
+    },
+    "418798": {
+      "dqd_id": "50521388",
+      "name_en": "Pape Matar SARR",
+      "name_zh": "帕普-萨尔"
+    },
+    "418881": {
+      "dqd_id": "50237456",
+      "name_en": "Cucho HERNANDEZ",
+      "name_zh": "库乔-埃尔南德斯"
+    },
+    "418963": {
+      "dqd_id": "50274924",
+      "name_en": "Facundo MEDINA",
+      "name_zh": "法昆多-梅迪纳"
+    },
+    "418975": {
+      "dqd_id": "50452653",
+      "name_en": "Thiago ALMADA",
+      "name_zh": "蒂亚戈-阿尔马达"
+    },
+    "419002": {
+      "dqd_id": "50265199",
+      "name_en": "Moises RAMIREZ",
+      "name_zh": "莫伊塞斯-拉米雷斯"
+    },
+    "419003": {
+      "dqd_id": "50402961",
+      "name_en": "Jackson POROZO",
+      "name_zh": "波罗索"
+    },
+    "419005": {
+      "dqd_id": "50441896",
+      "name_en": "Jordy ALCIVAR",
+      "name_zh": "阿尔西瓦尔"
+    },
+    "419020": {
+      "dqd_id": "50450730",
+      "name_en": "Gonzalo PLATA",
+      "name_zh": "贡萨洛-普拉塔"
+    },
+    "419055": {
+      "dqd_id": "50458960",
+      "name_en": "Brenden AARONSON",
+      "name_zh": "阿伦森"
+    },
+    "419062": {
+      "dqd_id": "50449955",
+      "name_en": "Chris RICHARDS",
+      "name_zh": "克里斯-理查兹"
+    },
+    "419068": {
+      "dqd_id": "50433313",
+      "name_en": "Giovanni REYNA",
+      "name_zh": "雷纳"
+    },
+    "419077": {
+      "dqd_id": "50259440",
+      "name_en": "Mark McKENZIE",
+      "name_zh": "麦肯齐"
+    },
+    "419082": {
+      "dqd_id": "50474300",
+      "name_en": "Ricardo PEPI",
+      "name_zh": "佩皮"
+    },
+    "419100": {
+      "dqd_id": "50442057",
+      "name_en": "Maxi ARAUJO",
+      "name_zh": "马克西-阿劳霍"
+    },
+    "419101": {
+      "dqd_id": "50270729",
+      "name_en": "Ronald ARAUJO",
+      "name_zh": "阿劳霍"
+    },
+    "419108": {
+      "dqd_id": "50412124",
+      "name_en": "Sebastian CACERES",
+      "name_zh": "塞瓦斯蒂安-卡塞雷斯"
+    },
+    "419126": {
+      "dqd_id": "50427632",
+      "name_en": "Darwin NUNEZ",
+      "name_zh": "努涅斯"
+    },
+    "419132": {
+      "dqd_id": "50439865",
+      "name_en": "Brian RODRIGUEZ",
+      "name_zh": "布里安-罗德里格斯"
+    },
+    "419134": {
+      "dqd_id": "50410069",
+      "name_en": "Juan Manuel SANABRIA",
+      "name_zh": "胡安-萨纳夫里亚"
+    },
+    "419142": {
+      "dqd_id": "50461289",
+      "name_en": "Rodrigo ZALAZAR",
+      "name_zh": "萨拉萨尔"
+    },
+    "419166": {
+      "dqd_id": "50246772",
+      "name_en": "Ibrahima KONATE",
+      "name_zh": "科纳特"
+    },
+    "419172": {
+      "dqd_id": "50267835",
+      "name_en": "Evan NDICKA",
+      "name_zh": "恩迪卡"
+    },
+    "419177": {
+      "dqd_id": "50458226",
+      "name_en": "William SALIBA",
+      "name_zh": "萨利巴"
+    },
+    "419189": {
+      "dqd_id": "50251303",
+      "name_en": "Yan Valery",
+      "name_zh": "瓦莱里"
+    },
+    "419211": {
+      "dqd_id": "50422208",
+      "name_en": "Lyle FOSTER",
+      "name_zh": "福斯特"
+    },
+    "419223": {
+      "dqd_id": "50502357",
+      "name_en": "Oswin APPOLLIS",
+      "name_zh": "阿波利斯"
+    },
+    "419225": {
+      "dqd_id": "50468840",
+      "name_en": "Bradley Cross",
+      "name_zh": "布拉德利-克罗斯"
+    },
+    "419281": {
+      "dqd_id": "50481369",
+      "name_en": "SAUD ABDULHAMID",
+      "name_zh": "沙特-阿卜杜勒哈米德"
+    },
+    "419287": {
+      "dqd_id": "50545718",
+      "name_en": "NAWAF ALAQIDI",
+      "name_zh": "纳瓦夫-阿奇迪"
+    },
+    "419291": {
+      "dqd_id": "50391475",
+      "name_en": "FERAS ALBRIKAN",
+      "name_zh": "菲拉斯-布赖坎"
+    },
+    "419300": {
+      "dqd_id": "50489821",
+      "name_en": "KHALID ALGHANNAM",
+      "name_zh": "哈立德-加纳姆"
+    },
+    "419302": {
+      "dqd_id": "50433514",
+      "name_en": "ABDULLAH ALHAMDDAN",
+      "name_zh": "阿卜杜拉-哈姆丹"
+    },
+    "419303": {
+      "dqd_id": "50555590",
+      "name_en": "MOTEB ALHARBI",
+      "name_zh": "莫泰卜-哈尔比"
+    },
+    "419326": {
+      "dqd_id": "50433820",
+      "name_en": "ALI MAJRASHI",
+      "name_zh": "阿里-迈拉希"
+    },
+    "419436": {
+      "dqd_id": "50481950",
+      "name_en": "AHMED ALGANEHI",
+      "name_zh": "艾哈迈德-加内希"
+    },
+    "419441": {
+      "dqd_id": "50445637",
+      "name_en": "HOMAM AHMED",
+      "name_zh": "霍马姆-艾哈迈德"
+    },
+    "419459": {
+      "dqd_id": "50483154",
+      "name_en": "MAHMOUD ABUNADA",
+      "name_zh": "穆罕默德-阿布纳达"
+    },
+    "419461": {
+      "dqd_id": "50502337",
+      "name_en": "SALAH ZAKARIA",
+      "name_zh": "萨拉赫-扎卡里亚"
+    },
+    "419463": {
+      "dqd_id": "50448162",
+      "name_en": "YUSUF ABDURISAG",
+      "name_zh": "优素福-阿卜杜里萨格"
+    },
+    "419473": {
+      "dqd_id": "50545132",
+      "name_en": "JASSEM GABER",
+      "name_zh": "贾西姆-贾比尔"
+    },
+    "419518": {
+      "dqd_id": "50455809",
+      "name_en": "Erik LIRA",
+      "name_zh": "利拉"
+    },
+    "419567": {
+      "dqd_id": "50386559",
+      "name_en": "Callan ELLIOT",
+      "name_zh": "卡伦-埃利奥特"
+    },
+    "419572": {
+      "dqd_id": "50472940",
+      "name_en": "Nando PIJNAKER",
+      "name_zh": "派纳克尔"
+    },
+    "419577": {
+      "dqd_id": "50428206",
+      "name_en": "Ben WAINE",
+      "name_zh": "魏纳"
+    },
+    "419652": {
+      "dqd_id": "50259656",
+      "name_en": "Erling HAALAND",
+      "name_zh": "哈兰德"
+    },
+    "419654": {
+      "dqd_id": "50260251",
+      "name_en": "Jens Petter HAUGE",
+      "name_zh": "海于格"
+    },
+    "419662": {
+      "dqd_id": "50271874",
+      "name_en": "Jorgen STRAND LARSEN",
+      "name_zh": "尤尔根-拉森"
+    },
+    "419672": {
+      "dqd_id": "50393007",
+      "name_en": "Leo OSTIGARD",
+      "name_zh": "厄斯蒂高"
+    },
+    "419681": {
+      "dqd_id": "50438197",
+      "name_en": "Kristian Thorstvedt",
+      "name_zh": "索尔茨维特"
+    },
+    "422657": {
+      "dqd_id": "50238834",
+      "name_en": "Frenkie DE JONG",
+      "name_zh": "弗朗基-德容"
+    },
+    "422968": {
+      "dqd_id": "50433673",
+      "name_en": "MOHANAD ALI",
+      "name_zh": "穆哈纳德-阿里"
+    },
+    "423522": {
+      "dqd_id": "50684213",
+      "name_en": "Jordan BOS",
+      "name_zh": "乔丹-博斯"
+    },
+    "423574": {
+      "dqd_id": "50474840",
+      "name_en": "Alex PAULSEN",
+      "name_zh": "保尔森"
+    },
+    "423575": {
+      "dqd_id": "50535707",
+      "name_en": "Ben OLD",
+      "name_zh": "奥尔德"
+    },
+    "423595": {
+      "dqd_id": "50535708",
+      "name_en": "Marko STAMENIC",
+      "name_zh": "斯塔梅尼奇"
+    },
+    "423646": {
+      "dqd_id": "50520694",
+      "name_en": "PEDRI",
+      "name_zh": "佩德里"
+    },
+    "423658": {
+      "dqd_id": "50473928",
+      "name_en": "Yeremy PINO",
+      "name_zh": "耶雷米-皮诺"
+    },
+    "423700": {
+      "dqd_id": "50433301",
+      "name_en": "Joe SCALLY",
+      "name_zh": "约瑟夫-斯卡利"
+    },
+    "423855": {
+      "dqd_id": "50537580",
+      "name_en": "EOM Jisung",
+      "name_zh": "严智星"
+    },
+    "423874": {
+      "dqd_id": "50535780",
+      "name_en": "LEE Hanbeom",
+      "name_zh": "李韩汎"
+    },
+    "423880": {
+      "dqd_id": "50535781",
+      "name_en": "LEE Taeseok",
+      "name_zh": "李太锡"
+    },
+    "423933": {
+      "dqd_id": "50467921",
+      "name_en": "Jayden Nelson",
+      "name_zh": "纳尔逊"
+    },
+    "423941": {
+      "dqd_id": "50594098",
+      "name_en": "Nathan SALIBA",
+      "name_zh": "内森-萨利巴"
+    },
+    "424031": {
+      "dqd_id": "50493994",
+      "name_en": "Piero HINCAPIE",
+      "name_zh": "因卡皮耶"
+    },
+    "424036": {
+      "dqd_id": "50494008",
+      "name_en": "Pedro VITE",
+      "name_zh": "比特"
+    },
+    "424047": {
+      "dqd_id": "50468755",
+      "name_en": "Jeremy Antonisse",
+      "name_zh": "安东尼塞"
+    },
+    "424051": {
+      "dqd_id": "50469235",
+      "name_en": "Brian BROBBEY",
+      "name_zh": "布罗比"
+    },
+    "424056": {
+      "dqd_id": "50469236",
+      "name_en": "Sontje HANSEN",
+      "name_zh": "汉森"
+    },
+    "424071": {
+      "dqd_id": "50469500",
+      "name_en": "Anass SALAH EDDINE",
+      "name_zh": "萨拉赫-埃丁"
+    },
+    "424081": {
+      "dqd_id": "50518644",
+      "name_en": "Bart Verbruggen",
+      "name_zh": "巴尔特-费布鲁亨"
+    },
+    "424106": {
+      "dqd_id": "50450413",
+      "name_en": "Haissem HASSAN",
+      "name_zh": "哈桑"
+    },
+    "424119": {
+      "dqd_id": "50461814",
+      "name_en": "Nathanael MBUKU",
+      "name_zh": "姆布库"
+    },
+    "424422": {
+      "dqd_id": "50490182",
+      "name_en": "Matias GALARZA",
+      "name_zh": "加拉尔萨"
+    },
+    "424556": {
+      "dqd_id": "50500167",
+      "name_en": "Carl SAINTE",
+      "name_zh": "卡尔-圣泰"
+    },
+    "425580": {
+      "dqd_id": "50222786",
+      "name_en": "Jorge CARRASCAL",
+      "name_zh": "卡拉斯卡尔"
+    },
+    "425607": {
+      "dqd_id": "50518889",
+      "name_en": "Mohamed Amine BEN HMIDA",
+      "name_zh": "本赫米达"
+    },
+    "425701": {
+      "dqd_id": "50413546",
+      "name_en": "Johan VASQUEZ",
+      "name_zh": "巴斯克斯"
+    },
+    "425804": {
+      "dqd_id": "50149881",
+      "name_en": "SALEH ALSHEHRI",
+      "name_zh": "萨利赫-谢赫里"
+    },
+    "426357": {
+      "dqd_id": "50275744",
+      "name_en": "Aaron WAN-BISSAKA",
+      "name_zh": "万-比萨卡"
+    },
+    "426506": {
+      "dqd_id": "50254817",
+      "name_en": "Meschack ELIA",
+      "name_zh": "梅沙克-埃利亚"
+    },
+    "428882": {
+      "dqd_id": "50159964",
+      "name_en": "Rodrigo DE PAUL",
+      "name_zh": "德保罗"
+    },
+    "428885": {
+      "dqd_id": "50506189",
+      "name_en": "Moises CAICEDO",
+      "name_zh": "凯塞多"
+    },
+    "428886": {
+      "dqd_id": "50397003",
+      "name_en": "Luis DIAZ",
+      "name_zh": "路易斯-迪亚斯"
+    },
+    "428905": {
+      "dqd_id": "50250453",
+      "name_en": "Luis SUAREZ",
+      "name_zh": "路易斯-苏亚雷斯"
+    },
+    "429063": {
+      "dqd_id": "50165869",
+      "name_en": "EDMILSON JUNIOR",
+      "name_zh": "埃德米尔森-儒尼奥尔"
+    },
+    "429095": {
+      "dqd_id": "50280735",
+      "name_en": "HAMDY FATHY",
+      "name_zh": "哈姆迪-法特希"
+    },
+    "429157": {
+      "dqd_id": "50254354",
+      "name_en": "Julian QUINONES",
+      "name_zh": "基尼奥内斯"
+    },
+    "429392": {
+      "dqd_id": "50570097",
+      "name_en": "DANILO SANTOS",
+      "name_zh": "达尼洛-桑托斯"
+    },
+    "429600": {
+      "dqd_id": "50440063",
+      "name_en": "LEE Donggyeong",
+      "name_zh": "李东炅"
+    },
+    "429608": {
+      "dqd_id": "50551357",
+      "name_en": "SEOL Youngwoo",
+      "name_zh": "薛英佑"
+    },
+    "429639": {
+      "dqd_id": "50218067",
+      "name_en": "Alexander NUEBEL",
+      "name_zh": "努贝尔"
+    },
+    "429640": {
+      "dqd_id": "50467874",
+      "name_en": "Angelo Stiller",
+      "name_zh": "施蒂勒"
+    },
+    "429642": {
+      "dqd_id": "50471895",
+      "name_en": "Jamal MUSIALA",
+      "name_zh": "穆西亚拉"
+    },
+    "430070": {
+      "dqd_id": "50026380",
+      "name_en": "Ante BUDIMIR",
+      "name_zh": "布季米尔"
+    },
+    "430097": {
+      "dqd_id": "50186648",
+      "name_en": "Ryan Christie",
+      "name_zh": "克里斯蒂"
+    },
+    "430098": {
+      "dqd_id": "50264594",
+      "name_en": "Lyndon DYKES",
+      "name_zh": "戴克斯"
+    },
+    "430100": {
+      "dqd_id": "50218351",
+      "name_en": "Sasa KALAJDZIC",
+      "name_zh": "卡莱季奇"
+    },
+    "430120": {
+      "dqd_id": "50432421",
+      "name_en": "Mert MULDUR",
+      "name_zh": "米尔迪尔"
+    },
+    "430138": {
+      "dqd_id": "50489766",
+      "name_en": "Tajon BUCHANAN",
+      "name_zh": "布坎南"
+    },
+    "430144": {
+      "dqd_id": "50432342",
+      "name_en": "Pedro PORRO",
+      "name_zh": "波罗"
+    },
+    "430147": {
+      "dqd_id": "50239084",
+      "name_en": "Jack Hendry",
+      "name_zh": "杰克-亨德利"
+    },
+    "430150": {
+      "dqd_id": "50249473",
+      "name_en": "Alexander Isak",
+      "name_zh": "伊萨克"
+    },
+    "430176": {
+      "dqd_id": "50451030",
+      "name_en": "Ryan GRAVENBERCH",
+      "name_zh": "赫拉芬贝赫"
+    },
+    "430194": {
+      "dqd_id": "50225724",
+      "name_en": "Dennis HADZIKADUNIC",
+      "name_zh": "哈兹卡杜尼奇"
+    },
+    "430196": {
+      "dqd_id": "50203509",
+      "name_en": "Amir HADZIAHMETOVIC",
+      "name_zh": "哈吉艾哈迈托维奇"
+    },
+    "430385": {
+      "dqd_id": "50237289",
+      "name_en": "KIM Jingyu",
+      "name_zh": "金镇圭"
+    },
+    "430387": {
+      "dqd_id": "50490928",
+      "name_en": "CHO Guesung",
+      "name_zh": "曹圭成"
+    },
+    "430401": {
+      "dqd_id": "50461277",
+      "name_en": "Tsuyoshi Watanabe",
+      "name_zh": "渡边刚"
+    },
+    "430407": {
+      "dqd_id": "50257432",
+      "name_en": "Daizen MAEDA",
+      "name_zh": "前田大然"
+    },
+    "430413": {
+      "dqd_id": "50448022",
+      "name_en": "Ayase UEDA",
+      "name_zh": "上田绮世"
+    },
+    "430437": {
+      "dqd_id": "50430014",
+      "name_en": "Cameron DEVLIN",
+      "name_zh": "德夫林"
+    },
+    "430440": {
+      "dqd_id": "50267109",
+      "name_en": "Aiden ONEILL",
+      "name_zh": "艾登-奥尼尔"
+    },
+    "430442": {
+      "dqd_id": "50236411",
+      "name_en": "Harry SOUTTAR",
+      "name_zh": "苏塔"
+    },
+    "430450": {
+      "dqd_id": "50427637",
+      "name_en": "Jacob ITALIANO",
+      "name_zh": "意大利诺"
+    },
+    "430452": {
+      "dqd_id": "50412161",
+      "name_en": "Connor METCALFE",
+      "name_zh": "梅特卡夫"
+    },
+    "430465": {
+      "dqd_id": "50503748",
+      "name_en": "IBRAHIM ADEL",
+      "name_zh": "易卜拉欣-阿代勒"
+    },
+    "430476": {
+      "dqd_id": "50388512",
+      "name_en": "OMAR MARMOUSH",
+      "name_zh": "马尔穆什"
+    },
+    "430477": {
+      "dqd_id": "50388573",
+      "name_en": "AHMED FATOUH",
+      "name_zh": "艾哈迈德-法托"
+    },
+    "430482": {
+      "dqd_id": "50456244",
+      "name_en": "EMAM ASHOUR",
+      "name_zh": "阿舒尔"
+    },
+    "430512": {
+      "dqd_id": "50528617",
+      "name_en": "AIMAN YAHYA",
+      "name_zh": "艾曼-叶海亚"
+    },
+    "430518": {
+      "dqd_id": "50521043",
+      "name_en": "NAWAF BU WASHL",
+      "name_zh": "纳瓦夫-布歇尔"
+    },
+    "430594": {
+      "dqd_id": "50402938",
+      "name_en": "ROGER IBANEZ",
+      "name_zh": "罗热-伊巴涅斯"
+    },
+    "430597": {
+      "dqd_id": "50435388",
+      "name_en": "GABRIEL MARTINELLI",
+      "name_zh": "马丁内利"
+    },
+    "430601": {
+      "dqd_id": "50255546",
+      "name_en": "GABRIEL MAGALHAES",
+      "name_zh": "加布里埃尔"
+    },
+    "430605": {
+      "dqd_id": "50237549",
+      "name_en": "BRUNO GUIMARAES",
+      "name_zh": "吉马良斯"
+    },
+    "430609": {
+      "dqd_id": "50405929",
+      "name_en": "MATHEUS CUNHA",
+      "name_zh": "库尼亚"
+    },
+    "430624": {
+      "dqd_id": "50168707",
+      "name_en": "Juan MUSSO",
+      "name_zh": "穆索"
+    },
+    "430628": {
+      "dqd_id": "50274082",
+      "name_en": "Alexis MAC ALLISTER",
+      "name_zh": "麦卡利斯特"
+    },
+    "430631": {
+      "dqd_id": "50265740",
+      "name_en": "Nico GONZALEZ",
+      "name_zh": "尼古拉斯-冈萨雷斯"
+    },
+    "430657": {
+      "dqd_id": "50236639",
+      "name_en": "David RAUM",
+      "name_zh": "劳姆"
+    },
+    "430658": {
+      "dqd_id": "50197163",
+      "name_en": "Waldemar ANTON",
+      "name_zh": "安东"
+    },
+    "430667": {
+      "dqd_id": "50461716",
+      "name_en": "Nico SCHLOTTERBECK",
+      "name_zh": "施洛特贝克"
+    },
+    "430669": {
+      "dqd_id": "50553277",
+      "name_en": "Florian WIRTZ",
+      "name_zh": "维尔茨"
+    },
+    "430671": {
+      "dqd_id": "50417240",
+      "name_en": "Ismail JAKOBS",
+      "name_zh": "雅各布斯"
+    },
+    "430690": {
+      "dqd_id": "50206561",
+      "name_en": "Moussa Niakhate",
+      "name_zh": "尼亚凯特"
+    },
+    "430697": {
+      "dqd_id": "50248725",
+      "name_en": "Jean-Ricner Bellegarde",
+      "name_zh": "贝勒加德"
+    },
+    "430698": {
+      "dqd_id": "50248218",
+      "name_en": "Houssem Aouar",
+      "name_zh": "奥亚尔"
+    },
+    "430707": {
+      "dqd_id": "50253856",
+      "name_en": "Jules KOUNDE",
+      "name_zh": "孔德"
+    },
+    "430718": {
+      "dqd_id": "50226522",
+      "name_en": "Fabian RUIZ",
+      "name_zh": "法比安-鲁伊斯"
+    },
+    "430733": {
+      "dqd_id": "50222924",
+      "name_en": "Mikel MERINO",
+      "name_zh": "梅里诺"
+    },
+    "430735": {
+      "dqd_id": "50225864",
+      "name_en": "Marc CUCURELLA",
+      "name_zh": "库库雷利亚"
+    },
+    "430740": {
+      "dqd_id": "50251479",
+      "name_en": "Brahim DIAZ",
+      "name_zh": "卜拉欣-迪亚斯"
+    },
+    "430750": {
+      "dqd_id": "50233092",
+      "name_en": "Dani OLMO",
+      "name_zh": "奥尔莫"
+    },
+    "430751": {
+      "dqd_id": "50230214",
+      "name_en": "Mikel OYARZABAL",
+      "name_zh": "奥亚萨瓦尔"
+    },
+    "430753": {
+      "dqd_id": "50225832",
+      "name_en": "Unai SIMON",
+      "name_zh": "乌奈-西蒙"
+    },
+    "430754": {
+      "dqd_id": "50403356",
+      "name_en": "Martin ZUBIMENDI",
+      "name_zh": "苏比门迪"
+    },
+    "430759": {
+      "dqd_id": "50409180",
+      "name_en": "Santiago GIMENEZ",
+      "name_zh": "圣地亚哥-希门尼斯"
+    },
+    "430763": {
+      "dqd_id": "50269033",
+      "name_en": "Luis ROMO",
+      "name_zh": "路易斯-罗莫"
+    },
+    "430766": {
+      "dqd_id": "50249413",
+      "name_en": "Alexis VEGA",
+      "name_zh": "亚历克西斯-维加"
+    },
+    "430822": {
+      "dqd_id": "50528050",
+      "name_en": "Amad DIALLO",
+      "name_zh": "阿马德-迪亚洛"
+    },
+    "430831": {
+      "dqd_id": "50239118",
+      "name_en": "Ibrahim SANGARE",
+      "name_zh": "桑加雷"
+    },
+    "430834": {
+      "dqd_id": "50558497",
+      "name_en": "Parfait GUIAGON",
+      "name_zh": "吉亚贡"
+    },
+    "430854": {
+      "dqd_id": "50491157",
+      "name_en": "Wilfried SINGO",
+      "name_zh": "辛戈"
+    },
+    "430917": {
+      "dqd_id": "50554368",
+      "name_en": "Evidence MAKGOPA",
+      "name_zh": "马克戈帕"
+    },
+    "431196": {
+      "dqd_id": "50255850",
+      "name_en": "Cristian ROMERO",
+      "name_zh": "克里斯蒂安-罗梅罗"
+    },
+    "431200": {
+      "dqd_id": "50389342",
+      "name_en": "Daniel MUNOZ",
+      "name_zh": "穆尼奥斯"
+    },
+    "431202": {
+      "dqd_id": "50185878",
+      "name_en": "Omar ALDERETE",
+      "name_zh": "阿尔德雷特"
+    },
+    "431208": {
+      "dqd_id": "50504487",
+      "name_en": "MOHAMMAD ABUZRAIQ",
+      "name_zh": "沙拉拉"
+    },
+    "431209": {
+      "dqd_id": "50529618",
+      "name_en": "IBRAHIM SADEH",
+      "name_zh": "易卜拉欣-萨米"
+    },
+    "431211": {
+      "dqd_id": "50267761",
+      "name_en": "MOUSA ALTAMARI",
+      "name_zh": "穆萨-塔马里"
+    },
+    "431212": {
+      "dqd_id": "50490156",
+      "name_en": "ALI OLWAN",
+      "name_zh": "阿里-乌勒万"
+    },
+    "431219": {
+      "dqd_id": "50545164",
+      "name_en": "SAED ALROSAN",
+      "name_zh": "赛义德-罗桑"
+    },
+    "431223": {
+      "dqd_id": "50487277",
+      "name_en": "ABDALLAH ALFAKHORI",
+      "name_zh": "阿卜杜拉-法霍里"
+    },
+    "431225": {
+      "dqd_id": "50421480",
+      "name_en": "YAZAN ALARAB",
+      "name_zh": "亚赞-阿拉伯"
+    },
+    "431230": {
+      "dqd_id": "50421482",
+      "name_en": "NOOR ALRAWABDEH",
+      "name_zh": "努尔-拉瓦比德"
+    },
+    "431693": {
+      "dqd_id": "50261687",
+      "name_en": "Frantzdy Pierrot",
+      "name_zh": "皮埃罗"
+    },
+    "431696": {
+      "dqd_id": "50257828",
+      "name_en": "Richie LARYEA",
+      "name_zh": "拉尔贾"
+    },
+    "431698": {
+      "dqd_id": "50202066",
+      "name_en": "Jurien GAARI",
+      "name_zh": "加里"
+    },
+    "431781": {
+      "dqd_id": "50225205",
+      "name_en": "Jean-Kevin DUVERNE",
+      "name_zh": "杜维尔"
+    },
+    "431788": {
+      "dqd_id": "50270098",
+      "name_en": "Pape GUEYE",
+      "name_zh": "帕普-盖伊"
+    },
+    "431858": {
+      "dqd_id": "50443847",
+      "name_en": "Rayan AIT-NOURI",
+      "name_zh": "艾特-努里"
+    },
+    "431861": {
+      "dqd_id": "50469707",
+      "name_en": "Rayan CHERKI",
+      "name_zh": "谢尔基"
+    },
+    "431889": {
+      "dqd_id": "50272332",
+      "name_en": "BREMER",
+      "name_zh": "布雷默"
+    },
+    "433066": {
+      "dqd_id": "50405114",
+      "name_en": "Donyell Malen",
+      "name_zh": "马伦"
+    },
+    "433067": {
+      "dqd_id": "50173868",
+      "name_en": "Morten Thorsby",
+      "name_zh": "托斯比"
+    },
+    "433072": {
+      "dqd_id": "50205939",
+      "name_en": "Zeki CELIK",
+      "name_zh": "切利克"
+    },
+    "433074": {
+      "dqd_id": "50193297",
+      "name_en": "AMIR ALAMMARI",
+      "name_zh": "阿米尔-阿马里"
+    },
+    "433076": {
+      "dqd_id": "50211313",
+      "name_en": "Samuel Moutoussamy",
+      "name_zh": "穆图萨米"
+    },
+    "433092": {
+      "dqd_id": "50439244",
+      "name_en": "Alexis SAELEMAEKERS",
+      "name_zh": "萨勒马克尔斯"
+    },
+    "433097": {
+      "dqd_id": "50241165",
+      "name_en": "Declan RICE",
+      "name_zh": "赖斯"
+    },
+    "433118": {
+      "dqd_id": "50444978",
+      "name_en": "Orkun KOKCU",
+      "name_zh": "柯克曲"
+    },
+    "433147": {
+      "dqd_id": "50270854",
+      "name_en": "Michel AEBISCHER",
+      "name_zh": "埃贝彻尔"
+    },
+    "433161": {
+      "dqd_id": "50433578",
+      "name_en": "Edo Kayembe",
+      "name_zh": "埃多-卡延贝"
+    },
+    "433191": {
+      "dqd_id": "50230204",
+      "name_en": "Che Adams",
+      "name_zh": "切-亚当斯"
+    },
+    "433195": {
+      "dqd_id": "50508828",
+      "name_en": "NUNO MENDES",
+      "name_zh": "努诺-门德斯"
+    },
+    "433361": {
+      "dqd_id": "50540456",
+      "name_en": "Anis SLIMANE",
+      "name_zh": "阿尼斯-本-苏莱曼"
+    },
+    "433362": {
+      "dqd_id": "50142923",
+      "name_en": "Ali ABDI",
+      "name_zh": "阿卜迪"
+    },
+    "433365": {
+      "dqd_id": "50393362",
+      "name_en": "Aymen DAHMEN",
+      "name_zh": "达门"
+    },
+    "433367": {
+      "dqd_id": "50472292",
+      "name_en": "Omar Rekik",
+      "name_zh": "奥马尔-雷基克"
+    },
+    "433378": {
+      "dqd_id": "50468630",
+      "name_en": "Hannibal MEJBRI",
+      "name_zh": "汉尼拔-梅布里"
+    },
+    "433380": {
+      "dqd_id": "50391923",
+      "name_en": "Montassar TALBI",
+      "name_zh": "塔勒比"
+    },
+    "433394": {
+      "dqd_id": "50171993",
+      "name_en": "AHMED FATHY",
+      "name_zh": "艾哈迈德-法特希"
+    },
+    "433426": {
+      "dqd_id": "50452857",
+      "name_en": "Soufiane RAHIMI",
+      "name_zh": "苏菲安-拉希米"
+    },
+    "433439": {
+      "dqd_id": "50352863",
+      "name_en": "ALI LAJAMI",
+      "name_zh": "阿里-拉贾米"
+    },
+    "433461": {
+      "dqd_id": "50213838",
+      "name_en": "ZIZO",
+      "name_zh": "齐佐"
+    },
+    "433466": {
+      "dqd_id": "50419974",
+      "name_en": "NABIL DONGA",
+      "name_zh": "纳比勒-东加"
+    },
+    "433469": {
+      "dqd_id": "50405978",
+      "name_en": "MOHANAD LASHIN",
+      "name_zh": "穆哈纳德-拉欣"
+    },
+    "433526": {
+      "dqd_id": "50662551",
+      "name_en": "MOHAMMAD ABUHASHEESH",
+      "name_zh": "穆罕默德-哈谢什"
+    },
+    "433527": {
+      "dqd_id": "50629288",
+      "name_en": "ABDALLAH NASIB",
+      "name_zh": "阿卜杜拉-纳西卜"
+    },
+    "433534": {
+      "dqd_id": "50545165",
+      "name_en": "NIZAR ALRASHDAN",
+      "name_zh": "尼扎尔-拉什丹"
+    },
+    "433571": {
+      "dqd_id": "50228306",
+      "name_en": "AHMED BASIL",
+      "name_zh": "艾哈迈德-巴西勒"
+    },
+    "433585": {
+      "dqd_id": "50426387",
+      "name_en": "IBRAHIM BAYESH",
+      "name_zh": "易卜拉欣-巴耶什"
+    },
+    "433600": {
+      "dqd_id": "50456272",
+      "name_en": "Mohamed Amine TOUGAI",
+      "name_zh": "图加伊"
+    },
+    "433631": {
+      "dqd_id": "50695979",
+      "name_en": "Yassine TITRAOUI",
+      "name_zh": "蒂特拉维"
+    },
+    "433635": {
+      "dqd_id": "50239405",
+      "name_en": "Stephen EUSTAQUIO",
+      "name_zh": "欧斯塔基奥"
+    },
+    "433667": {
+      "dqd_id": "50453336",
+      "name_en": "Josip STANISIC",
+      "name_zh": "斯塔尼希奇"
+    },
+    "433668": {
+      "dqd_id": "50226886",
+      "name_en": "Michal SADILEK",
+      "name_zh": "萨迪莱克"
+    },
+    "433679": {
+      "dqd_id": "50517959",
+      "name_en": "Ramiz ZERROUKI",
+      "name_zh": "泽鲁基"
+    },
+    "433694": {
+      "dqd_id": "50533796",
+      "name_en": "Nathan PATTERSON",
+      "name_zh": "帕特森"
+    },
+    "433724": {
+      "dqd_id": "50411404",
+      "name_en": "WILLY SEMEDO",
+      "name_zh": "威利-塞梅多"
+    },
+    "433754": {
+      "dqd_id": "50472632",
+      "name_en": "Adam HLOZEK",
+      "name_zh": "赫洛热克"
+    },
+    "433755": {
+      "dqd_id": "50472453",
+      "name_en": "David Zima",
+      "name_zh": "齐马"
+    },
+    "433787": {
+      "dqd_id": "50391373",
+      "name_en": "Scott McTominay",
+      "name_zh": "麦克托米奈"
+    },
+    "433795": {
+      "dqd_id": "50226873",
+      "name_en": "Mattias SVANBERG",
+      "name_zh": "斯万贝里"
+    },
+    "433806": {
+      "dqd_id": "50136161",
+      "name_en": "Edouard MENDY",
+      "name_zh": "爱德华-门迪"
+    },
+    "433872": {
+      "dqd_id": "50253041",
+      "name_en": "RAPHINHA",
+      "name_zh": "拉菲尼亚"
+    },
+    "434024": {
+      "dqd_id": "50696226",
+      "name_en": "MUNAF YOUNUS",
+      "name_zh": "穆纳夫-尤尼斯"
+    },
+    "434025": {
+      "dqd_id": "50772718",
+      "name_en": "ZAID TAHSEEN",
+      "name_zh": "扎伊德-塔赫辛"
+    },
+    "434026": {
+      "dqd_id": "50545354",
+      "name_en": "ZIDANE IQBAL",
+      "name_zh": "齐达内-伊克巴尔"
+    },
+    "434029": {
+      "dqd_id": "50432477",
+      "name_en": "ALI YOUSIF",
+      "name_zh": "阿里-哈希姆"
+    },
+    "436537": {
+      "dqd_id": "50665227",
+      "name_en": "MUSAB ALJUWAYR",
+      "name_zh": "穆萨卜-朱维尔"
+    },
+    "436538": {
+      "dqd_id": "50565103",
+      "name_en": "ZIYAD ALJOHANI",
+      "name_zh": "齐亚德-约哈尼"
+    },
+    "436572": {
+      "dqd_id": "50130011",
+      "name_en": "Arthur MASUAKU",
+      "name_zh": "马苏亚库"
+    },
+    "436599": {
+      "dqd_id": "50359287",
+      "name_en": "Miles ROBINSON",
+      "name_zh": "迈尔斯-罗宾逊"
+    },
+    "436612": {
+      "dqd_id": "50213821",
+      "name_en": "Denzel DUMFRIES",
+      "name_zh": "邓弗里斯"
+    },
+    "436628": {
+      "dqd_id": "50538635",
+      "name_en": "ALI ALHAMADI",
+      "name_zh": "阿里-哈马迪"
+    },
+    "436743": {
+      "dqd_id": "50402085",
+      "name_en": "Ermedin DEMIROVIC",
+      "name_zh": "德米罗维奇"
+    },
+    "436863": {
+      "dqd_id": "50157917",
+      "name_en": "FRANS PUTROS",
+      "name_zh": "弗兰斯-普特罗斯"
+    },
+    "439538": {
+      "dqd_id": "50234606",
+      "name_en": "Joaquin PIQUEREZ",
+      "name_zh": "皮克雷斯"
+    },
+    "439641": {
+      "dqd_id": "50267238",
+      "name_en": "Reece JAMES",
+      "name_zh": "里斯-詹姆斯"
+    },
+    "439691": {
+      "dqd_id": "50226746",
+      "name_en": "Trevoh CHALOBAH",
+      "name_zh": "特雷沃-查洛巴"
+    },
+    "439956": {
+      "dqd_id": "50454141",
+      "name_en": "Facundo PELLISTRI",
+      "name_zh": "佩利斯特里"
+    },
+    "440748": {
+      "dqd_id": "50400491",
+      "name_en": "Francis DE VRIES",
+      "name_zh": "德弗里斯"
+    },
+    "441065": {
+      "dqd_id": "50195022",
+      "name_en": "Patrick PENTZ",
+      "name_zh": "彭茨"
+    },
+    "441067": {
+      "dqd_id": "50202597",
+      "name_en": "Stefan POSCH",
+      "name_zh": "斯特凡-波施"
+    },
+    "441068": {
+      "dqd_id": "50242766",
+      "name_en": "Dejan LJUBICIC",
+      "name_zh": "柳比契奇"
+    },
+    "441088": {
+      "dqd_id": "50471219",
+      "name_en": "Nicolas SEIWALD",
+      "name_zh": "赛瓦尔德"
+    },
+    "441132": {
+      "dqd_id": "50204897",
+      "name_en": "Carl STARFELT",
+      "name_zh": "斯塔费尔特"
+    },
+    "441135": {
+      "dqd_id": "50146587",
+      "name_en": "Jesper KARLSTROM",
+      "name_zh": "卡尔斯特伦"
+    },
+    "441137": {
+      "dqd_id": "50469836",
+      "name_en": "Anthony ELANGA",
+      "name_zh": "埃兰加"
+    },
+    "441146": {
+      "dqd_id": "50560769",
+      "name_en": "GONCALO INACIO",
+      "name_zh": "贡萨洛-伊纳西奥"
+    },
+    "441148": {
+      "dqd_id": "50460407",
+      "name_en": "MATHEUS NUNES",
+      "name_zh": "努内斯"
+    },
+    "441149": {
+      "dqd_id": "50468885",
+      "name_en": "VITINHA",
+      "name_zh": "维蒂尼亚"
+    },
+    "441162": {
+      "dqd_id": "50173438",
+      "name_en": "Jindrich STANEK",
+      "name_zh": "斯塔涅克"
+    },
+    "441166": {
+      "dqd_id": "50086995",
+      "name_en": "Jaroslav ZELENY",
+      "name_zh": "泽勒尼"
+    },
+    "441167": {
+      "dqd_id": "50147367",
+      "name_en": "Tomas HOLES",
+      "name_zh": "霍莱什"
+    },
+    "441170": {
+      "dqd_id": "50272530",
+      "name_en": "Ladislav KREJCI",
+      "name_zh": "克雷伊奇"
+    },
+    "441171": {
+      "dqd_id": "50250580",
+      "name_en": "Jan KUCHTA",
+      "name_zh": "扬-库赫塔"
+    },
+    "441179": {
+      "dqd_id": "50226339",
+      "name_en": "Merih DEMIRAL",
+      "name_zh": "德米拉尔"
+    },
+    "441180": {
+      "dqd_id": "50233861",
+      "name_en": "Altay BAYINDIR",
+      "name_zh": "巴因迪尔"
+    },
+    "441181": {
+      "dqd_id": "50228125",
+      "name_en": "Ugurcan CAKIR",
+      "name_zh": "恰克尔"
+    },
+    "441188": {
+      "dqd_id": "50272147",
+      "name_en": "Kerem AKTURKOGLU",
+      "name_zh": "阿克蒂尔科奥卢"
+    },
+    "441234": {
+      "dqd_id": "50482602",
+      "name_en": "Julio ENCISO",
+      "name_zh": "恩西索"
+    },
+    "441236": {
+      "dqd_id": "50040582",
+      "name_en": "Hernan GALINDEZ",
+      "name_zh": "埃尔南-加林德斯"
+    },
+    "441239": {
+      "dqd_id": "50237567",
+      "name_en": "Jorge GUTIERREZ",
+      "name_zh": "豪尔赫-古铁雷斯"
+    },
+    "441240": {
+      "dqd_id": "50251600",
+      "name_en": "Andres ANDRADE",
+      "name_zh": "安德拉德"
+    },
+    "441241": {
+      "dqd_id": "50180902",
+      "name_en": "Orlando MOSQUERA",
+      "name_zh": "奥兰多-莫斯克拉"
+    },
+    "441242": {
+      "dqd_id": "50252510",
+      "name_en": "Cesar BLACKMAN",
+      "name_zh": "塞萨尔-布莱克曼"
+    },
+    "441243": {
+      "dqd_id": "50224882",
+      "name_en": "Cesar YANIS",
+      "name_zh": "亚尼斯"
+    },
+    "441251": {
+      "dqd_id": "50241960",
+      "name_en": "Antonee ROBINSON",
+      "name_zh": "罗宾逊"
+    },
+    "441252": {
+      "dqd_id": "50501991",
+      "name_en": "Alistair JOHNSTON",
+      "name_zh": "约翰斯顿"
+    },
+    "441255": {
+      "dqd_id": "50440722",
+      "name_en": "Dayne ST. CLAIR",
+      "name_zh": "圣克莱尔"
+    },
+    "441257": {
+      "dqd_id": "50447591",
+      "name_en": "Jonathan DAVID",
+      "name_zh": "乔纳森-戴维"
+    },
+    "441258": {
+      "dqd_id": "50663850",
+      "name_en": "Ismael KONE",
+      "name_zh": "伊斯梅尔-科内"
+    },
+    "441259": {
+      "dqd_id": "50440726",
+      "name_en": "Liam MILLAR",
+      "name_zh": "利亚姆-米勒"
+    },
+    "441260": {
+      "dqd_id": "50262132",
+      "name_en": "Carlos ACEVEDO",
+      "name_zh": "卡洛斯-阿塞韦多"
+    },
+    "441261": {
+      "dqd_id": "50507997",
+      "name_en": "Israel REYES",
+      "name_zh": "伊斯雷尔-雷耶斯"
+    },
+    "441307": {
+      "dqd_id": "50460563",
+      "name_en": "Azzedine OUNAHI",
+      "name_zh": "欧纳希"
+    },
+    "441313": {
+      "dqd_id": "50105907",
+      "name_en": "Lionel MPASI",
+      "name_zh": "姆帕西-恩扎乌"
+    },
+    "441316": {
+      "dqd_id": "50204650",
+      "name_en": "Yoane WISSA",
+      "name_zh": "维萨"
+    },
+    "441317": {
+      "dqd_id": "50194210",
+      "name_en": "Theo BONGONDA",
+      "name_zh": "邦贡达"
+    },
+    "441333": {
+      "dqd_id": "50256986",
+      "name_en": "Gideon MENSAH",
+      "name_zh": "吉迪恩-门萨"
+    },
+    "441336": {
+      "dqd_id": "50267741",
+      "name_en": "Abdul MUMIN",
+      "name_zh": "穆明"
+    },
+    "441341": {
+      "dqd_id": "50236650",
+      "name_en": "Elisha OWUSU",
+      "name_zh": "伊莱沙-奥乌苏"
+    },
+    "441342": {
+      "dqd_id": "50648970",
+      "name_en": "Abdul FATAWU",
+      "name_zh": "法塔武"
+    },
+    "441350": {
+      "dqd_id": "50434405",
+      "name_en": "Hicham BOUDAOUI",
+      "name_zh": "布道伊"
+    },
+    "441362": {
+      "dqd_id": "50209599",
+      "name_en": "Mortadha BEN OUANES",
+      "name_zh": "本-奥内斯"
+    },
+    "441402": {
+      "dqd_id": "50533493",
+      "name_en": "Cesar SAMUDIO",
+      "name_zh": "萨穆迪奥"
+    },
+    "441422": {
+      "dqd_id": "50701428",
+      "name_en": "Nico PAZ",
+      "name_zh": "尼科-帕斯"
+    },
+    "441622": {
+      "dqd_id": "50232694",
+      "name_en": "Jhon LUCUMI",
+      "name_zh": "卢库米"
+    },
+    "441623": {
+      "dqd_id": "50266882",
+      "name_en": "Manuel UGARTE",
+      "name_zh": "乌加特"
+    },
+    "442428": {
+      "dqd_id": "50481379",
+      "name_en": "Aaron HICKEY",
+      "name_zh": "阿伦-希基"
+    },
+    "442429": {
+      "dqd_id": "50176844",
+      "name_en": "Liam KELLY",
+      "name_zh": "利亚姆-凯利"
+    },
+    "442430": {
+      "dqd_id": "50176845",
+      "name_en": "John SOUTTAR",
+      "name_zh": "约翰-苏塔"
+    },
+    "442431": {
+      "dqd_id": "50203695",
+      "name_en": "Scott MCKENNA",
+      "name_zh": "麦克纳"
+    },
+    "442433": {
+      "dqd_id": "50264992",
+      "name_en": "Ross STEWART",
+      "name_zh": "斯图尔特"
+    },
+    "442434": {
+      "dqd_id": "50427953",
+      "name_en": "Lewis FERGUSON",
+      "name_zh": "刘易斯-弗格森"
+    },
+    "447853": {
+      "dqd_id": "50210647",
+      "name_en": "David RAYA",
+      "name_zh": "戴维-拉亚"
+    },
+    "447855": {
+      "dqd_id": "50524102",
+      "name_en": "Nico WILLIAMS",
+      "name_zh": "尼科-威廉斯"
+    },
+    "447860": {
+      "dqd_id": "50428007",
+      "name_en": "Alex BAENA",
+      "name_zh": "巴埃纳"
+    },
+    "447864": {
+      "dqd_id": "50192826",
+      "name_en": "Borja IGLESIAS",
+      "name_zh": "博尔哈-伊格莱西亚斯"
+    },
+    "447866": {
+      "dqd_id": "50648994",
+      "name_en": "GAVI",
+      "name_zh": "加维"
+    },
+    "447991": {
+      "dqd_id": "50194807",
+      "name_en": "Gaston OLVEIRA",
+      "name_zh": "奥尔韦拉"
+    },
+    "448014": {
+      "dqd_id": "50696623",
+      "name_en": "Alessandro CIRCATI",
+      "name_zh": "奇尔卡蒂"
+    },
+    "448015": {
+      "dqd_id": "50620628",
+      "name_en": "Cristian VOLPATO",
+      "name_zh": "沃尔帕托"
+    },
+    "448051": {
+      "dqd_id": "50212646",
+      "name_en": "Luis CHAVEZ",
+      "name_zh": "路易斯-查韦斯"
+    },
+    "448081": {
+      "dqd_id": "50469379",
+      "name_en": "GONCALO RAMOS",
+      "name_zh": "贡萨洛-拉莫斯"
+    },
+    "448092": {
+      "dqd_id": "50162492",
+      "name_en": "RUI SILVA",
+      "name_zh": "鲁伊-席尔瓦"
+    },
+    "448103": {
+      "dqd_id": "50469841",
+      "name_en": "Fabian RIEDER",
+      "name_zh": "法比安-里德"
+    },
+    "448104": {
+      "dqd_id": "50201412",
+      "name_en": "Cedric ITTEN",
+      "name_zh": "伊滕"
+    },
+    "448107": {
+      "dqd_id": "50215638",
+      "name_en": "Gregor KOBEL",
+      "name_zh": "科贝尔"
+    },
+    "448112": {
+      "dqd_id": "50507326",
+      "name_en": "Zeki AMDOUNI",
+      "name_zh": "阿姆杜尼"
+    },
+    "448114": {
+      "dqd_id": "50452309",
+      "name_en": "Dan NDOYE",
+      "name_zh": "恩多耶"
+    },
+    "448120": {
+      "dqd_id": "50475275",
+      "name_en": "Ardon JASHARI",
+      "name_zh": "亚沙里"
+    },
+    "448124": {
+      "dqd_id": "50234330",
+      "name_en": "Christian FASSNACHT",
+      "name_zh": "法斯纳赫特"
+    },
+    "448127": {
+      "dqd_id": "50271138",
+      "name_en": "Noah OKAFOR",
+      "name_zh": "奥卡福尔"
+    },
+    "448128": {
+      "dqd_id": "50225776",
+      "name_en": "Charles PICKEL",
+      "name_zh": "皮克尔"
+    },
+    "448131": {
+      "dqd_id": "50404714",
+      "name_en": "Ruben VARGAS",
+      "name_zh": "鲁文-巴尔加斯"
+    },
+    "448136": {
+      "dqd_id": "50225774",
+      "name_en": "Eray COEMERT",
+      "name_zh": "居马尔特"
+    },
+    "448140": {
+      "dqd_id": "50522178",
+      "name_en": "Micky VAN DE VEN",
+      "name_zh": "范德芬"
+    },
+    "448149": {
+      "dqd_id": "50235886",
+      "name_en": "Teun KOOPMEINERS",
+      "name_zh": "库普梅纳斯"
+    },
+    "448151": {
+      "dqd_id": "50161749",
+      "name_en": "Mark FLEKKEN",
+      "name_zh": "弗莱肯"
+    },
+    "448152": {
+      "dqd_id": "50257264",
+      "name_en": "Cody GAKPO",
+      "name_zh": "加克波"
+    },
+    "448153": {
+      "dqd_id": "50392030",
+      "name_en": "Noa LANG",
+      "name_zh": "诺阿-朗"
+    },
+    "448157": {
+      "dqd_id": "50266536",
+      "name_en": "Guus TIL",
+      "name_zh": "蒂尔"
+    },
+    "448159": {
+      "dqd_id": "50164306",
+      "name_en": "Wout WEGHORST",
+      "name_zh": "韦格霍斯特"
+    },
+    "448160": {
+      "dqd_id": "50465308",
+      "name_en": "Luka SUCIC",
+      "name_zh": "卢卡-苏契奇"
+    },
+    "448164": {
+      "dqd_id": "50239937",
+      "name_en": "Kristijan JAKIC",
+      "name_zh": "亚基奇"
+    },
+    "448171": {
+      "dqd_id": "50472005",
+      "name_en": "Josip SUTALO",
+      "name_zh": "约瑟普-舒塔洛"
+    },
+    "448174": {
+      "dqd_id": "50245018",
+      "name_en": "Marin PONGRACIC",
+      "name_zh": "庞格拉契奇"
+    },
+    "448179": {
+      "dqd_id": "50258902",
+      "name_en": "Dominik KOTARSKI",
+      "name_zh": "科塔尔斯基"
+    },
+    "448180": {
+      "dqd_id": "50475427",
+      "name_en": "Josko GVARDIOL",
+      "name_zh": "格瓦迪奥尔"
+    },
+    "448189": {
+      "dqd_id": "50432978",
+      "name_en": "Anthony GORDON",
+      "name_zh": "安东尼-戈登"
+    },
+    "448196": {
+      "dqd_id": "50466810",
+      "name_en": "Bukayo SAKA",
+      "name_zh": "萨卡"
+    },
+    "448198": {
+      "dqd_id": "50177638",
+      "name_en": "Ivan TONEY",
+      "name_zh": "伊万-托尼"
+    },
+    "448202": {
+      "dqd_id": "50517899",
+      "name_en": "Jude BELLINGHAM",
+      "name_zh": "贝林厄姆"
+    },
+    "448203": {
+      "dqd_id": "50212991",
+      "name_en": "Ollie WATKINS",
+      "name_zh": "沃特金斯"
+    },
+    "448214": {
+      "dqd_id": "50469731",
+      "name_en": "Malik TILLMAN",
+      "name_zh": "马里克-蒂尔曼"
+    },
+    "448217": {
+      "dqd_id": "50239801",
+      "name_en": "Matt TURNER",
+      "name_zh": "马特-特纳"
+    },
+    "448252": {
+      "dqd_id": "50486059",
+      "name_en": "Enzo FERNANDEZ",
+      "name_zh": "恩佐-费尔南德斯"
+    },
+    "448290": {
+      "dqd_id": "50494129",
+      "name_en": "Willian PACHO",
+      "name_zh": "威廉-帕乔"
+    },
+    "448295": {
+      "dqd_id": "50232259",
+      "name_en": "Gonzalo VALLE",
+      "name_zh": "贡萨洛-巴列"
+    },
+    "448299": {
+      "dqd_id": "50552617",
+      "name_en": "Anthony VALENCIA",
+      "name_zh": "安东尼-巴伦西亚"
+    },
+    "448310": {
+      "dqd_id": "50782782",
+      "name_en": "Kevin RODRIGUEZ",
+      "name_zh": "凯文-罗德里格斯"
+    },
+    "448312": {
+      "dqd_id": "50774062",
+      "name_en": "Nilson ANGULO",
+      "name_zh": "尼尔松-安古洛"
+    },
+    "448332": {
+      "dqd_id": "50137731",
+      "name_en": "Mike MAIGNAN",
+      "name_zh": "迈尼昂"
+    },
+    "448341": {
+      "dqd_id": "50472243",
+      "name_en": "Jeremy DOKU",
+      "name_zh": "多库"
+    },
+    "448343": {
+      "dqd_id": "50086761",
+      "name_en": "Hans VANAKEN",
+      "name_zh": "瓦纳肯"
+    },
+    "448346": {
+      "dqd_id": "50561172",
+      "name_en": "Arthur THEATE",
+      "name_zh": "阿蒂尔-蒂特"
+    },
+    "448355": {
+      "dqd_id": "50101326",
+      "name_en": "Leandro TROSSARD",
+      "name_zh": "特罗萨德"
+    },
+    "448360": {
+      "dqd_id": "50189251",
+      "name_en": "Brandon MECHELE",
+      "name_zh": "布兰登-梅切勒"
+    },
+    "448362": {
+      "dqd_id": "50468964",
+      "name_en": "Charles DE KETELAERE",
+      "name_zh": "德凯特拉雷"
+    },
+    "448363": {
+      "dqd_id": "50249329",
+      "name_en": "Hannes DELCROIX",
+      "name_zh": "德尔克鲁瓦"
+    },
+    "448364": {
+      "dqd_id": "50468652",
+      "name_en": "Amadou ONANA",
+      "name_zh": "阿马杜-奥纳纳"
+    },
+    "448366": {
+      "dqd_id": "50527659",
+      "name_en": "Koni DE WINTER",
+      "name_zh": "德温特"
+    },
+    "448369": {
+      "dqd_id": "50534885",
+      "name_en": "Zeno DEBAST",
+      "name_zh": "德巴斯特"
+    },
+    "448373": {
+      "dqd_id": "50468963",
+      "name_en": "Maxim DE CUYPER",
+      "name_zh": "德克伊珀"
+    },
+    "448377": {
+      "dqd_id": "50207650",
+      "name_en": "Dodi LUKEBAKIO",
+      "name_zh": "卢克巴吉奥"
+    },
+    "448390": {
+      "dqd_id": "50447995",
+      "name_en": "Mathieu CHOINIERE",
+      "name_zh": "乔伊涅雷"
+    },
+    "448402": {
+      "dqd_id": "50262979",
+      "name_en": "Joel WATERMAN",
+      "name_zh": "沃特曼"
+    },
+    "448411": {
+      "dqd_id": "50489486",
+      "name_en": "Jacob SHAFFELBURG",
+      "name_zh": "沙费尔伯格"
+    },
+    "448420": {
+      "dqd_id": "50561017",
+      "name_en": "LUIZ HENRIQUE",
+      "name_zh": "路易斯-恩里克"
+    },
+    "448497": {
+      "dqd_id": "50508662",
+      "name_en": "Mohammad MOHEBBI",
+      "name_zh": "莫赫比"
+    },
+    "448505": {
+      "dqd_id": "50523183",
+      "name_en": "Saleh HARDANI",
+      "name_zh": "萨利赫-哈尔达尼"
+    },
+    "448507": {
+      "dqd_id": "50219575",
+      "name_en": "Payam NIAZMAND",
+      "name_zh": "尼亚兹曼德"
+    },
+    "448522": {
+      "dqd_id": "50549034",
+      "name_en": "Alidu SEIDU",
+      "name_zh": "赛义杜"
+    },
+    "448523": {
+      "dqd_id": "50554345",
+      "name_en": "Kamaldeen SULEMANA",
+      "name_zh": "苏莱曼纳"
+    },
+    "448525": {
+      "dqd_id": "50772278",
+      "name_en": "Ernest NUAMAH",
+      "name_zh": "努瓦马"
+    },
+    "448531": {
+      "dqd_id": "50436685",
+      "name_en": "Antoine SEMENYO",
+      "name_zh": "塞门约"
+    },
+    "448557": {
+      "dqd_id": "50234637",
+      "name_en": "Daichi KAMADA",
+      "name_zh": "镰田大地"
+    },
+    "448569": {
+      "dqd_id": "50437170",
+      "name_en": "Shuto MACHINO",
+      "name_zh": "町野修斗"
+    },
+    "448580": {
+      "dqd_id": "50418266",
+      "name_en": "KIM Moonhwan ",
+      "name_zh": "金纹奂"
+    },
+    "448585": {
+      "dqd_id": "50602544",
+      "name_en": "YANG Hyunjun ",
+      "name_zh": "杨贤俊"
+    },
+    "448586": {
+      "dqd_id": "50485626",
+      "name_en": "OH Hyeongyu",
+      "name_zh": "吴贤揆"
+    },
+    "448598": {
+      "dqd_id": "50527394",
+      "name_en": "Ismael SAIBARI",
+      "name_zh": "赛巴里"
+    },
+    "448607": {
+      "dqd_id": "50572421",
+      "name_en": "Chadi RIAD",
+      "name_zh": "沙迪-里亚德"
+    },
+    "448612": {
+      "dqd_id": "50694832",
+      "name_en": "Bilal EL KHANNOUSS",
+      "name_zh": "哈努斯"
+    },
+    "448662": {
+      "dqd_id": "50650406",
+      "name_en": "Elias ACHOURI",
+      "name_zh": "阿舒里"
+    },
+    "448815": {
+      "dqd_id": "50471785",
+      "name_en": "Iliman NDIAYE",
+      "name_zh": "恩迪亚耶"
+    },
+    "448821": {
+      "dqd_id": "50104373",
+      "name_en": "Mory DIAW",
+      "name_zh": "莫里-迪奥"
+    },
+    "448825": {
+      "dqd_id": "50409442",
+      "name_en": "Pathe CISS",
+      "name_zh": "西斯"
+    },
+    "45191": {
+      "dqd_id": "50210119",
+      "name_en": "MOHAMMAD ALDAOUD",
+      "name_zh": "穆罕默德-达乌德"
+    },
+    "461177": {
+      "dqd_id": "50774494",
+      "name_en": "Obed VARGAS",
+      "name_zh": "奥贝德-巴尔加斯"
+    },
+    "461788": {
+      "dqd_id": "50545069",
+      "name_en": "MARAWAN ATTIA",
+      "name_zh": "马尔万-阿特亚"
+    },
+    "463125": {
+      "dqd_id": "50547095",
+      "name_en": "Ramon SOSA",
+      "name_zh": "拉蒙-索萨"
+    },
+    "463127": {
+      "dqd_id": "50165080",
+      "name_en": "Gabriel AVALOS",
+      "name_zh": "阿瓦洛斯"
+    },
+    "463128": {
+      "dqd_id": "50571634",
+      "name_en": "Diego GOMEZ",
+      "name_zh": "迭戈-戈麦斯"
+    },
+    "463218": {
+      "dqd_id": "50271120",
+      "name_en": "Khuliso MUDAU",
+      "name_zh": "穆道"
+    },
+    "463221": {
+      "dqd_id": "50259861",
+      "name_en": "Nkosinathi SIBISI",
+      "name_zh": "西比斯"
+    },
+    "463234": {
+      "dqd_id": "50708201",
+      "name_en": "Thapelo MASEKO",
+      "name_zh": "马塞科"
+    },
+    "463236": {
+      "dqd_id": "50564835",
+      "name_en": "Jayden ADAMS",
+      "name_zh": "杰登-亚当斯"
+    },
+    "463282": {
+      "dqd_id": "50490893",
+      "name_en": "Alexander PRASS",
+      "name_zh": "普拉斯"
+    },
+    "463283": {
+      "dqd_id": "50258046",
+      "name_en": "Romano SCHMID",
+      "name_zh": "施密德"
+    },
+    "463286": {
+      "dqd_id": "50506447",
+      "name_en": "Patrick WIMMER",
+      "name_zh": "维默尔"
+    },
+    "463287": {
+      "dqd_id": "50245268",
+      "name_en": "Marco FRIEDL",
+      "name_zh": "马尔科-弗里德尔"
+    },
+    "463288": {
+      "dqd_id": "50104144",
+      "name_en": "Phillip MWENE",
+      "name_zh": "姆韦内"
+    },
+    "463465": {
+      "dqd_id": "50768592",
+      "name_en": "Joel ORDONEZ",
+      "name_zh": "奥多涅斯"
+    },
+    "463468": {
+      "dqd_id": "50572649",
+      "name_en": "Alan MINDA",
+      "name_zh": "阿兰-明达"
+    },
+    "463476": {
+      "dqd_id": "50853444",
+      "name_en": "Denil CASTILLO",
+      "name_zh": "德尼尔-卡斯蒂略"
+    },
+    "463489": {
+      "dqd_id": "50786479",
+      "name_en": "Yaimar MEDINA",
+      "name_zh": "亚马尔-梅迪纳"
+    },
+    "463495": {
+      "dqd_id": "50823354",
+      "name_en": "Kendry PAEZ",
+      "name_zh": "肯德里-派斯"
+    },
+    "463580": {
+      "dqd_id": "50539354",
+      "name_en": "Finn SURMAN",
+      "name_zh": "芬-苏尔曼"
+    },
+    "463661": {
+      "dqd_id": "50647373",
+      "name_en": "Valentin BARCO",
+      "name_zh": "巴伦廷-巴尔科"
+    },
+    "463746": {
+      "dqd_id": "50704474",
+      "name_en": "ENDRICK",
+      "name_zh": "恩德里克"
+    },
+    "463780": {
+      "dqd_id": "50665740",
+      "name_en": "Nico OREILLY",
+      "name_zh": "奥赖利"
+    },
+    "463800": {
+      "dqd_id": "50525454",
+      "name_en": "Carney CHUKWUEMEKA",
+      "name_zh": "丘库埃梅卡"
+    },
+    "463809": {
+      "dqd_id": "50527201",
+      "name_en": "Jarell QUANSAH",
+      "name_zh": "夸安萨"
+    },
+    "463817": {
+      "dqd_id": "50780317",
+      "name_en": "Owen GOODMAN",
+      "name_zh": "欧文-古德曼"
+    },
+    "463902": {
+      "dqd_id": "50663773",
+      "name_en": "Gustavo PUERTA",
+      "name_zh": "古斯塔沃-普埃尔塔"
+    },
+    "464055": {
+      "dqd_id": "50527468",
+      "name_en": "Malo GUSTO",
+      "name_zh": "古斯托"
+    },
+    "464103": {
+      "dqd_id": "50579009",
+      "name_en": "Ange-Yoan BONNY",
+      "name_zh": "博尼"
+    },
+    "464114": {
+      "dqd_id": "50680231",
+      "name_en": "Desire DOUE",
+      "name_zh": "杜埃"
+    },
+    "464127": {
+      "dqd_id": "50786860",
+      "name_en": "Robin RISSER",
+      "name_zh": "里塞"
+    },
+    "464133": {
+      "dqd_id": "50489106",
+      "name_en": "Elye WAHI",
+      "name_zh": "瓦希"
+    },
+    "464339": {
+      "dqd_id": "50772222",
+      "name_en": "Keisuke GOTO",
+      "name_zh": "后藤启介"
+    },
+    "464374": {
+      "dqd_id": "50770218",
+      "name_en": "BAE Junho",
+      "name_zh": "裴峻浩"
+    },
+    "464457": {
+      "dqd_id": "50779967",
+      "name_en": "ALI JASIM",
+      "name_zh": "阿里-贾西姆"
+    },
+    "464458": {
+      "dqd_id": "50610320",
+      "name_en": "YOUSSEF AMYN",
+      "name_zh": "优素福-阿明"
+    },
+    "464484": {
+      "dqd_id": "50627164",
+      "name_en": "Ismael GHARBI",
+      "name_zh": "伊斯梅尔-加尔比"
+    },
+    "464533": {
+      "dqd_id": "50556093",
+      "name_en": "Brian GUTIERREZ",
+      "name_zh": "布里安-古铁雷斯"
+    },
+    "464542": {
+      "dqd_id": "50768218",
+      "name_en": "Alex FREEMAN",
+      "name_zh": "亚历克斯-弗里曼"
+    },
+    "464546": {
+      "dqd_id": "50632093",
+      "name_en": "Chris BRADY",
+      "name_zh": "克里斯-布雷迪"
+    },
+    "464566": {
+      "dqd_id": "50752491",
+      "name_en": "Esmir BAJRAKTAREVIC",
+      "name_zh": "巴伊拉克塔雷维奇"
+    },
+    "464842": {
+      "dqd_id": "50782283",
+      "name_en": "Lamine CAMARA",
+      "name_zh": "拉明-卡马拉"
+    },
+    "464865": {
+      "dqd_id": "50861468",
+      "name_en": "El Hadji Malick DIOUF",
+      "name_zh": "哈吉-迪乌夫"
+    },
+    "464897": {
+      "dqd_id": "50779324",
+      "name_en": "Sherzod ESANOV",
+      "name_zh": "叶萨诺夫"
+    },
+    "464906": {
+      "dqd_id": "50769447",
+      "name_en": "Jakhongir UROZOV",
+      "name_zh": "乌罗佐夫"
+    },
+    "464924": {
+      "dqd_id": "50761937",
+      "name_en": "Abdukodir KHUSANOV",
+      "name_zh": "胡桑诺夫"
+    },
+    "464933": {
+      "dqd_id": "50558552",
+      "name_en": "Abbosbek FAYZULLAEV",
+      "name_zh": "法伊祖拉耶夫"
+    },
+    "466317": {
+      "dqd_id": "50233350",
+      "name_en": "Juninho BACUNA",
+      "name_zh": "儒尼尼奥-巴库纳"
+    },
+    "466340": {
+      "dqd_id": "50061540",
+      "name_en": "Leandro BACUNA",
+      "name_zh": "莱安德罗-巴库纳"
+    },
+    "466346": {
+      "dqd_id": "50164480",
+      "name_en": "Brandley KUWAS",
+      "name_zh": "库瓦斯"
+    },
+    "466350": {
+      "dqd_id": "50228806",
+      "name_en": "Sherel FLORANUS",
+      "name_zh": "弗洛拉努斯"
+    },
+    "466352": {
+      "dqd_id": "50193615",
+      "name_en": "Kenji GORRE",
+      "name_zh": "霍勒"
+    },
+    "466359": {
+      "dqd_id": "50446646",
+      "name_en": "Godfried ROEMERATOE",
+      "name_zh": "罗梅拉托埃"
+    },
+    "466361": {
+      "dqd_id": "50439907",
+      "name_en": "Roshon VAN EIJMA",
+      "name_zh": "范埃马"
+    },
+    "466363": {
+      "dqd_id": "50546791",
+      "name_en": "Jearl MARGARITHA",
+      "name_zh": "马尔加里塔"
+    },
+    "466365": {
+      "dqd_id": "50413280",
+      "name_en": "Kevin FELIDA",
+      "name_zh": "费利达"
+    },
+    "466370": {
+      "dqd_id": "50500189",
+      "name_en": "Tyrick BODAK",
+      "name_zh": "博达克"
+    },
+    "466372": {
+      "dqd_id": "50169589",
+      "name_en": "Gervane KASTANEER",
+      "name_zh": "卡斯塔内尔"
+    },
+    "466382": {
+      "dqd_id": "50411355",
+      "name_en": "Trevor DOORNBUSCH",
+      "name_zh": "多恩布施"
+    },
+    "466585": {
+      "dqd_id": "50839161",
+      "name_en": "Moise BOMBITO",
+      "name_zh": "邦比托"
+    },
+    "466624": {
+      "dqd_id": "50466805",
+      "name_en": "Folarin BALOGUN",
+      "name_zh": "巴洛贡"
+    },
+    "466669": {
+      "dqd_id": "50751063",
+      "name_en": "Azarias LONDONO",
+      "name_zh": "隆多尼奥"
+    },
+    "466687": {
+      "dqd_id": "50792288",
+      "name_en": "Ali AHMED",
+      "name_zh": "阿里-艾哈迈德"
+    },
+    "466835": {
+      "dqd_id": "50654443",
+      "name_en": "Alexandre PIERRE",
+      "name_zh": "亚历山大-皮埃尔"
+    },
+    "466838": {
+      "dqd_id": "50477737",
+      "name_en": "Danley JEAN JACQUES",
+      "name_zh": "让-雅克"
+    },
+    "466844": {
+      "dqd_id": "50190108",
+      "name_en": "Markhus LACROIX",
+      "name_zh": "拉克鲁瓦"
+    },
+    "466853": {
+      "dqd_id": "50429723",
+      "name_en": "Josue DUVERGER",
+      "name_zh": "迪韦尔热"
+    },
+    "466862": {
+      "dqd_id": "50644152",
+      "name_en": "Garven METUSALA",
+      "name_zh": "梅图萨拉"
+    },
+    "466865": {
+      "dqd_id": "50187176",
+      "name_en": "Derrick ETIENNE",
+      "name_zh": "埃蒂安"
+    },
+    "470759": {
+      "dqd_id": "50580113",
+      "name_en": "Kevin CASTANO",
+      "name_zh": "卡斯塔尼奥"
+    },
+    "470760": {
+      "dqd_id": "50265019",
+      "name_en": "Jhon ARIAS",
+      "name_zh": "阿里亚斯"
+    },
+    "472877": {
+      "dqd_id": "50150696",
+      "name_en": "Irfan Can KAHVECI",
+      "name_zh": "卡赫韦奇"
+    },
+    "472908": {
+      "dqd_id": "50103646",
+      "name_en": "Vladimir COUFAL",
+      "name_zh": "曹法尔"
+    },
+    "473050": {
+      "dqd_id": "50547050",
+      "name_en": "Richard RIOS",
+      "name_zh": "里奥斯"
+    },
+    "473062": {
+      "dqd_id": "50527610",
+      "name_en": "Emiliano MARTINEZ",
+      "name_zh": "埃米利亚诺-马丁内斯"
+    },
+    "473113": {
+      "dqd_id": "50279294",
+      "name_en": "Eberechi EZE",
+      "name_zh": "埃泽"
+    },
+    "474973": {
+      "dqd_id": "50843060",
+      "name_en": "Pau CUBARSI",
+      "name_zh": "库巴西"
+    },
+    "475036": {
+      "dqd_id": "50870058",
+      "name_en": "RAYAN",
+      "name_zh": "拉扬"
+    },
+    "475195": {
+      "dqd_id": "50847423",
+      "name_en": "Assan OUEDRAOGO",
+      "name_zh": "阿桑-韦德拉奥果"
+    },
+    "475260": {
+      "dqd_id": "50936178",
+      "name_en": "Behruzjon KARIMOV",
+      "name_zh": "贝赫鲁兹-卡里莫夫"
+    },
+    "475921": {
+      "dqd_id": "50885995",
+      "name_en": "Amirmohammad RAZAGHINIA",
+      "name_zh": "拉扎吉尼亚"
+    },
+    "476345": {
+      "dqd_id": "50415392",
+      "name_en": "Willer DITTA",
+      "name_zh": "迪塔"
+    },
+    "476348": {
+      "dqd_id": "50546369",
+      "name_en": "Damian BOBADILLA",
+      "name_zh": "达米安-博瓦迪利亚"
+    },
+    "477470": {
+      "dqd_id": "50527683",
+      "name_en": "Oscar BOBB",
+      "name_zh": "奥斯卡-鲍勃"
+    },
+    "477536": {
+      "dqd_id": "50484804",
+      "name_en": "Federico VINAS",
+      "name_zh": "比尼亚斯"
+    },
+    "477770": {
+      "dqd_id": "50102858",
+      "name_en": "PICO LOPES",
+      "name_zh": "罗伯托-洛佩斯"
+    },
+    "477777": {
+      "dqd_id": "50769523",
+      "name_en": "Oumar DIAKITE",
+      "name_zh": "奥马尔-迪亚基特"
+    },
+    "477778": {
+      "dqd_id": "50600608",
+      "name_en": "Simon ADINGRA",
+      "name_zh": "阿丁格拉"
+    },
+    "477790": {
+      "dqd_id": "50553309",
+      "name_en": "Mohamed AMOURA",
+      "name_zh": "阿穆拉"
+    },
+    "477795": {
+      "dqd_id": "50789690",
+      "name_en": "Fares CHAIBI",
+      "name_zh": "沙伊比"
+    },
+    "477802": {
+      "dqd_id": "50770150",
+      "name_en": "Ousmane DIOMANDE",
+      "name_zh": "迪奥曼德"
+    },
+    "477817": {
+      "dqd_id": "50773917",
+      "name_en": "Oussama BENBOT",
+      "name_zh": "乌萨马-本布特"
+    },
+    "477825": {
+      "dqd_id": "50483316",
+      "name_en": "Odilon KOSSOUNOU",
+      "name_zh": "奥迪隆"
+    },
+    "477827": {
+      "dqd_id": "50266567",
+      "name_en": "DEROY DUARTE",
+      "name_zh": "德罗伊-杜阿尔特"
+    },
+    "477829": {
+      "dqd_id": "50201343",
+      "name_en": "Dylan BATUBINSIKA",
+      "name_zh": "巴图宾西卡"
+    },
+    "477831": {
+      "dqd_id": "50427979",
+      "name_en": "LOGAN COSTA",
+      "name_zh": "洛甘-科斯塔"
+    },
+    "477832": {
+      "dqd_id": "50658975",
+      "name_en": "SIDNY LOPES CABRAL",
+      "name_zh": "洛佩斯-卡布拉尔"
+    },
+    "477833": {
+      "dqd_id": "50199735",
+      "name_en": "Joris KAYEMBE",
+      "name_zh": "卡延贝"
+    },
+    "477835": {
+      "dqd_id": "50223900",
+      "name_en": "Simon BANZA",
+      "name_zh": "班扎"
+    },
+    "477847": {
+      "dqd_id": "50122608",
+      "name_en": "STEVEN MOREIRA",
+      "name_zh": "莫雷拉"
+    },
+    "477849": {
+      "dqd_id": "50582465",
+      "name_en": "HELIO VARELA",
+      "name_zh": "埃利奥-瓦雷拉"
+    },
+    "477852": {
+      "dqd_id": "50427128",
+      "name_en": "KEVIN PINA",
+      "name_zh": "凯文-皮纳"
+    },
+    "477853": {
+      "dqd_id": "50209659",
+      "name_en": "Gedeon KALULU",
+      "name_zh": "热代翁-卡卢卢"
+    },
+    "477855": {
+      "dqd_id": "50465768",
+      "name_en": "JOAO PAULO",
+      "name_zh": "若昂-保罗"
+    },
+    "477856": {
+      "dqd_id": "50268447",
+      "name_en": "JOVANE CABRAL",
+      "name_zh": "若瓦内-卡布拉尔"
+    },
+    "477859": {
+      "dqd_id": "50542223",
+      "name_en": "Fiston MAYELE",
+      "name_zh": "马耶莱"
+    },
+    "477862": {
+      "dqd_id": "50622327",
+      "name_en": "GILSON BENCHIMOL",
+      "name_zh": "吉尔松-塔瓦雷斯"
+    },
+    "477864": {
+      "dqd_id": "50201760",
+      "name_en": "Aaron TSHIBOLA",
+      "name_zh": "齐博拉"
+    },
+    "478364": {
+      "dqd_id": "50251337",
+      "name_en": "Justin KLUIVERT",
+      "name_zh": "尤斯廷-克鲁伊维特"
+    },
+    "479042": {
+      "dqd_id": "50450632",
+      "name_en": "Abdulla ABDULLAEV",
+      "name_zh": "阿卜杜拉耶夫"
+    },
+    "479056": {
+      "dqd_id": "50771402",
+      "name_en": "MUSTAFA SAADOON",
+      "name_zh": "穆斯塔法-萨阿敦"
+    },
+    "479072": {
+      "dqd_id": "50562263",
+      "name_en": "MERCHAS DOSKI",
+      "name_zh": "梅尔查斯-多斯基"
+    },
+    "479075": {
+      "dqd_id": "50458698",
+      "name_en": "Sherzod NASRULLAEV",
+      "name_zh": "纳斯鲁拉耶夫"
+    },
+    "479077": {
+      "dqd_id": "50156932",
+      "name_en": "Utkir YUSUPOV",
+      "name_zh": "乌特基尔-尤苏波夫"
+    },
+    "479079": {
+      "dqd_id": "50240664",
+      "name_en": "Khojiakbar ALIJONOV",
+      "name_zh": "阿里若诺夫"
+    },
+    "479080": {
+      "dqd_id": "50385988",
+      "name_en": "Oston URUNOV",
+      "name_zh": "乌鲁诺夫"
+    },
+    "479084": {
+      "dqd_id": "50190382",
+      "name_en": "Umar ESHMURODOV",
+      "name_zh": "叶什穆罗多夫"
+    },
+    "479086": {
+      "dqd_id": "50217919",
+      "name_en": "Azizjon GANIEV",
+      "name_zh": "加涅夫"
+    },
+    "479106": {
+      "dqd_id": "50437027",
+      "name_en": "Akmal MOZGOVOY",
+      "name_zh": "莫兹戈沃伊"
+    },
+    "479110": {
+      "dqd_id": "50427659",
+      "name_en": "Abduvohid NEMATOV",
+      "name_zh": "内马托夫"
+    },
+    "479294": {
+      "dqd_id": "50488915",
+      "name_en": "Kaishu SANO",
+      "name_zh": "佐野海舟"
+    },
+    "479316": {
+      "dqd_id": "50418852",
+      "name_en": "PARK Jinseob",
+      "name_zh": "朴镇燮"
+    },
+    "479389": {
+      "dqd_id": "50631760",
+      "name_en": "MOHANNAD ABUTAHA",
+      "name_zh": "阿布-塔哈"
+    },
+    "479553": {
+      "dqd_id": "50471085",
+      "name_en": "Hussein Ali",
+      "name_zh": "侯赛因-阿里"
+    },
+    "479601": {
+      "dqd_id": "50549490",
+      "name_en": "Juan Jose CACERES",
+      "name_zh": "胡安-卡塞雷斯"
+    },
+    "479781": {
+      "dqd_id": "50502688",
+      "name_en": "Mohamed HADJ MAHMOUD",
+      "name_zh": "贝勒哈吉-马哈茂德"
+    },
+    "480310": {
+      "dqd_id": "50251601",
+      "name_en": "Jiovany RAMOS",
+      "name_zh": "希奥瓦尼-拉莫斯"
+    },
+    "480313": {
+      "dqd_id": "50662570",
+      "name_en": "Edgardo FARINA",
+      "name_zh": "法里尼亚"
+    },
+    "480322": {
+      "dqd_id": "50835679",
+      "name_en": "Luc DE FOUGEROLLES",
+      "name_zh": "德富热罗勒"
+    },
+    "480966": {
+      "dqd_id": "50240870",
+      "name_en": "LAROS DUARTE",
+      "name_zh": "拉罗斯-杜阿尔特"
+    },
+    "480983": {
+      "dqd_id": "50456270",
+      "name_en": "Zineddine BELAID",
+      "name_zh": "贝莱德"
+    },
+    "481027": {
+      "dqd_id": "50519113",
+      "name_en": "Louicius DEEDSON",
+      "name_zh": "迪德森"
+    },
+    "481180": {
+      "dqd_id": "50893789",
+      "name_en": "Shahriyar MOGHANLOO",
+      "name_zh": "莫汉卢"
+    },
+    "481181": {
+      "dqd_id": "50742981",
+      "name_en": "Arya YOUSEFI",
+      "name_zh": "优素菲"
+    },
+    "481183": {
+      "dqd_id": "50771947",
+      "name_en": "AKAM HASHIM",
+      "name_zh": "阿卡姆-哈希姆"
+    },
+    "481220": {
+      "dqd_id": "50281202",
+      "name_en": "Azizbek AMONOV",
+      "name_zh": "阿莫诺夫"
+    },
+    "481242": {
+      "dqd_id": "50225338",
+      "name_en": "Iqraam RAYNERS",
+      "name_zh": "雷内尔斯"
+    },
+    "481610": {
+      "dqd_id": "50245370",
+      "name_en": "Elliot ANDERSON",
+      "name_zh": "埃利奥特-安德森"
+    },
+    "482621": {
+      "dqd_id": "50665334",
+      "name_en": "Kobbie MAINOO",
+      "name_zh": "梅努"
+    },
+    "482670": {
+      "dqd_id": "50659704",
+      "name_en": "Mohammad GHORBANI",
+      "name_zh": "穆罕默德-戈尔巴尼"
+    },
+    "482774": {
+      "dqd_id": "50594202",
+      "name_en": "Martin BATURINA",
+      "name_zh": "巴图里纳"
+    },
+    "482775": {
+      "dqd_id": "50900867",
+      "name_en": "Tyler BINDON",
+      "name_zh": "宾登"
+    },
+    "482780": {
+      "dqd_id": "50563694",
+      "name_en": "KELVIN PIRES",
+      "name_zh": "凯尔文-皮雷斯"
+    },
+    "482782": {
+      "dqd_id": "50788168",
+      "name_en": "DAILON LIVRAMENTO",
+      "name_zh": "戴龙-利夫拉门托"
+    },
+    "482783": {
+      "dqd_id": "50820272",
+      "name_en": "WAGNER PINA",
+      "name_zh": "瓦格纳-皮纳"
+    },
+    "482869": {
+      "dqd_id": "50566322",
+      "name_en": "Jaouen HADJAM",
+      "name_zh": "阿贾姆"
+    },
+    "482874": {
+      "dqd_id": "50665265",
+      "name_en": "Anis HADJ MOUSSA",
+      "name_zh": "阿尼斯-穆萨"
+    },
+    "482885": {
+      "dqd_id": "50779608",
+      "name_en": "Elias SAAD",
+      "name_zh": "埃利亚斯-萨阿德"
+    },
+    "482931": {
+      "dqd_id": "50505790",
+      "name_en": "Marco PASALIC",
+      "name_zh": "马尔科-帕沙利奇"
+    },
+    "482969": {
+      "dqd_id": "50266175",
+      "name_en": "Nihad MUJAKIC",
+      "name_zh": "穆亚基奇"
+    },
+    "482974": {
+      "dqd_id": "50533531",
+      "name_en": "Ivan BASIC",
+      "name_zh": "伊万-巴希奇"
+    },
+    "482976": {
+      "dqd_id": "50462639",
+      "name_en": "Amar DEDIC",
+      "name_zh": "德迪奇"
+    },
+    "482978": {
+      "dqd_id": "50187530",
+      "name_en": "Nikola VASILJ",
+      "name_zh": "瓦西里"
+    },
+    "482984": {
+      "dqd_id": "50174512",
+      "name_en": "Haris TABAKOVIC",
+      "name_zh": "哈里斯-塔巴科维奇"
+    },
+    "483127": {
+      "dqd_id": "50254674",
+      "name_en": "NOUR BANIATEYAH",
+      "name_zh": "努尔丁-扎伊德"
+    },
+    "483161": {
+      "dqd_id": "50819192",
+      "name_en": "MOSTAFA ZICO",
+      "name_zh": "穆斯塔法-齐科"
+    },
+    "483182": {
+      "dqd_id": "50564764",
+      "name_en": "HOSSAM ABDELMAGUID",
+      "name_zh": "阿卜杜勒马吉德"
+    },
+    "483183": {
+      "dqd_id": "50503551",
+      "name_en": "MAHMOUD SABER",
+      "name_zh": "马哈茂德-萨比尔"
+    },
+    "483264": {
+      "dqd_id": "50217213",
+      "name_en": "Viktor JOHANSSON",
+      "name_zh": "维克托-约翰松"
+    },
+    "483276": {
+      "dqd_id": "50257633",
+      "name_en": "Gabriel GUDMUNDSSON",
+      "name_zh": "古德蒙松"
+    },
+    "483304": {
+      "dqd_id": "50412372",
+      "name_en": "Gustaf LAGERBIELKE",
+      "name_zh": "拉格比耶尔克"
+    },
+    "483312": {
+      "dqd_id": "50392009",
+      "name_en": "Isak HIEN",
+      "name_zh": "希恩"
+    },
+    "483319": {
+      "dqd_id": "50392753",
+      "name_en": "Hjalmar EKDAL",
+      "name_zh": "埃克达尔"
+    },
+    "483327": {
+      "dqd_id": "50244579",
+      "name_en": "Viktor GYOKERES",
+      "name_zh": "哲凯赖什"
+    },
+    "483442": {
+      "dqd_id": "50202325",
+      "name_en": "Patrick BERG",
+      "name_zh": "帕特里克-贝格"
+    },
+    "483448": {
+      "dqd_id": "50636573",
+      "name_en": "Antonio NUSA",
+      "name_zh": "努萨"
+    },
+    "483471": {
+      "dqd_id": "50122199",
+      "name_en": "Brice SAMBA",
+      "name_zh": "布里塞-桑巴"
+    },
+    "483481": {
+      "dqd_id": "50473571",
+      "name_en": "Mats WIEFFER",
+      "name_zh": "魏费尔"
+    },
+    "483496": {
+      "dqd_id": "50242797",
+      "name_en": "Julian RYERSON",
+      "name_zh": "瑞尔森"
+    },
+    "483497": {
+      "dqd_id": "50148467",
+      "name_en": "Fredrik AURSNES",
+      "name_zh": "奥尔斯内斯"
+    },
+    "483505": {
+      "dqd_id": "50495763",
+      "name_en": "David MOLLER WOLFE",
+      "name_zh": "戴维-沃尔费"
+    },
+    "483512": {
+      "dqd_id": "50699240",
+      "name_en": "Jorrel HATO",
+      "name_zh": "哈托"
+    },
+    "483516": {
+      "dqd_id": "50217670",
+      "name_en": "Kristoffer AJER",
+      "name_zh": "阿耶"
+    },
+    "483526": {
+      "dqd_id": "50410629",
+      "name_en": "Tijjani REIJNDERS",
+      "name_zh": "赖因德斯"
+    },
+    "483530": {
+      "dqd_id": "50249107",
+      "name_en": "Fredrik Andre BJORKAN",
+      "name_zh": "布约尔坎"
+    },
+    "483535": {
+      "dqd_id": "50241381",
+      "name_en": "Egil SELVIK",
+      "name_zh": "塞尔维克"
+    },
+    "483549": {
+      "dqd_id": "50665718",
+      "name_en": "Warren ZAIRE-EMERY",
+      "name_zh": "扎伊尔-埃梅里"
+    },
+    "483553": {
+      "dqd_id": "50402805",
+      "name_en": "Lutsharel GEERTRUIDA",
+      "name_zh": "海特勒伊达"
+    },
+    "483936": {
+      "dqd_id": "50425755",
+      "name_en": "David DOUDERA",
+      "name_zh": "道杰拉"
+    },
+    "483961": {
+      "dqd_id": "50136840",
+      "name_en": "Tomas CHORY",
+      "name_zh": "托马斯-绍里"
+    },
+    "483966": {
+      "dqd_id": "50559101",
+      "name_en": "Benjamin TAHIROVIC",
+      "name_zh": "塔希罗维奇"
+    },
+    "483990": {
+      "dqd_id": "50506230",
+      "name_en": "David JURASEK",
+      "name_zh": "尤拉塞克"
+    },
+    "484003": {
+      "dqd_id": "50478912",
+      "name_en": "Mojmir CHYTIL",
+      "name_zh": "希季尔"
+    },
+    "484011": {
+      "dqd_id": "50202852",
+      "name_en": "Lukas PROVOD",
+      "name_zh": "普罗沃德"
+    },
+    "484012": {
+      "dqd_id": "50457971",
+      "name_en": "Matej KOVAR",
+      "name_zh": "科瓦日"
+    },
+    "484022": {
+      "dqd_id": "50631209",
+      "name_en": "Tarik MUHAREMOVIC",
+      "name_zh": "穆哈雷莫维奇"
+    },
+    "484045": {
+      "dqd_id": "50156346",
+      "name_en": "Lawrence SHANKLAND",
+      "name_zh": "尚克兰"
+    },
+    "484051": {
+      "dqd_id": "50075080",
+      "name_en": "Kenny McLEAN",
+      "name_zh": "麦克莱恩"
+    },
+    "484065": {
+      "dqd_id": "50498839",
+      "name_en": "Eren ELMALI",
+      "name_zh": "埃尔马利"
+    },
+    "484072": {
+      "dqd_id": "50202424",
+      "name_en": "Samet AKAYDIN",
+      "name_zh": "阿卡伊登"
+    },
+    "484073": {
+      "dqd_id": "50216658",
+      "name_en": "Dominic HYAM",
+      "name_zh": "海亚姆"
+    },
+    "484082": {
+      "dqd_id": "50133283",
+      "name_en": "Abdulkerim BARDAKCI",
+      "name_zh": "巴尔达克奇"
+    },
+    "484087": {
+      "dqd_id": "50583482",
+      "name_en": "Arda GULER",
+      "name_zh": "居莱尔"
+    },
+    "484092": {
+      "dqd_id": "50465542",
+      "name_en": "Ismail YUKSEK",
+      "name_zh": "于克塞克"
+    },
+    "484112": {
+      "dqd_id": "50672752",
+      "name_en": "Kenan YILDIZ",
+      "name_zh": "伊尔迪兹"
+    },
+    "484113": {
+      "dqd_id": "50251336",
+      "name_en": "Ferdi KADIOGLU",
+      "name_zh": "卡迪奥卢"
+    },
+    "484139": {
+      "dqd_id": "50422594",
+      "name_en": "Baris Alper YILMAZ",
+      "name_zh": "巴里什-伊尔马兹"
+    },
+    "484141": {
+      "dqd_id": "50780874",
+      "name_en": "JOAO NEVES",
+      "name_zh": "若昂-内维斯"
+    },
+    "484262": {
+      "dqd_id": "50559181",
+      "name_en": "MARKO FARJI",
+      "name_zh": "马尔科-法尔吉"
+    },
+    "484270": {
+      "dqd_id": "50875589",
+      "name_en": "ZAID ISMAEL",
+      "name_zh": "扎伊德-伊斯梅尔"
+    },
+    "484276": {
+      "dqd_id": "50666004",
+      "name_en": "AHMED MAKNAZI",
+      "name_zh": "艾哈迈德-哈桑"
+    },
+    "484303": {
+      "dqd_id": "50759060",
+      "name_en": "Ruslanbek JIYANOV",
+      "name_zh": "吉亚诺夫"
+    },
+    "484320": {
+      "dqd_id": "50766368",
+      "name_en": "Lamine YAMAL",
+      "name_zh": "亚马尔"
+    },
+    "484691": {
+      "dqd_id": "50523065",
+      "name_en": "Joan GARCIA",
+      "name_zh": "霍安-加西亚"
+    },
+    "484698": {
+      "dqd_id": "50848199",
+      "name_en": "Assane DIAO",
+      "name_zh": "阿萨内-迪奥"
+    },
+    "484728": {
+      "dqd_id": "50597736",
+      "name_en": "Marc PUBILL",
+      "name_zh": "马克-普维尔"
+    },
+    "484817": {
+      "dqd_id": "50855981",
+      "name_en": "Lachlan BAYLISS",
+      "name_zh": "拉克伦-贝利斯"
+    },
+    "484848": {
+      "dqd_id": "50055034",
+      "name_en": "Pascal GROSS",
+      "name_zh": "格罗斯"
+    },
+    "484849": {
+      "dqd_id": "50665457",
+      "name_en": "Aleksandar PAVLOVIC",
+      "name_zh": "亚历山大-帕夫洛维奇"
+    },
+    "484850": {
+      "dqd_id": "50469434",
+      "name_en": "Maximilian BEIER",
+      "name_zh": "拜尔"
+    },
+    "484851": {
+      "dqd_id": "50238001",
+      "name_en": "Deniz UNDAV",
+      "name_zh": "昂达夫"
+    },
+    "484859": {
+      "dqd_id": "50469233",
+      "name_en": "Quinten TIMBER",
+      "name_zh": "昆滕-廷贝尔"
+    },
+    "484860": {
+      "dqd_id": "50527477",
+      "name_en": "Bradley BARCOLA",
+      "name_zh": "巴尔科拉"
+    },
+    "484862": {
+      "dqd_id": "50508322",
+      "name_en": "Marvin KELLER",
+      "name_zh": "凯勒"
+    },
+    "484864": {
+      "dqd_id": "50533892",
+      "name_en": "Aurele AMENDA",
+      "name_zh": "阿门达"
+    },
+    "485063": {
+      "dqd_id": "50635557",
+      "name_en": "Samed BAZDAR",
+      "name_zh": "巴兹达尔"
+    },
+    "485064": {
+      "dqd_id": "50791952",
+      "name_en": "Niko SIGUR",
+      "name_zh": "尼科-西古尔"
+    },
+    "485065": {
+      "dqd_id": "50577093",
+      "name_en": "Toni FRUK",
+      "name_zh": "托尼-弗鲁克"
+    },
+    "485066": {
+      "dqd_id": "50533548",
+      "name_en": "Petar SUCIC",
+      "name_zh": "佩塔尔-苏契奇"
+    },
+    "485068": {
+      "dqd_id": "50588149",
+      "name_en": "Igor MATANOVIC",
+      "name_zh": "马塔诺维奇"
+    },
+    "485069": {
+      "dqd_id": "50454995",
+      "name_en": "EDERSON SILVA",
+      "name_zh": "埃德松-席尔瓦"
+    },
+    "485070": {
+      "dqd_id": "50566128",
+      "name_en": "Raul RANGEL",
+      "name_zh": "何塞-兰赫尔"
+    },
+    "485080": {
+      "dqd_id": "50469448",
+      "name_en": "James TRAFFORD",
+      "name_zh": "特拉福德"
+    },
+    "485081": {
+      "dqd_id": "50469315",
+      "name_en": "FRANCISCO CONCEICAO",
+      "name_zh": "弗朗西斯科-孔塞桑"
+    },
+    "485131": {
+      "dqd_id": "50701833",
+      "name_en": "Ben GANNON-DOAK",
+      "name_zh": "本-多克"
+    },
+    "485324": {
+      "dqd_id": "50527174",
+      "name_en": "Arjany MARTHA",
+      "name_zh": "玛尔塔"
+    },
+    "485347": {
+      "dqd_id": "50453124",
+      "name_en": "Tahith CHONG",
+      "name_zh": "陈达毅"
+    },
+    "485379": {
+      "dqd_id": "50469555",
+      "name_en": "Shurandy SAMBO",
+      "name_zh": "桑博"
+    },
+    "485409": {
+      "dqd_id": "50852737",
+      "name_en": "Woodensky PIERRE",
+      "name_zh": "伍登斯基-皮埃尔"
+    },
+    "485503": {
+      "dqd_id": "50549169",
+      "name_en": "Yuito SUZUKI",
+      "name_zh": "铃木唯人"
+    },
+    "485595": {
+      "dqd_id": "50599157",
+      "name_en": "Giuliano SIMEONE",
+      "name_zh": "朱利亚诺-西蒙尼"
+    },
+    "485655": {
+      "dqd_id": "50475000",
+      "name_en": "Michael OLISE",
+      "name_zh": "奥利塞"
+    },
+    "485664": {
+      "dqd_id": "50468915",
+      "name_en": "Ruben PROVIDENCE",
+      "name_zh": "普罗维登斯"
+    },
+    "485666": {
+      "dqd_id": "50676510",
+      "name_en": "Maghnes AKLIOUCHE",
+      "name_zh": "阿克利乌什"
+    },
+    "485675": {
+      "dqd_id": "50460572",
+      "name_en": "Evann GUESSAND",
+      "name_zh": "盖桑"
+    },
+    "485676": {
+      "dqd_id": "50476297",
+      "name_en": "Lenny JOSEPH",
+      "name_zh": "约瑟夫"
+    },
+    "485677": {
+      "dqd_id": "50473081",
+      "name_en": "Manu KONE",
+      "name_zh": "夸迪奥-科内"
+    },
+    "485740": {
+      "dqd_id": "50460344",
+      "name_en": "Neil EL AYNAOUI",
+      "name_zh": "艾纳维"
+    },
+    "485756": {
+      "dqd_id": "50575089",
+      "name_en": "Zakaria EL OUAHDI",
+      "name_zh": "扎卡里亚-瓦赫迪"
+    },
+    "485760": {
+      "dqd_id": "50922131",
+      "name_en": "Ayyoub BOUADDI",
+      "name_zh": "布阿迪"
+    },
+    "485767": {
+      "dqd_id": "50667636",
+      "name_en": "Redouane HALHAL",
+      "name_zh": "哈勒哈勒"
+    },
+    "485802": {
+      "dqd_id": "50235708",
+      "name_en": "Alex ARCE",
+      "name_zh": "阿莱士-阿尔塞"
+    },
+    "485804": {
+      "dqd_id": "50773989",
+      "name_en": "Gustavo CABALLERO",
+      "name_zh": "古斯塔沃-卡瓦列罗"
+    },
+    "486074": {
+      "dqd_id": "50672748",
+      "name_en": "Can UZUN",
+      "name_zh": "詹-乌尊"
+    },
+    "486076": {
+      "dqd_id": "50436566",
+      "name_en": "Oguz AYDIN",
+      "name_zh": "艾丁"
+    },
+    "486080": {
+      "dqd_id": "50469464",
+      "name_en": "Robin HRANAC",
+      "name_zh": "赫拉纳奇"
+    },
+    "486081": {
+      "dqd_id": "50608704",
+      "name_en": "Lukas CERV",
+      "name_zh": "切尔夫"
+    },
+    "486082": {
+      "dqd_id": "50469467",
+      "name_en": "Pavel SULC",
+      "name_zh": "舒尔茨"
+    },
+    "486130": {
+      "dqd_id": "50655212",
+      "name_en": "Habib DIARRA",
+      "name_zh": "哈比卜-迪亚拉"
+    },
+    "486147": {
+      "dqd_id": "50778923",
+      "name_en": "Noah SADIKI",
+      "name_zh": "萨迪基"
+    },
+    "486150": {
+      "dqd_id": "50410828",
+      "name_en": "Jerome OPOKU",
+      "name_zh": "奥波库"
+    },
+    "486161": {
+      "dqd_id": "50873848",
+      "name_en": "Relebohile MOFOKENG",
+      "name_zh": "莫弗科恩"
+    },
+    "486168": {
+      "dqd_id": "50279845",
+      "name_en": "Cherif NDIAYE",
+      "name_zh": "切利夫-恩迪亚耶"
+    },
+    "486196": {
+      "dqd_id": "50475993",
+      "name_en": "Timothy FAYULU",
+      "name_zh": "法于卢"
+    },
+    "486213": {
+      "dqd_id": "50266719",
+      "name_en": "Brandon THOMAS-ASANTE",
+      "name_zh": "托马斯-阿桑特"
+    },
+    "486259": {
+      "dqd_id": "50658379",
+      "name_en": "Mohamed KONE",
+      "name_zh": "穆罕默德-科内"
+    },
+    "486260": {
+      "dqd_id": "50224845",
+      "name_en": "Christopher OPERI",
+      "name_zh": "克里斯托弗-奥佩里"
+    },
+    "486268": {
+      "dqd_id": "50518792",
+      "name_en": "Emmanuel AGBADOU",
+      "name_zh": "阿格巴杜"
+    },
+    "486306": {
+      "dqd_id": "50702968",
+      "name_en": "Nestory IRANKUNDA",
+      "name_zh": "伊兰昆达"
+    },
+    "486317": {
+      "dqd_id": "50526750",
+      "name_en": "Guela DOUE",
+      "name_zh": "盖拉-杜埃"
+    },
+    "486390": {
+      "dqd_id": "50839192",
+      "name_en": "Max ARFSTEN",
+      "name_zh": "阿尔夫斯滕"
+    },
+    "486614": {
+      "dqd_id": "50860864",
+      "name_en": "ALHASHMI ALHUSSEIN",
+      "name_zh": "哈什米-侯赛因"
+    },
+    "486639": {
+      "dqd_id": "50886024",
+      "name_en": "TAHSIN MOHAMMED",
+      "name_zh": "塔赫辛-贾姆希德"
+    },
+    "486875": {
+      "dqd_id": "50151492",
+      "name_en": "Gustavo VELAZQUEZ",
+      "name_zh": "古斯塔沃-贝拉斯克斯"
+    },
+    "486929": {
+      "dqd_id": "50778434",
+      "name_en": "Tani OLUWASEYI",
+      "name_zh": "奥卢瓦塞伊"
+    },
+    "489300": {
+      "dqd_id": "50440310",
+      "name_en": "Martin EXPERIENCE",
+      "name_zh": "埃克斯佩里恩塞"
+    },
+    "489417": {
+      "dqd_id": "50485438",
+      "name_en": "Isidro PITTA",
+      "name_zh": "皮塔"
+    },
+    "489517": {
+      "dqd_id": "50475338",
+      "name_en": "Jan Paul VAN HECKE",
+      "name_zh": "范赫克"
+    },
+    "489518": {
+      "dqd_id": "50469558",
+      "name_en": "Crysencio SUMMERVILLE",
+      "name_zh": "萨默维尔"
+    },
+    "489520": {
+      "dqd_id": "50256539",
+      "name_en": "Nikola KATIC",
+      "name_zh": "卡蒂奇"
+    },
+    "489521": {
+      "dqd_id": "50241001",
+      "name_en": "Stjepan RADELJIC",
+      "name_zh": "拉德利伊奇"
+    },
+    "489523": {
+      "dqd_id": "50495714",
+      "name_en": "Armin GIGOVIC",
+      "name_zh": "吉戈维奇"
+    },
+    "489550": {
+      "dqd_id": "50636887",
+      "name_en": "HUSAM ABUDAHAB",
+      "name_zh": "胡萨姆-达哈卜"
+    },
+    "489551": {
+      "dqd_id": "50492244",
+      "name_en": "MOHAMMAD ABUALNADI",
+      "name_zh": "穆罕默德-阿布阿尔纳迪"
+    },
+    "489603": {
+      "dqd_id": "50412395",
+      "name_en": "Ali NEMATI",
+      "name_zh": "内马蒂"
+    },
+    "489685": {
+      "dqd_id": "50482820",
+      "name_en": "Jacob WIDELL ZETTERSTROM",
+      "name_zh": "维德尔-塞特斯特伦"
+    },
+    "489688": {
+      "dqd_id": "50561373",
+      "name_en": "Yasin AYARI",
+      "name_zh": "亚辛-阿亚里"
+    },
+    "489689": {
+      "dqd_id": "50780694",
+      "name_en": "Lucas BERGVALL",
+      "name_zh": "卢卡斯-贝里瓦尔"
+    },
+    "489691": {
+      "dqd_id": "50217929",
+      "name_en": "Gustaf NILSSON",
+      "name_zh": "古斯塔夫-尼尔松"
+    },
+    "489696": {
+      "dqd_id": "50559855",
+      "name_en": "Sondre LANGAS",
+      "name_zh": "隆奥斯"
+    },
+    "489704": {
+      "dqd_id": "50816855",
+      "name_en": "RENATO VEIGA",
+      "name_zh": "雷纳托-韦加"
+    },
+    "489732": {
+      "dqd_id": "50468749",
+      "name_en": "Noni MADUEKE",
+      "name_zh": "马杜埃凯"
+    },
+    "489849": {
+      "dqd_id": "50414610",
+      "name_en": "Juan PORTILLA",
+      "name_zh": "波尔蒂利亚"
+    },
+    "491166": {
+      "dqd_id": "50631387",
+      "name_en": "Nishan VELUPILLAY",
+      "name_zh": "韦卢皮莱"
+    },
+    "491167": {
+      "dqd_id": "50778307",
+      "name_en": "AMER JAMOUS",
+      "name_zh": "阿米尔-贾穆斯"
+    },
+    "491216": {
+      "dqd_id": "50503475",
+      "name_en": "SAMU COSTA",
+      "name_zh": "萨穆-科斯塔"
+    },
+    "491218": {
+      "dqd_id": "50509755",
+      "name_en": "Jamie LEWELING",
+      "name_zh": "莱韦林"
+    },
+    "491228": {
+      "dqd_id": "50397997",
+      "name_en": "Martin ZLOMISLIC",
+      "name_zh": "兹洛米斯利奇"
+    },
+    "491244": {
+      "dqd_id": "50445569",
+      "name_en": "Torbjorn HEGGEM",
+      "name_zh": "黑格姆"
+    },
+    "491255": {
+      "dqd_id": "50542327",
+      "name_en": "Daniel SVENSSON",
+      "name_zh": "丹尼尔-斯文松"
+    },
+    "491269": {
+      "dqd_id": "50262583",
+      "name_en": "Michael SVOBODA",
+      "name_zh": "斯沃博达"
+    },
+    "492189": {
+      "dqd_id": "50772460",
+      "name_en": "Andres GOMEZ",
+      "name_zh": "安德烈斯-戈麦斯"
+    },
+    "492315": {
+      "dqd_id": "50603276",
+      "name_en": "LEE Gihyuk",
+      "name_zh": "李期奕"
+    },
+    "492358": {
+      "dqd_id": "50527501",
+      "name_en": "TOMAS ARAUJO",
+      "name_zh": "托马斯-阿劳若"
+    },
+    "492363": {
+      "dqd_id": "50469456",
+      "name_en": "Felix NMECHA",
+      "name_zh": "费利克斯-恩梅加"
+    },
+    "492716": {
+      "dqd_id": "50424970",
+      "name_en": "Morgan ROGERS",
+      "name_zh": "摩根-罗杰斯"
+    },
+    "492859": {
+      "dqd_id": "50701421",
+      "name_en": "Victor MUNOZ",
+      "name_zh": "维克托-穆尼奥斯"
+    },
+    "493061": {
+      "dqd_id": "50212217",
+      "name_en": "Eric SMITH",
+      "name_zh": "埃里克-史密斯"
+    },
+    "493221": {
+      "dqd_id": "50226752",
+      "name_en": "Miro MUHEIM",
+      "name_zh": "穆海姆"
+    },
+    "493970": {
+      "dqd_id": "50675289",
+      "name_en": "Promise DAVID",
+      "name_zh": "普罗米斯-戴维"
+    },
+    "493983": {
+      "dqd_id": "50499020",
+      "name_en": "AIMAR SHER",
+      "name_zh": "谢尔"
+    },
+    "494025": {
+      "dqd_id": "50793459",
+      "name_en": "Matias FERNANDEZ-PARDO",
+      "name_zh": "费尔南德斯-帕尔多"
+    },
+    "494246": {
+      "dqd_id": "50267665",
+      "name_en": "Sipho CHAINE",
+      "name_zh": "谢恩"
+    },
+    "494248": {
+      "dqd_id": "50545541",
+      "name_en": "Thalente MBATHA",
+      "name_zh": "姆巴萨"
+    },
+    "494277": {
+      "dqd_id": "50265788",
+      "name_en": "Yehvann DIOUF",
+      "name_zh": "耶万-迪乌夫"
+    },
+    "494279": {
+      "dqd_id": "50458905",
+      "name_en": "Antoine MENDY",
+      "name_zh": "安托万-门迪"
+    },
+    "494291": {
+      "dqd_id": "50854436",
+      "name_en": "Ibrahim MAZA",
+      "name_zh": "易卜拉欣-马扎"
+    },
+    "494293": {
+      "dqd_id": "50803043",
+      "name_en": "Chemsdine TALBI",
+      "name_zh": "塔勒比"
+    },
+    "494313": {
+      "dqd_id": "50253645",
+      "name_en": "YANNICK SEMEDO",
+      "name_zh": "扬尼克-塞梅多"
+    },
+    "494314": {
+      "dqd_id": "50560722",
+      "name_en": "TELMO ARCANJO",
+      "name_zh": "阿尔坎若"
+    },
+    "494345": {
+      "dqd_id": "50075085",
+      "name_en": "Dan BURN",
+      "name_zh": "丹-伯恩"
+    },
+    "494349": {
+      "dqd_id": "50803846",
+      "name_en": "Benjamin ASARE",
+      "name_zh": "本杰明-阿萨雷"
+    },
+    "494350": {
+      "dqd_id": "50864680",
+      "name_en": "Christopher Bonsu BAAH",
+      "name_zh": "巴阿"
+    },
+    "494351": {
+      "dqd_id": "50758583",
+      "name_en": "Jonas ADJETEY",
+      "name_zh": "阿杰伊-阿杰蒂"
+    },
+    "494374": {
+      "dqd_id": "50768669",
+      "name_en": "Hazem MASTOURI",
+      "name_zh": "马斯图里"
+    },
+    "494375": {
+      "dqd_id": "50391935",
+      "name_en": "Firas CHAOUAT",
+      "name_zh": "沙瓦"
+    },
+    "494411": {
+      "dqd_id": "50436656",
+      "name_en": "Kai TREWIN",
+      "name_zh": "特里温"
+    },
+    "494429": {
+      "dqd_id": "50860874",
+      "name_en": "Danial IRI",
+      "name_zh": "埃里"
+    },
+    "494458": {
+      "dqd_id": "50821385",
+      "name_en": "Ngalayel MUKAU",
+      "name_zh": "穆考"
+    },
+    "494506": {
+      "dqd_id": "50918243",
+      "name_en": "JEHAD THIKRI",
+      "name_zh": "吉哈德-塔克里"
+    },
+    "494531": {
+      "dqd_id": "50481973",
+      "name_en": "Orlando GILL",
+      "name_zh": "奥兰多-希尔"
+    },
+    "494557": {
+      "dqd_id": "50706670",
+      "name_en": "Patrick BEACH",
+      "name_zh": "帕特里克-比奇"
+    },
+    "494625": {
+      "dqd_id": "50446663",
+      "name_en": "Marcus HOLMGREN PEDERSEN",
+      "name_zh": "马库斯-彼得森"
+    },
+    "494626": {
+      "dqd_id": "50600609",
+      "name_en": "Andreas SCHJELDERUP",
+      "name_zh": "谢尔德鲁普"
+    },
+    "494627": {
+      "dqd_id": "50467091",
+      "name_en": "Thelo AASGAARD",
+      "name_zh": "奥斯高"
+    },
+    "494639": {
+      "dqd_id": "50861177",
+      "name_en": "Arjan MALIC",
+      "name_zh": "阿尔然-马利奇"
+    },
+    "494640": {
+      "dqd_id": "50887513",
+      "name_en": "Amar MEMIC",
+      "name_zh": "梅米奇"
+    },
+    "494742": {
+      "dqd_id": "50526942",
+      "name_en": "Youssef BELAMMARI",
+      "name_zh": "优素福-贝拉马里"
+    },
+    "494800": {
+      "dqd_id": "50221519",
+      "name_en": "SULTAN MANDASH",
+      "name_zh": "苏丹-马达什"
+    },
+    "494989": {
+      "dqd_id": "50629829",
+      "name_en": "Livano COMENENCIA",
+      "name_zh": "科梅嫩西亚"
+    },
+    "495046": {
+      "dqd_id": "50504654",
+      "name_en": "MAURICIO",
+      "name_zh": "毛里西奥"
+    },
+    "495054": {
+      "dqd_id": "50594508",
+      "name_en": "Jose Manuel LOPEZ",
+      "name_zh": "何塞-洛佩斯"
+    },
+    "495347": {
+      "dqd_id": "50851847",
+      "name_en": "Deniz GUL",
+      "name_zh": "德尼兹-居尔"
+    },
+    "495348": {
+      "dqd_id": "50468953",
+      "name_en": "Senne LAMMENS",
+      "name_zh": "拉门斯"
+    },
+    "495349": {
+      "dqd_id": "50406622",
+      "name_en": "Nicolas RASKIN",
+      "name_zh": "拉斯金"
+    },
+    "495431": {
+      "dqd_id": "50261163",
+      "name_en": "George HIRST",
+      "name_zh": "乔治-赫斯特"
+    },
+    "495488": {
+      "dqd_id": "51126194",
+      "name_en": "HAMZA ABDELKARIM",
+      "name_zh": "哈姆扎-阿卜杜勒卡里姆"
+    },
+    "496358": {
+      "dqd_id": "50936008",
+      "name_en": "Ibrahim MBAYE",
+      "name_zh": "姆巴耶"
+    },
+    "497902": {
+      "dqd_id": "50780919",
+      "name_en": "Diego MOREIRA",
+      "name_zh": "迭戈-莫雷拉"
+    },
+    "498416": {
+      "dqd_id": "50494505",
+      "name_en": "Nick WOLTEMADE",
+      "name_zh": "沃尔特马德"
+    },
+    "498421": {
+      "dqd_id": "50808064",
+      "name_en": "Paul OKON-ENGSTLER",
+      "name_zh": "奥孔-恩斯特勒"
+    },
+    "498439": {
+      "dqd_id": "50502047",
+      "name_en": "Wilguens PAUGAIN",
+      "name_zh": "波冈"
+    },
+    "498455": {
+      "dqd_id": "50772426",
+      "name_en": "Junnosuke SUZUKI",
+      "name_zh": "铃木淳之介"
+    },
+    "498458": {
+      "dqd_id": "50773270",
+      "name_en": "MOHAMED MANAI",
+      "name_zh": "穆罕默德-曼纳伊"
+    },
+    "498514": {
+      "dqd_id": "50860792",
+      "name_en": "ALI AZAIZEH",
+      "name_zh": "阿里-阿赛扎"
+    },
+    "498806": {
+      "dqd_id": "50551522",
+      "name_en": "Mohamed TOURE",
+      "name_zh": "穆罕默德-杜尔"
+    },
+    "499102": {
+      "dqd_id": "50487220",
+      "name_en": "SALEEM OBAID",
+      "name_zh": "萨利姆-奥贝德"
+    },
+    "499290": {
+      "dqd_id": "50812298",
+      "name_en": "Luka VUSKOVIC",
+      "name_zh": "卢卡-武什科维奇"
+    },
+    "499800": {
+      "dqd_id": "50680225",
+      "name_en": "Mamadou SARR",
+      "name_zh": "马马杜-萨尔"
+    },
+    "499803": {
+      "dqd_id": "50802802",
+      "name_en": "Mike PENDERS",
+      "name_zh": "彭德斯"
+    },
+    "499912": {
+      "dqd_id": "50546794",
+      "name_en": "Sebastian BERHALTER",
+      "name_zh": "贝尔哈特"
+    },
+    "499913": {
+      "dqd_id": "50403078",
+      "name_en": "Matt FREESE",
+      "name_zh": "弗里兹"
+    },
+    "500037": {
+      "dqd_id": "51018353",
+      "name_en": "Gilberto MORA",
+      "name_zh": "希尔韦托-莫拉"
+    },
+    "500038": {
+      "dqd_id": "50896104",
+      "name_en": "Mateo CHAVEZ",
+      "name_zh": "马特奥-查韦斯"
+    },
+    "502245": {
+      "dqd_id": "50861865",
+      "name_en": "Olwethu MAKHANYA",
+      "name_zh": "马汉亚"
+    },
+    "502727": {
+      "dqd_id": "50856995",
+      "name_en": "Johan MANZAMBI",
+      "name_zh": "曼赞比"
+    },
+    "502945": {
+      "dqd_id": "50477317",
+      "name_en": "Alexander BERNHARDSSON",
+      "name_zh": "伯恩哈德松"
+    },
+    "502946": {
+      "dqd_id": "50452456",
+      "name_en": "Benjamin NYGREN",
+      "name_zh": "尼格伦"
+    },
+    "503047": {
+      "dqd_id": "50533714",
+      "name_en": "Besfort ZENELI",
+      "name_zh": "泽内利"
+    },
+    "504192": {
+      "dqd_id": "51004031",
+      "name_en": "Khulumani NDAMANE",
+      "name_zh": "恩达马内"
+    },
+    "504193": {
+      "dqd_id": "50595193",
+      "name_en": "Tshepang MOREMI",
+      "name_zh": "莫雷米"
+    },
+    "504199": {
+      "dqd_id": "51093881",
+      "name_en": "Mbekezeli MBOKAZI",
+      "name_zh": "姆博卡齐"
+    },
+    "504200": {
+      "dqd_id": "50916125",
+      "name_en": "Samukele KABINI",
+      "name_zh": "卡比尼"
+    },
+    "504329": {
+      "dqd_id": "50553055",
+      "name_en": "Steve KAPUADI",
+      "name_zh": "卡普阿迪"
+    },
+    "504502": {
+      "dqd_id": "50443662",
+      "name_en": "Sebastian TOUNEKTI",
+      "name_zh": "图内克蒂"
+    },
+    "504931": {
+      "dqd_id": "51001313",
+      "name_en": "Lucas HERRINGTON",
+      "name_zh": "卢卡斯-赫林顿"
+    },
+    "504990": {
+      "dqd_id": "50985398",
+      "name_en": "Kerim ALAJBEGOVIC",
+      "name_zh": "阿拉伊贝戈维奇"
+    },
+    "505097": {
+      "dqd_id": "50917646",
+      "name_en": "Samir EL MOURABET",
+      "name_zh": "萨米尔-穆拉贝"
+    },
+    "505112": {
+      "dqd_id": "50947670",
+      "name_en": "Gessime YASSINE",
+      "name_zh": "亚辛"
+    },
+    "505495": {
+      "dqd_id": "51106508",
+      "name_en": "Alexandro MAIDANA",
+      "name_zh": "亚历山德罗-迈达纳"
+    },
+    "506028": {
+      "dqd_id": "50534595",
+      "name_en": "Robin ROEFS",
+      "name_zh": "罗埃夫斯"
+    },
+    "506038": {
+      "dqd_id": "50714159",
+      "name_en": "Kamogelo SEBELEBELE",
+      "name_zh": "塞贝勒贝莱"
+    },
+    "506039": {
+      "dqd_id": "50897971",
+      "name_en": "Ime OKON",
+      "name_zh": "伊梅-奥孔"
+    },
+    "506069": {
+      "dqd_id": "50448833",
+      "name_en": "KEVIN YAKOB",
+      "name_zh": "凯文-雅各布"
+    },
+    "506088": {
+      "dqd_id": "50803193",
+      "name_en": "Joaquin SEYS",
+      "name_zh": "若阿金-塞"
+    },
+    "506124": {
+      "dqd_id": "50845330",
+      "name_en": "TAREK ALAA",
+      "name_zh": "塔里克-阿拉"
+    },
+    "506202": {
+      "dqd_id": "50813936",
+      "name_en": "Bazoumana TOURE",
+      "name_zh": "巴祖马纳-杜尔"
+    },
+    "506277": {
+      "dqd_id": "50468346",
+      "name_en": "Joseph ANANG",
+      "name_zh": "约瑟夫-阿南"
+    },
+    "506279": {
+      "dqd_id": "51004814",
+      "name_en": "Caleb YIRENKYI",
+      "name_zh": "凯莱布-耶林基"
+    },
+    "506329": {
+      "dqd_id": "50429201",
+      "name_en": "Djed SPENCE",
+      "name_zh": "斯彭斯"
+    },
+    "506335": {
+      "dqd_id": "50777722",
+      "name_en": "Moutaz NEFFATI",
+      "name_zh": "穆塔兹-内法蒂"
+    },
+    "506471": {
+      "dqd_id": "50890007",
+      "name_en": "Deveron FONVILLE",
+      "name_zh": "丰维尔"
+    },
+    "506473": {
+      "dqd_id": "50853585",
+      "name_en": "Tyrese NOSLIN",
+      "name_zh": "诺斯林"
+    },
+    "506481": {
+      "dqd_id": "50991012",
+      "name_en": "Keeto THERMONCY",
+      "name_zh": "泰尔蒙西"
+    },
+    "506483": {
+      "dqd_id": "50248205",
+      "name_en": "Yassin FORTUNE",
+      "name_zh": "福琼"
+    },
+    "506775": {
+      "dqd_id": "50999574",
+      "name_en": "Hugo SOCHUREK",
+      "name_zh": "索胡雷克"
+    },
+    "507253": {
+      "dqd_id": "50450879",
+      "name_en": "Kwasi SIBO",
+      "name_zh": "夸西-西博"
+    },
+    "510757": {
+      "dqd_id": "50460518",
+      "name_en": "Josue CASIMIR",
+      "name_zh": "卡西米尔"
+    },
+    "510850": {
+      "dqd_id": "50852917",
+      "name_en": "Thabang MATULUDI",
+      "name_zh": "马图鲁迪"
+    },
+    "510908": {
+      "dqd_id": "50645738",
+      "name_en": "Luca JAQUEZ",
+      "name_zh": "卢卡-雅克"
+    },
+    "510922": {
+      "dqd_id": "51100200",
+      "name_en": "Yan DIOMANDE",
+      "name_zh": "扬-迪奥曼德"
+    },
+    "510989": {
+      "dqd_id": "50573580",
+      "name_en": "Brian CIPENGA",
+      "name_zh": "西蓬加"
+    },
+    "510991": {
+      "dqd_id": "50799110",
+      "name_en": "AYOUB ALOUI",
+      "name_zh": "阿尤布-维"
+    },
+    "511009": {
+      "dqd_id": "50771335",
+      "name_en": "Rafik BELGHALI",
+      "name_zh": "拉菲克-贝尔加利"
+    },
+    "511010": {
+      "dqd_id": "50268704",
+      "name_en": "Samir CHERGUI",
+      "name_zh": "谢尔吉"
+    },
+    "511015": {
+      "dqd_id": "50744490",
+      "name_en": "Nathaniel BROWN",
+      "name_zh": "纳撒尼尔-布朗"
+    },
+    "511022": {
+      "dqd_id": "50860305",
+      "name_en": "Kojo Peprah OPPONG",
+      "name_zh": "科乔-奥蓬"
+    },
+    "511118": {
+      "dqd_id": "50474302",
+      "name_en": "Lukas HORNICEK",
+      "name_zh": "霍尔尼切克"
+    },
+    "511141": {
+      "dqd_id": "50251338",
+      "name_en": "Armando OBISPO",
+      "name_zh": "奥比斯波"
+    },
+    "511710": {
+      "dqd_id": "50604728",
+      "name_en": "Tomoki HAYAKAWA",
+      "name_zh": "早川友基"
+    },
+    "511828": {
+      "dqd_id": "50564362",
+      "name_en": "CASTROP Jens",
+      "name_zh": "卡斯特罗普"
+    },
+    "511875": {
+      "dqd_id": "50976097",
+      "name_en": "ODEH FAKHOURY",
+      "name_zh": "乌达-法胡里"
+    },
+    "511889": {
+      "dqd_id": "51089566",
+      "name_en": "ANAS BADAWI",
+      "name_zh": "阿纳斯-巴达维"
+    },
+    "512039": {
+      "dqd_id": "50935017",
+      "name_en": "Khalil AYARI",
+      "name_zh": "哈利勒-阿亚里"
+    },
+    "512079": {
+      "dqd_id": "51023366",
+      "name_en": "MOHAMED ALAA",
+      "name_zh": "穆罕默德-阿拉"
+    },
+    "512127": {
+      "dqd_id": "50780059",
+      "name_en": "Achref ABADA",
+      "name_zh": "阿赫雷夫-阿巴达"
+    },
+    "512132": {
+      "dqd_id": "50717882",
+      "name_en": "Adil BOULBINA",
+      "name_zh": "布勒比纳"
+    },
+    "512183": {
+      "dqd_id": "50920093",
+      "name_en": "MOHAMMED ABU ALSHAMAT",
+      "name_zh": "穆罕默德-阿布沙马特"
+    },
+    "512791": {
+      "dqd_id": "51004011",
+      "name_en": "ISSA LAYE",
+      "name_zh": "伊萨-拉耶"
+    },
+    "514070": {
+      "dqd_id": "50267561",
+      "name_en": "Alfie JONES",
+      "name_zh": "阿尔菲-琼斯"
+    },
+    "514166": {
+      "dqd_id": "50534550",
+      "name_en": "Nathan NGOY",
+      "name_zh": "恩戈伊"
+    },
+    "514171": {
+      "dqd_id": "50636565",
+      "name_en": "Matthieu EPOLO",
+      "name_zh": "埃波洛"
+    },
+    "514188": {
+      "dqd_id": "50468857",
+      "name_en": "Malick THIAW",
+      "name_zh": "马利克-佳夫"
+    },
+    "514202": {
+      "dqd_id": "50551112",
+      "name_en": "Taha ALI",
+      "name_zh": "塔哈-阿里"
+    },
+    "514208": {
+      "dqd_id": "51000925",
+      "name_en": "Christ Inao OULAI",
+      "name_zh": "乌拉伊"
+    },
+    "514326": {
+      "dqd_id": "50799927",
+      "name_en": "Jeremy AREVALO",
+      "name_zh": "赫雷米-阿雷瓦洛"
+    },
+    "514334": {
+      "dqd_id": "50787098",
+      "name_en": "Stepan CHALOUPEK",
+      "name_zh": "哈劳佩克"
+    },
+    "514336": {
+      "dqd_id": "50584173",
+      "name_en": "Armando GONZALEZ",
+      "name_zh": "阿曼多-冈萨雷斯"
+    },
+    "514401": {
+      "dqd_id": "50853630",
+      "name_en": "Prince ADU",
+      "name_zh": "普林斯-阿杜"
+    },
+    "514479": {
+      "dqd_id": "50467086",
+      "name_en": "Sander TANGVIK",
+      "name_zh": "唐维克"
+    },
+    "514526": {
+      "dqd_id": "50453791",
+      "name_en": "Ivor PANDUR",
+      "name_zh": "潘杜尔"
+    },
+    "514639": {
+      "dqd_id": "50462984",
+      "name_en": "Herman JOHANSSON",
+      "name_zh": "赫尔曼-约翰松"
+    },
+    "516043": {
+      "dqd_id": "50861081",
+      "name_en": "Adam AROUS",
+      "name_zh": "阿德姆-阿鲁"
+    },
+    "518200": {
+      "dqd_id": "50595823",
+      "name_en": "Tete YENGI",
+      "name_zh": "泰特-延吉"
+    },
+    "518264": {
+      "dqd_id": "50424436",
+      "name_en": "Avazbek ULMASALIYEV",
+      "name_zh": "乌尔马萨利耶夫"
+    },
+    "519836": {
+      "dqd_id": "50548949",
+      "name_en": "IGOR THIAGO",
+      "name_zh": "伊戈尔-蒂亚戈"
+    },
+    "519837": {
+      "dqd_id": "50210909",
+      "name_en": "Dennis DARGAHI",
+      "name_zh": "埃克特"
+    },
+    "519954": {
+      "dqd_id": "50450855",
+      "name_en": "Jovo LUKIC",
+      "name_zh": "卢基奇"
+    },
+    "519958": {
+      "dqd_id": "50505386",
+      "name_en": "Elliot STROUD",
+      "name_zh": "埃利奥特-斯特劳德"
+    },
+    "519985": {
+      "dqd_id": "50527311",
+      "name_en": "Denis VISINSKY",
+      "name_zh": "维辛斯基"
+    },
+    "520034": {
+      "dqd_id": "50428066",
+      "name_en": "Florian WIEGELE",
+      "name_zh": "维格勒"
+    },
+    "520035": {
+      "dqd_id": "50508858",
+      "name_en": "David AFFENGRUBER",
+      "name_zh": "阿芬格鲁贝尔"
+    },
+    "520036": {
+      "dqd_id": "50668361",
+      "name_en": "Paul WANNER",
+      "name_zh": "保罗-万纳"
+    },
+    "520037": {
+      "dqd_id": "50205802",
+      "name_en": "Derrick LUCKASSEN",
+      "name_zh": "卢卡森"
+    },
+    "520039": {
+      "dqd_id": "50503809",
+      "name_en": "Marvin SENAYA",
+      "name_zh": "斯纳亚"
+    },
+    "520066": {
+      "dqd_id": "50239764",
+      "name_en": "Jose CANALE",
+      "name_zh": "卡纳莱"
+    },
+    "520068": {
+      "dqd_id": "50976092",
+      "name_en": "MOHAMMAD ABUGHOUSH",
+      "name_zh": "穆罕默德-塔哈"
+    },
+    "520070": {
+      "dqd_id": "50602326",
+      "name_en": "Melvin MASTIL",
+      "name_zh": "马斯季尔"
+    },
+    "520071": {
+      "dqd_id": "50588122",
+      "name_en": "Nadhir BENBOUALI",
+      "name_zh": "本布阿利"
+    },
+    "520072": {
+      "dqd_id": "50795547",
+      "name_en": "Fares GHEDJEMIS",
+      "name_zh": "盖杰米"
+    },
+    "520112": {
+      "dqd_id": "50540245",
+      "name_en": "Henrik FALCHENER",
+      "name_zh": "法尔切纳"
+    },
+    "520217": {
+      "dqd_id": "50907287",
+      "name_en": "Findlay CURTIS",
+      "name_zh": "芬德利-柯蒂斯"
+    },
+    "520218": {
+      "dqd_id": "50883651",
+      "name_en": "Kento SHIOGAI",
+      "name_zh": "盐贝健人"
+    },
+    "520245": {
+      "dqd_id": "50828305",
+      "name_en": "Mouhib CHAMAKH",
+      "name_zh": "阿卜杜勒穆希卜-查马克"
+    },
+    "520246": {
+      "dqd_id": "50832256",
+      "name_en": "Raed CHIKHAOUI",
+      "name_zh": "雷德-奇卡维"
+    },
+    "520247": {
+      "dqd_id": "51157615",
+      "name_en": "Rayan ELLOUMI",
+      "name_zh": "拉扬-埃卢米"
+    },
+    "522282": {
+      "dqd_id": "50779295",
+      "name_en": "CHO Wije",
+      "name_zh": "赵伟济"
+    },
+    "522842": {
+      "dqd_id": "50990152",
+      "name_en": "Mladen JURKAS",
+      "name_zh": "尤尔卡斯"
+    },
+    "522846": {
+      "dqd_id": "50896526",
+      "name_en": "Ermin MAHMIC",
+      "name_zh": "埃尔明-马赫米奇"
+    },
+    "523007": {
+      "dqd_id": "50855991",
+      "name_en": "Tyler FLETCHER",
+      "name_zh": "泰勒-弗莱彻"
+    },
+    "523097": {
+      "dqd_id": "50826527",
+      "name_en": "Alexandr SOJKA",
+      "name_zh": "索伊卡"
+    },
+    "523173": {
+      "dqd_id": "50613798",
+      "name_en": "Augustine BOAKYE",
+      "name_zh": "博阿基耶"
+    },
+    "523215": {
+      "dqd_id": "50746229",
+      "name_en": "Dominique SIMON",
+      "name_zh": "多米尼克-西蒙"
+    },
+    "523236": {
+      "dqd_id": "50539972",
+      "name_en": "AHMED QASEM",
+      "name_zh": "卡西姆"
+    },
+    "523288": {
+      "dqd_id": "50740670",
+      "name_en": "Ayoube AMAIMOUNI",
+      "name_zh": "阿迈穆尼-埃奇古亚布"
+    },
+    "523333": {
+      "dqd_id": "50352872",
+      "name_en": "ALA ALHAJJI",
+      "name_zh": "阿拉-赫吉"
+    },
+    "523354": {
+      "dqd_id": "51193581",
+      "name_en": "Bara Sapoko NDIAYE",
+      "name_zh": "巴拉-恩迪亚耶"
+    },
+    "524320": {
+      "dqd_id": "50683193",
+      "name_en": "Amine SBAI",
+      "name_zh": "阿明-西巴伊"
+    }
+  },
+  "provider": "懂球帝"
+}

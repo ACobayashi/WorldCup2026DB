@@ -12,6 +12,7 @@ final class Formation extends ReadModel {
     $entry=$snapshot['matches']['fifa:match:'.$mapping['source_id']]??null;
     if(!is_array($entry)||($snapshot['edition']??null)!==2026||($entry['kickoff_at']??null)!==(new \DateTimeImmutable($match['kickoff_at'],new \DateTimeZone('UTC')))->format('Y-m-d\TH:i:s\Z'))return null;
     $people=$this->rows("SELECT a.player_id,a.team_id,a.shirt_number,a.is_starter,p.name,p.position,m.source_id,tm.source_id AS source_team FROM wc_match_appearances a JOIN wc_players p ON p.id=a.player_id JOIN wc_source_mappings m ON m.player_id=p.id AND m.provider='fifa' AND m.entity_type='player' JOIN wc_source_mappings tm ON tm.team_id=a.team_id AND tm.provider='fifa' AND tm.entity_type='team' WHERE a.match_id=:id AND a.is_starter=1",['id'=>$match['id']]);
+    $people=(new PlayerIdentity($this->db))->attach($people,'player_id');
     $bySource=[];foreach($people as $p)$bySource['fifa:player:'.$p['source_id']]=$p;
     if(count($bySource)!==22)return null;
     $result=['source_url'=>$entry['source_url']??'','sides'=>[]];$seen=[];

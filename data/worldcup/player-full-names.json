@@ -1,0 +1,4165 @@
+{
+  "edition": 2026,
+  "provider": "Wikidata/Wikipedia + FIFA",
+  "method": "Prefer exact English-Wikipedia-to-Chinese identity links; supplement missing entries with exact FIFA player IDs from official zh-CN tournament squads. No transliteration generated.",
+  "requested": 1248,
+  "available": 831,
+  "unavailable": 417,
+  "players": {
+    "201200": {
+      "full_name_zh": "克里斯蒂亚诺·罗纳尔多",
+      "enwiki_title": "Cristiano Ronaldo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "215285": {
+      "full_name_zh": "吉列尔莫·奥乔亚",
+      "enwiki_title": "Guillermo Ochoa",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "215553": {
+      "full_name_zh": "克莱格·戈登",
+      "enwiki_title": "Craig Gordon",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "228686": {
+      "full_name_zh": "戴维·奥斯皮纳",
+      "enwiki_title": "David Ospina",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "228912": {
+      "full_name_zh": "曼努埃尔·诺伊尔",
+      "enwiki_title": "Manuel Neuer",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "229397": {
+      "full_name_zh": "利昂内尔·梅西",
+      "enwiki_title": "Lionel Messi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "229498": {
+      "full_name_zh": "费尔南多·穆斯莱拉",
+      "enwiki_title": "Fernando Muslera",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "261367": {
+      "full_name_zh": "邁克·伯克薩爾",
+      "enwiki_title": "Michael Boxall",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "267702": {
+      "full_name_zh": "路易斯 梅贾",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43914/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "269058": {
+      "full_name_zh": "詹姆斯·罗德里格斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43926/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "269514": {
+      "full_name_zh": "阿尼巴尔·戈多伊",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43914/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "269592": {
+      "full_name_zh": "哥斯達·巴巴路西斯",
+      "enwiki_title": "Kosta Barbarouses",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "271116": {
+      "full_name_zh": "阿尔贝托·金特罗",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43914/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "274078": {
+      "full_name_zh": "克里斯·伍德",
+      "enwiki_title": "Chris Wood",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "274102": {
+      "full_name_zh": "汤米·史密斯",
+      "enwiki_title": "Tommy Smith",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "274281": {
+      "full_name_zh": "金承奎",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "275917": {
+      "full_name_zh": "里卡多·阿德",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43908/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "284190": {
+      "full_name_zh": "哈桑·阿尔海多斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43834/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "290821": {
+      "full_name_zh": "阿克塞尔·维特塞尔",
+      "enwiki_title": "Axel Witsel",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "291372": {
+      "full_name_zh": "长友佑都",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43819/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "295922": {
+      "full_name_zh": "乔伊·帕拉希德",
+      "enwiki_title": "Johny Placide",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "297266": {
+      "full_name_zh": "拉尼奎·多斯桑托斯·塔瓦雷斯",
+      "enwiki_title": "Stopira",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "300409": {
+      "full_name_zh": "埃丁·哲科",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/44037/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "306538": {
+      "full_name_zh": "奥利弗·鲍曼",
+      "enwiki_title": "Oliver Baumann",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "307849": {
+      "full_name_zh": "孙兴慜",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "308300": {
+      "full_name_zh": "达米安·马丁内斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43922/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "308322": {
+      "full_name_zh": "尼古拉斯·塔利亚菲科",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43922/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "308370": {
+      "full_name_zh": "艾莉森",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43924/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "308386": {
+      "full_name_zh": "卡斯米路",
+      "enwiki_title": "Casemiro",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "311558": {
+      "full_name_zh": "格拉尼特·扎卡",
+      "enwiki_title": "Granit Xhaka",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "313559": {
+      "full_name_zh": "里卡多·罗德里格斯",
+      "enwiki_title": "Ricardo Rodriguez",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "314255": {
+      "full_name_zh": "侯赛因·侯赛尼",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43817/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "315614": {
+      "full_name_zh": "圣地亚哥·阿里亚斯",
+      "enwiki_title": "Santiago Arias",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "316002": {
+      "full_name_zh": "大衛·阿拉巴",
+      "enwiki_title": "David Alaba",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "321697": {
+      "full_name_zh": "马修·莱基",
+      "enwiki_title": "Mathew Leckie",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "331135": {
+      "full_name_zh": "保罗·伊佐",
+      "enwiki_title": "Paul Izzo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "331149": {
+      "full_name_zh": "米洛斯·德杰内克",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43976/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "331463": {
+      "full_name_zh": "蒂姆·佩恩",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43978/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "331732": {
+      "full_name_zh": "马克西姆·克雷波",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43899/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "332314": {
+      "full_name_zh": "伊德里萨·加纳·盖耶",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43879/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "332847": {
+      "full_name_zh": "莱安德罗·帕雷德斯",
+      "enwiki_title": "Leandro Paredes",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "332897": {
+      "full_name_zh": "罗德里戈·阿吉雷",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43930/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "332946": {
+      "full_name_zh": "马尔基尼奥斯",
+      "enwiki_title": "Marquinhos",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "335656": {
+      "full_name_zh": "达尼洛",
+      "enwiki_title": "Danilo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "335658": {
+      "full_name_zh": "格菲臣",
+      "enwiki_title": "Alex Sandro",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "335807": {
+      "full_name_zh": "让·迈克尔·塞里",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43854/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "335999": {
+      "full_name_zh": "埃梅里克·拉波爾特",
+      "enwiki_title": "Aymeric Laporte",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "336022": {
+      "full_name_zh": "乔丹·皮克福德",
+      "enwiki_title": "Jordan Pickford",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "336098": {
+      "full_name_zh": "孟菲斯·德佩",
+      "enwiki_title": "Memphis Depay",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "336170": {
+      "full_name_zh": "卡恩·艾漢",
+      "enwiki_title": "Kaan Ayhan",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "336425": {
+      "full_name_zh": "塞德里克·巴坎布",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/20014/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "336439": {
+      "full_name_zh": "盖尔·卡库塔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/20014/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "336459": {
+      "full_name_zh": "蘭尼·基迪拉",
+      "enwiki_title": "Rani Khedira",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "336472": {
+      "full_name_zh": "安德烈·克拉马里克",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43938/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "336641": {
+      "full_name_zh": "瑞安·托馬斯",
+      "enwiki_title": "Ryan Thomas",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "337232": {
+      "full_name_zh": "艾瑞克·戴維斯",
+      "enwiki_title": "Eric Davis",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "337251": {
+      "full_name_zh": "塞西利歐·沃特曼",
+      "enwiki_title": "Cecilio Waterman",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "337389": {
+      "full_name_zh": "托尼·拉斯通",
+      "enwiki_title": "Anthony Ralston",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "339112": {
+      "full_name_zh": "贾森·杰里亚",
+      "enwiki_title": "Jason Geria",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "339117": {
+      "full_name_zh": "马修·瑞安",
+      "enwiki_title": "Mathew Ryan",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "339510": {
+      "full_name_zh": "蒂姆·里姆",
+      "enwiki_title": "Tim Ream",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "339746": {
+      "full_name_zh": "艾哈迈德·阿尔卡萨",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43835/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "339820": {
+      "full_name_zh": "高列巴尼",
+      "enwiki_title": "Kalidou Koulibaly",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "344582": {
+      "full_name_zh": "罗德里克·米勒",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43914/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "344654": {
+      "full_name_zh": "穆罕默德·萨拉赫",
+      "enwiki_title": "Mohamed Salah",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "345059": {
+      "full_name_zh": "阿卜杜勒阿齐玆·哈特姆",
+      "enwiki_title": "Abdulaziz Hatem",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "347085": {
+      "full_name_zh": "贾拉尔·哈桑",
+      "enwiki_title": "Jalal Hassan",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "349342": {
+      "full_name_zh": "阿齐兹·比伊奇",
+      "enwiki_title": "Aziz Behich",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "353235": {
+      "full_name_zh": "乔丹·阿尤",
+      "enwiki_title": "Jordan Ayew",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "353251": {
+      "full_name_zh": "艾哈迈德·艾勒丁",
+      "enwiki_title": "Ahmed Alaaeldin",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "353790": {
+      "full_name_zh": "萨迪奥·马内",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43879/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "354861": {
+      "full_name_zh": "卡里姆·布迪亚夫",
+      "enwiki_title": "Karim Boudiaf",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "355642": {
+      "full_name_zh": "賴恩·文迪斯",
+      "enwiki_title": "Ryan Mendes",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "355775": {
+      "full_name_zh": "杰克遜·歐文",
+      "enwiki_title": "Jackson Irvine",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "356189": {
+      "full_name_zh": "乔丹·亨德森",
+      "enwiki_title": "Jordan Henderson",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "356412": {
+      "full_name_zh": "西尔万·威德默",
+      "enwiki_title": "Silvan Widmer",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "356532": {
+      "full_name_zh": "文古魯",
+      "enwiki_title": "Chancel Mbemba",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "356704": {
+      "full_name_zh": "胡安·昆特罗",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43926/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "356731": {
+      "full_name_zh": "劳尔·希门尼斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43911/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "356956": {
+      "full_name_zh": "亚辛·布努",
+      "enwiki_title": "Yassine Bounou",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "358003": {
+      "full_name_zh": "弗拉基米尔·达里达",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43995/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "358106": {
+      "full_name_zh": "蒂博·库尔图瓦",
+      "enwiki_title": "Thibaut Courtois",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "358112": {
+      "full_name_zh": "罗梅卢·卢卡库",
+      "enwiki_title": "Romelu Lukaku",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "358120": {
+      "full_name_zh": "凯文·德布劳内",
+      "enwiki_title": "Kevin De Bruyne",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "358122": {
+      "full_name_zh": "托馬斯·穆尼爾",
+      "enwiki_title": "Thomas Meunier",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "358241": {
+      "full_name_zh": "馬塞爾·薩比策",
+      "enwiki_title": "Marcel Sabitzer",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "359381": {
+      "full_name_zh": "伊万·佩里西奇",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43938/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "359634": {
+      "full_name_zh": "格蘭特·漢利",
+      "enwiki_title": "Grant Hanley",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "360496": {
+      "full_name_zh": "克里斯托夫·諾德弗爾特",
+      "enwiki_title": "Kristoffer Nordfeldt",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "360642": {
+      "full_name_zh": "卡米羅·巴爾加斯",
+      "enwiki_title": "Camilo Vargas",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "363863": {
+      "full_name_zh": "特雷泽盖",
+      "enwiki_title": "Trezeguet",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "364752": {
+      "full_name_zh": "尤萨玛·迪亚斯",
+      "enwiki_title": "Vozinha",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "367536": {
+      "full_name_zh": "巴巴·拉赫曼",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43860/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "367981": {
+      "full_name_zh": "道格拉斯·桑托斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43924/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "368535": {
+      "full_name_zh": "麥斯·克羅科姆",
+      "enwiki_title": "Max Crocombe",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "368545": {
+      "full_name_zh": "賈姆什德·伊斯坎德羅夫",
+      "enwiki_title": "Jamshid Iskanderov",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "368546": {
+      "full_name_zh": "伊戈尔·谢尔盖耶夫",
+      "enwiki_title": "Igor Sergeev",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "368660": {
+      "full_name_zh": "吉列尔莫·瓦雷拉",
+      "enwiki_title": "Guillermo Varela",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "368664": {
+      "full_name_zh": "塞尔吉奥·罗切特",
+      "enwiki_title": "Sergio Rochet",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "368689": {
+      "full_name_zh": "何塞·萨",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43963/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "368744": {
+      "full_name_zh": "法赫德·塔利布",
+      "enwiki_title": "Fahad Talib",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "368860": {
+      "full_name_zh": "盧卡斯·迪尼",
+      "enwiki_title": "Lucas Digne",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "369029": {
+      "full_name_zh": "多米尼克·利瓦科维奇",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43938/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "369089": {
+      "full_name_zh": "托马斯·帕尔特伊",
+      "enwiki_title": "Thomas Partey",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "369267": {
+      "full_name_zh": "亞西爾·伊巴謙",
+      "enwiki_title": "Yasser Ibrahim",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "369419": {
+      "full_name_zh": "哈里·凯恩",
+      "enwiki_title": "Harry Kane",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "369434": {
+      "full_name_zh": "约翰·斯通斯",
+      "enwiki_title": "John Stones",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "369749": {
+      "full_name_zh": "朱尼尔·阿隆索",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43928/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "369761": {
+      "full_name_zh": "米格尔·阿尔米隆",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43928/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "369768": {
+      "full_name_zh": "辛拿比亞",
+      "enwiki_title": "Antonio Sanabria",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "370171": {
+      "full_name_zh": "阿卜杜拉耶·塞克",
+      "enwiki_title": "Abdoulaye Seck",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "370986": {
+      "full_name_zh": "喬納坦·歐索里歐",
+      "enwiki_title": "Jonathan Osorio",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "371142": {
+      "full_name_zh": "亚历克斯·鲁费尔",
+      "enwiki_title": "Alex Rufer",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "371348": {
+      "full_name_zh": "舒库罗夫",
+      "enwiki_title": "Otabek Shukurov",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "371393": {
+      "full_name_zh": "多斯顿别克·哈姆达莫夫",
+      "enwiki_title": "Dostonbek Khamdamov",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "371415": {
+      "full_name_zh": "鲁斯塔姆忠·阿舒尔马托夫",
+      "enwiki_title": "Rustam Ashurmatov",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "371553": {
+      "full_name_zh": "艾邁德·雷達·達拿奧迪",
+      "enwiki_title": "Ahmed Reda Tagnaouti",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "371609": {
+      "full_name_zh": "弗兰克·凯西",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43854/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "371736": {
+      "full_name_zh": "赛义德·伊扎图拉希",
+      "enwiki_title": "Saeid Ezatolahi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "371739": {
+      "full_name_zh": "亞歷山大·施拉格",
+      "enwiki_title": "Alexander Schlager",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "371958": {
+      "full_name_zh": "德里克·科尼利厄斯",
+      "enwiki_title": "Derek Cornelius",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "372090": {
+      "full_name_zh": "奥贝林-皮内达",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43911/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "372243": {
+      "full_name_zh": "菲利普·利恩哈特",
+      "enwiki_title": "Philipp Lienhart",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "372266": {
+      "full_name_zh": "索夫扬·阿姆拉巴特",
+      "enwiki_title": "Sofyan Amrabat",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "372294": {
+      "full_name_zh": "萨布里·本·黑森",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43888/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "372342": {
+      "full_name_zh": "伊斯梅尔·迪亚兹",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43914/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "372424": {
+      "full_name_zh": "杜耶-卡莱塔-卡尔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43938/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "372436": {
+      "full_name_zh": "伊万·孙吉克",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/44037/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "373235": {
+      "full_name_zh": "尼兰",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43961/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "373344": {
+      "full_name_zh": "加里·羅德里格斯",
+      "enwiki_title": "Garry Rodrigues",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "373400": {
+      "full_name_zh": "恩纳·瓦伦西亚",
+      "enwiki_title": "Enner Valencia",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "375600": {
+      "full_name_zh": "亚历山德罗·肖普夫",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43934/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "376230": {
+      "full_name_zh": "西德 科拉西纳克",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/44037/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "376285": {
+      "full_name_zh": "艾萨 曼迪",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43843/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "379886": {
+      "full_name_zh": "阿里雷扎·贾汉巴赫什",
+      "enwiki_title": "Alireza Jahanbakhsh",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "379939": {
+      "full_name_zh": "拿比爾·賓特納",
+      "enwiki_title": "Nabil Bentaleb",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "379942": {
+      "full_name_zh": "里亚德·马赫雷斯",
+      "enwiki_title": "Riyad Mahrez",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "379953": {
+      "full_name_zh": "萊昂·格雷茨卡",
+      "enwiki_title": "Leon Goretzka",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "380005": {
+      "full_name_zh": "马里奥·帕萨里克",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43938/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "380007": {
+      "full_name_zh": "阿里雷扎·贝兰万德",
+      "enwiki_title": "Alireza Beiranvand",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "382312": {
+      "full_name_zh": "卡梅隆·布格斯",
+      "enwiki_title": "Cameron Burgess",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "382739": {
+      "full_name_zh": "馬科斯·略倫特",
+      "enwiki_title": "Marcos Llorente",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "384751": {
+      "full_name_zh": "冈萨洛-格德斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43963/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "384797": {
+      "full_name_zh": "拉明·礼萨伊安",
+      "enwiki_title": "Ramin Rezaeian",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "384850": {
+      "full_name_zh": "拉加·阿耶德",
+      "enwiki_title": "Rajaei Ayed",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "385030": {
+      "full_name_zh": "菲德尔·埃斯科瓦尔",
+      "enwiki_title": "Fidel Escobar",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "385067": {
+      "full_name_zh": "布阿莱姆·胡希",
+      "enwiki_title": "Boualem Khoukhi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "385070": {
+      "full_name_zh": "穆罕默德·蒙塔里",
+      "enwiki_title": "Mohammed Muntari",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "385139": {
+      "full_name_zh": "法鲁克·萨伊菲耶夫",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/44005/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "385248": {
+      "full_name_zh": "弗洛里安·格里利奇",
+      "enwiki_title": "Florian Grillitsch",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "385259": {
+      "full_name_zh": "孔拉德·萊梅爾",
+      "enwiki_title": "Konrad Laimer",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "385472": {
+      "full_name_zh": "博提拉里·埃尔加舍夫",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/44005/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "385475": {
+      "full_name_zh": "埃尔多尔·绍穆罗多夫",
+      "enwiki_title": "Eldor Shomurodov",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "385531": {
+      "full_name_zh": "沙费尔·施拉格",
+      "enwiki_title": "Xaver Schlager",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "385833": {
+      "full_name_zh": "阿达尔贝托·卡拉斯奎拉",
+      "enwiki_title": "Adalberto Carrasquilla",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "385994": {
+      "full_name_zh": "克里斯蒂安·羅丹",
+      "enwiki_title": "Cristian Roldan",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "385998": {
+      "full_name_zh": "阿尔瓦罗·蒙特罗",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43926/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "386013": {
+      "full_name_zh": "戴文森·桑切斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43926/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "386339": {
+      "full_name_zh": "吉列尔莫·马丁内斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43911/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "386347": {
+      "full_name_zh": "阿克拉姆·阿费夫",
+      "enwiki_title": "Akram Afif",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "386348": {
+      "full_name_zh": "阿西姆·马迪博",
+      "enwiki_title": "Assim Madibo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "386366": {
+      "full_name_zh": "阿尔莫埃斯·阿里",
+      "enwiki_title": "Almoez Ali",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "386413": {
+      "full_name_zh": "約書亞·基米希",
+      "enwiki_title": "Joshua Kimmich",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "386473": {
+      "full_name_zh": "劳伦斯·阿蒂·齐吉",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43860/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "386538": {
+      "full_name_zh": "罗德里戈-本坦库尔",
+      "enwiki_title": "Rodrigo Bentancur",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "388475": {
+      "full_name_zh": "迈赫迪·塔雷米",
+      "enwiki_title": "Mehdi Taremi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "389437": {
+      "full_name_zh": "伊桑·哈达德",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43820/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "389485": {
+      "full_name_zh": "帕拉西奧斯",
+      "enwiki_title": "Exequiel Palacios",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "389740": {
+      "full_name_zh": "马丁·埃里克",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43938/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "389753": {
+      "full_name_zh": "尼古拉·莫罗",
+      "enwiki_title": "Nikola Moro",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "389754": {
+      "full_name_zh": "佩塔爾·穆薩",
+      "enwiki_title": "Petar Musa",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "389782": {
+      "full_name_zh": "佩维斯·埃斯图皮南",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43927/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "389784": {
+      "full_name_zh": "阿蘭·法蘭科",
+      "enwiki_title": "Alan Franco",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "389876": {
+      "full_name_zh": "達約特·烏帕梅卡諾",
+      "enwiki_title": "Dayot Upamecano",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "389879": {
+      "full_name_zh": "盧卡·席丹",
+      "enwiki_title": "Luca Zidane",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "389886": {
+      "full_name_zh": "泽尼斯·伯尼克",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/44037/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "390181": {
+      "full_name_zh": "乔·贝尔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43978/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "390196": {
+      "full_name_zh": "卡勒姆·麦考瓦特",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43978/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "390205": {
+      "full_name_zh": "洛根·罗杰森",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43978/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "390209": {
+      "full_name_zh": "萨普里特·辛格",
+      "enwiki_title": "Sarpreet Singh",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "390218": {
+      "full_name_zh": "米高·伍德",
+      "enwiki_title": "Michael Woud",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "390238": {
+      "full_name_zh": "泰勒·亚当斯",
+      "enwiki_title": "Tyler Adams",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "390267": {
+      "full_name_zh": "克里斯蒂安·普利西奇",
+      "enwiki_title": "Christian Pulisic",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "390272": {
+      "full_name_zh": "奧斯頓·特楚斯提",
+      "enwiki_title": "Auston Trusty",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "390276": {
+      "full_name_zh": "哈吉·赖特",
+      "enwiki_title": "Haji Wright",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "390278": {
+      "full_name_zh": "亚历克斯·赞德哈斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43921/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "390475": {
+      "full_name_zh": "斯佩菲罗-西特莱",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43883/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "390525": {
+      "full_name_zh": "李在成",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "390537": {
+      "full_name_zh": "米拉德·穆罕默迪",
+      "enwiki_title": "Milad Mohammadi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "390541": {
+      "full_name_zh": "谷口彰悟",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43819/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "390650": {
+      "full_name_zh": "伊洛·魯姆",
+      "enwiki_title": "Eloy Room",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "390670": {
+      "full_name_zh": "凯尔·拉林",
+      "enwiki_title": "Cyle Larin",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "391646": {
+      "full_name_zh": "杜安律",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43819/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "393480": {
+      "full_name_zh": "布雷尔·恩博洛",
+      "enwiki_title": "Breel Embolo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "394376": {
+      "full_name_zh": "戴伊維爾·馬查多",
+      "enwiki_title": "Deiver Machado",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "394456": {
+      "full_name_zh": "法比尼奥",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43924/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "394500": {
+      "full_name_zh": "约翰·莫西卡",
+      "enwiki_title": "Johan Mojica",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "394824": {
+      "full_name_zh": "杰罗尼莫·鲁利",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43922/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "394829": {
+      "full_name_zh": "法比安·巴尔布纳",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43928/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "394993": {
+      "full_name_zh": "达肯斯·纳左恩",
+      "enwiki_title": "Duckens Nazon",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "395083": {
+      "full_name_zh": "黄希灿",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "395084": {
+      "full_name_zh": "黄仁范",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "395113": {
+      "full_name_zh": "拉米·本瑟拜尼",
+      "enwiki_title": "Ramy Bensebaini",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "395186": {
+      "full_name_zh": "艾曼·胡辛",
+      "enwiki_title": "Aymen Hussein",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "395205": {
+      "full_name_zh": "贝尔纳多·席尔瓦",
+      "enwiki_title": "Bernardo Silva",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "395206": {
+      "full_name_zh": "布鲁诺·费尔南德斯",
+      "enwiki_title": "Bruno Fernandes",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "395212": {
+      "full_name_zh": "内尔松·塞梅多",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43963/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "395283": {
+      "full_name_zh": "维克多·林德洛夫",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43970/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "395286": {
+      "full_name_zh": "肯·塞馬",
+      "enwiki_title": "Ken Sema",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "395321": {
+      "full_name_zh": "伊东纯也",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43819/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "395414": {
+      "full_name_zh": "喬瓦尼·路些素",
+      "enwiki_title": "Giovani Lo Celso",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "395471": {
+      "full_name_zh": "纳迪埃姆·阿米里",
+      "enwiki_title": "Nadiem Amiri",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "395550": {
+      "full_name_zh": "赫费尔松·莱尔马",
+      "enwiki_title": "Jefferson Lerma",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "395552": {
+      "full_name_zh": "耶里·米纳",
+      "enwiki_title": "Yerry Mina",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "395581": {
+      "full_name_zh": "克里斯蒂安·马丁内斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43914/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "395984": {
+      "full_name_zh": "特姆巴·兹瓦尼",
+      "enwiki_title": "Themba Zwane",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "395986": {
+      "full_name_zh": "朗文·威廉姆斯",
+      "enwiki_title": "Ronwen Williams",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "396158": {
+      "full_name_zh": "雷宾·苏拉卡",
+      "enwiki_title": "Rebin Sulaka",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "396950": {
+      "full_name_zh": "马哈茂德·阿尔马尔迪",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43820/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "397775": {
+      "full_name_zh": "卡伦斯·阿库斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43908/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "397786": {
+      "full_name_zh": "维吉尔·范戴克",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43960/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "397894": {
+      "full_name_zh": "亚兹·阿布·莱拉",
+      "enwiki_title": "Yazeed Abulaila",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "398509": {
+      "full_name_zh": "尼科·埃尔韦迪",
+      "enwiki_title": "Nico Elvedi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "398569": {
+      "full_name_zh": "里奇德利·巴佐尔",
+      "enwiki_title": "Riechedly Bazoer",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "398681": {
+      "full_name_zh": "恩戈洛·坎特",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43946/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "400511": {
+      "full_name_zh": "板仓滉",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43819/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "400514": {
+      "full_name_zh": "田中碧",
+      "enwiki_title": "Ao Tanaka",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "400634": {
+      "full_name_zh": "埃德森·阿尔瓦雷斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43911/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "400716": {
+      "full_name_zh": "马丁·奥德加",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43961/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "400721": {
+      "full_name_zh": "阿什拉夫·哈基米",
+      "enwiki_title": "Achraf Hakimi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "401023": {
+      "full_name_zh": "约书亚·布雷内特",
+      "enwiki_title": "Joshua Brenet",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "401131": {
+      "full_name_zh": "米夏埃尔·格雷戈里奇",
+      "enwiki_title": "Michael Gregoritsch",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "401167": {
+      "full_name_zh": "恰拉尔·瑟因居",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43972/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "401334": {
+      "full_name_zh": "約翰·麥克金",
+      "enwiki_title": "John McGinn",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "401339": {
+      "full_name_zh": "安德鲁·罗伯逊",
+      "enwiki_title": "Andy Robertson",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "401378": {
+      "full_name_zh": "约纳坦·塔",
+      "enwiki_title": "Jonathan Tah",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "401444": {
+      "full_name_zh": "约埃里·蒂耶莱曼斯",
+      "enwiki_title": "Youri Tielemans",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "401448": {
+      "full_name_zh": "丹尼斯·扎卡里亚",
+      "enwiki_title": "Denis Zakaria",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "401470": {
+      "full_name_zh": "马库斯·拉什福德",
+      "enwiki_title": "Marcus Rashford",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "401481": {
+      "full_name_zh": "帕特里克·希克",
+      "enwiki_title": "Patrik Schick",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "401712": {
+      "full_name_zh": "基蘭·蒂爾尼",
+      "enwiki_title": "Kieran Tierney",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "401889": {
+      "full_name_zh": "伊斯梅拉·萨尔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43879/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "401893": {
+      "full_name_zh": "努诺·达科斯塔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43850/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "401894": {
+      "full_name_zh": "杰米罗·蒙泰罗",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43850/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "401924": {
+      "full_name_zh": "哈桑·卡德什",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43835/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "402021": {
+      "full_name_zh": "雷莫·弗罗伊勒",
+      "enwiki_title": "Remo Freuler",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "402022": {
+      "full_name_zh": "伊翁·姆沃戈",
+      "enwiki_title": "Yvon Mvogo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "402044": {
+      "full_name_zh": "马丁·德隆",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43960/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "402047": {
+      "full_name_zh": "阿德里安·拉比奥",
+      "enwiki_title": "Adrien Rabiot",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "402261": {
+      "full_name_zh": "尼古拉斯·佩佩",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43854/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "402772": {
+      "full_name_zh": "热苏斯·加利亚多",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43911/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "402817": {
+      "full_name_zh": "白胜浩",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "402820": {
+      "full_name_zh": "宋范根",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "402884": {
+      "full_name_zh": "费德里科·巴尔韦德",
+      "enwiki_title": "Federico Valverde",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "402893": {
+      "full_name_zh": "马蒂亚斯·奥利维拉",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43930/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "402897": {
+      "full_name_zh": "圣地亚哥 梅勒",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43930/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "402904": {
+      "full_name_zh": "聖地亞哥·布埃諾",
+      "enwiki_title": "Santiago Bueno",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "402921": {
+      "full_name_zh": "利桑德罗·马丁内斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43922/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "402925": {
+      "full_name_zh": "纳韦尔·莫利纳",
+      "enwiki_title": "Nahuel Molina",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "402926": {
+      "full_name_zh": "贡萨洛·蒙蒂尔",
+      "enwiki_title": "Gonzalo Montiel",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "402934": {
+      "full_name_zh": "马科斯·塞内西",
+      "enwiki_title": "Marcos Senesi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "402974": {
+      "full_name_zh": "安杰洛·普雷西亚多",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43927/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "402979": {
+      "full_name_zh": "菲利克斯·托雷斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43927/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "402985": {
+      "full_name_zh": "乔迪·凯塞多",
+      "enwiki_title": "Jordy Caicedo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "403001": {
+      "full_name_zh": "迪奥戈·科斯塔",
+      "enwiki_title": "Diogo Costa",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "403002": {
+      "full_name_zh": "達洛特",
+      "enwiki_title": "Diogo Dalot",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "403046": {
+      "full_name_zh": "迪恩·亨德森",
+      "enwiki_title": "Dean Henderson",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "403049": {
+      "full_name_zh": "安斯·干沙",
+      "enwiki_title": "Ezri Konsa",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "403063": {
+      "full_name_zh": "阿克塞尔·图安泽贝",
+      "enwiki_title": "Axel Tuanzebe",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "403083": {
+      "full_name_zh": "伊萨·迪奥普",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43872/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "403090": {
+      "full_name_zh": "阿爾班·拉馮",
+      "enwiki_title": "Alban Lafont",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "403094": {
+      "full_name_zh": "让-菲利普·马特塔",
+      "enwiki_title": "Jean-Philippe Mateta",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "403109": {
+      "full_name_zh": "马库斯·图拉姆",
+      "enwiki_title": "Marcus Thuram",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "403236": {
+      "full_name_zh": "迈赫迪·迦耶迪",
+      "enwiki_title": "Mehdi Ghayedi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "403274": {
+      "full_name_zh": "伊藤洋辉",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43819/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "403289": {
+      "full_name_zh": "富安健洋",
+      "enwiki_title": "Takehiro Tomiyasu",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "403293": {
+      "full_name_zh": "小川幸之助",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43819/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "403304": {
+      "full_name_zh": "久保建英",
+      "enwiki_title": "Takefusa Kubo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "403312": {
+      "full_name_zh": "阿姆里·阿卜杜拉",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43835/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "403585": {
+      "full_name_zh": "羅伯托·阿爾瓦拉多",
+      "enwiki_title": "Roberto Alvarado",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "403616": {
+      "full_name_zh": "泰博博·莫库纳",
+      "enwiki_title": "Teboho Mokoena",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "403642": {
+      "full_name_zh": "克雷宾·迪亚塔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43879/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "404319": {
+      "full_name_zh": "艾迪尼·赫鲁斯蒂奇",
+      "enwiki_title": "Ajdin Hrustic",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "404645": {
+      "full_name_zh": "桑德·貝格",
+      "enwiki_title": "Sander Berge",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "404885": {
+      "full_name_zh": "托马斯·苏克",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43995/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "405175": {
+      "full_name_zh": "塞科·福法纳",
+      "enwiki_title": "Seko Fofana",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405178": {
+      "full_name_zh": "曼努尔·阿坎杰",
+      "enwiki_title": "Manuel Akanji",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405263": {
+      "full_name_zh": "凯文·丹索",
+      "enwiki_title": "Kevin Danso",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405454": {
+      "full_name_zh": "以利亞·賈斯特",
+      "enwiki_title": "Elijah Just",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405469": {
+      "full_name_zh": "利貝拉托·凱卡斯",
+      "enwiki_title": "Liberato Cacace",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405522": {
+      "full_name_zh": "中村敬斗",
+      "enwiki_title": "Keito Nakamura",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405527": {
+      "full_name_zh": "瀨古步夢",
+      "enwiki_title": "Ayumu Seko",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405528": {
+      "full_name_zh": "菅原由勢",
+      "enwiki_title": "Yukinari Sugawara",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405530": {
+      "full_name_zh": "鈴木彩艷",
+      "enwiki_title": "Zion Suzuki",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405545": {
+      "full_name_zh": "费兰·托雷斯",
+      "enwiki_title": "Ferran Torres",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405562": {
+      "full_name_zh": "加西亞",
+      "enwiki_title": "Eric Garcia",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405639": {
+      "full_name_zh": "阿米尔霍赛因·霍赛因扎德",
+      "enwiki_title": "Amirhossein Hosseinzadeh",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405755": {
+      "full_name_zh": "莱安德罗·坎帕斯",
+      "enwiki_title": "Jaminton Campaz",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405841": {
+      "full_name_zh": "马克·盖希",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43942/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "405873": {
+      "full_name_zh": "叶海亚·福法纳",
+      "enwiki_title": "Yahia Fofana",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405877": {
+      "full_name_zh": "阿明·古伊里",
+      "enwiki_title": "Amine Gouiri",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405879": {
+      "full_name_zh": "威尔逊·伊西多尔",
+      "enwiki_title": "Wilson Isidor",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405881": {
+      "full_name_zh": "马克桑斯·拉克鲁瓦",
+      "enwiki_title": "Maxence Lacroix",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "405920": {
+      "full_name_zh": "约翰·耶博",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43927/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "406135": {
+      "full_name_zh": "塞萨尔·韦尔塔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43911/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "406205": {
+      "full_name_zh": "布赖恩·奥赫达",
+      "enwiki_title": "Braian Ojeda",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "406231": {
+      "full_name_zh": "尤努斯·阿克冈",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43972/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "406249": {
+      "full_name_zh": "奥詹·卡巴克",
+      "enwiki_title": "Ozan Kabak",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "406280": {
+      "full_name_zh": "塞尔吉诺·德斯特",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43921/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "406304": {
+      "full_name_zh": "蒂莫西·维阿",
+      "enwiki_title": "Timothy Weah",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "406595": {
+      "full_name_zh": "鲁兹贝赫·切什米",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43817/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "406606": {
+      "full_name_zh": "阿维·玛比",
+      "enwiki_title": "Awer Mabil",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "407022": {
+      "full_name_zh": "卡里姆·哈菲兹",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43855/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "407114": {
+      "full_name_zh": "马西奥·罗萨",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43850/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "407343": {
+      "full_name_zh": "吉兰·科南",
+      "enwiki_title": "Ghislain Konan",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "407680": {
+      "full_name_zh": "尤尔根·洛卡达尔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/1895293/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "407993": {
+      "full_name_zh": "穆罕默德·卡诺",
+      "enwiki_title": "Mohamed Kanno",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "408042": {
+      "full_name_zh": "西奥·埃尔南德斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43946/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "408950": {
+      "full_name_zh": "穆罕默德·哈尼",
+      "enwiki_title": "Mohamed Hany",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "409191": {
+      "full_name_zh": "尼古拉·弗拉希奇",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43938/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "411174": {
+      "full_name_zh": "何塞·法哈多",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43914/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "411176": {
+      "full_name_zh": "何塞·路易斯·罗德里格斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43914/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "411226": {
+      "full_name_zh": "吉布里尔·索乌",
+      "enwiki_title": "Djibril Sow",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "411301": {
+      "full_name_zh": "安古斯·古安",
+      "enwiki_title": "Angus Gunn",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "411367": {
+      "full_name_zh": "凯·哈费尔茨",
+      "enwiki_title": "Kai Havertz",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "411375": {
+      "full_name_zh": "罗德里",
+      "enwiki_title": "Rodri",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "411376": {
+      "full_name_zh": "伊尼亚基·威廉姆斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43860/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "411443": {
+      "full_name_zh": "蒂莫西·卡斯塔涅",
+      "enwiki_title": "Timothy Castagne",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "411470": {
+      "full_name_zh": "卢卡斯·埃尔南德斯",
+      "enwiki_title": "Lucas Hernandez",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "411624": {
+      "full_name_zh": "阿卜杜拉·阿尔凯巴里",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43835/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "411644": {
+      "full_name_zh": "萨曼·格多斯",
+      "enwiki_title": "Saman Ghoddos",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "411653": {
+      "full_name_zh": "迪伦·布朗",
+      "enwiki_title": "Dylan Bronn",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "411658": {
+      "full_name_zh": "埃利耶斯·斯凯里",
+      "enwiki_title": "Ellyes Skhiri",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "411678": {
+      "full_name_zh": "阿尤布·卡埃比",
+      "enwiki_title": "Ayoub El Kaabi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "411680": {
+      "full_name_zh": "纳赛尔·马兹拉维",
+      "enwiki_title": "Noussair Mazraoui",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "411726": {
+      "full_name_zh": "卢卡斯·帕奎塔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43924/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "412144": {
+      "full_name_zh": "阿方索·戴维斯",
+      "enwiki_title": "Alphonso Davies",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "416051": {
+      "full_name_zh": "佩德罗·米格尔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43834/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "416056": {
+      "full_name_zh": "马沙尔·埃萨·巴尔沙姆",
+      "enwiki_title": "Meshaal Barsham",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "416576": {
+      "full_name_zh": "阿尔瓦罗·菲达尔戈",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43911/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "416652": {
+      "full_name_zh": "杰西·兰德尔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43978/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "416902": {
+      "full_name_zh": "穆罕默德·阿卜杜勒莫尼姆",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43855/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "416989": {
+      "full_name_zh": "阿里·阿里普尔",
+      "enwiki_title": "Ali Alipour",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "418485": {
+      "full_name_zh": "金泰贤",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "418535": {
+      "full_name_zh": "乔·费利克斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43963/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "418548": {
+      "full_name_zh": "柏度·尼圖",
+      "enwiki_title": "Pedro Neto",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "418550": {
+      "full_name_zh": "拉斐尔·莱奥",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43963/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "418715": {
+      "full_name_zh": "何塞·科尔多瓦",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43914/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "418729": {
+      "full_name_zh": "卡洛斯·哈维",
+      "enwiki_title": "Carlos Harvey",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "418747": {
+      "full_name_zh": "托马斯·罗德里格斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43914/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "418781": {
+      "full_name_zh": "班巴·迪昂",
+      "enwiki_title": "Bamba Dieng",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "418795": {
+      "full_name_zh": "尼古拉·雅克松",
+      "enwiki_title": "Nicolas Jackson",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "418798": {
+      "full_name_zh": "帕普·马塔尔·萨尔",
+      "enwiki_title": "Pape Matar Sarr",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "418963": {
+      "full_name_zh": "法昆多·米迪拿",
+      "enwiki_title": "Facundo Medina",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "418975": {
+      "full_name_zh": "蒂亚戈·阿尔马达",
+      "enwiki_title": "Thiago Almada",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419002": {
+      "full_name_zh": "莫伊斯·拉米雷斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43927/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419003": {
+      "full_name_zh": "傑克遜·波羅佐",
+      "enwiki_title": "Jackson Porozo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419005": {
+      "full_name_zh": "乔迪·阿尔西瓦",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43927/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419020": {
+      "full_name_zh": "岡薩洛·普拉塔",
+      "enwiki_title": "Gonzalo Plata",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419055": {
+      "full_name_zh": "布蘭登·亞倫森",
+      "enwiki_title": "Brenden Aaronson",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419062": {
+      "full_name_zh": "克里斯·理查兹",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43921/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419077": {
+      "full_name_zh": "马克·麦肯齐",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43921/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419082": {
+      "full_name_zh": "里卡爾多·佩皮",
+      "enwiki_title": "Ricardo Pepi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419101": {
+      "full_name_zh": "罗纳德·阿劳约",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43930/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419108": {
+      "full_name_zh": "塞巴斯蒂安·卡塞雷斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43930/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419126": {
+      "full_name_zh": "达尔文·努内兹",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43930/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419132": {
+      "full_name_zh": "布赖恩·罗德里格斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43930/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419134": {
+      "full_name_zh": "祖安·文路爾·沙拉比亞",
+      "enwiki_title": "Juan Manuel Sanabria",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419142": {
+      "full_name_zh": "罗德里戈·萨拉萨尔",
+      "enwiki_title": "Rodrigo Zalazar",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419166": {
+      "full_name_zh": "易卜拉希马·科纳特",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43946/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419172": {
+      "full_name_zh": "埃万·恩迪卡",
+      "enwiki_title": "Evan Ndicka",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419177": {
+      "full_name_zh": "威廉·萨利巴",
+      "enwiki_title": "William Saliba",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419189": {
+      "full_name_zh": "恩·華利尼",
+      "enwiki_title": "Yan Valery",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419211": {
+      "full_name_zh": "賴奧·科士打",
+      "enwiki_title": "Lyle Foster",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419223": {
+      "full_name_zh": "奥斯温·阿波利斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43883/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419225": {
+      "full_name_zh": "布拉德利·克罗斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43883/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419281": {
+      "full_name_zh": "沙特·阿卜杜勒哈米德",
+      "enwiki_title": "Saud Abdulhamid",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419287": {
+      "full_name_zh": "纳瓦夫·阿拉奇迪",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43835/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419291": {
+      "full_name_zh": "费拉斯·阿尔布里肯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43835/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419326": {
+      "full_name_zh": "阿里·马加斯希",
+      "enwiki_title": "Ali Majrashi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419436": {
+      "full_name_zh": "艾哈迈德·阿尔加内希",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43834/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419441": {
+      "full_name_zh": "霍曼·艾哈迈德",
+      "enwiki_title": "Homam Ahmed",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419461": {
+      "full_name_zh": "萨拉亚·扎卡里亚",
+      "enwiki_title": "Salah Zakaria",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419463": {
+      "full_name_zh": "优素福·阿卜杜勒拉扎克",
+      "enwiki_title": "Yusuf Abdurisag",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419473": {
+      "full_name_zh": "耶森·加巴",
+      "enwiki_title": "Jassem Gaber",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419518": {
+      "full_name_zh": "埃里克·里拉",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43911/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419567": {
+      "full_name_zh": "卡倫·埃利奧特",
+      "enwiki_title": "Callan Elliot",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419577": {
+      "full_name_zh": "班·韋恩",
+      "enwiki_title": "Ben Waine",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419652": {
+      "full_name_zh": "埃尔林·哈兰德",
+      "enwiki_title": "Erling Haaland",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419654": {
+      "full_name_zh": "候格",
+      "enwiki_title": "Jens Petter Hauge",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "419672": {
+      "full_name_zh": "莱奥·奥斯蒂高",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43961/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "419681": {
+      "full_name_zh": "克里斯蒂安·霍斯特维德",
+      "enwiki_title": "Kristian Thorstvedt",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "422657": {
+      "full_name_zh": "弗兰基·德容",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43960/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "422968": {
+      "full_name_zh": "穆罕奈德·阿里",
+      "enwiki_title": "Mohanad Ali",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "423522": {
+      "full_name_zh": "乔丹·博斯",
+      "enwiki_title": "Jordan Bos",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "423574": {
+      "full_name_zh": "亚历克斯·保尔森",
+      "enwiki_title": "Alex Paulsen",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "423575": {
+      "full_name_zh": "本·奥尔德",
+      "enwiki_title": "Ben Old",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "423646": {
+      "full_name_zh": "佩德里",
+      "enwiki_title": "Pedri",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "423658": {
+      "full_name_zh": "耶利美·賓奴",
+      "enwiki_title": "Yeremy Pino",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "423700": {
+      "full_name_zh": "約瑟夫·斯卡利",
+      "enwiki_title": "Joe Scally",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "423855": {
+      "full_name_zh": "严智星",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "423874": {
+      "full_name_zh": "李韩范",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "423880": {
+      "full_name_zh": "李太锡",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "423933": {
+      "full_name_zh": "杰登·纳尔逊",
+      "enwiki_title": "Jayden Nelson",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "423941": {
+      "full_name_zh": "內森·薩利巴",
+      "enwiki_title": "Nathan Saliba",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "424031": {
+      "full_name_zh": "皮耶罗·欣卡皮",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43927/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "424036": {
+      "full_name_zh": "佩德罗·维特",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43927/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "424047": {
+      "full_name_zh": "杰里米·安东尼斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/1895293/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "424051": {
+      "full_name_zh": "布莱恩·布罗比",
+      "enwiki_title": "Brian Brobbey",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "424056": {
+      "full_name_zh": "桑杰·汉森",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/1895293/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "424071": {
+      "full_name_zh": "阿纳斯·萨拉赫·艾丁",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43872/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "424081": {
+      "full_name_zh": "巴特·維爾布魯根",
+      "enwiki_title": "Bart Verbruggen",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "424106": {
+      "full_name_zh": "海瑟姆·哈桑",
+      "enwiki_title": "Haissem Hassan",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "424422": {
+      "full_name_zh": "马蒂亚斯·加拉扎",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43928/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "424556": {
+      "full_name_zh": "卡尔·圣特",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43908/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "425580": {
+      "full_name_zh": "豪尔赫·卡拉斯卡尔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43926/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "425804": {
+      "full_name_zh": "萨利赫·阿尔谢里",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43835/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "426357": {
+      "full_name_zh": "阿隆·萬-比薩卡",
+      "enwiki_title": "Aaron Wan-Bissaka",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "426506": {
+      "full_name_zh": "梅沙克·埃利亚",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/20014/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "428882": {
+      "full_name_zh": "罗德里戈·德保罗",
+      "enwiki_title": "Rodrigo De Paul",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "428886": {
+      "full_name_zh": "路易斯·迪亚兹",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43926/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "428905": {
+      "full_name_zh": "路易斯·苏亚雷斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43926/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "429063": {
+      "full_name_zh": "埃德米尔森·儒尼奥尔",
+      "enwiki_title": "Edmilson Junior",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "429095": {
+      "full_name_zh": "哈姆迪·法特希",
+      "enwiki_title": "Hamdy Fathy",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "429608": {
+      "full_name_zh": "薛英佑",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "429640": {
+      "full_name_zh": "安吉洛·斯蒂勒",
+      "enwiki_title": "Angelo Stiller",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "429642": {
+      "full_name_zh": "贾迈勒·穆西亚拉",
+      "enwiki_title": "Jamal Musiala",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430070": {
+      "full_name_zh": "安特·布迪米尔",
+      "enwiki_title": "Ante Budimir",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430097": {
+      "full_name_zh": "萊安·克里斯蒂",
+      "enwiki_title": "Ryan Christie",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430098": {
+      "full_name_zh": "林登·戴克斯",
+      "enwiki_title": "Lyndon Dykes",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430100": {
+      "full_name_zh": "莎莎·卡拉季奇",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43934/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "430120": {
+      "full_name_zh": "默特 穆尔杜尔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43972/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "430138": {
+      "full_name_zh": "泰江·布坎南",
+      "enwiki_title": "Tajon Buchanan",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430144": {
+      "full_name_zh": "佩德罗·波罗",
+      "enwiki_title": "Pedro Porro",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430147": {
+      "full_name_zh": "杰克·亨德利",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43967/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "430150": {
+      "full_name_zh": "亚历山大·伊萨克",
+      "enwiki_title": "Alexander Isak",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430176": {
+      "full_name_zh": "瑞安·格拉文贝尔赫",
+      "enwiki_title": "Ryan Gravenberch",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430194": {
+      "full_name_zh": "丹尼斯·哈齐卡杜尼克",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/44037/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "430196": {
+      "full_name_zh": "阿米尔·哈齐亚梅托维奇",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/44037/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "430387": {
+      "full_name_zh": "赵贵成",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "430401": {
+      "full_name_zh": "渡邊剛",
+      "enwiki_title": "Tsuyoshi Watanabe",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430407": {
+      "full_name_zh": "前田大然",
+      "enwiki_title": "Daizen Maeda",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430413": {
+      "full_name_zh": "上田綺世",
+      "enwiki_title": "Ayase Ueda",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430442": {
+      "full_name_zh": "哈利·蘇達亞",
+      "enwiki_title": "Harry Souttar",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430450": {
+      "full_name_zh": "雅各布·義大利諾",
+      "enwiki_title": "Jacob Italiano",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430452": {
+      "full_name_zh": "康纳·梅特卡夫",
+      "enwiki_title": "Connor Metcalfe",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430476": {
+      "full_name_zh": "奧馬爾·馬爾穆什",
+      "enwiki_title": "Omar Marmoush",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430477": {
+      "full_name_zh": "艾哈迈德·法图",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43855/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "430482": {
+      "full_name_zh": "艾疏亞",
+      "enwiki_title": "Emam Ashour",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430518": {
+      "full_name_zh": "纳瓦夫·布·瓦什尔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43835/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "430597": {
+      "full_name_zh": "加布里埃爾·馬丁內利",
+      "enwiki_title": "Gabriel Martinelli",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430609": {
+      "full_name_zh": "马特乌斯·库尼亚",
+      "enwiki_title": "Matheus Cunha",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430624": {
+      "full_name_zh": "胡安·穆索",
+      "enwiki_title": "Juan Musso",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430628": {
+      "full_name_zh": "亚历克西斯·麦卡利斯特",
+      "enwiki_title": "Alexis Mac Allister",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430657": {
+      "full_name_zh": "达维德·劳姆",
+      "enwiki_title": "David Raum",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430658": {
+      "full_name_zh": "瓦尔德马·安东",
+      "enwiki_title": "Waldemar Anton",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430667": {
+      "full_name_zh": "尼科·施洛特贝克",
+      "enwiki_title": "Nico Schlotterbeck",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430669": {
+      "full_name_zh": "弗洛里安·维尔茨",
+      "enwiki_title": "Florian Wirtz",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430671": {
+      "full_name_zh": "伊斯梅尔·雅各布斯",
+      "enwiki_title": "Ismail Jakobs",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430690": {
+      "full_name_zh": "穆萨·尼亚哈特",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43879/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "430697": {
+      "full_name_zh": "让-里克纳·贝勒加德",
+      "enwiki_title": "Jean-Ricner Bellegarde",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430698": {
+      "full_name_zh": "侯賽姆·奧瓦爾",
+      "enwiki_title": "Houssem Aouar",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430707": {
+      "full_name_zh": "朱尔斯·昆德",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43946/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "430733": {
+      "full_name_zh": "米克尔·梅里诺",
+      "enwiki_title": "Mikel Merino",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430735": {
+      "full_name_zh": "马克·库库雷利亚",
+      "enwiki_title": "Marc Cucurella",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430750": {
+      "full_name_zh": "达尼·奥尔莫",
+      "enwiki_title": "Dani Olmo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430751": {
+      "full_name_zh": "米克尔·奥亚萨瓦尔",
+      "enwiki_title": "Mikel Oyarzabal",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430759": {
+      "full_name_zh": "圣地亚哥·吉梅内斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43911/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "430763": {
+      "full_name_zh": "路易斯·羅莫",
+      "enwiki_title": "Luis Romo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430822": {
+      "full_name_zh": "阿马德·迪亚洛",
+      "enwiki_title": "Amad Diallo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430831": {
+      "full_name_zh": "易卜拉欣·桑加雷",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43854/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "430854": {
+      "full_name_zh": "威尔弗里德·辛戈",
+      "enwiki_title": "Wilfried Singo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "430917": {
+      "full_name_zh": "埃維登斯·馬克戈帕",
+      "enwiki_title": "Evidence Makgopa",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "431196": {
+      "full_name_zh": "克里斯蒂安·罗梅罗",
+      "enwiki_title": "Cristian Romero",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "431200": {
+      "full_name_zh": "丹尼尔·穆诺兹",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43926/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "431202": {
+      "full_name_zh": "奥马尔·阿尔德雷特",
+      "enwiki_title": "Omar Alderete",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "431209": {
+      "full_name_zh": "易卜拉欣·萨迪",
+      "enwiki_title": "Ibrahim Sadeh",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "431212": {
+      "full_name_zh": "阿里·奥尔旺",
+      "enwiki_title": "Ali Olwan",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "431223": {
+      "full_name_zh": "阿卜杜拉·阿尔法霍里",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43820/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "431225": {
+      "full_name_zh": "亚赞·阿拉拉布",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43820/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "431230": {
+      "full_name_zh": "努尔·阿拉瓦德",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43820/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "431693": {
+      "full_name_zh": "弗朗兹迪·皮埃罗",
+      "enwiki_title": "Frantzdy Pierrot",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "431696": {
+      "full_name_zh": "里奇·拉里亞",
+      "enwiki_title": "Richie Laryea",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "431698": {
+      "full_name_zh": "朱利安•加里",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/1895293/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "431788": {
+      "full_name_zh": "帕佩·古爾",
+      "enwiki_title": "Pape Gueye",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "431858": {
+      "full_name_zh": "拉扬·阿伊特·努里",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43843/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "431861": {
+      "full_name_zh": "拉揚·切爾基",
+      "enwiki_title": "Rayan Cherki",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433066": {
+      "full_name_zh": "唐耶爾·馬倫",
+      "enwiki_title": "Donyell Malen",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433067": {
+      "full_name_zh": "莫滕·托斯比",
+      "enwiki_title": "Morten Thorsby",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433072": {
+      "full_name_zh": "泽基•切利克",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43972/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "433076": {
+      "full_name_zh": "穆圖薩米",
+      "enwiki_title": "Samuel Moutoussamy",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433092": {
+      "full_name_zh": "亚历克西斯·萨勒梅克斯",
+      "enwiki_title": "Alexis Saelemaekers",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433097": {
+      "full_name_zh": "德克兰·赖斯",
+      "enwiki_title": "Declan Rice",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433147": {
+      "full_name_zh": "米歇尔·艾比舍尔",
+      "enwiki_title": "Michel Aebischer",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433161": {
+      "full_name_zh": "艾度·卡耶姆比",
+      "enwiki_title": "Edo Kayembe",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433191": {
+      "full_name_zh": "切·亚当斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43967/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "433195": {
+      "full_name_zh": "努諾·門德斯",
+      "enwiki_title": "Nuno Mendes",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433361": {
+      "full_name_zh": "阿尼斯·斯利曼",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43888/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "433362": {
+      "full_name_zh": "阿里•阿布迪",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43888/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "433365": {
+      "full_name_zh": "艾曼·达门",
+      "enwiki_title": "Aymen Dahmen",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433367": {
+      "full_name_zh": "奥马尔·雷基克",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43888/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "433378": {
+      "full_name_zh": "漢尼拔·梅布里",
+      "enwiki_title": "Hannibal Mejbri",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433380": {
+      "full_name_zh": "蒙萨塔尔·塔比",
+      "enwiki_title": "Montassar Talbi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433394": {
+      "full_name_zh": "艾哈迈德·法特希",
+      "enwiki_title": "Ahmed Fathy",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433426": {
+      "full_name_zh": "苏菲安·拉希米",
+      "enwiki_title": "Soufiane Rahimi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433439": {
+      "full_name_zh": "阿里·阿劳杰米",
+      "enwiki_title": "Ali Lajami",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433461": {
+      "full_name_zh": "艾哈邁德·賽義德",
+      "enwiki_title": "Zizo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433526": {
+      "full_name_zh": "穆罕默德·阿布哈希什",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43820/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "433527": {
+      "full_name_zh": "阿卜杜拉·纳西布",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43820/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "433571": {
+      "full_name_zh": "艾哈迈德·巴西勒",
+      "enwiki_title": "Ahmed Basil",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433585": {
+      "full_name_zh": "易卜拉欣·拜阿什",
+      "enwiki_title": "Ibrahim Bayesh",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433668": {
+      "full_name_zh": "米夏尔•萨迪莱克",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43995/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "433679": {
+      "full_name_zh": "拉米茲·澤魯基",
+      "enwiki_title": "Ramiz Zerrouki",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433694": {
+      "full_name_zh": "内森·帕特森",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43967/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "433724": {
+      "full_name_zh": "威利·塞梅多",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43850/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "433754": {
+      "full_name_zh": "亚当•赫洛热克",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43995/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "433755": {
+      "full_name_zh": "大衛·齊馬",
+      "enwiki_title": "David Zima",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433787": {
+      "full_name_zh": "麥湯明尼",
+      "enwiki_title": "Scott McTominay",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433795": {
+      "full_name_zh": "马蒂亚斯·斯万贝里",
+      "enwiki_title": "Mattias Svanberg",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "433806": {
+      "full_name_zh": "爱德华·门迪",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43879/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "433872": {
+      "full_name_zh": "拉菲尼亚",
+      "enwiki_title": "Raphinha",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "434024": {
+      "full_name_zh": "穆纳夫·尤努斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43818/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "434025": {
+      "full_name_zh": "扎伊德·塔希恩",
+      "enwiki_title": "Zaid Tahseen",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "434026": {
+      "full_name_zh": "齐达内·伊克巴尔",
+      "enwiki_title": "Zidane Iqbal",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "434029": {
+      "full_name_zh": "阿里·优素福",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43818/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "436537": {
+      "full_name_zh": "穆萨布 阿尔朱韦尔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43835/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "436538": {
+      "full_name_zh": "齐亚德 阿尔乔哈尼",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43835/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "436572": {
+      "full_name_zh": "亞瑟·馬蘇阿庫",
+      "enwiki_title": "Arthur Masuaku",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "436599": {
+      "full_name_zh": "迈尔斯·罗宾逊",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43921/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "436612": {
+      "full_name_zh": "丹佐·邓弗里斯",
+      "enwiki_title": "Denzel Dumfries",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "436743": {
+      "full_name_zh": "埃梅丁•德米洛维奇",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/44037/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "436863": {
+      "full_name_zh": "弗兰斯·齐亚·普特罗斯",
+      "enwiki_title": "Frans Putros",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "439641": {
+      "full_name_zh": "里斯·詹姆斯",
+      "enwiki_title": "Reece James",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "439691": {
+      "full_name_zh": "特雷弗·查洛巴",
+      "enwiki_title": "Trevoh Chalobah",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "439956": {
+      "full_name_zh": "法昆多·佩里斯里",
+      "enwiki_title": "Facundo Pellistri",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "440748": {
+      "full_name_zh": "弗朗西斯·德·弗里斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43978/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441065": {
+      "full_name_zh": "派屈克·彭茲",
+      "enwiki_title": "Patrick Pentz",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441067": {
+      "full_name_zh": "斯特凡·波施",
+      "enwiki_title": "Stefan Posch",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441068": {
+      "full_name_zh": "德扬·柳比西奇",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43934/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441088": {
+      "full_name_zh": "尼古拉斯·塞瓦尔德",
+      "enwiki_title": "Nicolas Seiwald",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441132": {
+      "full_name_zh": "卡尔·斯塔费尔特",
+      "enwiki_title": "Carl Starfelt",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441137": {
+      "full_name_zh": "安东尼·埃兰加",
+      "enwiki_title": "Anthony Elanga",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441148": {
+      "full_name_zh": "马特乌斯·努内斯",
+      "enwiki_title": "Matheus Nunes",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441149": {
+      "full_name_zh": "维蒂尼亚",
+      "enwiki_title": "Vitinha",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441162": {
+      "full_name_zh": "金德里奇·斯塔内克",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43995/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441166": {
+      "full_name_zh": "雅罗斯拉夫·泽莱尼",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43995/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441167": {
+      "full_name_zh": "托马斯·霍尔斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43995/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441170": {
+      "full_name_zh": "拉迪斯拉夫·克雷杰奇",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43995/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441171": {
+      "full_name_zh": "揚·庫希塔",
+      "enwiki_title": "Jan Kuchta",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441179": {
+      "full_name_zh": "德米拉爾",
+      "enwiki_title": "Merih Demiral",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441180": {
+      "full_name_zh": "阿尔泰·贝因迪尔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43972/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441181": {
+      "full_name_zh": "乌古尔坎·卡基尔",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43972/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441234": {
+      "full_name_zh": "胡里奥·恩西索",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43928/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441236": {
+      "full_name_zh": "埃尔南·加林德斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43927/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441239": {
+      "full_name_zh": "豪爾赫·古鐵雷斯",
+      "enwiki_title": "Jorge Gutierrez",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441240": {
+      "full_name_zh": "安德烈斯·安德拉德",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43914/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441241": {
+      "full_name_zh": "奥兰多·莫斯克拉",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43914/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441242": {
+      "full_name_zh": "塞萨尔·布莱克曼",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43914/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441243": {
+      "full_name_zh": "塞萨尔·雅尼斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43914/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441251": {
+      "full_name_zh": "安東尼·羅賓森",
+      "enwiki_title": "Antonee Robinson",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441252": {
+      "full_name_zh": "阿利斯泰尔·约翰斯顿",
+      "enwiki_title": "Alistair Johnston",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441255": {
+      "full_name_zh": "戴恩·圣克莱尔",
+      "enwiki_title": "Dayne St. Clair",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441257": {
+      "full_name_zh": "乔纳森·戴维",
+      "enwiki_title": "Jonathan David",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441258": {
+      "full_name_zh": "伊斯梅尔·科内",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43899/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441259": {
+      "full_name_zh": "利亚姆·米勒",
+      "enwiki_title": "Liam Millar",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441260": {
+      "full_name_zh": "卡洛斯·阿塞維多",
+      "enwiki_title": "Carlos Acevedo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441261": {
+      "full_name_zh": "以瑟雷·雷耶斯",
+      "enwiki_title": "Israel Reyes",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441307": {
+      "full_name_zh": "阿兹丁·欧纳希",
+      "enwiki_title": "Azzedine Ounahi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441313": {
+      "full_name_zh": "莱昂内尔·帕西",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/20014/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441316": {
+      "full_name_zh": "約內·維薩",
+      "enwiki_title": "Yoane Wissa",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441317": {
+      "full_name_zh": "西奥·邦贡达",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/20014/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441333": {
+      "full_name_zh": "吉迪恩·门萨",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43860/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441336": {
+      "full_name_zh": "阿卜杜勒·穆明",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43860/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441341": {
+      "full_name_zh": "艾利沙·奧胡蘇",
+      "enwiki_title": "Elisha Owusu",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441342": {
+      "full_name_zh": "法達胡·艾沙夏古",
+      "enwiki_title": "Abdul Fatawu",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441350": {
+      "full_name_zh": "希查姆·布達維",
+      "enwiki_title": "Hicham Boudaoui",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441402": {
+      "full_name_zh": "塞萨尔·萨穆迪奥",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43914/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441422": {
+      "full_name_zh": "尼科·帕斯",
+      "enwiki_title": "Nico Paz",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "441622": {
+      "full_name_zh": "乔恩·卢库米",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43926/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "441623": {
+      "full_name_zh": "曼努埃尔·烏加特",
+      "enwiki_title": "Manuel Ugarte",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "442428": {
+      "full_name_zh": "阿伦·希基",
+      "enwiki_title": "Aaron Hickey",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "442429": {
+      "full_name_zh": "利亞姆·凱利",
+      "enwiki_title": "Liam Kelly",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "442430": {
+      "full_name_zh": "約翰·蘇塔爾",
+      "enwiki_title": "John Souttar",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "442431": {
+      "full_name_zh": "斯科特·麦肯纳",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43967/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "442433": {
+      "full_name_zh": "罗斯·斯图尔特",
+      "enwiki_title": "Ross Stewart",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "442434": {
+      "full_name_zh": "路易斯·弗格森",
+      "enwiki_title": "Lewis Ferguson",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "447853": {
+      "full_name_zh": "戴维·拉亚",
+      "enwiki_title": "David Raya",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "447855": {
+      "full_name_zh": "尼科·威廉斯",
+      "enwiki_title": "Nico Williams",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "447860": {
+      "full_name_zh": "阿莱克斯·巴埃纳",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43969/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "447864": {
+      "full_name_zh": "博爾哈·伊格萊西亞斯",
+      "enwiki_title": "Borja Iglesias",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "447866": {
+      "full_name_zh": "加维",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43969/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "447991": {
+      "full_name_zh": "加斯东·奥尔维拉",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43928/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448014": {
+      "full_name_zh": "亚历山德罗·查蒂",
+      "enwiki_title": "Alessandro Circati",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448015": {
+      "full_name_zh": "克里斯蒂安·沃尔帕托",
+      "enwiki_title": "Cristian Volpato",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448051": {
+      "full_name_zh": "路易斯·查韦斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43911/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448092": {
+      "full_name_zh": "鲁伊·席尔瓦",
+      "enwiki_title": "Rui Silva",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448103": {
+      "full_name_zh": "法比安·里德",
+      "enwiki_title": "Fabian Rieder",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448104": {
+      "full_name_zh": "塞德里克·伊滕",
+      "enwiki_title": "Cedric Itten",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448107": {
+      "full_name_zh": "格雷戈·科贝尔",
+      "enwiki_title": "Gregor Kobel",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448112": {
+      "full_name_zh": "泽基·阿姆杜尼",
+      "enwiki_title": "Zeki Amdouni",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448114": {
+      "full_name_zh": "丹·恩多耶",
+      "enwiki_title": "Dan Ndoye",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448120": {
+      "full_name_zh": "阿东·贾沙里",
+      "enwiki_title": "Ardon Jashari",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448124": {
+      "full_name_zh": "克里斯蒂安·法斯納赫特",
+      "enwiki_title": "Christian Fassnacht",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448127": {
+      "full_name_zh": "諾亞·奧卡福",
+      "enwiki_title": "Noah Okafor",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448128": {
+      "full_name_zh": "夏爾·皮克爾",
+      "enwiki_title": "Charles Pickel",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448131": {
+      "full_name_zh": "鲁文·巴尔加斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43971/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448140": {
+      "full_name_zh": "米奇·范德文",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43960/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448149": {
+      "full_name_zh": "蒂恩·库普迈纳斯",
+      "enwiki_title": "Teun Koopmeiners",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448151": {
+      "full_name_zh": "馬克·弗萊肯",
+      "enwiki_title": "Mark Flekken",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448152": {
+      "full_name_zh": "科迪·哈克波",
+      "enwiki_title": "Cody Gakpo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448153": {
+      "full_name_zh": "诺亚·朗",
+      "enwiki_title": "Noa Lang",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448157": {
+      "full_name_zh": "古斯·蒂爾",
+      "enwiki_title": "Guus Til",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448159": {
+      "full_name_zh": "沃特·韦霍斯特",
+      "enwiki_title": "Wout Weghorst",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448160": {
+      "full_name_zh": "卢卡·苏西奇",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43938/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448164": {
+      "full_name_zh": "克里斯蒂安·雅基奇",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43938/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448171": {
+      "full_name_zh": "约瑟普·舒塔洛",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43938/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448174": {
+      "full_name_zh": "马林·彭拉契奇",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43938/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448179": {
+      "full_name_zh": "庫塔斯基",
+      "enwiki_title": "Dominik Kotarski",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448189": {
+      "full_name_zh": "安東尼·哥頓",
+      "enwiki_title": "Anthony Gordon",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448196": {
+      "full_name_zh": "布卡约·萨卡",
+      "enwiki_title": "Bukayo Saka",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448198": {
+      "full_name_zh": "頓妮",
+      "enwiki_title": "Ivan Toney",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448202": {
+      "full_name_zh": "祖德·贝林厄姆",
+      "enwiki_title": "Jude Bellingham",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448203": {
+      "full_name_zh": "奥利·沃特金斯",
+      "enwiki_title": "Ollie Watkins",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448214": {
+      "full_name_zh": "马利克·蒂尔曼",
+      "enwiki_title": "Malik Tillman",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448217": {
+      "full_name_zh": "马特·特纳",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43921/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448290": {
+      "full_name_zh": "威廉·帕乔",
+      "enwiki_title": "Willian Pacho",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448295": {
+      "full_name_zh": "冈萨洛·瓦莱",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43927/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448299": {
+      "full_name_zh": "安东尼·瓦伦西亚",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43927/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448310": {
+      "full_name_zh": "凯文·罗德里格斯",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43927/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448312": {
+      "full_name_zh": "尼尔森·安古罗",
+      "enwiki_title": "Nilson Angulo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448332": {
+      "full_name_zh": "麥克·邁尼昂",
+      "enwiki_title": "Mike Maignan",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448343": {
+      "full_name_zh": "漢斯·范內肯",
+      "enwiki_title": "Hans Vanaken",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448346": {
+      "full_name_zh": "亞瑟·泰特",
+      "enwiki_title": "Arthur Theate",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448355": {
+      "full_name_zh": "莱安德罗·特罗萨德",
+      "enwiki_title": "Leandro Trossard",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448360": {
+      "full_name_zh": "布蘭登·梅切萊",
+      "enwiki_title": "Brandon Mechele",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448362": {
+      "full_name_zh": "查尔斯·德凯特莱尔",
+      "enwiki_title": "Charles De Ketelaere",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448363": {
+      "full_name_zh": "漢尼斯·戴柯華",
+      "enwiki_title": "Hannes Delcroix",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448364": {
+      "full_name_zh": "阿马杜·奥纳纳",
+      "enwiki_title": "Amadou Onana",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448366": {
+      "full_name_zh": "干尼.迪雲達",
+      "enwiki_title": "Koni De Winter",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448369": {
+      "full_name_zh": "芝诺·德巴斯特",
+      "enwiki_title": "Zeno Debast",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448373": {
+      "full_name_zh": "马克西姆·德克伊珀",
+      "enwiki_title": "Maxim De Cuyper",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448377": {
+      "full_name_zh": "多迪·卢克巴基奥",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43935/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448402": {
+      "full_name_zh": "喬爾·沃特曼",
+      "enwiki_title": "Joel Waterman",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448411": {
+      "full_name_zh": "雅各布·沙费尔伯格",
+      "enwiki_title": "Jacob Shaffelburg",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448420": {
+      "full_name_zh": "亨歷·基柏祖",
+      "enwiki_title": "Luiz Henrique",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448497": {
+      "full_name_zh": "穆罕默德·莫赫比",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43817/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448505": {
+      "full_name_zh": "萨利赫·哈达尼",
+      "enwiki_title": "Saleh Hardani",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448507": {
+      "full_name_zh": "帕亞姆·尼亞茲曼德",
+      "enwiki_title": "Payam Niazmand",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448522": {
+      "full_name_zh": "阿里度·薛杜",
+      "enwiki_title": "Alidu Seidu",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448523": {
+      "full_name_zh": "卡马尔丁·苏勒马纳",
+      "enwiki_title": "Kamaldeen Sulemana",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448525": {
+      "full_name_zh": "埃内斯特·努瓦马",
+      "enwiki_title": "Ernest Nuamah",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448531": {
+      "full_name_zh": "安托萬·塞梅諾",
+      "enwiki_title": "Antoine Semenyo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448557": {
+      "full_name_zh": "鎌田大地",
+      "enwiki_title": "Daichi Kamada",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448569": {
+      "full_name_zh": "町野修斗",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43819/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448580": {
+      "full_name_zh": "金纹奂",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448585": {
+      "full_name_zh": "杨贤俊",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448586": {
+      "full_name_zh": "吴贤揆",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43822/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "448598": {
+      "full_name_zh": "伊斯梅尔·萨伊瓦里",
+      "enwiki_title": "Ismael Saibari",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448607": {
+      "full_name_zh": "查迪里· 亞德",
+      "enwiki_title": "Chadi Riad",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448612": {
+      "full_name_zh": "比拉尔·汉努斯",
+      "enwiki_title": "Bilal El Khannouss",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448662": {
+      "full_name_zh": "伊莱亚斯·阿乔里",
+      "enwiki_title": "Elias Achouri",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448815": {
+      "full_name_zh": "伊利曼·恩迪亞耶",
+      "enwiki_title": "Iliman Ndiaye",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448821": {
+      "full_name_zh": "莫里·迪奧",
+      "enwiki_title": "Mory Diaw",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "448825": {
+      "full_name_zh": "帕特·西塞",
+      "source": "FIFA official zh-CN tournament squad",
+      "source_url": "https://api.fifa.com/api/v3/teams/43879/squad?idCompetition=17&idSeason=285023&language=zh-CN"
+    },
+    "461177": {
+      "full_name_zh": "奥贝德·巴尔加斯",
+      "enwiki_title": "Obed Vargas",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "463236": {
+      "full_name_zh": "杰登·亚当斯",
+      "enwiki_title": "Jayden Adams",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "463282": {
+      "full_name_zh": "亚历山大·普拉斯",
+      "enwiki_title": "Alexander Prass",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "463283": {
+      "full_name_zh": "罗曼诺·施密德",
+      "enwiki_title": "Romano Schmid",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "463286": {
+      "full_name_zh": "帕特里克·维默尔",
+      "enwiki_title": "Patrick Wimmer",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "463287": {
+      "full_name_zh": "马尔科·弗里德尔",
+      "enwiki_title": "Marco Friedl",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "463580": {
+      "full_name_zh": "芬恩·苏尔曼",
+      "enwiki_title": "Finn Surman",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "463746": {
+      "full_name_zh": "恩德里克",
+      "enwiki_title": "Endrick",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "463800": {
+      "full_name_zh": "卡尔尼·楚克维梅卡",
+      "enwiki_title": "Carney Chukwuemeka",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "463809": {
+      "full_name_zh": "賈雷爾·昆沙",
+      "enwiki_title": "Jarell Quansah",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "463902": {
+      "full_name_zh": "古斯塔沃·普埃尔塔",
+      "enwiki_title": "Gustavo Puerta",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "464055": {
+      "full_name_zh": "马洛·古斯托",
+      "enwiki_title": "Malo Gusto",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "464103": {
+      "full_name_zh": "博尼",
+      "enwiki_title": "Ange-Yoan Bonny",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "464127": {
+      "full_name_zh": "罗班·里塞",
+      "enwiki_title": "Robin Risser",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "464133": {
+      "full_name_zh": "艾利·瓦希",
+      "enwiki_title": "Elye Wahi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "464457": {
+      "full_name_zh": "阿里·贾西姆",
+      "enwiki_title": "Ali Jasim",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "464458": {
+      "full_name_zh": "优素福·艾姆",
+      "enwiki_title": "Youssef Amyn",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "464542": {
+      "full_name_zh": "亚历克斯·弗里曼",
+      "enwiki_title": "Alex Freeman",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "464865": {
+      "full_name_zh": "艾爾-哈吉·馬歷·迪奧夫",
+      "enwiki_title": "El Hadji Malick Diouf",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "464924": {
+      "full_name_zh": "阿布杜科迪尔·胡萨诺夫",
+      "enwiki_title": "Abdukodir Khusanov",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "464933": {
+      "full_name_zh": "法伊拉祖耶夫",
+      "enwiki_title": "Abbosbek Fayzullaev",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "466317": {
+      "full_name_zh": "祖連奴·巴根拿",
+      "enwiki_title": "Juninho Bacuna",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "466340": {
+      "full_name_zh": "莱安德罗·巴屈纳",
+      "enwiki_title": "Leandro Bacuna",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "466365": {
+      "full_name_zh": "凯文·费利达",
+      "enwiki_title": "Kevin Felida",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "466372": {
+      "full_name_zh": "謝雲·卡斯坦尼亞",
+      "enwiki_title": "Gervane Kastaneer",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "466624": {
+      "full_name_zh": "福拉金·巴洛根",
+      "enwiki_title": "Folarin Balogun",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "466838": {
+      "full_name_zh": "丹利·让·雅克",
+      "enwiki_title": "Danley Jean Jacques",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "470760": {
+      "full_name_zh": "約翰·阿里亞斯",
+      "enwiki_title": "Jhon Arias",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "473113": {
+      "full_name_zh": "伊贝雷齐·伊兹",
+      "enwiki_title": "Eberechi Eze",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "477470": {
+      "full_name_zh": "奥斯卡·鲍勃",
+      "enwiki_title": "Oscar Bobb",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "477778": {
+      "full_name_zh": "西蒙·阿丁拉",
+      "enwiki_title": "Simon Adingra",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "477790": {
+      "full_name_zh": "穆罕默德·阿穆拉",
+      "enwiki_title": "Mohamed Amoura",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "477802": {
+      "full_name_zh": "奥斯曼·迪奥曼德",
+      "enwiki_title": "Ousmane Diomande",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "477825": {
+      "full_name_zh": "奧迪倫·科索努",
+      "enwiki_title": "Odilon Kossounou",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "477831": {
+      "full_name_zh": "盧根·哥斯達",
+      "enwiki_title": "Logan Costa",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "477832": {
+      "full_name_zh": "西德尼·洛佩斯·卡布拉尔",
+      "enwiki_title": "Sidny Lopes Cabral",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "477833": {
+      "full_name_zh": "尤里斯·卡延贝",
+      "enwiki_title": "Joris Kayembe",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "477835": {
+      "full_name_zh": "西蒙·班扎",
+      "enwiki_title": "Simon Banza",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "477856": {
+      "full_name_zh": "久瓦尼·卡布拉爾",
+      "enwiki_title": "Jovane Cabral",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "477864": {
+      "full_name_zh": "亚伦·齐博拉",
+      "enwiki_title": "Aaron Tshibola",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "478364": {
+      "full_name_zh": "于斯廷·克鲁伊维特",
+      "enwiki_title": "Justin Kluivert",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "479042": {
+      "full_name_zh": "阿卜杜拉·阿布杜拉耶夫",
+      "enwiki_title": "Abdulla Abdullaev",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "479072": {
+      "full_name_zh": "梅赫加斯·多斯基",
+      "enwiki_title": "Merchas Doski",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "479077": {
+      "full_name_zh": "乌特基尔·尤苏波夫",
+      "enwiki_title": "Utkir Yusupov",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "479079": {
+      "full_name_zh": "霍賈克巴爾·阿利賈諾夫",
+      "enwiki_title": "Khojiakbar Alijonov",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "479080": {
+      "full_name_zh": "奥斯通·乌鲁诺夫",
+      "enwiki_title": "Oston Urunov",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "479084": {
+      "full_name_zh": "乌马尔·艾什木拉多夫",
+      "enwiki_title": "Umar Eshmurodov",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "479086": {
+      "full_name_zh": "阿齐兹·加尼耶夫",
+      "enwiki_title": "Azizjon Ganiev",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "479110": {
+      "full_name_zh": "阿卜杜沃赫德·内马托夫",
+      "enwiki_title": "Abduvohid Nematov",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "480966": {
+      "full_name_zh": "拉罗斯·杜阿特",
+      "enwiki_title": "Laros Duarte",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "481220": {
+      "full_name_zh": "阿齐兹贝克·阿莫诺夫",
+      "enwiki_title": "Azizbek Amonov",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "481610": {
+      "full_name_zh": "艾略特·安德森",
+      "enwiki_title": "Elliot Anderson",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "482621": {
+      "full_name_zh": "梅努",
+      "enwiki_title": "Kobbie Mainoo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "482774": {
+      "full_name_zh": "马丁·巴图里纳",
+      "enwiki_title": "Martin Baturina",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "482775": {
+      "full_name_zh": "泰勒·賓頓",
+      "enwiki_title": "Tyler Bindon",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "482885": {
+      "full_name_zh": "埃利亚斯·扎德",
+      "enwiki_title": "Elias Saad",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "483264": {
+      "full_name_zh": "维克托·约翰松",
+      "enwiki_title": "Viktor Johansson",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "483276": {
+      "full_name_zh": "加布里埃尔·古德曼德松",
+      "enwiki_title": "Gabriel Gudmundsson",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "483319": {
+      "full_name_zh": "哈尔马·埃克达尔",
+      "enwiki_title": "Hjalmar Ekdal",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "483442": {
+      "full_name_zh": "派屈克·伯格",
+      "enwiki_title": "Patrick Berg",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "483448": {
+      "full_name_zh": "安東尼奧·盧沙",
+      "enwiki_title": "Antonio Nusa",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "483471": {
+      "full_name_zh": "布里斯·桑巴",
+      "enwiki_title": "Brice Samba",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "483481": {
+      "full_name_zh": "馬特斯·維弗爾",
+      "enwiki_title": "Mats Wieffer",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "483496": {
+      "full_name_zh": "尤利安·雷爾森",
+      "enwiki_title": "Julian Ryerson",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "483497": {
+      "full_name_zh": "弗雷德里克·奧爾斯尼斯",
+      "enwiki_title": "Fredrik Aursnes",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "483512": {
+      "full_name_zh": "喬瑞爾·哈托",
+      "enwiki_title": "Jorrel Hato",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "483516": {
+      "full_name_zh": "克里斯托弗·阿耶",
+      "enwiki_title": "Kristoffer Ajer",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "483526": {
+      "full_name_zh": "泰贾尼·赖因德斯",
+      "enwiki_title": "Tijjani Reijnders",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "483553": {
+      "full_name_zh": "卢特沙雷尔·海特勒伊达",
+      "enwiki_title": "Lutsharel Geertruida",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "484045": {
+      "full_name_zh": "勞倫斯·沙克蘭",
+      "enwiki_title": "Lawrence Shankland",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "484072": {
+      "full_name_zh": "萨姆特·阿凯丁",
+      "enwiki_title": "Samet Akaydin",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "484073": {
+      "full_name_zh": "多明尼·希恩",
+      "enwiki_title": "Dominic Hyam",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "484320": {
+      "full_name_zh": "拉明·亚马尔",
+      "enwiki_title": "Lamine Yamal",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "484691": {
+      "full_name_zh": "约安·加西亚",
+      "enwiki_title": "Joan Garcia",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "484698": {
+      "full_name_zh": "阿萨内·迪奥",
+      "enwiki_title": "Assane Diao",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "484728": {
+      "full_name_zh": "馬克·普比爾",
+      "enwiki_title": "Marc Pubill",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "484850": {
+      "full_name_zh": "马克西米利安·拜尔",
+      "enwiki_title": "Maximilian Beier",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "484851": {
+      "full_name_zh": "德尼兹·翁达夫",
+      "enwiki_title": "Deniz Undav",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "484859": {
+      "full_name_zh": "昆腾·廷伯",
+      "enwiki_title": "Quinten Timber",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "484860": {
+      "full_name_zh": "布拉德利·巴尔科拉",
+      "enwiki_title": "Bradley Barcola",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "484862": {
+      "full_name_zh": "马文·凯勒",
+      "enwiki_title": "Marvin Keller",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "485064": {
+      "full_name_zh": "尼科·西古尔",
+      "enwiki_title": "Niko Sigur",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "485065": {
+      "full_name_zh": "托尼·弗魯克",
+      "enwiki_title": "Toni Fruk",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "485080": {
+      "full_name_zh": "詹姆斯·特拉福德",
+      "enwiki_title": "James Trafford",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "485131": {
+      "full_name_zh": "本·多克",
+      "enwiki_title": "Ben Gannon-Doak",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "485347": {
+      "full_name_zh": "鐘塔西",
+      "enwiki_title": "Tahith Chong",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "485379": {
+      "full_name_zh": "舒藍迪·山姆波",
+      "enwiki_title": "Shurandy Sambo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "485503": {
+      "full_name_zh": "鈴木唯人",
+      "enwiki_title": "Yuito Suzuki",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "485595": {
+      "full_name_zh": "朱利亞諾·施蒙尼",
+      "enwiki_title": "Giuliano Simeone",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "485655": {
+      "full_name_zh": "米高·奧利斯",
+      "enwiki_title": "Michael Olise",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "485666": {
+      "full_name_zh": "马格纳斯·阿克利乌舍",
+      "enwiki_title": "Maghnes Akliouche",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "485675": {
+      "full_name_zh": "蓋桑",
+      "enwiki_title": "Evann Guessand",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "485740": {
+      "full_name_zh": "尼尔·艾纳维",
+      "enwiki_title": "Neil El Aynaoui",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "485756": {
+      "full_name_zh": "扎卡里亚·埃尔·瓦赫迪",
+      "enwiki_title": "Zakaria El Ouahdi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "485760": {
+      "full_name_zh": "艾約布·布阿迪",
+      "enwiki_title": "Ayyoub Bouaddi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "486074": {
+      "full_name_zh": "詹·乌尊",
+      "enwiki_title": "Can Uzun",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "486130": {
+      "full_name_zh": "穆罕默杜·迪亞拉",
+      "enwiki_title": "Habib Diarra",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "486147": {
+      "full_name_zh": "诺亚·萨迪基",
+      "enwiki_title": "Noah Sadiki",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "486168": {
+      "full_name_zh": "谢里夫·恩迪亚耶",
+      "enwiki_title": "Cherif Ndiaye",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "486213": {
+      "full_name_zh": "布蘭登·托馬斯-阿桑特",
+      "enwiki_title": "Brandon Thomas-Asante",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "486268": {
+      "full_name_zh": "艾曼纽尔·阿格巴杜",
+      "enwiki_title": "Emmanuel Agbadou",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "486306": {
+      "full_name_zh": "内斯托里·伊兰昆达",
+      "enwiki_title": "Nestory Irankunda",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "486929": {
+      "full_name_zh": "塔尼·奥卢瓦塞伊",
+      "enwiki_title": "Tani Oluwaseyi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "489518": {
+      "full_name_zh": "克利森西奥·萨默维尔",
+      "enwiki_title": "Crysencio Summerville",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "489603": {
+      "full_name_zh": "阿里·内马蒂",
+      "enwiki_title": "Ali Nemati",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "489688": {
+      "full_name_zh": "亚辛·阿亚里",
+      "enwiki_title": "Yasin Ayari",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "489689": {
+      "full_name_zh": "卢卡斯·贝里瓦尔",
+      "enwiki_title": "Lucas Bergvall",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "489704": {
+      "full_name_zh": "雷纳托·韦加",
+      "enwiki_title": "Renato Veiga",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "489732": {
+      "full_name_zh": "诺尼·马杜埃凯",
+      "enwiki_title": "Noni Madueke",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "491166": {
+      "full_name_zh": "尼尚·维鲁皮莱",
+      "enwiki_title": "Nishan Velupillay",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "491218": {
+      "full_name_zh": "杰米·勒威林",
+      "enwiki_title": "Jamie Leweling",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "492363": {
+      "full_name_zh": "费利克斯·恩梅查",
+      "enwiki_title": "Felix Nmecha",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "492716": {
+      "full_name_zh": "摩根·罗杰斯",
+      "enwiki_title": "Morgan Rogers",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "493221": {
+      "full_name_zh": "米罗·穆海姆",
+      "enwiki_title": "Miro Muheim",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "493970": {
+      "full_name_zh": "普罗米斯·戴维",
+      "enwiki_title": "Promise David",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "494025": {
+      "full_name_zh": "马蒂亚斯·费尔南德斯-帕尔多",
+      "enwiki_title": "Matias Fernandez-Pardo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "494277": {
+      "full_name_zh": "叶文·迪乌夫",
+      "enwiki_title": "Yehvann Diouf",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "494291": {
+      "full_name_zh": "易卜拉欣·马扎",
+      "enwiki_title": "Ibrahim Maza",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "494293": {
+      "full_name_zh": "切姆斯丁·塔勒比",
+      "enwiki_title": "Chemsdine Talbi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "494345": {
+      "full_name_zh": "丹·巴恩",
+      "enwiki_title": "Dan Burn",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "494350": {
+      "full_name_zh": "克里斯托弗·邦苏·巴",
+      "enwiki_title": "Christopher Bonsu Baah",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "494531": {
+      "full_name_zh": "奥兰多·吉尔",
+      "enwiki_title": "Orlando Gill",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "494557": {
+      "full_name_zh": "派屈克·比奇",
+      "enwiki_title": "Patrick Beach",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "494625": {
+      "full_name_zh": "马库斯·佩德森",
+      "enwiki_title": "Marcus Holmgren Pedersen",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "494626": {
+      "full_name_zh": "安德烈亚斯·谢尔德鲁普",
+      "enwiki_title": "Andreas Schjelderup",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "494627": {
+      "full_name_zh": "瑟洛·阿斯加爾德",
+      "enwiki_title": "Thelo Aasgaard",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "494989": {
+      "full_name_zh": "利瓦諾·科梅南西亞",
+      "enwiki_title": "Livano Comenencia",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "495046": {
+      "full_name_zh": "毛里西奥",
+      "enwiki_title": "Mauricio",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "495348": {
+      "full_name_zh": "森納·拉門斯",
+      "enwiki_title": "Senne Lammens",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "495349": {
+      "full_name_zh": "尼古拉斯·拉斯金",
+      "enwiki_title": "Nicolas Raskin",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "495431": {
+      "full_name_zh": "佐治·靴斯",
+      "enwiki_title": "George Hirst",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "496358": {
+      "full_name_zh": "易卜拉欣·姆巴耶",
+      "enwiki_title": "Ibrahim Mbaye",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "497902": {
+      "full_name_zh": "迭戈·莫雷拉",
+      "enwiki_title": "Diego Moreira",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "498416": {
+      "full_name_zh": "尼克·沃尔特马德",
+      "enwiki_title": "Nick Woltemade",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "498421": {
+      "full_name_zh": "保羅·奧康-恩斯特勒",
+      "enwiki_title": "Paul Okon-Engstler",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "498455": {
+      "full_name_zh": "鈴木淳之介",
+      "enwiki_title": "Junnosuke Suzuki",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "499800": {
+      "full_name_zh": "馬馬杜·沙亞",
+      "enwiki_title": "Mamadou Sarr",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "499803": {
+      "full_name_zh": "迈克·彭德斯",
+      "enwiki_title": "Mike Penders",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "500037": {
+      "full_name_zh": "希尔韦托·莫拉",
+      "enwiki_title": "Gilberto Mora",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "502727": {
+      "full_name_zh": "约翰·曼赞比",
+      "enwiki_title": "Johan Manzambi",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "502945": {
+      "full_name_zh": "亞歷山大·伯恩哈德松",
+      "enwiki_title": "Alexander Bernhardsson",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "502946": {
+      "full_name_zh": "本亞明·尼格倫",
+      "enwiki_title": "Benjamin Nygren",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "503047": {
+      "full_name_zh": "貝斯福特·澤內利",
+      "enwiki_title": "Besfort Zeneli",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "504931": {
+      "full_name_zh": "盧卡斯·赫林頓",
+      "enwiki_title": "Lucas Herrington",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "505112": {
+      "full_name_zh": "盖西姆·亚辛",
+      "enwiki_title": "Gessime Yassine",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "506028": {
+      "full_name_zh": "罗宾·罗夫斯",
+      "enwiki_title": "Robin Roefs",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "506069": {
+      "full_name_zh": "凯文·亚科布",
+      "enwiki_title": "Kevin Yakob",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "506277": {
+      "full_name_zh": "約瑟夫·阿南",
+      "enwiki_title": "Joseph Anang",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "506329": {
+      "full_name_zh": "杰德·斯彭斯",
+      "enwiki_title": "Djed Spence",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "510922": {
+      "full_name_zh": "扬·迪奥曼德",
+      "enwiki_title": "Yan Diomande",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "511141": {
+      "full_name_zh": "阿曼多·歐比斯波",
+      "enwiki_title": "Armando Obispo",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "511710": {
+      "full_name_zh": "早川友基",
+      "enwiki_title": "Tomoki Hayakawa",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "514070": {
+      "full_name_zh": "阿爾菲·瓊斯",
+      "enwiki_title": "Alfie Jones",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "514166": {
+      "full_name_zh": "内森·恩戈伊",
+      "enwiki_title": "Nathan Ngoy",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "514188": {
+      "full_name_zh": "马利克·蒂奥",
+      "enwiki_title": "Malick Thiaw",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "514479": {
+      "full_name_zh": "桑德·唐维克",
+      "enwiki_title": "Sander Tangvik",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "514526": {
+      "full_name_zh": "伊沃爾·潘杜爾",
+      "enwiki_title": "Ivor Pandur",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "514639": {
+      "full_name_zh": "赫爾曼·約翰松",
+      "enwiki_title": "Herman Johansson",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "519836": {
+      "full_name_zh": "伊戈爾·蒂亞戈",
+      "enwiki_title": "Igor Thiago",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "519958": {
+      "full_name_zh": "埃利奧特·斯特勞德",
+      "enwiki_title": "Elliot Stroud",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "520036": {
+      "full_name_zh": "保罗·万纳",
+      "enwiki_title": "Paul Wanner",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "520037": {
+      "full_name_zh": "德里克·盧卡森",
+      "enwiki_title": "Derrick Luckassen",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "520112": {
+      "full_name_zh": "亨里克·法爾克納",
+      "enwiki_title": "Henrik Falchener",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "520218": {
+      "full_name_zh": "盐贝健人",
+      "enwiki_title": "Kento Shiogai",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "523007": {
+      "full_name_zh": "泰勒·弗萊徹",
+      "enwiki_title": "Tyler Fletcher",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "523173": {
+      "full_name_zh": "奥古斯丁·博阿基耶",
+      "enwiki_title": "Augustine Boakye",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    },
+    "523354": {
+      "full_name_zh": "巴拉·恩迪亚耶",
+      "enwiki_title": "Bara Sapoko Ndiaye",
+      "source": "Wikidata zhwiki sitelink or zh label"
+    }
+  }
+}

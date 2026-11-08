@@ -6,10 +6,23 @@ use Fourward\common\HttpError;
 use Fourward\worldcup\models\Team;
 use Fourward\worldcup\models\Player;
 use Fourward\worldcup\models\MatchModel;
+use Fourward\worldcup\models\TeamComparison;
 
 final class TeamController extends ReadController {
   public function index(array $input): array {
     return (new Team($this->db))->listing($this->text($input, 'q'), ...$this->pagination($input));
+  }
+
+  public function compare(array $input): array {
+    $model=new TeamComparison($this->db);$options=$model->options();
+    $first=$this->integer($input,'team_a');$second=$this->integer($input,'team_b');
+    if($first===null)$first=(int)($options[0]['id']??0);
+    if($second===null)foreach($options as $option)if((int)$option['id']!==$first){$second=(int)$option['id'];break;}
+    if(!$first||!$second)throw new HttpError(404,'暂无可对比的球队。');
+    if($first===$second)throw new HttpError(422,'请选择两支不同的球队。');
+    $a=$model->find($first)??throw new HttpError(404,'球队A不存在。');
+    $b=$model->find($second)??throw new HttpError(404,'球队B不存在。');
+    return ['teams'=>[$a,$b],'options'=>$options];
   }
 
   public function show(array $input): array {

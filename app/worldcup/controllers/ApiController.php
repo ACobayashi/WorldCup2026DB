@@ -7,7 +7,7 @@ use Fourward\common\HttpError;
 
 final class ApiController extends ReadController {
   public function dispatch(string $action, string $method, array $input, ?string $csrf = null): array {
-    $known = ['bootstrap', 'overview', 'teams', 'team', 'players', 'player', 'player_rankings', 'matches', 'match', 'groups', 'standings', 'bracket', 'venues', 'stages', 'my_supports', 'admin_overview', 'support'];
+    $known = ['bootstrap', 'overview', 'teams', 'team', 'team_compare', 'players', 'player', 'player_compare', 'player_rankings', 'matches', 'match', 'groups', 'standings', 'bracket', 'venues', 'stages', 'my_supports', 'admin_overview', 'support'];
     if (!in_array($action, $known, true)) throw new HttpError(404, '接口不存在。');
     if ($action === 'support') {
       if ($method !== 'POST') { header('Allow: POST'); throw new HttpError(405, '该接口仅接受 POST。'); }
@@ -19,8 +19,10 @@ final class ApiController extends ReadController {
       'overview' => (new CatalogController($this->db))->overview(),
       'teams' => (new TeamController($this->db))->index($input),
       'team' => (new TeamController($this->db))->show($input),
+      'team_compare' => (new TeamController($this->db))->compare($input),
       'players' => (new TeamController($this->db))->players($input),
       'player' => (new PlayerController($this->db))->show($input),
+      'player_compare' => (new PlayerController($this->db))->compare($input),
       'player_rankings' => (new PlayerController($this->db))->index($input),
       'matches' => (new MatchController($this->db))->index($input),
       'match' => (new MatchController($this->db))->show($input),

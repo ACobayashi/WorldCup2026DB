@@ -1,0 +1,442 @@
+{
+  "schema": 1,
+  "edition": 2026,
+  "provider": "懂球帝",
+  "captured_at": "2026-11-08T05:41:25.582550+00:00",
+  "definition": "各队在本届赛事逐场首发阵容身价快照中的最高值，不等同于整队注册名单总身价。",
+  "matches_checked": 104,
+  "teams": {
+    "ALG": {
+      "highest_starting_xi_value_eur": 183000000,
+      "highest_starting_xi_value_raw": "1.83亿欧",
+      "source_match_id": "fifa:match:400021496",
+      "source_match_no": 19,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329965",
+      "source_sha256": "a4448132f66a7bec297250389f077e40c841bc1966ab37699033bf4bd12226a7",
+      "snapshots_checked": 4
+    },
+    "ARG": {
+      "highest_starting_xi_value_eur": 436000000,
+      "highest_starting_xi_value_raw": "4.36亿欧",
+      "source_match_id": "fifa:match:400021540",
+      "source_match_no": 102,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328030",
+      "source_sha256": "12d3a068ebe35be3691a301946f220d60a0b964087f7da16761a953ac6bc42be",
+      "snapshots_checked": 8
+    },
+    "AUS": {
+      "highest_starting_xi_value_eur": 56750000,
+      "highest_starting_xi_value_raw": "5675万欧",
+      "source_match_id": "fifa:match:400021515",
+      "source_match_no": 88,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328013",
+      "source_sha256": "e7825ebf55641a9dd0044cacf4e9ca2f3c9abce0335b84c7dc26b6d896803b8a",
+      "snapshots_checked": 4
+    },
+    "AUT": {
+      "highest_starting_xi_value_eur": 143000000,
+      "highest_starting_xi_value_raw": "1.43亿欧",
+      "source_match_id": "fifa:match:400021519",
+      "source_match_no": 84,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327945",
+      "source_sha256": "aab52b1ffe873ade2fd9648c4eff2424ab38ad093ff3b28bcc51810b05f48ff2",
+      "snapshots_checked": 4
+    },
+    "BEL": {
+      "highest_starting_xi_value_eur": 258000000,
+      "highest_starting_xi_value_raw": "2.58亿欧",
+      "source_match_id": "fifa:match:400021478",
+      "source_match_no": 16,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329956",
+      "source_sha256": "ddccf703c2054fb4a433a452e4a402f6e52a5094b00ebe8e5bc077f7ae5995b4",
+      "snapshots_checked": 6
+    },
+    "BIH": {
+      "highest_starting_xi_value_eur": 107000000,
+      "highest_starting_xi_value_raw": "1.07亿欧",
+      "source_match_id": "fifa:match:400021446",
+      "source_match_no": 26,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329985",
+      "source_sha256": "9399563547368b4d6129b6bc7d96395dfa62cd1bd01617a14cd7c954b9e05d04",
+      "snapshots_checked": 4
+    },
+    "BRA": {
+      "highest_starting_xi_value_eur": 526000000,
+      "highest_starting_xi_value_raw": "5.26亿欧",
+      "source_match_id": "fifa:match:400021456",
+      "source_match_no": 7,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329930",
+      "source_sha256": "aec7411119a61d1fa82842bfbb96c402ca8068462f58b7b718e2990cf23fff03",
+      "snapshots_checked": 5
+    },
+    "CAN": {
+      "highest_starting_xi_value_eur": 97300000,
+      "highest_starting_xi_value_raw": "9730万欧",
+      "source_match_id": "fifa:match:400021449",
+      "source_match_no": 3,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328042",
+      "source_sha256": "c1b69a7a19d7d4ab3a053e9f771cfd1e3a52c1d7f91c9ef9155bf57886c85dcb",
+      "snapshots_checked": 5
+    },
+    "CIV": {
+      "highest_starting_xi_value_eur": 294000000,
+      "highest_starting_xi_value_raw": "2.94亿欧",
+      "source_match_id": "fifa:match:400021468",
+      "source_match_no": 55,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329995",
+      "source_sha256": "d2bfc1f7e7240d96f53600e47e7ffd706e779a5cfead2d9fd8353c766dc4f2b1",
+      "snapshots_checked": 4
+    },
+    "COD": {
+      "highest_starting_xi_value_eur": 105000000,
+      "highest_starting_xi_value_raw": "1.05亿欧",
+      "source_match_id": "fifa:match:400021512",
+      "source_match_no": 80,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327940",
+      "source_sha256": "6cf1d3cc4abf49455a70459d1d7a55bff3b130d6ee5fe5d45e117c95587fd78e",
+      "snapshots_checked": 4
+    },
+    "COL": {
+      "highest_starting_xi_value_eur": 194000000,
+      "highest_starting_xi_value_raw": "1.94亿欧",
+      "source_match_id": "fifa:match:400021535",
+      "source_match_no": 96,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328024",
+      "source_sha256": "cc8ea93e414971949a56299f2eefb14ad4566def0276a27f2b1d5b556ca76cfb",
+      "snapshots_checked": 5
+    },
+    "CPV": {
+      "highest_starting_xi_value_eur": 22550000,
+      "highest_starting_xi_value_raw": "2255万欧",
+      "source_match_id": "fifa:match:400021485",
+      "source_match_no": 65,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330009",
+      "source_sha256": "2f72f2a9a950405ac4c4f3f339d41ea6e7b066d8b53666b38d042b4ae439c3ac",
+      "snapshots_checked": 4
+    },
+    "CRO": {
+      "highest_starting_xi_value_eur": 279000000,
+      "highest_starting_xi_value_raw": "2.79亿欧",
+      "source_match_id": "fifa:match:400021507",
+      "source_match_no": 22,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329971",
+      "source_sha256": "6cd40b360a8faa10a98cca17b81ed39080ce221362960b9b1c399e32d74300d0",
+      "snapshots_checked": 4
+    },
+    "CUW": {
+      "highest_starting_xi_value_eur": 17600000,
+      "highest_starting_xi_value_raw": "1760万欧",
+      "source_match_id": "fifa:match:400021464",
+      "source_match_no": 10,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329950",
+      "source_sha256": "7a37d088f2a8aa7c32f715f80824a0a43d8ffdde32ba0262d042db6387025c76",
+      "snapshots_checked": 3
+    },
+    "CZE": {
+      "highest_starting_xi_value_eur": 111000000,
+      "highest_starting_xi_value_raw": "1.11亿欧",
+      "source_match_id": "fifa:match:400021441",
+      "source_match_no": 2,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329974",
+      "source_sha256": "03255314179e727f01373f8daae9e0075b11695a0723105864f1bf63ac6b5671",
+      "snapshots_checked": 3
+    },
+    "ECU": {
+      "highest_starting_xi_value_eur": 306000000,
+      "highest_starting_xi_value_raw": "3.06亿欧",
+      "source_match_id": "fifa:match:400021520",
+      "source_match_no": 79,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327939",
+      "source_sha256": "656d9cb6523a119d3613dffc565d95ada06764ac9cdd27a0bfa1434e4886c12b",
+      "snapshots_checked": 4
+    },
+    "EGY": {
+      "highest_starting_xi_value_eur": 90580000,
+      "highest_starting_xi_value_raw": "9058万欧",
+      "source_match_id": "fifa:match:400021480",
+      "source_match_no": 40,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330000",
+      "source_sha256": "e5875a506b56fd23bb447b11fa80421b83bc3b2ef821a4ce3165f7d6bf1018d4",
+      "snapshots_checked": 5
+    },
+    "ENG": {
+      "highest_starting_xi_value_eur": 798000000,
+      "highest_starting_xi_value_raw": "7.98亿欧",
+      "source_match_id": "fifa:match:400021531",
+      "source_match_no": 92,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328020",
+      "source_sha256": "37312afe1ba58377d1b61b098513bf5d545a84a91107b6304fb263b0d6e25078",
+      "snapshots_checked": 8
+    },
+    "ESP": {
+      "highest_starting_xi_value_eur": 720000000,
+      "highest_starting_xi_value_raw": "7.20亿欧",
+      "source_match_id": "fifa:match:400021529",
+      "source_match_no": 93,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328021",
+      "source_sha256": "82286e2efa17b5aa1606644a0e058755b40bf4b791b108134a7c4666831729b5",
+      "snapshots_checked": 8
+    },
+    "FRA": {
+      "highest_starting_xi_value_eur": 908000000,
+      "highest_starting_xi_value_raw": "9.08亿欧",
+      "source_match_id": "fifa:match:400021490",
+      "source_match_no": 17,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329962",
+      "source_sha256": "8bde3fce1de01291d57754cac53cc6a5b595ec1bd861a2ea21f3c6b942074239",
+      "snapshots_checked": 8
+    },
+    "GER": {
+      "highest_starting_xi_value_eur": 577000000,
+      "highest_starting_xi_value_raw": "5.77亿欧",
+      "source_match_id": "fifa:match:400021469",
+      "source_match_no": 33,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329951",
+      "source_sha256": "46dae5b208c84c4263d619b8b29b377c2a56882f55dcf139c91428fe2c3db6db",
+      "snapshots_checked": 4
+    },
+    "GHA": {
+      "highest_starting_xi_value_eur": 142000000,
+      "highest_starting_xi_value_raw": "1.42亿欧",
+      "source_match_id": "fifa:match:400021510",
+      "source_match_no": 21,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330020",
+      "source_sha256": "32c6f33a25a65c576e381425050040cd6f3901bc145adeb2981bad74ba79c8e8",
+      "snapshots_checked": 4
+    },
+    "HAI": {
+      "highest_starting_xi_value_eur": 47100000,
+      "highest_starting_xi_value_raw": "4710万欧",
+      "source_match_id": "fifa:match:400021452",
+      "source_match_no": 50,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329989",
+      "source_sha256": "25f2c59b1acc37945427185a3bf4b6594f697c90056bdd36bbd6dfb93639febb",
+      "snapshots_checked": 3
+    },
+    "IRN": {
+      "highest_starting_xi_value_eur": 12750000,
+      "highest_starting_xi_value_raw": "1275万欧",
+      "source_match_id": "fifa:match:400021479",
+      "source_match_no": 63,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330001",
+      "source_sha256": "a63eb2b3dd458b2f3d4b8bbc9ad91b4e09c4843227c23dc48556902910320f6e",
+      "snapshots_checked": 3
+    },
+    "IRQ": {
+      "highest_starting_xi_value_eur": 11580000,
+      "highest_starting_xi_value_raw": "1158万欧",
+      "source_match_id": "fifa:match:400021493",
+      "source_match_no": 62,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330012",
+      "source_sha256": "42fab0ac78ce7c0a168a3ef8d8f81d2d41edba7ad7a9b26aa36c588e6b860d6e",
+      "snapshots_checked": 3
+    },
+    "JOR": {
+      "highest_starting_xi_value_eur": 15150000,
+      "highest_starting_xi_value_raw": "1515万欧",
+      "source_match_id": "fifa:match:400021499",
+      "source_match_no": 44,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330014",
+      "source_sha256": "c99aa978e7faf4ec09177be4ab05751b4b8bb20595f8890f429e646dab3b95ba",
+      "snapshots_checked": 3
+    },
+    "JPN": {
+      "highest_starting_xi_value_eur": 176000000,
+      "highest_starting_xi_value_raw": "1.76亿欧",
+      "source_match_id": "fifa:match:400021470",
+      "source_match_no": 11,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329953",
+      "source_sha256": "40da8ad3144f1589b716effe43a24da88bf16ee2e94eb6eca7a25329b322a918",
+      "snapshots_checked": 4
+    },
+    "KOR": {
+      "highest_starting_xi_value_eur": 90800000,
+      "highest_starting_xi_value_raw": "9080万欧",
+      "source_match_id": "fifa:match:400021445",
+      "source_match_no": 54,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329976",
+      "source_sha256": "0e32b46f9c970a369d73da3b463fa812d8d5ee7922ae5362d4f27047b9ba0345",
+      "snapshots_checked": 3
+    },
+    "KSA": {
+      "highest_starting_xi_value_eur": 27920000,
+      "highest_starting_xi_value_raw": "2792万欧",
+      "source_match_id": "fifa:match:400021486",
+      "source_match_no": 13,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330007",
+      "source_sha256": "15db7f617a93f6cd52b2150d6c4da17a13b3e33ae8461a04458fd466c07bf19e",
+      "snapshots_checked": 3
+    },
+    "MAR": {
+      "highest_starting_xi_value_eur": 317000000,
+      "highest_starting_xi_value_raw": "3.17亿欧",
+      "source_match_id": "fifa:match:400021522",
+      "source_match_no": 75,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327934",
+      "source_sha256": "356c0509b3945827d31e38a5bf04207d033694085d46a3f001fd32cad17e6fbe",
+      "snapshots_checked": 6
+    },
+    "MEX": {
+      "highest_starting_xi_value_eur": 85800000,
+      "highest_starting_xi_value_raw": "8580万欧",
+      "source_match_id": "fifa:match:400021442",
+      "source_match_no": 28,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328039",
+      "source_sha256": "481a41b4337da54b3f9dba0e67dc69706aa38345913406d82c42ac9fd72226b3",
+      "snapshots_checked": 5
+    },
+    "NED": {
+      "highest_starting_xi_value_eur": 480000000,
+      "highest_starting_xi_value_raw": "4.80亿欧",
+      "source_match_id": "fifa:match:400021470",
+      "source_match_no": 11,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329953",
+      "source_sha256": "40da8ad3144f1589b716effe43a24da88bf16ee2e94eb6eca7a25329b322a918",
+      "snapshots_checked": 4
+    },
+    "NOR": {
+      "highest_starting_xi_value_eur": 420000000,
+      "highest_starting_xi_value_raw": "4.20亿欧",
+      "source_match_id": "fifa:match:400021491",
+      "source_match_no": 41,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330011",
+      "source_sha256": "295e67d49c02a0cfc8c5346aa33169b053916adc2426eb5f06470548da841616",
+      "snapshots_checked": 6
+    },
+    "NZL": {
+      "highest_starting_xi_value_eur": 24300000,
+      "highest_starting_xi_value_raw": "2430万欧",
+      "source_match_id": "fifa:match:400021481",
+      "source_match_no": 64,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329958",
+      "source_sha256": "18a65cf1d305138f50e586de6379dce83a796924005fedb2cbaebb071fd87cbe",
+      "snapshots_checked": 3
+    },
+    "PAN": {
+      "highest_starting_xi_value_eur": 23250000,
+      "highest_starting_xi_value_raw": "2325万欧",
+      "source_match_id": "fifa:match:400021511",
+      "source_match_no": 46,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330021",
+      "source_sha256": "e79c5074cc7213245fd2961e047696e57e33a19ffdfd7e28409a3cf2ae82d3e5",
+      "snapshots_checked": 3
+    },
+    "PAR": {
+      "highest_starting_xi_value_eur": 101000000,
+      "highest_starting_xi_value_raw": "1.01亿欧",
+      "source_match_id": "fifa:match:400021460",
+      "source_match_no": 31,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329991",
+      "source_sha256": "bd52c4e42f02188f755c75b7c9c2c3e791ce0f6e97aa62c6a8d6225eb46e3994",
+      "snapshots_checked": 5
+    },
+    "POR": {
+      "highest_starting_xi_value_eur": 643000000,
+      "highest_starting_xi_value_raw": "6.43亿欧",
+      "source_match_id": "fifa:match:400021526",
+      "source_match_no": 83,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327944",
+      "source_sha256": "fb8c7532d79f1db1cb8b2822ae1d4e178c434b32fa08385d1c262c403ded6bb3",
+      "snapshots_checked": 5
+    },
+    "QAT": {
+      "highest_starting_xi_value_eur": 12750000,
+      "highest_starting_xi_value_raw": "1275万欧",
+      "source_match_id": "fifa:match:400021450",
+      "source_match_no": 27,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328043",
+      "source_sha256": "4ca937a4648ca93790d16ae527a7dc188dd3458e4302473778d05fc8251623e5",
+      "snapshots_checked": 3
+    },
+    "RSA": {
+      "highest_starting_xi_value_eur": 26900000,
+      "highest_starting_xi_value_raw": "2690万欧",
+      "source_match_id": "fifa:match:400021443",
+      "source_match_no": 1,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328038",
+      "source_sha256": "1ab400ace39d53c792e06a5570c747b634f6e0dd0df9dbb4304db9951fd1e981",
+      "snapshots_checked": 4
+    },
+    "SCO": {
+      "highest_starting_xi_value_eur": 117000000,
+      "highest_starting_xi_value_raw": "1.17亿欧",
+      "source_match_id": "fifa:match:400021453",
+      "source_match_no": 5,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329987",
+      "source_sha256": "2f3ec49271935b92c176f21ba0dd6baff22c0d51a9e2bfaf8b339cb849d90c51",
+      "snapshots_checked": 3
+    },
+    "SEN": {
+      "highest_starting_xi_value_eur": 224000000,
+      "highest_starting_xi_value_raw": "2.24亿欧",
+      "source_match_id": "fifa:match:400021491",
+      "source_match_no": 41,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330011",
+      "source_sha256": "295e67d49c02a0cfc8c5346aa33169b053916adc2426eb5f06470548da841616",
+      "snapshots_checked": 4
+    },
+    "SUI": {
+      "highest_starting_xi_value_eur": 211000000,
+      "highest_starting_xi_value_raw": "2.11亿欧",
+      "source_match_id": "fifa:match:400021527",
+      "source_match_no": 85,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327946",
+      "source_sha256": "4b149d2448ac025a98d902a061a28bf0b289263a7868955dc18ebe5bba89d259",
+      "snapshots_checked": 6
+    },
+    "SWE": {
+      "highest_starting_xi_value_eur": 319000000,
+      "highest_starting_xi_value_raw": "3.19亿欧",
+      "source_match_id": "fifa:match:400021523",
+      "source_match_no": 77,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327936",
+      "source_sha256": "4733feaa8c273bee7b4254e01ea5aa1c8497d2a06971c7e32f95d27ca68b71bf",
+      "snapshots_checked": 4
+    },
+    "TUN": {
+      "highest_starting_xi_value_eur": 45200000,
+      "highest_starting_xi_value_raw": "4520万欧",
+      "source_match_id": "fifa:match:400021473",
+      "source_match_no": 58,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329955",
+      "source_sha256": "80e586ad986c683a8b1555c72d05704e4a26d67ca2bd5b4f76501570e5d5ddd4",
+      "snapshots_checked": 3
+    },
+    "TUR": {
+      "highest_starting_xi_value_eur": 310000000,
+      "highest_starting_xi_value_raw": "3.10亿欧",
+      "source_match_id": "fifa:match:400021460",
+      "source_match_no": 31,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329991",
+      "source_sha256": "bd52c4e42f02188f755c75b7c9c2c3e791ce0f6e97aa62c6a8d6225eb46e3994",
+      "snapshots_checked": 3
+    },
+    "URU": {
+      "highest_starting_xi_value_eur": 223000000,
+      "highest_starting_xi_value_raw": "2.23亿欧",
+      "source_match_id": "fifa:match:400021484",
+      "source_match_no": 66,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329961",
+      "source_sha256": "64f1818e772efc615ed92fb20943aa1024834538aad4605b4bdbef889b26e986",
+      "snapshots_checked": 3
+    },
+    "USA": {
+      "highest_starting_xi_value_eur": 239000000,
+      "highest_starting_xi_value_raw": "2.39亿欧",
+      "source_match_id": "fifa:match:400021534",
+      "source_match_no": 94,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328022",
+      "source_sha256": "ce118a4688dbd78df3267833f8c0ba27c078336fa7353fb47d1f580bedcc58c4",
+      "snapshots_checked": 5
+    },
+    "UZB": {
+      "highest_starting_xi_value_eur": 73150000,
+      "highest_starting_xi_value_raw": "7315万欧",
+      "source_match_id": "fifa:match:400021500",
+      "source_match_no": 72,
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330019",
+      "source_sha256": "afcc18a091422080d1f9b5d7240f046e5ee10d970b97fc35fdc8aa74b952c2f0",
+      "snapshots_checked": 3
+    }
+  }
+}

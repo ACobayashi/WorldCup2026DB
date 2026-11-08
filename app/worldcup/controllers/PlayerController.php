@@ -3,6 +3,7 @@
 declare(strict_types=1);
 namespace Fourward\worldcup\controllers;
 use Fourward\worldcup\models\PlayerBoard;
+use Fourward\worldcup\models\PlayerAbility;
 use Fourward\common\HttpError;
 final class PlayerController extends ReadController {
   public function show(array $input):array {
@@ -14,6 +15,18 @@ final class PlayerController extends ReadController {
     if($selected===null&&$player['matches'])$selected=$player['matches'][array_key_last($player['matches'])];
     $player['selected_match']=$selected;
     return $player;
+  }
+  public function compare(array $input):array {
+    $board=new PlayerBoard($this->db);$options=$board->comparisonOptions();
+    $first=$this->integer($input,'player_a');$second=$this->integer($input,'player_b');
+    $available=array_values(array_filter($options,fn($p)=>$p['has_ability']));
+    if($first===null)$first=(int)($available[0]['id']??$options[0]['id']??0);
+    if($second===null){foreach($available?:$options as $option)if((int)$option['id']!==$first){$second=(int)$option['id'];break;}}
+    if(!$first||!$second)throw new HttpError(404,'暂无可对比的球员。');
+    if($first===$second)throw new HttpError(422,'请选择两名不同的球员。');
+    $a=$board->find($first)??throw new HttpError(404,'球员A不存在。');
+    $b=$board->find($second)??throw new HttpError(404,'球员B不存在。');
+    return ['players'=>[$a,$b],'options'=>$options,'ability_coverage'=>PlayerAbility::coverage()];
   }
   public function index(array $input):array {
     $metric=$this->text($input,'metric','goals',40);$position=$this->text($input,'position','',2);

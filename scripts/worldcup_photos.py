@@ -4,6 +4,7 @@ import hashlib
 import io
 import json
 import re
+import subprocess
 import time
 import urllib.error
 import urllib.parse
@@ -90,7 +91,7 @@ def collect(catalog,workers=6,attempts=3,only=None):
     CACHE.mkdir(parents=True,exist_ok=True);report_path=DATA/'availability.json'
     previous=json.loads(report_path.read_text(encoding='utf-8')).get('players',{}) if report_path.exists() else {}
     results={k:v for k,v in previous.items() if k in catalog['players']}
-    targets=[(k,v) for k,v in catalog['players'].items() if only is None or k in only]
+    targets=[(k,v) for k,v in catalog['players'].items() if v.get('kind')=='headshot' and (only is None or k in only)]
     def fetch(pid,entry):
         old=previous.get(pid)
         if old and old.get('status')=='available' and old.get('source_url')==entry['source_url']:
@@ -99,16 +100,15 @@ def collect(catalog,workers=6,attempts=3,only=None):
                 payload=file.read_bytes();require(digest(payload)==old['sha256'],'Cached checksum changed');inspect_image(payload)
                 return pid,old
             except (ValueError,OSError):pass
-        if not entry['download_url']:return pid,{'status':'unavailable','reason':entry.get('identity_error','No FIFA portrait URL'),'source_url':entry['source_url']}
+        if entry.get('kind')!='headshot':return pid,{'status':'unavailable','reason':'No verified DQD headshot','source_url':entry['source_url']}
+        if not entry['download_url']:return pid,{'status':'unavailable','reason':entry.get('identity_error','No verified DQD headshot URL'),'source_url':entry['source_url']}
         for attempt in range(attempts):
             try:
-                request=urllib.request.Request(approved_download(entry),headers={'User-Agent':'WorldCup2026DB-coursework/1.0'})
-                with urllib.request.urlopen(request,timeout=18) as response:
-                    expected_host=urllib.parse.urlsplit(entry['download_url']).netloc
-                    require(expected_host in ['digitalhub.fifa.com','sd.qunliao.info','img1.qunliao.info','img2.qunliao.info'],'Unapproved image host')
-                    require(urllib.parse.urlsplit(response.geturl()).netloc==expected_host,'Unexpected image redirect')
-                    require(response.headers.get('Content-Type','').split(';')[0] in ['image/webp','image/png','image/jpeg'],'Non-image response')
-                    payload=response.read(MAX_BYTES+1)
+                url=approved_download(entry);expected_host=urllib.parse.urlsplit(url).netloc
+                require(expected_host in ['sd.qunliao.info','img1.qunliao.info','img2.qunliao.info'],'Unapproved DQD image host')
+                response=subprocess.run(['curl.exe','--fail','--silent','--show-error','--location','--max-redirs','2','--max-time','25',
+                    '--user-agent','Mozilla/5.0 FOURWARD-coursework/1.0',url],check=True,capture_output=True)
+                payload=response.stdout
                 meta=inspect_image(payload);filename=pid+'.'+meta.pop('extension');file=safe_file(filename)
                 temporary=file.with_suffix(file.suffix+'.tmp');temporary.write_bytes(payload);temporary.replace(file)
                 return pid,{'status':'available','file':filename,'sha256':digest(payload),'bytes':len(payload),**meta,'source_url':entry['source_url'],
@@ -134,7 +134,7 @@ def collect(catalog,workers=6,attempts=3,only=None):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--capture-from',type=Path);parser.add_argument('--workers',type=int,default=6);parser.add_argument('--attempts',type=int,default=3);parser.add_argument('--only',nargs='+');args=parser.parse_args()
-    require(1<=args.workers<=8 and 1<=args.attempts<=5,'Invalid download bounds')
+    require(1<=args.workers<=12 and 1<=args.attempts<=5,'Invalid download bounds')
     if args.capture_from:capture(args.capture_from)
     catalog=json.loads((DATA/'catalog.json').read_text(encoding='utf-8'));require(catalog['fifa_season']=='285023','Wrong edition')
     if args.only:require(set(args.only)<=set(catalog['players']),'Unknown requested FIFA ID')

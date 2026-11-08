@@ -18,7 +18,7 @@ final class PlayerPortrait extends ReadModel {
     }
     foreach($players as &$p){
       $pid=$external[$p[$idField]]??null;$photo=$pid!==null?($report[$pid]??null):null;$p['portrait_url']=null;$p['portrait_kind']=null;
-      if(is_array($photo)&&($photo['status']??null)==='available'&&preg_match('/^[a-f0-9]{64}$/D',$photo['sha256']??'')&&preg_match('/^'.preg_quote($pid,'/').'\.(?:webp|png|jpg)$/D',$photo['file']??'')){
+      if(is_array($photo)&&($photo['kind']??null)==='headshot'&&($photo['status']??null)==='available'&&preg_match('/^[a-f0-9]{64}$/D',$photo['sha256']??'')&&preg_match('/^'.preg_quote($pid,'/').'\.(?:webp|png|jpg)$/D',$photo['file']??'')){
         $file=\PROJECT_ROOT.'/public/assets/images/player-photos/'.$photo['file'];
         if(is_file($file)){$p['portrait_url']='../assets/images/player-photos/'.$photo['file'].'?v='.substr($photo['sha256'],0,12);$p['portrait_kind']=($photo['kind']??'full-body')==='headshot'?'headshot':'full-body';}
       }

@@ -8,7 +8,7 @@ try {
   $path=$argv[1]??PROJECT_ROOT.'/data/worldcup/player-metrics/metrics.json';
   $content=file_get_contents($path);$data=json_decode($content,true,512,JSON_THROW_ON_ERROR);
   if(($data['schema']??null)!==1||count($data['rows']??[])!==3288)throw new RuntimeException('Unexpected metrics contract/coverage');
-  $allowed=array_values(array_diff(array_keys(Fourward\worldcup\models\PlayerBoard::METRICS),['goals','shots','passes_attempted','passes_completed']));$provided=$data['fields'];sort($allowed);sort($provided);
+  $allowed=array_values(array_diff(array_keys(Fourward\worldcup\models\PlayerBoard::BASE_METRICS),['goals','shots','passes_attempted','passes_completed']));$provided=$data['fields'];sort($allowed);sort($provided);
   if($allowed!==$provided)throw new RuntimeException('Unknown extended metrics');
   $canonical=$db->prepare('SELECT id FROM wc_import_batches WHERE content_sha256=?');$canonical->execute([$data['canonical_dataset_sha256']]);
   if(!$canonical->fetchColumn())throw new RuntimeException('Import the matching verified complete dataset first');

@@ -7,6 +7,8 @@ declare(strict_types=1);
 <?php else: ?>
   <form class="wc-filters" method="get">
     <input type="hidden" name="view" value="matches">
+    <label>搜索球队<input type="search" name="q" maxlength="80" placeholder="中文名、英文名或球队代码" value="<?= e($input['q'] ?? '') ?>"></label>
+    <label>赛事阶段<select name="phase"><?php foreach (['all'=>'全部比赛','group'=>'小组赛','knockout'=>'淘汰赛'] as $key=>$label): ?><option value="<?= e($key) ?>" <?= ($input['phase'] ?? 'all') === $key ? 'selected' : '' ?>><?= e($label) ?></option><?php endforeach; ?></select></label>
     <label>比赛状态<select name="status"><?php foreach (['all' => '全部状态'] + $statusLabels as $key => $label): ?><option value="<?= e($key) ?>" <?= ($input['status'] ?? 'all') === $key ? 'selected' : '' ?>><?= e($label) ?></option><?php endforeach; ?></select></label>
     <label>比赛日期 / 北京时间<input type="date" name="date" value="<?= e($input['date'] ?? '') ?>"></label>
     <button class="glass-button" type="submit">筛选赛程</button><a class="wc-back" href="<?= e($url('matches')) ?>">重置</a>

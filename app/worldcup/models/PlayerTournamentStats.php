@@ -1,0 +1,29 @@
+<?php
+/** FOURWARD coursework | Author: 韩羽宸 | DQD tournament-total statistics absent from FIFA match rows. */
+declare(strict_types=1);
+namespace Fourward\worldcup\models;
+
+final class PlayerTournamentStats extends ReadModel {
+  private static ?array $snapshot=null;
+
+  private static function snapshot():array {
+    if(self::$snapshot!==null)return self::$snapshot;
+    $path=\PROJECT_ROOT.'/data/worldcup/player-assists.json';
+    $decoded=is_file($path)?json_decode(file_get_contents($path),true,512,JSON_THROW_ON_ERROR):[];
+    return self::$snapshot=is_array($decoded)?$decoded:[];
+  }
+
+  public function attach(array $players,string $idField='id'):array {
+    if(!$players)return [];
+    $ids=array_values(array_unique(array_map(fn($p)=>(int)$p[$idField],$players)));$params=[];$holders=[];
+    foreach($ids as $i=>$id){$params['id'.$i]=$id;$holders[]=':id'.$i;}
+    $rows=$this->rows("SELECT player_id,source_id FROM wc_source_mappings WHERE provider='fifa' AND entity_type='player' AND player_id IN (".implode(',',$holders).')',$params);
+    $fifa=[];foreach($rows as $row)$fifa[(int)$row['player_id']]=$row['source_id'];
+    $snapshot=self::snapshot();$entries=$snapshot['players']??[];$complete=($snapshot['roster_total']??0)===1248;
+    foreach($players as &$player){
+      $sourceId=$fifa[(int)$player[$idField]]??null;$entry=$sourceId!==null?($entries[$sourceId]??null):null;
+      $player['tournament_assists']=$entry!==null?(int)$entry['assists']:($complete?0:null);
+    }unset($player);
+    return $players;
+  }
+}

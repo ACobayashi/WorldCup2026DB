@@ -10,7 +10,7 @@ final class PageController extends ReadController {
     $section = 'matches';
     $user = null;
     $data = [];
-    $titles = ['matches' => '赛程与赛果', 'teams' => '参赛球队', 'leaders' => '球员榜', 'player' => '球员数据', 'groups' => '积分与晋级', 'venues' => '比赛场馆', 'support' => '我的支持', 'admin' => '赛事工作台'];
+    $titles = ['matches' => '赛程与赛果', 'teams' => '参赛球队', 'leaders' => '球员榜', 'compare'=>'球员对比', 'team_compare'=>'球队对比', 'player' => '球员数据', 'groups' => '积分与晋级', 'venues' => '比赛场馆', 'support' => '我的支持', 'admin' => '赛事工作台'];
     try {
       if (($_SERVER['REQUEST_METHOD'] ?? 'GET') !== 'GET') { header('Allow: GET'); throw new HttpError(405, '该页面仅接受 GET。'); }
       $section = $this->text($input, 'view', 'matches', 16);
@@ -26,6 +26,8 @@ final class PageController extends ReadController {
           : (new TeamController($this->db))->index($input),
         'matches' => $detail ? ['match' => (new MatchController($this->db))->show($input)] : (new MatchController($this->db))->index($input),
         'player' => ['player'=>(new PlayerController($this->db))->show($input)],
+        'compare' => (new PlayerController($this->db))->compare($input),
+        'team_compare' => (new TeamController($this->db))->compare($input),
         'leaders' => (new PlayerController($this->db))->index($input),
         'groups' => ['standings'=>(new StandingsController($this->db))->index(),'bracket'=>(new StandingsController($this->db))->bracket(),'panel'=>$panel],
         'venues' => (new CatalogController($this->db))->index($section, $input),

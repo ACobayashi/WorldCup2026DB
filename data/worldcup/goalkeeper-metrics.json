@@ -1,0 +1,5886 @@
+{
+  "schema": 1,
+  "edition": 2026,
+  "provider": "懂球帝",
+  "captured_at": "2026-11-06T07:03:19.004112+00:00",
+  "fields": [
+    "goals_prevented",
+    "saves",
+    "saves_inside_box",
+    "penalties_saved",
+    "shootout_saves",
+    "high_claims",
+    "punches",
+    "goal_line_clearances",
+    "sweeper_actions",
+    "sweeper_actions_won"
+  ],
+  "observed_source_fields": [
+    "出击/成功",
+    "扑出点球",
+    "扑救",
+    "拳击球",
+    "摘高球",
+    "点球大战扑救",
+    "禁区射门扑救",
+    "阻止进球"
+  ],
+  "matches_checked": 104,
+  "rows": [
+    {
+      "match_id": "fifa:match:400021440",
+      "player_id": "fifa:player:484012",
+      "dqd_player_id": "50457971",
+      "player_name": "科瓦日",
+      "team_name": "捷克",
+      "metrics": {
+        "goals_prevented": 0.12,
+        "saves": 3,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.12",
+        "扑救": "3",
+        "禁区射门扑救": "2",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021440",
+      "player_id": "fifa:player:395986",
+      "dqd_player_id": "50111527",
+      "player_name": "隆文-威廉斯",
+      "team_name": "南非",
+      "metrics": {
+        "goals_prevented": -0.47,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.47",
+        "扑救": "2",
+        "禁区射门扑救": "1",
+        "拳击球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021441",
+      "player_id": "fifa:player:274281",
+      "dqd_player_id": "50019938",
+      "player_name": "金承奎",
+      "team_name": "韩国",
+      "metrics": {
+        "goals_prevented": 1.07,
+        "saves": 3,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "1.07",
+        "扑救": "3",
+        "禁区射门扑救": "2",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021441",
+      "player_id": "fifa:player:484012",
+      "dqd_player_id": "50457971",
+      "player_name": "科瓦日",
+      "team_name": "捷克",
+      "metrics": {
+        "goals_prevented": 0.06,
+        "saves": 4,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.06",
+        "扑救": "4",
+        "禁区射门扑救": "3",
+        "出击/成功": "2/2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021442",
+      "player_id": "fifa:player:485070",
+      "dqd_player_id": "50566128",
+      "player_name": "何塞-兰赫尔",
+      "team_name": "墨西哥",
+      "metrics": {
+        "goals_prevented": 0.76,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.76",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "拳击球": "1",
+        "出击/成功": "2/2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021442",
+      "player_id": "fifa:player:274281",
+      "dqd_player_id": "50019938",
+      "player_name": "金承奎",
+      "team_name": "韩国",
+      "metrics": {
+        "goals_prevented": -0.1,
+        "saves": 3,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.10",
+        "扑救": "3",
+        "禁区射门扑救": "2",
+        "出击/成功": "2/2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021443",
+      "player_id": "fifa:player:485070",
+      "dqd_player_id": "50566128",
+      "player_name": "何塞-兰赫尔",
+      "team_name": "墨西哥",
+      "metrics": {
+        "goals_prevented": 0.13,
+        "saves": 2,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.13",
+        "扑救": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021443",
+      "player_id": "fifa:player:395986",
+      "dqd_player_id": "50111527",
+      "player_name": "隆文-威廉斯",
+      "team_name": "南非",
+      "metrics": {
+        "goals_prevented": -0.72,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.72",
+        "扑救": "2",
+        "禁区射门扑救": "1",
+        "拳击球": "1",
+        "出击/成功": "1/1",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021444",
+      "player_id": "fifa:player:484012",
+      "dqd_player_id": "50457971",
+      "player_name": "科瓦日",
+      "team_name": "捷克",
+      "metrics": {
+        "goals_prevented": -0.65,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.65",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "出击/成功": "2/2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021444",
+      "player_id": "fifa:player:485070",
+      "dqd_player_id": "50566128",
+      "player_name": "何塞-兰赫尔",
+      "team_name": "墨西哥",
+      "metrics": {
+        "goals_prevented": 0.13,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.13",
+        "扑救": "1",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021444",
+      "player_id": "fifa:player:215285",
+      "dqd_player_id": "50000384",
+      "player_name": "奥乔亚",
+      "team_name": "墨西哥",
+      "metrics": {
+        "goals_prevented": null,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "扑救": "0"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021445",
+      "player_id": "fifa:player:395986",
+      "dqd_player_id": "50111527",
+      "player_name": "隆文-威廉斯",
+      "team_name": "南非",
+      "metrics": {
+        "goals_prevented": 1.42,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "1.42",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "拳击球": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021445",
+      "player_id": "fifa:player:274281",
+      "dqd_player_id": "50019938",
+      "player_name": "金承奎",
+      "team_name": "韩国",
+      "metrics": {
+        "goals_prevented": -0.5,
+        "saves": 3,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.50",
+        "扑救": "3",
+        "禁区射门扑救": "1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021446",
+      "player_id": "fifa:player:448107",
+      "dqd_player_id": "50215638",
+      "player_name": "科贝尔",
+      "team_name": "瑞士",
+      "metrics": {
+        "goals_prevented": -0.73,
+        "saves": 2,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.73",
+        "扑救": "2",
+        "拳击球": "1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021446",
+      "player_id": "fifa:player:482978",
+      "dqd_player_id": "50187530",
+      "player_name": "瓦西里",
+      "team_name": "波黑",
+      "metrics": {
+        "goals_prevented": -1.54,
+        "saves": 3,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.54",
+        "扑救": "3",
+        "禁区射门扑救": "1",
+        "拳击球": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021447",
+      "player_id": "fifa:player:419459",
+      "dqd_player_id": "50483154",
+      "player_name": "穆罕默德-阿布纳达",
+      "team_name": "卡塔尔",
+      "metrics": {
+        "goals_prevented": 0.78,
+        "saves": 5,
+        "saves_inside_box": 5,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": 3,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.78",
+        "扑救": "5",
+        "禁区射门扑救": "5",
+        "拳击球": "3",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021447",
+      "player_id": "fifa:player:448107",
+      "dqd_player_id": "50215638",
+      "player_name": "科贝尔",
+      "team_name": "瑞士",
+      "metrics": {
+        "goals_prevented": -0.54,
+        "saves": 3,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.54",
+        "扑救": "3",
+        "禁区射门扑救": "3",
+        "出击/成功": "2/2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021448",
+      "player_id": "fifa:player:482978",
+      "dqd_player_id": "50187530",
+      "player_name": "瓦西里",
+      "team_name": "波黑",
+      "metrics": {
+        "goals_prevented": 0.14,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.14",
+        "扑救": "2",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021448",
+      "player_id": "fifa:player:419459",
+      "dqd_player_id": "50483154",
+      "player_name": "穆罕默德-阿布纳达",
+      "team_name": "卡塔尔",
+      "metrics": {
+        "goals_prevented": -2.04,
+        "saves": 3,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-2.04",
+        "扑救": "3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021449",
+      "player_id": "fifa:player:331732",
+      "dqd_player_id": "50112360",
+      "player_name": "克雷波",
+      "team_name": "加拿大",
+      "metrics": {
+        "goals_prevented": null,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "扑救": "2",
+        "禁区射门扑救": "1",
+        "拳击球": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021449",
+      "player_id": "fifa:player:482978",
+      "dqd_player_id": "50187530",
+      "player_name": "瓦西里",
+      "team_name": "波黑",
+      "metrics": {
+        "goals_prevented": -0.25,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 3,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.25",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "摘高球": "3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021450",
+      "player_id": "fifa:player:331732",
+      "dqd_player_id": "50112360",
+      "player_name": "克雷波",
+      "team_name": "加拿大",
+      "metrics": {
+        "goals_prevented": null,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "扑救": "0"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021450",
+      "player_id": "fifa:player:419459",
+      "dqd_player_id": "50483154",
+      "player_name": "穆罕默德-阿布纳达",
+      "team_name": "卡塔尔",
+      "metrics": {
+        "goals_prevented": -1.15,
+        "saves": 4,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 3,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.15",
+        "扑救": "4",
+        "禁区射门扑救": "4",
+        "摘高球": "3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021451",
+      "player_id": "fifa:player:448107",
+      "dqd_player_id": "50215638",
+      "player_name": "科贝尔",
+      "team_name": "瑞士",
+      "metrics": {
+        "goals_prevented": 1.76,
+        "saves": 6,
+        "saves_inside_box": 6,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "1.76",
+        "扑救": "6",
+        "禁区射门扑救": "6",
+        "拳击球": "2",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021451",
+      "player_id": "fifa:player:331732",
+      "dqd_player_id": "50112360",
+      "player_name": "克雷波",
+      "team_name": "加拿大",
+      "metrics": {
+        "goals_prevented": -0.83,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 3,
+        "sweeper_actions_won": 3
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.83",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "出击/成功": "3/3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021452",
+      "player_id": "fifa:player:356956",
+      "dqd_player_id": "50110699",
+      "player_name": "布努",
+      "team_name": "摩洛哥",
+      "metrics": {
+        "goals_prevented": -1.51,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.51",
+        "扑救": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021452",
+      "player_id": "fifa:player:295922",
+      "dqd_player_id": "50028926",
+      "player_name": "普拉西德",
+      "team_name": "海地",
+      "metrics": {
+        "goals_prevented": -0.18,
+        "saves": 8,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.18",
+        "扑救": "8",
+        "禁区射门扑救": "4",
+        "出击/成功": "1/1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021453",
+      "player_id": "fifa:player:295922",
+      "dqd_player_id": "50028926",
+      "player_name": "普拉西德",
+      "team_name": "海地",
+      "metrics": {
+        "goals_prevented": 0.18,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.18",
+        "扑救": "1",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021453",
+      "player_id": "fifa:player:411301",
+      "dqd_player_id": "50138981",
+      "player_name": "冈恩",
+      "team_name": "苏格兰",
+      "metrics": {
+        "goals_prevented": 0.22,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.22",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021454",
+      "player_id": "fifa:player:411301",
+      "dqd_player_id": "50138981",
+      "player_name": "冈恩",
+      "team_name": "苏格兰",
+      "metrics": {
+        "goals_prevented": -0.51,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.51",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "出击/成功": "2/2",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021454",
+      "player_id": "fifa:player:356956",
+      "dqd_player_id": "50110699",
+      "player_name": "布努",
+      "team_name": "摩洛哥",
+      "metrics": {
+        "goals_prevented": null,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "扑救": "0"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021455",
+      "player_id": "fifa:player:411301",
+      "dqd_player_id": "50138981",
+      "player_name": "冈恩",
+      "team_name": "苏格兰",
+      "metrics": {
+        "goals_prevented": 1.8,
+        "saves": 5,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "1.80",
+        "扑救": "5",
+        "禁区射门扑救": "4",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021455",
+      "player_id": "fifa:player:308370",
+      "dqd_player_id": "50069455",
+      "player_name": "阿利松",
+      "team_name": "巴西",
+      "metrics": {
+        "goals_prevented": 1.23,
+        "saves": 5,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "1.23",
+        "扑救": "5",
+        "禁区射门扑救": "4",
+        "拳击球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021456",
+      "player_id": "fifa:player:308370",
+      "dqd_player_id": "50069455",
+      "player_name": "阿利松",
+      "team_name": "巴西",
+      "metrics": {
+        "goals_prevented": -0.26,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.26",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "拳击球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021456",
+      "player_id": "fifa:player:356956",
+      "dqd_player_id": "50110699",
+      "player_name": "布努",
+      "team_name": "摩洛哥",
+      "metrics": {
+        "goals_prevented": 0.38,
+        "saves": 4,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.38",
+        "扑救": "4",
+        "禁区射门扑救": "4",
+        "拳击球": "2",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021457",
+      "player_id": "fifa:player:308370",
+      "dqd_player_id": "50069455",
+      "player_name": "阿利松",
+      "team_name": "巴西",
+      "metrics": {
+        "goals_prevented": 0.43,
+        "saves": 3,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.43",
+        "扑救": "3",
+        "禁区射门扑救": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021457",
+      "player_id": "fifa:player:295922",
+      "dqd_player_id": "50028926",
+      "player_name": "普拉西德",
+      "team_name": "海地",
+      "metrics": {
+        "goals_prevented": -0.67,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.67",
+        "扑救": "2",
+        "禁区射门扑救": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021458",
+      "player_id": "fifa:player:499913",
+      "dqd_player_id": "50403078",
+      "player_name": "弗里兹",
+      "team_name": "美国",
+      "metrics": {
+        "goals_prevented": -0.58,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.58",
+        "扑救": "0",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021458",
+      "player_id": "fifa:player:494531",
+      "dqd_player_id": "50481973",
+      "player_name": "奥兰多-希尔",
+      "team_name": "巴拉圭",
+      "metrics": {
+        "goals_prevented": -1.46,
+        "saves": 3,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.46",
+        "扑救": "3",
+        "禁区射门扑救": "3",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021459",
+      "player_id": "fifa:player:441181",
+      "dqd_player_id": "50228125",
+      "player_name": "恰克尔",
+      "team_name": "土耳其",
+      "metrics": {
+        "goals_prevented": 0.36,
+        "saves": 5,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.36",
+        "扑救": "5",
+        "禁区射门扑救": "4",
+        "拳击球": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021459",
+      "player_id": "fifa:player:448217",
+      "dqd_player_id": "50239801",
+      "player_name": "马特-特纳",
+      "team_name": "美国",
+      "metrics": {
+        "goals_prevented": -0.68,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.68",
+        "扑救": "0",
+        "出击/成功": "2/2",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021460",
+      "player_id": "fifa:player:441181",
+      "dqd_player_id": "50228125",
+      "player_name": "恰克尔",
+      "team_name": "土耳其",
+      "metrics": {
+        "goals_prevented": -0.79,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 3,
+        "sweeper_actions_won": 3
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.79",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "出击/成功": "3/3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021460",
+      "player_id": "fifa:player:494531",
+      "dqd_player_id": "50481973",
+      "player_name": "奥兰多-希尔",
+      "team_name": "巴拉圭",
+      "metrics": {
+        "goals_prevented": 0.67,
+        "saves": 5,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.67",
+        "扑救": "5",
+        "禁区射门扑救": "2",
+        "拳击球": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021461",
+      "player_id": "fifa:player:494531",
+      "dqd_player_id": "50481973",
+      "player_name": "奥兰多-希尔",
+      "team_name": "巴拉圭",
+      "metrics": {
+        "goals_prevented": 0.6,
+        "saves": 5,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.60",
+        "扑救": "5",
+        "禁区射门扑救": "4"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021461",
+      "player_id": "fifa:player:494557",
+      "dqd_player_id": "50706670",
+      "player_name": "帕特里克-比奇",
+      "team_name": "澳大利亚",
+      "metrics": {
+        "goals_prevented": 0.3,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.30",
+        "扑救": "2",
+        "禁区射门扑救": "1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021462",
+      "player_id": "fifa:player:499913",
+      "dqd_player_id": "50403078",
+      "player_name": "弗里兹",
+      "team_name": "美国",
+      "metrics": {
+        "goals_prevented": 0.09,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.09",
+        "扑救": "2",
+        "禁区射门扑救": "1",
+        "出击/成功": "2/2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021462",
+      "player_id": "fifa:player:494557",
+      "dqd_player_id": "50706670",
+      "player_name": "帕特里克-比奇",
+      "team_name": "澳大利亚",
+      "metrics": {
+        "goals_prevented": -0.69,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.69",
+        "扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021463",
+      "player_id": "fifa:player:494557",
+      "dqd_player_id": "50706670",
+      "player_name": "帕特里克-比奇",
+      "team_name": "澳大利亚",
+      "metrics": {
+        "goals_prevented": 1.46,
+        "saves": 8,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "1.46",
+        "扑救": "8",
+        "禁区射门扑救": "3",
+        "拳击球": "1",
+        "出击/成功": "1/1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021463",
+      "player_id": "fifa:player:441181",
+      "dqd_player_id": "50228125",
+      "player_name": "恰克尔",
+      "team_name": "土耳其",
+      "metrics": {
+        "goals_prevented": -0.92,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.92",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "出击/成功": "2/2",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021464",
+      "player_id": "fifa:player:228912",
+      "dqd_player_id": "50001805",
+      "player_name": "诺伊尔",
+      "team_name": "德国",
+      "metrics": {
+        "goals_prevented": -0.5,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.50",
+        "扑救": "1",
+        "出击/成功": "2/2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021464",
+      "player_id": "fifa:player:390650",
+      "dqd_player_id": "50046081",
+      "player_name": "鲁姆",
+      "team_name": "库拉索",
+      "metrics": {
+        "goals_prevented": -1.76,
+        "saves": 4,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.76",
+        "扑救": "4",
+        "禁区射门扑救": "4",
+        "拳击球": "2",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021465",
+      "player_id": "fifa:player:441236",
+      "dqd_player_id": "50040582",
+      "player_name": "埃尔南-加林德斯",
+      "team_name": "厄瓜多尔",
+      "metrics": {
+        "goals_prevented": 0.88,
+        "saves": 3,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.88",
+        "扑救": "3",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021465",
+      "player_id": "fifa:player:390650",
+      "dqd_player_id": "50046081",
+      "player_name": "鲁姆",
+      "team_name": "库拉索",
+      "metrics": {
+        "goals_prevented": 2.27,
+        "saves": 15,
+        "saves_inside_box": 10,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "2.27",
+        "扑救": "15",
+        "禁区射门扑救": "10",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021466",
+      "player_id": "fifa:player:441236",
+      "dqd_player_id": "50040582",
+      "player_name": "埃尔南-加林德斯",
+      "team_name": "厄瓜多尔",
+      "metrics": {
+        "goals_prevented": -0.06,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.06",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021466",
+      "player_id": "fifa:player:228912",
+      "dqd_player_id": "50001805",
+      "player_name": "诺伊尔",
+      "team_name": "德国",
+      "metrics": {
+        "goals_prevented": -0.37,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 0
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.37",
+        "扑救": "1",
+        "拳击球": "1",
+        "出击/成功": "1/0"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021467",
+      "player_id": "fifa:player:405873",
+      "dqd_player_id": "50263312",
+      "player_name": "叶海亚-福法纳",
+      "team_name": "科特迪瓦",
+      "metrics": {
+        "goals_prevented": 0.03,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.03",
+        "扑救": "1",
+        "拳击球": "1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021467",
+      "player_id": "fifa:player:441236",
+      "dqd_player_id": "50040582",
+      "player_name": "埃尔南-加林德斯",
+      "team_name": "厄瓜多尔",
+      "metrics": {
+        "goals_prevented": 0.22,
+        "saves": 3,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.22",
+        "扑救": "3",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021468",
+      "player_id": "fifa:player:390650",
+      "dqd_player_id": "50046081",
+      "player_name": "鲁姆",
+      "team_name": "库拉索",
+      "metrics": {
+        "goals_prevented": -0.14,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.14",
+        "扑救": "1",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021468",
+      "player_id": "fifa:player:405873",
+      "dqd_player_id": "50263312",
+      "player_name": "叶海亚-福法纳",
+      "team_name": "科特迪瓦",
+      "metrics": {
+        "goals_prevented": 0.06,
+        "saves": 2,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.06",
+        "扑救": "2",
+        "拳击球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021469",
+      "player_id": "fifa:player:228912",
+      "dqd_player_id": "50001805",
+      "player_name": "诺伊尔",
+      "team_name": "德国",
+      "metrics": {
+        "goals_prevented": 0.11,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.11",
+        "扑救": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021469",
+      "player_id": "fifa:player:405873",
+      "dqd_player_id": "50263312",
+      "player_name": "叶海亚-福法纳",
+      "team_name": "科特迪瓦",
+      "metrics": {
+        "goals_prevented": 0.36,
+        "saves": 5,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.36",
+        "扑救": "5",
+        "禁区射门扑救": "4",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021470",
+      "player_id": "fifa:player:424081",
+      "dqd_player_id": "50518644",
+      "player_name": "巴尔特-费布鲁亨",
+      "team_name": "荷兰",
+      "metrics": {
+        "goals_prevented": -0.68,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.68",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021470",
+      "player_id": "fifa:player:405530",
+      "dqd_player_id": "50413768",
+      "player_name": "铃木彩艳",
+      "team_name": "日本",
+      "metrics": {
+        "goals_prevented": 0.16,
+        "saves": 4,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.16",
+        "扑救": "4",
+        "禁区射门扑救": "4"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021471",
+      "player_id": "fifa:player:405530",
+      "dqd_player_id": "50413768",
+      "player_name": "铃木彩艳",
+      "team_name": "日本",
+      "metrics": {
+        "goals_prevented": 0.16,
+        "saves": 4,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 4,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.16",
+        "扑救": "4",
+        "禁区射门扑救": "2",
+        "拳击球": "4",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021471",
+      "player_id": "fifa:player:489685",
+      "dqd_player_id": "50482820",
+      "player_name": "维德尔-塞特斯特伦",
+      "team_name": "瑞典",
+      "metrics": {
+        "goals_prevented": 0.27,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.27",
+        "扑救": "2",
+        "禁区射门扑救": "1",
+        "拳击球": "1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021472",
+      "player_id": "fifa:player:424081",
+      "dqd_player_id": "50518644",
+      "player_name": "巴尔特-费布鲁亨",
+      "team_name": "荷兰",
+      "metrics": {
+        "goals_prevented": 0.71,
+        "saves": 7,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.71",
+        "扑救": "7",
+        "禁区射门扑救": "3",
+        "拳击球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021472",
+      "player_id": "fifa:player:360496",
+      "dqd_player_id": "50023705",
+      "player_name": "诺德菲尔特",
+      "team_name": "瑞典",
+      "metrics": {
+        "goals_prevented": -0.8,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.80",
+        "扑救": "2",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021473",
+      "player_id": "fifa:player:433365",
+      "dqd_player_id": "50393362",
+      "player_name": "达门",
+      "team_name": "突尼斯",
+      "metrics": {
+        "goals_prevented": -0.79,
+        "saves": 4,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.79",
+        "扑救": "4",
+        "禁区射门扑救": "3",
+        "拳击球": "2",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021473",
+      "player_id": "fifa:player:424081",
+      "dqd_player_id": "50518644",
+      "player_name": "巴尔特-费布鲁亨",
+      "team_name": "荷兰",
+      "metrics": {
+        "goals_prevented": -0.06,
+        "saves": 3,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.06",
+        "扑救": "3",
+        "禁区射门扑救": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021474",
+      "player_id": "fifa:player:360496",
+      "dqd_player_id": "50023705",
+      "player_name": "诺德菲尔特",
+      "team_name": "瑞典",
+      "metrics": {
+        "goals_prevented": -0.65,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.65",
+        "扑救": "1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021474",
+      "player_id": "fifa:player:520245",
+      "dqd_player_id": "50828305",
+      "player_name": "阿卜杜勒穆希卜-查马克",
+      "team_name": "突尼斯",
+      "metrics": {
+        "goals_prevented": -2.88,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-2.88",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021475",
+      "player_id": "fifa:player:433365",
+      "dqd_player_id": "50393362",
+      "player_name": "达门",
+      "team_name": "突尼斯",
+      "metrics": {
+        "goals_prevented": -1.27,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.27",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "拳击球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021475",
+      "player_id": "fifa:player:405530",
+      "dqd_player_id": "50413768",
+      "player_name": "铃木彩艳",
+      "team_name": "日本",
+      "metrics": {
+        "goals_prevented": null,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "扑救": "0",
+        "出击/成功": "1/1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021476",
+      "player_id": "fifa:player:380007",
+      "dqd_player_id": "50167640",
+      "player_name": "贝兰万德",
+      "team_name": "伊朗",
+      "metrics": {
+        "goals_prevented": -1.0,
+        "saves": 6,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.00",
+        "扑救": "6",
+        "禁区射门扑救": "3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021476",
+      "player_id": "fifa:player:368535",
+      "dqd_player_id": "50139015",
+      "player_name": "克罗科姆",
+      "team_name": "新西兰",
+      "metrics": {
+        "goals_prevented": -0.28,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.28",
+        "扑救": "2",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021477",
+      "player_id": "fifa:player:358106",
+      "dqd_player_id": "50054379",
+      "player_name": "库尔图瓦",
+      "team_name": "比利时",
+      "metrics": {
+        "goals_prevented": 0.87,
+        "saves": 3,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.87",
+        "扑救": "3",
+        "禁区射门扑救": "2",
+        "出击/成功": "2/2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021477",
+      "player_id": "fifa:player:380007",
+      "dqd_player_id": "50167640",
+      "player_name": "贝兰万德",
+      "team_name": "伊朗",
+      "metrics": {
+        "goals_prevented": 1.49,
+        "saves": 7,
+        "saves_inside_box": 7,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 3,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "1.49",
+        "扑救": "7",
+        "禁区射门扑救": "7",
+        "拳击球": "1",
+        "出击/成功": "1/1",
+        "摘高球": "3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021478",
+      "player_id": "fifa:player:358106",
+      "dqd_player_id": "50054379",
+      "player_name": "库尔图瓦",
+      "team_name": "比利时",
+      "metrics": {
+        "goals_prevented": -0.39,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 3,
+        "sweeper_actions_won": 3
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.39",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "出击/成功": "3/3",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021478",
+      "player_id": "fifa:player:416906",
+      "dqd_player_id": "50499808",
+      "player_name": "舒贝尔",
+      "team_name": "埃及",
+      "metrics": {
+        "goals_prevented": -0.36,
+        "saves": 3,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.36",
+        "扑救": "3",
+        "禁区射门扑救": "3",
+        "拳击球": "1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021479",
+      "player_id": "fifa:player:416906",
+      "dqd_player_id": "50499808",
+      "player_name": "舒贝尔",
+      "team_name": "埃及",
+      "metrics": {
+        "goals_prevented": 0.23,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": 1,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 3,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.23",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "拳击球": "3",
+        "出击/成功": "1/1",
+        "扑出点球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021479",
+      "player_id": "fifa:player:380007",
+      "dqd_player_id": "50167640",
+      "player_name": "贝兰万德",
+      "team_name": "伊朗",
+      "metrics": {
+        "goals_prevented": -0.53,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.53",
+        "扑救": "2",
+        "禁区射门扑救": "1",
+        "拳击球": "1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021480",
+      "player_id": "fifa:player:368535",
+      "dqd_player_id": "50139015",
+      "player_name": "克罗科姆",
+      "team_name": "新西兰",
+      "metrics": {
+        "goals_prevented": -0.45,
+        "saves": 4,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.45",
+        "扑救": "4",
+        "禁区射门扑救": "3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021480",
+      "player_id": "fifa:player:416906",
+      "dqd_player_id": "50499808",
+      "player_name": "舒贝尔",
+      "team_name": "埃及",
+      "metrics": {
+        "goals_prevented": 0.62,
+        "saves": 4,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": 3,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.62",
+        "扑救": "4",
+        "禁区射门扑救": "4",
+        "拳击球": "3",
+        "出击/成功": "1/1",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021481",
+      "player_id": "fifa:player:368535",
+      "dqd_player_id": "50139015",
+      "player_name": "克罗科姆",
+      "team_name": "新西兰",
+      "metrics": {
+        "goals_prevented": -1.86,
+        "saves": 5,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.86",
+        "扑救": "5",
+        "禁区射门扑救": "3",
+        "拳击球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021481",
+      "player_id": "fifa:player:358106",
+      "dqd_player_id": "50054379",
+      "player_name": "库尔图瓦",
+      "team_name": "比利时",
+      "metrics": {
+        "goals_prevented": -0.77,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.77",
+        "扑救": "1",
+        "拳击球": "2",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021482",
+      "player_id": "fifa:player:430753",
+      "dqd_player_id": "50225832",
+      "player_name": "乌奈-西蒙",
+      "team_name": "西班牙",
+      "metrics": {
+        "goals_prevented": 0.13,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.13",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021482",
+      "player_id": "fifa:player:364752",
+      "dqd_player_id": "50117609",
+      "player_name": "沃齐尼亚",
+      "team_name": "佛得角 ",
+      "metrics": {
+        "goals_prevented": 1.45,
+        "saves": 7,
+        "saves_inside_box": 6,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 3,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "1.45",
+        "扑救": "7",
+        "禁区射门扑救": "6",
+        "摘高球": "3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021483",
+      "player_id": "fifa:player:430753",
+      "dqd_player_id": "50225832",
+      "player_name": "乌奈-西蒙",
+      "team_name": "西班牙",
+      "metrics": {
+        "goals_prevented": 0.1,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.10",
+        "扑救": "1",
+        "出击/成功": "1/1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021483",
+      "player_id": "fifa:player:396885",
+      "dqd_player_id": "50179263",
+      "player_name": "穆罕默德-奥韦斯",
+      "team_name": "沙特阿拉伯",
+      "metrics": {
+        "goals_prevented": -0.55,
+        "saves": 5,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.55",
+        "扑救": "5",
+        "禁区射门扑救": "3",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021484",
+      "player_id": "fifa:player:229498",
+      "dqd_player_id": "50015168",
+      "player_name": "穆斯莱拉",
+      "team_name": "乌拉圭",
+      "metrics": {
+        "goals_prevented": -0.8,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.80",
+        "扑救": "0",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021484",
+      "player_id": "fifa:player:368664",
+      "dqd_player_id": "50183115",
+      "player_name": "罗切特",
+      "team_name": "乌拉圭",
+      "metrics": {
+        "goals_prevented": null,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "扑救": "0"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021484",
+      "player_id": "fifa:player:430753",
+      "dqd_player_id": "50225832",
+      "player_name": "乌奈-西蒙",
+      "team_name": "西班牙",
+      "metrics": {
+        "goals_prevented": 0.1,
+        "saves": 2,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.10",
+        "扑救": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021485",
+      "player_id": "fifa:player:364752",
+      "dqd_player_id": "50117609",
+      "player_name": "沃齐尼亚",
+      "team_name": "佛得角 ",
+      "metrics": {
+        "goals_prevented": 0.33,
+        "saves": 3,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.33",
+        "扑救": "3",
+        "禁区射门扑救": "3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021485",
+      "player_id": "fifa:player:396885",
+      "dqd_player_id": "50179263",
+      "player_name": "穆罕默德-奥韦斯",
+      "team_name": "沙特阿拉伯",
+      "metrics": {
+        "goals_prevented": 0.51,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.51",
+        "扑救": "2",
+        "禁区射门扑救": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021486",
+      "player_id": "fifa:player:396885",
+      "dqd_player_id": "50179263",
+      "player_name": "穆罕默德-奥韦斯",
+      "team_name": "沙特阿拉伯",
+      "metrics": {
+        "goals_prevented": 0.68,
+        "saves": 9,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.68",
+        "扑救": "9",
+        "禁区射门扑救": "4",
+        "拳击球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021486",
+      "player_id": "fifa:player:229498",
+      "dqd_player_id": "50015168",
+      "player_name": "穆斯莱拉",
+      "team_name": "乌拉圭",
+      "metrics": {
+        "goals_prevented": -0.35,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.35",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "拳击球": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021487",
+      "player_id": "fifa:player:229498",
+      "dqd_player_id": "50015168",
+      "player_name": "穆斯莱拉",
+      "team_name": "乌拉圭",
+      "metrics": {
+        "goals_prevented": -0.74,
+        "saves": 2,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 0
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.74",
+        "扑救": "2",
+        "出击/成功": "1/0"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021487",
+      "player_id": "fifa:player:364752",
+      "dqd_player_id": "50117609",
+      "player_name": "沃齐尼亚",
+      "team_name": "佛得角 ",
+      "metrics": {
+        "goals_prevented": -0.35,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.35",
+        "扑救": "0",
+        "出击/成功": "1/1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021488",
+      "player_id": "fifa:player:347085",
+      "dqd_player_id": "50126306",
+      "player_name": "贾拉勒-哈桑",
+      "team_name": "伊拉克",
+      "metrics": {
+        "goals_prevented": -1.35,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.35",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "出击/成功": "2/2",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021488",
+      "player_id": "fifa:player:373235",
+      "dqd_player_id": "50021498",
+      "player_name": "尼兰德",
+      "team_name": "挪威",
+      "metrics": {
+        "goals_prevented": -0.4,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.40",
+        "扑救": "0",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021489",
+      "player_id": "fifa:player:483535",
+      "dqd_player_id": "50241381",
+      "player_name": "塞尔维克",
+      "team_name": "挪威",
+      "metrics": {
+        "goals_prevented": -1.0,
+        "saves": 5,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.00",
+        "扑救": "5",
+        "禁区射门扑救": "3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021489",
+      "player_id": "fifa:player:448332",
+      "dqd_player_id": "50137731",
+      "player_name": "迈尼昂",
+      "team_name": "法国",
+      "metrics": {
+        "goals_prevented": 0.41,
+        "saves": 3,
+        "saves_inside_box": 2,
+        "penalties_saved": 1,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.41",
+        "扑救": "3",
+        "禁区射门扑救": "2",
+        "出击/成功": "1/1",
+        "扑出点球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021490",
+      "player_id": "fifa:player:448332",
+      "dqd_player_id": "50137731",
+      "player_name": "迈尼昂",
+      "team_name": "法国",
+      "metrics": {
+        "goals_prevented": -0.83,
+        "saves": 2,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.83",
+        "扑救": "2",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021490",
+      "player_id": "fifa:player:433806",
+      "dqd_player_id": "50136161",
+      "player_name": "爱德华-门迪",
+      "team_name": "塞内加尔",
+      "metrics": {
+        "goals_prevented": -0.94,
+        "saves": 5,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.94",
+        "扑救": "5",
+        "禁区射门扑救": "4",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021491",
+      "player_id": "fifa:player:373235",
+      "dqd_player_id": "50021498",
+      "player_name": "尼兰德",
+      "team_name": "挪威",
+      "metrics": {
+        "goals_prevented": -0.65,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.65",
+        "扑救": "2",
+        "禁区射门扑救": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021491",
+      "player_id": "fifa:player:433806",
+      "dqd_player_id": "50136161",
+      "player_name": "爱德华-门迪",
+      "team_name": "塞内加尔",
+      "metrics": {
+        "goals_prevented": -1.05,
+        "saves": 3,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.05",
+        "扑救": "3",
+        "禁区射门扑救": "3",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021491",
+      "player_id": "fifa:player:448821",
+      "dqd_player_id": "50104373",
+      "player_name": "莫里-迪奥",
+      "team_name": "塞内加尔",
+      "metrics": {
+        "goals_prevented": null,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "扑救": "0",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021492",
+      "player_id": "fifa:player:448332",
+      "dqd_player_id": "50137731",
+      "player_name": "迈尼昂",
+      "team_name": "法国",
+      "metrics": {
+        "goals_prevented": null,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "扑救": "0",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021492",
+      "player_id": "fifa:player:433571",
+      "dqd_player_id": "50228306",
+      "player_name": "艾哈迈德-巴西勒",
+      "team_name": "伊拉克",
+      "metrics": {
+        "goals_prevented": -0.72,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.72",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "拳击球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021493",
+      "player_id": "fifa:player:448821",
+      "dqd_player_id": "50104373",
+      "player_name": "莫里-迪奥",
+      "team_name": "塞内加尔",
+      "metrics": {
+        "goals_prevented": 0.07,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 3,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.07",
+        "扑救": "1",
+        "摘高球": "3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021493",
+      "player_id": "fifa:player:433571",
+      "dqd_player_id": "50228306",
+      "player_name": "艾哈迈德-巴西勒",
+      "team_name": "伊拉克",
+      "metrics": {
+        "goals_prevented": 0.24,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.24",
+        "扑救": "1",
+        "拳击球": "1",
+        "出击/成功": "1/1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021493",
+      "player_id": "fifa:player:347085",
+      "dqd_player_id": "50126306",
+      "player_name": "贾拉勒-哈桑",
+      "team_name": "伊拉克",
+      "metrics": {
+        "goals_prevented": -0.32,
+        "saves": 6,
+        "saves_inside_box": 5,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.32",
+        "扑救": "6",
+        "禁区射门扑救": "5"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021494",
+      "player_id": "fifa:player:308300",
+      "dqd_player_id": "50069413",
+      "player_name": "达米安-马丁内斯",
+      "team_name": "阿根廷",
+      "metrics": {
+        "goals_prevented": 0.05,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.05",
+        "扑救": "1",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021494",
+      "player_id": "fifa:player:371739",
+      "dqd_player_id": "50157828",
+      "player_name": "施拉格尔",
+      "team_name": "奥地利",
+      "metrics": {
+        "goals_prevented": -0.49,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.49",
+        "扑救": "2",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021495",
+      "player_id": "fifa:player:397894",
+      "dqd_player_id": "50210054",
+      "player_name": "亚齐德-阿布-莱拉",
+      "team_name": "约旦",
+      "metrics": {
+        "goals_prevented": -1.55,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.55",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021495",
+      "player_id": "fifa:player:308300",
+      "dqd_player_id": "50069413",
+      "player_name": "达米安-马丁内斯",
+      "team_name": "阿根廷",
+      "metrics": {
+        "goals_prevented": -0.28,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.28",
+        "扑救": "0"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:308300",
+      "dqd_player_id": "50069413",
+      "player_name": "达米安-马丁内斯",
+      "team_name": "阿根廷",
+      "metrics": {
+        "goals_prevented": -0.21,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.21",
+        "扑救": "0"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021496",
+      "player_id": "fifa:player:389879",
+      "dqd_player_id": "50229353",
+      "player_name": "卢卡-齐达内",
+      "team_name": "阿尔及利亚",
+      "metrics": {
+        "goals_prevented": -0.78,
+        "saves": 3,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.78",
+        "扑救": "3",
+        "禁区射门扑救": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021497",
+      "player_id": "fifa:player:477817",
+      "dqd_player_id": "50773917",
+      "player_name": "乌萨马-本布特",
+      "team_name": "阿尔及利亚",
+      "metrics": {
+        "goals_prevented": -1.68,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.68",
+        "扑救": "0"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021497",
+      "player_id": "fifa:player:371739",
+      "dqd_player_id": "50157828",
+      "player_name": "施拉格尔",
+      "team_name": "奥地利",
+      "metrics": {
+        "goals_prevented": -0.21,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.21",
+        "扑救": "2",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021498",
+      "player_id": "fifa:player:371739",
+      "dqd_player_id": "50157828",
+      "player_name": "施拉格尔",
+      "team_name": "奥地利",
+      "metrics": {
+        "goals_prevented": 0.18,
+        "saves": 3,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.18",
+        "扑救": "3",
+        "禁区射门扑救": "1",
+        "拳击球": "1",
+        "出击/成功": "2/2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021498",
+      "player_id": "fifa:player:397894",
+      "dqd_player_id": "50210054",
+      "player_name": "亚齐德-阿布-莱拉",
+      "team_name": "约旦",
+      "metrics": {
+        "goals_prevented": -1.71,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.71",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "拳击球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:397894",
+      "dqd_player_id": "50210054",
+      "player_name": "亚齐德-阿布-莱拉",
+      "team_name": "约旦",
+      "metrics": {
+        "goals_prevented": 0.1,
+        "saves": 6,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 3,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.10",
+        "扑救": "6",
+        "禁区射门扑救": "3",
+        "拳击球": "3",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021499",
+      "player_id": "fifa:player:389879",
+      "dqd_player_id": "50229353",
+      "player_name": "卢卡-齐达内",
+      "team_name": "阿尔及利亚",
+      "metrics": {
+        "goals_prevented": -0.38,
+        "saves": 3,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.38",
+        "扑救": "3",
+        "禁区射门扑救": "1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021500",
+      "player_id": "fifa:player:441313",
+      "dqd_player_id": "50105907",
+      "player_name": "姆帕西-恩扎乌",
+      "team_name": "刚果民主共和国",
+      "metrics": {
+        "goals_prevented": -0.71,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.71",
+        "扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021500",
+      "player_id": "fifa:player:479110",
+      "dqd_player_id": "50427659",
+      "player_name": "内马托夫",
+      "team_name": "乌兹别克斯坦",
+      "metrics": {
+        "goals_prevented": -0.65,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.65",
+        "扑救": "1",
+        "拳击球": "1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021501",
+      "player_id": "fifa:player:360642",
+      "dqd_player_id": "50016616",
+      "player_name": "卡米洛-巴尔加斯",
+      "team_name": "哥伦比亚",
+      "metrics": {
+        "goals_prevented": 0.08,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.08",
+        "扑救": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021501",
+      "player_id": "fifa:player:441313",
+      "dqd_player_id": "50105907",
+      "player_name": "姆帕西-恩扎乌",
+      "team_name": "刚果民主共和国",
+      "metrics": {
+        "goals_prevented": 0.39,
+        "saves": 8,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.39",
+        "扑救": "8",
+        "禁区射门扑救": "4",
+        "拳击球": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021502",
+      "player_id": "fifa:player:403001",
+      "dqd_player_id": "50226851",
+      "player_name": "迪奥戈-科斯塔",
+      "team_name": "葡萄牙",
+      "metrics": {
+        "goals_prevented": -0.03,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.03",
+        "扑救": "1",
+        "出击/成功": "1/1",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021502",
+      "player_id": "fifa:player:441313",
+      "dqd_player_id": "50105907",
+      "player_name": "姆帕西-恩扎乌",
+      "team_name": "刚果民主共和国",
+      "metrics": {
+        "goals_prevented": -0.47,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 3,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.47",
+        "扑救": "0",
+        "出击/成功": "1/1",
+        "摘高球": "3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021503",
+      "player_id": "fifa:player:403001",
+      "dqd_player_id": "50226851",
+      "player_name": "迪奥戈-科斯塔",
+      "team_name": "葡萄牙",
+      "metrics": {
+        "goals_prevented": 0.09,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 3,
+        "sweeper_actions_won": 3
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.09",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "拳击球": "1",
+        "出击/成功": "3/3",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021503",
+      "player_id": "fifa:player:479110",
+      "dqd_player_id": "50427659",
+      "player_name": "内马托夫",
+      "team_name": "乌兹别克斯坦",
+      "metrics": {
+        "goals_prevented": -1.51,
+        "saves": 4,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.51",
+        "扑救": "4",
+        "禁区射门扑救": "3",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021504",
+      "player_id": "fifa:player:479077",
+      "dqd_player_id": "50156932",
+      "player_name": "乌特基尔-尤苏波夫",
+      "team_name": "乌兹别克斯坦",
+      "metrics": {
+        "goals_prevented": -1.64,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.64",
+        "扑救": "1",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021504",
+      "player_id": "fifa:player:360642",
+      "dqd_player_id": "50016616",
+      "player_name": "卡米洛-巴尔加斯",
+      "team_name": "哥伦比亚",
+      "metrics": {
+        "goals_prevented": 0.19,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.19",
+        "扑救": "1",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021505",
+      "player_id": "fifa:player:360642",
+      "dqd_player_id": "50016616",
+      "player_name": "卡米洛-巴尔加斯",
+      "team_name": "哥伦比亚",
+      "metrics": {
+        "goals_prevented": 0.47,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.47",
+        "扑救": "2",
+        "禁区射门扑救": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021505",
+      "player_id": "fifa:player:403001",
+      "dqd_player_id": "50226851",
+      "player_name": "迪奥戈-科斯塔",
+      "team_name": "葡萄牙",
+      "metrics": {
+        "goals_prevented": 0.61,
+        "saves": 6,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.61",
+        "扑救": "6",
+        "禁区射门扑救": "2",
+        "拳击球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021506",
+      "player_id": "fifa:player:336022",
+      "dqd_player_id": "50104523",
+      "player_name": "皮克福德",
+      "team_name": "英格兰",
+      "metrics": {
+        "goals_prevented": null,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "扑救": "0",
+        "出击/成功": "2/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021506",
+      "player_id": "fifa:player:494349",
+      "dqd_player_id": "50803846",
+      "player_name": "本杰明-阿萨雷",
+      "team_name": "加纳",
+      "metrics": {
+        "goals_prevented": 0.37,
+        "saves": 3,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.37",
+        "扑救": "3",
+        "禁区射门扑救": "1",
+        "拳击球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021507",
+      "player_id": "fifa:player:336022",
+      "dqd_player_id": "50104523",
+      "player_name": "皮克福德",
+      "team_name": "英格兰",
+      "metrics": {
+        "goals_prevented": -1.49,
+        "saves": 3,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.49",
+        "扑救": "3",
+        "禁区射门扑救": "1",
+        "拳击球": "2",
+        "出击/成功": "2/2",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021507",
+      "player_id": "fifa:player:369029",
+      "dqd_player_id": "50137616",
+      "player_name": "利瓦科维奇",
+      "team_name": "克罗地亚",
+      "metrics": {
+        "goals_prevented": -0.67,
+        "saves": 7,
+        "saves_inside_box": 7,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 0
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.67",
+        "扑救": "7",
+        "禁区射门扑救": "7",
+        "拳击球": "1",
+        "出击/成功": "1/0"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021508",
+      "player_id": "fifa:player:441241",
+      "dqd_player_id": "50180902",
+      "player_name": "奥兰多-莫斯克拉",
+      "team_name": "巴拿马",
+      "metrics": {
+        "goals_prevented": 0.01,
+        "saves": 4,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.01",
+        "扑救": "4",
+        "禁区射门扑救": "2",
+        "出击/成功": "2/2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021508",
+      "player_id": "fifa:player:336022",
+      "dqd_player_id": "50104523",
+      "player_name": "皮克福德",
+      "team_name": "英格兰",
+      "metrics": {
+        "goals_prevented": 0.21,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.21",
+        "扑救": "2",
+        "禁区射门扑救": "1",
+        "拳击球": "1",
+        "出击/成功": "2/2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021509",
+      "player_id": "fifa:player:369029",
+      "dqd_player_id": "50137616",
+      "player_name": "利瓦科维奇",
+      "team_name": "克罗地亚",
+      "metrics": {
+        "goals_prevented": -0.04,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.04",
+        "扑救": "0",
+        "拳击球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021509",
+      "player_id": "fifa:player:494349",
+      "dqd_player_id": "50803846",
+      "player_name": "本杰明-阿萨雷",
+      "team_name": "加纳",
+      "metrics": {
+        "goals_prevented": -1.13,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.13",
+        "扑救": "2",
+        "禁区射门扑救": "1",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021510",
+      "player_id": "fifa:player:386473",
+      "dqd_player_id": "50234733",
+      "player_name": "阿蒂-齐吉",
+      "team_name": "加纳",
+      "metrics": {
+        "goals_prevented": 0.66,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.66",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "拳击球": "1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021510",
+      "player_id": "fifa:player:494349",
+      "dqd_player_id": "50803846",
+      "player_name": "本杰明-阿萨雷",
+      "team_name": "加纳",
+      "metrics": {
+        "goals_prevented": 0.7,
+        "saves": 3,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.70",
+        "扑救": "3",
+        "禁区射门扑救": "2",
+        "拳击球": "1",
+        "出击/成功": "1/1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021510",
+      "player_id": "fifa:player:441241",
+      "dqd_player_id": "50180902",
+      "player_name": "奥兰多-莫斯克拉",
+      "team_name": "巴拿马",
+      "metrics": {
+        "goals_prevented": 0.04,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.04",
+        "扑救": "2",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021511",
+      "player_id": "fifa:player:441241",
+      "dqd_player_id": "50180902",
+      "player_name": "奥兰多-莫斯克拉",
+      "team_name": "巴拿马",
+      "metrics": {
+        "goals_prevented": 0.21,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.21",
+        "扑救": "1",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021511",
+      "player_id": "fifa:player:369029",
+      "dqd_player_id": "50137616",
+      "player_name": "利瓦科维奇",
+      "team_name": "克罗地亚",
+      "metrics": {
+        "goals_prevented": 0.04,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.04",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021512",
+      "player_id": "fifa:player:336022",
+      "dqd_player_id": "50104523",
+      "player_name": "皮克福德",
+      "team_name": "英格兰",
+      "metrics": {
+        "goals_prevented": -0.7,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.70",
+        "扑救": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021512",
+      "player_id": "fifa:player:441313",
+      "dqd_player_id": "50105907",
+      "player_name": "姆帕西-恩扎乌",
+      "team_name": "刚果民主共和国",
+      "metrics": {
+        "goals_prevented": 0.44,
+        "saves": 5,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.44",
+        "扑救": "5",
+        "禁区射门扑救": "4",
+        "拳击球": "2",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021513",
+      "player_id": "fifa:player:228912",
+      "dqd_player_id": "50001805",
+      "player_name": "诺伊尔",
+      "team_name": "德国",
+      "metrics": {
+        "goals_prevented": -0.51,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": 1,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 3,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.51",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "拳击球": "1",
+        "出击/成功": "3/2",
+        "点球大战扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021513",
+      "player_id": "fifa:player:494531",
+      "dqd_player_id": "50481973",
+      "player_name": "奥兰多-希尔",
+      "team_name": "巴拉圭",
+      "metrics": {
+        "goals_prevented": 0.87,
+        "saves": 6,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": 2,
+        "high_claims": 3,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.87",
+        "扑救": "6",
+        "禁区射门扑救": "4",
+        "拳击球": "1",
+        "摘高球": "3",
+        "点球大战扑救": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021514",
+      "player_id": "fifa:player:405873",
+      "dqd_player_id": "50263312",
+      "player_name": "叶海亚-福法纳",
+      "team_name": "科特迪瓦",
+      "metrics": {
+        "goals_prevented": 0.02,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.02",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021514",
+      "player_id": "fifa:player:373235",
+      "dqd_player_id": "50021498",
+      "player_name": "尼兰德",
+      "team_name": "挪威",
+      "metrics": {
+        "goals_prevented": 0.4,
+        "saves": 4,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.40",
+        "扑救": "4",
+        "禁区射门扑救": "2",
+        "拳击球": "2",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021515",
+      "player_id": "fifa:player:494557",
+      "dqd_player_id": "50706670",
+      "player_name": "帕特里克-比奇",
+      "team_name": "澳大利亚",
+      "metrics": {
+        "goals_prevented": 0.14,
+        "saves": 3,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.14",
+        "扑救": "3",
+        "禁区射门扑救": "2",
+        "拳击球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021515",
+      "player_id": "fifa:player:416906",
+      "dqd_player_id": "50499808",
+      "player_name": "舒贝尔",
+      "team_name": "埃及",
+      "metrics": {
+        "goals_prevented": -0.93,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.93",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "拳击球": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021516",
+      "player_id": "fifa:player:308370",
+      "dqd_player_id": "50069455",
+      "player_name": "阿利松",
+      "team_name": "巴西",
+      "metrics": {
+        "goals_prevented": -0.22,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.22",
+        "扑救": "1",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021516",
+      "player_id": "fifa:player:405530",
+      "dqd_player_id": "50413768",
+      "player_name": "铃木彩艳",
+      "team_name": "日本",
+      "metrics": {
+        "goals_prevented": -0.55,
+        "saves": 4,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 4,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.55",
+        "扑救": "4",
+        "禁区射门扑救": "2",
+        "拳击球": "2",
+        "出击/成功": "2/2",
+        "摘高球": "4"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021517",
+      "player_id": "fifa:player:360642",
+      "dqd_player_id": "50016616",
+      "player_name": "卡米洛-巴尔加斯",
+      "team_name": "哥伦比亚",
+      "metrics": {
+        "goals_prevented": null,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "扑救": "0"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021517",
+      "player_id": "fifa:player:386473",
+      "dqd_player_id": "50234733",
+      "player_name": "阿蒂-齐吉",
+      "team_name": "加纳",
+      "metrics": {
+        "goals_prevented": 1.69,
+        "saves": 7,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "1.69",
+        "扑救": "7",
+        "禁区射门扑救": "4",
+        "拳击球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021518",
+      "player_id": "fifa:player:395986",
+      "dqd_player_id": "50111527",
+      "player_name": "隆文-威廉斯",
+      "team_name": "南非",
+      "metrics": {
+        "goals_prevented": 0.67,
+        "saves": 5,
+        "saves_inside_box": 5,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.67",
+        "扑救": "5",
+        "禁区射门扑救": "5"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021518",
+      "player_id": "fifa:player:331732",
+      "dqd_player_id": "50112360",
+      "player_name": "克雷波",
+      "team_name": "加拿大",
+      "metrics": {
+        "goals_prevented": 0.11,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.11",
+        "扑救": "1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021519",
+      "player_id": "fifa:player:430753",
+      "dqd_player_id": "50225832",
+      "player_name": "乌奈-西蒙",
+      "team_name": "西班牙",
+      "metrics": {
+        "goals_prevented": null,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "扑救": "0",
+        "出击/成功": "1/1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021519",
+      "player_id": "fifa:player:371739",
+      "dqd_player_id": "50157828",
+      "player_name": "施拉格尔",
+      "team_name": "奥地利",
+      "metrics": {
+        "goals_prevented": -0.8,
+        "saves": 6,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.80",
+        "扑救": "6",
+        "禁区射门扑救": "2",
+        "拳击球": "2",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021520",
+      "player_id": "fifa:player:485070",
+      "dqd_player_id": "50566128",
+      "player_name": "何塞-兰赫尔",
+      "team_name": "墨西哥",
+      "metrics": {
+        "goals_prevented": 0.63,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.63",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "拳击球": "2",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021520",
+      "player_id": "fifa:player:441236",
+      "dqd_player_id": "50040582",
+      "player_name": "埃尔南-加林德斯",
+      "team_name": "厄瓜多尔",
+      "metrics": {
+        "goals_prevented": -0.86,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.86",
+        "扑救": "1",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021521",
+      "player_id": "fifa:player:308300",
+      "dqd_player_id": "50069413",
+      "player_name": "达米安-马丁内斯",
+      "team_name": "阿根廷",
+      "metrics": {
+        "goals_prevented": -0.52,
+        "saves": 3,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.52",
+        "扑救": "3",
+        "禁区射门扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021521",
+      "player_id": "fifa:player:364752",
+      "dqd_player_id": "50117609",
+      "player_name": "沃齐尼亚",
+      "team_name": "佛得角 ",
+      "metrics": {
+        "goals_prevented": -0.58,
+        "saves": 8,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 3,
+        "sweeper_actions_won": 3
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.58",
+        "扑救": "8",
+        "禁区射门扑救": "3",
+        "出击/成功": "3/3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021522",
+      "player_id": "fifa:player:424081",
+      "dqd_player_id": "50518644",
+      "player_name": "巴尔特-费布鲁亨",
+      "team_name": "荷兰",
+      "metrics": {
+        "goals_prevented": 1.28,
+        "saves": 5,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "1.28",
+        "扑救": "5",
+        "禁区射门扑救": "3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021522",
+      "player_id": "fifa:player:356956",
+      "dqd_player_id": "50110699",
+      "player_name": "布努",
+      "team_name": "摩洛哥",
+      "metrics": {
+        "goals_prevented": -0.84,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": 1,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.84",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "拳击球": "1",
+        "点球大战扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021523",
+      "player_id": "fifa:player:448332",
+      "dqd_player_id": "50137731",
+      "player_name": "迈尼昂",
+      "team_name": "法国",
+      "metrics": {
+        "goals_prevented": 0.65,
+        "saves": 3,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.65",
+        "扑救": "3",
+        "禁区射门扑救": "3",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021523",
+      "player_id": "fifa:player:489685",
+      "dqd_player_id": "50482820",
+      "player_name": "维德尔-塞特斯特伦",
+      "team_name": "瑞典",
+      "metrics": {
+        "goals_prevented": 0.83,
+        "saves": 9,
+        "saves_inside_box": 4,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.83",
+        "扑救": "9",
+        "禁区射门扑救": "4",
+        "出击/成功": "2/2",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021524",
+      "player_id": "fifa:player:499913",
+      "dqd_player_id": "50403078",
+      "player_name": "弗里兹",
+      "team_name": "美国",
+      "metrics": {
+        "goals_prevented": 0.13,
+        "saves": 3,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.13",
+        "扑救": "3",
+        "禁区射门扑救": "3",
+        "出击/成功": "1/1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021524",
+      "player_id": "fifa:player:482978",
+      "dqd_player_id": "50187530",
+      "player_name": "瓦西里",
+      "team_name": "波黑",
+      "metrics": {
+        "goals_prevented": -1.71,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.71",
+        "扑救": "0",
+        "拳击球": "2",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021525",
+      "player_id": "fifa:player:358106",
+      "dqd_player_id": "50054379",
+      "player_name": "库尔图瓦",
+      "team_name": "比利时",
+      "metrics": {
+        "goals_prevented": -0.15,
+        "saves": 3,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.15",
+        "扑救": "3",
+        "禁区射门扑救": "1",
+        "出击/成功": "1/1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021525",
+      "player_id": "fifa:player:448821",
+      "dqd_player_id": "50104373",
+      "player_name": "莫里-迪奥",
+      "team_name": "塞内加尔",
+      "metrics": {
+        "goals_prevented": -0.7,
+        "saves": 3,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.70",
+        "扑救": "3",
+        "禁区射门扑救": "1",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021526",
+      "player_id": "fifa:player:403001",
+      "dqd_player_id": "50226851",
+      "player_name": "迪奥戈-科斯塔",
+      "team_name": "葡萄牙",
+      "metrics": {
+        "goals_prevented": 0.51,
+        "saves": 5,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.51",
+        "扑救": "5",
+        "禁区射门扑救": "3",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021526",
+      "player_id": "fifa:player:369029",
+      "dqd_player_id": "50137616",
+      "player_name": "利瓦科维奇",
+      "team_name": "克罗地亚",
+      "metrics": {
+        "goals_prevented": -0.15,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.15",
+        "扑救": "2",
+        "禁区射门扑救": "1",
+        "拳击球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021527",
+      "player_id": "fifa:player:448107",
+      "dqd_player_id": "50215638",
+      "player_name": "科贝尔",
+      "team_name": "瑞士",
+      "metrics": {
+        "goals_prevented": 0.28,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.28",
+        "扑救": "2",
+        "禁区射门扑救": "1",
+        "出击/成功": "2/2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021527",
+      "player_id": "fifa:player:389879",
+      "dqd_player_id": "50229353",
+      "player_name": "卢卡-齐达内",
+      "team_name": "阿尔及利亚",
+      "metrics": {
+        "goals_prevented": -0.71,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.71",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021528",
+      "player_id": "fifa:player:308300",
+      "dqd_player_id": "50069413",
+      "player_name": "达米安-马丁内斯",
+      "team_name": "阿根廷",
+      "metrics": {
+        "goals_prevented": -0.79,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.79",
+        "扑救": "0",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021528",
+      "player_id": "fifa:player:416906",
+      "dqd_player_id": "50499808",
+      "player_name": "舒贝尔",
+      "team_name": "埃及",
+      "metrics": {
+        "goals_prevented": -0.34,
+        "saves": 4,
+        "saves_inside_box": 3,
+        "penalties_saved": 1,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 3,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.34",
+        "扑救": "4",
+        "禁区射门扑救": "3",
+        "拳击球": "3",
+        "出击/成功": "1/1",
+        "摘高球": "1",
+        "扑出点球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021529",
+      "player_id": "fifa:player:403001",
+      "dqd_player_id": "50226851",
+      "player_name": "迪奥戈-科斯塔",
+      "team_name": "葡萄牙",
+      "metrics": {
+        "goals_prevented": 0.46,
+        "saves": 5,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.46",
+        "扑救": "5",
+        "禁区射门扑救": "3",
+        "拳击球": "1",
+        "出击/成功": "1/1",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021529",
+      "player_id": "fifa:player:430753",
+      "dqd_player_id": "50225832",
+      "player_name": "乌奈-西蒙",
+      "team_name": "西班牙",
+      "metrics": {
+        "goals_prevented": 0.89,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.89",
+        "扑救": "2",
+        "禁区射门扑救": "2",
+        "出击/成功": "1/1",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021530",
+      "player_id": "fifa:player:331732",
+      "dqd_player_id": "50112360",
+      "player_name": "克雷波",
+      "team_name": "加拿大",
+      "metrics": {
+        "goals_prevented": -0.85,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.85",
+        "扑救": "1",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021530",
+      "player_id": "fifa:player:356956",
+      "dqd_player_id": "50110699",
+      "player_name": "布努",
+      "team_name": "摩洛哥",
+      "metrics": {
+        "goals_prevented": 0.53,
+        "saves": 3,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": 3,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.53",
+        "扑救": "3",
+        "禁区射门扑救": "2",
+        "拳击球": "3",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021531",
+      "player_id": "fifa:player:485070",
+      "dqd_player_id": "50566128",
+      "player_name": "何塞-兰赫尔",
+      "team_name": "墨西哥",
+      "metrics": {
+        "goals_prevented": -0.02,
+        "saves": 2,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.02",
+        "扑救": "2",
+        "禁区射门扑救": "1",
+        "拳击球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021531",
+      "player_id": "fifa:player:336022",
+      "dqd_player_id": "50104523",
+      "player_name": "皮克福德",
+      "team_name": "英格兰",
+      "metrics": {
+        "goals_prevented": -0.18,
+        "saves": 3,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 5,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.18",
+        "扑救": "3",
+        "禁区射门扑救": "2",
+        "拳击球": "5",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021532",
+      "player_id": "fifa:player:308370",
+      "dqd_player_id": "50069455",
+      "player_name": "阿利松",
+      "team_name": "巴西",
+      "metrics": {
+        "goals_prevented": -0.34,
+        "saves": 3,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 2
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.34",
+        "扑救": "3",
+        "禁区射门扑救": "3",
+        "出击/成功": "2/2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021532",
+      "player_id": "fifa:player:373235",
+      "dqd_player_id": "50021498",
+      "player_name": "尼兰德",
+      "team_name": "挪威",
+      "metrics": {
+        "goals_prevented": 0.76,
+        "saves": 4,
+        "saves_inside_box": 3,
+        "penalties_saved": 1,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.76",
+        "扑救": "4",
+        "禁区射门扑救": "3",
+        "拳击球": "1",
+        "摘高球": "1",
+        "扑出点球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021533",
+      "player_id": "fifa:player:494531",
+      "dqd_player_id": "50481973",
+      "player_name": "奥兰多-希尔",
+      "team_name": "巴拉圭",
+      "metrics": {
+        "goals_prevented": 0.88,
+        "saves": 4,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.88",
+        "扑救": "4",
+        "禁区射门扑救": "2",
+        "拳击球": "1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021533",
+      "player_id": "fifa:player:448332",
+      "dqd_player_id": "50137731",
+      "player_name": "迈尼昂",
+      "team_name": "法国",
+      "metrics": {
+        "goals_prevented": 0.37,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 3,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.37",
+        "扑救": "0",
+        "拳击球": "1",
+        "摘高球": "3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021534",
+      "player_id": "fifa:player:499913",
+      "dqd_player_id": "50403078",
+      "player_name": "弗里兹",
+      "team_name": "美国",
+      "metrics": {
+        "goals_prevented": -0.49,
+        "saves": 3,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.49",
+        "扑救": "3",
+        "禁区射门扑救": "2",
+        "出击/成功": "1/1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021534",
+      "player_id": "fifa:player:358106",
+      "dqd_player_id": "50054379",
+      "player_name": "库尔图瓦",
+      "team_name": "比利时",
+      "metrics": {
+        "goals_prevented": -0.78,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.78",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "出击/成功": "1/1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021535",
+      "player_id": "fifa:player:448107",
+      "dqd_player_id": "50215638",
+      "player_name": "科贝尔",
+      "team_name": "瑞士",
+      "metrics": {
+        "goals_prevented": 0.85,
+        "saves": 3,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": 1,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.85",
+        "扑救": "3",
+        "禁区射门扑救": "2",
+        "摘高球": "1",
+        "点球大战扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021535",
+      "player_id": "fifa:player:360642",
+      "dqd_player_id": "50016616",
+      "player_name": "卡米洛-巴尔加斯",
+      "team_name": "哥伦比亚",
+      "metrics": {
+        "goals_prevented": 0.09,
+        "saves": 2,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.09",
+        "扑救": "2",
+        "禁区射门扑救": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021536",
+      "player_id": "fifa:player:448332",
+      "dqd_player_id": "50137731",
+      "player_name": "迈尼昂",
+      "team_name": "法国",
+      "metrics": {
+        "goals_prevented": 0.04,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.04",
+        "扑救": "1",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021536",
+      "player_id": "fifa:player:356956",
+      "dqd_player_id": "50110699",
+      "player_name": "布努",
+      "team_name": "摩洛哥",
+      "metrics": {
+        "goals_prevented": 0.88,
+        "saves": 6,
+        "saves_inside_box": 5,
+        "penalties_saved": 1,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.88",
+        "扑救": "6",
+        "禁区射门扑救": "5",
+        "出击/成功": "1/1",
+        "扑出点球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021537",
+      "player_id": "fifa:player:308300",
+      "dqd_player_id": "50069413",
+      "player_name": "达米安-马丁内斯",
+      "team_name": "阿根廷",
+      "metrics": {
+        "goals_prevented": 0.02,
+        "saves": 4,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.02",
+        "扑救": "4",
+        "禁区射门扑救": "2",
+        "拳击球": "1",
+        "出击/成功": "1/1",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021537",
+      "player_id": "fifa:player:448107",
+      "dqd_player_id": "50215638",
+      "player_name": "科贝尔",
+      "team_name": "瑞士",
+      "metrics": {
+        "goals_prevented": 0.65,
+        "saves": 4,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 2,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.65",
+        "扑救": "4",
+        "禁区射门扑救": "3",
+        "出击/成功": "1/1",
+        "摘高球": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021538",
+      "player_id": "fifa:player:430753",
+      "dqd_player_id": "50225832",
+      "player_name": "乌奈-西蒙",
+      "team_name": "西班牙",
+      "metrics": {
+        "goals_prevented": -0.62,
+        "saves": 1,
+        "saves_inside_box": 1,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 2,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.62",
+        "扑救": "1",
+        "禁区射门扑救": "1",
+        "出击/成功": "2/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021538",
+      "player_id": "fifa:player:358106",
+      "dqd_player_id": "50054379",
+      "player_name": "库尔图瓦",
+      "team_name": "比利时",
+      "metrics": {
+        "goals_prevented": 0.78,
+        "saves": 4,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.78",
+        "扑救": "4",
+        "禁区射门扑救": "2",
+        "拳击球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021538",
+      "player_id": "fifa:player:495348",
+      "dqd_player_id": "50468953",
+      "player_name": "拉门斯",
+      "team_name": "比利时",
+      "metrics": {
+        "goals_prevented": 0.11,
+        "saves": 2,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.11",
+        "扑救": "2"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021539",
+      "player_id": "fifa:player:373235",
+      "dqd_player_id": "50021498",
+      "player_name": "尼兰德",
+      "team_name": "挪威",
+      "metrics": {
+        "goals_prevented": 0.64,
+        "saves": 6,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.64",
+        "扑救": "6",
+        "禁区射门扑救": "3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021539",
+      "player_id": "fifa:player:336022",
+      "dqd_player_id": "50104523",
+      "player_name": "皮克福德",
+      "team_name": "英格兰",
+      "metrics": {
+        "goals_prevented": -0.58,
+        "saves": 3,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": 2,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.58",
+        "扑救": "3",
+        "禁区射门扑救": "2",
+        "拳击球": "2",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021540",
+      "player_id": "fifa:player:336022",
+      "dqd_player_id": "50104523",
+      "player_name": "皮克福德",
+      "team_name": "英格兰",
+      "metrics": {
+        "goals_prevented": -0.46,
+        "saves": 3,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.46",
+        "扑救": "3",
+        "禁区射门扑救": "3"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021540",
+      "player_id": "fifa:player:308300",
+      "dqd_player_id": "50069413",
+      "player_name": "达米安-马丁内斯",
+      "team_name": "阿根廷",
+      "metrics": {
+        "goals_prevented": 0.02,
+        "saves": 1,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.02",
+        "扑救": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021541",
+      "player_id": "fifa:player:448332",
+      "dqd_player_id": "50137731",
+      "player_name": "迈尼昂",
+      "team_name": "法国",
+      "metrics": {
+        "goals_prevented": -0.43,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-0.43",
+        "扑救": "0",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021541",
+      "player_id": "fifa:player:430753",
+      "dqd_player_id": "50225832",
+      "player_name": "乌奈-西蒙",
+      "team_name": "西班牙",
+      "metrics": {
+        "goals_prevented": 0.07,
+        "saves": 3,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 3,
+        "sweeper_actions_won": 3
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.07",
+        "扑救": "3",
+        "禁区射门扑救": "2",
+        "出击/成功": "3/3",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021542",
+      "player_id": "fifa:player:448332",
+      "dqd_player_id": "50137731",
+      "player_name": "迈尼昂",
+      "team_name": "法国",
+      "metrics": {
+        "goals_prevented": -1.01,
+        "saves": 4,
+        "saves_inside_box": 3,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "-1.01",
+        "扑救": "4",
+        "禁区射门扑救": "3",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021542",
+      "player_id": "fifa:player:403046",
+      "dqd_player_id": "50202877",
+      "player_name": "迪恩-亨德森",
+      "team_name": "英格兰",
+      "metrics": {
+        "goals_prevented": 0.16,
+        "saves": 5,
+        "saves_inside_box": 2,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": null,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": 1,
+        "sweeper_actions_won": 1
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "0.16",
+        "扑救": "5",
+        "禁区射门扑救": "2",
+        "出击/成功": "1/1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021543",
+      "player_id": "fifa:player:430753",
+      "dqd_player_id": "50225832",
+      "player_name": "乌奈-西蒙",
+      "team_name": "西班牙",
+      "metrics": {
+        "goals_prevented": null,
+        "saves": 0,
+        "saves_inside_box": null,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": 1,
+        "goal_line_clearances": null,
+        "sweeper_actions": 3,
+        "sweeper_actions_won": 3
+      },
+      "raw_goalkeeper_statistics": {
+        "扑救": "0",
+        "拳击球": "1",
+        "出击/成功": "3/3",
+        "摘高球": "1"
+      }
+    },
+    {
+      "match_id": "fifa:match:400021543",
+      "player_id": "fifa:player:308300",
+      "dqd_player_id": "50069413",
+      "player_name": "达米安-马丁内斯",
+      "team_name": "阿根廷",
+      "metrics": {
+        "goals_prevented": 2.03,
+        "saves": 11,
+        "saves_inside_box": 5,
+        "penalties_saved": null,
+        "shootout_saves": null,
+        "high_claims": 1,
+        "punches": null,
+        "goal_line_clearances": null,
+        "sweeper_actions": null,
+        "sweeper_actions_won": null
+      },
+      "raw_goalkeeper_statistics": {
+        "阻止进球": "2.03",
+        "扑救": "11",
+        "禁区射门扑救": "5",
+        "摘高球": "1"
+      }
+    }
+  ],
+  "sources": [
+    {
+      "match_id": "fifa:match:400021440",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329975",
+      "sha256": "cdfc071d0a1154cfb3e16f103e0a2de2422740f6a2d245989737da13a7335b43"
+    },
+    {
+      "match_id": "fifa:match:400021441",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329974",
+      "sha256": "03255314179e727f01373f8daae9e0075b11695a0723105864f1bf63ac6b5671"
+    },
+    {
+      "match_id": "fifa:match:400021442",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328039",
+      "sha256": "481a41b4337da54b3f9dba0e67dc69706aa38345913406d82c42ac9fd72226b3"
+    },
+    {
+      "match_id": "fifa:match:400021443",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328038",
+      "sha256": "1ab400ace39d53c792e06a5570c747b634f6e0dd0df9dbb4304db9951fd1e981"
+    },
+    {
+      "match_id": "fifa:match:400021444",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328041",
+      "sha256": "837de6489be7d3aab7893cbd772b057a6871d1d944a35d2b0f6c43248d72ffc6"
+    },
+    {
+      "match_id": "fifa:match:400021445",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329976",
+      "sha256": "0e32b46f9c970a369d73da3b463fa812d8d5ee7922ae5362d4f27047b9ba0345"
+    },
+    {
+      "match_id": "fifa:match:400021446",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329985",
+      "sha256": "9399563547368b4d6129b6bc7d96395dfa62cd1bd01617a14cd7c954b9e05d04"
+    },
+    {
+      "match_id": "fifa:match:400021447",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329984",
+      "sha256": "e4c2256e4ebd6af14f279719b4c2d4989bc178229dc23cd04308b3b477142157"
+    },
+    {
+      "match_id": "fifa:match:400021448",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329986",
+      "sha256": "9639ddafb109289229243a025185123e12f80aa77027c086cd59f6563782a779"
+    },
+    {
+      "match_id": "fifa:match:400021449",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328042",
+      "sha256": "c1b69a7a19d7d4ab3a053e9f771cfd1e3a52c1d7f91c9ef9155bf57886c85dcb"
+    },
+    {
+      "match_id": "fifa:match:400021450",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328043",
+      "sha256": "4ca937a4648ca93790d16ae527a7dc188dd3458e4302473778d05fc8251623e5"
+    },
+    {
+      "match_id": "fifa:match:400021451",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328044",
+      "sha256": "9556678612a37cc4efaf5fb1473a9fcb8fd61b2997478bc02eca68da50023aef"
+    },
+    {
+      "match_id": "fifa:match:400021452",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329989",
+      "sha256": "25f2c59b1acc37945427185a3bf4b6594f697c90056bdd36bbd6dfb93639febb"
+    },
+    {
+      "match_id": "fifa:match:400021453",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329987",
+      "sha256": "2f3ec49271935b92c176f21ba0dd6baff22c0d51a9e2bfaf8b339cb849d90c51"
+    },
+    {
+      "match_id": "fifa:match:400021454",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329988",
+      "sha256": "96dc76b8f34ff1c79ae4b61343a375cab8c129737c7f79791b52ff3d01869109"
+    },
+    {
+      "match_id": "fifa:match:400021455",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329932",
+      "sha256": "27b6a2d1d1b2a9f4d6e18171bc754b06fbecac6bca3b94d7bdfff1e4d88da29a"
+    },
+    {
+      "match_id": "fifa:match:400021456",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329930",
+      "sha256": "aec7411119a61d1fa82842bfbb96c402ca8068462f58b7b718e2990cf23fff03"
+    },
+    {
+      "match_id": "fifa:match:400021457",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329931",
+      "sha256": "702038366407f945d41d7c4c28874793096b2d2862973baf2f7c9b9987e07d71"
+    },
+    {
+      "match_id": "fifa:match:400021458",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328045",
+      "sha256": "7d79b146a3a22d77bfa979eb7893ef520b2c4aaa1c8b4ee802399ed45090aa2d"
+    },
+    {
+      "match_id": "fifa:match:400021459",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328047",
+      "sha256": "ccb30b3caa78b95a8530d3a99c84942d1ba40237720dffff8864dcaff1034013"
+    },
+    {
+      "match_id": "fifa:match:400021460",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329991",
+      "sha256": "bd52c4e42f02188f755c75b7c9c2c3e791ce0f6e97aa62c6a8d6225eb46e3994"
+    },
+    {
+      "match_id": "fifa:match:400021461",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329992",
+      "sha256": "7008263677b4dbaa9f5b68a3a2051b63555cd5a64cb8f2b107df9df991e913c5"
+    },
+    {
+      "match_id": "fifa:match:400021462",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328046",
+      "sha256": "13cc4014f3cb0ac9462cd233ed4ef879718a2f0f478bddfbb96486c0dae8d24e"
+    },
+    {
+      "match_id": "fifa:match:400021463",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329990",
+      "sha256": "eea9727d995563dd9082a8908da05f5c310a220e2276334d697b74953c358e54"
+    },
+    {
+      "match_id": "fifa:match:400021464",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329950",
+      "sha256": "7a37d088f2a8aa7c32f715f80824a0a43d8ffdde32ba0262d042db6387025c76"
+    },
+    {
+      "match_id": "fifa:match:400021465",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329994",
+      "sha256": "82f7783e04c003703ee76dcf3d324ec62118608d88ce26bd120e3199957ebc77"
+    },
+    {
+      "match_id": "fifa:match:400021466",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329952",
+      "sha256": "d9750087a3722acd92392b83223ae147888f50aa4a06a85714a43736e48ce2be"
+    },
+    {
+      "match_id": "fifa:match:400021467",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329993",
+      "sha256": "2c3d66fab640833f5dcc041481a058ddc136b8e4e9e998b48d71659da09e46ab"
+    },
+    {
+      "match_id": "fifa:match:400021468",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329995",
+      "sha256": "d2bfc1f7e7240d96f53600e47e7ffd706e779a5cfead2d9fd8353c766dc4f2b1"
+    },
+    {
+      "match_id": "fifa:match:400021469",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329951",
+      "sha256": "46dae5b208c84c4263d619b8b29b377c2a56882f55dcf139c91428fe2c3db6db"
+    },
+    {
+      "match_id": "fifa:match:400021470",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329953",
+      "sha256": "40da8ad3144f1589b716effe43a24da88bf16ee2e94eb6eca7a25329b322a918"
+    },
+    {
+      "match_id": "fifa:match:400021471",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329998",
+      "sha256": "8690ade6410404e07d4f33dd193826ac05b3a49969935bb832b84a6bef1aa739"
+    },
+    {
+      "match_id": "fifa:match:400021472",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329954",
+      "sha256": "3a29a0eb552263ec352cdb46f2536cd096f45bfe9fd09787d8ac7e5c186d6575"
+    },
+    {
+      "match_id": "fifa:match:400021473",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329955",
+      "sha256": "80e586ad986c683a8b1555c72d05704e4a26d67ca2bd5b4f76501570e5d5ddd4"
+    },
+    {
+      "match_id": "fifa:match:400021474",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329996",
+      "sha256": "a752f38a036ce76ebbdb7e0e0508ae896ce3bb58241425c451a3ae42e967a3e6"
+    },
+    {
+      "match_id": "fifa:match:400021475",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329997",
+      "sha256": "aff3e73c08330681b12ca48bdf190b4d69df42e96dc079a8cc476fb937e83a35"
+    },
+    {
+      "match_id": "fifa:match:400021476",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329999",
+      "sha256": "2d2173618d516cc6d6419c13df4b6d3192d7398226a21cf8b44d68926d013d6f"
+    },
+    {
+      "match_id": "fifa:match:400021477",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329957",
+      "sha256": "67e7aa57f2b630d88b3dd50e1e662a758cd6ca9e8d6f9cc78f7b6a4d30b3a22f"
+    },
+    {
+      "match_id": "fifa:match:400021478",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329956",
+      "sha256": "ddccf703c2054fb4a433a452e4a402f6e52a5094b00ebe8e5bc077f7ae5995b4"
+    },
+    {
+      "match_id": "fifa:match:400021479",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330001",
+      "sha256": "a63eb2b3dd458b2f3d4b8bbc9ad91b4e09c4843227c23dc48556902910320f6e"
+    },
+    {
+      "match_id": "fifa:match:400021480",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330000",
+      "sha256": "e5875a506b56fd23bb447b11fa80421b83bc3b2ef821a4ce3165f7d6bf1018d4"
+    },
+    {
+      "match_id": "fifa:match:400021481",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329958",
+      "sha256": "18a65cf1d305138f50e586de6379dce83a796924005fedb2cbaebb071fd87cbe"
+    },
+    {
+      "match_id": "fifa:match:400021482",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329959",
+      "sha256": "aab1e758bf57ffb50e19eba0aba0506831db74adad7f58f9ed20b608332952a1"
+    },
+    {
+      "match_id": "fifa:match:400021483",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329960",
+      "sha256": "74fd346df4f3cc4d2b99517db3d78ef4738284a7c5a42bfc75db28fd175078c2"
+    },
+    {
+      "match_id": "fifa:match:400021484",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329961",
+      "sha256": "64f1818e772efc615ed92fb20943aa1024834538aad4605b4bdbef889b26e986"
+    },
+    {
+      "match_id": "fifa:match:400021485",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330009",
+      "sha256": "2f72f2a9a950405ac4c4f3f339d41ea6e7b066d8b53666b38d042b4ae439c3ac"
+    },
+    {
+      "match_id": "fifa:match:400021486",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330007",
+      "sha256": "15db7f617a93f6cd52b2150d6c4da17a13b3e33ae8461a04458fd466c07bf19e"
+    },
+    {
+      "match_id": "fifa:match:400021487",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330008",
+      "sha256": "6a8abeed4077d921a556445bc654d24ab8db11b924bb3a825c486fa2b0f0007a"
+    },
+    {
+      "match_id": "fifa:match:400021488",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330010",
+      "sha256": "d2312b4dc9fe7626c472099d73a8a56fee66c1535e68fb766037caeaf56d25b6"
+    },
+    {
+      "match_id": "fifa:match:400021489",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329964",
+      "sha256": "c0f8b35f5ab544fef18616e1f6faf31ad66f942e0e412446714209c8d4e9764d"
+    },
+    {
+      "match_id": "fifa:match:400021490",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329962",
+      "sha256": "8bde3fce1de01291d57754cac53cc6a5b595ec1bd861a2ea21f3c6b942074239"
+    },
+    {
+      "match_id": "fifa:match:400021491",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330011",
+      "sha256": "295e67d49c02a0cfc8c5346aa33169b053916adc2426eb5f06470548da841616"
+    },
+    {
+      "match_id": "fifa:match:400021492",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329963",
+      "sha256": "1c7262a2834f5287713723a886287a4dcb8a86f7d2dc3ae50330295bea12a997"
+    },
+    {
+      "match_id": "fifa:match:400021493",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330012",
+      "sha256": "42fab0ac78ce7c0a168a3ef8d8f81d2d41edba7ad7a9b26aa36c588e6b860d6e"
+    },
+    {
+      "match_id": "fifa:match:400021494",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329966",
+      "sha256": "66fd84076c8015f8e6a35647e1af265b38f8bd5e1106f391918dcdd5277b1e42"
+    },
+    {
+      "match_id": "fifa:match:400021495",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329967",
+      "sha256": "ab65b02bed0ad19073ac86328ce080be1f12c4a2a5100204ef4b9821256b2787"
+    },
+    {
+      "match_id": "fifa:match:400021496",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329965",
+      "sha256": "a4448132f66a7bec297250389f077e40c841bc1966ab37699033bf4bd12226a7"
+    },
+    {
+      "match_id": "fifa:match:400021497",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330015",
+      "sha256": "95716dba2fa39cd602e14612179e601746ed77d5bdebac0b020a26fb26006674"
+    },
+    {
+      "match_id": "fifa:match:400021498",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330013",
+      "sha256": "0e6b86f1be82254a5740460e0b54e99b46e720f0578413196c7f41c21309552a"
+    },
+    {
+      "match_id": "fifa:match:400021499",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330014",
+      "sha256": "c99aa978e7faf4ec09177be4ab05751b4b8bb20595f8890f429e646dab3b95ba"
+    },
+    {
+      "match_id": "fifa:match:400021500",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330019",
+      "sha256": "afcc18a091422080d1f9b5d7240f046e5ee10d970b97fc35fdc8aa74b952c2f0"
+    },
+    {
+      "match_id": "fifa:match:400021501",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330018",
+      "sha256": "25f00e2366701703668721a8e6b22affc963662bd20902f70588e540042b4917"
+    },
+    {
+      "match_id": "fifa:match:400021502",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329969",
+      "sha256": "83b967b651777539bc5882c45364d1c0182e5701fdd5de0982ffe597d4eb3b40"
+    },
+    {
+      "match_id": "fifa:match:400021503",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329968",
+      "sha256": "f967bcd5a1901479ea087603cd138ab7d823b7e76e88a35288f0daa567495076"
+    },
+    {
+      "match_id": "fifa:match:400021504",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330016",
+      "sha256": "281d45cab5e402e30407a65fa309db0ea0edcbb0948b631db6c3fa59f8b7577f"
+    },
+    {
+      "match_id": "fifa:match:400021505",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329970",
+      "sha256": "d487db7e01b26227d1e2b14548d98f07eb9f21fa23c112bd5b809af50e75d6de"
+    },
+    {
+      "match_id": "fifa:match:400021506",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329972",
+      "sha256": "a7c11c960299b0322fc7207850dbcdf0b2fccee12688ec9b40320fe6ee181766"
+    },
+    {
+      "match_id": "fifa:match:400021507",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329971",
+      "sha256": "6cd40b360a8faa10a98cca17b81ed39080ce221362960b9b1c399e32d74300d0"
+    },
+    {
+      "match_id": "fifa:match:400021508",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54329973",
+      "sha256": "84e4b645b3307d99cb63cc6c14deb121dad6e981ec89cd53aefdfa85f7012613"
+    },
+    {
+      "match_id": "fifa:match:400021509",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330022",
+      "sha256": "b4617eb9c6a10de7751581deca1bef216699cf9a42ded25be058bef96e399ecb"
+    },
+    {
+      "match_id": "fifa:match:400021510",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330020",
+      "sha256": "32c6f33a25a65c576e381425050040cd6f3901bc145adeb2981bad74ba79c8e8"
+    },
+    {
+      "match_id": "fifa:match:400021511",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54330021",
+      "sha256": "e79c5074cc7213245fd2961e047696e57e33a19ffdfd7e28409a3cf2ae82d3e5"
+    },
+    {
+      "match_id": "fifa:match:400021512",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327940",
+      "sha256": "6cf1d3cc4abf49455a70459d1d7a55bff3b130d6ee5fe5d45e117c95587fd78e"
+    },
+    {
+      "match_id": "fifa:match:400021513",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327933",
+      "sha256": "6579b0c80c4c25296e63c39df64041aa0f337b0dec903f34a681d568027650d7"
+    },
+    {
+      "match_id": "fifa:match:400021514",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327937",
+      "sha256": "f70f032ffd5765e1fd673f7e552f70e763c6cb1f41eef03ac2b0a9e4c8caff3e"
+    },
+    {
+      "match_id": "fifa:match:400021515",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328013",
+      "sha256": "e7825ebf55641a9dd0044cacf4e9ca2f3c9abce0335b84c7dc26b6d896803b8a"
+    },
+    {
+      "match_id": "fifa:match:400021516",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327935",
+      "sha256": "93d470f295643e7df8c5a62d0ed6f2f7d2fc0a82e4fee97383d0d5edd42e37f6"
+    },
+    {
+      "match_id": "fifa:match:400021517",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328012",
+      "sha256": "d70238b9d17cf3617ac68ea1f35a7f62afb9528ecfa4f717bfa2f34b809cc06a"
+    },
+    {
+      "match_id": "fifa:match:400021518",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327932",
+      "sha256": "101f7b5d964531a7b06e163d7cd6a950537fc8ba15fd34d66f47febc07c81329"
+    },
+    {
+      "match_id": "fifa:match:400021519",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327945",
+      "sha256": "aab52b1ffe873ade2fd9648c4eff2424ab38ad093ff3b28bcc51810b05f48ff2"
+    },
+    {
+      "match_id": "fifa:match:400021520",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327939",
+      "sha256": "656d9cb6523a119d3613dffc565d95ada06764ac9cdd27a0bfa1434e4886c12b"
+    },
+    {
+      "match_id": "fifa:match:400021521",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327947",
+      "sha256": "8bed744c1ebc6e90ee9bf2120dd006a2a1574c57f4b8ccbb9b616383c12c414b"
+    },
+    {
+      "match_id": "fifa:match:400021522",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327934",
+      "sha256": "356c0509b3945827d31e38a5bf04207d033694085d46a3f001fd32cad17e6fbe"
+    },
+    {
+      "match_id": "fifa:match:400021523",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327936",
+      "sha256": "4733feaa8c273bee7b4254e01ea5aa1c8497d2a06971c7e32f95d27ca68b71bf"
+    },
+    {
+      "match_id": "fifa:match:400021524",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327941",
+      "sha256": "05a58075a7969b4c3291e090392ff6e524984dd3141bc4999fbc114a5ff0ba54"
+    },
+    {
+      "match_id": "fifa:match:400021525",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327943",
+      "sha256": "ce9dcb3f7cbbd2b94ca30d8e662d86d57c8869923ae59e27e7bd3cec4acf4d0a"
+    },
+    {
+      "match_id": "fifa:match:400021526",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327944",
+      "sha256": "fb8c7532d79f1db1cb8b2822ae1d4e178c434b32fa08385d1c262c403ded6bb3"
+    },
+    {
+      "match_id": "fifa:match:400021527",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54327946",
+      "sha256": "4b149d2448ac025a98d902a061a28bf0b289263a7868955dc18ebe5bba89d259"
+    },
+    {
+      "match_id": "fifa:match:400021528",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328023",
+      "sha256": "15cb94e378a5076846ead52104dce66296e72037d72f0de34e2675d5def89c12"
+    },
+    {
+      "match_id": "fifa:match:400021529",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328021",
+      "sha256": "82286e2efa17b5aa1606644a0e058755b40bf4b791b108134a7c4666831729b5"
+    },
+    {
+      "match_id": "fifa:match:400021530",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328018",
+      "sha256": "db3a96e3368ec6afb7b0a02c1ddde552a21914d73e9b8a9b246d4ac82965a598"
+    },
+    {
+      "match_id": "fifa:match:400021531",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328020",
+      "sha256": "37312afe1ba58377d1b61b098513bf5d545a84a91107b6304fb263b0d6e25078"
+    },
+    {
+      "match_id": "fifa:match:400021532",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328019",
+      "sha256": "df731098e60b93a188a33719352896b8e98dd127f43456661fb1e0307da9888a"
+    },
+    {
+      "match_id": "fifa:match:400021533",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328017",
+      "sha256": "0bd6464543df1ede6f7e25dead24e6102508e180f096f9ed4f77b6fb5d17480b"
+    },
+    {
+      "match_id": "fifa:match:400021534",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328022",
+      "sha256": "ce118a4688dbd78df3267833f8c0ba27c078336fa7353fb47d1f580bedcc58c4"
+    },
+    {
+      "match_id": "fifa:match:400021535",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328024",
+      "sha256": "cc8ea93e414971949a56299f2eefb14ad4566def0276a27f2b1d5b556ca76cfb"
+    },
+    {
+      "match_id": "fifa:match:400021536",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328025",
+      "sha256": "725fde325c84ae796947d0503bfbd1024e1594270aaa25cc78c1f4e59a11e197"
+    },
+    {
+      "match_id": "fifa:match:400021537",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328028",
+      "sha256": "fdcabdbdd04d48b025e977840534c5f6f26618fc29c2ebbbf4b4b7ad358cc429"
+    },
+    {
+      "match_id": "fifa:match:400021538",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328026",
+      "sha256": "cf3c231b5626c9bb2a21e747b9232f77c4aa32689df7142b59e11388cc841b20"
+    },
+    {
+      "match_id": "fifa:match:400021539",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328027",
+      "sha256": "de698b5b9ab13cde0ac23e5b728a05e3939e04655d0f111d5fae0f742389313a"
+    },
+    {
+      "match_id": "fifa:match:400021540",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328030",
+      "sha256": "12d3a068ebe35be3691a301946f220d60a0b964087f7da16761a953ac6bc42be"
+    },
+    {
+      "match_id": "fifa:match:400021541",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328029",
+      "sha256": "8010def8bb270d2933291f370056457de36ef19cbd1a23683eca81f26c827bf3"
+    },
+    {
+      "match_id": "fifa:match:400021542",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328032",
+      "sha256": "d7cb1ed9022735354ea2b1a979e391022e7f4b11500502d96757bb3c717cfc86"
+    },
+    {
+      "match_id": "fifa:match:400021543",
+      "source_url": "https://api.dongqiudi.com/soccer/biz/dqd/v1/match/lineup/54328033",
+      "sha256": "c11c0299ec03bc4bdb930ccdff7e9525cd34da7b023d768a3472d7711ece007c"
+    }
+  ]
+}

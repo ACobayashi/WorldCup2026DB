@@ -1,0 +1,13 @@
+{
+  "edition": 2026,
+  "heatmaps": {},
+  "availability_check": {
+    "provider": "懂球帝",
+    "matches_checked": 104,
+    "responses_ok": 104,
+    "player_entries_checked": 5322,
+    "entries_with_has_heatmaps": 0,
+    "checked_at": "2026-11-05"
+  },
+  "note": "All official DQD lineup responses explicitly returned has_heatmaps=0. The player-page heatmap module is disabled; formation positions and shot locations are not substituted for activity heatmaps."
+}

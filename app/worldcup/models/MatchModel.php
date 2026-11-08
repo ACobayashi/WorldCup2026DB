@@ -13,6 +13,16 @@ final class MatchModel extends ReadModel {
       $conditions[] = 'm.status=:status';
       $params['status'] = $filters['status'];
     }
+    $phase=$filters['phase']??'all';
+    if ($phase !== 'all') {
+      $conditions[] = 'st.is_group_stage=:is_group_stage';
+      $params['is_group_stage'] = $phase === 'group' ? 1 : 0;
+    }
+    $teamQuery=$filters['q']??'';
+    if ($teamQuery !== '') {
+      $conditions[] = '(h.name_zh LIKE :home_zh OR h.name_en LIKE :home_en OR h.code LIKE :home_code OR a.name_zh LIKE :away_zh OR a.name_en LIKE :away_en OR a.code LIKE :away_code)';
+      foreach(['home_zh','home_en','home_code','away_zh','away_en','away_code'] as $key)$params[$key]='%'.$teamQuery.'%';
+    }
     foreach (['stage_id', 'group_id'] as $field) {
       if ($filters[$field] !== null) {
         $conditions[] = 'm.' . $field . '=:' . $field;
@@ -30,7 +40,8 @@ final class MatchModel extends ReadModel {
       $params['end'] = $start->modify('+1 day')->setTimezone(new \DateTimeZone('UTC'))->format('Y-m-d H:i:s');
     }
     $where = $conditions ? ' WHERE ' . implode(' AND ', $conditions) : '';
-    $result = $this->paginate(self::SELECT . $where . ' ORDER BY m.kickoff_at, m.id', 'SELECT COUNT(*) AS total FROM wc_matches m' . $where, $params, $page, $pageSize);
+    $countFrom = 'SELECT COUNT(*) AS total FROM wc_matches m LEFT JOIN wc_teams h ON h.id=m.home_team_id LEFT JOIN wc_teams a ON a.id=m.away_team_id JOIN wc_stages st ON st.id=m.stage_id';
+    $result = $this->paginate(self::SELECT . $where . ' ORDER BY m.kickoff_at, m.id', $countFrom . $where, $params, $page, $pageSize);
     $result['items'] = array_map([$this, 'serialize'], $result['items']);
     return $result;
   }
