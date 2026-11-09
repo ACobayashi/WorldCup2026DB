@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Grouped metric tiles for tournament and individual match scope. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Grouped metric tiles for tournament and individual match scope. */
 declare(strict_types=1);
 $metricGroups=['进攻'=>['goals','assists','shots','take_ons','ball_progressions'],
   '传球'=>['passes_attempted','passes_completed','crosses_attempted','crosses_completed','line_breaks_attempted','line_breaks_completed','switches_of_play','step_ins'],

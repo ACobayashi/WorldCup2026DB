@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Computed standings and real knockout progression. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Computed standings and real knockout progression. */
 declare(strict_types=1);
 $standings=$data['standings'];$panel=$data['panel'];
 ?>

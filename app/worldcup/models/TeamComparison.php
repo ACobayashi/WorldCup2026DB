@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Verified tournament-wide team comparison aggregates. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Verified tournament-wide team comparison aggregates. */
 declare(strict_types=1);
 namespace Fourward\worldcup\models;
 

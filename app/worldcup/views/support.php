@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Current user's own support history. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Current user's own support history. */
 declare(strict_types=1);
 ?>
 <p class="wc-notice">支持功能尚未开放。这里仅展示当前登录账号已有的支持记录。</p>

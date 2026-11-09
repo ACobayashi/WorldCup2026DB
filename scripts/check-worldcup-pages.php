@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Real-snapshot MVC page acceptance, no persistent writes. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Real-snapshot MVC page acceptance, no persistent writes. */
 declare(strict_types=1);
 if(PHP_SAPI!=='cli')exit(1);
 require __DIR__.'/../app/common/bootstrap.php';

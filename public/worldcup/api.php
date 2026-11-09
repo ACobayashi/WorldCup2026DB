@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | World Cup JSON entry and stable error envelope. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | World Cup JSON entry and stable error envelope. */
 declare(strict_types=1);
 require __DIR__ . '/../../app/common/bootstrap.php';
 header('Content-Type: application/json; charset=utf-8');

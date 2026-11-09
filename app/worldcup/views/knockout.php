@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Connected round-of-32 to final diagram with real fixtures. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Connected round-of-32 to final diagram with real fixtures. */
 declare(strict_types=1);
 $bracket=$data['bracket'];$nodes=[];foreach($bracket['nodes'] as $n)$nodes[$n['match_no']]=$n;
 ?>

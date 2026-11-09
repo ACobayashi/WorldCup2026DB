@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Actual WC26 winner-feed graph, not chronological index pairing. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Actual WC26 winner-feed graph, not chronological index pairing. */
 declare(strict_types=1);
 namespace Fourward\worldcup\models;
 

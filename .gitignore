@@ -9,6 +9,7 @@
 /IGNORE/
 /storage/runtime/
 /storage/local-accounts.txt
+/storage/course-downloads/
 /tmp/
 /.test-tmp/
 /-XamppRoot

@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Match squads, statistics and source event timeline. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Match squads, statistics and source event timeline. */
 declare(strict_types=1);
 namespace Fourward\worldcup\models;
 

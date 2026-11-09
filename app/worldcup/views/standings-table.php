@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Shared accessible group/third-place table. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Shared accessible group/third-place table. */
 declare(strict_types=1);
 ?>
 <div class="wc-table-wrap wc-standings-wrap" tabindex="0" role="region" aria-label="<?= e($tableLabel) ?>">

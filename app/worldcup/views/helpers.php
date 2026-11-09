@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Escaped, local-only team flag and display helpers. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Escaped, local-only team flag and display helpers. */
 declare(strict_types=1);
 $flag = static function (?string $code, string $name = ''): string {
   $known = ['ALG','ARG','AUS','AUT','BEL','BIH','BRA','CPV','CAN','COL','COD','CIV','CRO','CUW','CZE','ECU','EGY','ENG','FRA','GER','GHA','HAI','IRN','IRQ','JPN','JOR','KOR','MEX','MAR','NED','NZL','NOR','PAN','PAR','POR','QAT','KSA','SCO','SEN','RSA','ESP','SWE','SUI','TUN','TUR','URU','USA','UZB'];

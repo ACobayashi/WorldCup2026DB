@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 严苑毓 | Initialize only the isolated local database. */
+/** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Initialize only the isolated local database. */
 declare(strict_types=1);
 if (PHP_SAPI !== 'cli') exit(1);
 require __DIR__ . '/../app/common/bootstrap.php';

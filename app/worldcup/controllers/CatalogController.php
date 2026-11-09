@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Venue, stage, group and overview read endpoints. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Venue, stage, group and overview read endpoints. */
 declare(strict_types=1);
 namespace Fourward\worldcup\controllers;
 use Fourward\worldcup\models\Catalog;

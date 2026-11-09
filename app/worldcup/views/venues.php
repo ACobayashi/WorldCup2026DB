@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Venue catalog view. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Venue catalog view. */
 declare(strict_types=1);
 ?>
 <?php if (!$data['items']): ?><section class="wc-empty"><p class="wc-eyebrow">VENUES</p><h2>场馆资料尚未导入</h2><p>场馆名称、城市与所在时区将在资料核实后展示。</p></section><?php else: ?>

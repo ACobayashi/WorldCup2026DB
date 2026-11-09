@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | FIFA source-ID portrait lookup; local allowlisted files only. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | FIFA source-ID portrait lookup; local allowlisted files only. */
 declare(strict_types=1);
 namespace Fourward\worldcup\models;
 

@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Read-only support queries; write workflow is a later module. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Read-only support queries; write workflow is a later module. */
 declare(strict_types=1);
 namespace Fourward\worldcup\models;
 

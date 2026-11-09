@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | World Cup API dispatch; independent of team API contracts. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | World Cup API dispatch; independent of team API contracts. */
 declare(strict_types=1);
 namespace Fourward\worldcup\controllers;
 use Fourward\common\Auth;

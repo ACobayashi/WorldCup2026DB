@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 严苑毓 | JSON entry point; internal errors stay private. */
+/** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | JSON entry point; internal errors stay private. */
 declare(strict_types=1);
 require __DIR__ . '/../app/common/bootstrap.php';
 header('Content-Type: application/json; charset=utf-8');

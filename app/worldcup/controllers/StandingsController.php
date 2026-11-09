@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Standings and knockout read boundaries. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Standings and knockout read boundaries. */
 declare(strict_types=1);
 namespace Fourward\worldcup\controllers;
 use Fourward\worldcup\models\Standings;

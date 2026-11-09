@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Source-backed individual board with position-specific SVG radar. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Source-backed individual board with position-specific SVG radar. */
 declare(strict_types=1);
 $p=$data['player'];$s=$p['summary'];$labels=\Fourward\worldcup\models\PlayerBoard::METRICS;
 ?>

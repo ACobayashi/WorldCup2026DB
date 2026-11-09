@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Server-rendered World Cup MVC page assembly. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Server-rendered World Cup MVC page assembly. */
 declare(strict_types=1);
 namespace Fourward\worldcup\controllers;
 use Fourward\common\Auth;

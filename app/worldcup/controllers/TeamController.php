@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Team and squad read endpoints. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Team and squad read endpoints. */
 declare(strict_types=1);
 namespace Fourward\worldcup\controllers;
 use Fourward\common\HttpError;

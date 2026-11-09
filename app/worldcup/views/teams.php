@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | National team core squad and tournament journey. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | National team core squad and tournament journey. */
 declare(strict_types=1);
 ?>
 <?php if(isset($data['team'])): $team=$data['team']; ?>

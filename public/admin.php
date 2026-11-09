@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 严苑毓 | Team account and guestbook management entry. */
+/** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Team account and guestbook management entry. */
 declare(strict_types=1);
 require __DIR__ . '/../app/common/bootstrap.php';
 header('Content-Type: text/html; charset=utf-8');

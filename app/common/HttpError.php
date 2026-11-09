@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 严苑毓 | HTTP validation and permission errors. */
+/** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | HTTP validation and permission errors. */
 declare(strict_types=1);
 namespace Fourward\common;
 

@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 严苑毓 | View: escaped management forms and messages. */
+/** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | View: escaped management forms and messages. */
 declare(strict_types=1);
 $labels = ['pending' => '待审核', 'approved' => '已公开', 'rejected' => '未通过'];
 $displayName = $user ? ($targets[$user['member_slug']]['name'] ?? $user['username']) : '';
@@ -14,7 +14,7 @@ $userPortrait = $user && isset($targets[$user['member_slug']]) && $user['member_
     <meta name="theme-color" content="#141719">
     <title>团队工作台 · FOURWARD</title>
     <link rel="preload" as="image" href="assets/images/worldcup/stadium-night.jpg">
-    <link rel="stylesheet" href="assets/css/guestbook-admin.css?v=6">
+    <link rel="stylesheet" href="assets/css/guestbook-admin.css?v=7">
     <script type="module" src="assets/js/workspace.mjs?v=1"></script>
   </head>
   <body class="admin-body <?= !$user ? 'is-login' : '' ?>">
@@ -48,7 +48,7 @@ $userPortrait = $user && isset($targets[$user['member_slug']]) && $user['member_
           <h1 id="workspace-title"><?= $user ? '我们的主场' : '欢迎回到主场' ?><span>一起上场</span></h1>
           <p class="hero-description"><?= $user ? '把热爱写下来，让每个声音找到自己的位置' : '登录团队账号，继续我们的世界杯之旅' ?></p>
           <?php if ($user): ?>
-            <div class="hero-links"><a class="primary-button" href="#mottos-heading">编辑座右铭 <span aria-hidden="true">↗</span></a><?php if ($listing !== null): ?><a class="secondary-link" href="#review-heading">查看访客留言 <span aria-hidden="true">↓</span></a><?php endif; ?></div>
+            <div class="hero-links"><a class="primary-button" href="#profiles-heading">编辑资料 <span aria-hidden="true">↗</span></a><a class="secondary-link" href="#mottos-heading">编辑座右铭</a><?php if ($listing !== null): ?><a class="secondary-link" href="#review-heading">查看访客留言 <span aria-hidden="true">↓</span></a><?php endif; ?></div>
           <?php else: ?><a class="primary-button" href="#login-heading">进入工作台 <span aria-hidden="true">↓</span></a><?php endif; ?>
         </div>
         <div class="hero-bottomline"><span>04 MEMBERS <i></i> ONE TEAM</span><span class="hero-workspace-label">团队工作台</span><button class="motion-toggle" id="workspace-motion" type="button" aria-pressed="false" aria-label="暂停装饰动效" hidden><svg class="pause-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 3h3v10H4zM9 3h3v10H9z" fill="currentColor"/></svg><svg class="play-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="m5 3 8 5-8 5Z" fill="currentColor"/></svg><span>动效</span></button></div>
@@ -66,8 +66,36 @@ $userPortrait = $user && isset($targets[$user['member_slug']]) && $user['member_
           </form>
         </section>
       <?php else: ?>
+        <section class="workspace-section" aria-labelledby="profiles-heading">
+          <div class="section-heading"><span class="section-number">01</span><div><h2 id="profiles-heading">团队与成员资料</h2></div><span class="section-caption">保存后在团队主页公开显示</span></div>
+          <div class="profile-edit-list">
+            <?php foreach ($targets as $slug => $target): ?>
+              <?php if ($user['role'] !== 'admin' && ($slug === 'team' || $user['member_slug'] !== $slug)) continue;
+                $profile = $profiles[$slug]; $isTeam = $slug === 'team'; $label = $isTeam ? '团队介绍' : $target['name'];
+                $retry = isset($errorMessage) && ($_POST['action'] ?? null) === 'profile' && ($_POST['member'] ?? null) === $slug;
+                $fieldValue = static fn(string $key): string => $retry && is_string($_POST[$key] ?? null)
+                  ? mb_substr($_POST[$key], 0, 500)
+                  : ($key === 'tags' ? implode('、', $profile['tags']) : $profile[$key]); ?>
+              <details class="profile-editor" <?= $retry ? 'open' : '' ?>>
+                <summary><?= e($label) ?></summary>
+                <form method="post" class="profile-form">
+                  <input type="hidden" name="action" value="profile"><input type="hidden" name="csrf" value="<?= e(csrfToken()) ?>"><input type="hidden" name="member" value="<?= e($slug) ?>"><input type="hidden" name="filter" value="<?= e($status) ?>">
+                  <label class="profile-wide">简介<textarea name="description" rows="3" maxlength="<?= $isTeam ? 240 : 160 ?>" <?= $isTeam ? 'required' : '' ?>><?= e($fieldValue('description')) ?></textarea></label>
+                  <?php if (!$isTeam): ?>
+                    <label>学院<input name="school" value="<?= e($fieldValue('school')) ?>" maxlength="64" required></label>
+                    <label>分工<input name="role" value="<?= e($fieldValue('role')) ?>" maxlength="72" required></label>
+                    <label class="profile-wide">工作内容<textarea name="task" rows="2" maxlength="140" required><?= e($fieldValue('task')) ?></textarea></label>
+                    <label>成员标签<input name="tags" value="<?= e($fieldValue('tags')) ?>" maxlength="84" aria-describedby="tags-help-<?= e($slug) ?>"><small id="tags-help-<?= e($slug) ?>">用顿号分隔，最多 4 个标签</small></label>
+                    <label>GitHub 主页<input type="url" name="github" value="<?= e($fieldValue('github')) ?>" maxlength="200" spellcheck="false"></label>
+                  <?php endif; ?>
+                  <div class="profile-wide"><button type="submit" class="save-button">保存<?= e($label) ?>资料</button></div>
+                </form>
+              </details>
+            <?php endforeach; ?>
+          </div>
+        </section>
         <section class="workspace-section" aria-labelledby="mottos-heading">
-          <div class="section-heading"><span class="section-number">01</span><div><p class="section-eyebrow">OUR VOICES</p><h2 id="mottos-heading">把热爱写下来</h2></div><span class="section-caption">团队与个人座右铭</span></div>
+          <div class="section-heading"><span class="section-number">02</span><div><p class="section-eyebrow">OUR VOICES</p><h2 id="mottos-heading">把热爱写下来</h2></div><span class="section-caption">团队与个人座右铭</span></div>
           <div class="motto-grid">
             <?php foreach ($targets as $slug => $target): ?>
               <?php if ($user['role'] !== 'admin' && $user['member_slug'] !== $slug) continue; ?>
@@ -87,7 +115,7 @@ $userPortrait = $user && isset($targets[$user['member_slug']]) && $user['member_
         </section>
         <?php if ($listing !== null): ?>
           <section class="workspace-section review-section" aria-labelledby="review-heading">
-            <div class="section-heading"><span class="section-number">02</span><div><p class="section-eyebrow">FROM THE STANDS</p><h2 id="review-heading">听见场外的声音</h2></div><span class="section-caption">访客留言</span></div>
+            <div class="section-heading"><span class="section-number">03</span><div><p class="section-eyebrow">FROM THE STANDS</p><h2 id="review-heading">听见场外的声音</h2></div><span class="section-caption">访客留言</span></div>
             <div class="review-toolbar">
               <nav class="review-tabs" aria-label="审核状态"><?php foreach ($labels as $key => $label): ?><a href="admin.php?status=<?= e($key) ?>#review-heading" <?= $status === $key ? 'aria-current="page"' : '' ?>><?= e($label) ?></a><?php endforeach; ?></nav>
               <span class="review-total"><b><?= str_pad((string) $listing['total'], 2, '0', STR_PAD_LEFT) ?></b> 条留言</span>

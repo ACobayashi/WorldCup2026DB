@@ -71,7 +71,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .hero-copy h1 { font-size: clamp(35px, 4.5vw, 62px); font-weight: 750; line-height: 1.15; letter-spacing: -.06em; margin: 0; }
 .hero-copy h1 span { display: block; color: #a1afff; margin-top: 6px; }
 .hero-description { color: #abb5c7; font-size: 12px; line-height: 1.8; letter-spacing: .02em; margin: 22px 0 24px; }
-.hero-links { display: flex; align-items: center; gap: 23px; }
+.hero-links { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 23px; }
 .primary-button { display: inline-flex; align-items: center; justify-content: space-between; gap: 28px; padding: 12px 18px; min-height: 42px; border: 1px solid #aab7ff28; background: var(--accent); color: #111726; font-size: 11px; font-weight: 650; transition: background .2s, transform .2s; }
 .primary-button:hover { background: #b0bdff; transform: translateY(-2px); }
 .primary-button span { font-size: 16px; }
@@ -87,6 +87,18 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .motion-toggle[aria-pressed="true"] .pause-icon { display: none; }
 .motion-toggle[aria-pressed="true"] .play-icon { display: block; }
 .workspace-section { margin: 0 0 50px; }
+.profile-edit-list { display: grid; gap: .55rem; }
+.profile-editor { background: #191f2b; border: 1px solid #aebaff3d; border-radius: 10px; }
+.profile-editor summary { cursor: pointer; padding: .9rem 1rem; color: #dbe3ff; font-size: 14px; font-weight: 650; }
+.profile-editor summary:hover, .profile-editor[open] summary { background: #aebaff13; }
+.profile-editor summary:focus-visible { outline: 2px solid #a8b6ff; outline-offset: 3px; }
+.profile-form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 1rem; gap: .9rem 1rem; }
+.profile-form label { min-width: 0; display: grid; align-content: start; gap: .4rem; font-size: 12px; color: #c6d1ee; }
+.profile-form :is(input, textarea) { width: 100%; min-height: 44px; padding: .55rem .7rem; border: 1px solid #aebaff42; border-radius: 6px; color: #edf1ff; background: #101622; font-size: 14px; }
+.profile-form textarea { resize: vertical; }
+.profile-form small { color: #a9b6d3; }
+.profile-wide { grid-column: 1 / -1; }
+@media (max-width: 600px) { .profile-form { grid-template-columns: minmax(0, 1fr); } }
 .section-heading { display: flex; align-items: center; gap: 15px; margin: 0 0 23px; }
 .section-number { font: italic 500 38px/1 "Segoe UI", sans-serif; letter-spacing: -2px; color: #8b9cff47; }
 .section-eyebrow { color: #8c9aba; font: 8px "Segoe UI", sans-serif; letter-spacing: 1.8px; margin: 0 0 7px; }

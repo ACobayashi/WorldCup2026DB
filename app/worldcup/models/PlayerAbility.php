@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Verified DQD ability snapshot lookup. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Verified DQD ability snapshot lookup. */
 declare(strict_types=1);
 namespace Fourward\worldcup\models;
 

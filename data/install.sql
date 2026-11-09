@@ -21,6 +21,20 @@ CREATE TABLE IF NOT EXISTS team_mottos (
   CONSTRAINT fk_motto_editor FOREIGN KEY (updated_by) REFERENCES users(id) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+CREATE TABLE IF NOT EXISTS team_profiles (
+  member_slug VARCHAR(24) NOT NULL PRIMARY KEY,
+  description VARCHAR(240) NOT NULL,
+  school VARCHAR(64) NOT NULL DEFAULT '',
+  role_title VARCHAR(72) NOT NULL DEFAULT '',
+  task VARCHAR(140) NOT NULL DEFAULT '',
+  tags_json VARCHAR(400) NOT NULL DEFAULT '[]',
+  github VARCHAR(200) NOT NULL DEFAULT '',
+  updated_by BIGINT UNSIGNED NULL,
+  updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  CONSTRAINT fk_team_profile_target FOREIGN KEY (member_slug) REFERENCES team_mottos(member_slug),
+  CONSTRAINT fk_team_profile_editor FOREIGN KEY (updated_by) REFERENCES users(id) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 CREATE TABLE IF NOT EXISTS team_guestbook_messages (
   id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   recipient_slug VARCHAR(24) NOT NULL,

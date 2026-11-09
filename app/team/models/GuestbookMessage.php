@@ -1,6 +1,6 @@
 <?php
 /**
- * FOURWARD coursework | Author: 严苑毓 | Model: visitor submission and moderation.
+ * FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Model: visitor submission and moderation.
  * Public queries expose approved messages only; all visitor values use PDO parameters.
  */
 declare(strict_types=1);

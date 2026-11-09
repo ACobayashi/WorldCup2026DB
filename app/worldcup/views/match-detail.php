@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Match scoreboard, squads, comparison and event view. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Match scoreboard, squads, comparison and event view. */
 declare(strict_types=1);
 $match=$data['match'];
 $stats=[];foreach ($match['statistics'] as $row) $stats[$row['team_id']]=$row;

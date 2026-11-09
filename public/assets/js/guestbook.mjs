@@ -9,6 +9,7 @@ export function createGuestbook({ members, notify, onMottosChange }) {
   let localMessages = [];
   try { localMessages = normalizeMessages(JSON.parse(localStorage.getItem(MESSAGE_STORAGE_KEY) || '[]'), ids); } catch { /* Storage may be unavailable. */ }
   let mottos = {};
+  let profiles = {};
   let csrfToken;
   let bootstrapPromise;
   let selectedMember = members[0];
@@ -35,6 +36,7 @@ export function createGuestbook({ members, notify, onMottosChange }) {
       bootstrapPromise = request('bootstrap').then((data) => {
         csrfToken = data.csrfToken;
         mottos = data.mottos;
+        profiles = data.profiles ?? {};
         onMottosChange();
       }).catch((error) => { bootstrapPromise = null; throw error; });
     }
@@ -223,6 +225,7 @@ export function createGuestbook({ members, notify, onMottosChange }) {
   return {
     selectMember(member) { selectedMember = member; refreshPreview(); },
     motto(id) { return mottos[id]; },
+    profile(id) { return profiles[id]; },
     async init() {
       try { await bootstrap(); } catch { notify('留言服务暂时不可用，请稍后重试。'); }
       await refreshTeamStands();

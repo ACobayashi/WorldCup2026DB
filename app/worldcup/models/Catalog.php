@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Fixed-table venue, stage, group and overview queries. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Fixed-table venue, stage, group and overview queries. */
 declare(strict_types=1);
 namespace Fourward\worldcup\models;
 

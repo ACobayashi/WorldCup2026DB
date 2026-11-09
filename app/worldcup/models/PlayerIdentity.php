@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Complete DQD Chinese-name identity mapping. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Complete DQD Chinese-name identity mapping. */
 declare(strict_types=1);
 namespace Fourward\worldcup\models;
 

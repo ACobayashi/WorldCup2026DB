@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | This edition's squad queries. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | This edition's squad queries. */
 declare(strict_types=1);
 namespace Fourward\worldcup\models;
 

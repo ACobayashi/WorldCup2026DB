@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | World Cup query validation and pagination contract. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | World Cup query validation and pagination contract. */
 declare(strict_types=1);
 namespace Fourward\worldcup\controllers;
 use Fourward\common\HttpError;

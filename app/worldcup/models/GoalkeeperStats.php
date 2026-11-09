@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Source-backed DQD goalkeeper match statistics. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Source-backed DQD goalkeeper match statistics. */
 declare(strict_types=1);
 namespace Fourward\worldcup\models;
 

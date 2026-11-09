@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Responsive green pitch with actual starters and nation-colored shirt markers. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Responsive green pitch with actual starters and nation-colored shirt markers. */
 declare(strict_types=1);
 $formation=$match['formation'];
 // Nation-inspired colors, not a claim about the kits worn in a particular fixture.

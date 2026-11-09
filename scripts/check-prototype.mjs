@@ -142,6 +142,11 @@ assert.equal(interruptedTarget.calls[0].animation.cancelCount, 2, 'Cancelled mot
 assert.equal(finishingTarget.calls[0].animation.cancelCount, 1, 'Cancellation must also release the other scene');
 
 const html = await readFile(new URL('public/index.html', root), 'utf8');
+const downloads = await readFile(new URL('public/downloads.html', root), 'utf8');
+assert.ok(html.includes('href="downloads.html"'), 'Pages homepage must link to the static download page');
+assert.ok(downloads.includes('https://github.com/ACobayashi/WorldCup2026DB/archive/refs/heads/main.zip'), 'Pages must link to the team source ZIP');
+assert.ok(!/href="[^"]*(?:\.php|storage\/course-downloads|assignment-[123]\.zip)/.test(downloads), 'Static download page must not link to PHP or private archives');
+await access(new URL('public/assets/css/course-materials.css', root));
 const htmlIds = [...html.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
 assert.equal(htmlIds.length, new Set(htmlIds).size, 'HTML IDs must be unique');
 for (const id of ['member-selector', 'member-portrait-image', 'member-face-image', 'message-form', 'message-dialog', 'member-tags', 'team-motto', 'team-stands-list', 'open-team-message', 'team-workspace', 'message-pagination', 'message-submit']) assert.ok(htmlIds.includes(id));
@@ -151,7 +156,7 @@ assert.ok(phpEntry.includes('name="guestbook-mode" content="server"'), 'The PHP 
 assert.ok(html.includes('href="worldcup/"'), 'The homepage must link to the actual match center');
 assert.ok(!html.includes('所属学院'), 'The homepage must not display the removed college-count statistic');
 const app = await readFile(new URL('public/assets/js/app.mjs', root), 'utf8');
-assert.ok(app.includes('createGuestbook({ members, notify, onMottosChange: updateMotto })'));
+assert.match(app, /createGuestbook\(\{ members, notify, onMottosChange:/, 'Homepage must react to published content from the guestbook bootstrap');
 assert.ok(app.includes('guestbook.init()'));
 assert.ok(!app.includes('.innerHTML'), 'Visitor input must never be inserted as HTML');
 assert.ok(app.includes('prefers-reduced-motion'));

@@ -1,5 +1,5 @@
 import { members, safeGithubUrl } from './members.mjs?v=4';
-import { createGuestbook } from './guestbook.mjs?v=2';
+import { createGuestbook } from './guestbook.mjs?v=3';
 import { animateMemberEntrance, transitionScenes } from './motion.mjs';
 import { notify } from './common.mjs';
 
@@ -14,7 +14,11 @@ const navLinks = Array.from(document.querySelectorAll('.main-nav a'));
 let activeScene = 'team';
 let transitionToken = 0;
 
-const guestbook = createGuestbook({ members, notify, onMottosChange: updateMotto });
+const guestbook = createGuestbook({ members, notify, onMottosChange: () => {
+  const team = guestbook.profile('team');
+  if (team) $('team-description').textContent = team.description;
+  selectMember(selectedIndex, false);
+} });
 function makeSelectors() {
   members.forEach((member, index) => {
     const button = document.createElement('button');
@@ -61,7 +65,8 @@ function makeSelectors() {
 
 function selectMember(index, animate = true) {
   selectedIndex = ((index % members.length) + members.length) % members.length;
-  const member = members[selectedIndex];
+  const base = members[selectedIndex];
+  const member = { ...base, ...guestbook.profile(base.id) };
   const number = String(selectedIndex + 1).padStart(2, '0');
   activeAnimations.forEach((animation) => animation.cancel());
   activeAnimations = [];
@@ -73,6 +78,8 @@ function selectMember(index, animate = true) {
   $('member-school').textContent = member.school;
   $('member-role').textContent = member.role;
   $('member-task').textContent = member.task;
+  $('member-bio').textContent = member.description ?? '';
+  $('member-bio').hidden = !member.description;
   $('member-tags').replaceChildren(...member.tags.map((text) => {
     const tag = document.createElement('span');
     tag.textContent = text;
@@ -132,6 +139,7 @@ makeSelectors();
 selectMember(0, false);
 guestbook.init();
 $('view-team-stands').addEventListener('click', () => {
+  $('team-stands-title').focus({ preventScroll: true });
   $('team-stands').scrollIntoView({ behavior: motionPreference.matches ? 'auto' : 'smooth', block: 'start' });
 });
 $('previous-member').addEventListener('click', () => selectMember(selectedIndex - 1));

@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Selectable individual match performance, never team-stat substitution. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Selectable individual match performance, never team-stat substitution. */
 declare(strict_types=1);
 $selected=$p['selected_match'];
 ?>

@@ -1,0 +1,15 @@
+.materials-page { margin: 0; background: #141719; color: #edf1ff; }
+.materials-main { width: min(100% - 2.5rem, 52rem); margin-inline: auto; padding-block: clamp(2rem, 7vw, 6rem); }
+.materials-back { color: #aebaff; }
+.materials-heading { margin-block: 2.75rem 2rem; }
+.materials-heading h1 { font-size: clamp(2.2rem, 7vw, 4.3rem); line-height: 1.08; margin: .6rem 0 1rem; letter-spacing: -.04em; }
+.materials-heading p, .materials-main section p, .materials-list span { color: #acb6cb; }
+.materials-main section { border-block-start: 1px solid #aebaff42; padding-block: 1.5rem; }
+.materials-main section h2 { margin: 0; font-size: 1.25rem; }
+.materials-source { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.materials-download { display: inline-flex; gap: 1rem; align-items: center; min-height: 44px; padding: .5rem .9rem; border: 1px solid #aebaff70; color: #dbe3ff; background: #202638; }
+.materials-download:hover, .materials-list a:hover { color: #fff; background: #303b58; }
+.materials-list { list-style: none; margin: 1rem 0 0; padding: 0; }
+.materials-list li { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .75rem; padding: .8rem 0; border-bottom: 1px solid #aebaff25; }
+.materials-list li > div { display: flex; gap: .75rem; flex-wrap: wrap; }
+.materials-list a { color: #bec8ff; min-height: 44px; display: inline-flex; align-items: center; gap: .35rem; padding-inline: .35rem; }

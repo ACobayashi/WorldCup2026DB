@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Fixture list and match detail view. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Fixture list and match detail view. */
 declare(strict_types=1);
 ?>
 <?php if (isset($data['match'])): $match = $data['match']; ?>

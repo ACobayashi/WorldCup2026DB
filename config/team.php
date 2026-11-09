@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 严苑毓 | Allowed recipients and confirmed member mottos. */
+/** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Allowed recipients and confirmed member mottos. */
 declare(strict_types=1);
 
 return [

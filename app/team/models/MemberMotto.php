@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 严苑毓 | Model: editable team and member mottos. */
+/** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Model: editable team and member mottos. */
 declare(strict_types=1);
 namespace Fourward\team\models;
 use Fourward\common\HttpError;

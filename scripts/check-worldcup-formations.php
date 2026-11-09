@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Verify all actual pitch starters, rendering and stale-data refusal. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Verify all actual pitch starters, rendering and stale-data refusal. */
 declare(strict_types=1);
 require __DIR__.'/../app/common/bootstrap.php';
 use Fourward\worldcup\controllers\MatchController;

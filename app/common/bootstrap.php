@@ -1,7 +1,7 @@
 <?php
 /**
  * FOURWARD coursework — shared configuration, sessions and database connection.
- * Author: 严苑毓 | Module: team guestbook | PHP 8.2+, PDO MySQL, mbstring.
+ * Author: 严苑毓 | 学号: 2413682 | Module: team guestbook | PHP 8.2+, PDO MySQL, mbstring.
  */
 declare(strict_types=1);
 

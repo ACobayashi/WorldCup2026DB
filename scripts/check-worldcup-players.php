@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Player panels, positional radar, coverage and rankings acceptance. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Player panels, positional radar, coverage and rankings acceptance. */
 declare(strict_types=1);
 if(PHP_SAPI!=='cli')exit(1);
 require __DIR__.'/../app/common/bootstrap.php';
@@ -12,7 +12,7 @@ function playerCheck(bool $ok,string $label):void{global $checks;if(!$ok)throw n
 function playerReject(callable $action,int $code):void {try{$action();}catch(HttpError $error){playerCheck($error->status===$code,'Expected HTTP '.$code);return;}throw new RuntimeException('Expected HTTP rejection');}
 function playerHtml(PDO $db,array $input):string{ob_start();(new PageController($db))->handle($input);return ob_get_clean();}
 playerCheck((int)$db->query('SELECT COUNT(*) FROM wc_player_match_stats WHERE advanced_stats IS NOT NULL')->fetchColumn()===3288,'All 3288 played rows extended');
-playerCheck((int)$db->query('SELECT COUNT(*) FROM information_schema.TABLES WHERE TABLE_SCHEMA=DATABASE()')->fetchColumn()===18,'No extra table');
+playerCheck((int)$db->query("SELECT COUNT(*) FROM information_schema.TABLES WHERE TABLE_SCHEMA=DATABASE() AND LEFT(TABLE_NAME,3)='wc_'")->fetchColumn()===14,'No extra World Cup table');
 $abilitySnapshot=json_decode(file_get_contents(PROJECT_ROOT.'/data/worldcup/player-abilities.json'),true,512,JSON_THROW_ON_ERROR);
 $nameSnapshot=json_decode(file_get_contents(PROJECT_ROOT.'/data/worldcup/player-names.json'),true,512,JSON_THROW_ON_ERROR);
 $assistSnapshot=json_decode(file_get_contents(PROJECT_ROOT.'/data/worldcup/player-assists.json'),true,512,JSON_THROW_ON_ERROR);

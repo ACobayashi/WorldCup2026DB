@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 严苑毓 | Controller: login, review and motto editing. */
+/** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Controller: login, review and motto editing. */
 declare(strict_types=1);
 namespace Fourward\team\controllers;
 use Fourward\common\Auth;
@@ -7,6 +7,7 @@ use Fourward\common\HttpError;
 use Fourward\common\RateLimiter;
 use Fourward\team\models\GuestbookMessage;
 use Fourward\team\models\MemberMotto;
+use Fourward\team\models\TeamProfile;
 
 final class GuestbookAdminController {
   public function __construct(private readonly \PDO $db) {}
@@ -39,11 +40,16 @@ final class GuestbookAdminController {
           if (!is_string($_POST['member'] ?? null) || !is_string($_POST['motto'] ?? null)) throw new HttpError(422, '座右铭格式不正确。');
           (new MemberMotto($this->db))->save($_POST['member'], $_POST['motto'], $user);
           $_SESSION['flash'] = '座右铭已更新，前台刷新后可见。';
+        } elseif ($action === 'profile') {
+          $user = $auth->requireUser();
+          if (!is_string($_POST['member'] ?? null)) throw new HttpError(422, '资料对象格式不正确。');
+          (new TeamProfile($this->db))->save($_POST['member'], $_POST, $user);
+          $_SESSION['flash'] = '资料已更新，前台刷新后可见。';
         } else {
           throw new HttpError(422, '无效的操作。');
         }
         $filter = is_string($_POST['filter'] ?? null) && in_array($_POST['filter'], ['pending', 'approved', 'rejected'], true) ? $_POST['filter'] : 'pending';
-        header('Location: admin.php?status=' . $filter, true, 303);
+        header('Location: admin.php?status=' . $filter . ($action === 'profile' ? '#profiles-heading' : ''), true, 303);
         return;
       } catch (HttpError $error) {
         http_response_code($error->status);
@@ -53,6 +59,7 @@ final class GuestbookAdminController {
     $user = $auth->user();
     $targets = require \PROJECT_ROOT . '/config/team.php';
     $mottos = (new MemberMotto($this->db))->all();
+    $profiles = $user ? (new TeamProfile($this->db))->all() : [];
     $status = is_string($_GET['status'] ?? null) && in_array($_GET['status'], ['pending', 'approved', 'rejected'], true) ? $_GET['status'] : 'pending';
     $page = filter_var($_GET['page'] ?? 1, FILTER_VALIDATE_INT, ['options' => ['min_range' => 1, 'max_range' => 10000]]) ?: 1;
     $listing = $user && $user['role'] === 'admin' ? (new GuestbookMessage($this->db))->listing($status, null, $page) : null;

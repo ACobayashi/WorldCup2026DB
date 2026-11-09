@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 严苑毓 | Shared account and role checks for future modules. */
+/** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Shared account and role checks for future modules. */
 declare(strict_types=1);
 namespace Fourward\common;
 

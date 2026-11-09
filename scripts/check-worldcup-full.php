@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Verify the actual full import, including repeatability. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Verify the actual full import, including repeatability. */
 declare(strict_types=1);
 if (PHP_SAPI!=='cli') exit(1);
 require __DIR__.'/../app/common/bootstrap.php';

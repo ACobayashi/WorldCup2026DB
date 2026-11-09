@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Player summary, positional radar and honest source coverage. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Player summary, positional radar and honest source coverage. */
 declare(strict_types=1);
 namespace Fourward\worldcup\models;
 

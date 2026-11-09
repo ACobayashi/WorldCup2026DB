@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | World Cup database-mode page entry. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | World Cup database-mode page entry. */
 declare(strict_types=1);
 require __DIR__ . '/../../app/common/bootstrap.php';
 header('Content-Type: text/html; charset=utf-8');

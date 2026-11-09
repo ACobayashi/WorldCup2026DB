@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Verified source positions joined to actual database starters. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Verified source positions joined to actual database starters. */
 declare(strict_types=1);
 namespace Fourward\worldcup\models;
 

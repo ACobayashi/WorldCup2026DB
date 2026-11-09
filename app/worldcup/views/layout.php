@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | World Cup shared server-page layout. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | World Cup shared server-page layout. */
 declare(strict_types=1);
 require __DIR__.'/helpers.php';
 ?>

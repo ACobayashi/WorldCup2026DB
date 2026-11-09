@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Match list/detail input boundary. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Match list/detail input boundary. */
 declare(strict_types=1);
 namespace Fourward\worldcup\controllers;
 use Fourward\common\HttpError;

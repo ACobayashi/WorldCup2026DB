@@ -1,11 +1,12 @@
 <?php
-/** FOURWARD coursework | Author: 严苑毓 | Controller: public guestbook API. */
+/** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Controller: public guestbook API. */
 declare(strict_types=1);
 namespace Fourward\team\controllers;
 use Fourward\common\HttpError;
 use Fourward\common\RateLimiter;
 use Fourward\team\models\GuestbookMessage;
 use Fourward\team\models\MemberMotto;
+use Fourward\team\models\TeamProfile;
 
 final class GuestbookController {
   public function __construct(private readonly \PDO $db) {}
@@ -13,7 +14,10 @@ final class GuestbookController {
   public function dispatch(string $action): array {
     $method = $_SERVER['REQUEST_METHOD'];
     if ($action === 'bootstrap' && $method === 'GET') {
-      return ['csrfToken' => \csrfToken(), 'mottos' => (new MemberMotto($this->db))->all()];
+      return [
+        'csrfToken' => \csrfToken(), 'mottos' => (new MemberMotto($this->db))->all(),
+        'profiles' => (new TeamProfile($this->db))->all(),
+      ];
     }
     if ($action === 'messages' && $method === 'GET') {
       $recipient = $_GET['recipient'] ?? 'team';

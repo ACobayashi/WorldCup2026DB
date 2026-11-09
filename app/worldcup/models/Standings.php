@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | WC26 article 13 score-based standings, explicit unresolved ties. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | WC26 article 13 score-based standings, explicit unresolved ties. */
 declare(strict_types=1);
 namespace Fourward\worldcup\models;
 

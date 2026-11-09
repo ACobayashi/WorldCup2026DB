@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Verified player leaderboards with shared ranks and profile links. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Verified player leaderboards with shared ranks and profile links. */
 declare(strict_types=1);
 $metrics=\Fourward\worldcup\models\PlayerBoard::RANKINGS;$current=$data['metric'];$position=$data['position'];$cards=in_array($current,['yellow_cards','red_cards'],true);$goalkeeper=$current==='saves';
 ?>

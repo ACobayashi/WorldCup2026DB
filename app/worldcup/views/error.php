@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Escaped public error and shared login entry. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Escaped public error and shared login entry. */
 declare(strict_types=1);
 ?>
 <section class="wc-empty" role="status"><p class="wc-eyebrow"><?= e(http_response_code()) ?></p><h2><?= e($errorMessage) ?></h2>

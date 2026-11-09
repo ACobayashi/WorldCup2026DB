@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Searchable two-team comparison. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Searchable two-team comparison. */
 declare(strict_types=1);
 [$a,$b]=$data['teams'];
 $money=static function(mixed $value):string {if($value===null)return '—';$value=(int)$value;return $value>=100000000?rtrim(rtrim(number_format($value/100000000,2,'.',''),'0'),'.').' 亿欧':number_format($value/10000,0).' 万欧';};

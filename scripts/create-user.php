@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 严苑毓 | Create an account without committing passwords. */
+/** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Create an account without committing passwords. */
 declare(strict_types=1);
 if (PHP_SAPI !== 'cli') exit(1);
 require __DIR__ . '/../app/common/bootstrap.php';

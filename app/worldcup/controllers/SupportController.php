@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Shared-login support boundary; writes intentionally unimplemented. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Shared-login support boundary; writes intentionally unimplemented. */
 declare(strict_types=1);
 namespace Fourward\worldcup\controllers;
 use Fourward\common\Auth;

@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Administrator scaffold and truthful capability status. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Administrator scaffold and truthful capability status. */
 declare(strict_types=1);
 ?>
 <p class="wc-notice">已使用团队管理员账号登录。当前工作台提供数据概览，编辑与导入功能尚未开放。</p>

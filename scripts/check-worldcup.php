@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Transactional World Cup foundation acceptance checks. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Transactional World Cup foundation acceptance checks. */
 declare(strict_types=1);
 if (PHP_SAPI !== 'cli') exit(1);
 require __DIR__ . '/../app/common/bootstrap.php';

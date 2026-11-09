@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Check local portrait lookup, rendering and missing-image behavior. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Check local portrait lookup, rendering and missing-image behavior. */
 declare(strict_types=1);
 require __DIR__.'/../app/common/bootstrap.php';
 use Fourward\worldcup\models\PlayerPortrait;

@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | Local-only World Cup import CLI. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Local-only World Cup import CLI. */
 declare(strict_types=1);
 if (PHP_SAPI !== 'cli') exit(1);
 require __DIR__.'/../app/common/bootstrap.php';

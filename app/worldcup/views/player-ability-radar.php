@@ -1,5 +1,5 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | DQD six-axis ability radar shared by profile and comparison. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | DQD six-axis ability radar shared by profile and comparison. */
 declare(strict_types=1);
 $abilityAxes=\Fourward\worldcup\models\PlayerAbility::AXES;$abilityCount=count($abilityAxes);
 $abilityPoint=static function(int $index,float $value,float $radius=122)use($abilityCount):array{$angle=-M_PI/2+2*M_PI*$index/$abilityCount;return [230+cos($angle)*$radius*$value/100,205+sin($angle)*$radius*$value/100];};

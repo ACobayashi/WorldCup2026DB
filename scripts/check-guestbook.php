@@ -1,6 +1,6 @@
 <?php
 /**
- * FOURWARD coursework | Author: 严苑毓 | Database integration acceptance checks.
+ * FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Database integration acceptance checks.
  * Uses a transaction and always rolls back fixtures; run against a development DB.
  */
 declare(strict_types=1);
@@ -11,6 +11,7 @@ use Fourward\common\HttpError;
 use Fourward\common\RateLimiter;
 use Fourward\team\models\GuestbookMessage;
 use Fourward\team\models\MemberMotto;
+use Fourward\team\models\TeamProfile;
 
 $checks = 0;
 function verify(bool $condition, string $label): void {
@@ -92,6 +93,20 @@ try {
   rejects(fn() => $mottos->save('lin-ziyuan', ' ', $member), 422);
   $mottos->save('team', '团队的新座右铭', $admin);
   verify($mottos->all()['team']['text'] === '团队的新座右铭', 'admin edits team motto');
+  $profiles = new TeamProfile($db);
+  $profile = ['description' => '<b>简介</b>', 'school' => '测试学院', 'role' => '测试分工', 'task' => '测试工作', 'tags' => '甲、乙，甲', 'github' => 'https://github.com/course-test'];
+  $profiles->save('lin-ziyuan', $profile, $member);
+  $saved = $profiles->all()['lin-ziyuan'];
+  verify($saved === array_replace($profile, ['tags' => ['甲', '乙']]), 'member profile stores public text, normalized tags and safe link');
+  rejects(fn() => $profiles->save('yan-yuanyu', $profile, $member), 403);
+  rejects(fn() => $profiles->save('team', $profile, $member), 403);
+  rejects(fn() => $profiles->save('lin-ziyuan', array_replace($profile, ['github' => 'https://github.com.example.org/user']), $member), 422);
+  rejects(fn() => $profiles->save('lin-ziyuan', array_replace($profile, ['tags' => '1、2、3、4、5']), $member), 422);
+  rejects(fn() => $profiles->save('lin-ziyuan', array_replace($profile, ['description' => str_repeat('字', 161)]), $member), 422);
+  $profiles->save('team', ['description' => '验收期间的团队简介'], $admin);
+  $_SERVER['REQUEST_METHOD'] = 'GET';
+  $bootstrap = (new \Fourward\team\controllers\GuestbookController($db))->dispatch('bootstrap');
+  verify($bootstrap['profiles']['team'] === ['description' => '验收期间的团队简介'] && $bootstrap['profiles']['lin-ziyuan'] === $saved, 'published profiles included in bootstrap');
   rejects(fn() => checkCsrf('invalid'), 403);
   checkCsrf(csrfToken());
   verify(true, 'valid CSRF token accepted');
