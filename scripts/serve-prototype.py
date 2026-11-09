@@ -1,5 +1,6 @@
 """Serve only the static demo, with a deterministic JavaScript module MIME type."""
 import argparse
+import subprocess
 from functools import partial
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -22,6 +23,7 @@ if __name__ == "__main__":
     parser.add_argument("--port", type=int, default=5173)
     args = parser.parse_args()
     public = Path(__file__).resolve().parent.parent / "public"
+    subprocess.run(["node", str(public.parent / "scripts/build-worldcup-snapshot.mjs")], check=True)
     server = ThreadingHTTPServer(("127.0.0.1", args.port), partial(PrototypeHandler, directory=str(public)))
     print(f"Static demo: http://127.0.0.1:{args.port}/", flush=True)
     try:

@@ -13,7 +13,8 @@ D:\WebDev\php\php.exe scripts/check-worldcup.php
 ```
 
 - `/worldcup/` 或 `/worldcup/index.php`：数据库模式。PHP 内置服务器使用 `public/router.php`；Apache 目录入口使用 `public/worldcup/.htaccess`。
-- `/worldcup/index.html`：原有合成数据静态演示，GitHub Pages/静态预览继续使用该文件。
+- `/worldcup/index.html`：世界杯只读资料快照，GitHub Pages/静态预览使用；构建自已提交数据，不连接数据库或提供写入。
+- `/worldcup/demo.html`：原有合成比分与本地支持演示，和数据库、资料快照保持分离。
 - `/worldcup/?view=matches|teams|groups|venues|support|admin`：六个模块页面。
 - `?view=teams&id=球队ID`、`?view=matches&id=比赛ID`：详情。
 - `/admin.php`：沿用团队账号登录。成员可以查看自己的支持记录，赛事工作台仅管理员可访问；没有为世界杯新建账号体系。

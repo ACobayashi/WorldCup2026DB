@@ -219,12 +219,17 @@ const feed = await loadMatchFeed();
 assert.equal(feed.code, 'OK');
 assert.equal(feed.data.source, 'demo');
 assert.equal(feed.data.snapshot_at, DEMO_SNAPSHOT_AT);
-const wcHtml = await readFile(new URL('public/worldcup/index.html', root), 'utf8');
+const wcHtml = await readFile(new URL('public/worldcup/demo.html', root), 'utf8');
 const wcIds = [...wcHtml.matchAll(/\bid="([^"]+)"/g)].map((match) => match[1]);
 assert.equal(wcIds.length, new Set(wcIds).size);
 assert.ok(wcHtml.includes('并非官方或实时赛况'));
 assert.ok(wcHtml.includes('href="../#team"'));
-for (const filename of ['public/assets/js/worldcup.mjs', 'public/assets/js/common.mjs', 'public/assets/js/guestbook.mjs', 'public/assets/js/workspace.mjs']) {
+const snapshotHtml = await readFile(new URL('public/worldcup/index.html', root), 'utf8');
+assert.ok(snapshotHtml.includes('name="worldcup-mode" content="snapshot"'));
+assert.ok(snapshotHtml.includes('href="./demo.html"'));
+assert.ok(snapshotHtml.includes('href="../#team"'));
+for (const view of ['matches', 'teams', 'leaders', 'compare', 'team_compare', 'groups']) assert.ok(snapshotHtml.includes(`data-view="${view}"`));
+for (const filename of ['public/assets/js/worldcup.mjs', 'public/assets/js/worldcup-snapshot.mjs', 'public/assets/js/common.mjs', 'public/assets/js/guestbook.mjs', 'public/assets/js/workspace.mjs']) {
   assert.ok(!(await readFile(new URL(filename, root), 'utf8')).includes('.innerHTML'));
 }
 

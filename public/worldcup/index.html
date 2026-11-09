@@ -4,13 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#111722">
-    <meta name="description" content="NKDEV 2026 世界杯赛事中心：焦点比赛、球迷支持度与赛程面板。当前为明确标注的演示数据。">
-    <title>2026 世界杯 · NKDEV 赛事中心</title>
+    <meta name="worldcup-mode" content="snapshot">
+    <meta name="description" content="FOURWARD 2026 世界杯资料中心：赛程赛果、球队名单、球员数据、积分晋级和双队双球员对比。仓库快照，只读展示，非实时赛况。">
+    <title>2026 世界杯 · FOURWARD 资料中心</title>
     <link rel="stylesheet" href="../assets/css/common.css?v=1">
-    <link rel="stylesheet" href="../assets/css/worldcup.css?v=1">
-    <script type="module" src="../assets/js/worldcup.mjs?v=1"></script>
+    <link rel="stylesheet" href="../assets/css/worldcup-shell.css?v=2">
+    <link rel="stylesheet" href="../assets/css/worldcup-data.css?v=9">
+    <link rel="stylesheet" href="../assets/css/worldcup-formation.css?v=1">
+    <link rel="stylesheet" href="../assets/css/worldcup-snapshot.css?v=1">
+    <script type="module" src="../assets/js/worldcup-snapshot.mjs?v=1"></script>
   </head>
-  <body class="worldcup-page">
+  <body class="wc-app">
     <a class="skip-link" href="#main">跳到主要内容</a>
     <header class="site-header">
       <a class="brand" href="../#team" aria-label="FOURWARD 团队首页">
@@ -20,55 +24,26 @@
       <nav class="main-nav" aria-label="主导航">
         <a href="../#team"><span>01</span>团队介绍</a>
         <a href="../#members"><span>02</span>成员档案</a>
-        <a class="is-active" href="./" aria-current="page"><span>03</span>世界杯</a>
+        <a class="is-active" href="./index.html" aria-current="location"><span>03</span>世界杯</a>
       </nav>
       <a class="repo-link" href="https://github.com/ACobayashi/WorldCup2026DB" target="_blank" rel="noopener noreferrer">项目仓库 <span aria-hidden="true">↗</span></a>
     </header>
-
-    <main class="worldcup-shell" id="main" tabindex="-1">
-      <div class="match-masthead">
-        <div><p class="wc-eyebrow">NKDEV / MATCH CENTER</p><h1>2026 世界杯<span>赛事中心</span></h1></div>
-        <div class="edition-stamp"><span class="edition-dot"></span> THE WORLD. ONE GAME.<small>USA / CANADA / MEXICO</small></div>
-      </div>
-      <div class="demo-banner"><span class="demo-badge">DEMO</span><p>界面演示 · 对阵、比分和支持率均为示例，并非官方或实时赛况。<span id="snapshot-time"></span></p></div>
-
-      <section class="match-hero" id="match-hero" aria-labelledby="focus-title">
-        <div class="stadium-art" aria-hidden="true">
-          <div class="stadium-ring"></div>
-          <svg class="pitch-lines" viewBox="0 0 1000 600" fill="none"><rect x="100" y="80" width="800" height="440" rx="4"/><path d="M500 80v440M100 180h145v240H100M900 180H755v240h145M100 235h60v130h-60M900 235h-60v130h60"/><circle cx="500" cy="300" r="65"/><circle cx="500" cy="300" r="3"/><path d="M245 249a65 65 0 0 1 0 102M755 249a65 65 0 0 0 0 102"/></svg>
-          <span class="stadium-word">MATCHDAY</span>
-        </div>
-        <div class="hero-topline">
-          <div class="focus-caption"><span class="status-chip" id="focus-status">加载赛况</span><h2 id="focus-title">焦点比赛</h2></div>
-          <div class="focus-controls"><span id="focus-counter">01 / 08</span><button class="glass-button glass-button--icon" id="previous-match" type="button" aria-label="上一场焦点比赛">←</button><button class="glass-button glass-button--icon" id="next-match" type="button" aria-label="下一场焦点比赛">→</button></div>
-        </div>
-        <div class="scoreboard">
-          <div class="score-team"><div class="flag-halo"><svg class="team-flag" role="img" aria-label="主队国旗"><use id="home-flag" href="../assets/images/flags.svg#BRA"/></svg></div><h3 id="home-name">巴西</h3><span id="home-code">BRA</span></div>
-          <div class="score-center"><p id="focus-stage">示例对阵</p><strong class="match-score" id="focus-score">— : —</strong><span class="match-clock" id="focus-clock">赛况加载中</span><p class="match-venue" id="focus-venue"></p></div>
-          <div class="score-team"><div class="flag-halo flag-halo--away"><svg class="team-flag" role="img" aria-label="客队国旗"><use id="away-flag" href="../assets/images/flags.svg#FRA"/></svg></div><h3 id="away-name">法国</h3><span id="away-code">FRA</span></div>
-        </div>
-        <div class="hero-bottomline"><span id="focus-kickoff"></span><button class="glass-button" id="match-details" type="button">比赛详情 <span aria-hidden="true">↗</span></button></div>
-        <div class="support-panel">
-          <div class="support-heading"><h3>球迷支持度 <span>演示</span></h3><p id="support-total">加载示例票数</p></div>
-          <div class="support-labels"><span><b id="home-percent">0%</b><span id="support-home-name">巴西</span></span><span><span id="support-away-name">法国</span><b id="away-percent">0%</b></span></div>
-          <div class="support-bar" id="support-bar" role="img" aria-label="支持率加载中"><span id="home-support-fill"></span><span id="away-support-fill"></span></div>
-          <div class="support-bottomline"><p>示例票数 + 本机选择，非全站统计，也不是获胜概率。</p><div class="support-actions"><button class="glass-button" id="support-home" type="button" aria-pressed="false">支持主队</button><button class="glass-button" id="support-away" type="button" aria-pressed="false">支持客队</button></div></div>
-        </div>
-      </section>
-
-      <section class="fixture-section" aria-labelledby="fixtures-title">
-        <div class="fixture-heading"><div><p class="wc-eyebrow">THE NEXT WHISTLE</p><h2 id="fixtures-title">接下来的比赛 <span id="fixture-count"></span></h2></div><div class="fixture-status-filter" role="group" aria-label="筛选比赛状态"><button class="glass-button" type="button" data-status="scheduled" aria-pressed="true">即将开赛</button><button class="glass-button" type="button" data-status="live" aria-pressed="false">进行中</button><button class="glass-button" type="button" data-status="finished" aria-pressed="false">已结束</button><button class="glass-button" type="button" data-status="all" aria-pressed="false">全部</button></div></div>
-        <div class="fixture-filter-row"><div class="date-filter" id="date-filter" role="group" aria-label="筛选北京时间日期"></div><span>比赛时间均为北京时间 / UTC+8</span></div>
-        <div class="fixture-grid" id="fixture-grid"></div>
-        <div class="fixture-empty" id="fixture-empty" hidden><h3>这个筛选下还没有比赛</h3><p>试试其他日期，或查看全部赛程。</p><button class="glass-button" id="reset-filters" type="button">查看全部赛程</button></div>
-        <p id="fixture-result" class="visually-hidden" role="status" aria-live="polite"></p>
-      </section>
-      <div class="wc-endnote"><span class="edition-dot"></span><p>为每一份热爱，留一个主场。</p><span>BUILT BY FOURWARD / 2026</span></div>
+    <main id="main" class="wc-main" tabindex="-1">
+      <div class="wc-heading"><div><p class="wc-eyebrow">FOURWARD / WORLD CUP 2026</p><h1 id="snapshot-title">世界杯资料中心</h1></div><a class="glass-button" href="./demo.html">比分与支持度演示 ↗</a></div>
+      <nav class="wc-tabs" aria-label="世界杯模块">
+        <a href="./index.html?view=matches" data-view="matches">赛程与赛果</a>
+        <a href="./index.html?view=teams" data-view="teams">参赛球队</a>
+        <a href="./index.html?view=leaders" data-view="leaders">球员榜</a>
+        <a href="./index.html?view=compare" data-view="compare">球员对比</a>
+        <a href="./index.html?view=team_compare" data-view="team_compare">球队对比</a>
+        <a href="./index.html?view=groups" data-view="groups">积分与晋级</a>
+      </nav>
+      <details class="wc-notice wc-snapshot-disclosure"><summary>只读仓库快照 · 非实时赛况 / 使用说明</summary><p>来自功能分支已提交的 2026 赛事资料，并非官方或实时赛况。缺失数据保留为 —。在线展示不连接数据库，不提供登录、投票或后台写入；原合成示例保留在独立演示页。</p></details>
+      <div id="snapshot-summary" class="wc-summary" aria-label="快照数据概览"></div>
+      <div id="snapshot-content" aria-busy="true"><p class="wc-muted">正在读取赛事资料……</p></div>
+      <p id="snapshot-status" class="visually-hidden" role="status" aria-live="polite"></p>
+      <noscript><section class="wc-empty"><h2>请启用 JavaScript 浏览赛事资料</h2><p>当前为无需 PHP 和数据库的只读快照版。</p><a href="../#team">返回团队主页</a></section></noscript>
     </main>
-    <footer class="site-footer"><span>NKDEV / WORLD CUP 2026</span><span>静态前端演示 · 尚未接入赛事 API 和共享数据库</span><a href="../#team">认识我们的团队 ↗</a></footer>
-    <p id="match-status" class="visually-hidden" role="status" aria-live="polite"></p>
-    <div class="toast" id="toast" role="status" aria-live="polite"></div>
-    <dialog id="match-dialog" aria-labelledby="match-dialog-title"><div class="dialog-topline"><span>MATCH BRIEF / DEMO</span><button class="dialog-close" id="close-match-dialog" type="button" aria-label="关闭比赛详情">×</button></div><h2 id="match-dialog-title">比赛详情</h2><dl class="match-facts" id="match-facts"></dl><p class="match-dialog-note">这是用于验证界面和交互的合成示例。赛程、比分和票数均不代表真实比赛。</p></dialog>
-    <noscript><p class="no-script">请启用 JavaScript 查看演示赛程和交互；当前没有接入实时赛事数据。</p></noscript>
+    <footer class="site-footer"><span>FOURWARD / WORLD CUP 2026</span><span>只读仓库快照 · 比赛时间均为北京时间 · 非实时数据</span><a href="../#team">返回团队主页 ↗</a></footer>
   </body>
 </html>

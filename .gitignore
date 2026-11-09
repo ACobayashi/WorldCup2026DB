@@ -20,3 +20,4 @@ __pycache__/
 /public/assets/images/player-photos/*
 !/public/assets/images/player-photos/.gitkeep
 !/public/assets/images/player-photos/CREDITS.md
+/public/assets/data/worldcup-snapshot.json

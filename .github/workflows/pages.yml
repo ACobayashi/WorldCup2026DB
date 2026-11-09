@@ -27,12 +27,18 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: '24'
+      - name: Build read-only World Cup snapshot
+        run: node scripts/build-worldcup-snapshot.mjs
+      - name: Validate World Cup snapshot
+        run: node scripts/check-worldcup-snapshot.mjs
       - name: Validate prototype
         run: node scripts/check-prototype.mjs
       - name: Check browser module syntax
         run: |
           node --check public/assets/js/app.mjs
           node --check public/assets/js/worldcup.mjs
+          node --check public/assets/js/worldcup-snapshot.mjs
+          node --check public/assets/js/worldcup-snapshot-data.mjs
           node --check public/assets/js/common.mjs
           node --check public/assets/js/guestbook.mjs
           node --check public/assets/js/workspace.mjs

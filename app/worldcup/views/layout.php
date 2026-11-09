@@ -25,7 +25,7 @@ require __DIR__.'/helpers.php';
       <a class="repo-link" href="../admin.php"><?= $user ? e($user['username']) : '团队账号登录' ?> ↗</a>
     </header>
     <main id="main" class="wc-main" tabindex="-1">
-      <div class="wc-heading"><div><p class="wc-eyebrow">FOURWARD / WORLD CUP 2026</p><h1><?= e($title) ?></h1></div><a class="glass-button" href="./index.html">查看界面演示 ↗</a></div>
+      <div class="wc-heading"><div><p class="wc-eyebrow">FOURWARD / WORLD CUP 2026</p><h1><?= e($title) ?></h1></div><a class="glass-button" href="./index.html">查看只读快照 ↗</a><a class="glass-button" href="./demo.html">查看界面演示 ↗</a></div>
       <nav class="wc-tabs" aria-label="世界杯模块">
         <?php foreach (array_diff_key($titles, ['venues' => true, 'player' => true]) as $key => $label): ?>
           <a href="<?= e($url($key)) ?>" <?= $section === $key || ($section==='player'&&$key==='teams') ? 'aria-current="page"' : '' ?>><?= e($label) ?></a>

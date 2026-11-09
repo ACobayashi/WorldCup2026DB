@@ -2,9 +2,9 @@
 
 ## Project Structure and Module Organization
 
-This four-person coursework project has a buildless frontend and a PHP/PDO guestbook slice. `public/index.html` serves the static team demo; `public/index.php`, `api.php` and `admin.php` serve the database-backed homepage and workspace. `public/worldcup/index.html` serves the match-center demo. Shared UI lives in `public/assets/css/common.css` and `public/assets/js/common.mjs`; module assets live under `public/assets/`.
+This four-person coursework project has a buildless frontend and a PHP/PDO guestbook slice. `public/index.html` serves the static team demo; `public/index.php`, `api.php` and `admin.php` serve the database-backed homepage and workspace. `public/worldcup/index.html` serves the read-only World Cup snapshot; `demo.html` retains the synthetic match-center demo. Shared UI lives in `public/assets/css/common.css` and `public/assets/js/common.mjs`; module assets live under `public/assets/`.
 
-`app/team/` contains the guestbook/motto MVC implementation. `app/common/` provides PDO, sessions, account roles, CSRF and quotas. `app/worldcup/` contains read-only MVC pages (match details, national teams, calculated standings and knockout graph) and a transactional CLI import service, served by `public/worldcup/index.php` and `api.php`; `public/worldcup/index.html` remains the separate browser-local demo. Admin editing and support writes are not implemented. Preserve existing backend behavior when migrating toward the README's Yii2 target. Final coursework belongs in `data/team/` and `data/personal/`. `data/install.sql` defines 18 tables (four team/common and fourteen World Cup). Import contracts and instructions live in `data/worldcup/`, page behavior in `docs/worldcup-pages.md`. Never edit or commit unrelated material in `IGNORE/`.
+`app/team/` contains the guestbook/motto MVC implementation. `app/common/` provides PDO, sessions, account roles, CSRF and quotas. `app/worldcup/` contains read-only MVC pages (match details, national teams, calculated standings and knockout graph) and a transactional CLI import service, served by `public/worldcup/index.php` and `api.php`. Static Pages exports only bundled World Cup snapshots, never account, guestbook or support data. Admin editing and support writes are not implemented. Preserve existing backend behavior when migrating toward the README's Yii2 target. Final coursework belongs in `data/team/` and `data/personal/`. `data/install.sql` defines 18 tables (four team/common and fourteen World Cup). Import contracts and instructions live in `data/worldcup/`, page behavior in `docs/worldcup-pages.md`. Never edit or commit unrelated material in `IGNORE/`.
 
 ## Development and Validation Commands
 
@@ -12,6 +12,8 @@ This four-person coursework project has a buildless frontend and a PHP/PDO guest
 - `node scripts/check-prototype.mjs`: validate member records, message normalization, and required assets.
 - `node --check public/assets/js/app.mjs`: check browser-module syntax.
 - `node --check public/assets/js/worldcup.mjs`: check match-center browser syntax.
+- `node scripts/build-worldcup-snapshot.mjs`: build ignored static JSON from committed sources, without a database or network.
+- `node scripts/check-worldcup-snapshot.mjs`: verify snapshot export, source-matched standings, squads, formations, filters and rankings.
 - `php scripts/install.php`: idempotently create missing tables, without altering existing schemas or clearing data.
 - `php scripts/check-worldcup.php`: transactional database/API-controller checks; fixtures are always rolled back.
 - `python scripts/worldcup_data.py`: rebuild the small World Cup staging sample offline with Python 3.10+ standard library; does not import data.

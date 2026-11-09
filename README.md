@@ -2,7 +2,7 @@
 
 互联网数据库开发小组作业，包含团队主页和世界杯两个模块。
 
-在线展示：[NKDEV · FOURWARD](https://acobayashi.github.io/WorldCup2026DB/)。代码协作：[GitHub 仓库](https://github.com/ACobayashi/WorldCup2026DB)。推送到 `main` 后，GitHub Actions 检查原型并自动发布 `public/` 到 GitHub Pages；也可在 Actions 中手动运行。Pages 仅展示静态前端，不运行 PHP 或数据库。
+在线展示：[NKDEV · FOURWARD](https://acobayashi.github.io/WorldCup2026DB/)。代码协作：[GitHub 仓库](https://github.com/ACobayashi/WorldCup2026DB)。推送到 `main` 后，GitHub Actions 从已提交资料构建世界杯只读快照、执行检查，再发布 `public/` 到 GitHub Pages；也可在 Actions 中手动运行。Pages 不运行 PHP 或数据库；更新发布流程尚需推送后验证。
 
 ## 完整留言模块本地运行
 
@@ -57,6 +57,7 @@ Remove-Item Env:\ACCOUNT_PASSWORD
 node scripts/check-prototype.mjs
 node --check public/assets/js/app.mjs
 node --check public/assets/js/guestbook.mjs
+node scripts/check-worldcup-snapshot.mjs
 php scripts/check-guestbook.php
 php scripts/check-worldcup.php
 ```
@@ -69,13 +70,19 @@ php scripts/check-worldcup.php
 python3 scripts/serve-prototype.py
 ```
 
-打开 http://127.0.0.1:5173 。预览脚本固定 .mjs 的 JavaScript 响应类型，避免 Windows 文件关联将其错误地识别成纯文本；不执行 PHP。运行 `node scripts/check-prototype.mjs` 检查初版。
+打开 http://127.0.0.1:5173 。预览脚本需要 Node.js，会先从仓库数据生成世界杯快照；固定 .mjs 的 JavaScript 响应类型，避免 Windows 文件关联将其错误地识别成纯文本；不执行 PHP。运行 `node scripts/check-prototype.mjs` 和 `node scripts/check-worldcup-snapshot.mjs` 检查两个模块。
+
+使用其他静态服务器时，先执行 `node scripts/build-worldcup-snapshot.mjs`，再以 `public/` 为网站根目录。生成的 `public/assets/data/worldcup-snapshot.json` 不进 Git，不包含账号、留言或支持记录；GitHub Actions 每次发布前离线重建，不访问数据源网站。
 
 静态预览及 GitHub Pages 保留浏览器本地演示留言，明确标注为本地演示，不能跨浏览器共享，也不运行审核后台。使用 PHP 入口时则调用真实数据库接口，服务故障会显示失败并保留输入，不自动改为本地保存。页面保留独立场景转场、四人档案、人物入场和面部背景动效，成员卡片支持方向键。成员标签根据学院及分工整理，人物形象为插画。主页的“场边留言”展示最新三条团队留言，数据库模式只展示审核通过的内容；全部留言和分页保留在留言弹窗中。
 
-静态预览和 GitHub Pages 的 `worldcup/index.html` 提供赛程面板演示：比分大屏、支持度、状态/日期筛选和比赛详情。对阵、时间、比分和票数均为合成示例，支持选择仅保存在浏览器。
+静态预览和 GitHub Pages 的 `worldcup/index.html` 现在是世界杯只读资料入口：48 队完整名单、1,248 名球员、104 场赛程与比赛详情、首发阵型、技术统计与事件、球员赛事/单场面板、球员榜、球员/球队搜索对比、小组积分、第三名比较与淘汰赛晋级图。全部读取功能分支已提交的快照，不是实时赛事 API，也不连接共享数据库。缺失字段保留为 —；排名保留无法核实的并列。球队及球员对比支持两侧即时搜索，图表旁提供原始值表格。
 
-PHP 本地环境的 `/worldcup/` 已接入世界杯 MVC 只读框架：赛程列表与详情、球队搜索与阵容详情、分组名单、场馆、个人支持记录，以及管理员数据概览。它从数据库查询，无数据时显示待导入，不回退到示例。普通成员可查看自己的支持记录，管理员可查看赛事工作台；登录沿用 `/admin.php`。当前未开放后台编辑、网页数据导入和支持写入；CLI 导入已实现。写入预留接口验证登录及 CSRF 后明确返回 501，不会保存假成功。数据库页面提供独立静态演示链接。入口、接口及后续模块边界见 [世界杯框架说明](docs/worldcup-foundation.md)。
+原比分大屏和支持度演示移动到 `worldcup/demo.html`，资料入口保留直达链接。该页的对阵、时间、比分和票数仍均为合成示例，支持选择仅保存在浏览器；不与快照统计混用。静态版没有登录、个人支持、后台编辑或写入功能；这些边界仍由 PHP 入口处理。球员图片沿用已核对的外部图片地址，无法加载时回退到本地号码标记。
+
+只读快照页面：[桌面截图](docs/screenshots/worldcup-snapshot-desktop.png)、[手机截图](docs/screenshots/worldcup-snapshot-mobile.png)。本地浏览器检查覆盖模块跳转、筛选分页、单场切换与刷新、对比搜索、晋级连线、原演示支持持久化、320/390px 布局、Pages 子路径和快照加载失败提示。
+
+PHP 本地环境的 `/worldcup/` 仍进入世界杯 MVC 数据库版，包含赛程列表与详情、球队搜索与阵容详情、分组名单、场馆、个人支持记录，以及管理员数据概览。它从数据库查询，无数据时显示待导入，不回退到示例或快照。普通成员可查看自己的支持记录，管理员可查看赛事工作台；登录沿用 `/admin.php`。当前未开放后台编辑、网页数据导入和支持写入；CLI 导入已实现。写入预留接口验证登录及 CSRF 后明确返回 501，不会保存假成功。数据库页面提供独立快照和静态演示链接。入口、接口及后续模块边界见 [世界杯框架说明](docs/worldcup-foundation.md)。
 
 后续功能以实际可获得的数据为依据，先核查来源与身份映射再扩表。2026 年 11 月 3 日的实际请求结果、候选 GitHub 项目、可实现功能和已发现的数据错误见 [数据来源核查](docs/worldcup-data-sources.md)。该核查尚未把任何赛事资料导入业务数据库。
 
@@ -136,7 +143,8 @@ DBDev/
 |   |-- admin.php              # 登录、审核和座右铭工作台
 |   |-- worldcup/index.php     # 世界杯数据库模式
 |   |-- worldcup/api.php       # 世界杯只读 JSON 接口与写入预留边界
-|   |-- worldcup/index.html    # 世界杯静态演示
+|   |-- worldcup/index.html    # 世界杯只读资料快照
+|   |-- worldcup/demo.html     # 合成比分与本地支持演示
 |   `-- assets/
 |       |-- css/
 |       |-- js/
