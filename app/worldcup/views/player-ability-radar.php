@@ -1,4 +1,5 @@
 <?php
+// 2410933_马禹翔
 /** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | DQD six-axis ability radar shared by profile and comparison. */
 declare(strict_types=1);
 $abilityAxes=\Fourward\worldcup\models\PlayerAbility::AXES;$abilityCount=count($abilityAxes);

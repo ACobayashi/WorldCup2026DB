@@ -1,4 +1,5 @@
 <?php
+// 2410933_马禹翔
 /** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Searchable two-team comparison. */
 declare(strict_types=1);
 [$a,$b]=$data['teams'];

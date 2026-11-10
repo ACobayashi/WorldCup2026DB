@@ -1,4 +1,5 @@
 <?php
+// 2410933_马禹翔
 /** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Two-player ability and tournament-stat comparison. */
 declare(strict_types=1);
 [$a,$b]=$data['players'];$comparisonMetrics=['appearances'=>'出场','starts'=>'首发','goals'=>'进球','assists'=>'助攻','shots'=>'射门','passes_completed'=>'成功传球','ball_progressions'=>'推进','take_ons'=>'过人','interceptions'=>'拦截','tackles_won'=>'成功抢断','clearances'=>'解围'];
