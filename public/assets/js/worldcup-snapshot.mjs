@@ -2,6 +2,7 @@ import {
   createSnapshotModel, positions, metrics, rankings, eventLabels, statusLabels, abilityLabels,
   displayNumber as number, matchScore, kickoffLabel, searchMatches,
 } from './worldcup-snapshot-data.mjs';
+import { chartMount, mountWorldCupCharts } from './worldcup-charts.mjs?v=1';
 
 const input = new URLSearchParams(location.search);
 const content = document.getElementById('snapshot-content');
@@ -156,12 +157,24 @@ function renderMatch(match) {
   const right = model.teamStats.get(`${match.id}/${away.id}`) ?? {};
   stats.append(table([home.name_zh, '统计项', away.name_zh], Object.entries({ goals: '进球', shots: '射门', shots_on_target: '射正', possession_pct: '控球率 %', passes_attempted: '传球', passes_completed: '成功传球', pass_completion_pct: '传球成功率 %' }).map(([key, label]) => [number(left[key]), label, number(right[key])]), '双方技术统计'), text('数据缺失保留为 —，控球率按原始来源展示。'));
   const events = panel('比赛事件');
-  const rows = [...(model.events.get(match.id) ?? [])].sort((a, b) => a.minute + a.added_minute - b.minute - b.added_minute);
-  events.append(node('ol', { class: 'wc-timeline' }, rows.map((event) => {
-    const player = model.playerById.get(event.player_id);
-    return node('li', { class: `wc-event wc-event-${event.type}` }, node('time', {}, event.label), node('span', { class: 'wc-event-icon', 'aria-hidden': 'true' }, event.type.includes('card') ? '▰' : '·'), node('div', {}, node('b', {}, eventLabels[event.type] ?? event.type), player ? playerLink(player, { match_id: match.id }) : '未指定球员'));
-  })));
-  content.append(node('div', { class: 'wc-detail-layout' }, lineups, node('aside', {}, stats, events)));
+  events.id = 'timeline';
+  events.classList.add('wc-event-panel');
+  const rows = [...(model.events.get(match.id) ?? [])].sort((a, b) => a.minute - b.minute || a.added_minute - b.added_minute);
+  if (rows.length) {
+    const chartEvents = rows.map((event) => {
+      const player = model.playerById.get(event.player_id);
+      return { type: event.type, minute: event.minute, added: event.added_minute, label: event.label, name: player?.name ?? '未指定球员', side: player?.team_id === home.id ? 0 : 1 };
+    });
+    const names = [home.name_zh, away.name_zh];
+    events.append(chartMount('event-timeline', { names, extraTime: match.home_score_et != null, events: chartEvents }),
+      node('ol', { class: 'wc-timeline', 'data-wc-event-list': true, 'aria-label': '比赛事件记录' }, rows.map((event, index) => {
+        const player = model.playerById.get(event.player_id);
+        return node('li', { class: `wc-event wc-event-${event.type}`, 'data-wc-event-index': index }, node('time', {}, event.label), node('span', { class: 'wc-event-icon', 'aria-hidden': 'true' }, event.type.includes('card') ? '▰' : '·'), node('div', {}, node('b', {}, eventLabels[event.type] ?? event.type), player ? playerLink(player, { match_id: match.id }) : '未指定球员', node('small', {}, names[chartEvents[index].side])));
+      })), text('保留来源的分钟和补时标记。乌龙球记于实施球员名下，进球计入对手。'));
+  } else {
+    events.append(text('暂无事件记录。'));
+  }
+  content.append(events, node('div', { class: 'wc-detail-layout' }, lineups, node('aside', {}, stats)));
 }
 
 function renderFormation(match, home, away) {
@@ -231,7 +244,7 @@ function radar(players) {
   const axes = Object.keys(abilityLabels);
   const point = (index, radius) => [180 + Math.sin(index * Math.PI / 3) * radius, 175 - Math.cos(index * Math.PI / 3) * radius];
   const points = (values) => axes.map((key, index) => point(index, values(key) * 1.05).join(',')).join(' ');
-  const svg = svgNode('svg', { class: 'wc-snapshot-radar', viewBox: '0 0 360 350', role: 'img', 'aria-label': players.map((player) => `${player.name}综合能力六维图`).join('、') });
+  const svg = svgNode('svg', { class: 'wc-snapshot-radar', 'data-wc-chart-fallback': '', viewBox: '0 0 360 350', role: 'img', 'aria-label': players.map((player) => `${player.name}综合能力六维图`).join('、') });
   for (const radius of [25, 50, 75, 100]) svg.append(svgNode('polygon', { points: points(() => radius), fill: 'none', stroke: '#a5b6dd33' }));
   for (const [index, label] of Object.values(abilityLabels).entries()) {
     const [x, y] = point(index, 140);
@@ -243,7 +256,16 @@ function radar(players) {
     const color = index === 0 ? '#80b9ff' : '#ffbd85';
     svg.append(svgNode('polygon', { points: points((key) => player.ability[key]), fill: `${color}30`, stroke: color, 'stroke-width': '2' }));
   });
-  return node('div', {}, svg, text(players.map((player, index) => `${index === 0 ? '蓝色' : '橙色'}：${player.name}${player.ability ? '' : '（暂无能力数据）'}`).join(' / ')), text('综合能力来自已提交的懂球帝能力快照，不代表本届赛事单场表现。'), table(['能力项', ...players.map((player) => player.name)], Object.entries(abilityLabels).map(([key, label]) => [label, ...players.map((player) => number(player.ability?.[key]))]), '综合能力原始值'));
+  const active = players.some((player) => axes.every((key) => Number.isFinite(player.ability?.[key])));
+  const chart = active && chartMount('radar', {
+    axes: Object.entries(abilityLabels),
+    players: players.map((player, side) => ({ name: player.name, side, values: Object.fromEntries(axes.map((key) => [key, player.ability?.[key]])) })),
+  });
+  const unavailable = players.filter((player) => !player.ability).map((player) => player.name);
+  return node('div', {}, chart, active ? svg : text('暂无懂球帝能力数据。'),
+    active && unavailable.length > 0 && text(`${unavailable.join('、')}暂无能力数据。`),
+    node('details', { open: true, 'data-wc-raw-table': true }, node('summary', {}, '查看六维原始评分'),
+      table(['能力项', ...players.map((player) => player.name)], Object.entries(abilityLabels).map(([key, label]) => [label, ...players.map((player) => number(player.ability?.[key]))]), '综合能力原始值')));
 }
 
 function metricGrid(values, coverage, appearances) {
@@ -263,11 +285,36 @@ function renderPlayer() {
   if (!match) throw new Error('这场比赛不属于该球员所在球队。');
   const single = panel('单场表现');
   single.id = 'single-performance';
-  single.append(node('form', { class: 'wc-filters', method: 'get', action: './index.html#single-performance' }, hidden('view', 'player'), hidden('id', player.id), select('选择比赛', 'match_id', Object.fromEntries(games.map((match) => [match.id, `M${match.match_no} ${kickoffLabel(match.kickoff_at)} ${model.teamById.get(match.home_team_id).name_zh} ${matchScore(match)} ${model.teamById.get(match.away_team_id).name_zh}`])), match.id), submit('查看单场')));
-  const appearance = (model.appearances.get(player.id) ?? []).find((row) => row.match_id === match.id);
-  single.append(link('matches', `MATCH ${match.match_no} · ${matchScore(match)} · 比赛详情 ↗`, { id: match.id }, 'wc-back'), text(appearance?.appeared ? `${appearance.starting ? '首发' : '替补'}出场` : '本场未出场；不将没有上场记录的技术统计当作零。'), metricGrid(appearance?.appeared ? model.playerStats.get(`${match.id}/${player.id}`) ?? {} : {}), text('单场助攻和出场分钟缺失，保留为 —，不按赛事助攻总数推算。'));
-  const events = (model.events.get(match.id) ?? []).filter((event) => event.player_id === player.id);
-  single.append(text(events.length ? events.map((event) => `${event.label} ${eventLabels[event.type]}`).join(' / ') : '本场没有该球员的已记录事件。'));
+  const appearances = new Map((model.appearances.get(player.id) ?? []).map((row) => [row.match_id, row]));
+  const chartGames = games.map((game) => {
+    const appearance = appearances.get(game.id);
+    const opponent = model.teamById.get(game.home_team_id === team.id ? game.away_team_id : game.home_team_id);
+    return { id: game.id, opponent: opponent.name_zh, stage: model.stageByCode.get(game.stage_code).name,
+      appearance: appearance ? appearance.appeared ? appearance.starting ? '首发出场' : '替补出场' : '未上场' : '名单未记录',
+      metrics: appearance?.appeared ? model.playerStats.get(`${game.id}/${player.id}`) ?? {} : {},
+    };
+  });
+  const metricKeys = player.position === 'GK'
+    ? ['saves', 'goals_prevented', 'saves_inside_box', 'sweeper_actions_won', 'passes_completed']
+    : ['shots', 'goals', 'passes_completed', 'interceptions', 'tackles_won', 'ball_progressions'];
+  const matchBody = (game, row) => {
+    const events = (model.events.get(game.id) ?? []).filter((event) => event.player_id === player.id);
+    return [link('matches', `MATCH ${game.match_no} · ${matchScore(game)} · 比赛详情 ↗`, { id: game.id }, 'wc-back'),
+      text(`${row.opponent} · ${row.stage} · ${row.appearance}`), metricGrid(row.metrics),
+      text('单场助攻和出场分钟暂无数据。'),
+      text(events.length ? events.map((event) => `${event.label} ${eventLabels[event.type]}`).join(' / ') : '本场没有该球员的已记录事件。')];
+  };
+  single.append(chartMount('player-matches', { games: chartGames, metrics: metricKeys.map((key) => [key, metrics[key], ['goals', 'goals_prevented'].includes(key) ? ' 球' : ' 次']) }),
+    node('form', { class: 'wc-filters', method: 'get', action: './index.html#single-performance' }, hidden('view', 'player'), hidden('id', player.id), select('选择比赛', 'match_id', Object.fromEntries(games.map((game) => [game.id, `M${game.match_no} ${kickoffLabel(game.kickoff_at)} ${model.teamById.get(game.home_team_id).name_zh} ${matchScore(game)} ${model.teamById.get(game.away_team_id).name_zh}`])), match.id), submit('查看单场')));
+  for (const [index, game] of games.entries()) {
+    if (game.id === match.id) {
+      single.append(node('div', { 'data-wc-match-body': true }, matchBody(game, chartGames[index])));
+    } else {
+      const template = node('template', { 'data-wc-match-id': game.id });
+      template.content.append(...matchBody(game, chartGames[index]));
+      single.append(template);
+    }
+  }
   content.append(single, panel('逐场记录', table(['场次', '对阵', '出场', '进球', '射门'], games.map((game) => {
     const row = (model.appearances.get(player.id) ?? []).find((row) => row.match_id === game.id);
     const stats = row?.appeared ? model.playerStats.get(`${game.id}/${player.id}`) : null;
@@ -307,8 +354,8 @@ function searchableSelect(label, name, rows, current, playerMode) {
   return node('label', {}, label, search, dropdown);
 }
 
-function comparisonCharts(left, right, fields) {
-  const charts = node('div', { class: 'wc-snapshot-comparison' });
+function comparisonCharts(left, right, fields, games, perMatch = []) {
+  const charts = node('div', { class: 'wc-snapshot-comparison', 'data-wc-chart-fallback': true });
   for (const [key, label] of Object.entries(fields)) {
     const a = left[key];
     const b = right[key];
@@ -320,7 +367,13 @@ function comparisonCharts(left, right, fields) {
       return node('div', { class: 'wc-snapshot-bar-track' }, bar, node('b', {}, number(value)));
     }))));
   }
-  return [charts, table(['指标', left.label, right.label], Object.entries(fields).map(([key, label]) => [label, number(left[key]), number(right[key])]), '对比原始统计')];
+  const chartMetrics = Object.entries(fields).filter(([key]) => key !== 'market_value').map(([key, label]) => ({
+    key, label: label.replace(/ %$/, ''), values: [left[key], right[key]], unit: key.endsWith('_pct') ? '%' : '',
+    perMatch: perMatch.includes(key),
+    coverage: left.coverage && right.coverage && Object.hasOwn(left.coverage, key) ? [left.coverage[key], right.coverage[key]] : null,
+  }));
+  return [chartMount('comparison', { names: [left.label, right.label], games, metrics: chartMetrics }), charts,
+    node('details', { open: true, 'data-wc-raw-table': true }, node('summary', {}, '查看赛事原始数据'), table(['指标', left.label, right.label], Object.entries(fields).map(([key, label]) => [label, number(left[key]), number(right[key])]), '对比原始统计'))];
 }
 
 function renderCompare(teamMode = false) {
@@ -336,10 +389,15 @@ function renderCompare(teamMode = false) {
   content.append(node('div', { class: 'wc-snapshot-compare-heroes' }, hero(left), hero(right)));
   if (teamMode) {
     const fields = { played: '已赛', won: '胜', drawn: '平', lost: '负', goals_for: '进球', goals_against: '失球', goal_difference: '净胜球', expected_goals: 'xG', expected_goals_against: 'xGA', shots: '射门', shots_on_target: '射正', average_possession_pct: '平均控球率 %', passes_completed: '成功传球', pass_completion_pct: '传球成功率 %', clean_sheets: '零封', market_value: '最高首发身价 / 欧元' };
-    content.append(panel('球队赛事对比', text('蓝色为左队，橙色为右队。胜平负按含加时的比分统计，不把点球大战记作普通进球。'), comparisonCharts({ ...model.teamSummary(left.id), label: left.name_zh }, { ...model.teamSummary(right.id), label: right.name_zh }, fields), text('身价为本届赛事最高首发阵容身价，不是 26 人注册名单总身价。xG/xGA 汇总自已提交的逐场报告快照。')));
+    const a = model.teamSummary(left.id);
+    const b = model.teamSummary(right.id);
+    content.append(panel('球队赛事对比', text(`蓝色 ${left.name_zh} · ${a.played} 场　/　橙色 ${right.name_zh} · ${b.played} 场`), comparisonCharts({ ...a, label: left.name_zh }, { ...b, label: right.name_zh }, fields, [a.played, b.played], ['goals_for', 'goals_against', 'shots', 'shots_on_target', 'passes_completed', 'clean_sheets']), text('胜平负按含加时的比分统计。xG/xGA 汇总自逐场报告。')));
   } else {
-    const fields = { goals: '进球', assists: '助攻', shots: '射门', passes_completed: '成功传球', interceptions: '拦截', tackles_won: '成功抢断', clearances: '解围', saves: '扑救' };
-    content.append(node('div', { class: 'wc-player-board' }, panel('双球员综合能力', radar([left, right])), panel('赛事累计统计', comparisonCharts({ ...model.summaries.get(left.id).totals, label: left.name }, { ...model.summaries.get(right.id).totals, label: right.name }, fields), text('缺失值不补零；累计统计可能只覆盖部分出场，完整覆盖数请查看个人数据面板。'))));
+    const fields = { goals: '进球', assists: '助攻', shots: '射门', passes_completed: '成功传球', interceptions: '拦截', tackles_won: '成功抢断', clearances: '解围' };
+    if (left.position === 'GK' || right.position === 'GK') Object.assign(fields, { saves: '扑救', goals_prevented: '阻止进球', saves_inside_box: '禁区内扑救' });
+    const a = model.summaries.get(left.id);
+    const b = model.summaries.get(right.id);
+    content.append(node('div', { class: 'wc-player-board' }, panel('双球员综合能力', radar([left, right])), panel('赛事累计统计', comparisonCharts({ ...a.totals, coverage: a.coverage, label: left.name }, { ...b.totals, coverage: b.coverage, label: right.name }, fields, [a.appearances, b.appearances]), text('部分覆盖的统计仅汇总已有记录。'))));
   }
 }
 
@@ -420,8 +478,9 @@ async function initialize() {
       ['支球队', model.snapshot.teams.length], ['名球员', model.snapshot.players.length], ['场比赛', model.snapshot.matches.length], ['个小组', model.snapshot.groups.length],
     ].map(([label, count]) => node('div', {}, node('strong', {}, count), node('span', {}, label))));
     ({ matches: renderMatches, teams: renderTeams, player: renderPlayer, leaders: renderLeaders, compare: renderCompare, team_compare: () => renderCompare(true), groups: renderGroups })[view]();
+    await mountWorldCupCharts(content);
     document.getElementById('snapshot-status').textContent = `${titles[view]}已加载，只读快照。`;
-    if (location.hash === '#single-performance') document.getElementById('single-performance')?.scrollIntoView();
+    if (['#single-performance', '#timeline'].includes(location.hash)) document.getElementById(location.hash.slice(1))?.scrollIntoView();
   } catch (error) {
     content.replaceChildren(node('section', { class: 'wc-empty' }, node('h2', {}, '无法显示赛事页面'), text(error.message), link('matches', '返回赛程列表', {}, 'glass-button')));
     document.getElementById('snapshot-status').textContent = '赛事页面加载失败。';

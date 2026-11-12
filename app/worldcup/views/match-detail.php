@@ -16,8 +16,9 @@ $stats=[];foreach ($match['statistics'] as $row) $stats[$row['team_id']]=$row;
   </div>
   <div class="wc-match-meta"><span><?= e($beijingTime($match['kickoff_at'])) ?> · 北京时间</span><span><?= e($match['venue_name']??'场馆待确认') ?><?= $match['venue_city'] ? ' / '.e($match['venue_city']) : '' ?></span></div>
 </article>
-<nav class="wc-section-nav" aria-label="比赛详情分区"><a href="#formation">阵容图</a><a href="#lineups">双方名单</a><a href="#statistics">技术统计</a><a href="#timeline">比赛事件</a></nav>
+<nav class="wc-section-nav" aria-label="比赛详情分区"><a href="#formation">阵容图</a><a href="#timeline">比赛事件</a><a href="#lineups">双方名单</a><a href="#statistics">技术统计</a></nav>
 <?php require __DIR__.'/formation.php'; ?>
+<?php require __DIR__.'/match-timeline.php'; ?>
 <div class="wc-detail-layout">
   <section class="wc-panel wc-lineup-panel" id="lineups"><div class="wc-section-heading"><div><p class="wc-eyebrow">MATCH SQUADS</p><h2>双方阵容</h2></div><span class="wc-muted">首发 / 替补</span></div>
     <div class="wc-lineups"><?php foreach (['home','away'] as $side): $team=$match[$side.'_team_id'];$squad=array_values(array_filter($match['lineups'],fn($r)=>$r['team_id']===$team)); ?>
@@ -37,11 +38,6 @@ $stats=[];foreach ($match['statistics'] as $row) $stats[$row['team_id']]=$row;
         $total=($home??0)+($away??0);$width=$total>0 && $home!==null && $away!==null ? round($home/$total*100,2) : null;
       ?><div class="wc-stat-row"><div><b><?= e($number($home,$suffix)) ?></b><span><?= e($label) ?></span><b><?= e($number($away,$suffix)) ?></b></div><div class="wc-stat-bar<?= $width===null ? ' is-unknown' : '' ?>"><?php if ($width!==null): ?><span style="width:<?= e($width) ?>%"></span><?php endif; ?></div></div><?php endforeach; ?>
       <p class="wc-muted wc-fineprint">— 表示暂无数据。控球率不含争夺中比例，双方之和可能不足 100%。</p>
-    </section>
-    <section class="wc-panel" id="timeline"><div class="wc-section-heading"><div><p class="wc-eyebrow">MATCH TIMELINE</p><h2>比赛事件</h2></div><span class="wc-muted"><?= count($match['events']) ?> 条</span></div>
-      <?php if (!$match['events']): ?><p class="wc-muted">暂无事件记录。</p><?php else: ?><ol class="wc-timeline"><?php foreach ($match['events'] as $event): ?>
-        <li class="wc-event wc-event-<?= e($event['event_type']) ?>"><time><?= e($event['minute_label']) ?></time><span class="wc-event-icon" aria-hidden="true"><?= e($eventIcons[$event['event_type']]??'·') ?></span><div><b><?= e($eventLabels[$event['event_type']]??$event['event_type']) ?></b><span><?= e($event['name']) ?></span><small><?= e($event['team_id']===$match['home_team_id'] ? $match['home_name'] : $match['away_name']) ?><?= !$event['appeared'] ? ' · 替补席' : '' ?></small></div></li>
-      <?php endforeach; ?></ol><?php endif; ?><p class="wc-muted wc-fineprint">保留来源分钟标记；乌龙球记于实施球员名下，进球计入对手。</p>
     </section>
   </aside>
 </div>

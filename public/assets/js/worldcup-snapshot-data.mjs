@@ -144,6 +144,7 @@ export function createSnapshotModel(snapshot) {
     const games = filterFixtures({ team_id: id }).filter((match) => match.status === 'finished');
     const result = { played: games.length, won: 0, drawn: 0, lost: 0, goals_for: 0, goals_against: 0, clean_sheets: 0 };
     const totals = {};
+    const coverage = {};
     const possession = [];
     for (const game of games) {
       const home = game.home_team_id === id;
@@ -154,10 +155,14 @@ export function createSnapshotModel(snapshot) {
       result.goals_against += conceded;
       result.clean_sheets += Number(conceded === 0);
       const stats = teamStats.get(`${game.id}/${id}`) ?? {};
-      for (const key of ['shots', 'shots_on_target', 'passes_attempted', 'passes_completed']) if (stats[key] != null) totals[key] = (totals[key] ?? 0) + stats[key];
+      for (const key of ['shots', 'shots_on_target', 'passes_attempted', 'passes_completed']) {
+        if (stats[key] == null) continue;
+        totals[key] = (totals[key] ?? 0) + stats[key];
+        coverage[key] = (coverage[key] ?? 0) + 1;
+      }
       if (stats.possession_pct != null) possession.push(stats.possession_pct);
     }
-    return { ...result, ...totals, goal_difference: result.goals_for - result.goals_against, average_possession_pct: possession.length ? possession.reduce((a, b) => a + b) / possession.length : null, pass_completion_pct: totals.passes_attempted ? totals.passes_completed / totals.passes_attempted * 100 : null, ...teamById.get(id) };
+    return { ...result, ...totals, coverage, goal_difference: result.goals_for - result.goals_against, average_possession_pct: possession.length ? possession.reduce((a, b) => a + b) / possession.length : null, pass_completion_pct: totals.passes_attempted ? totals.passes_completed / totals.passes_attempted * 100 : null, ...teamById.get(id) };
   }
 
   function standings() {

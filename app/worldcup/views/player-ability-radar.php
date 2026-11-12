@@ -9,7 +9,14 @@ $available=array_values(array_filter($radarPlayers,fn($player)=>is_array($player
 ?>
 <?php if(!$available): ?><div class="wc-radar-empty"><h3>暂无懂球帝能力数据</h3><p>不从比赛统计推算或补全评分。</p></div><?php else: ?>
 <div class="wc-ability-visual">
-<svg class="wc-radar wc-ability-radar" viewBox="0 0 460 410" role="img" aria-labelledby="<?= e($radarId) ?>-title <?= e($radarId) ?>-desc">
+<?= $chartMount('radar', [
+  'axes'=>array_map(null, array_keys($abilityAxes), array_values($abilityAxes)),
+  'players'=>array_map(static fn($player, $index) => [
+    'name'=>$player['name'], 'side'=>$index,
+    'values'=>$player['ability'] ? array_intersect_key($player['ability'], $abilityAxes) : null,
+  ], $radarPlayers, array_keys($radarPlayers)),
+]) ?>
+<svg class="wc-radar wc-ability-radar" data-wc-chart-fallback viewBox="0 0 460 410" role="img" aria-labelledby="<?= e($radarId) ?>-title <?= e($radarId) ?>-desc">
   <title id="<?= e($radarId) ?>-title">球员综合能力雷达图</title><desc id="<?= e($radarId) ?>-desc">速度、射门、传球、盘带、防守和力量六项懂球帝来源评分。</desc>
   <?php foreach([20,40,60,80,100] as $level): ?><polygon class="wc-radar-grid" points="<?= e($abilityPolygon(array_fill(0,$abilityCount,$level))) ?>"/><?php endforeach; ?>
   <?php foreach(array_values($abilityAxes) as $index=>$label):$end=$abilityPoint($index,100);$text=$abilityPoint($index,100,158); ?><line class="wc-radar-spoke" x1="230" y1="205" x2="<?= e(round($end[0],2)) ?>" y2="<?= e(round($end[1],2)) ?>"/><text x="<?= e(round($text[0],2)) ?>" y="<?= e(round($text[1],2)) ?>" text-anchor="middle" dominant-baseline="middle"><?= e($label) ?></text><?php endforeach; ?>

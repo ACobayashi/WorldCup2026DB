@@ -1,14 +1,38 @@
 <?php
-/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Selectable individual match performance, never team-stat substitution. */
+/** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Interactive match selection and server-rendered details. */
 declare(strict_types=1);
-$selected=$p['selected_match'];
+$selected = $p['selected_match'];
+$appearanceLabel = static function (array $match): string {
+  if ($match['appeared'] === null) return '名单未记录';
+  if ($match['is_starter']) return '首发出场';
+  return $match['appeared'] ? '替补出场' : '未上场';
+};
+$chartMetrics = $p['position'] === 'GK'
+  ? [['saves','扑救',' 次'], ['goals_prevented','阻止进球',' 球'], ['saves_inside_box','禁区内扑救',' 次'], ['sweeper_actions_won','成功出击',' 次'], ['passes_completed','成功传球',' 次']]
+  : [['shots','射门',' 次'], ['goals','进球',' 球'], ['passes_completed','成功传球',' 次'], ['interceptions','拦截',' 次'], ['tackles_won','成功抢断',' 次'], ['ball_progressions','推进',' 次']];
+$chartGames = array_map(static fn(array $match): array => [
+  'id'=>$match['id'], 'opponent'=>$match['opponent_name'], 'stage'=>$match['stage_name'],
+  'appearance'=>$appearanceLabel($match), 'metrics'=>$match['appeared'] ? $match['metrics'] : [],
+], $p['matches']);
 ?>
-<section class="wc-panel" id="single-performance"><div class="wc-section-heading"><div><p class="wc-eyebrow">INDIVIDUAL MATCH PERFORMANCE</p><h2><?= e($p['name']) ?> · 单场发挥</h2></div><span class="wc-muted">切换比赛查看逐场原始统计</span></div>
-<?php if(!$selected): ?><p class="wc-muted">暂无球队比赛记录。</p><?php else: ?>
-<form class="wc-match-picker" method="get" action="./#single-performance"><input type="hidden" name="view" value="player"><input type="hidden" name="id" value="<?= e($p['id']) ?>"><label>选择比赛<select name="match_id"><?php foreach($p['matches'] as $m): ?><option value="<?= e($m['id']) ?>" <?= $selected['id']===$m['id']?'selected':'' ?>><?= e($beijingTime($m['kickoff_at']).' · '.$m['stage_name'].' · 对 '.$m['opponent_name']) ?></option><?php endforeach; ?></select></label><button class="glass-button" type="submit">查看单场</button><a class="wc-back" href="<?= e($url('matches',['id'=>$selected['id']])) ?>">完整比赛详情 ↗</a></form>
-<?php $home=$selected['home_team_id']===$p['team_id'];$own=$home?'home':'away';$other=$home?'away':'home';$values=$selected['metrics']; ?>
-<div class="wc-single-match-header"><div><span class="wc-opponent"><?= $flag($selected['opponent_code'],$selected['opponent_name']) ?>对阵 <?= e($selected['opponent_name']) ?></span><p><?= e($selected['stage_name'].' · '.$beijingTime($selected['kickoff_at'])) ?></p></div><div class="wc-single-match-result"><strong><?= e($selected[$own.'_score_et']??$selected[$own.'_score_90']??'—') ?> : <?= e($selected[$other.'_score_et']??$selected[$other.'_score_90']??'—') ?></strong><small>本队比分在前<?= $selected['home_score_et']!==null?' · 含加时':'' ?></small></div><span class="wc-badge"><?= $selected['appeared']===null?'名单未记录':($selected['is_starter']?'首发出场':($selected['appeared']?'替补出场':'未上场')) ?></span></div>
-<?php if(!$selected['appeared']): ?><p class="wc-notice"><?= $selected['appeared']===null?'该场名单中未记录这名球员，暂无个人统计。':'该场未上场，不生成个人技术表现；替补席领牌仍保留在事件中。' ?></p><?php endif; ?>
-<?php $metricValues=$values;unset($metricCoverage);$metricPassPct=isset($values['passes_completed'],$values['passes_attempted'])&&$values['passes_attempted']>0 ? $values['passes_completed']/$values['passes_attempted']*100 : null;require __DIR__.'/player-metric-grid.php'; ?>
-<?php $events=array_values(array_filter($p['events'],fn($e)=>$e['match_id']===$selected['id'])); ?><div class="wc-single-events"><h3>本场个人事件</h3><?php if(!$events): ?><p class="wc-muted">暂无已记录的个人事件。</p><?php else: ?><ul class="wc-player-events"><?php foreach($events as $event): ?><li><time><?= e($event['minute_label']) ?></time><span><?= e($eventIcons[$event['event_type']]) ?> <?= e($eventLabels[$event['event_type']]) ?></span></li><?php endforeach; ?></ul><?php endif; ?></div>
-<?php endif; ?></section>
+<section class="wc-panel" id="single-performance">
+  <div class="wc-section-heading"><div><p class="wc-eyebrow">INDIVIDUAL MATCH PERFORMANCE</p><h2><?= e($p['name']) ?> · 单场发挥</h2></div></div>
+  <?php if (!$selected): ?>
+    <p class="wc-muted">暂无球队比赛记录。</p>
+  <?php else: ?>
+    <?= $chartMount('player-matches', ['games'=>$chartGames, 'metrics'=>$chartMetrics]) ?>
+    <form class="wc-match-picker" method="get" action="./#single-performance">
+      <input type="hidden" name="view" value="player"><input type="hidden" name="id" value="<?= e($p['id']) ?>">
+      <label>选择比赛<select name="match_id">
+        <?php foreach ($p['matches'] as $match): ?>
+          <option value="<?= e($match['id']) ?>" <?= $selected['id'] === $match['id'] ? 'selected' : '' ?>><?= e($beijingTime($match['kickoff_at']).' · '.$match['stage_name'].' · 对 '.$match['opponent_name']) ?></option>
+        <?php endforeach; ?>
+      </select></label>
+      <button class="glass-button" type="submit">查看单场</button>
+    </form>
+    <div data-wc-match-body><?php require __DIR__.'/player-match-detail.php'; ?></div>
+    <?php $initialId = $selected['id']; foreach ($p['matches'] as $selected): if ($selected['id'] === $initialId) continue; ?>
+      <template data-wc-match-id="<?= e($selected['id']) ?>"><?php require __DIR__.'/player-match-detail.php'; ?></template>
+    <?php endforeach; ?>
+  <?php endif; ?>
+</section>

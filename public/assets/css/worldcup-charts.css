@@ -1,0 +1,39 @@
+/* FOURWARD coursework | 韩羽宸 2410673 | Shared interactive chart controls and layout. */
+.wc-chart {
+  min-width: 0;
+  margin: 14px 0 20px;
+  padding: clamp(10px, 2vw, 20px);
+  border: 1px solid #90b5e92b;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #1b2e46, #121f32);
+}
+.wc-chart[hidden], [data-wc-chart-fallback][hidden], [data-wc-event-index][hidden], .wc-chart-chips[hidden] { display: none !important; }
+.wc-chart-toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin: 0 0 14px; }
+.wc-chart-picker { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 9px; color: #c6d6ee; font-size: 13px; }
+.wc-chart-picker select { max-width: 100%; border: 1px solid #577499; border-radius: 8px; background: #20354e; color: #edf5ff; padding: 8px 10px; font: inherit; }
+.wc-chart-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.wc-chart-chips button { padding: 7px 11px; background: #22354e; border: 1px solid #50688c; border-radius: 8px; color: #cedcf1; font: inherit; font-size: 12px; cursor: pointer; }
+.wc-chart-chips button:hover { background: #304b70; }
+.wc-chart-chips button[aria-pressed="true"] { color: #f4f9ff; border-color: #7eb8ff; background: #285080; }
+.wc-chart-canvas { width: 100%; height: 268px; min-width: 0; }
+[data-wc-chart="radar"] .wc-chart-canvas { height: clamp(248px, 32vw, 325px); }
+[data-wc-chart="event-timeline"] .wc-chart-canvas { height: 212px; }
+.wc-chart-readout { color: #e4eeff; font-size: 14px; font-weight: 600; line-height: 1.6; margin: 7px 0; overflow-wrap: anywhere; }
+.wc-chart-hint { color: #a7bbd6; font-size: 12px; line-height: 1.6; margin: 0; }
+.wc-chart-team-key { display: flex; gap: 10px; flex-wrap: wrap; margin-left: auto; }
+.wc-chart-team-key span { padding: 4px 7px; color: #e4eeff; font-size: 12px; border: 1px solid #6087b5; border-radius: 6px; }
+.wc-chart-team-key .is-away { border-color: #d6a472; }
+.wc-chart-team-key .is-home::before { content: '↑ '; color: #72b7ff; }
+.wc-chart-team-key .is-away::before { content: '↓ '; color: #ffb57b; }
+.wc-chart-event-filters button:nth-child(2)::before { content: '● '; color: #83e7ae; }
+.wc-chart-event-filters button:nth-child(3)::before { content: '■ '; color: #ffda74; }
+.wc-chart-event-filters button:nth-child(4)::before { content: '◆ '; color: #b8a5ff; }
+.wc-timeline.wc-chart-event-list { max-height: 290px; overflow-y: auto; overscroll-behavior: contain; padding: 3px 8px; }
+.wc-chart-event-list .is-chart-selected { background: #263f60; outline: 1px solid #7eb8ff; border-radius: 8px; }
+.wc-event-panel { margin: 18px 0 24px; }
+[data-wc-raw-table] summary { color: #b6d6ff; cursor: pointer; padding: 8px 0; }
+@media (max-width: 600px) {
+  .wc-chart-canvas { height: 235px; }
+  .wc-chart-team-key { margin-left: 0; }
+  .wc-chart-chips button { min-height: 36px; }
+}

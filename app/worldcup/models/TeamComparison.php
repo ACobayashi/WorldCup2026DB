@@ -18,6 +18,7 @@ final class TeamComparison extends ReadModel {
       COALESCE(SUM(CASE WHEN m.home_team_id=t.id THEN COALESCE(m.home_score_et,m.home_score_90) ELSE COALESCE(m.away_score_et,m.away_score_90) END),0) AS goals_for,
       COALESCE(SUM(CASE WHEN m.home_team_id=t.id THEN COALESCE(m.away_score_et,m.away_score_90) ELSE COALESCE(m.home_score_et,m.home_score_90) END),0) AS goals_against,
       COALESCE(SUM(s.shots),0) AS shots,COALESCE(SUM(s.shots_on_target),0) AS shots_on_target,
+      COUNT(s.shots) AS shots_games,COUNT(s.shots_on_target) AS shots_on_target_games,COUNT(s.passes_completed) AS passes_completed_games,
       ROUND(AVG(s.possession_pct),2) AS average_possession_pct,
       COALESCE(SUM(s.passes_attempted),0) AS passes_attempted,COALESCE(SUM(s.passes_completed),0) AS passes_completed,
       ROUND(100*SUM(s.passes_completed)/NULLIF(SUM(s.passes_attempted),0),2) AS pass_completion_pct,
@@ -31,6 +32,11 @@ final class TeamComparison extends ReadModel {
     $team=$rows[0];
     foreach(['id','played','wins','draws','losses','goals_for','goals_against','shots','shots_on_target','passes_attempted','passes_completed','clean_sheets'] as $key)$team[$key]=(int)$team[$key];
     $team['goal_difference']=$team['goals_for']-$team['goals_against'];
+    $team['stat_match_counts'] = [];
+    foreach (['shots', 'shots_on_target', 'passes_completed'] as $key) {
+      $team['stat_match_counts'][$key] = (int)$team[$key.'_games'];
+      unset($team[$key.'_games']);
+    }
     foreach(['average_possession_pct','pass_completion_pct'] as $key)$team[$key]=$team[$key]===null?null:(float)$team[$key];
     $xg=self::expectedGoals();
     $team['expected_goals']=$xg[$team['code']]['for']??null;
