@@ -125,7 +125,9 @@ export function createSnapshotModel(snapshot) {
     for (const event of playerEvents.get(player.id) ?? []) eventCounts[event.type] = (eventCounts[event.type] ?? 0) + 1;
     totals.yellow_cards = eventCounts.yellow_card ?? 0;
     totals.red_cards = eventCounts.red_card ?? 0;
-    summaries.set(player.id, { appearances: records.length, starts: records.filter((row) => row.starting).length, totals, coverage, event_counts: eventCounts });
+    const passCompletion = totals.passes_attempted > 0 && coverage.passes_attempted === records.length && coverage.passes_completed === records.length
+      ? totals.passes_completed / totals.passes_attempted * 100 : null;
+    summaries.set(player.id, { appearances: records.length, starts: records.filter((row) => row.starting).length, pass_completion_pct: passCompletion, totals, coverage, event_counts: eventCounts });
   }
 
   function filterFixtures(input = {}) {

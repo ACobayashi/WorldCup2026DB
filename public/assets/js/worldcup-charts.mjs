@@ -247,27 +247,56 @@ function playerMatches(root, data, echarts) {
 function comparison(root, data, echarts) {
   const metrics = data.metrics.filter(({ values }) => values.some((value) => number(value) != null));
   if (!metrics.length) return;
-  const { canvas, toolbar, status } = prepare(root, '双方指标对比', '切换统计项后，双方使用同一刻度。悬停或轻触柱形可查看数值。');
+  const { canvas, toolbar, status, detail } = prepare(root, '双方指标对比');
   const chart = setup(echarts, canvas);
-  const { select, wrapper } = picker('对比指标', metrics.map(({ key, label }) => [key, label]));
-  select.value = (metrics.find(({ key }) => key === 'goals_for' || key === 'goals') ?? metrics[0]).key;
+  const { select, wrapper } = picker('对比指标', [['', '全部指标'], ...metrics.map(({ key, label }) => [key, label])]);
   toolbar.append(wrapper);
   let mode = 'total';
   const fullCoverage = (metric) => !metric.coverage || metric.coverage.every((count, index) => count === data.games[index]);
   const canAverage = (metric) => metric.perMatch === true && fullCoverage(metric) && data.games?.every((games) => games > 0);
-  const render = () => {
-    const metric = metrics.find(({ key }) => key === select.value);
+  const resultsFor = (metric, values, unit) => data.names.map((name, index) => {
+    const coverage = metric.coverage && metric.coverage[index] !== data.games[index] ? `（${metric.coverage[index]}/${data.games[index]} 场有数据）` : '';
+    return `${name} ${format(values[index], unit)}${coverage}`;
+  });
+  const overview = metrics.map((metric) => {
+    const values = metric.values.map(number);
+    const maximum = Math.max(metric.unit === '%' ? 100 : 1, ...values.map(Math.abs));
+    return { ...metric, values, lengths: values.map((value) => value == null ? 0 : 100 * value / maximum) };
+  });
+  const overviewOptions = {
+    ...baseOptions('每行比较双方的同一项统计，柱长按该行单独缩放，标签显示原始数值。'),
+    grid: { top: 0, bottom: 0, left: 96, right: 52 },
+    xAxis: { type: 'value', max: 100, show: false },
+    yAxis: {
+      ...categoryAxis, inverse: true, data: overview.map(({ label }) => label), triggerEvent: true,
+      axisLabel: { ...categoryAxis.axisLabel, interval: 0, width: 86, overflow: 'truncate' },
+      splitArea: { show: true, areaStyle: { color: ['#ffffff05', 'transparent'] } },
+    },
+    tooltip: {
+      ...tooltipStyle, trigger: 'axis', axisPointer: { type: 'shadow' },
+      formatter: (items) => {
+        const metric = overview[items[0]?.dataIndex];
+        return metric ? [metric.label, ...resultsFor(metric, metric.values, metric.unit)].join('\n') : '';
+      },
+    },
+    series: [blue, orange].map((color, side) => ({
+      type: 'bar', name: data.names[side], barMaxWidth: 12, cursor: 'pointer',
+      data: overview.map(({ lengths }) => lengths[side]),
+      itemStyle: { color, borderRadius: 4 },
+      label: {
+        show: true, position: 'right', color: '#eff6ff', fontSize: 11,
+        formatter: ({ dataIndex }) => format(overview[dataIndex].values[side], overview[dataIndex].unit),
+      },
+    })),
+  };
+  const renderSingle = (metric) => {
     const average = canAverage(metric) && mode === 'average';
     const unit = average ? `${metric.unit ?? ''}/场` : metric.unit;
     const values = metric.values.map((value, index) => {
       const count = number(value);
       return count == null || !average ? count : count / data.games[index];
     });
-    modes.group.hidden = !canAverage(metric);
-    const results = data.names.map((name, index) => {
-      const coverage = metric.coverage && metric.coverage[index] !== data.games[index] ? `（${metric.coverage[index]}/${data.games[index]} 场有数据）` : '';
-      return `${name} ${format(values[index], unit)}${coverage}`;
-    });
+    const results = resultsFor(metric, values, unit);
     const difference = fullCoverage(metric) && values.every((value) => value != null) ? ` · 相差 ${format(Math.abs(values[0] - values[1]), metric.unit === '%' ? ' 个百分点' : unit)}` : '';
     status.textContent = `${metric.label}${average ? '（场均）' : ''} · ${results.join(' / ')}${difference}`;
     chart.setOption({
@@ -280,6 +309,21 @@ function comparison(root, data, echarts) {
         itemStyle: { borderRadius: [6, 6, 0, 0] }, label: { show: true, position: 'top', color: '#eff6ff', formatter: ({ dataIndex }) => format(values[dataIndex], unit) } }],
     }, { notMerge: true });
   };
+  const render = () => {
+    const metric = metrics.find(({ key }) => key === select.value);
+    modes.group.hidden = !metric || !canAverage(metric);
+    if (metric) canvas.style.removeProperty('--wc-chart-height');
+    else canvas.style.setProperty('--wc-chart-height', `${overview.length * 38}px`);
+    chart.resize();
+    if (metric) {
+      detail.textContent = '双方共用原始单位和刻度。选择「全部指标」可返回总览。';
+      renderSingle(metric);
+    } else {
+      status.textContent = '';
+      detail.textContent = '每行使用自己的刻度，数值标在柱旁。点击指标名或柱形可查看单项。';
+      chart.setOption(overviewOptions, { notMerge: true });
+    }
+  };
   const modes = chips([['total', '赛事总量'], ['average', '场均']], '统计口径', (value) => {
     mode = value;
     modes.update(value);
@@ -287,6 +331,13 @@ function comparison(root, data, echarts) {
   });
   toolbar.append(modes.group);
   select.addEventListener('change', render);
+  chart.on('click', ({ componentType, dataIndex, value }) => {
+    if (select.value) return;
+    const metric = componentType === 'series' ? overview[dataIndex] : overview.find(({ label }) => componentType === 'yAxis' && label === value);
+    if (!metric) return;
+    select.value = metric.key;
+    render();
+  });
   render();
   root.parentElement.querySelector('[data-wc-chart-fallback]')?.setAttribute('hidden', '');
   root.parentElement.querySelector('[data-wc-raw-table]')?.removeAttribute('open');

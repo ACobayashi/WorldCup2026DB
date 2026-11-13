@@ -1,8 +1,8 @@
 import {
   createSnapshotModel, positions, metrics, rankings, eventLabels, statusLabels, abilityLabels,
   displayNumber as number, matchScore, kickoffLabel, searchMatches,
-} from './worldcup-snapshot-data.mjs';
-import { chartMount, mountWorldCupCharts } from './worldcup-charts.mjs?v=2';
+} from './worldcup-snapshot-data.mjs?v=2';
+import { chartMount, mountWorldCupCharts } from './worldcup-charts.mjs?v=3';
 
 const input = new URLSearchParams(location.search);
 const content = document.getElementById('snapshot-content');
@@ -387,11 +387,12 @@ function renderCompare(teamMode = false) {
     const b = model.teamSummary(right.id);
     content.append(panel('球队赛事对比', text(`蓝色 ${left.name_zh} · ${a.played} 场　/　橙色 ${right.name_zh} · ${b.played} 场`), comparisonCharts({ ...a, label: left.name_zh }, { ...b, label: right.name_zh }, fields, [a.played, b.played], ['goals_for', 'goals_against', 'shots', 'shots_on_target', 'passes_completed', 'clean_sheets']), text('胜平负按含加时的比分统计。xG/xGA 汇总自逐场报告。')));
   } else {
-    const fields = { goals: '进球', assists: '助攻', shots: '射门', passes_completed: '成功传球', interceptions: '拦截', tackles_won: '成功抢断', clearances: '解围' };
+    const fields = { appearances: '出场', starts: '首发', goals: '进球', assists: '助攻', shots: '射门', passes_completed: '成功传球', ball_progressions: '推进', take_ons: '过人', interceptions: '拦截', tackles_won: '成功抢断', clearances: '解围' };
     if (left.position === 'GK' || right.position === 'GK') Object.assign(fields, { saves: '扑救', goals_prevented: '阻止进球', saves_inside_box: '禁区内扑救' });
+    fields.pass_completion_pct = '传球成功率 %';
     const a = model.summaries.get(left.id);
     const b = model.summaries.get(right.id);
-    content.append(node('div', { class: 'wc-player-board' }, panel('双球员综合能力', radar([left, right])), panel('赛事累计统计', comparisonCharts({ ...a.totals, coverage: a.coverage, label: left.name }, { ...b.totals, coverage: b.coverage, label: right.name }, fields, [a.appearances, b.appearances]), text('部分覆盖的统计仅汇总已有记录。'))));
+    content.append(node('div', { class: 'wc-player-board' }, panel('双球员综合能力', radar([left, right])), panel('赛事累计统计', comparisonCharts({ ...a.totals, ...a, label: left.name }, { ...b.totals, ...b, label: right.name }, fields, [a.appearances, b.appearances]), text('部分覆盖的统计仅汇总已有记录。'))));
   }
 }
 

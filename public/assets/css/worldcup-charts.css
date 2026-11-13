@@ -15,7 +15,7 @@
 .wc-chart-chips button { padding: 7px 11px; background: #22354e; border: 1px solid #50688c; border-radius: 8px; color: #cedcf1; font: inherit; font-size: 12px; cursor: pointer; }
 .wc-chart-chips button:hover { background: #304b70; }
 .wc-chart-chips button[aria-pressed="true"] { color: #f4f9ff; border-color: #7eb8ff; background: #285080; }
-.wc-chart-canvas { width: 100%; height: 268px; min-width: 0; }
+.wc-chart-canvas { width: 100%; height: var(--wc-chart-height, 268px); min-width: 0; }
 [data-wc-chart="radar"] .wc-chart-canvas { position: relative; height: clamp(248px, 32vw, 325px); }
 .wc-radar-hover-tip {
   position: absolute;
@@ -33,9 +33,10 @@
   pointer-events: none;
 }
 .wc-chart-readout { color: #e4eeff; font-size: 14px; font-weight: 600; line-height: 1.6; margin: 7px 0; overflow-wrap: anywhere; }
+.wc-chart-readout:empty { display: none; }
 .wc-chart-hint { color: #a7bbd6; font-size: 12px; line-height: 1.6; margin: 0; }
 [data-wc-raw-table] summary { color: #b6d6ff; cursor: pointer; padding: 8px 0; }
 @media (max-width: 600px) {
-  .wc-chart-canvas { height: 235px; }
+  .wc-chart-canvas { height: var(--wc-chart-height, 235px); }
   .wc-chart-chips button { min-height: 36px; }
 }

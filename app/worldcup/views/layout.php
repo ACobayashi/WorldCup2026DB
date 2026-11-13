@@ -14,11 +14,11 @@ require __DIR__.'/helpers.php';
     <link rel="stylesheet" href="../assets/css/common.css?v=1">
     <link rel="stylesheet" href="../assets/css/worldcup-shell.css?v=2">
     <link rel="stylesheet" href="../assets/css/worldcup-data.css?v=9">
-    <link rel="stylesheet" href="../assets/css/worldcup-charts.css?v=2">
+    <link rel="stylesheet" href="../assets/css/worldcup-charts.css?v=3">
     <?php if($section==='matches'): ?><link rel="stylesheet" href="../assets/css/worldcup-formation.css?v=1"><?php endif; ?>
     <script type="module" src="../assets/js/player-portraits.mjs?v=1"></script>
     <script type="module" src="../assets/js/player-compare.mjs?v=2"></script>
-    <script type="module" src="../assets/js/worldcup-charts.mjs?v=2"></script>
+    <script type="module" src="../assets/js/worldcup-charts.mjs?v=3"></script>
   </head>
   <body class="wc-app">
     <a class="skip-link" href="#main">跳到主要内容</a>
