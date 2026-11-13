@@ -5,14 +5,6 @@ const muted = '#b4c4df';
 const gridLine = '#a7bdeb29';
 const libraryUrl = new URL('../vendor/echarts/echarts.min.js', import.meta.url);
 const mountSelector = '[data-wc-chart]';
-const eventTypes = {
-  goal: ['进球', 'goal', '#83e7ae', 'circle'],
-  own_goal: ['乌龙球', 'goal', '#83e7ae', 'circle'],
-  yellow_card: ['黄牌', 'card', '#ffda74', 'rect'],
-  red_card: ['红牌', 'card', '#ff8f9a', 'rect'],
-  subbed_on: ['换上', 'sub', '#b8a5ff', 'diamond'],
-  subbed_off: ['换下', 'sub', '#b8a5ff', 'diamond'],
-};
 let library;
 
 function loadLibrary() {
@@ -115,6 +107,12 @@ function radar(root, data, echarts) {
   const { canvas, toolbar, status } = prepare(root, '球员综合能力雷达图', '悬停或点击图上的能力名称查看评分。点击图例可切换显示的球员。');
   const chart = setup(echarts, canvas);
   let active = data.axes[0][0];
+  const centerYRatio = 0.54;
+  const radiusRatio = 0.66;
+  const hoverTip = element('div', 'wc-radar-hover-tip');
+  hoverTip.hidden = true;
+  hoverTip.setAttribute('aria-hidden', 'true');
+  canvas.append(hoverTip);
   const seriesColors = players.map((player) => player.side === 1 ? orange : blue);
   const names = players.map((player) => player.name);
   // Keep identities separate when two different players have the same display name.
@@ -137,9 +135,8 @@ function radar(root, data, echarts) {
     ...baseOptions('六项懂球帝能力评分，统一使用零到一百分。'),
     color: seriesColors,
     legend: { top: 0, textStyle: { color: muted }, data: seriesNames },
-    tooltip: { ...tooltipStyle, trigger: 'item', formatter: () => readout(active) },
     radar: {
-      center: ['50%', '54%'], radius: '66%', startAngle: 90, splitNumber: 5, triggerEvent: true,
+      center: ['50%', `${centerYRatio * 100}%`], radius: `${radiusRatio * 100}%`, startAngle: 90, splitNumber: 5, triggerEvent: true,
       indicator: data.axes.map(([, name]) => ({ name, max: 100 })),
       axisName: { color: muted, rich: { selected: { color: '#fff', fontWeight: 700 } } },
       axisLine: { lineStyle: { color: gridLine } }, splitLine: { lineStyle: { color: gridLine } },
@@ -155,14 +152,35 @@ function radar(root, data, echarts) {
     }],
   });
   const axisKey = (name) => data.axes.find(([, label]) => label === name?.replace(/^\{selected\|(.+)\}$/, '$1'))?.[0];
-  chart.on('mouseover', 'radar', ({ name }) => {
-    const key = axisKey(name);
-    if (key) status.textContent = readout(key);
-  });
-  chart.on('mouseout', 'radar', () => { status.textContent = readout(active); });
   chart.on('click', 'radar', ({ name }) => {
     const key = axisKey(name);
     if (key) selectAxis(key);
+  });
+  const hideTip = () => { hoverTip.hidden = true; };
+  canvas.addEventListener('pointerleave', hideTip);
+  canvas.addEventListener('pointermove', (event) => {
+    if (event.pointerType === 'touch') return;
+    const bounds = canvas.getBoundingClientRect();
+    const x = event.clientX - bounds.left;
+    const y = event.clientY - bounds.top;
+    const dx = x - bounds.width / 2;
+    const dy = bounds.height * centerYRatio - y;
+    const distance = Math.hypot(dx, dy);
+    const radius = Math.min(bounds.width, bounds.height) / 2 * radiusRatio;
+    if (distance < 8 || distance > radius + 28) {
+      hideTip();
+      return;
+    }
+    // ECharts starts at the top and places subsequent indicators counterclockwise.
+    const angle = (Math.atan2(dy, dx) - Math.PI / 2 + 2 * Math.PI) % (2 * Math.PI);
+    const index = Math.round(angle / (2 * Math.PI) * data.axes.length) % data.axes.length;
+    const message = readout(data.axes[index][0]);
+    if (hoverTip.textContent !== message) hoverTip.textContent = message;
+    hoverTip.hidden = false;
+    const left = Math.max(0, Math.min(x + 12, bounds.width - hoverTip.offsetWidth));
+    const top = y - hoverTip.offsetHeight - 12;
+    hoverTip.style.left = `${left}px`;
+    hoverTip.style.top = `${top >= 0 ? top : y + 12}px`;
   });
   selectAxis(active);
   root.parentElement.querySelector('[data-wc-chart-fallback]')?.setAttribute('hidden', '');
@@ -274,92 +292,7 @@ function comparison(root, data, echarts) {
   root.parentElement.querySelector('[data-wc-raw-table]')?.removeAttribute('open');
 }
 
-function eventTimeline(root, data, echarts) {
-  if (!data.events.length) return;
-  const list = root.parentElement.querySelector('[data-wc-event-list]');
-  const rows = [...list.querySelectorAll('[data-wc-event-index]')];
-  const { canvas, toolbar, status } = prepare(root, '双方比赛事件时间轴', '上方为主队，下方为客队。点事件标记定位到记录，拖动下方滑块查看某一时段。');
-  const chart = setup(echarts, canvas);
-  let filter = 'all';
-  let selected = [];
-  const limit = data.extraTime ? 120 : 90;
-  const max = Math.max(limit + 1, ...data.events.map((event) => event.minute + 1));
-  let timeRange = [0, max];
-  // Place stoppage-time labels after their boundary and before the following phase.
-  const position = (event) => event.minute + (event.added ? 0.85 * event.added / (event.added + 1) : 0);
-  const activeGroups = () => {
-    const groups = new Map();
-    data.events.forEach((event, index) => {
-      const type = eventTypes[event.type];
-      if (!type || (filter !== 'all' && type[1] !== filter)) return;
-      const key = `${event.side}/${event.minute}/${event.added}`;
-      if (!groups.has(key)) groups.set(key, []);
-      groups.get(key).push({ ...event, index });
-    });
-    return [...groups.values()];
-  };
-  const highlight = (events, scroll) => {
-    selected = events.map((event) => event.index);
-    rows.forEach((row, index) => row.classList.toggle('is-chart-selected', selected.includes(index)));
-    status.textContent = events.length ? `${events[0].label} · ${data.names[events[0].side]} · ${events.map((event) => `${eventTypes[event.type][0]} ${event.name}`).join(' / ')}` : '点击图上的事件查看详情';
-    if (scroll && selected.length) {
-      const row = rows[selected[0]];
-      list.scrollTop += row.getBoundingClientRect().top - list.getBoundingClientRect().top - 10;
-    }
-  };
-  const updateList = (groups) => {
-    const visible = new Set(groups.flat().filter((event) => position(event) >= timeRange[0] && position(event) <= timeRange[1]).map((event) => event.index));
-    rows.forEach((row, index) => { row.hidden = !visible.has(index); });
-    if (selected.some((index) => !visible.has(index))) highlight([], false);
-    if (!selected.length) status.textContent = visible.size ? `当前显示 ${visible.size} 条事件` : '所选时段和类别暂无已记录事件。';
-  };
-  const render = () => {
-    const groups = activeGroups();
-    highlight([], false);
-    updateList(groups);
-    chart.setOption({
-      series: [{ type: 'scatter', cursor: 'pointer', clip: true, data: groups.map((events) => {
-        const first = events[0];
-        const type = eventTypes[first.type];
-        return { value: [position(first), first.side === 0 ? 1 : -1], events, symbol: type[3], symbolSize: events.length > 1 ? 15 : 11, itemStyle: { color: type[2] } };
-      }) }],
-    });
-  };
-  const controls = chips([['all', '全部事件'], ['goal', '进球'], ['card', '领牌'], ['sub', '换人']], '事件筛选', (value) => {
-    filter = value;
-    controls.update(value);
-    render();
-  });
-  controls.group.classList.add('wc-chart-event-filters');
-  const reset = element('button', '', '查看全场');
-  reset.type = 'button';
-  reset.addEventListener('click', () => chart.dispatchAction({ type: 'dataZoom', start: 0, end: 100 }));
-  controls.group.append(reset);
-  toolbar.append(controls.group);
-  const legend = element('div', 'wc-chart-team-key');
-  data.names.forEach((name, index) => legend.append(element('span', index === 0 ? 'is-home' : 'is-away', name)));
-  toolbar.append(legend);
-  chart.setOption({
-    ...baseOptions('以两条轨道显示双方带分钟的比赛事件，包含加时和补时标记。'),
-    grid: { top: 12, bottom: 65, left: 25, right: 18 },
-    xAxis: { ...valueAxis, min: 0, max, minInterval: 1, axisLabel: { color: muted, formatter: (value) => `${value}′` }, axisPointer: { show: true, label: { show: false }, lineStyle: { color: '#d4e3ff70' } } },
-    yAxis: { type: 'value', min: -1.7, max: 1.7, axisLabel: { show: false }, axisLine: { show: false }, axisTick: { show: false }, splitLine: { show: false } },
-    tooltip: { ...tooltipStyle, trigger: 'item', formatter: ({ data }) => `${data.events[0].label}\n${data.events.map((event) => `${eventTypes[event.type][0]} · ${event.name}`).join('\n')}` },
-    dataZoom: [{ type: 'slider', height: 22, bottom: 12, filterMode: 'none', minValueSpan: 8, showDetail: false, showDataShadow: false, borderColor: gridLine, backgroundColor: '#162439', fillerColor: '#75a8ec4d' }],
-    series: [{ type: 'scatter', data: [], markLine: { silent: true, symbol: 'none', label: { show: false }, lineStyle: { color: gridLine, type: 'dashed' }, data: [{ yAxis: 0 }, { xAxis: 45 }, { xAxis: 90 }, ...(data.extraTime ? [{ xAxis: 105 }] : [])] } }],
-  });
-  chart.on('click', 'series.scatter', ({ data }) => highlight(data.events, true));
-  chart.on('datazoom', (event) => {
-    const { start, end } = event.batch?.[0] ?? event;
-    if (!Number.isFinite(start) || !Number.isFinite(end)) return;
-    timeRange = [start * max / 100, end * max / 100];
-    updateList(activeGroups());
-  });
-  list.classList.add('wc-chart-event-list');
-  render();
-}
-
-const charts = { radar, 'player-matches': playerMatches, comparison, 'event-timeline': eventTimeline };
+const charts = { radar, 'player-matches': playerMatches, comparison };
 
 export async function mountWorldCupCharts(scope = document) {
   const mounts = [...scope.querySelectorAll(mountSelector)];

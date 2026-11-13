@@ -16,9 +16,8 @@ $stats=[];foreach ($match['statistics'] as $row) $stats[$row['team_id']]=$row;
   </div>
   <div class="wc-match-meta"><span><?= e($beijingTime($match['kickoff_at'])) ?> · 北京时间</span><span><?= e($match['venue_name']??'场馆待确认') ?><?= $match['venue_city'] ? ' / '.e($match['venue_city']) : '' ?></span></div>
 </article>
-<nav class="wc-section-nav" aria-label="比赛详情分区"><a href="#formation">阵容图</a><a href="#timeline">比赛事件</a><a href="#lineups">双方名单</a><a href="#statistics">技术统计</a></nav>
+<nav class="wc-section-nav" aria-label="比赛详情分区"><a href="#formation">阵容图</a><a href="#lineups">双方名单</a><a href="#statistics">技术统计</a><a href="#timeline">比赛事件</a></nav>
 <?php require __DIR__.'/formation.php'; ?>
-<?php require __DIR__.'/match-timeline.php'; ?>
 <div class="wc-detail-layout">
   <section class="wc-panel wc-lineup-panel" id="lineups"><div class="wc-section-heading"><div><p class="wc-eyebrow">MATCH SQUADS</p><h2>双方阵容</h2></div><span class="wc-muted">首发 / 替补</span></div>
     <div class="wc-lineups"><?php foreach (['home','away'] as $side): $team=$match[$side.'_team_id'];$squad=array_values(array_filter($match['lineups'],fn($r)=>$r['team_id']===$team)); ?>
@@ -39,6 +38,7 @@ $stats=[];foreach ($match['statistics'] as $row) $stats[$row['team_id']]=$row;
       ?><div class="wc-stat-row"><div><b><?= e($number($home,$suffix)) ?></b><span><?= e($label) ?></span><b><?= e($number($away,$suffix)) ?></b></div><div class="wc-stat-bar<?= $width===null ? ' is-unknown' : '' ?>"><?php if ($width!==null): ?><span style="width:<?= e($width) ?>%"></span><?php endif; ?></div></div><?php endforeach; ?>
       <p class="wc-muted wc-fineprint">— 表示暂无数据。控球率不含争夺中比例，双方之和可能不足 100%。</p>
     </section>
+    <?php require __DIR__.'/match-timeline.php'; ?>
   </aside>
 </div>
 <details class="wc-panel wc-provenance"><summary>数据来源与本站支持</summary><p>比赛与名单基于 FIFA 本届赛事数据，统计及事件整理自 FIFA Training Centre 赛后报告。阵型与首发站位来自已核对的懂球帝本届赛事阵容，位置为阵型示意。未知字段保留为空。</p><p class="wc-muted">比赛来源：<?= e($match['source_url']??'暂无') ?></p><?php if($match['formation']): ?><p class="wc-muted">阵型来源：<?= e($match['formation']['source_url']) ?></p><?php endif; ?><p>本站支持 <?= e($match['home_support']) ?> : <?= e($match['away_support']) ?>。支持功能尚未开放，支持率不代表获胜概率。</p></details>
