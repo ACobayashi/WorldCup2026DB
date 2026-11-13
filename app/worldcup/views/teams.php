@@ -20,6 +20,14 @@ declare(strict_types=1);
 <a class="wc-team-fixture" href="<?= e($url('matches',['id'=>$m['id']])) ?>"><div><span><?= e($m['stage_name']) ?></span><time><?= e($beijingTime($m['kickoff_at'])) ?></time></div><div><span class="wc-opponent"><?= $flag($m[$opponent.'_code'],$m[$opponent.'_name']??'') ?><?= e($m[$opponent.'_name']??'待定') ?></span><strong><?= $m['home_score']===null?'— : —':e($m[$home?'home_score':'away_score'].' : '.$m[$home?'away_score':'home_score']) ?></strong></div><small><?= e($home?'主队':'客队') ?> · <?= e($statusLabels[$m['status']]) ?><?= $m['home_penalty_score']!==null ? ' · 点球 '.e($m[$home?'home_penalty_score':'away_penalty_score'].' : '.$m[$home?'away_penalty_score':'home_penalty_score']) : ($m['home_score_et']!==null?' · 含加时':'') ?> ↗</small></a>
 <?php endforeach; ?></div><?php endif; ?></aside></div>
 <?php else: ?>
-<form class="wc-filters" method="get"><input type="hidden" name="view" value="teams"><label>搜索国家队<input name="q" maxlength="80" placeholder="中文名、英文名或球队代码" value="<?= e($input['q']??'') ?>"></label><button class="glass-button" type="submit">搜索</button><a class="wc-back" href="<?= e($url('teams')) ?>">全部球队</a></form>
+<form class="wc-filters" method="get" data-wc-auto-filter>
+  <input type="hidden" name="view" value="teams">
+  <?php if (isset($input['page_size'])): ?><input type="hidden" name="page_size" value="<?= e($input['page_size']) ?>"><?php endif; ?>
+  <label>搜索国家队<input type="search" name="q" maxlength="80" placeholder="中文名、英文名或球队代码" value="<?= e($input['q']??'') ?>"></label>
+  <noscript><button class="glass-button" type="submit">搜索</button></noscript>
+  <a class="wc-back" href="<?= e($url('teams')) ?>">全部球队</a>
+</form>
+<div data-wc-filter-results>
 <?php if(!$data['items']): ?><section class="wc-empty"><p class="wc-eyebrow">NATIONAL TEAMS</p><h2>暂无符合条件的球队</h2><p>试试其他球队名称或代码。</p></section><?php else: ?><div class="wc-grid wc-national-grid"><?php foreach($data['items'] as $t): ?><a class="wc-card wc-national-card" href="<?= e($url('teams',['id'=>$t['id']])) ?>"><div class="wc-national-card-top"><?= $flag($t['code'],$t['name_zh']) ?><span><?= e($t['group_name']??'分组待确认') ?></span></div><h2><?= e($t['name_zh']) ?></h2><p><?= e($t['name_en']) ?></p><div class="wc-national-card-bottom"><span><?= e($t['code']) ?></span><span>球队名单与赛程 ↗</span></div></a><?php endforeach; ?></div><?php endif; ?>
+</div>
 <?php endif; ?>

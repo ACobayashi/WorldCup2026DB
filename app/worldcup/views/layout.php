@@ -13,12 +13,13 @@ require __DIR__.'/helpers.php';
     <title><?= e($title) ?> · FOURWARD 2026</title>
     <link rel="stylesheet" href="../assets/css/common.css?v=1">
     <link rel="stylesheet" href="../assets/css/worldcup-shell.css?v=2">
-    <link rel="stylesheet" href="../assets/css/worldcup-data.css?v=9">
+    <link rel="stylesheet" href="../assets/css/worldcup-data.css?v=10">
     <link rel="stylesheet" href="../assets/css/worldcup-charts.css?v=3">
     <?php if($section==='matches'): ?><link rel="stylesheet" href="../assets/css/worldcup-formation.css?v=1"><?php endif; ?>
     <script type="module" src="../assets/js/player-portraits.mjs?v=1"></script>
-    <script type="module" src="../assets/js/player-compare.mjs?v=2"></script>
-    <script type="module" src="../assets/js/worldcup-charts.mjs?v=3"></script>
+    <script type="module" src="../assets/js/player-compare.mjs?v=3"></script>
+    <script type="module" src="../assets/js/worldcup-server-filters.mjs"></script>
+    <script type="module" src="../assets/js/worldcup-charts.mjs?v=4"></script>
   </head>
   <body class="wc-app">
     <a class="skip-link" href="#main">跳到主要内容</a>
@@ -45,7 +46,7 @@ require __DIR__.'/helpers.php';
       <?php if (isset($data['meta']) || isset($data['squad']['meta'])):
         $meta = $data['meta'] ?? $data['squad']['meta'];
       ?>
-        <nav class="wc-pagination" aria-label="分页">
+        <nav class="wc-pagination" aria-label="分页" data-wc-filter-pagination>
           <span>共 <?= e($meta['total']) ?> 条 · 第 <?= e($meta['page']) ?> 页</span>
           <?php if ($meta['page'] > 1): ?><a class="glass-button" href="<?= e($url($section, array_merge($input, ['page' => $meta['page'] - 1]))) ?>">上一页</a><?php endif; ?>
           <?php if ($meta['page'] < $meta['total_pages']): ?><a class="glass-button" href="<?= e($url($section, array_merge($input, ['page' => $meta['page'] + 1]))) ?>">下一页</a><?php endif; ?>

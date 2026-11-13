@@ -2,7 +2,9 @@ import {
   createSnapshotModel, positions, metrics, rankings, eventLabels, statusLabels, abilityLabels,
   displayNumber as number, matchScore, kickoffLabel, searchMatches,
 } from './worldcup-snapshot-data.mjs?v=2';
-import { chartMount, mountWorldCupCharts } from './worldcup-charts.mjs?v=3';
+import { chartMount, mountWorldCupCharts } from './worldcup-charts.mjs?v=4';
+import { bindFilters } from './worldcup-filters.mjs';
+import { bindComparisonSearch } from './player-compare.mjs?v=3';
 
 const input = new URLSearchParams(location.search);
 const content = document.getElementById('snapshot-content');
@@ -34,7 +36,6 @@ const url = (target, params = {}) => `./index.html?${new URLSearchParams({ view:
 const link = (target, label, params = {}, className = '') => node('a', { href: url(target, params), class: className }, label);
 const panel = (title, ...children) => node('section', { class: 'wc-panel' }, node('div', { class: 'wc-section-heading' }, node('h2', {}, title)), children);
 const hidden = (name, value) => node('input', { type: 'hidden', name, value });
-const submit = (label) => node('button', { class: 'glass-button', type: 'submit' }, label);
 
 function flag(team) {
   return node('img', { class: 'wc-flag', src: `../assets/images/flags/${team.code}.svg`, alt: `${team.name_zh}国旗`, width: 36, height: 27 });
@@ -71,8 +72,16 @@ function select(label, name, options, value) {
   return node('label', {}, label, node('select', { name, 'aria-label': label }, Object.entries(options).map(([key, title]) => node('option', { value: key, selected: key === value }, title))));
 }
 
-function filters(target, ...fields) {
-  return node('form', { class: 'wc-filters', action: './index.html', method: 'get' }, hidden('view', target), fields, submit('筛选'), link(target, '重置', {}, 'wc-back'));
+function filteredList(target, fields, render) {
+  const form = node('form', { class: 'wc-filters', action: './index.html', method: 'get' }, hidden('view', target), fields, link(target, '重置', {}, 'wc-back'));
+  const results = node('div', {}, render());
+  bindFilters(form, (next) => {
+    history.replaceState(history.state, '', next);
+    for (const key of [...input.keys()]) input.delete(key);
+    for (const [key, value] of next.searchParams) input.set(key, value);
+    results.replaceChildren(...render());
+  });
+  content.append(form, results);
 }
 
 function table(headers, rows, caption) {
@@ -118,8 +127,8 @@ function renderMatches() {
     select('比赛状态', 'status', { all: '全部状态', ...statusLabels }, input.get('status') || 'all'),
     field('比赛日期 / 北京时间', 'date', input.get('date') || '', 'date')];
   if (input.has('team_id')) fields.push(hidden('team_id', input.get('team_id')));
-  const matches = model.filterFixtures(Object.fromEntries(input));
-  content.append(filters('matches', fields), ...paginate(matches, (rows) => rows.length ? node('div', { class: 'wc-grid' }, rows.map(fixtureCard)) : empty()));
+  filteredList('matches', fields, () => paginate(model.filterFixtures(Object.fromEntries(input)),
+    (rows) => rows.length ? node('div', { class: 'wc-grid' }, rows.map(fixtureCard)) : empty()));
 }
 
 function requireEntity(map, id) {
@@ -201,9 +210,9 @@ function renderFormation(match, home, away) {
 
 function renderTeams() {
   if (input.has('id')) return renderTeam(requireEntity(model.teamById, input.get('id')));
-  const teams = model.snapshot.teams.filter((team) => searchMatches(team, input.get('q') || ''));
-  content.append(filters('teams', field('搜索国家队', 'q', input.get('q') || '', 'search', '中文名、英文名或球队代码')),
-    ...paginate(teams, (rows) => rows.length ? node('div', { class: 'wc-grid wc-national-grid' }, rows.map((team) => {
+  const fields = [field('搜索国家队', 'q', input.get('q') || '', 'search', '中文名、英文名或球队代码')];
+  filteredList('teams', fields, () => paginate(model.snapshot.teams.filter((team) => searchMatches(team, input.get('q') || '')),
+    (rows) => rows.length ? node('div', { class: 'wc-grid wc-national-grid' }, rows.map((team) => {
       const group = model.snapshot.group_teams.find((member) => member.team_id === team.id)?.group_code;
       return link('teams', [node('div', { class: 'wc-national-card-top' }, flag(team), node('span', {}, `${group}组`)), node('h2', {}, team.name_zh), text(team.name), node('div', { class: 'wc-national-card-bottom' }, node('span', {}, team.code), node('span', {}, '球队名单与赛程 ↗'))], { id: team.id }, 'wc-card wc-national-card');
     })) : empty()));
@@ -298,8 +307,9 @@ function renderPlayer() {
       text('单场助攻和出场分钟暂无数据。'),
       text(events.length ? events.map((event) => `${event.label} ${eventLabels[event.type]}`).join(' / ') : '本场没有该球员的已记录事件。')];
   };
-  single.append(chartMount('player-matches', { games: chartGames, metrics: metricKeys.map((key) => [key, metrics[key], ['goals', 'goals_prevented'].includes(key) ? ' 球' : ' 次']) }),
-    node('form', { class: 'wc-filters', method: 'get', action: './index.html#single-performance' }, hidden('view', 'player'), hidden('id', player.id), select('选择比赛', 'match_id', Object.fromEntries(games.map((game) => [game.id, `M${game.match_no} ${kickoffLabel(game.kickoff_at)} ${model.teamById.get(game.home_team_id).name_zh} ${matchScore(game)} ${model.teamById.get(game.away_team_id).name_zh}`])), match.id), submit('查看单场')));
+  const matchForm = node('form', { class: 'wc-filters', method: 'get', action: './index.html#single-performance' }, hidden('view', 'player'), hidden('id', player.id), select('选择比赛', 'match_id', Object.fromEntries(games.map((game) => [game.id, `M${game.match_no} ${kickoffLabel(game.kickoff_at)} ${model.teamById.get(game.home_team_id).name_zh} ${matchScore(game)} ${model.teamById.get(game.away_team_id).name_zh}`])), match.id));
+  bindFilters(matchForm);
+  single.append(chartMount('player-matches', { games: chartGames, metrics: metricKeys.map((key) => [key, metrics[key], ['goals', 'goals_prevented'].includes(key) ? ' 球' : ' 次']) }), matchForm);
   for (const [index, game] of games.entries()) {
     if (game.id === match.id) {
       single.append(node('div', { 'data-wc-match-body': true }, matchBody(game, chartGames[index])));
@@ -321,31 +331,24 @@ function renderLeaders() {
   const metric = input.get('metric') || 'goals';
   const position = input.get('position') || '';
   if (!Object.hasOwn(rankings, metric) || (position && !Object.hasOwn(positions, position))) throw new Error('球员榜筛选条件不正确。');
-  content.append(filters('leaders', select('统计项', 'metric', rankings, metric), select('位置', 'position', { '': '全部位置', ...positions }, position)), text('技术指标只对已出场且覆盖完整的球员排名，同值并列。助攻使用赛事助攻榜；红黄牌榜仅统计已记录事件（含替补席），不代表完整公平竞赛分。'),
-    ...paginate(model.leaders(metric, position), (rows) => rows.length ? panel(`${rankings[metric]}榜`, table(['名次', '球员', '国家队', '位置', rankings[metric], '出场'], rows.map((player) => [player.rank, playerLink(player), teamLabel(model.teamById.get(player.team_id)), positions[player.position], number(player.value), model.summaries.get(player.id).appearances]), `${rankings[metric]}榜`)) : empty(), 30));
+  const fields = [select('统计项', 'metric', rankings, metric), select('位置', 'position', { '': '全部位置', ...positions }, position)];
+  filteredList('leaders', fields, () => {
+    const key = input.get('metric') || 'goals';
+    const label = rankings[key];
+    return [text('技术指标只对已出场且覆盖完整的球员排名，同值并列。助攻使用赛事助攻榜；红黄牌榜仅统计已记录事件（含替补席），不代表完整公平竞赛分。'),
+      ...paginate(model.leaders(key, input.get('position') || ''), (rows) => rows.length ? panel(`${label}榜`, table(['名次', '球员', '国家队', '位置', label, '出场'], rows.map((player) => [player.rank, playerLink(player), teamLabel(model.teamById.get(player.team_id)), positions[player.position], number(player.value), model.summaries.get(player.id).appearances]), `${label}榜`)) : empty(), 30)];
+  });
 }
 
 function searchableSelect(label, name, rows, current, playerMode) {
-  const options = () => rows.map((row) => node('option', { value: row.id, selected: row.id === current }, playerMode ? `${row.name} / ${model.teamById.get(row.team_id).name_zh} / #${row.shirt_number}` : `${row.name_zh} / ${row.code}`));
-  const dropdown = node('select', { name, 'aria-label': label }, options());
-  const search = node('input', { type: 'search', placeholder: playerMode ? '搜索球员中文名、英文名或国家队' : '搜索中文名、英文名或代码', 'aria-label': `${label}搜索`, maxlength: 80 });
-  search.addEventListener('input', () => {
-    const selected = dropdown.value;
-    const query = search.value.trim().toLocaleLowerCase();
-    for (const option of dropdown.options) {
-      const row = rows.find((row) => row.id === option.value);
-      option.hidden = query !== '' && !(searchMatches(row, query) || (playerMode && searchMatches(model.teamById.get(row.team_id), query)));
-    }
-    const first = [...dropdown.options].find((option) => !option.hidden);
-    if (!first) {
-      search.setCustomValidity('没有匹配的记录，请修改搜索词。');
-    } else {
-      search.setCustomValidity('');
-      if (dropdown.selectedOptions[0]?.hidden) dropdown.value = first.value;
-      else dropdown.value = selected;
-    }
+  const options = rows.map((row) => {
+    const team = playerMode ? model.teamById.get(row.team_id) : row;
+    const display = playerMode ? `${row.name} / ${team.name_zh} / #${row.shirt_number}` : `${row.name_zh} / ${row.code}`;
+    return node('option', { value: row.id, selected: row.id === current, 'data-search': [display, team.name, team.code, row.name_zh].filter(Boolean).join(' ') }, display);
   });
-  return node('label', {}, label, search, dropdown);
+  const dropdown = node('select', { name, 'aria-label': label, 'data-compare-select': true }, options);
+  const search = node('input', { type: 'search', 'data-compare-search': true, 'data-compare-unit': playerMode ? '球员' : '球队', placeholder: playerMode ? '搜索球员中文名、英文名或国家队' : '搜索中文名、英文名或代码', 'aria-label': `${label}搜索`, maxlength: 80 });
+  return node('label', {}, label, search, dropdown, node('small', { class: 'wc-search-status', 'aria-live': 'polite' }));
 }
 
 function comparisonCharts(left, right, fields, games, perMatch = []) {
@@ -377,7 +380,10 @@ function renderCompare(teamMode = false) {
   const left = requireEntity(teamMode ? model.teamById : model.playerById, input.get('left') || defaultLeft.id);
   const defaultRight = rows.find((row) => (teamMode ? row.code === 'FRA' : row.id === 'fifa:player:201200') && row.id !== left.id) ?? rows.find((row) => row.id !== left.id);
   const right = requireEntity(teamMode ? model.teamById : model.playerById, input.get('right') || defaultRight.id);
-  content.append(node('form', { class: 'wc-filters wc-snapshot-compare-form', action: './index.html', method: 'get' }, hidden('view', target), searchableSelect('左侧 / 蓝色', 'left', rows, left.id, !teamMode), searchableSelect('右侧 / 橙色', 'right', rows, right.id, !teamMode), submit('开始对比')));
+  const form = node('form', { class: 'wc-filters wc-snapshot-compare-form', action: './index.html', method: 'get' }, hidden('view', target), searchableSelect('左侧 / 蓝色', 'left', rows, left.id, !teamMode), searchableSelect('右侧 / 橙色', 'right', rows, right.id, !teamMode));
+  bindComparisonSearch(form);
+  bindFilters(form);
+  content.append(form);
   if (left.id === right.id) { content.append(empty('请选择两个不同的对象进行对比。')); return; }
   const hero = (item) => teamMode ? link('teams', node('div', { class: 'wc-team-identity' }, flag(item), node('h2', {}, item.name_zh)), { id: item.id }, 'wc-card') : link('player', node('div', { class: 'wc-player-identity' }, portrait(item, 'large'), node('div', {}, node('h2', {}, item.name), text(model.teamById.get(item.team_id).name_zh))), { id: item.id }, 'wc-card');
   content.append(node('div', { class: 'wc-snapshot-compare-heroes' }, hero(left), hero(right)));

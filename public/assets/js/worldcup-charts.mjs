@@ -237,8 +237,7 @@ function playerMatches(root, data, echarts) {
     if (data.games[dataIndex]) switchMatch(data.games[dataIndex].id);
   });
   select.addEventListener('change', render);
-  matchSelect.addEventListener('change', () => switchMatch(activeId()));
-  form.addEventListener('submit', (event) => {
+  matchSelect.addEventListener('change', (event) => {
     if (switchMatch(activeId())) event.preventDefault();
   });
   render();

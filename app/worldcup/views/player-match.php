@@ -21,14 +21,14 @@ $chartGames = array_map(static fn(array $match): array => [
     <p class="wc-muted">暂无球队比赛记录。</p>
   <?php else: ?>
     <?= $chartMount('player-matches', ['games'=>$chartGames, 'metrics'=>$chartMetrics]) ?>
-    <form class="wc-match-picker" method="get" action="./#single-performance">
+    <form class="wc-match-picker" method="get" action="./#single-performance" data-wc-auto-filter>
       <input type="hidden" name="view" value="player"><input type="hidden" name="id" value="<?= e($p['id']) ?>">
       <label>选择比赛<select name="match_id">
         <?php foreach ($p['matches'] as $match): ?>
           <option value="<?= e($match['id']) ?>" <?= $selected['id'] === $match['id'] ? 'selected' : '' ?>><?= e($beijingTime($match['kickoff_at']).' · '.$match['stage_name'].' · 对 '.$match['opponent_name']) ?></option>
         <?php endforeach; ?>
       </select></label>
-      <button class="glass-button" type="submit">查看单场</button>
+      <noscript><button class="glass-button" type="submit">查看单场</button></noscript>
     </form>
     <div data-wc-match-body><?php require __DIR__.'/player-match-detail.php'; ?></div>
     <?php $initialId = $selected['id']; foreach ($p['matches'] as $selected): if ($selected['id'] === $initialId) continue; ?>
