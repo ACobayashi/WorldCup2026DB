@@ -7,29 +7,34 @@
     <meta name="worldcup-mode" content="snapshot">
     <meta name="description" content="FOURWARD 2026 世界杯资料中心：赛程赛果、球队名单、球员数据、积分晋级和双队双球员对比。仓库快照，只读展示，非实时赛况。">
     <title>2026 世界杯 · FOURWARD 资料中心</title>
+    <script src="../assets/js/worldcup-theme.js?v=2"></script>
     <link rel="stylesheet" href="../assets/css/common.css?v=1">
     <link rel="stylesheet" href="../assets/css/worldcup-shell.css?v=2">
     <link rel="stylesheet" href="../assets/css/worldcup-data.css?v=9">
     <link rel="stylesheet" href="../assets/css/worldcup-formation.css?v=1">
-    <link rel="stylesheet" href="../assets/css/worldcup-snapshot.css?v=1">
-    <script type="module" src="../assets/js/worldcup-snapshot.mjs?v=1"></script>
+    <link rel="stylesheet" href="../assets/css/worldcup-snapshot.css?v=2">
+    <link rel="stylesheet" href="../assets/css/worldcup-experience.css?v=8">
+    <link rel="stylesheet" href="../assets/css/site-navigation.css?v=1">
+    <script type="module" src="../assets/js/site-navigation.mjs?v=1"></script>
+    <script type="module" src="../assets/js/worldcup-experience.mjs?v=7"></script>
+    <script type="module" src="../assets/js/worldcup-snapshot.mjs?v=2"></script>
   </head>
   <body class="wc-app">
     <a class="skip-link" href="#main">跳到主要内容</a>
-    <header class="site-header">
+    <header class="site-header app-header" data-session-endpoint="../api.php?action=session">
       <a class="brand" href="../#team" aria-label="FOURWARD 团队首页">
         <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 3h9v34H8zM23 3h9v34h-9zM2 15h36v10H2z" fill="currentColor"/></svg>
         <span>FOURWARD<small>四人同行 / NKDEV</small></span>
       </a>
       <nav class="main-nav" aria-label="主导航">
         <a href="../#team"><span>01</span>团队介绍</a>
-        <a href="../#members"><span>02</span>成员档案</a>
+        <a href="../#members"><span>02</span>个人介绍</a>
         <a class="is-active" href="./index.html" aria-current="location"><span>03</span>世界杯</a>
       </nav>
-      <a class="repo-link" href="https://github.com/ACobayashi/WorldCup2026DB" target="_blank" rel="noopener noreferrer">项目仓库 <span aria-hidden="true">↗</span></a>
+      <a class="site-account" href="../account.php">登录 / 注册 <span aria-hidden="true">↗</span></a>
     </header>
     <main id="main" class="wc-main" tabindex="-1">
-      <div class="wc-heading"><div><p class="wc-eyebrow">FOURWARD / WORLD CUP 2026</p><h1 id="snapshot-title">世界杯资料中心</h1></div><a class="glass-button" href="./demo.html">比分与支持度演示 ↗</a></div>
+      <div class="wc-heading"><div><p class="wc-eyebrow">FOURWARD / WORLD CUP 2026</p><h1 id="snapshot-title">世界杯资料中心</h1></div><div class="wc-heading-actions"><a class="glass-button" href="./demo.html">比分与支持度演示 ↗</a></div></div>
       <nav class="wc-tabs" aria-label="世界杯模块">
         <a href="./index.html?view=matches" data-view="matches">赛程与赛果</a>
         <a href="./index.html?view=teams" data-view="teams">参赛球队</a>
@@ -38,8 +43,6 @@
         <a href="./index.html?view=team_compare" data-view="team_compare">球队对比</a>
         <a href="./index.html?view=groups" data-view="groups">积分与晋级</a>
       </nav>
-      <details class="wc-notice wc-snapshot-disclosure"><summary>只读仓库快照 · 非实时赛况 / 使用说明</summary><p>来自功能分支已提交的 2026 赛事资料，并非官方或实时赛况。缺失数据保留为 —。在线展示不连接数据库，不提供登录、投票或后台写入；原合成示例保留在独立演示页。</p></details>
-      <div id="snapshot-summary" class="wc-summary" aria-label="快照数据概览"></div>
       <div id="snapshot-content" aria-busy="true"><p class="wc-muted">正在读取赛事资料……</p></div>
       <p id="snapshot-status" class="visually-hidden" role="status" aria-live="polite"></p>
       <noscript><section class="wc-empty"><h2>请启用 JavaScript 浏览赛事资料</h2><p>当前为无需 PHP 和数据库的只读快照版。</p><a href="../#team">返回团队主页</a></section></noscript>

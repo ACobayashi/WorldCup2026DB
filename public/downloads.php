@@ -1,5 +1,6 @@
 <?php
 /** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Course download entry. */
+/** 统一账号入口：林子媛 | 学号：2410936 */
 declare(strict_types=1);
 require __DIR__ . '/../app/common/bootstrap.php';
 
@@ -16,7 +17,7 @@ try {
   $assignment = $_GET['assignment'] ?? null;
   if ($member !== null || $assignment !== null) {
     if (!$user) {
-      header('Location: admin.php', true, 303);
+      header('Location: account.php?return=' . rawurlencode('downloads.php?' . http_build_query(['member' => $member, 'assignment' => $assignment])), true, 303);
       exit;
     }
     $file = is_string($member) && is_string($assignment) ? CourseMaterials::path($member, $assignment, $user) : null;
@@ -40,6 +41,8 @@ try {
   require \PROJECT_ROOT . '/app/team/views/downloads.php';
   $personal = ob_get_clean();
   $page = file_get_contents(__DIR__ . '/downloads.html');
+  $page = str_replace('<link rel="stylesheet" href="assets/css/course-materials.css?v=1">', '<link rel="stylesheet" href="assets/css/course-materials.css?v=1"><link rel="stylesheet" href="assets/css/site-navigation.css?v=1">', $page);
+  $page = str_replace('<body class="materials-page">', '<body class="materials-page">' . Fourward\common\SiteNavigation::html($user, '', 'account'), $page);
   header('Content-Type: text/html; charset=utf-8');
   echo preg_replace_callback('/<!-- personal-start -->.*?<!-- personal-end -->/s', static fn(): string => $personal, $page, 1);
 } catch (Throwable $error) {

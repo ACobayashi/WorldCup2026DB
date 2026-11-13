@@ -1,6 +1,7 @@
 <?php
 // 2410933_马禹翔
 /** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Real-snapshot MVC page acceptance, no persistent writes. */
+/** 维护：林子媛 | 学号：2410936 | 将连线断言限定在晋级图内，排除共用导航图标。 */
 declare(strict_types=1);
 if(PHP_SAPI!=='cli')exit(1);
 require __DIR__.'/../app/common/bootstrap.php';
@@ -56,7 +57,8 @@ pageCheck(substr_count($html,'<tr class="is-qualified">')===32,'Exactly 32 quali
 pageCheck(str_contains($html,'FIFA 2026 竞赛规程'),'Official rules linked');
 $html=renderWorldcup($db,['view'=>'groups','panel'=>'bracket']);
 pageCheck(substr_count($html,'class="wc-bracket-match"')===32,'31 knockout matches plus bronze card');
-pageCheck(substr_count($html,'<path d=')===30,'Visible bracket connectors');
+preg_match('~<svg class="wc-bracket-lines"[^>]*>(.*?)</svg>~s',$html,$connectorSvg);
+pageCheck(isset($connectorSvg[1])&&substr_count($connectorSvg[1],'<path ')===30,'Visible bracket connectors');
 pageCheck(str_contains($html,'★ 冠军 · 西班牙'),'Champion comes from actual winner');
 $html=renderWorldcup($db,['view'=>'groups','panel'=>'thirds']);
 pageCheck(substr_count($html,'<tr class="is-qualified">')===8,'Eight third-place qualifiers rendered');

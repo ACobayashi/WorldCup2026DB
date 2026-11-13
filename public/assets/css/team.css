@@ -295,3 +295,43 @@ button:disabled { opacity: .5; cursor: default; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .team-portrait { transform: none; }
 }
+/* Database-mode account and coursework entry points. */
+.homepage-services { display: flex; flex-wrap: wrap; gap: 12px; margin: 18px 0; }
+.server-home .team-description { white-space: pre-line; }
+.member-coursework { position: absolute; z-index: 4; right: 10%; top: 20%; width: clamp(150px, 13vw, 190px); }
+.coursework-caption { margin: 0 0 12px; font: 8px monospace; letter-spacing: 1.6px; color: #a3b3ce; }
+.coursework-nodes { display: grid; gap: 14px; }
+.coursework-node { position: relative; display: flex; gap: 10px; align-items: center; min-height: 60px; padding: 11px 12px; border: 1px solid #b6caff42; background: linear-gradient(120deg, #2333483d, #121a2b52); color: #e7efff; backdrop-filter: blur(4px); border-radius: 2px 13px 2px 13px; transition: background .2s, translate .2s; }
+.coursework-node::before { content: ""; position: absolute; top: 50%; left: -56px; width: 55px; border-top: 1px solid var(--member-accent); opacity: .55; }
+.coursework-node::after { content: ""; position: absolute; top: calc(50% - 3px); left: -61px; width: 5px; height: 5px; border: 1px solid var(--member-accent); border-radius: 50%; box-shadow: 0 0 8px var(--member-accent); }
+.coursework-node:nth-child(2)::before { left: -84px; width: 83px; }
+.coursework-node:nth-child(2)::after { left: -89px; }
+.coursework-node:hover { translate: -3px 0; background: #30426066; }
+.coursework-frame { position: absolute; inset: -1px; border: 1px solid var(--member-accent); border-radius: inherit; opacity: .25; box-shadow: 0 0 16px #8bafff30, inset 0 0 12px #8bafff13; pointer-events: none; }
+.coursework-index { font: 10px monospace; color: var(--member-accent); }
+.coursework-copy { display: grid; gap: 6px; min-width: 0; }
+.coursework-copy strong { font-size: 11px; line-height: 1.5; font-weight: 550; }
+.coursework-copy small { font-size: 8px; color: #aab8d4; }
+@media (max-width: 1000px) {
+  .member-stage { height: auto; min-height: calc(100svh - var(--header-height) - var(--footer-height)); padding-bottom: 52px; }
+  .member-coursework { position: relative; top: auto; right: auto; margin: 28px 5% 0; width: 90%; }
+  .coursework-nodes { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+  .coursework-caption { border-bottom: 1px solid #b6caff42; padding-bottom: 12px; margin-bottom: 18px; }
+  .coursework-node::before, .coursework-node:nth-child(2)::before { top: -19px; left: 14px; height: 18px; width: 1px; border-top: 0; border-left: 1px solid var(--member-accent); }
+  .coursework-node::after, .coursework-node:nth-child(2)::after { top: -24px; left: 12px; }
+  .member-selector-row { position: relative; left: auto; bottom: auto; margin: 28px 5% 10px; width: 90%; }
+  .portrait-frame { bottom: auto; height: 520px; }
+}
+@media (max-width: 540px) {
+  .member-coursework { margin: 30px 24px 0; width: calc(100% - 48px); }
+  .coursework-nodes { grid-template-columns: 1fr; gap: 12px; padding-left: 15px; border-left: 1px solid #a5c7ff45; }
+  .coursework-node { min-height: 56px; padding: 10px 12px; }
+  .coursework-node::before, .coursework-node:nth-child(2)::before { top: 50%; left: -16px; height: 1px; width: 15px; border-left: 0; border-top: 1px solid var(--member-accent); }
+  .coursework-node::after, .coursework-node:nth-child(2)::after { top: calc(50% - 2px); left: -19px; width: 4px; height: 4px; }
+  .member-selector-row { margin: 28px 24px 8px; width: calc(100% - 48px); }
+  .member-copy { max-width: calc(100% - 65px); }
+  .portrait-frame { height: 480px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .coursework-node { transition: none; }
+}

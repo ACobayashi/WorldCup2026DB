@@ -1,0 +1,19 @@
+.app-header { height: var(--header-height); background: #141719; }
+.app-header .main-nav { flex-shrink: 0; }
+.app-header .brand { flex-shrink: 0; }
+.site-account { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 44px; padding-left: 22px; border-left: 1px solid var(--line); font-size: 12px; color: #c7d2f3; white-space: nowrap; }
+.site-account:hover, .site-account.is-active { color: #eef1ff; }
+.site-account span { color: #9eaff7; }
+@media (max-width: 900px) {
+  .app-header { gap: 14px; }
+  .site-account { padding-left: 14px; font-size: 11px; }
+}
+@media (max-width: 680px) {
+  :root, .server-home { --header-height: 108px; }
+  .app-header { flex-wrap: wrap; align-content: center; gap: 4px 12px; padding: 10px 20px; }
+  .app-header .brand { font-size: 15px; }
+  .app-header .brand small { font-size: 6px; }
+  .app-header .main-nav { order: 3; width: 100%; height: auto; justify-content: center; gap: 6px; }
+  .app-header .main-nav a { font-size: 11px; padding: 8px 13px; }
+  .app-header .site-account { margin-left: auto; }
+}

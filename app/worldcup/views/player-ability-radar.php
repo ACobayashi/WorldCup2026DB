@@ -1,13 +1,14 @@
 <?php
 // 2410933_马禹翔
 /** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | DQD six-axis ability radar shared by profile and comparison. */
+/** 维护：林子媛 | 学号：2410936 | 简化空数据提示。 */
 declare(strict_types=1);
 $abilityAxes=\Fourward\worldcup\models\PlayerAbility::AXES;$abilityCount=count($abilityAxes);
 $abilityPoint=static function(int $index,float $value,float $radius=122)use($abilityCount):array{$angle=-M_PI/2+2*M_PI*$index/$abilityCount;return [230+cos($angle)*$radius*$value/100,205+sin($angle)*$radius*$value/100];};
 $abilityPolygon=static function(array $values)use($abilityPoint):string{$out=[];foreach(array_values($values) as $index=>$value){$xy=$abilityPoint($index,(float)$value);$out[]=round($xy[0],2).','.round($xy[1],2);}return implode(' ',$out);};
 $available=array_values(array_filter($radarPlayers,fn($player)=>is_array($player['ability']??null)));
 ?>
-<?php if(!$available): ?><div class="wc-radar-empty"><h3>暂无懂球帝能力数据</h3><p>不从比赛统计推算或补全评分。</p></div><?php else: ?>
+<?php if(!$available): ?><div class="wc-radar-empty"><h3>暂无懂球帝能力数据</h3></div><?php else: ?>
 <div class="wc-ability-visual">
 <svg class="wc-radar wc-ability-radar" viewBox="0 0 460 410" role="img" aria-labelledby="<?= e($radarId) ?>-title <?= e($radarId) ?>-desc">
   <title id="<?= e($radarId) ?>-title">球员综合能力雷达图</title><desc id="<?= e($radarId) ?>-desc">速度、射门、传球、盘带、防守和力量六项懂球帝来源评分。</desc>

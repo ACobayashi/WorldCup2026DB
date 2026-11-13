@@ -1,6 +1,7 @@
 <?php
 // 2410933_马禹翔
 /** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Additive player metrics migration and transactional extension import. */
+/** 维护：林子媛 | 学号：2410936 | 助攻属于核心字段，不要求扩展包补造单场助攻。 */
 declare(strict_types=1);
 if(PHP_SAPI!=='cli')exit(1);
 require __DIR__.'/../app/common/bootstrap.php';

@@ -1,11 +1,12 @@
 <?php
 /** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Course archive list. */
+/** 统一账号入口：林子媛 | 学号：2410936 */
 declare(strict_types=1);
 use Fourward\team\models\CourseMaterials;
 ?>
 <?php if (!$user): ?>
   <p>登录后可下载自己的作业。教师验收请使用团队提供的管理员账号。</p>
-  <a class="materials-download" href="admin.php">登录团队工作台 ↗</a>
+  <a class="materials-download" href="account.php?return=downloads.php">登录 ↗</a>
 <?php else: ?>
   <ul class="materials-list">
     <?php foreach ($targets as $slug => $target): ?>

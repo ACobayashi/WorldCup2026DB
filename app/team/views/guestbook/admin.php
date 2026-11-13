@@ -1,5 +1,6 @@
 <?php
 /** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | View: escaped management forms and messages. */
+/** 维护：林子媛 | 学号：2410936 | 接入账号与内容工作台导航。 */
 declare(strict_types=1);
 $labels = ['pending' => '待审核', 'approved' => '已公开', 'rejected' => '未通过'];
 $displayName = $user ? ($targets[$user['member_slug']]['name'] ?? $user['username']) : '';
@@ -14,26 +15,14 @@ $userPortrait = $user && isset($targets[$user['member_slug']]) && $user['member_
     <meta name="theme-color" content="#141719">
     <title>团队工作台 · FOURWARD</title>
     <link rel="preload" as="image" href="assets/images/worldcup/stadium-night.jpg">
-    <link rel="stylesheet" href="assets/css/guestbook-admin.css?v=7">
+    <link rel="stylesheet" href="assets/css/common.css?v=1">
+    <link rel="stylesheet" href="assets/css/guestbook-admin.css?v=8">
+    <link rel="stylesheet" href="assets/css/site-navigation.css?v=1">
     <script type="module" src="assets/js/workspace.mjs?v=1"></script>
   </head>
   <body class="admin-body <?= !$user ? 'is-login' : '' ?>">
     <a class="skip-link" href="#workspace-main">跳到主要内容</a>
-    <header class="admin-header">
-      <div class="admin-header-inner">
-        <a class="workspace-brand" href="./" aria-label="FOURWARD 团队首页">
-          <svg class="workspace-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 3h9v34H8zM23 3h9v34h-9zM2 15h36v10H2z" fill="currentColor"/></svg>
-          <span>FOURWARD<small>四人同行 / WORLD CUP 2026</small></span>
-        </a>
-        <nav class="workspace-nav" aria-label="工作台导航"><a href="./">团队主页</a><a href="./#members">成员档案</a><a class="is-active" href="admin.php" aria-current="page">工作台</a></nav>
-        <div class="header-actions">
-          <?php if ($user): ?>
-            <span class="header-user"><?php if ($userPortrait): ?><span class="user-avatar"><img src="<?= e($userPortrait) ?>" alt=""></span><?php endif; ?><span><?= e($displayName) ?></span></span>
-            <form method="post"><input type="hidden" name="action" value="logout"><input type="hidden" name="csrf" value="<?= e(csrfToken()) ?>"><button class="signout-button" type="submit">退出登录 <span aria-hidden="true">↗</span></button></form>
-          <?php else: ?><a class="back-link" href="./">返回主页 <span aria-hidden="true">↗</span></a><?php endif; ?>
-        </div>
-      </div>
-    </header>
+    <?= \Fourward\common\SiteNavigation::html($user, '', 'account') ?>
     <main class="admin-main" id="workspace-main">
       <section class="workspace-hero" aria-labelledby="workspace-title">
         <div class="stadium-scene" aria-hidden="true">
@@ -48,7 +37,7 @@ $userPortrait = $user && isset($targets[$user['member_slug']]) && $user['member_
           <h1 id="workspace-title"><?= $user ? '我们的主场' : '欢迎回到主场' ?><span>一起上场</span></h1>
           <p class="hero-description"><?= $user ? '把热爱写下来，让每个声音找到自己的位置' : '登录团队账号，继续我们的世界杯之旅' ?></p>
           <?php if ($user): ?>
-            <div class="hero-links"><a class="primary-button" href="#profiles-heading">编辑资料 <span aria-hidden="true">↗</span></a><a class="secondary-link" href="#mottos-heading">编辑座右铭</a><?php if ($listing !== null): ?><a class="secondary-link" href="#review-heading">查看访客留言 <span aria-hidden="true">↓</span></a><?php endif; ?></div>
+            <div class="hero-links"><a class="primary-button" href="workspace.php">资料 / 作业 / 图表 <span aria-hidden="true">↗</span></a><a class="secondary-link" href="#profiles-heading">编辑简介与标签</a><a class="secondary-link" href="#mottos-heading">编辑座右铭 <span aria-hidden="true">↓</span></a><?php if ($listing !== null): ?><a class="secondary-link" href="#review-heading">查看访客留言 <span aria-hidden="true">↓</span></a><?php endif; ?></div>
           <?php else: ?><a class="primary-button" href="#login-heading">进入工作台 <span aria-hidden="true">↓</span></a><?php endif; ?>
         </div>
         <div class="hero-bottomline"><span>04 MEMBERS <i></i> ONE TEAM</span><span class="hero-workspace-label">团队工作台</span><button class="motion-toggle" id="workspace-motion" type="button" aria-pressed="false" aria-label="暂停装饰动效" hidden><svg class="pause-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 3h3v10H4zM9 3h3v10H9z" fill="currentColor"/></svg><svg class="play-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="m5 3 8 5-8 5Z" fill="currentColor"/></svg><span>动效</span></button></div>
@@ -64,6 +53,7 @@ $userPortrait = $user && isset($targets[$user['member_slug']]) && $user['member_
             <div class="login-field"><label for="password">密码</label><input id="password" name="password" type="password" autocomplete="current-password" maxlength="72" required></div>
             <button class="primary-button login-submit" type="submit">进入工作台 <span aria-hidden="true">↗</span></button>
           </form>
+          <p><a class="back-link" href="account.php">统一登录 / 注册普通用户 ↗</a></p>
         </section>
       <?php else: ?>
         <section class="workspace-section" aria-labelledby="profiles-heading">

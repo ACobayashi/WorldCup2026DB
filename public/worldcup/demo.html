@@ -8,21 +8,23 @@
     <title>2026 世界杯 · NKDEV 赛事中心</title>
     <link rel="stylesheet" href="../assets/css/common.css?v=1">
     <link rel="stylesheet" href="../assets/css/worldcup.css?v=1">
+    <link rel="stylesheet" href="../assets/css/site-navigation.css?v=1">
+    <script type="module" src="../assets/js/site-navigation.mjs?v=1"></script>
     <script type="module" src="../assets/js/worldcup.mjs?v=1"></script>
   </head>
   <body class="worldcup-page">
     <a class="skip-link" href="#main">跳到主要内容</a>
-    <header class="site-header">
+    <header class="site-header app-header" data-session-endpoint="../api.php?action=session">
       <a class="brand" href="../#team" aria-label="FOURWARD 团队首页">
         <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 3h9v34H8zM23 3h9v34h-9zM2 15h36v10H2z" fill="currentColor"/></svg>
         <span>FOURWARD<small>四人同行 / NKDEV</small></span>
       </a>
       <nav class="main-nav" aria-label="主导航">
         <a href="../#team"><span>01</span>团队介绍</a>
-        <a href="../#members"><span>02</span>成员档案</a>
+        <a href="../#members"><span>02</span>个人介绍</a>
         <a class="is-active" href="./index.html"><span>03</span>世界杯</a>
       </nav>
-      <a class="repo-link" href="https://github.com/ACobayashi/WorldCup2026DB" target="_blank" rel="noopener noreferrer">项目仓库 <span aria-hidden="true">↗</span></a>
+      <a class="site-account" href="../account.php">登录 / 注册 <span aria-hidden="true">↗</span></a>
     </header>
 
     <main class="worldcup-shell" id="main" tabindex="-1">

@@ -1,5 +1,6 @@
 <?php
 /** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Controller: login, review and motto editing. */
+/** 维护：林子媛 | 学号：2410936 | 普通注册用户使用作业下载入口。 */
 declare(strict_types=1);
 namespace Fourward\team\controllers;
 use Fourward\common\Auth;
@@ -57,6 +58,14 @@ final class GuestbookAdminController {
       }
     }
     $user = $auth->user();
+    if (!$user) {
+      header('Location: account.php?return=admin.php', true, 302);
+      return;
+    }
+    if ($user && $user['role'] === 'user') {
+      header('Location: coursework.php', true, 302);
+      return;
+    }
     $targets = require \PROJECT_ROOT . '/config/team.php';
     $mottos = (new MemberMotto($this->db))->all();
     $profiles = $user ? (new TeamProfile($this->db))->all() : [];

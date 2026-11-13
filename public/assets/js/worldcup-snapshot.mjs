@@ -416,9 +416,6 @@ async function initialize() {
     document.querySelectorAll('[data-view]').forEach((item) => {
       if (item.dataset.view === (view === 'player' ? 'teams' : view)) item.setAttribute('aria-current', 'page');
     });
-    document.getElementById('snapshot-summary').replaceChildren(...[
-      ['支球队', model.snapshot.teams.length], ['名球员', model.snapshot.players.length], ['场比赛', model.snapshot.matches.length], ['个小组', model.snapshot.groups.length],
-    ].map(([label, count]) => node('div', {}, node('strong', {}, count), node('span', {}, label))));
     ({ matches: renderMatches, teams: renderTeams, player: renderPlayer, leaders: renderLeaders, compare: renderCompare, team_compare: () => renderCompare(true), groups: renderGroups })[view]();
     document.getElementById('snapshot-status').textContent = `${titles[view]}已加载，只读快照。`;
     if (location.hash === '#single-performance') document.getElementById('single-performance')?.scrollIntoView();

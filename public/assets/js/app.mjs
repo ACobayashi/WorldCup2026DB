@@ -1,9 +1,29 @@
-import { members, safeGithubUrl } from './members.mjs?v=4';
+import { members as demoMembers, safeGithubUrl } from './members.mjs?v=4';
 import { createGuestbook } from './guestbook.mjs?v=3';
 import { animateMemberEntrance, transitionScenes } from './motion.mjs';
 import { notify } from './common.mjs';
+import { createMemberCoursework } from './member-coursework.mjs?v=2';
 
 const $ = (id) => document.getElementById(id);
+const serverMode = document.querySelector('meta[name="guestbook-mode"]')?.content === 'server';
+const profiles = serverMode ? JSON.parse($('team-profile-data').textContent) : null;
+const members = serverMode ? demoMembers.map((member) => {
+  const profile = profiles[member.id];
+  return { ...member, name: profile.display_name, school: profile.school, role: profile.role_title, task: profile.biography, github: profile.github_url };
+}) : demoMembers;
+if (profiles) {
+  const team = profiles.team;
+  const headline = team.headline.split('\n');
+  $('team-title').replaceChildren(document.createTextNode(headline[0]));
+  if (headline[1]) {
+    const line = document.createElement('span');
+    line.textContent = headline[1];
+    $('team-title').append(document.createElement('br'), line);
+  }
+  document.querySelector('.team-description').textContent = team.biography;
+  document.querySelector('.brand > span').firstChild.textContent = team.display_name;
+  document.title = `${team.display_name} · 团队主页`;
+}
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 const selector = $('member-selector');
 const messageDialog = $('message-dialog');
@@ -13,6 +33,8 @@ const scenes = [$('team'), $('members')];
 const navLinks = Array.from(document.querySelectorAll('.main-nav a'));
 let activeScene = 'team';
 let transitionToken = 0;
+const courseworkOptions = serverMode ? JSON.parse($('member-coursework-data').textContent) : {};
+const memberCoursework = createMemberCoursework({ root: $('member-coursework'), ...courseworkOptions });
 
 const guestbook = createGuestbook({ members, notify, onMottosChange: () => {
   const team = guestbook.profile('team');
@@ -67,6 +89,7 @@ function selectMember(index, animate = true) {
   selectedIndex = ((index % members.length) + members.length) % members.length;
   const base = members[selectedIndex];
   const member = { ...base, ...guestbook.profile(base.id) };
+  memberCoursework.selectMember(member);
   const number = String(selectedIndex + 1).padStart(2, '0');
   activeAnimations.forEach((animation) => animation.cancel());
   activeAnimations = [];
@@ -160,9 +183,10 @@ function updateNavigation() {
     else link.removeAttribute('aria-current');
   });
   document.body.dataset.scene = activeScene;
+  memberCoursework.setActive(activeScene === 'members');
   $('scene-counter').textContent = activeScene === 'team' ? '01 / 02 · TEAM' : '02 / 02 · MEMBERS';
   $('scene-next').href = activeScene === 'team' ? '#members' : '#team';
-  $('scene-next').textContent = activeScene === 'team' ? '成员档案 ↓' : '团队介绍 ↑';
+  $('scene-next').textContent = activeScene === 'team' ? '个人介绍 ↓' : '团队介绍 ↑';
 }
 
 function cancelSceneAnimations() {

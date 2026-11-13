@@ -1,6 +1,3 @@
-.wc-snapshot-disclosure { margin: 16px 0; }
-.wc-snapshot-disclosure summary { cursor: pointer; }
-.wc-snapshot-disclosure p { font-size: 12px; margin-bottom: 0; }
 .wc-snapshot-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: #9db5de26; border: 1px solid #9db5de26; border-radius: 14px; overflow: hidden; }
 .wc-snapshot-metrics > div { min-width: 0; display: grid; align-content: start; gap: 12px; padding: 20px 16px; background: #233147; }
 .wc-snapshot-metrics span { color: #a6bad8; font-size: 12px; }

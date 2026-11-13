@@ -3,6 +3,7 @@
  * FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Database integration acceptance checks.
  * Uses a transaction and always rolls back fixtures; run against a development DB.
  */
+/** 兼容统一资料模型：林子媛 | 学号：2410936 */
 declare(strict_types=1);
 if (PHP_SAPI !== 'cli') exit(1);
 require __DIR__ . '/../app/common/bootstrap.php';
@@ -97,7 +98,7 @@ try {
   $profile = ['description' => '<b>简介</b>', 'school' => '测试学院', 'role' => '测试分工', 'task' => '测试工作', 'tags' => '甲、乙，甲', 'github' => 'https://github.com/course-test'];
   $profiles->save('lin-ziyuan', $profile, $member);
   $saved = $profiles->all()['lin-ziyuan'];
-  verify($saved === array_replace($profile, ['tags' => ['甲', '乙']]), 'member profile stores public text, normalized tags and safe link');
+  verify(array_replace($saved, array_replace($profile, ['tags' => ['甲', '乙']])) === $saved, 'member profile stores public text, normalized tags and safe link');
   rejects(fn() => $profiles->save('yan-yuanyu', $profile, $member), 403);
   rejects(fn() => $profiles->save('team', $profile, $member), 403);
   rejects(fn() => $profiles->save('lin-ziyuan', array_replace($profile, ['github' => 'https://github.com.example.org/user']), $member), 422);
@@ -106,7 +107,7 @@ try {
   $profiles->save('team', ['description' => '验收期间的团队简介'], $admin);
   $_SERVER['REQUEST_METHOD'] = 'GET';
   $bootstrap = (new \Fourward\team\controllers\GuestbookController($db))->dispatch('bootstrap');
-  verify($bootstrap['profiles']['team'] === ['description' => '验收期间的团队简介'] && $bootstrap['profiles']['lin-ziyuan'] === $saved, 'published profiles included in bootstrap');
+  verify($bootstrap['profiles']['team']['description'] === '验收期间的团队简介' && $bootstrap['profiles']['lin-ziyuan'] === $saved, 'published profiles included in bootstrap');
   rejects(fn() => checkCsrf('invalid'), 403);
   checkCsrf(csrfToken());
   verify(true, 'valid CSRF token accepted');

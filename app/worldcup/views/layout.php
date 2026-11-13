@@ -1,6 +1,7 @@
 <?php
 // 2410933_马禹翔
 /** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | World Cup shared server-page layout. */
+/** 账号及作业入口接入：林子媛 | 学号：2410936 */
 declare(strict_types=1);
 require __DIR__.'/helpers.php';
 ?>
@@ -11,34 +12,28 @@ require __DIR__.'/helpers.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#111722">
     <title><?= e($title) ?> · FOURWARD 2026</title>
+    <script src="../assets/js/worldcup-theme.js?v=2"></script>
     <link rel="stylesheet" href="../assets/css/common.css?v=1">
     <link rel="stylesheet" href="../assets/css/worldcup-shell.css?v=2">
     <link rel="stylesheet" href="../assets/css/worldcup-data.css?v=9">
     <?php if($section==='matches'): ?><link rel="stylesheet" href="../assets/css/worldcup-formation.css?v=1"><?php endif; ?>
+    <link rel="stylesheet" href="../assets/css/worldcup-experience.css?v=8">
+    <link rel="stylesheet" href="../assets/css/site-navigation.css?v=1">
+    <script type="module" src="../assets/js/worldcup-experience.mjs?v=7"></script>
     <script type="module" src="../assets/js/player-portraits.mjs?v=1"></script>
     <script type="module" src="../assets/js/player-compare.mjs?v=2"></script>
   </head>
   <body class="wc-app">
     <a class="skip-link" href="#main">跳到主要内容</a>
-    <header class="site-header">
-      <a class="brand" href="../"><span class="wc-brand-mark" aria-hidden="true">#</span><span>FOURWARD<small>WORLD CUP / 2026</small></span></a>
-      <nav class="main-nav" aria-label="主导航"><a href="../#team">团队介绍</a><a href="../#members">成员档案</a><a class="is-active" href="./" aria-current="location">世界杯</a></nav>
-      <a class="repo-link" href="../admin.php"><?= $user ? e($user['username']) : '团队账号登录' ?> ↗</a>
-    </header>
+    <?= \Fourward\common\SiteNavigation::html($user, '../', 'worldcup') ?>
     <main id="main" class="wc-main" tabindex="-1">
-      <div class="wc-heading"><div><p class="wc-eyebrow">FOURWARD / WORLD CUP 2026</p><h1><?= e($title) ?></h1></div><a class="glass-button" href="./index.html">查看只读快照 ↗</a><a class="glass-button" href="./demo.html">查看界面演示 ↗</a></div>
+      <div class="wc-heading"><div><p class="wc-eyebrow">FOURWARD / WORLD CUP 2026</p><h1><?= e($title) ?></h1></div><div class="wc-heading-actions"></div></div>
       <nav class="wc-tabs" aria-label="世界杯模块">
         <?php foreach (array_diff_key($titles, ['venues' => true, 'player' => true]) as $key => $label): ?>
+          <?php if (($key === 'admin' && (!$user || $user['role'] !== 'admin')) || ($key === 'support' && !$user)) continue; ?>
           <a href="<?= e($url($key)) ?>" <?= $section === $key || ($section==='player'&&$key==='teams') ? 'aria-current="page"' : '' ?>><?= e($label) ?></a>
         <?php endforeach; ?>
       </nav>
-      <?php if (isset($overview)): ?>
-        <div class="wc-summary" aria-label="数据概览">
-          <?php foreach (['teams' => '支球队', 'matches' => '场比赛', 'venues' => '座场馆', 'supports' => '份支持'] as $key => $label): ?>
-            <div><strong><?= e($overview['counts'][$key]) ?></strong><span><?= e($label) ?></span></div>
-          <?php endforeach; ?>
-        </div>
-      <?php endif; ?>
       <?php require __DIR__ . '/' . $view . '.php'; ?>
       <?php if (isset($data['meta']) || isset($data['squad']['meta'])):
         $meta = $data['meta'] ?? $data['squad']['meta'];
@@ -50,6 +45,6 @@ require __DIR__.'/helpers.php';
         </nav>
       <?php endif; ?>
     </main>
-    <footer class="site-footer"><span>FOURWARD / WORLD CUP 2026</span><span>比赛时间均为北京时间 · 支持率来自本站用户</span><a href="../">返回团队主页 ↗</a></footer>
+    <footer class="site-footer"><span>FOURWARD / WORLD CUP 2026</span><span>比赛时间均为北京时间</span><a href="../">返回团队主页 ↗</a></footer>
   </body>
 </html>

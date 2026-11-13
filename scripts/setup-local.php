@@ -1,5 +1,6 @@
 <?php
 /** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Initialize only the isolated local database. */
+/** 维护：林子媛 | 学号：2410936 | 保留账号并迁移普通用户角色。 */
 declare(strict_types=1);
 if (PHP_SAPI !== 'cli') exit(1);
 require __DIR__ . '/../app/common/bootstrap.php';
@@ -13,7 +14,7 @@ $root = new PDO('mysql:host=127.0.0.1;port=' . $match[1] . ';charset=utf8mb4', '
 $root->exec('CREATE DATABASE IF NOT EXISTS worldcup2026 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci');
 $root->exec("CREATE USER IF NOT EXISTS 'worldcup_app'@'127.0.0.1' IDENTIFIED BY " . $root->quote(getenv('DB_PASSWORD')));
 $root->exec("GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, INDEX, REFERENCES ON worldcup2026.* TO 'worldcup_app'@'127.0.0.1'");
-database()->exec(file_get_contents(PROJECT_ROOT . '/data/install.sql'));
+Fourward\common\Schema::install(database());
 $accountFile = PROJECT_ROOT . '/storage/local-accounts.txt';
 // Existing installations keep both their data and original account passwords.
 if (!is_file($accountFile)) {

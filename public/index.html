@@ -10,22 +10,24 @@
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23141719'/%3E%3Cpath d='M15 12h13v40H15zm21 0h13v40H36zM8 26h48v12H8z' fill='%238b9cff'/%3E%3C/svg%3E">
     <link rel="preload" as="image" href="assets/images/team-group.png" fetchpriority="high">
     <link rel="stylesheet" href="assets/css/common.css?v=1">
-    <link rel="stylesheet" href="assets/css/team.css?v=10">
-    <script type="module" src="assets/js/app.mjs?v=9"></script>
+    <link rel="stylesheet" href="assets/css/team.css?v=13">
+    <link rel="stylesheet" href="assets/css/site-navigation.css?v=1">
+    <script type="module" src="assets/js/site-navigation.mjs?v=1"></script>
+    <script type="module" src="assets/js/app.mjs?v=12"></script>
   </head>
   <body data-scene="team">
     <a class="skip-link" href="#main">跳到主要内容</a>
-    <header class="site-header">
+    <header class="site-header app-header" data-session-endpoint="api.php?action=session">
       <a class="brand" href="#team" aria-label="FOURWARD 团队首页">
         <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 3h9v34H8zM23 3h9v34h-9zM2 15h36v10H2z" fill="currentColor"/></svg>
         <span>FOURWARD<small>四人同行 / WORLD CUP 2026</small></span>
       </a>
       <nav class="main-nav" aria-label="主导航">
         <a class="is-active" href="#team" aria-current="location"><span>01</span>团队介绍</a>
-        <a href="#members"><span>02</span>成员档案</a>
+        <a href="#members"><span>02</span>个人介绍</a>
         <a href="worldcup/"><span>03</span>世界杯</a>
       </nav>
-      <a class="repo-link" href="https://github.com/ACobayashi/WorldCup2026DB" target="_blank" rel="noopener noreferrer">项目仓库 <span aria-hidden="true">↗</span></a>
+      <a class="site-account" href="account.php">登录 / 注册 <span aria-hidden="true">↗</span></a>
     </header>
 
     <main class="scene-shell" id="main" tabindex="-1">
@@ -36,14 +38,13 @@
           <div class="team-grid" aria-hidden="true"></div>
           <div class="team-topline"><span>FOURWARD / OUR HOME GROUND</span><span>WORLD CUP EDITION / 2026</span></div>
           <div class="team-copy">
-            <p class="eyebrow"><span class="live-dot"></span> 四个名字，一次共同创作</p>
             <h1 id="team-title" tabindex="-1">各有热爱<br><span>一起上场</span></h1>
             <p class="team-description" id="team-description">来自计算机与密码安全领域的四位同学<br>在这里认识我们，也给我们的主场留句话</p>
             <a class="primary-button" href="#members">认识我们的队员 <span aria-hidden="true">↗</span></a>
             <button class="team-message-button" id="open-team-message" type="button">给团队留句话 ↗</button>
             <p class="team-motto" id="team-motto">“各有热爱，一起上场。”</p>
             <button class="stands-jump" id="view-team-stands" type="button">听听场边的声音 <span aria-hidden="true">↓</span></button>
-            <a class="team-materials-link" href="downloads.html">作业与源码下载 <span aria-hidden="true">↗</span></a>
+            <a class="team-materials-link glass-button" href="downloads.html">课程作业与下载 <span aria-hidden="true">↗</span></a>
             <div class="team-facts" aria-label="团队组成">
               <div><strong>04</strong><span>团队成员</span></div>
               <div><strong>2026</strong><span>世界杯主题</span></div>
@@ -91,6 +92,7 @@
             <div class="portrait-frame"><div class="portrait-art member-portrait" id="member-portrait" role="img" aria-label="林子媛的卡通示意形象"><img id="member-portrait-image" src="assets/images/members/lin-ziyuan.png" alt="" aria-hidden="true" width="887" height="1774"></div></div>
             <div class="portrait-label"><span id="portrait-label">01 / LIN ZIYUAN</span><span>FOURWARD / OUR TEAM</span></div>
           </div>
+          <aside class="member-coursework" id="member-coursework" aria-labelledby="member-coursework-title"><p class="coursework-caption" id="member-coursework-title">COURSEWORK / 个人作业</p><div class="coursework-nodes" id="member-coursework-nodes"></div></aside>
           <div class="member-controls"><span class="current-member" id="current-member">01<span>/ 04</span></span><button id="previous-member" type="button" aria-label="上一位成员">↑</button><button id="next-member" type="button" aria-label="下一位成员">↓</button></div>
           <div class="member-selector-row"><span class="selector-caption">SELECT A MEMBER <small>← → 切换</small></span><div class="member-selector" id="member-selector" role="group" aria-label="选择团队成员"></div></div>
           <div class="message-preview"><span id="message-source-label">LOCAL DEMO</span><p id="message-preview-text">还没有给林子媛的留言，来打个招呼吧。</p><button id="view-messages" type="button">留言板 <span aria-hidden="true">↗</span></button></div>
@@ -98,7 +100,7 @@
       </section>
     </main>
 
-    <footer class="site-footer"><span id="scene-counter">01 / 02 · TEAM</span><span>滚轮 / 滑动切换场景</span><a id="team-workspace" href="admin.php" hidden>团队工作台 ↗</a><a id="scene-next" href="#members">成员档案 ↓</a></footer>
+    <footer class="site-footer"><span id="scene-counter">01 / 02 · TEAM</span><span>滚轮 / 滑动切换场景</span><a id="team-workspace" href="account.php" hidden>个人中心 ↗</a><a id="scene-next" href="#members">个人介绍 ↓</a></footer>
     <p class="visually-hidden" id="member-status" role="status" aria-live="polite"></p>
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 

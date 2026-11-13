@@ -1,5 +1,6 @@
 <?php
 /** FOURWARD coursework | Author: 严苑毓 | 学号: 2413682 | Controller: public guestbook API. */
+/** 维护：林子媛 | 学号：2410936 | 静态资料页共享登录状态。 */
 declare(strict_types=1);
 namespace Fourward\team\controllers;
 use Fourward\common\HttpError;
@@ -13,6 +14,7 @@ final class GuestbookController {
 
   public function dispatch(string $action): array {
     $method = $_SERVER['REQUEST_METHOD'];
+    if ($action === 'session' && $method === 'GET') return ['authenticated' => (new \Fourward\common\Auth($this->db))->user() !== null];
     if ($action === 'bootstrap' && $method === 'GET') {
       return [
         'csrfToken' => \csrfToken(), 'mottos' => (new MemberMotto($this->db))->all(),
@@ -42,7 +44,7 @@ final class GuestbookController {
       http_response_code(201);
       return ['id' => $id, 'status' => 'pending', 'notice' => '留言已提交，审核通过后会公开展示。'];
     }
-    if (in_array($action, ['bootstrap', 'messages', 'submit'], true)) throw new HttpError(405, '请求方式不正确。');
+    if (in_array($action, ['bootstrap', 'messages', 'submit', 'session'], true)) throw new HttpError(405, '请求方式不正确。');
     throw new HttpError(404, '接口不存在。');
   }
 }

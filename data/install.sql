@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS users (
   id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
   username VARCHAR(48) NOT NULL UNIQUE,
   password_hash VARCHAR(255) NOT NULL,
-  role ENUM('admin', 'member') NOT NULL DEFAULT 'member',
+  role ENUM('admin', 'member', 'user') NOT NULL DEFAULT 'user',
   member_slug VARCHAR(24) NULL,
   created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -21,14 +21,19 @@ CREATE TABLE IF NOT EXISTS team_mottos (
   CONSTRAINT fk_motto_editor FOREIGN KEY (updated_by) REFERENCES users(id) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- Profile compatibility | Author: 林子媛 | Student ID: 2410936
 CREATE TABLE IF NOT EXISTS team_profiles (
   member_slug VARCHAR(24) NOT NULL PRIMARY KEY,
-  description VARCHAR(240) NOT NULL,
-  school VARCHAR(64) NOT NULL DEFAULT '',
-  role_title VARCHAR(72) NOT NULL DEFAULT '',
-  task VARCHAR(140) NOT NULL DEFAULT '',
+  display_name VARCHAR(40) NOT NULL DEFAULT '',
+  description VARCHAR(280) NOT NULL DEFAULT '',
+  school VARCHAR(80) NOT NULL DEFAULT '',
+  role_title VARCHAR(80) NOT NULL DEFAULT '',
+  biography VARCHAR(280) NOT NULL DEFAULT '',
+  task VARCHAR(280) NOT NULL DEFAULT '',
   tags_json VARCHAR(400) NOT NULL DEFAULT '[]',
-  github VARCHAR(200) NOT NULL DEFAULT '',
+  github_url VARCHAR(255) NOT NULL DEFAULT '',
+  github VARCHAR(255) NOT NULL DEFAULT '',
+  headline VARCHAR(100) NOT NULL DEFAULT '',
   updated_by BIGINT UNSIGNED NULL,
   updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   CONSTRAINT fk_team_profile_target FOREIGN KEY (member_slug) REFERENCES team_mottos(member_slug),
@@ -305,3 +310,35 @@ CREATE TABLE IF NOT EXISTS wc_match_events (
   FOREIGN KEY (batch_id) REFERENCES wc_import_batches(id),
   CHECK (minute <= 150 AND added_minute <= 99)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='球员比赛事件，补时与原分钟文本分别保存';
+
+-- Author: 林子媛 | Student ID: 2410936
+INSERT IGNORE INTO team_profiles (member_slug, display_name, school, role_title, biography, github_url, headline, description, task, tags_json, github) VALUES
+  ('team', 'FOURWARD', '', '', '来自计算机与密码安全领域的四位同学\n在这里认识我们，也给我们的主场留句话', '', '各有热爱\n一起上场', '来自计算机与密码安全领域的四位同学\n在这里认识我们，也给我们的主场留句话', '', '[]', ''),
+  ('lin-ziyuan', '林子媛', '密码与网络空间安全学院', '团队主页 · 页面与交互', '搭建团队展示页面，完善成员切换、视觉和交互效果', 'https://github.com/ACobayashi', '', '', '搭建团队展示页面，完善成员切换、视觉和交互效果', '["密码安全","页面交互"]', 'https://github.com/ACobayashi'),
+  ('yan-yuanyu', '严苑毓', '密码与网络空间安全学院', '团队主页 · 内容与后台', '完善成员信息、内容管理与留言功能，连接前台和后台', 'https://github.com/yanyuanyu', '', '', '完善成员信息、内容管理与留言功能，连接前台和后台', '["密码安全","内容管理"]', 'https://github.com/yanyuanyu'),
+  ('ma-yuxiang', '马禹翔', '计算机学院', '世界杯项目 · 赛事与数据库', '负责比赛、赛程与数据库设计', 'https://github.com/s1nk141', '', '', '负责比赛、赛程与数据库设计', '["计算机","赛事数据"]', 'https://github.com/s1nk141'),
+  ('han-yuchen', '韩羽宸', '计算机学院', '世界杯项目 · 球队与部署', '完善球队数据与部署验证', 'https://github.com/Smile-hyc', '', '', '完善球队数据与部署验证', '["计算机","球队与部署"]', 'https://github.com/Smile-hyc');
+
+CREATE TABLE IF NOT EXISTS coursework_files (
+  id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  owner_slug VARCHAR(24) NOT NULL,
+  assignment_no TINYINT UNSIGNED NOT NULL,
+  title VARCHAR(120) NOT NULL,
+  original_name VARCHAR(255) NOT NULL,
+  stored_name VARCHAR(100) NULL UNIQUE,
+  mime_type VARCHAR(120) NULL,
+  file_size BIGINT UNSIGNED NULL,
+  sha256 CHAR(64) NULL,
+  source_type ENUM('file','link') NOT NULL DEFAULT 'file',
+  external_url VARCHAR(2048) NULL,
+  status ENUM('draft','published') NOT NULL DEFAULT 'draft',
+  uploaded_by BIGINT UNSIGNED NOT NULL,
+  published_at DATETIME NULL,
+  created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  KEY idx_coursework_catalog (status, owner_slug, assignment_no, id),
+  FOREIGN KEY (owner_slug) REFERENCES team_mottos(member_slug),
+  FOREIGN KEY (uploaded_by) REFERENCES users(id),
+  CHECK ((owner_slug='team' AND assignment_no BETWEEN 1 AND 7) OR (owner_slug<>'team' AND assignment_no BETWEEN 1 AND 3)),
+  CONSTRAINT ck_coursework_source CHECK ((source_type='file' AND stored_name IS NOT NULL AND mime_type IS NOT NULL AND file_size IS NOT NULL AND sha256 IS NOT NULL AND external_url IS NULL) OR (source_type='link' AND external_url IS NOT NULL AND stored_name IS NULL AND mime_type IS NULL AND file_size IS NULL AND sha256 IS NULL))
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='作业文件元数据，实际文件位于网站公开目录外';

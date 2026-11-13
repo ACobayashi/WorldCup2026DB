@@ -1,6 +1,7 @@
 <?php
 // 2410933_马禹翔
 /** FOURWARD coursework | Author: 韩羽宸 | 学号: 2410673 | Player panels, positional radar, coverage and rankings acceptance. */
+/** 维护：林子媛 | 学号：2410936 | 按世界杯模块核对表数量，兼容团队模块扩表。 */
 declare(strict_types=1);
 if(PHP_SAPI!=='cli')exit(1);
 require __DIR__.'/../app/common/bootstrap.php';

@@ -74,7 +74,7 @@ $webPidFile = Join-Path $runtimeRoot 'web.pid'
 $webProcess = Get-OwnedProcess $webPidFile $phpExe 'public/router.php'
 if (!$webProcess) {
   if (Test-LocalPort $WebPort) { throw "Port $WebPort is occupied; the existing service will not be touched." }
-  $webProcess = Start-Process -FilePath $phpExe -ArgumentList @('-S', "127.0.0.1:$WebPort", '-t', 'public', 'public/router.php') -WorkingDirectory $projectRoot -WindowStyle Hidden -RedirectStandardOutput (Join-Path $runtimeRoot 'web.out.log') -RedirectStandardError (Join-Path $runtimeRoot 'web.err.log') -PassThru
+  $webProcess = Start-Process -FilePath $phpExe -ArgumentList @('-d', 'upload_max_filesize=50M', '-d', 'post_max_size=55M', '-S', "127.0.0.1:$WebPort", '-t', 'public', 'public/router.php') -WorkingDirectory $projectRoot -WindowStyle Hidden -RedirectStandardOutput (Join-Path $runtimeRoot 'web.out.log') -RedirectStandardError (Join-Path $runtimeRoot 'web.err.log') -PassThru
   $webProcess.Id | Set-Content -LiteralPath $webPidFile
 }
 $ready = $false

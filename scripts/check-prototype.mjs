@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile, access } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { inflateSync } from 'node:zlib';
+import { runInNewContext } from 'node:vm';
 import { members, safeGithubUrl } from '../public/assets/js/members.mjs';
 import { normalizeMessages, createMessage } from '../public/assets/js/messages.mjs';
 import {
@@ -15,6 +16,7 @@ import {
   sceneTransitionKeyframes,
   transitionScenes,
 } from '../public/assets/js/motion.mjs';
+import { normalizeWorldcupTheme, shouldShowWorldcupEntrance, worldcupEntranceKeyframes, worldcupEntranceStrips, WORLDCUP_THEME_KEY, WORLDCUP_REVEAL_TIMING } from '../public/assets/js/worldcup-experience.mjs';
 
 const root = new URL('../', import.meta.url);
 const ids = members.map((member) => member.id);
@@ -155,6 +157,7 @@ const phpEntry = await readFile(new URL('public/index.php', root), 'utf8');
 assert.ok(phpEntry.includes('name="guestbook-mode" content="server"'), 'The PHP entry must retain server-mode guestbook integration');
 assert.ok(html.includes('href="worldcup/"'), 'The homepage must link to the actual match center');
 assert.ok(!html.includes('所属学院'), 'The homepage must not display the removed college-count statistic');
+assert.ok(!html.includes('四个名字，一次共同创作'), 'The removed team introduction tagline must not reappear');
 const app = await readFile(new URL('public/assets/js/app.mjs', root), 'utf8');
 assert.match(app, /createGuestbook\(\{ members, notify, onMottosChange:/, 'Homepage must react to published content from the guestbook bootstrap');
 assert.ok(app.includes('guestbook.init()'));
@@ -233,9 +236,69 @@ const snapshotHtml = await readFile(new URL('public/worldcup/index.html', root),
 assert.ok(snapshotHtml.includes('name="worldcup-mode" content="snapshot"'));
 assert.ok(snapshotHtml.includes('href="./demo.html"'));
 assert.ok(snapshotHtml.includes('href="../#team"'));
+assert.ok(!snapshotHtml.includes('wc-snapshot-disclosure'), 'The removed usage banner must not reappear');
+assert.ok(snapshotHtml.includes('非实时数据'), 'Removing the banner must retain snapshot identity in the footer');
+assert.equal(normalizeWorldcupTheme('dark'), 'dark');
+for (const value of ['light', 'other', '', null, undefined]) assert.equal(normalizeWorldcupTheme(value), 'light');
+assert.equal(shouldShowWorldcupEntrance(), true);
+assert.equal(shouldShowWorldcupEntrance({ navigationType: 'reload' }), true, 'Reloading the module entry must show its cover again');
+const worldcupFrames = worldcupEntranceKeyframes();
+assert.equal(WORLDCUP_REVEAL_TIMING.duration, 2400);
+assert.ok(WORLDCUP_REVEAL_TIMING.duration > MOTION_TIMINGS.sceneEntrance, 'The World Cup reveal must be slower without changing shared homepage timing');
+assert.equal(WORLDCUP_REVEAL_TIMING.easing, 'cubic-bezier(0.65, 0, 0.35, 1)');
+assert.deepEqual(worldcupFrames.reveal, [
+  { transform: 'translate3d(0, 0, 0)', offset: 0 },
+  { transform: 'translate3d(-250px, 0, 0)', offset: .16 },
+  { transform: 'translate3d(-1200px, 0, 0)', offset: 1 },
+], 'The cover must pull left as horizontal strips, not clip as one flat panel');
+assert.equal(worldcupFrames.ball[1].transform, 'translate3d(0, 0, 0)', 'The leading strip must first meet the football');
+assert.equal(worldcupFrames.ball[2].transform, 'translate3d(-950px, 0, 0)');
+assert.equal(worldcupEntranceStrips(.5)[0].delay, 262 * WORLDCUP_REVEAL_TIMING.duration / 1500, 'Strip offsets must slow down with the football to preserve the stagger');
+for (const guideY of [-1, 0, .1, .5, .9, 1, 2]) {
+  const strips = worldcupEntranceStrips(guideY);
+  assert.equal(strips.length, 9);
+  assert.equal(strips[0].top, 0);
+  assert.equal(strips.at(-1).bottom, 1);
+  assert.equal(strips.filter((strip) => strip.leading).length, 1);
+  assert.equal(strips.find((strip) => strip.leading).delay, 0, 'The football must lead the shortest remaining strip');
+  assert.ok(new Set(strips.map((strip) => strip.bottom - strip.top)).size > 3, 'Strip heights must be intentionally uneven');
+  assert.ok(new Set(strips.map((strip) => strip.delay)).size > 3, 'The reveal edge must remain staggered');
+  strips.forEach((strip, index) => {
+    assert.ok(strip.bottom > strip.top);
+    assert.ok(strip.delay >= 0 && strip.delay < WORLDCUP_REVEAL_TIMING.duration);
+    if (index > 0) assert.equal(strip.top, strips[index - 1].bottom, 'Strips must completely cover the entrance');
+  });
+}
+assert.equal(worldcupFrames.incoming[0].transform, 'translate3d(6vw, 0, 0)');
+assert.equal(worldcupFrames.title[0].transform, 'translateX(-108%)');
+assert.equal(worldcupFrames.copy[0].transform, 'translate3d(-24px, 0, 0)');
+for (const options of [{ search: '?view=teams' }, { hash: '#single-performance' }, { navigationType: 'back_forward' }]) {
+  assert.equal(shouldShowWorldcupEntrance(options), false, 'Deep links and browser history must remain directly accessible');
+}
+const themeBootstrap = await readFile(new URL('public/assets/js/worldcup-theme.js', root), 'utf8');
+for (const value of ['light', 'dark', 'invalid', null]) {
+  const document = { documentElement: { dataset: {} } };
+  runInNewContext(themeBootstrap, { document, localStorage: { getItem(key) { assert.equal(key, WORLDCUP_THEME_KEY); return value; } } });
+  assert.equal(document.documentElement.dataset.wcTheme, normalizeWorldcupTheme(value));
+}
+const storageDisabledDocument = { documentElement: { dataset: {} } };
+runInNewContext(themeBootstrap, { document: storageDisabledDocument, get localStorage() { throw new Error('Storage is disabled'); } });
+assert.equal(storageDisabledDocument.documentElement.dataset.wcTheme, 'light');
+const serverLayout = await readFile(new URL('app/worldcup/views/layout.php', root), 'utf8');
+for (const filename of ['worldcup-theme.js', 'worldcup-experience.mjs', 'worldcup-experience.css']) {
+  assert.ok(snapshotHtml.includes(filename) && serverLayout.includes(filename), 'Static and server panels must share the same theme/entrance assets');
+  await access(new URL(`public/assets/${filename.endsWith('.css') ? 'css' : 'js'}/${filename}`, root));
+}
+for (const filename of ['stadium-night.jpg', 'football-photo.png']) await access(new URL(`public/assets/images/worldcup/${filename}`, root));
+const worldcupExperience = await readFile(new URL('public/assets/js/worldcup-experience.mjs', root), 'utf8');
+assert.ok(worldcupExperience.includes("'回到首页'"));
+assert.ok(!worldcupExperience.includes('重播开场'));
+assert.ok(worldcupExperience.includes("choice.title = `${label}主题`"), 'Icon-only choices must retain accessible theme labels and tooltips');
+assert.ok(worldcupExperience.includes("overlay.inert = true"), 'Decorative strip copies must never become interactive');
+assert.ok(worldcupExperience.includes("surface.querySelectorAll('[id]')"), 'Strip copies must not introduce duplicate IDs');
 for (const view of ['matches', 'teams', 'leaders', 'compare', 'team_compare', 'groups']) assert.ok(snapshotHtml.includes(`data-view="${view}"`));
-for (const filename of ['public/assets/js/worldcup.mjs', 'public/assets/js/worldcup-snapshot.mjs', 'public/assets/js/common.mjs', 'public/assets/js/guestbook.mjs', 'public/assets/js/workspace.mjs']) {
+for (const filename of ['public/assets/js/worldcup.mjs', 'public/assets/js/worldcup-snapshot.mjs', 'public/assets/js/worldcup-experience.mjs', 'public/assets/js/common.mjs', 'public/assets/js/guestbook.mjs', 'public/assets/js/workspace.mjs']) {
   assert.ok(!(await readFile(new URL(filename, root), 'utf8')).includes('.innerHTML'));
 }
 
-console.log(`Prototype checks passed: team profiles, safe messages, accessible motion, assets, match feed, Beijing dates, fixture filters, support choices, empty states, and demo labels (${fileURLToPath(root)}).`);
+console.log(`Prototype checks passed: team profiles, safe messages, accessible motion, assets, match feed, Beijing dates, fixture filters, support choices, World Cup themes/entrance guards, empty states, and demo labels (${fileURLToPath(root)}).`);
