@@ -16,7 +16,7 @@ require __DIR__.'/helpers.php';
     <link rel="stylesheet" href="../assets/css/common.css?v=1">
     <link rel="stylesheet" href="../assets/css/worldcup-shell.css?v=2">
     <link rel="stylesheet" href="../assets/css/worldcup-data.css?v=10">
-    <link rel="stylesheet" href="../assets/css/worldcup-charts.css?v=3">
+    <link rel="stylesheet" href="../assets/css/worldcup-charts.css?v=4">
     <?php if($section==='matches'): ?><link rel="stylesheet" href="../assets/css/worldcup-formation.css?v=1"><?php endif; ?>
     <link rel="stylesheet" href="../assets/css/worldcup-experience.css?v=8">
     <link rel="stylesheet" href="../assets/css/site-navigation.css?v=1">
@@ -24,7 +24,7 @@ require __DIR__.'/helpers.php';
     <script type="module" src="../assets/js/player-portraits.mjs?v=1"></script>
     <script type="module" src="../assets/js/player-compare.mjs?v=3"></script>
     <script type="module" src="../assets/js/worldcup-server-filters.mjs"></script>
-    <script type="module" src="../assets/js/worldcup-charts.mjs?v=4"></script>
+    <script type="module" src="../assets/js/worldcup-charts.mjs?v=5"></script>
   </head>
   <body class="wc-app">
     <a class="skip-link" href="#main">跳到主要内容</a>

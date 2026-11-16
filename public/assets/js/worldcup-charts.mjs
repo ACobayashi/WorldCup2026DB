@@ -1,8 +1,4 @@
 /** FOURWARD coursework | 韩羽宸 2410673 | Interactive charts shared by PHP and the World Cup snapshot. */
-const blue = '#72b7ff';
-const orange = '#ffb57b';
-const muted = '#b4c4df';
-const gridLine = '#a7bdeb29';
 const libraryUrl = new URL('../vendor/echarts/echarts.min.js', import.meta.url);
 const mountSelector = '[data-wc-chart]';
 let library;
@@ -75,22 +71,40 @@ function prepare(root, title, hint) {
   return { canvas, toolbar, status, detail };
 }
 
-function baseOptions(description) {
+function baseOptions(description, color) {
   return {
     animation: !matchMedia('(prefers-reduced-motion: reduce)').matches,
     animationDuration: 360,
     animationDurationUpdate: 280,
     aria: { enabled: true, label: { description } },
-    textStyle: { color: muted, fontFamily: 'system-ui, sans-serif' },
+    textStyle: { color, fontFamily: 'system-ui, sans-serif' },
   };
 }
 
-const categoryAxis = { type: 'category', axisLabel: { color: muted, hideOverlap: true }, axisLine: { lineStyle: { color: gridLine } }, axisTick: { show: false } };
-const valueAxis = { type: 'value', axisLabel: { color: muted }, splitLine: { lineStyle: { color: gridLine } } };
-const tooltipStyle = {
-  renderMode: 'richText', confine: true, transitionDuration: 0.12,
-  backgroundColor: '#132139', borderColor: '#6087b5', textStyle: { color: '#f1f6ff', fontSize: 12 },
-};
+function chartColors(canvas) {
+  const style = getComputedStyle(canvas);
+  const color = (name) => style.getPropertyValue(`--wc-chart-${name}`).trim();
+  return {
+    blue: color('blue'), orange: color('orange'), ink: color('ink'), muted: color('muted'),
+    grid: color('grid'), band: color('band'), radarBand: color('radar-band'),
+    tooltip: { renderMode: 'richText', confine: true, transitionDuration: 0.12,
+      backgroundColor: color('tooltip'), borderColor: color('grid'), textStyle: { color: color('ink'), fontSize: 12 },
+    },
+    shadow: { type: 'shadow', shadowStyle: { color: color('hover') } },
+  };
+}
+
+function axes({ muted, grid }) {
+  return {
+    categoryAxis: { type: 'category', axisLabel: { color: muted, hideOverlap: true }, axisLine: { lineStyle: { color: grid } }, axisTick: { show: false } },
+    valueAxis: { type: 'value', axisLabel: { color: muted }, splitLine: { lineStyle: { color: grid } } },
+  };
+}
+
+function renderOnThemeChange(render) {
+  render();
+  new MutationObserver(render).observe(document.documentElement, { attributeFilter: ['data-wc-theme'] });
+}
 
 function setup(echarts, canvas) {
   const chart = echarts.init(canvas, null, { renderer: 'svg' });
@@ -113,7 +127,6 @@ function radar(root, data, echarts) {
   hoverTip.hidden = true;
   hoverTip.setAttribute('aria-hidden', 'true');
   canvas.append(hoverTip);
-  const seriesColors = players.map((player) => player.side === 1 ? orange : blue);
   const names = players.map((player) => player.name);
   // Keep identities separate when two different players have the same display name.
   const seriesNames = names.map((name, index) => names.filter((n) => n === name).length > 1 ? `${name}（${index === 0 ? 'A' : 'B'}）` : name);
@@ -131,25 +144,29 @@ function radar(root, data, echarts) {
   };
   const controls = chips(data.axes, '能力项', selectAxis);
   toolbar.append(controls.group);
-  chart.setOption({
-    ...baseOptions('六项懂球帝能力评分，统一使用零到一百分。'),
-    color: seriesColors,
-    legend: { top: 0, textStyle: { color: muted }, data: seriesNames },
-    radar: {
-      center: ['50%', `${centerYRatio * 100}%`], radius: `${radiusRatio * 100}%`, startAngle: 90, splitNumber: 5, triggerEvent: true,
-      indicator: data.axes.map(([, name]) => ({ name, max: 100 })),
-      axisName: { color: muted, rich: { selected: { color: '#fff', fontWeight: 700 } } },
-      axisLine: { lineStyle: { color: gridLine } }, splitLine: { lineStyle: { color: gridLine } },
-      splitArea: { areaStyle: { color: ['#1a2b40', '#1e3147'] } },
-    },
-    series: [{
-      type: 'radar', symbol: 'circle', symbolSize: 5,
-      data: players.map((player, index) => ({
-        name: seriesNames[index], value: data.axes.map(([key]) => number(player.values[key])),
-        lineStyle: { color: seriesColors[index], width: 2 }, itemStyle: { color: seriesColors[index] },
-        areaStyle: { color: seriesColors[index], opacity: 0.16 },
-      })),
-    }],
+  renderOnThemeChange(() => {
+    const { blue, orange, muted, ink, grid, band, radarBand } = chartColors(canvas);
+    const seriesColors = players.map((player) => player.side === 1 ? orange : blue);
+    chart.setOption({
+      ...baseOptions('六项懂球帝能力评分，统一使用零到一百分。', muted),
+      color: seriesColors,
+      legend: { top: 0, textStyle: { color: muted }, data: seriesNames },
+      radar: {
+        center: ['50%', `${centerYRatio * 100}%`], radius: `${radiusRatio * 100}%`, startAngle: 90, splitNumber: 5, triggerEvent: true,
+        indicator: data.axes.map(([, name]) => ({ name, max: 100 })),
+        axisName: { color: muted, rich: { selected: { color: ink, fontWeight: 700 } } },
+        axisLine: { lineStyle: { color: grid } }, splitLine: { lineStyle: { color: grid } },
+        splitArea: { areaStyle: { color: [radarBand, band] } },
+      },
+      series: [{
+        type: 'radar', symbol: 'circle', symbolSize: 5,
+        data: players.map((player, index) => ({
+          name: seriesNames[index], value: data.axes.map(([key]) => number(player.values[key])),
+          lineStyle: { color: seriesColors[index], width: 2 }, itemStyle: { color: seriesColors[index] },
+          areaStyle: { color: seriesColors[index], opacity: 0.16 },
+        })),
+      }],
+    });
   });
   const axisKey = (name) => data.axes.find(([, label]) => label === name?.replace(/^\{selected\|(.+)\}$/, '$1'))?.[0];
   chart.on('click', 'radar', ({ name }) => {
@@ -203,17 +220,20 @@ function playerMatches(root, data, echarts) {
   const { select, wrapper } = picker('逐场统计项', metrics.map(([key, label]) => [key, label]));
   toolbar.append(wrapper);
   const render = () => {
+    const colors = chartColors(canvas);
+    const { blue, orange, muted, tooltip, shadow } = colors;
+    const { categoryAxis, valueAxis } = axes(colors);
     const [key, label, unit = ''] = metrics.find(([key]) => key === select.value);
     const values = data.games.map((game) => number(game.metrics[key]));
     const selectedIndex = data.games.findIndex((game) => String(game.id) === activeId());
     const summary = (index) => `${data.games[index].opponent} · ${data.games[index].stage} · ${data.games[index].appearance}\n${label} ${format(values[index], unit)}`;
     status.textContent = selectedIndex < 0 ? '' : `已选 ${summary(selectedIndex).replace('\n', ' · ')}`;
     chart.setOption({
-      ...baseOptions('横轴为该球员球队的比赛，纵轴为选中的单场指标。'),
+      ...baseOptions('横轴为该球员球队的比赛，纵轴为选中的单场指标。', muted),
       grid: { top: 32, bottom: 54, left: 48, right: 16 },
       xAxis: { ...categoryAxis, data: data.games.map((game) => game.opponent), axisLabel: { ...categoryAxis.axisLabel, width: 62, overflow: 'truncate', interval: 'auto' } },
       yAxis: { ...valueAxis, minInterval: key === 'goals_prevented' ? 0.1 : 1 },
-      tooltip: { ...tooltipStyle, trigger: 'axis', axisPointer: { type: 'shadow' }, formatter: (items) => items.length ? summary(items[0].dataIndex) : '' },
+      tooltip: { ...tooltip, trigger: 'axis', axisPointer: shadow, formatter: (items) => items.length ? summary(items[0].dataIndex) : '' },
       series: [
         { type: 'bar', name: label, barMaxWidth: 42, cursor: 'pointer', data: values.map((value, index) => ({ value, itemStyle: { color: index === selectedIndex ? orange : blue } })), itemStyle: { borderRadius: [5, 5, 0, 0] }, emphasis: { focus: 'self' } },
         { type: 'scatter', name: '零值', symbolSize: 9, cursor: 'pointer', data: values.map((value, index) => value === 0 ? { value: [index, 0], itemStyle: { color: index === selectedIndex ? orange : blue } } : null) },
@@ -240,7 +260,7 @@ function playerMatches(root, data, echarts) {
   matchSelect.addEventListener('change', (event) => {
     if (switchMatch(activeId())) event.preventDefault();
   });
-  render();
+  renderOnThemeChange(render);
 }
 
 function comparison(root, data, echarts) {
@@ -262,33 +282,39 @@ function comparison(root, data, echarts) {
     const maximum = Math.max(metric.unit === '%' ? 100 : 1, ...values.map(Math.abs));
     return { ...metric, values, lengths: values.map((value) => value == null ? 0 : 100 * value / maximum) };
   });
-  const overviewOptions = {
-    ...baseOptions('每行比较双方的同一项统计，柱长按该行单独缩放，标签显示原始数值。'),
-    grid: { top: 0, bottom: 0, left: 96, right: 52 },
-    xAxis: { type: 'value', max: 100, show: false },
-    yAxis: {
-      ...categoryAxis, inverse: true, data: overview.map(({ label }) => label), triggerEvent: true,
-      axisLabel: { ...categoryAxis.axisLabel, interval: 0, width: 86, overflow: 'truncate' },
-      splitArea: { show: true, areaStyle: { color: ['#ffffff05', 'transparent'] } },
-    },
-    tooltip: {
-      ...tooltipStyle, trigger: 'axis', axisPointer: { type: 'shadow' },
-      formatter: (items) => {
-        const metric = overview[items[0]?.dataIndex];
-        return metric ? [metric.label, ...resultsFor(metric, metric.values, metric.unit)].join('\n') : '';
+  const renderOverview = (colors) => {
+    const { blue, orange, muted, ink, band, tooltip, shadow } = colors;
+    const { categoryAxis } = axes(colors);
+    chart.setOption({
+      ...baseOptions('每行比较双方的同一项统计，柱长按该行单独缩放，标签显示原始数值。', muted),
+      grid: { top: 0, bottom: 0, left: 96, right: 52 },
+      xAxis: { type: 'value', max: 100, show: false },
+      yAxis: {
+        ...categoryAxis, inverse: true, data: overview.map(({ label }) => label), triggerEvent: true,
+        axisLabel: { ...categoryAxis.axisLabel, interval: 0, width: 86, overflow: 'truncate' },
+        splitArea: { show: true, areaStyle: { color: [band, 'transparent'] } },
       },
-    },
-    series: [blue, orange].map((color, side) => ({
-      type: 'bar', name: data.names[side], barMaxWidth: 12, cursor: 'pointer',
-      data: overview.map(({ lengths }) => lengths[side]),
-      itemStyle: { color, borderRadius: 4 },
-      label: {
-        show: true, position: 'right', color: '#eff6ff', fontSize: 11,
-        formatter: ({ dataIndex }) => format(overview[dataIndex].values[side], overview[dataIndex].unit),
+      tooltip: {
+        ...tooltip, trigger: 'axis', axisPointer: shadow,
+        formatter: (items) => {
+          const metric = overview[items[0]?.dataIndex];
+          return metric ? [metric.label, ...resultsFor(metric, metric.values, metric.unit)].join('\n') : '';
+        },
       },
-    })),
+      series: [blue, orange].map((color, side) => ({
+        type: 'bar', name: data.names[side], barMaxWidth: 12, cursor: 'pointer',
+        data: overview.map(({ lengths }) => lengths[side]),
+        itemStyle: { color, borderRadius: 4 },
+        label: {
+          show: true, position: 'right', color: ink, fontSize: 11,
+          formatter: ({ dataIndex }) => format(overview[dataIndex].values[side], overview[dataIndex].unit),
+        },
+      })),
+    }, { notMerge: true });
   };
-  const renderSingle = (metric) => {
+  const renderSingle = (metric, colors) => {
+    const { blue, orange, muted, ink, tooltip } = colors;
+    const { categoryAxis, valueAxis } = axes(colors);
     const average = canAverage(metric) && mode === 'average';
     const unit = average ? `${metric.unit ?? ''}/场` : metric.unit;
     const values = metric.values.map((value, index) => {
@@ -299,28 +325,29 @@ function comparison(root, data, echarts) {
     const difference = fullCoverage(metric) && values.every((value) => value != null) ? ` · 相差 ${format(Math.abs(values[0] - values[1]), metric.unit === '%' ? ' 个百分点' : unit)}` : '';
     status.textContent = `${metric.label}${average ? '（场均）' : ''} · ${results.join(' / ')}${difference}`;
     chart.setOption({
-      ...baseOptions('蓝色和橙色代表两个对比对象，柱形高度使用同一指标的原始单位。'),
+      ...baseOptions('蓝色和橙色代表两个对比对象，柱形高度使用同一指标的原始单位。', muted),
       grid: { top: 36, bottom: 46, left: 55, right: 20 },
       xAxis: { ...categoryAxis, data: data.names, axisLabel: { ...categoryAxis.axisLabel, width: 120, overflow: 'truncate' } },
       yAxis: { ...valueAxis, max: unit === '%' ? 100 : undefined, axisLabel: { ...valueAxis.axisLabel, formatter: (value) => format(value, unit === '%' ? '%' : '') } },
-      tooltip: { ...tooltipStyle, trigger: 'item', formatter: ({ dataIndex }) => `${metric.label}\n${results[dataIndex]}` },
+      tooltip: { ...tooltip, trigger: 'item', formatter: ({ dataIndex }) => `${metric.label}\n${results[dataIndex]}` },
       series: [{ type: 'bar', barMaxWidth: 92, data: values.map((value, index) => ({ value, itemStyle: { color: index === 0 ? blue : orange } })),
-        itemStyle: { borderRadius: [6, 6, 0, 0] }, label: { show: true, position: 'top', color: '#eff6ff', formatter: ({ dataIndex }) => format(values[dataIndex], unit) } }],
+        itemStyle: { borderRadius: [6, 6, 0, 0] }, label: { show: true, position: 'top', color: ink, formatter: ({ dataIndex }) => format(values[dataIndex], unit) } }],
     }, { notMerge: true });
   };
   const render = () => {
     const metric = metrics.find(({ key }) => key === select.value);
+    const colors = chartColors(canvas);
     modes.group.hidden = !metric || !canAverage(metric);
     if (metric) canvas.style.removeProperty('--wc-chart-height');
     else canvas.style.setProperty('--wc-chart-height', `${overview.length * 38}px`);
     chart.resize();
     if (metric) {
       detail.textContent = '双方共用原始单位和刻度。选择「全部指标」可返回总览。';
-      renderSingle(metric);
+      renderSingle(metric, colors);
     } else {
       status.textContent = '';
       detail.textContent = '每行使用自己的刻度，数值标在柱旁。点击指标名或柱形可查看单项。';
-      chart.setOption(overviewOptions, { notMerge: true });
+      renderOverview(colors);
     }
   };
   const modes = chips([['total', '赛事总量'], ['average', '场均']], '统计口径', (value) => {
@@ -337,7 +364,7 @@ function comparison(root, data, echarts) {
     select.value = metric.key;
     render();
   });
-  render();
+  renderOnThemeChange(render);
   root.parentElement.querySelector('[data-wc-chart-fallback]')?.setAttribute('hidden', '');
   root.parentElement.querySelector('[data-wc-raw-table]')?.removeAttribute('open');
 }

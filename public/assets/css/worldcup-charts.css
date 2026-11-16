@@ -1,20 +1,50 @@
 /* FOURWARD coursework | 韩羽宸 2410673 | Shared interactive chart controls and layout. */
 .wc-chart {
+  --wc-chart-ink: #1b3d69;
+  --wc-chart-muted: #466487;
+  --wc-chart-grid: #abc8ed;
+  --wc-chart-blue: #1764dc;
+  --wc-chart-orange: #bd5b25;
+  --wc-chart-band: #e6f0fc;
+  --wc-chart-radar-band: #f3f8ff;
+  --wc-chart-hover: #075be812;
+  --wc-chart-control: #fff;
+  --wc-chart-hover-control: #eaf3ff;
+  --wc-chart-active: #d6e7ff;
+  --wc-chart-active-border: #609df0;
+  --wc-chart-tooltip: #fff;
+  --wc-chart-background: linear-gradient(140deg, #fff, #f1f7ff);
   min-width: 0;
   margin: 14px 0 20px;
   padding: clamp(10px, 2vw, 20px);
-  border: 1px solid #90b5e92b;
+  border: 1px solid var(--wc-chart-grid);
   border-radius: 14px;
-  background: linear-gradient(145deg, #1b2e46, #121f32);
+  background: var(--wc-chart-background);
+}
+:root[data-wc-theme="dark"] .wc-chart {
+  --wc-chart-ink: #e4eeff;
+  --wc-chart-muted: #b4c4df;
+  --wc-chart-grid: #415570;
+  --wc-chart-blue: #72b7ff;
+  --wc-chart-orange: #ffb57b;
+  --wc-chart-band: #ffffff05;
+  --wc-chart-radar-band: #1e3147;
+  --wc-chart-hover: #a7bdeb20;
+  --wc-chart-control: #22354e;
+  --wc-chart-hover-control: #304b70;
+  --wc-chart-active: #285080;
+  --wc-chart-active-border: #7eb8ff;
+  --wc-chart-tooltip: #132139;
+  --wc-chart-background: linear-gradient(145deg, #1b2e46, #121f32);
 }
 .wc-chart[hidden], [data-wc-chart-fallback][hidden], .wc-chart-chips[hidden] { display: none !important; }
 .wc-chart-toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin: 0 0 14px; }
-.wc-chart-picker { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 9px; color: #c6d6ee; font-size: 13px; }
-.wc-chart-picker select { max-width: 100%; border: 1px solid #577499; border-radius: 8px; background: #20354e; color: #edf5ff; padding: 8px 10px; font: inherit; }
+.wc-chart-picker { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 9px; color: var(--wc-chart-muted); font-size: 13px; }
+.wc-chart-picker select { max-width: 100%; border: 1px solid var(--wc-chart-grid); border-radius: 8px; background: var(--wc-chart-control); color: var(--wc-chart-ink); padding: 8px 10px; font: inherit; }
 .wc-chart-chips { display: flex; flex-wrap: wrap; gap: 6px; }
-.wc-chart-chips button { padding: 7px 11px; background: #22354e; border: 1px solid #50688c; border-radius: 8px; color: #cedcf1; font: inherit; font-size: 12px; cursor: pointer; }
-.wc-chart-chips button:hover { background: #304b70; }
-.wc-chart-chips button[aria-pressed="true"] { color: #f4f9ff; border-color: #7eb8ff; background: #285080; }
+.wc-chart-chips button { padding: 7px 11px; background: var(--wc-chart-control); border: 1px solid var(--wc-chart-grid); border-radius: 8px; color: var(--wc-chart-ink); font: inherit; font-size: 12px; cursor: pointer; }
+.wc-chart-chips button:hover { background: var(--wc-chart-hover-control); }
+.wc-chart-chips button[aria-pressed="true"] { border-color: var(--wc-chart-active-border); background: var(--wc-chart-active); }
 .wc-chart-canvas { width: 100%; height: var(--wc-chart-height, 268px); min-width: 0; }
 [data-wc-chart="radar"] .wc-chart-canvas { position: relative; height: clamp(248px, 32vw, 325px); }
 .wc-radar-hover-tip {
@@ -23,19 +53,20 @@
   max-width: 100%;
   box-sizing: border-box;
   padding: 8px 10px;
-  border: 1px solid #6087b5;
+  border: 1px solid var(--wc-chart-grid);
   border-radius: 6px;
-  background: #132139;
-  color: #f1f6ff;
+  background: var(--wc-chart-tooltip);
+  color: var(--wc-chart-ink);
   font-size: 12px;
   line-height: 1.55;
   overflow-wrap: anywhere;
   pointer-events: none;
 }
-.wc-chart-readout { color: #e4eeff; font-size: 14px; font-weight: 600; line-height: 1.6; margin: 7px 0; overflow-wrap: anywhere; }
+.wc-chart-readout { color: var(--wc-chart-ink); font-size: 14px; font-weight: 600; line-height: 1.6; margin: 7px 0; overflow-wrap: anywhere; }
 .wc-chart-readout:empty { display: none; }
-.wc-chart-hint { color: #a7bbd6; font-size: 12px; line-height: 1.6; margin: 0; }
+.wc-chart-hint { color: var(--wc-chart-muted); font-size: 12px; line-height: 1.6; margin: 0; }
 [data-wc-raw-table] summary { color: #b6d6ff; cursor: pointer; padding: 8px 0; }
+:root[data-wc-theme="light"] [data-wc-raw-table] summary { color: var(--wc-ui-accent); }
 @media (max-width: 600px) {
   .wc-chart-canvas { height: var(--wc-chart-height, 235px); }
   .wc-chart-chips button { min-height: 36px; }

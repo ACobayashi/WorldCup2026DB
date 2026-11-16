@@ -2,7 +2,7 @@ import {
   createSnapshotModel, positions, metrics, rankings, eventLabels, statusLabels, abilityLabels,
   displayNumber as number, matchScore, kickoffLabel, searchMatches,
 } from './worldcup-snapshot-data.mjs?v=2';
-import { chartMount, mountWorldCupCharts } from './worldcup-charts.mjs?v=4';
+import { chartMount, mountWorldCupCharts } from './worldcup-charts.mjs?v=5';
 import { bindFilters } from './worldcup-filters.mjs';
 import { bindComparisonSearch } from './player-compare.mjs?v=3';
 
