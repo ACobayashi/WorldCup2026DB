@@ -6,14 +6,19 @@ declare(strict_types=1);
 <?php if (isset($data['match'])): $match = $data['match']; ?>
   <?php require __DIR__.'/match-detail.php'; ?>
 <?php else: ?>
-  <form class="wc-filters" method="get">
+  <form class="wc-filters" method="get" data-wc-auto-filter>
     <input type="hidden" name="view" value="matches">
+    <?php foreach (['team_id','stage_id','group_id','page_size'] as $key): if (!isset($input[$key])) continue; ?>
+      <input type="hidden" name="<?= e($key) ?>" value="<?= e($input[$key]) ?>">
+    <?php endforeach; ?>
     <label>搜索球队<input type="search" name="q" maxlength="80" placeholder="中文名、英文名或球队代码" value="<?= e($input['q'] ?? '') ?>"></label>
     <label>赛事阶段<select name="phase"><?php foreach (['all'=>'全部比赛','group'=>'小组赛','knockout'=>'淘汰赛'] as $key=>$label): ?><option value="<?= e($key) ?>" <?= ($input['phase'] ?? 'all') === $key ? 'selected' : '' ?>><?= e($label) ?></option><?php endforeach; ?></select></label>
     <label>比赛状态<select name="status"><?php foreach (['all' => '全部状态'] + $statusLabels as $key => $label): ?><option value="<?= e($key) ?>" <?= ($input['status'] ?? 'all') === $key ? 'selected' : '' ?>><?= e($label) ?></option><?php endforeach; ?></select></label>
     <label>比赛日期 / 北京时间<input type="date" name="date" value="<?= e($input['date'] ?? '') ?>"></label>
-    <button class="glass-button" type="submit">筛选赛程</button><a class="wc-back" href="<?= e($url('matches')) ?>">重置</a>
+    <noscript><button class="glass-button" type="submit">筛选赛程</button></noscript>
+    <a class="wc-back" href="<?= e($url('matches')) ?>">重置</a>
   </form>
+  <div data-wc-filter-results>
   <?php if (!$data['items']): ?>
     <section class="wc-empty"><p class="wc-eyebrow">MATCH CENTER</p><h2>暂无符合条件的比赛</h2><p><?= $overview['counts']['matches'] ? '试试其他状态或日期。' : '赛事数据尚未导入，导入后将在这里展示赛程与赛果。' ?></p></section>
   <?php else: ?>
@@ -23,4 +28,5 @@ declare(strict_types=1);
       <?php endforeach; ?>
     </div>
   <?php endif; ?>
+  </div>
 <?php endif; ?>

@@ -38,11 +38,7 @@ $stats=[];foreach ($match['statistics'] as $row) $stats[$row['team_id']]=$row;
       ?><div class="wc-stat-row"><div><b><?= e($number($home,$suffix)) ?></b><span><?= e($label) ?></span><b><?= e($number($away,$suffix)) ?></b></div><div class="wc-stat-bar<?= $width===null ? ' is-unknown' : '' ?>"><?php if ($width!==null): ?><span style="width:<?= e($width) ?>%"></span><?php endif; ?></div></div><?php endforeach; ?>
       <p class="wc-muted wc-fineprint">— 表示暂无数据。控球率不含争夺中比例，双方之和可能不足 100%。</p>
     </section>
-    <section class="wc-panel" id="timeline"><div class="wc-section-heading"><div><p class="wc-eyebrow">MATCH TIMELINE</p><h2>比赛事件</h2></div><span class="wc-muted"><?= count($match['events']) ?> 条</span></div>
-      <?php if (!$match['events']): ?><p class="wc-muted">暂无事件记录。</p><?php else: ?><ol class="wc-timeline"><?php foreach ($match['events'] as $event): ?>
-        <li class="wc-event wc-event-<?= e($event['event_type']) ?>"><time><?= e($event['minute_label']) ?></time><span class="wc-event-icon" aria-hidden="true"><?= e($eventIcons[$event['event_type']]??'·') ?></span><div><b><?= e($eventLabels[$event['event_type']]??$event['event_type']) ?></b><span><?= e($event['name']) ?></span><small><?= e($event['team_id']===$match['home_team_id'] ? $match['home_name'] : $match['away_name']) ?><?= !$event['appeared'] ? ' · 替补席' : '' ?></small></div></li>
-      <?php endforeach; ?></ol><?php endif; ?><p class="wc-muted wc-fineprint">保留来源分钟标记；乌龙球记于实施球员名下，进球计入对手。</p>
-    </section>
+    <?php require __DIR__.'/match-timeline.php'; ?>
   </aside>
 </div>
 <details class="wc-panel wc-provenance"><summary>数据来源与本站支持</summary><p>比赛与名单基于 FIFA 本届赛事数据，统计及事件整理自 FIFA Training Centre 赛后报告。阵型与首发站位来自已核对的懂球帝本届赛事阵容，位置为阵型示意。未知字段保留为空。</p><p class="wc-muted">比赛来源：<?= e($match['source_url']??'暂无') ?></p><?php if($match['formation']): ?><p class="wc-muted">阵型来源：<?= e($match['formation']['source_url']) ?></p><?php endif; ?><p>本站支持 <?= e($match['home_support']) ?> : <?= e($match['away_support']) ?>。支持功能尚未开放，支持率不代表获胜概率。</p></details>
