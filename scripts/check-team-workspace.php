@@ -38,7 +38,14 @@ try {
   verify($row['password_hash'] !== $password && password_verify($password, $row['password_hash']), 'password is hashed');
   rejects(fn() => $accounts->register('check-user-' . $suffix, $password, $password), 409);
   foreach (['a', 'invalid name', '<script>', str_repeat('a', 49)] as $name) rejects(fn() => $accounts->register($name, $password, $password), 422);
-  foreach (['short', str_repeat('a', 73), "long-password\0"] as $invalid) rejects(fn() => $accounts->register('check-' . $suffix, $invalid, $invalid), 422);
+  foreach (['', str_repeat('a', 73), str_repeat('密', 25), "long-password\0"] as $invalid) rejects(fn() => $accounts->register('check-' . $suffix, $invalid, $invalid), 422);
+  foreach (['1', 'short', str_repeat('a', 11), str_repeat('a', 72), '短', str_repeat('密', 24)] as $number => $candidatePassword) {
+    $candidateId = $accounts->register('check-short-' . $suffix . '-' . $number, $candidatePassword, $candidatePassword);
+    $query->execute([$candidateId]);
+    $candidate = $query->fetch();
+    verify($candidate['role'] === 'user' && password_verify($candidatePassword, $candidate['password_hash']), 'nonempty passwords within the hash limit are accepted and hashed');
+  }
+  rejects(fn() => $accounts->register('check-mismatch-' . $suffix, '1', '2'), 422);
   rejects(fn() => $accounts->register('check-' . $suffix, $password, 'different'), 422);
   $auth = new Auth($db);
   $beforeCsrf = csrfToken();

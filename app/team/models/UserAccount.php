@@ -10,7 +10,7 @@ final class UserAccount {
   public function register(string $username, string $password, string $confirmation): int {
     $username = trim($username);
     if (!preg_match('/^[A-Za-z0-9_-]{3,48}$/D', $username)) throw new HttpError(422, '账号需为 3–48 位英文字母、数字、下划线或短横线。');
-    if (strlen($password) < 12 || strlen($password) > 72 || str_contains($password, "\0")) throw new HttpError(422, '密码需为 12–72 字节，且不能包含空字符。');
+    if ($password === '' || strlen($password) > 72 || str_contains($password, "\0")) throw new HttpError(422, '密码不能为空，最多 72 字节，且不能包含空字符。');
     if ($password !== $confirmation) throw new HttpError(422, '两次输入的密码不一致。');
     try {
       $query = $this->db->prepare("INSERT INTO users (username, password_hash, role, member_slug) VALUES (?, ?, 'user', NULL)");

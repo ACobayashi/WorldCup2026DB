@@ -22,7 +22,7 @@ $roleLabels = ['admin' => '管理员', 'member' => '团队成员', 'user' => '�
     <form method="post" action="account.php?<?= e(http_build_query(['mode' => $mode])) ?>" class="portal-form">
       <input type="hidden" name="action" value="<?= e($mode) ?>"><input type="hidden" name="csrf" value="<?= e(csrfToken()) ?>"><input type="hidden" name="return" value="<?= e($returnPath) ?>">
       <label>账号<input name="username" autocomplete="username" maxlength="48" value="<?= e($username) ?>" required><?php if ($mode === 'register'): ?><small>3–48 位英文字母、数字、下划线或短横线</small><?php endif; ?></label>
-      <label>密码<input name="password" type="password" autocomplete="<?= $mode === 'register' ? 'new-password' : 'current-password' ?>" maxlength="<?= $mode === 'register' ? '72' : '256' ?>" required><?php if ($mode === 'register'): ?><small>12–72 字节</small><?php endif; ?></label>
+      <label>密码<input name="password" type="password" autocomplete="<?= $mode === 'register' ? 'new-password' : 'current-password' ?>" maxlength="<?= $mode === 'register' ? '72' : '256' ?>" required><?php if ($mode === 'register'): ?><small>最多 72 字节</small><?php endif; ?></label>
       <?php if ($mode === 'register'): ?><label>确认密码<input name="password_confirmation" type="password" autocomplete="new-password" maxlength="72" required></label><?php endif; ?>
       <button class="primary-button" type="submit"><?= $mode === 'register' ? '注册并继续' : '登录并继续' ?></button>
     </form>

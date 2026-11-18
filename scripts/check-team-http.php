@@ -92,6 +92,8 @@ try {
   verify(substr_count($homepage['body'], 'class="team-materials-link') === 1 && !str_contains($homepage['body'], '四个名字，一次共同创作'), 'homepage has one coursework entry and keeps the requested text removal');
   $response = $anonymous->request('account.php');
   verify($response['status'] === 200 && str_contains($response['body'], '注册普通用户'), 'visible login and registration');
+  $registrationPage = $anonymous->request('account.php?mode=register');
+  verify($registrationPage['status'] === 200 && !str_contains($registrationPage['body'], '12–72') && str_contains($registrationPage['body'], '最多 72 字节'), 'registration form has no twelve-byte minimum');
   verify($anonymous->request('workspace.php')['status'] === 302, 'anonymous workspace requires login');
   verify($anonymous->request('admin.php')['status'] === 302, 'anonymous moderation workspace requires login');
   $legacy = $anonymous->request('downloads.php?member=lin-ziyuan&assignment=1');
@@ -101,7 +103,8 @@ try {
   $response = $anonymous->request('download.php?id=1');
   verify($response['status'] === 302 && ($response['headers']['location'] ?? '') === 'account.php?return=download.php%3Fid%3D1', 'download login preserves return path');
   verify($anonymous->request('account.php', ['action' => 'register', 'username' => $userName, 'password' => $password, 'password_confirmation' => $password, 'csrf' => 'wrong'])['status'] === 403, 'registration CSRF');
-  $response = $anonymous->request('account.php?mode=register', ['action' => 'register', 'username' => $userName, 'password' => $password, 'password_confirmation' => $password, 'csrf' => $anonymous->csrf('account.php?mode=register'), 'return' => 'https://example.test', 'role' => 'admin', 'member_slug' => 'lin-ziyuan']);
+  $registrationPassword = '1';
+  $response = $anonymous->request('account.php?mode=register', ['action' => 'register', 'username' => $userName, 'password' => $registrationPassword, 'password_confirmation' => $registrationPassword, 'csrf' => $anonymous->csrf('account.php?mode=register'), 'return' => 'https://example.test', 'role' => 'admin', 'member_slug' => 'lin-ziyuan']);
   verify($response['status'] === 303 && $response['headers']['location'] === 'coursework.php', 'registration rejects open redirect');
   $query = $db->prepare('SELECT id, role, member_slug FROM users WHERE username=?');
   $query->execute([$userName]);
@@ -145,7 +148,7 @@ try {
   $newVisitor = new Browser($base);
   $response = $newVisitor->request('download.php?id=' . $id);
   verify($response['status'] === 302, 'published file still requires login');
-  $response = $newVisitor->request('account.php', ['action' => 'login', 'csrf' => $newVisitor->csrf(), 'username' => $userName, 'password' => $password, 'return' => 'download.php?id=' . $id]);
+  $response = $newVisitor->request('account.php', ['action' => 'login', 'csrf' => $newVisitor->csrf(), 'username' => $userName, 'password' => $registrationPassword, 'return' => 'download.php?id=' . $id]);
   verify($response['status'] === 303 && $response['headers']['location'] === 'download.php?id=' . $id, 'login returns to requested file');
   $stats = $member->request('workspace.php?section=stats&format=json');
   $data = json_decode($stats['body'], true, 512, JSON_THROW_ON_ERROR);
