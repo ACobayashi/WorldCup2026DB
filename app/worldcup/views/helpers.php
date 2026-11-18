@@ -10,6 +10,10 @@ $number = static fn(mixed $value, string $suffix=''): string => $value===null ? 
 $positions = ['GK'=>'门将','DF'=>'后卫','MF'=>'中场','FW'=>'前锋'];
 $eventLabels = ['goal'=>'进球','own_goal'=>'乌龙球','yellow_card'=>'黄牌','red_card'=>'红牌','subbed_on'=>'换上','subbed_off'=>'换下'];
 $eventIcons = ['goal'=>'⚽','own_goal'=>'↩','yellow_card'=>'▰','red_card'=>'▰','subbed_on'=>'↗','subbed_off'=>'↙'];
+$chartMount = static function (string $kind, array $data): string {
+  $json = json_encode($data, JSON_UNESCAPED_UNICODE | JSON_THROW_ON_ERROR);
+  return '<div class="wc-chart" data-wc-chart="'.e($kind).'" data-wc-chart-data="'.e($json).'" hidden></div>';
+};
 $portrait=static function(array $player,string $size='small'):string {
   $size=in_array($size,['small','medium','large'],true)?$size:'small';$src=$player['portrait_url']??null;
   $allowed=is_string($src)&&preg_match('~^\.\./assets/images/player-photos/\d+\.(?:webp|png|jpg)\?v=[a-f0-9]{12}$~D',$src);
