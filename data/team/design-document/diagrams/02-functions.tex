@@ -1,0 +1,44 @@
+\subsection{功能结构图}
+系统围绕团队展示与世界杯资料查询两类业务组织功能。登录注册和访问控制作为公共能力复用，避免形成独立、重复的账号体系。
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \node[wide] (root) at (6.6,0)
+      {\textbf{团队门户与2026世界杯信息系统}};
+    \node[box,text width=3.7cm,minimum height=1cm] (team) at (2.2,-2.4)
+      {\textbf{团队门户与内容管理}};
+    \node[box,text width=3.7cm,minimum height=1cm] (wc) at (6.6,-2.4)
+      {\textbf{世界杯资料与分析}};
+    \node[box,text width=3.7cm,minimum height=1cm] (shared) at (11,-2.4)
+      {\textbf{公共账号与安全}};
+    \node[box,fill=white,text width=3.7cm,minimum height=6.9cm,align=left] (teamlist) at (2.2,-7.0)
+      {\textbf{公开展示}\\团队介绍、成员切换\\个人资料与座右铭\\[0.35cm]
+       \textbf{访客留言}\\提交留言、公开列表\\管理员审核\\[0.35cm]
+       \textbf{课程作业}\\文件或外链草稿\\发布、撤回、登录下载\\[0.35cm]
+       \textbf{工作台统计}\\作业数量与发布状态};
+    \node[box,fill=white,text width=3.7cm,minimum height=6.9cm,align=left] (wclist) at (6.6,-7.0)
+      {\textbf{赛事信息}\\赛程搜索与组合筛选\\比分、场馆、事件与阵容\\[0.35cm]
+       \textbf{球队与球员}\\完整名单、个人面板\\单场统计与数据对比\\[0.35cm]
+       \textbf{排名与晋级}\\小组积分、第三名比较\\淘汰赛图、球员榜\\[0.35cm]
+       \textbf{数据处理}\\来源核验、离线清洗\\事务导入与来源追溯};
+    \node[box,fill=white,text width=3.7cm,minimum height=6.9cm,align=left] (sharedlist) at (11,-7.0)
+      {\textbf{账号管理}\\注册、登录、退出\\共享Session\\[0.35cm]
+       \textbf{角色权限}\\普通用户、团队成员\\管理员及归属校验\\[0.35cm]
+       \textbf{请求安全}\\CSRF、限频与字段校验\\参数化查询、输出转义\\[0.35cm]
+       \textbf{访问保护}\\草稿可见性\\文件类型与路径校验};
+    \node[note,text width=12.4cm,minimum height=1.3cm] (base) at (6.6,-12.1)
+      {\textbf{共用基础}\\统一导航与页面风格\\一个逻辑数据库、公共认证服务及受控文件存储};
+    \draw[relation] (root.south) -- (6.6,-1.25) -| (team.north);
+    \draw[relation] (root.south) -- (wc.north);
+    \draw[relation] (root.south) -- (6.6,-1.25) -| (shared.north);
+    \draw[relation] (team) -- (teamlist);
+    \draw[relation] (wc) -- (wclist);
+    \draw[relation] (shared) -- (sharedlist);
+    \draw[ref] (teamlist.south) -- (base.north -| teamlist.south);
+    \draw[ref] (wclist.south) -- (base.north);
+    \draw[ref] (sharedlist.south) -- (base.north -| sharedlist.south);
+  \end{tikzpicture}
+  \caption{系统功能划分}
+  \label{fig:functions}
+\end{figure}
+\designnote{划分原则}{业务模块负责自己的数据与流程，公共能力集中复用。页面上的按钮显隐只提供交互引导，不能替代服务端的角色和数据归属检查。}

@@ -1,0 +1,32 @@
+\subsection{团队与公共数据关系}
+团队及成员以固定标识关联资料、座右铭、留言收件对象和作业归属。账号表记录登录身份，维护者及上传者通过账号主键关联。
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \node[entity] (u) at (2.2,0)
+      {\ertext{账号}{users}{PK \code{id}\\UQ \code{username}\\\code{role}, \code{member_slug}}};
+    \node[entity] (g) at (11,0)
+      {\ertext{访客留言}{team_guestbook_messages}{PK \code{id}\\FK \code{recipient_slug}\\FK \code{reviewer_id} (可空)\\\code{status}}};
+    \node[entity,draw=linecolor,fill=graypale] (r) at (2.2,-5)
+      {\ertext{请求限频桶}{app_rate_limits}{PK \code{bucket}\\\code{hits}, \code{expires_at}\\无业务外键}};
+    \node[entity] (m) at (6.6,-5)
+      {\ertext{团队及成员标识、座右铭}{team_mottos}{PK \code{member_slug}\\\code{motto}\\FK \code{updated_by} (可空)}};
+    \node[entity] (p) at (2.2,-10)
+      {\ertext{团队及成员公开资料}{team_profiles}{PK, FK \code{member_slug}\\\code{display_name}, \code{biography}\\FK \code{updated_by} (可空)}};
+    \node[entity] (c) at (11,-10)
+      {\ertext{课程作业元数据}{coursework_files}{PK \code{id}\\FK \code{owner_slug}\\FK \code{uploaded_by}\\\code{source_type}, \code{status}}};
+    \draw[maintenance] (u.east) -- node[edge label,above]{审核者：0..1 : 0..N} (g.west);
+    \draw[maintenance] (u.south) -- node[edge label,sloped,above]{维护者：0..1 : 0..N} (m.north west);
+    \draw[relation] (m.north east) -- node[edge label,sloped,above]{1 : 0..N\quad 收件对象} (g.south);
+    \draw[relation] (m.south west) -- node[edge label,sloped,above]{1 : 0..1} (p.north);
+    \draw[relation] (m.south east) -- node[edge label,sloped,above]{1 : 0..N\quad 作业归属} (c.north);
+    \draw[maintenance] (u.west) -- (-0.3,0) -- (-0.3,-10) -- (p.west);
+    \node[edge label,rotate=90] at (-0.3,-7.6) {维护者：0..1 : 0..N};
+    \draw[maintenance] (u.north) -- (2.2,2.3) -- (13.5,2.3) -- (13.5,-10) -- (c.east);
+    \node[edge label] at (8,2.3) {上传者：1 : 0..N};
+  \end{tikzpicture}
+  \caption{团队业务与公共数据ER图（关键字段）}
+  \label{fig:er-team}
+\end{figure}
+\designnote{图例}{PK为主键，FK为外键，UQ为唯一约束。关系两侧按连线起点、终点顺序标注数量；如“1 : 0..N”表示终点每条记录对应一个起点实体，起点可关联零至多条终点记录。虚线表示维护、审核或上传者关系。}
+\designnote{约束说明}{资料表的\code{member_slug}同时是主键和外键，形成至多一份资料的关系。账号表的\code{member_slug}用于应用层成员绑定，并非数据库外键。文件内容位于公开目录外，作业表仅记录文件元数据或外部链接。}

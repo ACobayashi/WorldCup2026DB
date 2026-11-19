@@ -1,0 +1,46 @@
+\subsection{作业草稿与发布状态转换图}
+文件上传与外链提交共用同一组发布状态。撤回是把记录恢复为草稿，并不是删除文件或增加第三种状态。
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \fill[ink] (0,-3.2) circle (3pt);
+    \node[box,text width=3.7cm,minimum height=1.4cm] (draft) at (3.2,-3.2)
+      {\textbf{草稿}\\{\small\code{draft}}\\公开目录不可见};
+    \node[success,text width=3.7cm,minimum height=1.4cm] (published) at (10.3,-3.2)
+      {\textbf{已发布}\\{\small\code{published}}\\进入公开目录候选};
+    \draw[flow] (0,-3.2) -- node[edge label,above,text width=1.8cm]{新建文件\\或外链记录} (draft.west);
+    \draw[flow] (draft.north) -- (3.2,-0.5) -- (10.3,-0.5) -- (published.north);
+    \node[edge label,text width=5.4cm] at (6.75,-0.5)
+      {发布：有归属管理权，且来源校验通过\\写入\code{published_at}};
+    \draw[flow] (published.south) -- (10.3,-5.8) -- (3.2,-5.8) -- (draft.south);
+    \node[edge label,text width=5.2cm] at (6.75,-5.8)
+      {撤回：有归属管理权\\清空\code{published_at}};
+    \node[note,text width=5cm,minimum height=1.5cm] (draftnote) at (3.2,-8.2)
+      {\textbf{草稿访问范围}\\归属成员或管理员\\可登录核对；其他用户不可访问};
+    \node[note,text width=5cm,minimum height=1.5cm] (publicnote) at (10.3,-8.2)
+      {\textbf{已发布访问范围}\\目录可公开浏览\\实际下载或跳转仍要求登录};
+    \draw[ref] (draft.south west) |- ([yshift=.6cm]draftnote.north) -- (draftnote.north);
+    \draw[ref] (published.south east) |- ([yshift=.6cm]publicnote.north) -- (publicnote.north);
+  \end{tikzpicture}
+  \caption{作业发布与撤回状态转换}
+  \label{fig:coursework-states}
+\end{figure}
+\begin{table}[H]
+  \centering
+  \small
+  \renewcommand{\arraystretch}{1.5}
+  \caption{发布状态、时间与版本规则}
+  \label{tab:coursework-states}
+  \begin{tabularx}{\linewidth}{p{3cm}Y}
+    \toprule
+    \textbf{操作或条件} & \textbf{状态与影响} \\
+    \midrule
+    新增文件或链接 & 创建一条新的\code{draft}记录，不直接覆盖已发布旧记录。 \\
+    草稿发布 & 校验来源后转为\code{published}并记录发布时间。 \\
+    已发布作业撤回 & 恢复\code{draft}，清空发布时间，普通用户不再可下载。 \\
+    同归属、同作业编号 & 目录按发布时间、编号选择最新发布版本。 \\
+    旧记录仍为已发布 & 登录用户仍可凭该记录编号下载；不会因新版本出现而自动撤回。 \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+\designnote{权限条件}{所有发布与撤回请求均验证登录、编辑角色、CSRF和作业归属。成员仅管理自己的个人作业；管理员可管理团队及所有成员作业。}

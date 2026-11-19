@@ -1,0 +1,34 @@
+\subsection{赛事基础数据关系}
+比赛关联阶段、分组、场馆及参赛球队；球队关联本届球员名单。小组成员关系通过独立关联表表达，每支球队至多属于一个小组。
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \node[entity] (s) at (2.2,0)
+      {\ertext{比赛阶段}{wc_stages}{PK \code{id}\\UQ \code{code}\\\code{is_group_stage}}};
+    \node[entity] (g) at (11,0)
+      {\ertext{小组}{wc_groups}{PK \code{id}\\UQ \code{code}\\\code{sort_order}}};
+    \node[entity] (v) at (2.2,-5.1)
+      {\ertext{比赛场馆}{wc_venues}{PK \code{id}\\\code{name}, \code{city}\\\code{country}, \code{timezone}}};
+    \node[entity] (m) at (6.6,-5.1)
+      {\ertext{比赛}{wc_matches}{PK \code{id}；UQ \code{match_no}\\FK \code{stage_id}, \code{group_id}\\FK 主队、客队、胜者ID\\FK \code{venue_id}\\\code{kickoff_at}, \code{status}}};
+    \node[entity] (gt) at (11,-5.1)
+      {\ertext{小组成员}{wc_group_teams}{PK, FK \code{group_id}\\PK, FK \code{team_id}\\UQ \code{team_id}}};
+    \node[entity] (t) at (6.6,-10.5)
+      {\ertext{国家队}{wc_teams}{PK \code{id}\\UQ \code{code}\\\code{name_zh}, \code{name_en}}};
+    \node[entity] (p) at (11,-10.5)
+      {\ertext{本届球员名单}{wc_players}{PK \code{id}；FK \code{team_id}\\UQ 球队ID、球衣号码\\\code{name}, \code{position}}};
+    \draw[relation] (s.south) -- node[edge label,sloped,above]{1 : 0..N} (m.north west);
+    \draw[relation] (g.south west) -- node[edge label,sloped,above]{0..1 : 0..N} (m.north east);
+    \draw[relation] (g.south) -- node[edge label,right]{1 : 0..N} (gt.north);
+    \draw[relation] (v.south) -- (2.2,-7.7) -- (4.4,-7.7) -- (m.south west);
+    \node[edge label,below] at (3.3,-7.7) {场馆：0..1 : 0..N};
+    \draw[relation] (t.north) -- node[edge label,right]{每个球队角色\\0..1 : 0..N} (m.south);
+    \draw[relation] (t.north east) -- node[edge label,sloped,above]{1 : 0..1} (gt.south);
+    \draw[relation] (t.south) -- (6.6,-13) -- (11,-13) -- (p.south);
+    \node[edge label] at (8.8,-13) {1 : 0..N\quad 本届名单};
+  \end{tikzpicture}
+  \caption{赛事基础数据ER图（关键字段）}
+  \label{fig:er-worldcup-core}
+\end{figure}
+\designnote{语义说明}{比赛中的分组、场馆及球队角色允许为空；淘汰赛不强行关联小组，对阵未确定时保留名额说明。球队与比赛的连线概括主队、客队及胜者三个外键角色，不代表额外关联表。}
+\designnote{数据口径}{常规时间、加时结束总比分与点球比分分别保存；未知数值保留空值，不与已知的零混淆。开球时间按UTC保存，页面按北京时间展示。}

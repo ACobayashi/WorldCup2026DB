@@ -1,0 +1,41 @@
+\subsection{导入批次与来源追溯关系}
+外部来源编号与内部主键通过映射表连接，导入批次保存内容指纹、来源清单和记录数量。只有成功提交的批次才会保留，便于重放、核验与重复导入判断。
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \node[box,fill=white,text width=2.7cm,minimum height=1.5cm] (t) at (1.7,0)
+      {\textbf{国家队}\\{\scriptsize\code{wc_teams}}\\PK \code{id}};
+    \node[box,fill=white,text width=2.7cm,minimum height=1.5cm] (p) at (5.0,0)
+      {\textbf{球员}\\{\scriptsize\code{wc_players}}\\PK \code{id}};
+    \node[box,fill=white,text width=2.7cm,minimum height=1.5cm] (m) at (8.3,0)
+      {\textbf{比赛}\\{\scriptsize\code{wc_matches}}\\PK \code{id}};
+    \node[box,fill=white,text width=2.7cm,minimum height=1.5cm] (v) at (11.6,0)
+      {\textbf{场馆}\\{\scriptsize\code{wc_venues}}\\PK \code{id}};
+    \node[entity,text width=6.4cm] (map) at (6.65,-4.5)
+      {\textbf{外部编号映射}\\{\small\code{wc_source_mappings}}\\[3pt]
+       PK \code{id}；FK \code{batch_id}\\
+       UQ \code{provider}, \code{entity_type}, \code{source_id}\\
+       可空FK：\code{team_id}, \code{player_id}\\
+       \hspace*{1.45cm}\code{match_id}, \code{venue_id}};
+    \node[entity,text width=5.2cm] (batch) at (8.2,-10)
+      {\textbf{成功导入批次}\\{\small\code{wc_import_batches}}\\[3pt]
+       PK \code{id}；UQ \code{content_sha256}\\
+       \code{dataset_name}\\\code{source_manifest}, \code{counts_json}};
+    \node[box,fill=white,text width=3.4cm,minimum height=2.7cm] (details) at (2.2,-10)
+      {\textbf{单场数据表}\\比赛名单、球员统计\\球队统计、比赛事件\\[3pt]均含FK \code{batch_id}};
+    \draw[relation] (map.north west) -- (t.south);
+    \draw[relation] ([xshift=-0.9cm]map.north) -- (p.south);
+    \draw[relation] ([xshift=0.9cm]map.north) -- (m.south);
+    \draw[relation] (map.north east) -- (v.south);
+    \draw[relation] (batch.north) -- node[edge label,right]{1 : 0..N} (map.south east);
+    \draw[relation] (batch.south) -- (8.2,-12.4) -- (2.2,-12.4) -- (details.south);
+    \node[edge label] at (5.2,-12.4) {批次 1 : 每类明细 0..N};
+    \node[note,text width=11.8cm] at (6.65,-14.2)
+      {映射目标由\code{entity_type}决定：四个目标外键恰好一个非空。\par
+       内容指纹唯一：同一内容成功导入后再次执行，返回已导入而不重复写入。};
+  \end{tikzpicture}
+  \caption{来源身份映射与导入批次关系图}
+  \label{fig:er-provenance}
+\end{figure}
+\designnote{追溯原则}{使用已核验的来源编号建立身份关联，不直接以姓名相同推断同一球员。清洗规则和限定范围的更正保留来源依据，原始快照与派生导入包分开保存。}
+\designnote{关系数量}{对每个具体目标外键，目标端为0..1，映射记录端为0..N；四个目标外键中恰好一个非空。一个来源映射只指向一条已核验的目标记录。}

@@ -1,0 +1,44 @@
+\subsection{离线清洗与事务导入流程}
+前台查询与外部数据处理分离。已保存来源快照经离线清洗生成导入包，命令行导入器负责身份、关联、业务规则与幂等校验。
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \node[terminal] (source) at (6.6,0) {读取已保存的来源快照};
+    \node[process] (clean) at (6.6,-1.5)
+      {离线清洗、核验身份映射\\统一时间和比分口径，保留缺失值};
+    \node[process] (contract) at (6.6,-3.1)
+      {读取JSON导入包并计算SHA-256\\校验合约版本和必需数据分区};
+    \node[process] (begin) at (6.6,-4.7)
+      {获取导入互斥锁\\开启独立数据库事务};
+    \node[decision] (repeat) at (6.6,-6.5) {内容指纹已成功导入？};
+    \node[note,text width=2.9cm] (skip) at (11.4,-6.5)
+      {回滚本次空事务\\返回\code{already_imported}};
+    \node[process] (base) at (6.6,-8.5)
+      {写入批次、球队、阶段、小组\\场馆、球员和比赛};
+    \node[process] (details) at (6.6,-10.4)
+      {建立来源映射并写入比赛名单\\球员统计、球队统计及事件\\逐项检查身份、归属和唯一性};
+    \node[failure,text width=2.9cm] (error) at (12,-10.4)
+      {事务内异常\\整体回滚\\报告失败原因};
+    \node[decision] (dry) at (6.6,-12.7) {使用\code{--dry-run}？};
+    \node[note,text width=2.9cm] (rollback) at (1.8,-12.7)
+      {回滚全部本次写入\\返回校验通过结果};
+    \node[success,text width=5.2cm] (commit) at (6.6,-14.7)
+      {提交事务\\保留成功批次和导入记录};
+    \draw[flow] (source) -- (clean);
+    \draw[flow] (clean) -- (contract);
+    \draw[flow] (contract) -- (begin);
+    \draw[flow] (begin) -- (repeat);
+    \draw[flow] (repeat.east) -- node[edge label,above]{是} (skip.west);
+    \draw[flow] (repeat.south) -- node[edge label,right]{否} (base.north);
+    \draw[flow] (base) -- (details);
+    \draw[ref] (base.east) -- (9.9,-8.5) |- (error.west);
+    \draw[ref] (details.east) -- node[edge label,above]{异常} (error.west);
+    \draw[flow] (details) -- (dry);
+    \draw[flow] (dry.west) -- node[edge label,above]{是} (rollback.east);
+    \draw[flow] (dry.south) -- node[edge label,right]{否} (commit.north);
+  \end{tikzpicture}
+  \caption{赛事数据离线处理与事务导入流程}
+  \label{fig:data-import}
+\end{figure}
+\designnote{收尾规则}{持有互斥锁的导入在成功、跳过或失败后均释放锁。合约校验失败或无法获取锁时直接退出，不进入后续写入。试运行执行相同写入与约束验证，但最终回滚，不保留批次。}
+\designnote{幂等与回滚}{内容指纹用于识别已成功导入的相同内容；任何事务内错误均不能留下半个批次。前台始终查询本地数据库，不在页面请求中抓取外部赛事数据。}

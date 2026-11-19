@@ -1,0 +1,47 @@
+\subsection{角色与数据归属权限矩阵}
+系统区分访客、普通用户、团队成员与管理员。角色决定功能范围，成员标识进一步约束可维护的资料和作业归属。
+\begin{table}[H]
+  \centering
+  \small
+  \renewcommand{\arraystretch}{1.65}
+  \setlength{\tabcolsep}{4pt}
+  \caption{角色与操作权限矩阵}
+  \label{tab:permissions}
+  \begin{tabularx}{\linewidth}{p{4.7cm}CCCC}
+    \toprule
+    \rowcolor{pale}
+    \textbf{功能或操作} & \textbf{访客} & \textbf{普通用户} & \textbf{团队成员} & \textbf{管理员} \\
+    \midrule
+    浏览团队、赛事与已审核留言 & 允许 & 允许 & 允许 & 允许 \\
+    查看公开作业目录 & 允许 & 允许 & 允许 & 允许 \\
+    提交访客留言 & 允许 & 允许 & 允许 & 允许 \\
+    下载已发布作业 & 需登录 & 允许 & 允许 & 允许 \\
+    核对未发布作业 & 不允许 & 不允许 & 仅本人 & 全部 \\
+    编辑个人资料与座右铭 & 不允许 & 不允许 & 仅本人 & 全部 \\
+    编辑团队介绍与座右铭 & 不允许 & 不允许 & 不允许 & 允许 \\
+    管理个人作业草稿、发布与撤回 & 不允许 & 不允许 & 仅本人 & 全部 \\
+    管理团队作业 & 不允许 & 不允许 & 不允许 & 允许 \\
+    审核访客留言 & 不允许 & 不允许 & 不允许 & 允许 \\
+    查看工作台作业数量统计 & 不允许 & 不允许 & 仅本人 & 全部 \\
+    查看账号角色统计 & 不允许 & 不允许 & 不允许 & 允许 \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+\vspace{0.35cm}
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \node[wide,minimum height=1.2cm] (identity) at (6.6,0)
+      {\textbf{第一层：验证身份}\\从Session读取账号ID，再读取数据库中的当前角色与成员标识};
+    \node[wide,minimum height=1.2cm] (role) at (6.6,-2.2)
+      {\textbf{第二层：验证角色}\\登录用户可下载已发布作业；编辑工作台仅向成员或管理员开放};
+    \node[wide,minimum height=1.2cm] (owner) at (6.6,-4.4)
+      {\textbf{第三层：验证数据归属}\\成员只能维护自己的个人资料与作业；团队对象与跨成员操作仅管理员可执行};
+    \draw[flow] (identity) -- (role);
+    \draw[flow] (role) -- (owner);
+  \end{tikzpicture}
+  \caption{权限检查的三层边界}
+  \label{fig:authorization}
+\end{figure}
+\designnote{执行规则}{涉及写入的Web请求还需通过CSRF及业务校验。留言提交不要求登录，但必须持有有效CSRF令牌并接受限频。命令行导入由运行环境的访问权限控制，不由网页角色直接授权。}
+\designnote{外链边界}{本站控制已发布外链的跳转入口；目标站点的访问权限由目标站点决定，复制后的外部地址不受本站登录保护。}

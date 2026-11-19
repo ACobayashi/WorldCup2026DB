@@ -1,0 +1,43 @@
+\subsection{登录校验与下载流程}
+作业目录允许公开浏览，但实际下载入口要求登录。草稿仅允许具有对应归属管理权限的成员或管理员核对。
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \node[terminal,text width=4.8cm] (start) at (6.6,0) {请求\code{download.php?id=...}};
+    \node[process] (id) at (6.6,-1.6) {校验文件编号为合法正整数};
+    \node[decision] (login) at (6.6,-3.3) {已经登录？};
+    \node[box,text width=2.8cm] (redirect) at (11.3,-3.3)
+      {302跳转登录页\\保留原文件返回路径};
+    \node[process] (find) at (6.6,-5.3) {按文件编号读取作业元数据};
+    \node[decision,text width=3.2cm] (allowed) at (6.6,-7.2)
+      {记录存在，且\\（已发布或有管理权）？};
+    \node[failure,text width=2.6cm] (hidden) at (1.7,-7.2)
+      {返回404\\未发布或不存在};
+    \node[decision] (kind) at (6.6,-9.4) {作业来源类型};
+    \node[box,text width=4.8cm] (file) at (3.35,-11.4)
+      {\textbf{文件}\\校验真实路径位于数据目录内\\文件可读且大小匹配};
+    \node[box,text width=4.8cm] (link) at (9.85,-11.4)
+      {\textbf{外部链接}\\再次校验HTTPS格式\\设置私有、禁止缓存响应};
+    \node[success,text width=4.8cm] (stream) at (3.35,-13.5)
+      {以附件方式输出文件流\\不公开实际存储路径};
+    \node[success,text width=4.8cm] (jump) at (9.85,-13.5)
+      {302跳转到外部地址\\后续由目标站点处理};
+    \draw[flow] (start) -- (id);
+    \draw[flow] (id) -- (login);
+    \draw[flow] (login.east) -- node[edge label,above]{否} (redirect.west);
+    \draw[ref] (redirect.north) -- (11.3,-0.7) -| (id.north east);
+    \node[edge label,text width=3.5cm] at (11.3,-0.7) {登录成功后重新请求};
+    \draw[flow] (login.south) -- node[edge label,right]{是} (find.north);
+    \draw[flow] (find) -- (allowed);
+    \draw[flow] (allowed.west) -- node[edge label,above]{否} (hidden.east);
+    \draw[flow] (allowed.south) -- node[edge label,right]{是} (kind.north);
+    \draw[flow] (kind.west) -| node[edge label,pos=.25,above]{文件} (file.north);
+    \draw[flow] (kind.east) -| node[edge label,pos=.25,above]{链接} (link.north);
+    \draw[flow] (file) -- (stream);
+    \draw[flow] (link) -- (jump);
+  \end{tikzpicture}
+  \caption{登录保护的文件下载与外链跳转流程}
+  \label{fig:coursework-download}
+\end{figure}
+\designnote{异常处理}{编号无效返回422；资源不存在、无草稿管理权限或本地文件不可用返回404；链接格式不合法返回校验错误。响应设置为私有且不缓存。}
+\designnote{版本规则}{目录按归属与作业编号选取最新发布版本；旧版本在仍为已发布状态时，登录用户仍可凭原文件编号访问。撤回后普通用户不能访问。}

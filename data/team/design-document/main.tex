@@ -1,0 +1,122 @@
+% !TeX program = xelatex
+% !TeX encoding = UTF-8
+\documentclass[UTF8,a4paper,10pt,fontset=fandol]{ctexart}
+\usepackage[left=3.17cm,right=3.17cm,top=2.74cm,bottom=2.74cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx,float}
+\usepackage{caption,booktabs,tabularx,array}
+\usepackage[table]{xcolor}
+\usepackage{fancyhdr}
+\usepackage[colorlinks,linkcolor=black,urlcolor=blue]{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit,calc,shapes.geometric,backgrounds}
+\input{diagram-style.tex}
+
+\newcommand{\sanhao}{\fontsize{16pt}{24pt}\selectfont}
+\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\ctexset{
+  section={name={,、},number=\chinese{section}},
+  subsection={name={（,）},number=\chinese{subsection}},
+  subsubsection={name={,.},number=\arabic{subsubsection}}
+}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\kaishu\nouppercase{\leftmark}}
+\fancyhead[R]{\kaishu 系统设计文档}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.1pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{15pt}
+\setlength{\emergencystretch}{2em}
+\setlength{\intextsep}{8pt plus 2pt minus 2pt}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{4pt}
+\captionsetup{font=small,skip=6pt}
+\graphicspath{{pictures/}{./}}
+\hypersetup{
+  pdftitle={团队门户与2026世界杯信息系统设计文档},
+  pdfauthor={林子媛、严苑毓、马禹翔、韩羽宸},
+  pdfsubject={系统架构、数据库关系与关键业务流程}
+}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=.46\linewidth]{NKU.png}
+  \end{figure}
+  \vspace{1cm}
+  \hrulefill
+  \begin{center}
+    {\Huge\bfseries 《互联网数据库开发》\\[0.3cm]
+      团队门户与2026世界杯\\[0.3cm]
+      信息系统设计文档\par}
+    \vspace{0.45cm}
+    {\large 架构、数据关系与关键业务流程\par}
+  \end{center}
+  \hrulefill
+  \vspace{1cm}
+  \begin{center}
+    \sanhao
+    \begin{tabular}{ll}
+      姓名 & 学号 \\[0.3cm]
+      林子媛 & 2410936 \\[0.3cm]
+      严苑毓 & 2413682 \\[0.3cm]
+      马禹翔 & 2410933 \\[0.3cm]
+      韩羽宸 & 2410673
+    \end{tabular}
+  \end{center}
+\end{titlepage}
+\pagenumbering{Roman}
+\hypersetup{pageanchor=true}
+\begingroup
+  \small
+  \setcounter{tocdepth}{2}
+  \tableofcontents
+  \thispagestyle{plain}
+\endgroup
+\clearpage
+\pagenumbering{arabic}
+
+\section{系统总体设计}
+\input{diagrams/01-architecture.tex}
+\clearpage
+\input{diagrams/02-functions.tex}
+\clearpage
+
+\section{数据库关系设计}
+\input{diagrams/03-er-team.tex}
+\clearpage
+\input{diagrams/04-er-worldcup-core.tex}
+\clearpage
+\input{diagrams/05-er-worldcup-stats.tex}
+\clearpage
+\input{diagrams/06-er-provenance.tex}
+\clearpage
+
+\section{账号与权限设计}
+\input{diagrams/07-account-sequence.tex}
+\clearpage
+\input{diagrams/08-permissions.tex}
+\clearpage
+
+\section{团队业务流程设计}
+\input{diagrams/09-guestbook-flow.tex}
+\clearpage
+\input{diagrams/10-coursework-publish.tex}
+\clearpage
+\input{diagrams/11-coursework-download.tex}
+\clearpage
+
+\section{赛事数据导入设计}
+\input{diagrams/12-data-import.tex}
+\clearpage
+
+\section{业务状态转换设计}
+\input{diagrams/13-guestbook-states.tex}
+\clearpage
+\input{diagrams/14-coursework-states.tex}
+
+\end{document}

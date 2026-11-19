@@ -1,0 +1,47 @@
+\subsection{留言审核状态转换图}
+留言以待审核、已通过和已拒绝三种状态保存。公开可见性由当前状态决定，而不是由是否存在审核时间决定。
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \fill[ink] (6.6,0) circle (3pt);
+    \node[box,text width=3.7cm,minimum height=1.35cm] (pending) at (6.6,-2.2)
+      {\textbf{待审核}\\等待管理员审核，公开列表不可见\\{\small\code{pending}}};
+    \node[success,text width=3.7cm,minimum height=1.35cm] (approved) at (2.7,-7.0)
+      {\textbf{已通过}\\公开列表可见\\{\small\code{approved}}};
+    \node[failure,text width=3.7cm,minimum height=1.35cm] (rejected) at (10.5,-7.0)
+      {\textbf{已拒绝}\\公开列表不可见\\{\small\code{rejected}}};
+    \draw[flow] (6.6,0) -- node[edge label,right]{提交成功} (pending.north);
+    \draw[flow] (pending.south west) to[bend right=12]
+      node[edge label,sloped,above]{审核通过} (approved.north east);
+    \draw[flow] (approved.north west) to[bend left=35]
+      node[edge label,sloped,above]{移回待审核} (pending.west);
+    \draw[flow] (pending.south east) to[bend left=12]
+      node[edge label,sloped,above]{审核拒绝} (rejected.north west);
+    \draw[flow] (rejected.north east) to[bend right=35]
+      node[edge label,sloped,above]{移回待审核} (pending.east);
+    \draw[flow] (approved.south) -- (2.7,-9.0) -- (10.5,-9.0) -- (rejected.south);
+    \node[edge label] at (6.6,-9.0) {重新设为拒绝};
+    \draw[flow] (rejected.east) -- (13.2,-7.0) -- (13.2,-10.4) -- (0,-10.4) -- (0,-7.0) -- (approved.west);
+    \node[edge label] at (6.6,-10.4) {重新设为通过};
+  \end{tikzpicture}
+  \caption{留言审核状态及重新审核路径}
+  \label{fig:guestbook-states}
+\end{figure}
+\vspace{0.2cm}
+\begin{table}[H]
+  \centering
+  \small
+  \renewcommand{\arraystretch}{1.5}
+  \caption{留言状态的业务含义}
+  \label{tab:guestbook-states}
+  \begin{tabularx}{\linewidth}{p{2.7cm}p{2.6cm}Y}
+    \toprule
+    \textbf{状态} & \textbf{公开列表} & \textbf{主要规则} \\
+    \midrule
+    \code{pending} & 不显示 & 新提交的默认状态，也可由管理员移回。 \\
+    \code{approved} & 显示 & 仅通过审核的留言进入公开查询。 \\
+    \code{rejected} & 不显示 & 保留记录，允许管理员重新调整审核结论。 \\
+    \bottomrule
+  \end{tabularx}
+\end{table}
+\designnote{转换条件}{除初次提交外，图中所有状态调整均要求管理员身份和有效CSRF令牌；更新当前状态、审核人及审核时间，不创建重复留言。}

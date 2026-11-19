@@ -1,0 +1,43 @@
+\subsection{作业保存与发布流程}
+作业支持上传文件和保存HTTPS下载链接两种来源，均先创建草稿，再由有管理权限的成员或管理员确认发布。
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \node[terminal] (start) at (6.6,0) {成员或管理员提交作业};
+    \node[process] (auth) at (6.6,-1.5) {验证登录、编辑角色、CSRF\\及团队 / 个人作业归属};
+    \node[decision] (allowed) at (6.6,-3.1) {允许管理该归属？};
+    \node[failure,text width=2.7cm] (denied) at (11.2,-3.1) {拒绝请求\\不保存记录};
+    \node[process] (meta) at (6.6,-4.9) {校验作业编号、标题及提交方式};
+    \node[decision] (kind) at (6.6,-6.5) {作业来源类型};
+    \node[box,text width=4.9cm,minimum height=1.4cm] (file) at (3.35,-8.7)
+      {\textbf{文件}\\校验扩展名、真实MIME、大小\\Office文件还需校验内部结构};
+    \node[box,text width=4.9cm,minimum height=1.4cm] (link) at (9.85,-8.7)
+      {\textbf{外部链接}\\校验HTTPS地址\\不含嵌入式账号密码};
+    \node[box,text width=4.9cm] (store) at (3.35,-10.7)
+      {随机文件名落盘到公开目录外\\计算大小与SHA-256};
+    \node[box,text width=4.9cm] (url) at (9.85,-10.7)
+      {仅保存地址\\不抓取目标，不生成文件元数据};
+    \node[process] (draft) at (6.6,-12.5)
+      {插入作业元数据\\默认\code{status = draft}};
+    \node[process,text width=6.2cm] (publish) at (6.6,-14.3)
+      {管理者核对并点击发布\\复核归属与来源有效性};
+    \node[success,text width=5.2cm] (public) at (6.6,-16.1)
+      {更新为\code{published}\\公开目录与成员作业入口可见};
+    \draw[flow] (start) -- (auth);
+    \draw[flow] (auth) -- (allowed);
+    \draw[flow] (allowed.east) -- node[edge label,above]{否} (denied.west);
+    \draw[flow] (allowed.south) -- node[edge label,right]{是} (meta.north);
+    \draw[flow] (meta) -- (kind);
+    \draw[flow] (kind.west) -| node[edge label,pos=.25,above]{文件} (file.north);
+    \draw[flow] (kind.east) -| node[edge label,pos=.25,above]{链接} (link.north);
+    \draw[flow] (file) -- (store);
+    \draw[flow] (link) -- (url);
+    \draw[flow] (store.south) -- (3.35,-11.6) -| (draft.north);
+    \draw[flow] (url.south) -- (9.85,-11.6) -| (draft.north);
+    \draw[flow] (draft) -- (publish);
+    \draw[flow] (publish) -- (public);
+  \end{tikzpicture}
+  \caption{文件或外链草稿保存与发布流程}
+  \label{fig:coursework-publish}
+\end{figure}
+\designnote{失败处理}{任一校验失败即停止后续步骤并提示原因。文件落盘后若数据库插入失败，删除本次文件；发布校验失败时不切换发布状态。单文件允许1字节至50 MiB。}

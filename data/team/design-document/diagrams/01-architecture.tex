@@ -1,0 +1,42 @@
+\subsection{总体架构图}
+系统采用浏览器、PHP业务层与持久化层的分层结构。团队与赛事模块各自组织模型、控制器和视图，共用账号、会话与安全校验；赛事数据由独立命令行流程导入。
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \node[wide] (browser) at (6.6,0)
+      {\textbf{浏览器}\\原生 HTML / CSS / ES Modules\\页面交互、筛选与图表展示};
+    \node[wide] (entry) at (6.6,-2.2)
+      {\textbf{Web入口与路由}\\\code{public/}中的页面入口与API入口\\接收HTTP请求，分派到业务控制器};
+    \node[box,text width=3.7cm,minimum height=2cm] (teamc) at (2.2,-5.0)
+      {\textbf{团队控制器}\\账号与资料\\留言与作业流程};
+    \node[note,text width=3.7cm,minimum height=2cm] (common) at (6.6,-5.0)
+      {\textbf{公共服务}\\Session / 身份与角色\\CSRF / 限频 / 参数校验};
+    \node[box,text width=3.7cm,minimum height=2cm] (wcc) at (11,-5.0)
+      {\textbf{赛事控制器}\\赛程、球队与球员\\积分、榜单与对比};
+    \node[box,text width=3.7cm,minimum height=1.8cm] (teamm) at (2.2,-8.0)
+      {\textbf{团队模型}\\账号、资料、座右铭\\留言、作业元数据};
+    \node[note,text width=3.7cm,minimum height=1.8cm] (response) at (6.6,-8.0)
+      {\textbf{视图与响应}\\PHP模板 / JSON\\页面展示与输出转义};
+    \node[box,text width=3.7cm,minimum height=1.8cm] (wcm) at (11,-8.0)
+      {\textbf{赛事模型}\\比赛、阵容与技术统计\\排名计算与聚合查询};
+    \node[wide,minimum height=1.55cm] (storage) at (6.6,-11.1)
+      {\textbf{持久化层}\\PDO + MySQL兼容数据库：账号、团队业务与赛事数据\\公开目录外的文件存储：课程作业实际文件};
+    \node[note,text width=12.4cm,minimum height=1.2cm] (import) at (6.6,-14)
+      {\textbf{离线数据处理与CLI导入}\\来源快照 $\rightarrow$ 清洗与身份映射 $\rightarrow$ 合约校验 $\rightarrow$ 事务导入};
+    \draw[flow] (browser) -- node[edge label,right]{HTTP请求 / 响应} (entry);
+    \draw[flow] (entry.south -| teamc.north) -- (teamc.north);
+    \draw[flow] (entry.south -| wcc.north) -- (wcc.north);
+    \draw[ref] (teamc.east) -- (common.west);
+    \draw[ref] (wcc.west) -- (common.east);
+    \draw[flow] (teamc) -- (teamm);
+    \draw[flow] (wcc) -- (wcm);
+    \draw[ref] (teamc.south east) -- (response.north west);
+    \draw[ref] (wcc.south west) -- (response.north east);
+    \draw[flow] (teamm.south) -- (storage.north -| teamm.south);
+    \draw[flow] (wcm.south) -- (storage.north -| wcm.south);
+    \draw[flow] (import) -- node[edge label,right]{校验后写入} (storage);
+  \end{tikzpicture}
+  \caption{系统总体架构与模块边界}
+  \label{fig:architecture}
+\end{figure}
+\designnote{设计说明}{实线表示主要请求或数据处理路径，虚线表示服务依赖与响应组装。控制器调用模型取得数据，再渲染视图或生成JSON返回浏览器。文件下载由服务端校验后输出，不暴露实际存储路径。}

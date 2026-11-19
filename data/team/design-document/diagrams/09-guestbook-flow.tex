@@ -1,0 +1,40 @@
+\subsection{留言提交与审核流程}
+访客留言先进入待审核状态，管理员确认通过后才在公开列表出现。提交成功只表示已接收，并不表示已经公开。
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \node[terminal] (start) at (6.6,0) {访问团队或成员页面};
+    \node[process] (input) at (6.6,-1.5)
+      {获取CSRF令牌；填写留言对象、称呼与正文};
+    \node[process] (check) at (6.6,-3.1)
+      {校验JSON、字段、CSRF与限频\\校验留言对象及内容长度};
+    \node[decision] (valid) at (6.6,-4.8) {提交校验通过？};
+    \node[failure,text width=2.8cm] (bad) at (11.3,-4.8) {返回错误提示\\不创建留言};
+    \node[process] (save) at (6.6,-6.7)
+      {写入留言记录\\\code{status = pending}};
+    \node[process] (notice) at (6.6,-8.3)
+      {返回201与留言编号\\提示“审核通过后公开”};
+    \node[process] (review) at (6.6,-9.9)
+      {管理员读取待审核留言\\审核请求验证管理员身份与CSRF};
+    \node[decision] (approve) at (6.6,-11.6) {审核结果为通过？};
+    \node[failure,text width=2.8cm] (reject) at (11.3,-11.6)
+      {更新为\code{rejected}\\公开列表不可见};
+    \node[success,text width=5.2cm] (ok) at (6.6,-13.5)
+      {更新为\code{approved}\\记录审核人及审核时间};
+    \node[terminal] (end) at (6.6,-15.1) {公开列表读取已通过留言};
+    \draw[flow] (start) -- (input);
+    \draw[flow] (input) -- (check);
+    \draw[flow] (check) -- (valid);
+    \draw[flow] (valid.east) -- node[edge label,above]{否} (bad.west);
+    \draw[flow] (valid.south) -- node[edge label,right]{是} (save.north);
+    \draw[flow] (save) -- (notice);
+    \draw[flow] (notice) -- (review);
+    \draw[flow] (review) -- (approve);
+    \draw[flow] (approve.east) -- node[edge label,above]{否} (reject.west);
+    \draw[flow] (approve.south) -- node[edge label,right]{是} (ok.north);
+    \draw[flow] (ok) -- (end);
+  \end{tikzpicture}
+  \caption{留言提交、待审与公开流程}
+  \label{fig:guestbook-flow}
+\end{figure}
+\designnote{显示规则}{公开查询固定筛选\code{approved}，访客不能通过请求参数读取待审或拒绝列表。管理员可重新调整状态，状态转换见后文。正文以文本方式输出，不把访客内容解释为HTML。}

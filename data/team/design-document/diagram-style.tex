@@ -1,0 +1,45 @@
+\definecolor{ink}{HTML}{243449}
+\definecolor{muted}{HTML}{5B6C80}
+\definecolor{accent}{HTML}{285F9C}
+\definecolor{pale}{HTML}{EDF4FB}
+\definecolor{linecolor}{HTML}{A9B9CB}
+\definecolor{greenink}{HTML}{2D7058}
+\definecolor{greenpale}{HTML}{EDF6F1}
+\definecolor{redink}{HTML}{99504E}
+\definecolor{redpale}{HTML}{FBF1F0}
+\definecolor{graypale}{HTML}{F4F6F8}
+\newcommand{\code}[1]{{\ttfamily\detokenize{#1}}}
+\newcommand{\diagramfont}{\fontsize{9.5pt}{12pt}\selectfont}
+\newcommand{\ertext}[3]{%
+  \textbf{#1}\\[-1pt]
+  {\fontsize{8pt}{10pt}\selectfont\code{#2}}\\[-2pt]
+  {\color{linecolor}\rule{3.5cm}{0.4pt}}\\[-2pt]
+  {\fontsize{8.5pt}{11pt}\selectfont #3}%
+}
+\newcommand{\designnote}[2]{%
+  \par\noindent\begingroup\small\color{ink}\textbf{#1}\quad #2\par\endgroup
+}
+\tikzset{
+  every picture/.style={font=\diagramfont},
+  box/.style={draw=accent,line width=0.65pt,rounded corners=3pt,
+    fill=pale,text=ink,align=center,inner sep=7pt},
+  process/.style={box,text width=5.2cm,minimum height=0.95cm},
+  wide/.style={box,text width=12.4cm,minimum height=1.1cm},
+  decision/.style={diamond,aspect=2.5,draw=accent,line width=0.65pt,
+    fill=pale,text=ink,align=center,inner sep=2pt,text width=2.8cm},
+  terminal/.style={box,rounded corners=12pt,fill=graypale,
+    draw=muted,text width=3.3cm,minimum height=0.75cm},
+  success/.style={box,draw=greenink,fill=greenpale},
+  failure/.style={box,draw=redink,fill=redpale},
+  note/.style={box,draw=linecolor,fill=graypale,text=muted},
+  entity/.style={box,align=left,fill=white,text width=3.8cm,
+    inner sep=7pt,minimum height=2.4cm},
+  flow/.style={-{Latex[length=2mm,width=1.35mm]},draw=ink!80,
+    line width=0.7pt,rounded corners=3pt},
+  ref/.style={flow,dashed,draw=muted},
+  relation/.style={draw=accent,line width=0.7pt,rounded corners=3pt},
+  maintenance/.style={relation,dashed,draw=muted},
+  edge label/.style={font=\fontsize{8.5pt}{10.5pt}\selectfont,
+    text=ink,fill=white,inner sep=2pt,align=center},
+  lifeline/.style={draw=linecolor,dashed,line width=0.6pt}
+}

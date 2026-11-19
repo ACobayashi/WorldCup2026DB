@@ -1,0 +1,32 @@
+\subsection{阵容、统计与事件关系}
+比赛名单以“比赛ID、球员ID”为联合主键，区分首发、已出场和未上场替补。球员单场统计及比赛事件必须关联到这份名单，避免统计落到无效参赛者上。
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \node[entity] (m) at (2.2,0)
+      {\ertext{比赛（基础图）}{wc_matches}{PK \code{id}\\FK 主队、客队ID\\\code{match_no}}};
+    \node[entity] (ts) at (6.6,0)
+      {\ertext{球队单场统计}{wc_team_match_stats}{PK, FK \code{match_id}\\PK, FK \code{team_id}\\FK \code{batch_id}\\射门、传球、控球等}};
+    \node[entity] (p) at (11,0)
+      {\ertext{球员（基础图）}{wc_players}{PK \code{id}\\FK \code{team_id}\\\code{name}}};
+    \node[entity] (a) at (6.6,-5.2)
+      {\ertext{逐场比赛名单}{wc_match_appearances}{PK, FK \code{match_id}\\PK, FK \code{player_id}\\FK \code{team_id}, \code{batch_id}\\\code{is_starter}, \code{appeared}}};
+    \node[entity] (ps) at (2.2,-10.4)
+      {\ertext{球员单场统计}{wc_player_match_stats}{PK, FK \code{match_id}\\PK, FK \code{player_id}\\FK \code{batch_id}\\进球、射门及扩展指标}};
+    \node[entity] (e) at (11,-10.4)
+      {\ertext{比赛事件}{wc_match_events}{PK \code{id}\\联合FK 比赛ID、球员ID\\FK \code{batch_id}\\\code{event_type}, \code{minute_label}}};
+    \draw[relation] (m.north) -- (2.2,2.2) -- (6.6,2.2) -- (ts.north);
+    \node[edge label] at (4.4,2.2) {1 : 0..N};
+    \draw[relation] (m.south) -- node[edge label,sloped,above]{1 : 0..N} (a.north west);
+    \draw[relation] (p.south) -- node[edge label,sloped,above]{1 : 0..N} (a.north east);
+    \draw[relation] (a.south west) -- node[edge label,sloped,above]{1 : 0..1\quad 联合外键} (ps.north);
+    \draw[relation] (a.south east) -- node[edge label,sloped,above]{1 : 0..N\quad 联合外键} (e.north);
+    \node[note,text width=11.8cm] at (6.6,-13.5)
+      {跨图引用：\code{team_id}关联国家队；\code{batch_id}关联导入批次。\par
+       同一球员每场至多一条统计记录，但可以关联多条比赛事件。};
+  \end{tikzpicture}
+  \caption{比赛名单、技术统计与事件ER图}
+  \label{fig:er-worldcup-stats}
+\end{figure}
+\designnote{完整性约束}{比赛名单的“首发”必须同时满足“已出场”；球队统计的球队必须属于该场双方。技术统计未知时保留空值；赛季汇总数据不复制成逐场记录。}
+\designnote{展示派生}{积分榜、球员排名和数据对比由已保存的赛果及统计查询、计算得到，不为每个页面另建一份重复业务实体。}
